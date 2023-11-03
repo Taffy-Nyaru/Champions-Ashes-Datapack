@@ -1,0 +1,16 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "generic:main"
+      },
+      "ops": [
+        {
+          "source": "soul_of_elderCMD",
+          "target": "CustomModelData",
+          "op": "replace"
+        }
+      ]
+    }
+  ]

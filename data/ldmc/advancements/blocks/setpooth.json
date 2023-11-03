@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:honey_block"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "ldmc:blocks/pooth/locate"
+  }
+}

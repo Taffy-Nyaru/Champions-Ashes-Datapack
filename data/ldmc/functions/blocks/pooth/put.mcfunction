@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {item:{Count:1b,id:"honey_block",tag:{CustomModelData:1440004}},Tags:["pooth"]}

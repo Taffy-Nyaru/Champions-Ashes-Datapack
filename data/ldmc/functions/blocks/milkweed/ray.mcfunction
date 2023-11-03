@@ -1,0 +1,6 @@
+execute if score #custom_model_data ldmcValue matches 1440001 if entity @s[distance=..10] if block ~ ~ ~ candle align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {item:{Count:1b,id:"candle",tag:{CustomModelData:1440001}},Tags:["milkweed"]}
+execute if score #custom_model_data ldmcValue matches 1440005 if entity @s[distance=..10] if block ~ ~ ~ candle align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {item:{Count:1b,id:"candle",tag:{CustomModelData:1440005}},Tags:["milkweed"]}
+execute if score #custom_model_data ldmcValue matches 1440006 if entity @s[distance=..10] if block ~ ~ ~ candle align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {item:{Count:1b,id:"candle",tag:{CustomModelData:1440006}},Tags:["milkweed"]}
+execute if score #custom_model_data ldmcValue matches 1440007 if entity @s[distance=..10] if block ~ ~ ~ candle align xyz positioned ~0.5 ~0.5 ~0.5 run summon item_display ~ ~ ~ {item:{Count:1b,id:"candle",tag:{CustomModelData:1440007}},Tags:["milkweed"]}
+execute if entity @s[distance=..10] if block ~ ~ ~ candle align xyz positioned ~0.5 ~0.5 ~0.5 run summon interaction ~ ~-0.5 ~ {Tags:["block_clicker"],response:1b}
+execute if entity @s[distance=..10] unless block ~ ~ ~ candle positioned ^ ^ ^0.005 run function ldmc:blocks/milkweed/ray

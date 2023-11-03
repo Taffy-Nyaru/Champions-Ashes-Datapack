@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"ldmc:steel_helmet\",CustomModelData:1390030,Trim:{material:\"minecraft:impossible\",pattern:\"minecraft:steel_armor\"},display: {Name: '[{\"translate\":\"item.ldmc.steel_helmet\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"head\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 0.1d, Operation: 0, UUID: [I;-625197007,-1589229260,-2111668890,826460726]},{Slot: \"head\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 3d, Operation: 0, UUID: [I;17395173,1878345439,-1152502633,-1113683162]},{Slot: \"head\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 2d, Operation: 0, UUID: [I;2135254786,-802537186,-1796473963,570118640]}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

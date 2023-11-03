@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"ldmc:vampire_hat\",display: {Name: '[{\"translate\":\"item.ldmc.vampire_hat\",\"italic\":false}]'},CustomModelData:1390007,AttributeModifiers: [{Slot: \"head\", AttributeName: \"generic.max_health\", Name: \"max_health\", Amount: 6d, Operation: 0, UUID: [I; 1235814, 8753920, -2121340, -8100]},{Slot: \"head\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 0.2d, Operation: 2, UUID: [I; 212573, 412763, 623740, 486520]},{Slot: \"head\", AttributeName: \"generic.flying_speed\", Name: \"fly_speed\", Amount: 0.1d, Operation: 2, UUID: [I; 73, 12313, 8340, 720]},{Slot: \"head\", AttributeName: \"generic.attack_damage\", Name: \"attack_damage\", Amount: 0.3d, Operation: 2, UUID: [I; -452146, -3463, -56340, -34120]},{Slot: \"head\", AttributeName: \"generic.luck\", Name: \"luck\", Amount: 10d, Operation: 0, UUID: [I; -50453, 231853, -412312, -20]},{Slot: \"head\", AttributeName: \"generic.attack_knockback\", Name: \"attack_knockback\", Amount: 0.2d, Operation: 2, UUID: [I; 2658192, 9234172, -2340, 320]}],HideFlags:2b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

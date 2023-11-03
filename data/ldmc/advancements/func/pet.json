@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:1380001}"
+    },
+    "title": { "translate": "advancements.ldmc.func.pet.title" },
+    "description": { "translate": "advancements.ldmc.func.pet.disc" },
+    "frame": "challenge"
+  },
+  "parent": "ldmc:func/elder",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

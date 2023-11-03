@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "ldmc:firelink_shrine",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 20061003,
+      "separation": 50,
+      "spacing": 120
+    }
+  }

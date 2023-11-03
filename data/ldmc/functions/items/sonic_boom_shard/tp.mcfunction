@@ -1,0 +1,4 @@
+execute at @s run summon minecraft:lightning_bolt ^ ^2 ^5 {Passengers:[{id:"warden",Tags:["WARDEN"],UUID:[I;114514,1919810,29,92],CustomName:'[{"text":"Slark"}]',Brain:{memories:{"minecraft:dig_cooldown":{value: {}, ttl: 1200L}}},HandItems:[{id:"minecraft:totem_of_undying",Count:1b}],Health:1024f,ActiveEffects:[{Id:10,Duration:-1,Amplifier:2,ShowParticles:0b},{Id:11,Duration:-1,Amplifier:3,ShowParticles:0b},{Id:8,Duration:-1,Amplifier:9,ShowParticles:0b}],Attributes:[{Name:"generic.armor",Base:100f},{Name:"generic.attack_knockback",Base:1f},{Name:"generic.max_health",Base:1024f},{Name:"generic.movement_speed",Base:0.75f},{Name:"generic.attack_damage",Base:50f}]}]}
+execute at @s run tp 0001bf52-001d-4b42-0000-001d0000005c ^ ^2 ^3
+execute at @s run tp 608b1f41-bcc5-4617-96f9-a839c6c09b21 ^ ^ ^3
+execute as @e[tag=WARDEN] at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function ldmc:entities/search_air

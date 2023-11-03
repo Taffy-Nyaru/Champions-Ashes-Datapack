@@ -1,0 +1,21 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "generic:main"
+    },
+    "ops": [
+      {
+        "source": "shadow_pearlCMD3",
+        "target": "CustomModelData",
+        "op": "replace"
+      },
+      {
+        "source": "shadow_pearlDamage3",
+        "target": "Damage",
+        "op": "replace"
+      }
+    ]
+  }
+]

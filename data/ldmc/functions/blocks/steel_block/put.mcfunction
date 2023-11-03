@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {item:{Count:1b,id:"iron_block",tag:{CustomModelData:1440010}},brightness:{block:15,sky:15},Tags:["steel_block"]}

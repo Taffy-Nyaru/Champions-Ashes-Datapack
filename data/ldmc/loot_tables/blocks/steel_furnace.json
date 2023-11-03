@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"ldmc:steel_furnace\",display: {Name: '[{\"translate\":\"item.ldmc.steel_furnace\",\"italic\":false}]'},CustomModelData:1440002}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

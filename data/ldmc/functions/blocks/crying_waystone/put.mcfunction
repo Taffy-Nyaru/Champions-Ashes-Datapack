@@ -1,0 +1,2 @@
+summon item_display ~ ~ ~ {item:{Count:1b,id:"lodestone",tag:{CustomModelData:1440011}},Tags:["crying_waystone"],brightness:{block:15,sky:15}}
+summon marker ~ ~ ~ {UUID:[I;980314218,654526154,-1180502870,-1808690844]}

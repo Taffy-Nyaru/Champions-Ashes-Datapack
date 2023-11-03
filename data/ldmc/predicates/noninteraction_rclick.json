@@ -1,0 +1,89 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:crossbow"
+            ],
+            "nbt": "{id:\"ldmc:zweihander\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:echo_shard"
+            ],
+            "nbt": "{id:\"ldmc:sonic_boom_shard\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:amethyst_shard"
+            ],
+            "nbt": "{id:\"ldmc:eternal_crystal\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "nbt": "{id:\"ldmc:gtx690\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:compass"
+            ],
+            "nbt": "{id:\"ldmc:homeward_bone\",LodestoneTracked:1b}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"ldmc:night_cavalry_halberd\"}"
+          }
+        }
+      }
+    }
+  ]
+}

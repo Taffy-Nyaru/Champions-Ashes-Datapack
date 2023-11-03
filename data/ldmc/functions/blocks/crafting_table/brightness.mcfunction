@@ -1,0 +1,1 @@
+execute at @s positioned ~1 ~ ~ if block ~ ~ ~ #ldmc:brightness as @s run function ldmc:blocks/get_light

@@ -1,0 +1,1 @@
+execute if predicate ldmc:get_light/get_light0 if predicate ldmc:get_light/get_light00

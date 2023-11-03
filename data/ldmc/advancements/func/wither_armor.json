@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_chestplate",
+      "nbt": "{CustomModelData:1390008}"
+    },
+    "title": { "translate": "advancements.ldmc.func.wither_armor.title" },
+    "description": { "translate": "advancements.ldmc.func.wither_armor.disc" },
+    "frame": "challenge"
+  },
+  "parent": "ldmc:func/elder",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

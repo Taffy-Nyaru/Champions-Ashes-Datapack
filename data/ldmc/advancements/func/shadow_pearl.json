@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:1390015}"
+      },
+      "title": { "translate": "advancements.ldmc.func.shadow_pearl.title" },
+      "description": { "translate": "advancements.ldmc.func.shadow_pearl.disc" },
+      "frame": "goal"
+    },
+    "parent": "ldmc:func/find_firelink_shrine",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

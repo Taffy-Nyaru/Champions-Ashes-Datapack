@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"ldmc:silver_medal\",display: {Name: '[{\"translate\":\"item.ldmc.silver_medal\",\"italic\":false}]'},CustomModelData:1380002,AttributeModifiers: [{Slot: \"head\", AttributeName: \"generic.luck\", Name: \"generic.luck\", Amount: 2d, Operation: 0, UUID: [I; 1840056, 25565485, 189899405, 890320107]}], HideFlags: 1b, Enchantments:[{id:\"minecraft:looting\",lvl:6}], Unbreakable: true}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

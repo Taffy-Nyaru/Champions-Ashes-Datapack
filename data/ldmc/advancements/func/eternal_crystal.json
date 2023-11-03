@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:amethyst_shard",
+        "nbt": "{CustomModelData:1390012,HideFlags:1b,Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
+      },
+      "title": { "translate": "advancements.ldmc.func.eternal_crystal.title" },
+      "description": { "translate": "advancements.ldmc.func.eternal_crystal.disc" },
+      "frame": "goal"
+    },
+    "parent": "ldmc:func/make_energy_crafter",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

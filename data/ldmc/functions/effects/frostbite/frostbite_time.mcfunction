@@ -1,0 +1,7 @@
+scoreboard players operation #min ldmcValue = @s frostbite_Timer
+scoreboard players operation #min ldmcValue /= #20 ldmcValue
+scoreboard players operation #sec ldmcValue = #min ldmcValue
+scoreboard players operation #min ldmcValue /= #60 ldmcValue
+scoreboard players operation #sec ldmcValue %= #60 ldmcValue
+execute as @s[scores={frostbite_Timer=1..}] if score #sec ldmcValue matches 10.. run title @s actionbar [{"text":"1","font":"ld:frostbite"},{"translate":"title.effect.frostbite","font":"minecraft:default"},{"score":{"name":"#min","objective":"ldmcValue"},"color":"gray","font":"minecraft:default"},{"text":":","font":"minecraft:default"},{"score":{"name":"#sec","objective":"ldmcValue"},"font":"minecraft:default","color":"gray"}]
+execute as @s[scores={frostbite_Timer=1..}] if score #sec ldmcValue matches ..9 run title @s actionbar [{"text":"1","font":"ld:frostbite"},{"translate":"title.effect.frostbite","font":"minecraft:default"},{"score":{"name":"#min","objective":"ldmcValue"},"color":"gray","font":"minecraft:default"},{"text":":","font":"minecraft:default"},{"text":"0","color":"gray","font":"minecraft:default"},{"score":{"name":"#sec","objective":"ldmcValue"},"font":"minecraft:default","color":"gray"}]

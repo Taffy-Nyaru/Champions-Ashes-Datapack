@@ -1,0 +1,2 @@
+execute if entity @s[distance=..10] if block ~ ~ ~ honey_block align xyz positioned ~0.5 ~0.5 ~0.5 run function ldmc:blocks/pooth/put
+execute if entity @s[distance=..10] unless block ~ ~ ~ honey_block positioned ^ ^ ^0.005 run function ldmc:blocks/pooth/ray

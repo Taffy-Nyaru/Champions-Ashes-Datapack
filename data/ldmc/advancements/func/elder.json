@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:1440043,HideFlags:1b,Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
+      },
+      "title": { "translate": "advancements.ldmc.func.elder.title" },
+      "description": { "translate": "advancements.ldmc.func.elder.disc" },
+      "frame": "challenge"
+    },
+    "parent": "ldmc:func/find_firelink_shrine",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

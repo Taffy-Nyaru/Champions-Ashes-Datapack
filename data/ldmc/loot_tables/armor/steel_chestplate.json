@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"ldmc:steel_chestplate\",CustomModelData:1390029,Trim:{material:\"minecraft:impossible\",pattern:\"minecraft:steel_armor\"},display: {Name: '[{\"translate\":\"item.ldmc.steel_chestplate\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"chest\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 0.1d, Operation: 0, UUID: [I;1288507973,1241792561,-1916225004,629629157]},{Slot: \"chest\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 8d, Operation: 0, UUID: [I;-1374419594,590365140,-1258376804,1277903038]},{Slot: \"chest\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 2d, Operation: 0, UUID: [I;1302114434,1238452134,-1113230236,-124616522]}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

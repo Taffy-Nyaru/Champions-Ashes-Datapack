@@ -1,0 +1,2 @@
+function ldmc:items/dragonslayer_greatbow/dragonslayer_greatbow
+function ldmc:items/dragonslayer_greatbow/arbalest/arbalest

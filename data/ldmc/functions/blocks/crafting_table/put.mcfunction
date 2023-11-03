@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {item:{Count:1b,id:"minecraft:dropper",tag:{CustomModelData:1440009}},Tags:["crafter"],brightness:{block:15,sky:15}}

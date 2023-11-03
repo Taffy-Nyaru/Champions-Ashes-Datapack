@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"ldmc:steel_boots\",CustomModelData:1390028,Trim:{material:\"minecraft:impossible\",pattern:\"minecraft:steel_armor\"},display: {Name: '[{\"translate\":\"item.ldmc.steel_boots\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"feet\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 0.1d, Operation: 0, UUID: [I;-1599912184,-2094511712,-1361319635,946244860]},{Slot: \"feet\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 3d, Operation: 0, UUID: [I;1927076891,-893303643,-1571531221,1464191581]},{Slot: \"feet\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 2d, Operation: 0, UUID: [I;-425395691,515985288,-2025512052,1261497077]}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

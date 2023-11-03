@@ -1,0 +1,15 @@
+{
+    "name": "ldmc:firelink_gatefront_right",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "ldmc:firelink_shrine/firelink_gatefront_right",
+          "projection": "rigid",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

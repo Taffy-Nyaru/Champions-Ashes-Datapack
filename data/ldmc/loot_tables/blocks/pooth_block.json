@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:honey_block",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"ldmc:pooth_block\",display: {Name: '[{\"translate\":\"item.ldmc.pooth_block\",\"italic\":false}]'},CustomModelData:1440004}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "nbt": "{id:'ldmc:enchanted_berries'}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ldmc:medal/enchanted_berries"
+  }
+}

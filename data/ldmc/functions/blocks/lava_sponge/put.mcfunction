@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {item:{Count:1b,id:"minecraft:sea_lantern",tag:{CustomModelData:1440008}},Tags:["lava_sponge"]}

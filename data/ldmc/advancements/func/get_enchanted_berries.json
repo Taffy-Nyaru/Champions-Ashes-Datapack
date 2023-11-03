@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:golden_apple",
+        "nbt": "{CustomModelData:1390001,HideFlags:1b,Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
+      },
+      "title": { "translate": "advancements.ldmc.func.consume_enchanted_berries.title" },
+      "description": { "translate": "advancements.ldmc.func.consume_enchanted_berries.disc" },
+      "frame": "goal"
+    },
+    "parent": "ldmc:func/make_energy_crafter",
+    "criteria": {
+      "a": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

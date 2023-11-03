@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:1390007}"
+      },
+      "title": { "translate": "advancements.ldmc.func.vampire_hat.title" },
+      "description": { "translate": "advancements.ldmc.func.vampire_hat.disc" },
+      "frame": "goal"
+    },
+    "parent": "ldmc:func/make_energy_crafter",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
