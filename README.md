@@ -82,7 +82,7 @@ Heart of Echo:
 Eternal Crystal:
 |       | Eternal Crystal |      |
 | :---        |    :----:   |          ---: |
-| Amethyst Shard | Soul Of NEP | Amethyst Shard |
+| Amethyst Shard | Soul Of Elder | Amethyst Shard |
 | Emerald | Quartz | Lapis Lazuli |
 | Diamond | End Crystal | Diamond |
 The steel tools and armors recipes places exactly as how iron tools and armors places in vanilla crafting table. Steel ingots, nuggets and blocks also does every single function in which the iron ingots/nuggets/blocks in vanilla crafting table does.
@@ -272,4 +272,4 @@ Only spawn in the firelink shrine.
 Flying
 Summon magic blades.
 Use every weapon in vanilla minecraft and this datapack.
-Able to parry players
+Able to parry players.
