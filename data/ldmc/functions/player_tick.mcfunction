@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390044
+#CMD 1390048
 advancement grant @s[advancements={ldmc:func/ldmc=false}] only ldmc:func/ldmc
 
 #define storage ldmc:player_data
@@ -101,7 +101,8 @@ execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard pl
 execute as @s at @s run function ldmc:items/dragonslayer_greatbow/golem_arrow
 
 #Arbalest
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} as @s at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{id:"ldmc:arbalest"}}]}] at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
 execute as @s at @s run function ldmc:items/dragonslayer_greatbow/arbalest/lightning_arrow
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"ldmc:dragonslayer_greatbow"}}]}] if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s run function ldmc:items/dragonslayer_greatbow/glitch
 

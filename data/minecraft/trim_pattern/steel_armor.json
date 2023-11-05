@@ -1,7 +1,7 @@
 {
   "asset_id": "minecraft:steel_armor",
   "description": {
-    "translate": "Steel Armor"
+    "translate": "item.ldmc.steel_armor"
   },
   "template_item": "minecraft:skeleton_skull"
 }

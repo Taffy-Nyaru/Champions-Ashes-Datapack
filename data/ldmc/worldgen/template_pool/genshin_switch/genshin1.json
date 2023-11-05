@@ -1,0 +1,15 @@
+{
+    "name": "ldmc:genshin_switch/genshin1",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "ldmc:genshin_switch/genshin1",
+          "projection": "rigid",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

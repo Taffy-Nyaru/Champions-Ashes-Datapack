@@ -1,7 +1,7 @@
 {
   "asset_id": "minecraft:wither_armor",
   "description": {
-    "translate": "Witherite Armor"
+    "translate": "item.ldmc.witherite_armor"
   },
   "template_item": "minecraft:wither_skeleton_skull"
 }

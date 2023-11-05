@@ -177,7 +177,8 @@ It could teleport any entity hurted to void. Right click to summon a night caval
 
 - Eternal Crystal
 Titanite shards.
-One of the Most important crafting recipe but able to help player escape from danger by right clicking it.
+One of the Most important crafting recipe but also able to help player escape from danger by right clicking it.
+Recover hp slowly.
 
 - GTX690
 A graphics card able to mine blocks, same as netherite pickaxe. Will explode when the durability downs to 0, shift+right click to summon a super bomb effected by gravity.
