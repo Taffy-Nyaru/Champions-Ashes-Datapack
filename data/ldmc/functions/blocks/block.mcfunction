@@ -6,9 +6,9 @@ execute as @e[tag=milkweed] at @s unless entity @e[tag=block_clicker,limit=1,dis
 #Milktea buffer time
 execute if entity @e[tag=milkweed,tag=drink_buffer_time_end] run scoreboard players add #drink_buffer_time ldmc_Timer 1
 #Change CustomModelData after drinking the milktea and give effects
-execute as @e[tag=milkweed,tag=!drink_buffer_time_end,nbt={item:{tag:{CustomModelData:1440001}}}] at @s if entity @e[tag=block_clicker,tag=raycast.target,distance=..2,scores={block_lClick=1..}] run function ldmc:blocks/milkweed/drink1
-execute as @e[tag=milkweed,tag=!drink_buffer_time_end,nbt={item:{tag:{CustomModelData:1440005}}}] at @s if entity @e[tag=block_clicker,tag=raycast.target,distance=..2,scores={block_lClick=1..}] run function ldmc:blocks/milkweed/drink2
-execute as @e[tag=milkweed,tag=!drink_buffer_time_end,nbt={item:{tag:{CustomModelData:1440006}}}] at @s if entity @e[tag=block_clicker,tag=raycast.target,distance=..2,scores={block_lClick=1..}] run function ldmc:blocks/milkweed/drink3
+execute as @e[tag=milkweed,tag=!drink_buffer_time_end,nbt={item:{tag:{CustomModelData:1440001}}}] at @s if entity @e[tag=block_clicker,tag=raycast.target,distance=..1,scores={block_lClick=1..}] run function ldmc:blocks/milkweed/drink1
+execute as @e[tag=milkweed,tag=!drink_buffer_time_end,nbt={item:{tag:{CustomModelData:1440005}}}] at @s if entity @e[tag=block_clicker,tag=raycast.target,distance=..1,scores={block_lClick=1..}] run function ldmc:blocks/milkweed/drink2
+execute as @e[tag=milkweed,tag=!drink_buffer_time_end,nbt={item:{tag:{CustomModelData:1440006}}}] at @s if entity @e[tag=block_clicker,tag=raycast.target,distance=..1,scores={block_lClick=1..}] run function ldmc:blocks/milkweed/drink3
 execute if score #drink_buffer_time ldmc_Timer matches 5.. run tag @e[tag=drink_buffer_time_end] remove drink_buffer_time_end
 execute if score #drink_buffer_time ldmc_Timer matches 5.. run scoreboard players set #drink_buffer_time ldmc_Timer 0
 

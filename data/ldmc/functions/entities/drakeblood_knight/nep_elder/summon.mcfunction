@@ -1,0 +1,7 @@
+summon wither_skeleton ~ ~ ~ {CustomName:'[{"text":"{\\"translate\\":\\"entity.ldmc.drakeblood_knight\\",\\"italic\\":false}"}]',Health:1024,CanPickUpLoot:1b,PersistenceRequired:1b,Tags:["nep_elder","drakeblood_knight"],ActiveEffects:[{Id:11,Duration:-1,Amplifier:1,ShowParticles:0b},{Id:22,Duration:-1,Amplifier:1,ShowParticles:0b},{Id:16,Duration:-1,Amplifier:1,ShowParticles:0b},{Id:10,Duration:-1,Amplifier:1,ShowParticles:0b}],Attributes:[{Name:"generic.attack_damage",Base:13f},{Name:"generic.follow_range",Base:2048f},{Name:"generic.knockback_resistance",Base:1f},{Name:"generic.movement_speed",Base:0.4f},{Name:"generic.max_health",Base:1024f}]}
+loot replace entity @e[tag=drakeblood_knight] weapon.mainhand loot ldmc:armor/tools/drakeblood_greatsword
+loot replace entity @e[tag=drakeblood_knight] weapon.offhand loot ldmc:items/void_totem
+loot replace entity @e[tag=drakeblood_knight] armor.head loot ldmc:armor/drakeblood_helmet
+loot replace entity @e[tag=drakeblood_knight] armor.chest loot ldmc:armor/drakeblood_chestplate
+loot replace entity @e[tag=drakeblood_knight] armor.legs loot ldmc:armor/drakeblood_leggings
+loot replace entity @e[tag=drakeblood_knight] armor.feet loot ldmc:armor/drakeblood_boots

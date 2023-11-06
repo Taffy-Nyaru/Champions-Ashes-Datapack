@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390048
+#CMD 1390049
 advancement grant @s[advancements={ldmc:func/ldmc=false}] only ldmc:func/ldmc
 
 #define storage ldmc:player_data
@@ -27,7 +27,7 @@ execute if entity @s[predicate=!ldmc:noninteraction_rclick] run function ldmc:it
 execute as @s store result score @s Y_value run data get entity @s Pos[1]
 
 #Multiplayer rclick
-#execute as @s run function ldmc:summon_interaction
+execute as @s run function ldmc:item_thrower
 execute as @s run function ldmc:multinteraction
 
 #Medals
@@ -67,6 +67,7 @@ execute if entity @s[nbt={Inventory:[{tag:{id:"ldmc:witherite_helmet"}},{tag:{id
 #Eternal Crystal
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:eternal_crystal"}}]} run advancement grant @s[advancements={ldmc:func/eternal_crystal=false}] only ldmc:func/eternal_crystal
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:eternal_crystal"}}} as @s run function ldmc:items/eternal_crystal/eternal_crystal
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{id:"ldmc:eternal_crystal"}}]}] run function ldmc:items/eternal_crystal/eternal_crystal
 
 #Bomber
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:gtx690"}}]} run advancement grant @s[advancements={ldmc:func/gtx690=false}] only ldmc:func/gtx690
@@ -95,7 +96,7 @@ function ldmc:entities/night_cavalry/powers
 
 #DragonSlayer Great bow
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:dragonslayer_greatbow"}}} as @s at @s if score @s usedBow matches 1.. run function ldmc:items/dragonslayer_greatbow/dragonslayer_greatbow
-execute as @s[tag=loop_start] at @s positioned ^ ^1 ^2 if score @s arrow_rain.temp matches 1.. run function ldmc:items/dragonslayer_greatbow/loop_summon_arrow
+execute as @s[tag=loop_start] at @s positioned ^ ^2 ^3 if score @s arrow_rain.temp matches 1.. run function ldmc:items/dragonslayer_greatbow/loop_summon_arrow
 execute if score @s arrow_rain.temp matches 0 run tag @s remove loop_start
 execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard players set @s[tag=!loop_start] arrow_rain.temp 12
 execute as @s at @s run function ldmc:items/dragonslayer_greatbow/golem_arrow

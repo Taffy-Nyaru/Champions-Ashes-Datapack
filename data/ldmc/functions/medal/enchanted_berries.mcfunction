@@ -21,7 +21,6 @@ effect give @s water_breathing 60 1
 summon salmon ^ ^ ^1 {Invulnerable:1b,UUID:[I;-12318,4914,2551,-5830],CustomName:'[{"text":"Pet"}]',PersistenceRequired:1b,Tags:["pet"]}
 tag @s add owner
 execute if entity @e[tag=pet] run advancement grant @s only ldmc:func/pet
-item replace entity @s weapon.mainhand with air
 scoreboard players set @s usedmedal 0
 advancement grant @s[advancements={ldmc:func/get_enchanted_berries=false}] only ldmc:func/get_enchanted_berries
 advancement revoke @s[advancements={ldmc:eat_berries=true}] only ldmc:eat_berries

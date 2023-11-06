@@ -2,6 +2,9 @@ function ldmc:get_recipe
 function ldmc:team
 function ldmc:rclick
 
+#Stalk Dung Pie
+execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:stalk_dung_pie"}}}] at @s run function ldmc:items/stalk_dung_pie
+
 #killtime=0 meaning that a clicker didn't match a player
 #scoreboard players set @e[tag=clicker] killtime 0
 execute as @e[nbt=!{Attributes:[{Name:"minecraft:generic.max_health"}]}] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
@@ -28,10 +31,6 @@ execute as @a run function ldmc:player_tick
 #Kill interaction when player leaves
 execute as @e[tag=clicker,tag=!related] if score @s killtime matches 0 run kill @s
 
-execute as @e[tag=head_projectile] run function ldmc:projectiles/dragon_bomb/bomb_rotate
-
-function ldmc:entities/warden/powers
-execute as @e[tag=bomb,nbt={OnGround:1b}] run data modify entity @s ignited set value 1b
-execute as @e[type=!player,nbt={HandItems:[{id:"minecraft:netherite_sword",tag:{Damage:0,CustomModelData:1390041},Count:1b}]}] at @s on target if entity @s[nbt={HurtTime:1s},distance=..5] run scoreboard players add @s frostbite_Timer 720
-execute as fffe1e4a-0000-c020-0000-63b1ffffb28a at @s run data modify entity @s Owner set from entity @a[limit=1,sort=nearest,distance=..2,nbt={Inventory:[{Slot:103b,tag:{id:"ldmc:cat_medal"}}]}] UUID
+#Misc
 execute as @a if score @s shift matches 1.. run scoreboard players set @s shift 0
+function ldmc:entity_tick

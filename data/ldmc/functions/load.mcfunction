@@ -108,6 +108,21 @@ scoreboard objectives add noumenon_uuid2 dummy
 scoreboard objectives add noumenon_uuid3 dummy
 scoreboard objectives add gamemode dummy
 
+#Drakeblood Knight
+scoreboard objectives add drakeblood_phanalax_time dummy
+scoreboard objectives add 0drakeblood_phanalax_uuid0 dummy
+scoreboard objectives add 0drakeblood_phanalax_uuid1 dummy
+scoreboard objectives add 0drakeblood_phanalax_uuid2 dummy
+scoreboard objectives add 0drakeblood_phanalax_uuid3 dummy
+scoreboard objectives add 1drakeblood_phanalax_uuid0 dummy
+scoreboard objectives add 1drakeblood_phanalax_uuid1 dummy
+scoreboard objectives add 1drakeblood_phanalax_uuid2 dummy
+scoreboard objectives add 1drakeblood_phanalax_uuid3 dummy
+scoreboard objectives add 2drakeblood_phanalax_uuid0 dummy
+scoreboard objectives add 2drakeblood_phanalax_uuid1 dummy
+scoreboard objectives add 2drakeblood_phanalax_uuid2 dummy
+scoreboard objectives add 2drakeblood_phanalax_uuid3 dummy
+
 #Generic
 scoreboard objectives add ldmc_Timer dummy
 scoreboard objectives add ldmcValue dummy
