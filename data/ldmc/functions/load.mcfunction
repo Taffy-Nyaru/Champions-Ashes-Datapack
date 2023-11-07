@@ -18,6 +18,7 @@ scoreboard objectives add usedTotem minecraft.used:minecraft.totem_of_undying
 scoreboard objectives add usedBow minecraft.used:bow
 scoreboard objectives add usedCrossbow minecraft.used:crossbow
 scoreboard objectives add usedBone minecraft.used:minecraft.compass
+scoreboard objectives add player_death minecraft.custom:minecraft.deaths
 
 #scoreboard objectives add uuidplayer dummy
 #scoreboard objectives add uuidinteraction dummy
@@ -122,6 +123,10 @@ scoreboard objectives add 2drakeblood_phanalax_uuid0 dummy
 scoreboard objectives add 2drakeblood_phanalax_uuid1 dummy
 scoreboard objectives add 2drakeblood_phanalax_uuid2 dummy
 scoreboard objectives add 2drakeblood_phanalax_uuid3 dummy
+
+#Parry
+scoreboard objectives add parry_time dummy
+scoreboard objectives add noAI_time dummy
 
 #Generic
 scoreboard objectives add ldmc_Timer dummy

@@ -6,3 +6,4 @@ loot replace entity @e[tag=night_cavalry] armor.head loot ldmc:armor/witherite_h
 loot replace entity @e[tag=night_cavalry] armor.chest loot ldmc:armor/witherite_chestplate
 loot replace entity @e[tag=night_cavalry] armor.legs loot ldmc:armor/witherite_leggings
 loot replace entity @e[tag=night_cavalry] armor.feet loot ldmc:armor/witherite_boots
+execute as @e[tag=night_cavalry] run data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b

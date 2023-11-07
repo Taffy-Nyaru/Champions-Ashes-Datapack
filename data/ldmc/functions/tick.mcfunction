@@ -1,6 +1,7 @@
 function ldmc:get_recipe
 function ldmc:team
 function ldmc:rclick
+execute store result score time.temp time run time query daytime
 
 #Stalk Dung Pie
 execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:stalk_dung_pie"}}}] at @s run function ldmc:items/stalk_dung_pie
@@ -23,14 +24,16 @@ execute store result score #interactionCount entityCount if entity @e[tag=clicke
 execute if score #interactionCount entityCount < #playerCount entityCount as @a[tag=needclicker] at @s run function ldmc:summon_interaction
 execute if score #interactionCount entityCount > #playerCount entityCount run scoreboard players set @e[tag=clicker,tag=!related] killtime 0
 
-execute store result score time.temp time run time query daytime
-
 #Player Tick
 execute as @a run function ldmc:player_tick
+
+#Entity Tick
+function ldmc:entity_tick
 
 #Kill interaction when player leaves
 execute as @e[tag=clicker,tag=!related] if score @s killtime matches 0 run kill @s
 
 #Misc
 execute as @a if score @s shift matches 1.. run scoreboard players set @s shift 0
-function ldmc:entity_tick
+execute as @a if score @s shield_block_damage matches 1.. run scoreboard players set @s shield_block_damage 0
+execute as @e[advancements={ldmc:enter_block=true}] run advancement revoke @s only ldmc:enter_block
