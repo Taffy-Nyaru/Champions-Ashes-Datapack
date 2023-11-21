@@ -225,9 +225,13 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelD
 #execute at @s[tag=boss_killed] if entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run tag @s remove boss_killed
 execute if data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot ldmc:armor/old_sorcerer_hat_nep
 execute if data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run tag @e[type=wither_skeleton,tag=nep_elder] add hat
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot ldmc:armor/old_sorcerer_hat_nep
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run tag @e[type=wither_skeleton,tag=nep_elder] add hat
 tag @e[tag=hat,type=wither_skeleton] remove helmet
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot ldmc:armor/drakeblood_helmet
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run tag @e[type=wither_skeleton,tag=nep_elder] add helmet
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot ldmc:armor/drakeblood_helmet
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run tag @e[type=wither_skeleton,tag=nep_elder] add helmet
 tag @e[tag=helmet,type=wither_skeleton] remove hat
 execute at @s unless entity @e[tag=nep_elder,distance=..50] run tag @s remove start_fight
 
