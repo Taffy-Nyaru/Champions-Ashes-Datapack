@@ -20,6 +20,8 @@ execute at @s unless entity 5100af9e-e223-424b-bfd7-6ce806d33213 run summon item
 execute at @s unless entity 9bf0d198-816f-4084-8c37-27d0f958bba1 run summon item ~ ~1024 ~ {UUID:[I;-1678716520,-2123415420,-1942542384,-111625311],Invulnerable:1b,Age:-32768,NoGravity:1b,PickupDelay:32767,Item:{id:"iron_sword",Count:1b}}
 #Get noumenon uuid
 execute at @s unless entity 849fb73c-4a74-4a27-b935-ddfa1976b4e0 run summon item ~ ~1024 ~ {UUID:[I;-2069907652,1249135143,-1187652102,427209952],Invulnerable:1b,Age:-32768,NoGravity:1b,PickupDelay:32767,Item:{id:"iron_block",Count:1b}}
+#Get parry attacker
+execute at @s unless entity 3367665c-ead2-4cc7-847e-b5cb6dc5fe8d run summon item ~ ~1024 ~ {UUID:[I;862414428,-355316537,-2072070709,1841692301],Invulnerable:1b,Age:-32768,NoGravity:1b,PickupDelay:32767,Item:{id:"shield",Count:1b}}
 
 execute at @s run tp 00000001-0000-0005-0000-000100000004 ~ ~1024 ~
 execute at @s run tp 00000008-0000-0005-0000-000900000003 ~ ~1024 ~
@@ -32,3 +34,4 @@ execute at @s run tp 942429eb-9233-4105-a36e-8fec8f4ce862 ~ ~1024 ~
 execute at @s run tp 5100af9e-e223-424b-bfd7-6ce806d33213 ~ ~1024 ~
 execute at @s run tp 9bf0d198-816f-4084-8c37-27d0f958bba1 ~ ~1024 ~
 execute at @s run tp 849fb73c-4a74-4a27-b935-ddfa1976b4e0 ~ ~1024 ~
+execute at @s run tp 3367665c-ead2-4cc7-847e-b5cb6dc5fe8d ~ ~1024 ~

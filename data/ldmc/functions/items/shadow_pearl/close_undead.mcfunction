@@ -1,2 +1,3 @@
 scoreboard players set @s recursion_times 0
-title @s actionbar "Undead Match Closed"
+scoreboard players set @s shadow_pearl_playerHotbar 9
+title @s actionbar "Tears of Denial Closed"

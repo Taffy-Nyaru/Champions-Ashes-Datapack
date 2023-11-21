@@ -82,7 +82,7 @@ Heart of Echo:
 Eternal Crystal:
 |       | Eternal Crystal |      |
 | :---        |    :----:   |          ---: |
-| Amethyst Shard | Soul Of Elder | Amethyst Shard |
+| Amethyst Shard | Soul Of NEP | Amethyst Shard |
 | Emerald | Quartz | Lapis Lazuli |
 | Diamond | End Crystal | Diamond |
 The steel tools and armors recipes places exactly as how iron tools and armors places in vanilla crafting table. Steel ingots, nuggets and blocks also does every single function in which the iron ingots/nuggets/blocks in vanilla crafting table does.
@@ -129,6 +129,70 @@ Enchanted Berries:
 | Sweet Berries | Sweet Berries | Sweet Berries |
 | Sweet Berries | Enchanted Golden Apple | Sweet Berries |
 | Sweet Berries | Sweet Berries | Sweet Berries |
+
+Stalk Dung Pie:
+|       | Stalk Dung Pie |      |
+| :---        |    :----:   |          ---: |
+| Bone Meal | Mud |  |
+| Brown Dye | Snowball | Brown Dye |
+|  | Brown Dye | |
+
+Brass Shield:
+|       | Brass Shield |      |
+| :---        |    :----:   |          ---: |
+| Copper Ingot |  | Copper Ingot |
+| Copper Ingot | Gold Ingot | Copper Ingot |
+|  | Copper Ingot |  |
+
+Arbalest:
+|       | Arbalest |      |
+| :---        |    :----:   |          ---: |
+| Stick | Chain | Stick |
+| Stick | Tripwire Hook | Stick |
+| String | Eternal Crystal | String |
+
+Dragon Slayer Great Bow:
+|       | Dragon Slayer Great Bow |      |
+| :---        |    :----:   |          ---: |
+| String | End Rod |  |
+| String | Eternal Crystal | Chain |
+| String | End Rod |  |
+
+Ringed Knight Straight Sword:
+|       | Ringed Knight Straight Sword |      |
+| :---        |    :----:   |          ---: |
+|  |  | Blaze Rod |
+| Steel Nugget | Blaze Rod |  |
+| Steel Ingot | Steel Nugget |  |
+
+Murky Hand Scythe:
+|       | Murky Hand Scythe |      |
+| :---        |    :----:   |          ---: |
+|  | Steel Ingot | Steel Ingot |
+|  | Steel Ingot | Eternal Crsytal |
+| Steel Ingot |  |  |
+
+Pontiff Knight Curved Sword:
+|       | Pontiff Knight Curved Sword |      |
+| :---        |    :----:   |          ---: |
+|  | Steel Ingot | Steel Ingot |
+|  | Eternal Crystal | Steel Ingot |
+|  | Steel Ingot |  |
+
+Black Knight Great Axe:
+|       | Black Knight Great Axe |      |
+| :---        |    :----:   |          ---: |
+| Steel Ingot | Steel Ingot | Steel Ingot |
+| Steel Ingot | Eternal Crsytal | Steel Ingot |
+|  | Steel Ingot |  |
+
+Black Knight Shield
+|       | Black Knight Shield |      |
+| :---        |    :----:   |          ---: |
+| Steel Ingot |  | Steel Ingot |
+| Steel Ingot | Steel Ingot | Steel Ingot |
+|  | Steel Ingot |  |
+
 ### Crafting Table
 
 Energy Crafter:
@@ -177,8 +241,7 @@ It could teleport any entity hurted to void. Right click to summon a night caval
 
 - Eternal Crystal
 Titanite shards.
-One of the Most important crafting recipe but also able to help player escape from danger by right clicking it.
-Recover hp slowly.
+One of the Most important crafting recipe but able to help player escape from danger by right clicking it.
 
 - GTX690
 A graphics card able to mine blocks, same as netherite pickaxe. Will explode when the durability downs to 0, shift+right click to summon a super bomb effected by gravity.
@@ -261,16 +324,15 @@ Every attack accumulates frozen effect.
 Protects the player whenever the player recieved damages or hostile mobs is arround the player holding ender ring.
 Able to be teleported to the player.
 
-- DrakeBlood Knights (WIP)
+- DrakeBlood Knights
 Only spawn in the firelink shrine right tower.
 Small Boss with the following abilities:
-Flying
 Summon magic blades.
-Able to parry players.
 
-- Elder.NEP (WIP)
-Only spawn in the firelink shrine.
-Flying
+- Elder.NEP
+Use Nether Star, echo shard, amethyst shard and end crystal to summon in the middle of firelink shrine.
+
+Abilities:
 Summon magic blades.
-Use every weapon in vanilla minecraft and this datapack.
+Use most weapons in this datapack. Each with different abilities.
 Able to parry players.

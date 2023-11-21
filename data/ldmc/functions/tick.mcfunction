@@ -2,6 +2,8 @@ function ldmc:get_recipe
 function ldmc:team
 function ldmc:rclick
 execute store result score time.temp time run time query daytime
+execute at @a as @e[type=item,distance=..100] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
+execute at @s as @e[type=experience_orb,distance=..100] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
 
 #Stalk Dung Pie
 execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:stalk_dung_pie"}}}] at @s run function ldmc:items/stalk_dung_pie
@@ -34,6 +36,6 @@ function ldmc:entity_tick
 execute as @e[tag=clicker,tag=!related] if score @s killtime matches 0 run kill @s
 
 #Misc
-execute as @a if score @s shift matches 1.. run scoreboard players set @s shift 0
 execute as @a if score @s shield_block_damage matches 1.. run scoreboard players set @s shield_block_damage 0
 execute as @e[advancements={ldmc:enter_block=true}] run advancement revoke @s only ldmc:enter_block
+execute as @a if score @s shift matches 1.. run scoreboard players set @s shift 0

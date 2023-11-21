@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "ldmc:items/soul_of_nep"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "ldmc:items/holy_bible"
+          }
+        ]
+      }
+    ]
+}  

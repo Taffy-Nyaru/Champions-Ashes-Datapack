@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:interaction",
+      "minecraft:marker",
+      "minecraft:item_frame",
+      "minecraft:item_display",
+      "minecraft:item",
+      "minecraft:glow_item_frame",
+      "minecraft:experience_bottle",
+      "minecraft:experience_orb",
+      "minecraft:block_display",
+      "#minecraft:arrows",
+      "minecraft:area_effect_cloud",
+      "minecraft:armor_stand"
+    ]
+  }
+  

@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:crossbow",
+        "nbt": "{CustomModelData:1390056}"
+      },
+      "title": { "translate": "advancements.ldmc.func.murky_hand_scythe.title" },
+      "description": { "translate": "advancements.ldmc.func.murky_hand_scythe.disc" },
+      "frame": "challenge"
+    },
+    "parent": "ldmc:func/eternal_crystal",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

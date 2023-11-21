@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bow",
+        "nbt": "{CustomModelData:1390036}"
+      },
+      "title": { "translate": "advancements.ldmc.func.dragonslayer_greatbow.title" },
+      "description": { "translate": "advancements.ldmc.func.dragonslayer_greatbow.disc" },
+      "frame": "challenge"
+    },
+    "parent": "ldmc:func/eternal_crystal",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -6,7 +6,8 @@
         "location": [
           {
             "condition": "minecraft:block_state_property",
-            "block": "minecraft:sea_lantern"
+            "block": "minecraft:sea_lantern",
+            "properties": {}
           }
         ]
       }

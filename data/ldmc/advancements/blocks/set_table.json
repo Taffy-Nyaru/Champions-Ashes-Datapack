@@ -6,7 +6,8 @@
         "location": [
           {
             "condition": "minecraft:block_state_property",
-            "block": "minecraft:dropper"
+            "block": "minecraft:dropper",
+            "properties": {}
           }
         ]
       }

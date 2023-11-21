@@ -8,7 +8,7 @@
     "ops": [
       {
         "source": "refill",
-        "target": "Charged",
+        "target": "ChargedProjectiles",
         "op": "replace"
       }
     ]

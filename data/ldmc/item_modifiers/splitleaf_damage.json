@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "generic:main"
+      },
+      "ops": [
+        {
+          "source": "splitleaf_damage",
+          "target": "Damage",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  

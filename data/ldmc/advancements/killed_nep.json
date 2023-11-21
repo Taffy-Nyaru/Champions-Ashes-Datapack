@@ -1,0 +1,31 @@
+{
+    "parent": "ldmc:func/find_firelink_shrine",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:wither_skeleton",
+                "nbt": "{Tags:[\"nep_elder\"]}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "ldmc:entities/drakeblood_knight/nep_elder/killed_nep",
+      "loot": [
+        "ldmc:items/soul_of_nep",
+        "ldmc:armor/tools/drakeblood_greatsword",
+        "ldmc:armor/drakeblood_helmet",
+        "ldmc:armor/drakeblood_chestplate",
+        "ldmc:armor/drakeblood_leggings",
+        "ldmc:armor/drakeblood_boots"
+      ]
+    }
+}

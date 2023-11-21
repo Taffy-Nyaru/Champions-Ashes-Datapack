@@ -9,7 +9,7 @@
             "minecraft:shield"
           ],
           "count": 1,
-          "nbt": "{id:\"ldmc:caestus\"}"
+          "nbt": "{id:\"ldmc:brass_shield\"}"
         }
       }
     }

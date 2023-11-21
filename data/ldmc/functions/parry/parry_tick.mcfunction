@@ -8,3 +8,6 @@ execute if score @s parry_time matches 11.. run damage @s 1 minecraft:mob_attack
 execute if score @s parry_time matches 11.. run tag @s remove parry
 execute if score @s parry_time matches 11.. run tag @s add parry_used
 execute if score @s parry_time matches 11.. run scoreboard players set @s parry_time 0
+
+execute if entity @e[tag=parry_success,distance=..5] run effect clear @s jump_boost
+execute if entity @e[tag=parry_success,distance=..5] run effect clear @s slowness

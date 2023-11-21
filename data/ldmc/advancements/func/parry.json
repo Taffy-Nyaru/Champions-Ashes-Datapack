@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:shield",
+        "nbt": "{CustomModelData:1390050}"
+      },
+      "title": { "translate": "advancements.ldmc.func.parry.title" },
+      "description": { "translate": "advancements.ldmc.func.parry.disc" },
+      "frame": "goal"
+    },
+    "parent": "ldmc:func/make_energy_crafter",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

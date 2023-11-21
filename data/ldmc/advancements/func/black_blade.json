@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_sword",
+        "nbt": "{CustomModelData:1390060}"
+      },
+      "title": { "translate": "advancements.ldmc.func.black_blade.title" },
+      "description": { "translate": "advancements.ldmc.func.black_blade.disc" },
+      "frame": "challenge"
+    },
+    "parent": "ldmc:func/eternal_crystal",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

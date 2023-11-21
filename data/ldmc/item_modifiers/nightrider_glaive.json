@@ -7,7 +7,7 @@
       },
       "ops": [
         {
-          "source": "nightrider_halberd_damage",
+          "source": "nightrider_glaive_damage",
           "target": "Damage",
           "op": "replace"
         }

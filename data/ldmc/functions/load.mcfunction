@@ -8,16 +8,20 @@ scoreboard objectives add rClick dummy
 scoreboard objectives add lClick dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add raycastvalue dummy
+scoreboard objectives add shadow_pearl_playerHotbar dummy
+scoreboard objectives add ender_ring_playerHotbar dummy
+scoreboard objectives add branch_playerHotbar dummy
 
 #Using Items
 scoreboard objectives add usedAnvil minecraft.custom:minecraft.interact_with_anvil
 scoreboard objectives add usedFurnace minecraft.custom:minecraft.interact_with_furnace
 scoreboard objectives add usedmedal minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add usedBible minecraft.used:minecraft.written_book
+scoreboard objectives add usedCE minecraft.used:minecraft.written_book
 scoreboard objectives add usedTotem minecraft.used:minecraft.totem_of_undying
 scoreboard objectives add usedBow minecraft.used:bow
 scoreboard objectives add usedCrossbow minecraft.used:crossbow
 scoreboard objectives add usedBone minecraft.used:minecraft.compass
+scoreboard objectives add usedFirework minecraft.used:minecraft.firework_rocket
 scoreboard objectives add player_death minecraft.custom:minecraft.deaths
 
 #scoreboard objectives add uuidplayer dummy
@@ -76,6 +80,7 @@ scoreboard objectives add bleeding_Timer dummy
 scoreboard objectives add bloodloss dummy
 scoreboard objectives add frostbite_Timer dummy
 scoreboard objectives add frostbite_burst dummy
+scoreboard objectives add FireTick dummy
 
 #Phanalax
 scoreboard objectives add rotation dummy
@@ -100,7 +105,7 @@ scoreboard objectives add kill.temp2 dummy
 scoreboard objectives add arrow_rain.temp dummy
 
 #NightCavalry Halberd
-scoreboard objectives add damage dummy
+scoreboard objectives add glaive_damage dummy
 
 #Spectator mode
 scoreboard objectives add noumenon_uuid0 dummy
@@ -123,10 +128,36 @@ scoreboard objectives add 2drakeblood_phanalax_uuid0 dummy
 scoreboard objectives add 2drakeblood_phanalax_uuid1 dummy
 scoreboard objectives add 2drakeblood_phanalax_uuid2 dummy
 scoreboard objectives add 2drakeblood_phanalax_uuid3 dummy
+scoreboard objectives add Elder_Health dummy
+scoreboard objectives add summon.temp dummy
+bossbar add nep_elder "NEP.Elder"
 
 #Parry
 scoreboard objectives add parry_time dummy
 scoreboard objectives add noAI_time dummy
+
+#RKSS
+scoreboard objectives add cancel dummy
+
+#Murky
+scoreboard objectives add stiff_time dummy
+scoreboard objectives add damage dummy
+scoreboard objectives add quickstep_delay dummy
+
+#PKCS
+scoreboard objectives add skill_time dummy
+scoreboard objectives add pkcs_damage dummy
+
+#Upgrade Table
+scoreboard objectives add rotation_time dummy
+scoreboard objectives add xpLevel dummy
+
+#Bewitching Branch
+scoreboard objectives add charm_time dummy
+
+#Splitleaf
+scoreboard objectives add splitleaf_damage dummy
+scoreboard objectives add splitleaf_stiff_time dummy
 
 #Generic
 scoreboard objectives add ldmc_Timer dummy
@@ -138,12 +169,15 @@ scoreboard players set #20 ldmcValue 20
 scoreboard players set #60 ldmcValue 60
 scoreboard players set #12 ldmcValue 12
 scoreboard players set @a arrow_rain.temp 0
+scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
+execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1
 
 team add friendly
 
 data modify storage generic:main repaircost set value 114514
 data modify storage generic:main medalTag set value "not_overwritable"
-data modify storage generic:main refill set value 1b
+data modify storage generic:main charged set value 1b
+data modify storage generic:main refill set value [{id:"minecraft:air",Count:1b}]
 data modify storage generic:main HatCMD set value 1390007
 data modify storage generic:main gtx4090CMD set value 1390014
 data modify storage generic:main gtx690CMD set value 1390013
@@ -162,6 +196,11 @@ data modify storage generic:main shadow_pearlDamage1 set value 25
 data modify storage generic:main shadow_pearlDamage2 set value 50
 data modify storage generic:main shadow_pearlDamage3 set value 75
 data modify storage generic:main shadow_pearlDamage4 set value 100
-data modify storage generic:main soul_of_elderCMD set value 1440043
+data modify storage generic:main soul_of_elderCMD set value 1390043
+data modify storage generic:main rkssCMD set value 1390054
+data modify storage generic:main rkss_igniteCMD set value 1390055
+data modify storage generic:main branchCMD set value 1390063
+data modify storage generic:main arrow_Motion set value [0.0,-0.5,0.0]
 advancement revoke @a only ldmc:hurt_entities
+summon marker 0 0 0 {UUID:[I;1230931223,-1814085318,-1621598234,1851460226]}
 forceload add 0 0 0 0

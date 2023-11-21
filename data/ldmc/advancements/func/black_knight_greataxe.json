@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_axe",
+        "nbt": "{CustomModelData:1390054}"
+      },
+      "title": { "translate": "advancements.ldmc.func.black_knight_greataxe.title" },
+      "description": { "translate": "advancements.ldmc.func.black_knight_greataxe.disc" },
+      "frame": "challenge"
+    },
+    "parent": "ldmc:func/eternal_crystal",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

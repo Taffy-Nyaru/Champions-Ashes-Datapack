@@ -9,9 +9,11 @@
 
 
 #The rotation of item displays will always stored as quarternions, so if we want to use axis-radian or matrix representation, a storage to store axis-radian nbts are necessary. Here using x-axis
-data modify storage generic:main #phanalax_rotation_angle set value {angle:0,axis:[1.0,0.0,0.0]}
+data modify storage math:io #phanalax_rotation_angle set value {angle:0,axis:[1.0,0.0,0.0]}
 scoreboard players add @s rotation 1
 execute if score @s rotation matches 2147483647 run scoreboard players set @s rotation 0
 #Speed of rotation
-execute store result storage generic:main #phanalax_rotation_angle.angle float 0.08 run scoreboard players get @s rotation
-data modify entity @s transformation.left_rotation set from storage generic:main #phanalax_rotation_angle
+execute store result storage math:io #phanalax_rotation_angle.angle float 0.08 run scoreboard players get @s rotation
+data modify entity @s transformation.left_rotation set from storage math:io #phanalax_rotation_angle
+data modify entity @s interpolation_duration set value 3
+data modify entity @s teleport_duration set value 1

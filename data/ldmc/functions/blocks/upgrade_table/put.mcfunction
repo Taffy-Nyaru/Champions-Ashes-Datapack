@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {item:{Count:1b,id:"glass",tag:{CustomModelData:1440004}},Tags:["upgrade_table"]}

@@ -21,8 +21,15 @@ execute as @e[tag=steel_furnace_lit] run function ldmc:blocks/steel_furnace/stee
 execute as @s[scores={usedFurnace=1..}] if entity @e[tag=raycast.target,tag=steel_furnace,tag=end_smelting] run function ldmc:blocks/steel_furnace/take_loot
 scoreboard players set @s usedFurnace 0
 
-#pooth block
-execute as @e[tag=pooth] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ honey_block run function ldmc:blocks/pooth/destroy
+#Upgrade Table
+#Displaying the item display
+execute as @e[type=item] at @s if block ~ ~-1 ~ glass as @e[tag=upgrade_table,tag=!item_displayed,distance=..1.5] at @s summon item_display run function ldmc:blocks/upgrade_table/display
+execute as @e[type=item] at @s if block ~ ~-1 ~ glass if entity @e[tag=upgrade_table,tag=!item_displayed,distance=..1.5] run kill @s
+execute as @e[tag=upgrade_table,tag=!item_displayed] at @s if entity @e[tag=!upgrade_table,distance=..0.5] run tag @s add item_displayed
+execute at @e[tag=item_displayed] if entity @a[distance=..5,scores={xpLevel=30..}] positioned ~ ~1 ~ as @e[type=item,limit=1,predicate=ldmc:enchanted_books,distance=..0.7] run function ldmc:blocks/upgrade_table/upgrade_table
+execute as @e[tag=item_rotate] run function ldmc:blocks/upgrade_table/rotate
+#Destroy
+execute as @e[tag=upgrade_table] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ glass run function ldmc:blocks/upgrade_table/destroy
 
 #steel block
 execute as @e[tag=steel_block] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ iron_block run function ldmc:blocks/steel_block/destroy
