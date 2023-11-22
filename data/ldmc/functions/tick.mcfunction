@@ -5,9 +5,6 @@ execute store result score time.temp time run time query daytime
 execute at @a as @e[type=item,distance=..100] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
 execute at @s as @e[type=experience_orb,distance=..100] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
 
-#Stalk Dung Pie
-execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:stalk_dung_pie"}}}] at @s run function ldmc:items/stalk_dung_pie
-
 #killtime=0 meaning that a clicker didn't match a player
 #scoreboard players set @e[tag=clicker] killtime 0
 execute as @e[nbt=!{Attributes:[{Name:"minecraft:generic.max_health"}]}] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health

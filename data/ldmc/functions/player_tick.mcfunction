@@ -36,7 +36,7 @@ execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:steel_ingot"
 #Medals
 execute if score @s usedAnvil matches 1.. if data storage ldmc:player_data {Inventory:[{tag:{}}]} as @s run function ldmc:check/anvil
 execute if score @s usedmedal matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{}}} as @s run function ldmc:check/medal
-execute if data storage ldmc:player_data {Head:{tag:{id:"ldmc:vampire_hat"}}} as @s run function ldmc:items/vampire_hat/effects
+execute if data storage ldmc:player_data {Inventory:[{Slot:103b,tag:{id:"ldmc:vampire_hat"}}]} as @s run function ldmc:items/vampire_hat/effects
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:vampire_hat"}}]} run advancement grant @s[advancements={ldmc:func/vampire_hat=false}] only ldmc:func/vampire_hat
 
 #Ringed Knight Straight Sword
@@ -65,9 +65,10 @@ execute if entity @e[tag=head_projectile] as @s[tag=shot] run function ldmc:proj
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:black_blade"}}]} run advancement grant @s[advancements={ldmc:func/black_blade=false}] only ldmc:func/black_blade
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:black_blade"}}} as @s run function ldmc:items/zweihander/black_blade/black_blade
 
-#CT
+#CE
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:cheat_engine"}}} run function ldmc:items/cheat_engine/cheat_engine
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:cheat_engine"}}} as @s[tag=!got_gamemode] run function ldmc:items/cheat_engine/get_gamemode
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:thunder_knife"}}} run tag @s[tag=!killer] add killer
 execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:thunder_knife"}}}] at @s run function ldmc:items/cheat_engine/thunder_knife
 
 #Witherite Armor
@@ -164,6 +165,10 @@ execute unless score @s[tag=helicopter] shift matches 1 at @s run kill @e[tag=sp
 execute unless score @s[tag=helicopter] shift matches 1 run effect clear @s levitation
 execute unless score @s[tag=helicopter] shift matches 1 run tag @s remove helicopter
 execute as @e[tag=splitleaf_stiff] run function ldmc:items/splitleaf/damage
+
+#Stalk Dung Pie
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
+execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:stalk_dung_pie"}}}] at @s run function ldmc:items/stalk_dung_pie
 
 #Blocks
 function ldmc:blocks/block
