@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390065
+#CMD 1390066
 advancement grant @s[advancements={ldmc:func/ldmc=false}] only ldmc:func/ldmc
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
 execute store result score @s xpLevel run data get entity @s XpLevel
@@ -170,6 +170,10 @@ execute as @e[tag=splitleaf_stiff] run function ldmc:items/splitleaf/damage
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
 execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:stalk_dung_pie"}}}] at @s run function ldmc:items/stalk_dung_pie
 
+#Estus Flask
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} at @s if entity @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..6.5] run tag @s add estus_cancel
+execute as @s[tag=estus_cancel] at @s run function ldmc:items/estus_flask/cancel
+
 #Blocks
 function ldmc:blocks/block
 
@@ -248,4 +252,5 @@ execute as @s[advancements={ldmc:hurt_entities=true}] run advancement revoke @s 
 execute as @s[advancements={ldmc:hurt_players_blocked=true}] run advancement revoke @s only ldmc:hurt_players_blocked
 execute as @s[advancements={ldmc:clear_effects=true}] run advancement revoke @s only ldmc:clear_effects
 execute as @s[advancements={ldmc:killed_nep=true}] run advancement revoke @s only ldmc:killed_nep
+execute as @s[advancements={ldmc:estus_cancel=true}] run advancement revoke @s only ldmc:estus_cancel
 #execute as @s[advancements={ldmc:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only ldmc:func/killed_nep

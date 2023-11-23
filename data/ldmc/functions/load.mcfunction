@@ -159,6 +159,9 @@ scoreboard objectives add charm_time dummy
 scoreboard objectives add splitleaf_damage dummy
 scoreboard objectives add splitleaf_stiff_time dummy
 
+#Estus Flask
+scoreboard objectives add estus_cancel_tick dummy
+
 #Generic
 scoreboard objectives add ldmc_Timer dummy
 scoreboard objectives add ldmcValue dummy
