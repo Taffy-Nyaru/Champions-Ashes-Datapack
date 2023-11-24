@@ -96,6 +96,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}}
 execute unless entity @e[tag=bomb,limit=1] if score @s shift matches 1.. at @s if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run function ldmc:items/bomber/bomb
 execute as @s unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run tag @s remove needclicker
 execute if entity @e[predicate=ldmc:misc/bomb_creeper] as @e[predicate=ldmc:misc/bomb_creeper] at @s run function ldmc:items/bomber/explode
+execute at @s positioned ^ ^ ^1 unless block ~ ~ ~ #ldmc:transparent_blocks as @a[tag=chain_mining] run function ldmc:items/bomber/chain_mining
 
 #Shadow Pearl
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:shadow_pearl"}}]} run advancement grant @s[advancements={ldmc:func/shadow_pearl=false}] only ldmc:func/shadow_pearl
