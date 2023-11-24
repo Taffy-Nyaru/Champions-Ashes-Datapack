@@ -1,3 +1,4 @@
+execute positioned ~ ~ ~ if block ~ ~ ~ #ldmc:chain_mining_blocks as @s run function ldmc:items/bomber/chain_mined
 execute positioned ~1 ~ ~ if block ~ ~ ~ #ldmc:chain_mining_blocks as @s run function ldmc:items/bomber/chain_mined
 execute positioned ~-1 ~ ~ if block ~ ~ ~ #ldmc:chain_mining_blocks as @s run function ldmc:items/bomber/chain_mined
 execute positioned ~ ~1 ~ if block ~ ~ ~ #ldmc:chain_mining_blocks as @s run function ldmc:items/bomber/chain_mined
