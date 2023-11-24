@@ -1,0 +1,21 @@
+{
+    "values": [
+      "minecraft:grass",
+      "minecraft:tall_grass",
+      "#minecraft:tall_flowers",
+      "#minecraft:small_flowers",
+      "minecraft:small_dripleaf",
+      "minecraft:water",
+      "minecraft:lava",
+      "minecraft:air",
+      "#minecraft:saplings",
+      "minecraft:crimson_fungus",
+      "minecraft:potted_warped_fungus",
+      "minecraft:brown_mushroom",
+      "minecraft:red_mushroom",
+      "minecraft:cobweb",
+      "minecraft:sugar_cane",
+      "#minecraft:coral_plants",
+      "minecraft:dead_bush"
+    ]
+}  

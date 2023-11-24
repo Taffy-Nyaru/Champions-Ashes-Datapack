@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:honey_bottle"
+            ],
+            "nbt": "{id:\"ldmc:estus_flask\"}"
+          }
+        }
+      }
+    }
+  }
+  

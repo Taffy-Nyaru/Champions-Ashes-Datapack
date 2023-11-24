@@ -1,13 +1,11 @@
-function ldmc:get_recipe
 function ldmc:team
+function ldmc:get_recipe
 function ldmc:rclick
 execute store result score time.temp time run time query daytime
-execute at @a as @e[type=item,distance=..100] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
-execute at @s as @e[type=experience_orb,distance=..100] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
 
 #killtime=0 meaning that a clicker didn't match a player
 #scoreboard players set @e[tag=clicker] killtime 0
-execute as @e[nbt=!{Attributes:[{Name:"minecraft:generic.max_health"}]}] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
+execute if entity @e[predicate=!ldmc:max_health] as @e[predicate=!ldmc:max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 
 #Number of Players
 execute store result score now_player_count player_count if entity @a
@@ -30,7 +28,7 @@ execute as @a run function ldmc:player_tick
 function ldmc:entity_tick
 
 #Kill interaction when player leaves
-execute as @e[tag=clicker,tag=!related] if score @s killtime matches 0 run kill @s
+execute if entity @e[tag=clicker,tag=!related] as @e[tag=clicker,tag=!related] if score @s killtime matches 0 run kill @s
 
 #Misc
 execute as @a if score @s shield_block_damage matches 1.. run scoreboard players set @s shield_block_damage 0

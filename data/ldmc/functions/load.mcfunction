@@ -161,6 +161,7 @@ scoreboard objectives add splitleaf_stiff_time dummy
 
 #Estus Flask
 scoreboard objectives add estus_cancel_tick dummy
+scoreboard objectives add estusCount dummy
 
 #Generic
 scoreboard objectives add ldmc_Timer dummy

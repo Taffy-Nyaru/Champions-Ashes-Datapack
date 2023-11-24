@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{HandItems:[{id:\"minecraft:crossbow\",tag:{id:\"ldmc:pontiff_knight_curved_sword\",Damage:0},Count:1b}]}"
+    }
+}  

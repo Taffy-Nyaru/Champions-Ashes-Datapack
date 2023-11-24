@@ -5,15 +5,16 @@
         "entries": [
           {
             "type": "item",
-            "name": "minecraft:honey_bottle",
+            "name": "minecraft:shield",
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"ldmc:estus_flask\",display: {Name: '[{\"translate\":\"item.ldmc.estus_flask\",\"color\":\"#fee423\",\"italic\":false}]'},CustomModelData:1390066}"
+                "tag": "{id:\"ldmc:red_white_shield\",display: {Name: '[{\"translate\":\"item.ldmc.red_white_shield\",\"italic\":false}]'},CustomModelData:1390067}"
               }
             ]
           }
         ]
       }
     ]
-}
+  }
+  

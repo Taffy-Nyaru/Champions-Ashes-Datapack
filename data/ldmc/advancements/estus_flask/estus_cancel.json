@@ -5,7 +5,7 @@
         "conditions": {
           "item": {
             "items": [
-              "minecraft:potion"
+              "minecraft:honey_bottle"
             ],
             "nbt": "{id:\"ldmc:estus_flask\"}"
           }

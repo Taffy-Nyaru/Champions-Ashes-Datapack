@@ -1,8 +1,13 @@
 #CMD 1440012
-#CMD 1390066
+#CMD 1390067
+#RKSS skill, chain mining, a command to get all items in a time
 advancement grant @s[advancements={ldmc:func/ldmc=false}] only ldmc:func/ldmc
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
 execute store result score @s xpLevel run data get entity @s XpLevel
+
+#Save the items and xp orbs in special lightning bolts
+execute at @s if entity @e[type=item,distance=..120] as @e[type=item,distance=..120] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
+execute at @s if entity @e[type=experience_orb,distance=..120] as @e[type=experience_orb,distance=..120] at @s if entity @e[tag=Thunder,distance=..5] run data modify entity @s Invulnerable set value 1b
 
 #define storage ldmc:player_data
 #define storage generic:main
@@ -26,11 +31,11 @@ execute as @s[scores={buffer.temp=20..}] run scoreboard players set @s buffer.te
 #execute unless data entity @s Inventory[{Slot:103b}] run data modify storage ldmc:player_data Head set value []
 
 execute if entity @s[predicate=!ldmc:noninteraction_rclick] run function ldmc:items/not_using
-execute as @s store result score @s Y_value run data get entity @s Pos[1]
+execute store result score @s Y_value run data get entity @s Pos[1]
 
 #Multiplayer rclick
-execute as @s run function ldmc:item_thrower
-execute as @s run function ldmc:multinteraction
+function ldmc:item_thrower
+function ldmc:multinteraction
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:steel_ingot"}}]} run advancement grant @s[advancements={ldmc:func/steel_ingot=false}] only ldmc:func/steel_ingot
 
 #Medals
@@ -52,10 +57,6 @@ execute at @s if score @s ateberries matches 1.. if data storage ldmc:player_dat
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:sonic_boom_shard"}}]} run advancement grant @s[advancements={ldmc:func/get_echo_heart=false}] only ldmc:func/get_echo_heart
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:sonic_boom_shard"}}} as @s run function ldmc:items/sonic_boom_shard/shard
 
-#Digestive Juice
-execute as @e[type=potion,nbt={Item:{tag:{Potion:"minecraft:water"}}}] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice
-execute as @e[type=item,nbt={Item:{tag:{Potion:"minecraft:water"}}}] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice
-
 #Zweihander
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:zweihander"}}]} run advancement grant @s[advancements={ldmc:func/zwei=false}] only ldmc:func/zwei
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:zweihander"}}} as @s run function ldmc:items/zweihander/zweihander
@@ -69,7 +70,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:black_blad
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:cheat_engine"}}} run function ldmc:items/cheat_engine/cheat_engine
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:cheat_engine"}}} as @s[tag=!got_gamemode] run function ldmc:items/cheat_engine/get_gamemode
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:thunder_knife"}}} run tag @s[tag=!killer] add killer
-execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:thunder_knife"}}}] at @s run function ldmc:items/cheat_engine/thunder_knife
+execute if entity @e[predicate=ldmc:misc/thunder_knife] as @e[predicate=ldmc:misc/thunder_knife] at @s run function ldmc:items/cheat_engine/thunder_knife
 
 #Witherite Armor
 execute if data storage ldmc:player_data {Inventory:[{Slot:103b,tag:{id:"ldmc:witherite_helmet"}}]} run function ldmc:items/armor/witherite_helmet
@@ -89,7 +90,7 @@ execute if data storage ldmc:player_data {Inventory:[{Slot:102b,tag:{id:"ldmc:bo
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} as @s run function ldmc:items/bomber/gtx690
 execute unless entity @e[tag=bomb] as @s if score @s shift matches 1.. at @s if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run function ldmc:items/bomber/bomb
 execute as @s unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run tag @s remove needclicker
-execute as @e[tag=bomb,nbt={OnGround:1b}] at @s run function ldmc:items/bomber/explode
+execute if entity @e[predicate=ldmc:misc/bomb_creeper] as @e[predicate=ldmc:misc/bomb_creeper] at @s run function ldmc:items/bomber/explode
 
 #Shadow Pearl
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:shadow_pearl"}}]} run advancement grant @s[advancements={ldmc:func/shadow_pearl=false}] only ldmc:func/shadow_pearl
@@ -119,7 +120,7 @@ execute as @s at @s run function ldmc:items/dragonslayer_greatbow/golem_arrow
 #Arbalest
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:arbalest"}}]} run advancement grant @s[advancements={ldmc:func/arbalest=false}] only ldmc:func/arbalest
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
-execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{id:"ldmc:arbalest"}}]}] at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:arbalest"}}]} at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
 execute as @s at @s run function ldmc:items/dragonslayer_greatbow/arbalest/lightning_arrow
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:dragonslayer_greatbow"}}]} if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s run function ldmc:items/dragonslayer_greatbow/glitch
 
@@ -149,28 +150,32 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:bewitching
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. store result score @s branch_playerHotbar run data get entity @s SelectedItemSlot
 execute as @s[tag=used_charm] run function ldmc:items/bewitching_branch/used
 execute if data storage ldmc:player_data {SelectedItem:{tag:{CustomModelData:1390062,id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. at @s as @e[tag=raycast.target,team=!friendly,limit=1,distance=..6] run tag @s add charmed
-execute as @e[tag=charmed] at @s run function ldmc:items/bewitching_branch/charm
+execute if entity @e[tag=charmed] as @e[tag=charmed] at @s run function ldmc:items/bewitching_branch/charm
 
 #Splitleaf
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run function ldmc:items/splitleaf/splitleaf
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} if score @s splitleaf_damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} if score @s splitleaf_damage matches 2031.. run scoreboard players set @s splitleaf_damage -1
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} if score @s splitleaf_damage matches ..-1 run scoreboard players set @s splitleaf_damage 1
-execute as @e[tag=splitleaf_skill] run function ldmc:items/splitleaf/rotation
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} as @e[tag=helicopter] at @s run function ldmc:items/splitleaf/skill
+execute if entity @e[tag=splitleaf_skill] at @s as @e[tag=splitleaf_skill,distance=..6] run function ldmc:items/splitleaf/rotation
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} as @a[tag=helicopter] at @s run function ldmc:items/splitleaf/skill
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} at @s run kill @e[tag=splitleaf_skill,distance=..5]
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run effect clear @s levitation
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run tag @s[tag=helicopter] remove helicopter
+execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run tag @s[tag=infinite_true_combo] remove infinite_true_combo
 execute unless score @s[tag=helicopter] shift matches 1 at @s run kill @e[tag=splitleaf_skill,distance=..5]
 execute unless score @s[tag=helicopter] shift matches 1 run effect clear @s levitation
 execute unless score @s[tag=helicopter] shift matches 1 run tag @s remove helicopter
-execute as @e[tag=splitleaf_stiff] run function ldmc:items/splitleaf/damage
+execute unless score @s[tag=infinite_true_combo] shift matches 1 run tag @s remove infinite_true_combo
+execute at @s as @e[tag=splitleaf_stiff,distance=..6] run function ldmc:items/splitleaf/damage
 
 #Stalk Dung Pie
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
-execute as @e[type=snowball,nbt={Item:{tag:{id:"ldmc:stalk_dung_pie"}}}] at @s run function ldmc:items/stalk_dung_pie
+execute if entity @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] as @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] at @s run function ldmc:items/stalk_dung_pie
 
 #Estus Flask
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} store result score @s estusCount run data get entity @s SelectedItem.Count
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} if entity @s[advancements={ldmc:estus_flask/used_estus_flask=true}] run effect give @s instant_health 4 2 true
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} at @s if entity @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..6.5] run tag @s add estus_cancel
 execute as @s[tag=estus_cancel] at @s run function ldmc:items/estus_flask/cancel
 
@@ -179,18 +184,30 @@ function ldmc:blocks/block
 
 #Phanalax
 execute as @s[tag=with_phanalax] run function ldmc:projectiles/phanalax/phanalax
-execute as @e[tag=phanalax0] run function ldmc:projectiles/phanalax/rotation
-execute as @e[tag=phanalax1] run function ldmc:projectiles/phanalax/rotation
-execute as @e[tag=phanalax2] run function ldmc:projectiles/phanalax/rotation
+execute if entity @e[tag=phanalax0] as @e[tag=phanalax0] run function ldmc:projectiles/phanalax/rotation
+execute if entity @e[tag=phanalax1] as @e[tag=phanalax1] run function ldmc:projectiles/phanalax/rotation
+execute if entity @e[tag=phanalax2] as @e[tag=phanalax2] run function ldmc:projectiles/phanalax/rotation
+
+#Brass Shield
+execute as @s[advancements={ldmc:parry/brass_parry=true},tag=!parry_used] run tag @s add parry
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:brass_shield"}}} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:brass_shield"}}]} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
+execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:brass_shield"}}} unless data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:brass_shield"}}]} run teleport @e[tag=shield_breaker,limit=1] 0 -70 0
+
+#Red White Shield
+execute as @s[advancements={ldmc:parry/red_white_parry=true},tag=!parry_used] run tag @s add parry
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:red_white_shield"}}]} at @s run effect give @s regeneration 1 0 true
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:red_white_shield"}}]} if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run tag @s add infinite_true_combo
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:red_white_shield"}}} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:red_white_shield"}}]} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
+execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:red_white_shield"}}} unless data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:red_white_shield"}}]} run teleport @e[tag=shield_breaker,limit=1] 0 -70 0
 
 #Parry
-execute as @s[advancements={ldmc:parry=true},tag=!parry_used] run tag @s add parry
-execute as @e[tag=parry_target] at @s unless entity @a[tag=parry,distance=..5] run tag @s remove parry_target
+execute if entity @e[tag=parry_target] as @e[tag=parry_target] at @s unless entity @a[tag=parry,distance=..5] run tag @s remove parry_target
 execute as @s[tag=parry] at @s run function ldmc:parry/parry_tick
-execute as @s[advancements={ldmc:parry=false}] run tag @s remove parry_used
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:brass_shield"}}} at @s run teleport @e[tag=shield_breaker] ^ ^ ^127
-execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:brass_shield"}}]} at @s run teleport @e[tag=shield_breaker] ^ ^ ^127
-execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:brass_shield"}}} unless data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:brass_shield"}}]} run teleport @e[tag=shield_breaker] 0 -70 0
+execute as @s[advancements={ldmc:parry/brass_parry=false}] run tag @s remove parry_used
+execute as @s[advancements={ldmc:parry/red_white_parry=false}] run tag @s remove parry_used
+
 #Black Knight Great Axe
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:black_knight_greataxe"}}} at @s if entity @e[tag=parry_success,distance=..5] run effect give @s strength 5 4
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:black_knight_greataxe"}}]} run advancement grant @s[advancements={ldmc:func/black_knight_greataxe=false}] only ldmc:func/black_knight_greataxe
@@ -210,7 +227,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:pontiff_kn
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:pontiff_knight_curved_sword"}}} if score @s pkcs_damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:pontiff_knight_curved_sword"}}} if score @s pkcs_damage matches 465.. run scoreboard players set @s pkcs_damage -1
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:pontiff_knight_curved_sword"}}} if score @s pkcs_damage matches ..-1 run scoreboard players set @s pkcs_damage 1
-execute as @e[tag=pkcs_skill] run function ldmc:items/pkcs/rotation
+execute if entity @e[tag=pkcs_skill] at @s as @e[tag=pkcs_skill,distance=..6] run function ldmc:items/pkcs/rotation
 execute as @s[tag=using_skill] at @s run function ldmc:items/pkcs/skill
 
 #Clear effects after death
@@ -226,10 +243,9 @@ execute if score @s usedBow matches 1.. run scoreboard players set @s usedBow 0
 execute if score @s usedFirework matches 1.. run scoreboard players set @s usedFirework 0
 
 #NEP
-#execute unless entity @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:1390005}}}] if entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run bossbar set nep_elder players @s
 execute at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run bossbar set nep_elder players
-execute if entity @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:1390005}}}] run function ldmc:entities/drakeblood_knight/nep_elder/killed_nep
-execute as @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:1390005}}}] run kill @s
+execute if entity @e[type=item,predicate=ldmc:misc/cheat_engine] run function ldmc:entities/drakeblood_knight/nep_elder/killed_nep
+execute if entity @e[type=item,predicate=ldmc:misc/cheat_engine] run kill @e[type=item,predicate=ldmc:misc/cheat_engine]
 #execute at @s[tag=start_fight] unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run tags add boss_killed
 #execute at @s[tag=boss_killed] if entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run tag @s remove boss_killed
 execute if data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot ldmc:armor/old_sorcerer_hat_nep
@@ -247,10 +263,12 @@ execute at @s unless entity @e[tag=nep_elder,distance=..50] run tag @s remove st
 #Reload Advancements
 data modify storage ldmc:player_data SelectedItem set value {}
 data modify storage ldmc:player_data Inventory set value {}
-execute as @s[advancements={ldmc:parry=true}] run advancement revoke @s only ldmc:parry
+execute as @s[advancements={ldmc:parry/brass_parry=true}] run advancement revoke @s only ldmc:parry/brass_parry
+execute as @s[advancements={ldmc:parry/red_white_parry=true}] run advancement revoke @s only ldmc:parry/red_white_parry
 execute as @s[advancements={ldmc:hurt_entities=true}] run advancement revoke @s only ldmc:hurt_entities
 execute as @s[advancements={ldmc:hurt_players_blocked=true}] run advancement revoke @s only ldmc:hurt_players_blocked
 execute as @s[advancements={ldmc:clear_effects=true}] run advancement revoke @s only ldmc:clear_effects
 execute as @s[advancements={ldmc:killed_nep=true}] run advancement revoke @s only ldmc:killed_nep
-execute as @s[advancements={ldmc:estus_cancel=true}] run advancement revoke @s only ldmc:estus_cancel
+execute as @s[advancements={ldmc:estus_flask/estus_cancel=true}] run advancement revoke @s only ldmc:estus_flask/estus_cancel
+execute as @s[advancements={ldmc:estus_flask/used_estus_flask=true}] run advancement revoke @s only ldmc:estus_flask/used_estus_flask
 #execute as @s[advancements={ldmc:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only ldmc:func/killed_nep

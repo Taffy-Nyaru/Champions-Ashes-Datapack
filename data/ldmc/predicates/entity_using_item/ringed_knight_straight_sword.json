@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{HandItems:[{id:\"minecraft:netherite_sword\",tag:{id:\"ldmc:ringed_knight_straight_sword\",Damage:0},Count:1b}]}"
+    }
+}  
