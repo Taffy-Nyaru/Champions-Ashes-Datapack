@@ -81,14 +81,16 @@ execute if entity @s[predicate=ldmc:using_item/witherite_armor_advancement] run 
 
 #Eternal Crystal
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:eternal_crystal"}}]} run advancement grant @s[advancements={ldmc:func/eternal_crystal=false}] only ldmc:func/eternal_crystal
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:eternal_crystal"}}} as @s run function ldmc:items/eternal_crystal/eternal_crystal
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:eternal_crystal"}}} run function ldmc:items/eternal_crystal/eternal_crystal
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:eternal_crystal"}}]} run function ldmc:items/eternal_crystal/eternal_crystal
 
 #Bomber
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:gtx690"}}]} run advancement grant @s[advancements={ldmc:func/gtx690=false}] only ldmc:func/gtx690
 execute if data storage ldmc:player_data {Inventory:[{Slot:102b,tag:{id:"ldmc:bomber"}}]} run function ldmc:items/bomber/bomber
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} as @s run function ldmc:items/bomber/gtx690
-execute unless entity @e[tag=bomb] as @s if score @s shift matches 1.. at @s if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run function ldmc:items/bomber/bomb
+
+#GTX690
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run function ldmc:items/bomber/gtx690
+execute unless entity @e[tag=bomb,limit=1] if score @s shift matches 1.. at @s if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run function ldmc:items/bomber/bomb
 execute as @s unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gtx690"}}} run tag @s remove needclicker
 execute if entity @e[predicate=ldmc:misc/bomb_creeper] as @e[predicate=ldmc:misc/bomb_creeper] at @s run function ldmc:items/bomber/explode
 
@@ -104,28 +106,28 @@ execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:v
 
 #Ender Ring
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:ender_ring"}}]} run advancement grant @s[advancements={ldmc:func/ender_ring=false}] only ldmc:func/ender_ring
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ender_ring"}}} as @s run function ldmc:items/ender_ring/ender_ring
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ender_ring"}}} run function ldmc:items/ender_ring/ender_ring
 execute as @a[tag=remote_gateway] if score rand_output math_output matches 99999.. run function ldmc:items/ender_ring/teleport
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ender_ring"}}} unless data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:ender_ring"}}]} run tag @s remove omen_king
 function ldmc:entities/night_cavalry/powers
 
 #DragonSlayer Great bow
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:dragonslayer_greatbow"}}]} run advancement grant @s[advancements={ldmc:func/dragonslayer_greatbow=false}] only ldmc:func/dragonslayer_greatbow
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:dragonslayer_greatbow"}}} as @s at @s if score @s usedBow matches 1.. run function ldmc:items/dragonslayer_greatbow/dragonslayer_greatbow
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:dragonslayer_greatbow"}}} at @s if score @s usedBow matches 1.. run function ldmc:items/dragonslayer_greatbow/dragonslayer_greatbow
 execute as @s[tag=loop_start] at @s positioned ^ ^2 ^2 if score @s arrow_rain.temp matches 1.. run function ldmc:items/dragonslayer_greatbow/loop_summon_arrow
 execute if score @s arrow_rain.temp matches 0 run tag @s remove loop_start
 execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard players set @s[tag=!loop_start] arrow_rain.temp 12
-execute as @s at @s run function ldmc:items/dragonslayer_greatbow/golem_arrow
+execute at @s run function ldmc:items/dragonslayer_greatbow/golem_arrow
 
 #Arbalest
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:arbalest"}}]} run advancement grant @s[advancements={ldmc:func/arbalest=false}] only ldmc:func/arbalest
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:arbalest"}}]} at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
-execute as @s at @s run function ldmc:items/dragonslayer_greatbow/arbalest/lightning_arrow
+execute at @s run function ldmc:items/dragonslayer_greatbow/arbalest/lightning_arrow
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:dragonslayer_greatbow"}}]} if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s run function ldmc:items/dragonslayer_greatbow/glitch
 
 #Steel Tools
-execute as @s run function ldmc:items/steel_tools
+function ldmc:items/steel_tools
 
 #Nightrider Glaive
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:night_cavalry_halberd"}}]} run advancement grant @s[advancements={ldmc:func/nightrider_glaive=false}] only ldmc:func/nightrider_glaive
@@ -134,7 +136,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:night_cava
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:night_cavalry_halberd"}}} if score @s glaive_damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if score @s glaive_damage matches 2031.. run scoreboard players set @s glaive_damage -1
 execute if score @s glaive_damage matches ..-1 run scoreboard players set @s glaive_damage 1
-execute as @s unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:night_cavalry_halberd"}}} run tag @s remove needclicker
+execute unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:night_cavalry_halberd"}}} run tag @s remove needclicker
 
 #Drakeblood Greatsword
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:drakeblood_greatsword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] bleeding_Timer 120

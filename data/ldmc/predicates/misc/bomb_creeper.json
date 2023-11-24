@@ -2,7 +2,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "type": "minecraft:creeper",
+      "type": "minecraft:armor_stand",
       "nbt": "{OnGround:1b,Tags:[\"bomb\"]}"
     }
   }
