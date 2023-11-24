@@ -7,14 +7,8 @@ execute if entity @e[tag=bomb] as @e[tag=bomb,predicate=ldmc:misc/bomb_creeper] 
 execute if entity @e[tag=bomb] as @e[tag=bomb] at @s if entity @e[team=!friendly,type=!#ldmc:special_entities,type=!creeper,distance=..10] run damage @s[distance=..10] 1 ldmc:gtx690 by @a[limit=1,sort=nearest]
 execute if entity @e[tag=690bomber] as @e[tag=690bomber] at @s if entity @e[team=!friendly,type=!#ldmc:special_entities,type=!creeper,type=!player,distance=..10] run damage @s[distance=..10] 1 ldmc:gtx690 by @a[limit=1,sort=nearest]
 
-#Entity effects
-execute if entity @e[type=!player,predicate=ldmc:entity_using_item/nightrider_glaive] as @e[type=!player,predicate=ldmc:entity_using_item/nightrider_glaive] at @s on target if entity @s[predicate=ldmc:hurttime,distance=..5] run scoreboard players add @s frostbite_Timer 720
-execute if entity @e[type=!player,predicate=ldmc:entity_using_item/drakeblood_greatsword] as @e[type=!player,predicate=ldmc:entity_using_item/drakeblood_greatsword] at @s as @a[advancements={ldmc:hurt_players=true},distance=..5] run scoreboard players add @s bleeding_Timer 50
-execute if entity @e[type=!player,predicate=ldmc:entity_using_item/drakeblood_greatsword] as @e[type=!player,predicate=ldmc:entity_using_item/drakeblood_greatsword] at @s on target if entity @s[predicate=ldmc:hurttime,distance=..5] run scoreboard players add @s bleeding_Timer 320
-execute if entity @e[type=!player,predicate=ldmc:entity_using_item/black_knight_axe] as @e[type=!player,predicate=ldmc:entity_using_item/black_knight_axe] at @s on target if entity @s[predicate=ldmc:hurttime,tag=parry_success,distance=..5] on attacker run effect give @s strength 5 5 true
-execute if entity @e[type=!player,predicate=ldmc:entity_using_item/ringed_knight_straight_sword] as @e[type=!player,predicate=ldmc:entity_using_item/ringed_knight_straight_sword] at @s on target if entity @s[predicate=ldmc:hurttime,distance=..5] on attacker run data modify entity @s Fire set value 200s
-execute if entity @e[type=!player,predicate=ldmc:entity_using_item/murky_hand_scythe] as @e[type=!player,predicate=ldmc:entity_using_item/murky_hand_scythe] at @s on target if entity @s[predicate=ldmc:hurttime,distance=..5] run tag @s add stiff
-execute if entity @e[type=!player,predicate=ldmc:entity_using_item/pontiff_knight_curved_sword] as @e[type=!player,predicate=ldmc:entity_using_item/pontiff_knight_curved_sword] at @s on target if entity @s[predicate=ldmc:hurttime,distance=..5] run tag @s add frost_stiff
+#Entity effects(Extreme Optimized)
+execute at @e[type=!player,predicate=!ldmc:entity_using_item/no_item] as @e[predicate=ldmc:hurttime,distance=..7] on attacker run function ldmc:entities/using_item
 
 #Digestive Juice
 execute if entity @e[predicate=ldmc:misc/digestive_juice] as @e[predicate=ldmc:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice
@@ -30,9 +24,9 @@ execute if entity @e[tag=entity_with_drakeblood_phanalax] as @e[tag=entity_with_
 execute if entity @e[tag=drakeblood_phanalax0] as @e[tag=drakeblood_phanalax0] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
 execute if entity @e[tag=drakeblood_phanalax1] as @e[tag=drakeblood_phanalax1] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
 execute if entity @e[tag=drakeblood_phanalax2] as @e[tag=drakeblood_phanalax2] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
-execute at @e[tag=entity_with_drakeblood_phanalax] if entity @e[tag=drakeblood_phanalax0,distance=..10] as @e[tag=drakeblood_phanalax0] run function ldmc:projectiles/phanalax/rotation
-execute at @e[tag=entity_with_drakeblood_phanalax] if entity @e[tag=drakeblood_phanalax1,distance=..10] as @e[tag=drakeblood_phanalax1] run function ldmc:projectiles/phanalax/rotation
-execute at @e[tag=entity_with_drakeblood_phanalax] if entity @e[tag=drakeblood_phanalax2,distance=..10] as @e[tag=drakeblood_phanalax2] run function ldmc:projectiles/phanalax/rotation
+execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax0,distance=..10] run function ldmc:projectiles/phanalax/rotation
+execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax1,distance=..10] run function ldmc:projectiles/phanalax/rotation
+execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax2,distance=..10] run function ldmc:projectiles/phanalax/rotation
 execute unless entity @e[tag=nep_elder] run kill @e[tag=parry_shield]
 execute unless entity @e[tag=nep_elder] run kill @e[tag=attacker_indicator]
 

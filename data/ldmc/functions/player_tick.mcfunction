@@ -1,8 +1,8 @@
 #CMD 1440012
 #CMD 1390067
-#RKSS skill, chain mining, a command to get all items in a time
-execute at @s if entity @e[predicate=!ldmc:max_health,distance=..127,tag=!got_max_health] as @e[predicate=ldmc:max_health,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
-execute at @s if entity @e[predicate=!ldmc:max_health,distance=..127] as @e[predicate=ldmc:max_health,distance=..127] run tag @s add got_max_health
+#RKSS skill, a command to get all items in a time
+execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
+execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
 
 advancement grant @s[advancements={ldmc:func/ldmc=false}] only ldmc:func/ldmc
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
@@ -276,4 +276,5 @@ execute as @s[advancements={ldmc:clear_effects=true}] run advancement revoke @s 
 execute as @s[advancements={ldmc:killed_nep=true}] run advancement revoke @s only ldmc:killed_nep
 execute as @s[advancements={ldmc:estus_flask/estus_cancel=true}] run advancement revoke @s only ldmc:estus_flask/estus_cancel
 execute as @s[advancements={ldmc:estus_flask/used_estus_flask=true}] run advancement revoke @s only ldmc:estus_flask/used_estus_flask
+execute as @s[advancements={ldmc:item_durability=true}] run advancement revoke @s only ldmc:item_durability
 #execute as @s[advancements={ldmc:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only ldmc:func/killed_nep
