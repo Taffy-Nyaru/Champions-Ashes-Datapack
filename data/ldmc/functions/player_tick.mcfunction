@@ -1,6 +1,9 @@
 #CMD 1440012
 #CMD 1390067
 #RKSS skill, chain mining, a command to get all items in a time
+execute at @s if entity @e[predicate=!ldmc:max_health,distance=..127,tag=!got_max_health] as @e[predicate=ldmc:max_health,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
+execute at @s if entity @e[predicate=!ldmc:max_health,distance=..127] as @e[predicate=ldmc:max_health,distance=..127] run tag @s add got_max_health
+
 advancement grant @s[advancements={ldmc:func/ldmc=false}] only ldmc:func/ldmc
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
 execute store result score @s xpLevel run data get entity @s XpLevel

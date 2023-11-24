@@ -5,7 +5,6 @@ execute store result score time.temp time run time query daytime
 
 #killtime=0 meaning that a clicker didn't match a player
 #scoreboard players set @e[tag=clicker] killtime 0
-execute if entity @e[predicate=!ldmc:max_health] as @e[predicate=!ldmc:max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 
 #Number of Players
 execute store result score now_player_count player_count if entity @a
