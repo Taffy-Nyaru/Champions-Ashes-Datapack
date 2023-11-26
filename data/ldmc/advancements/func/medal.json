@@ -4,11 +4,11 @@
       "item": "minecraft:warped_fungus_on_a_stick",
       "nbt": "{CustomModelData:1380001}"
     },
-    "title": { "translate": "advancements.ldmc.func.pet.title" },
-    "description": { "translate": "advancements.ldmc.func.pet.disc" },
+    "title": { "translate": "advancements.ldmc.func.medal.title" },
+    "description": { "translate": "advancements.ldmc.func.medal.disc" },
     "frame": "challenge"
   },
-  "parent": "ldmc:func/elder",
+  "parent": "ldmc:func/ldmc",
   "criteria": {
     "a": {
       "trigger": "minecraft:impossible"

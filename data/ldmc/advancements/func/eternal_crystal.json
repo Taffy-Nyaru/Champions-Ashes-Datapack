@@ -8,7 +8,7 @@
       "description": { "translate": "advancements.ldmc.func.eternal_crystal.disc" },
       "frame": "goal"
     },
-    "parent": "ldmc:func/steel_ingot",
+    "parent": "ldmc:func/elder",
     "criteria": {
       "ldmc": {
         "trigger": "minecraft:impossible"

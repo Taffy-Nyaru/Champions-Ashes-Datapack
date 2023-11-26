@@ -1,6 +1,7 @@
 {
-  "values": [
-    "ldmc:tick",
-    "math:tick"
-  ]
+	"values": [
+		"ldmc:tick",
+		"math:tick",
+		"animated_java:tick"
+	]
 }

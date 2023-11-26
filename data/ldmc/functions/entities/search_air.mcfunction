@@ -1,7 +1,6 @@
 execute unless entity 608b1f41-bcc5-4617-96f9-a839c6c09b21 at @s run summon marker ~ ~ ~ {UUID:[I;1619730241,-1127922153,-1762023367,-960455903]}
 
 #6*6*6 air block detect, seperated to 3 layers and each layer is a hollow cube, a ring stands for each layer of a hollow cube execept for the bottom and floor
-
 #layer 0
 execute at @s unless score #air.temp ldmcValue matches 1.. store success score #air.temp ldmcValue positioned ~ ~ ~ if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~2 ~ air run tp 608b1f41-bcc5-4617-96f9-a839c6c09b21 ~ ~ ~
 

@@ -41,8 +41,8 @@ execute at @e[tag=lava_sponge] run function ldmc:blocks/lava_sponge/lava_sponge
 #crafting table
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:crafting_table"}}]} run advancement grant @s[advancements={ldmc:func/make_energy_crafter=false}] only ldmc:func/make_energy_crafter
 execute as @e[tag=crafter] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ dropper run function ldmc:blocks/crafting_table/destroy
-execute at @e[tag=crafter,tag=raycast.target] if entity @a[sort=nearest,distance=..5] run function ldmc:blocks/crafting_table/store
-execute at @e[tag=crafter,tag=raycast.target] if entity @a[sort=nearest,distance=..5] run function ldmc:blocks/crafting_table/recipe
+execute at @e[tag=crafter,tag=raycast.target] if entity @a[sort=nearest,distance=..10] run function ldmc:blocks/crafting_table/store
+execute at @e[tag=crafter,tag=raycast.target] if entity @a[sort=nearest,distance=..10] run function ldmc:blocks/crafting_table/recipe
 
 #crying waystone
 execute as @e[tag=crying_waystone] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ lodestone run function ldmc:blocks/crying_waystone/destroy

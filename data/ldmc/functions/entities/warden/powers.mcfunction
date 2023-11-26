@@ -11,7 +11,7 @@ execute as @a[limit=1] at @s unless entity @e[team=!friendly,type=!#ldmc:special
 execute at @e[tag=WARDEN] run particle sculk_soul ~ ~ ~ 2 2 2 0 10
 
 #execute as @e[tag=WARDEN] at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function ldmc:entities/search_air
-execute as @e[tag=WARDEN] at @s[advancements={ldmc:enter_block=true}] run function ldmc:entities/search_air
+execute as @e[tag=WARDEN] at @s unless block ~ ~ ~ #ldmc:transparent_blocks run function ldmc:entities/search_air
 
 scoreboard players add #wardenaoetimer timer 1
 execute if score #wardenaoetimer timer matches 40..50 at @e[tag=WARDEN] as @e[type=!warden,type=!player,team=!friendly,type=!#ldmc:special_entities,distance=..3] run damage @s 15 minecraft:sonic_boom by @e[limit=1,tag=WARDEN]

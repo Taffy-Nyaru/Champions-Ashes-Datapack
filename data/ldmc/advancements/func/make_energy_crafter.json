@@ -5,7 +5,7 @@
         "nbt": "{CustomModelData:1440009}"
       },
       "title": { "translate": "advancements.ldmc.func.make_energy_crafter.title" },
-      "description": { "translate": "advancements.ldmc.func.make_energy_crafter.disc" },
+      "description": [{ "translate": "advancements.ldmc.func.make_energy_crafter.disc", "font": "minecraft:default", "color": "green"}, {"text":"\ue010\n\n\n\n\n", "font": "ld:recipes/energy_crafter_recipe", "color": "white"}],
       "frame": "task"
     },
     "parent": "ldmc:func/ldmc",
@@ -14,4 +14,4 @@
         "trigger": "minecraft:impossible"
       }
     }
-  }
+}

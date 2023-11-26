@@ -1,0 +1,1 @@
+tag @s remove aj.aquamarine_heavy_skill.animation.aquamarine_heavy_skill.animation

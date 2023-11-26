@@ -1,6 +1,7 @@
 #CMD 1440012
-#CMD 1390067
-#RKSS skill, a command to get all items in a time
+#CMD 1390068
+#RKSS skill, a command to get all items in a time, Aquamarine Animation, advancment image
+#Warrior round shield, Gundyr halberd, caestus, lazer, dragon head shield
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
 
@@ -124,10 +125,10 @@ execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard pl
 execute at @s run function ldmc:items/dragonslayer_greatbow/golem_arrow
 
 #Arbalest
+execute at @s run function ldmc:items/dragonslayer_greatbow/arbalest/blast_arrow
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:arbalest"}}]} run advancement grant @s[advancements={ldmc:func/arbalest=false}] only ldmc:func/arbalest
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:arbalest"}}]} at @s if score @s usedCrossbow matches 1.. run function ldmc:items/dragonslayer_greatbow/arbalest/arbalest
-execute at @s run function ldmc:items/dragonslayer_greatbow/arbalest/lightning_arrow
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:dragonslayer_greatbow"}}]} if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:arbalest"}}} at @s run function ldmc:items/dragonslayer_greatbow/glitch
 
 #Steel Tools
@@ -185,6 +186,9 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flas
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} at @s if entity @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..6.5] run tag @s add estus_cancel
 execute as @s[tag=estus_cancel] at @s run function ldmc:items/estus_flask/cancel
 
+#Aquamarine Dagger
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:aquamarine_dagger"}}} run function ldmc:items/aquamarine_dagger/aquamarine_dagger
+
 #Blocks
 function ldmc:blocks/block
 
@@ -226,6 +230,8 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:murky_hand
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:murky_hand_scythe"}}} if score @s damage matches 465.. run scoreboard players set @s damage -1
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:murky_hand_scythe"}}} if score @s damage matches ..-1 run scoreboard players set @s damage 1
 execute as @s[tag=quickstep] at @s run function ldmc:items/murky/quickstep
+execute if score #quickstep_enter_block ldmc_Timer matches 40.. run tag @s[tag=quickstep_enter_block] remove quickstep_enter_block
+execute if score #quickstep_enter_block ldmc_Timer matches 40.. run scoreboard players set #quickstep_enter_block ldmc_Timer 0
 
 #Pontiff Knight Curved Sword
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:pontiff_knight_curved_sword"}}]} run advancement grant @s[advancements={ldmc:func/pkcs=false}] only ldmc:func/pkcs
@@ -278,4 +284,5 @@ execute as @s[advancements={ldmc:killed_nep=true}] run advancement revoke @s onl
 execute as @s[advancements={ldmc:estus_flask/estus_cancel=true}] run advancement revoke @s only ldmc:estus_flask/estus_cancel
 execute as @s[advancements={ldmc:estus_flask/used_estus_flask=true}] run advancement revoke @s only ldmc:estus_flask/used_estus_flask
 execute as @s[advancements={ldmc:item_durability=true}] run advancement revoke @s only ldmc:item_durability
+execute as @s[advancements={ldmc:enter_block=true}] run advancement revoke @s only ldmc:enter_block
 #execute as @s[advancements={ldmc:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only ldmc:func/killed_nep
