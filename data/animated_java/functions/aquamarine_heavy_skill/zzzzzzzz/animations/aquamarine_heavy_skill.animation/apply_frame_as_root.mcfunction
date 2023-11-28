@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..16 run function animated_java:aquamarine_heavy_skill/zzzzzzzz/animations/aquamarine_heavy_skill.animation/tree/branch_0_16
+execute if score @s aj.anim_time matches 0..25 run function animated_java:aquamarine_heavy_skill/zzzzzzzz/animations/aquamarine_heavy_skill.animation/tree/branch_0_25
