@@ -9,8 +9,8 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:aquamarine_dagger/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.aquamarine_dagger.variant.default aj.id run function animated_java:aquamarine_dagger/zzzzzzzz/apply_variant/default/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.aquamarine_dagger.animation.aquamarine_heavy_skill.animation aj.id run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_heavy_skill.animation/apply_frame_as_root
-execute if score #animation aj.i = $aj.aquamarine_dagger.animation.aquamarine_heavy_skill.animation aj.id run scoreboard players operation @s aj.aquamarine_dagger.animation.aquamarine_heavy_skill.animation.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.aquamarine_dagger.animation.aquamarine_heavy_skill aj.id run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_heavy_skill/apply_frame_as_root
+execute if score #animation aj.i = $aj.aquamarine_dagger.animation.aquamarine_heavy_skill aj.id run scoreboard players operation @s aj.aquamarine_dagger.animation.aquamarine_heavy_skill.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.aquamarine_dagger.animation.aquamarine_skill aj.id run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_skill/apply_frame_as_root
 execute if score #animation aj.i = $aj.aquamarine_dagger.animation.aquamarine_skill aj.id run scoreboard players operation @s aj.aquamarine_dagger.animation.aquamarine_skill.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:aquamarine_dagger/on_summon/as_root

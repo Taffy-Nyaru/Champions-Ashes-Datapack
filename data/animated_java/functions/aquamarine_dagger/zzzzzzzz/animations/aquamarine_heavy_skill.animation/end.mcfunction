@@ -1,3 +1,0 @@
-execute if score @s aj.aquamarine_dagger.animation.aquamarine_heavy_skill.animation.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_heavy_skill.animation/end_loop
-execute if score @s aj.aquamarine_dagger.animation.aquamarine_heavy_skill.animation.loop_mode = $aj.loop_mode.once aj.i run function animated_java:aquamarine_dagger/animations/aquamarine_heavy_skill.animation/stop
-execute if score @s aj.aquamarine_dagger.animation.aquamarine_heavy_skill.animation.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:aquamarine_dagger/animations/aquamarine_heavy_skill.animation/pause
