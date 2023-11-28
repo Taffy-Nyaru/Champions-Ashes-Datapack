@@ -1,0 +1,2 @@
+function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_heavy_skill.animation/pause_as_root
+function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_skill/pause_as_root

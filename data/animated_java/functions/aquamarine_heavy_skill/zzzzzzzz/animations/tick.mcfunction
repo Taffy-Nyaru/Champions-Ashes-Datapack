@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.aquamarine_heavy_skill.animation.aquamarine_heavy_skill.animation] run function animated_java:aquamarine_heavy_skill/zzzzzzzz/animations/aquamarine_heavy_skill.animation/tick

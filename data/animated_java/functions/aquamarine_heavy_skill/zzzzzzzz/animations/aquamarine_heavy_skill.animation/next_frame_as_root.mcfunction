@@ -1,1 +1,0 @@
-function animated_java:aquamarine_heavy_skill/zzzzzzzz/animations/aquamarine_heavy_skill.animation/tick_animation

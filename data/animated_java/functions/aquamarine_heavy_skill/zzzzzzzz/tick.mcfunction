@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.aquamarine_heavy_skill.root] run function animated_java:aquamarine_heavy_skill/zzzzzzzz/tick_as_root
