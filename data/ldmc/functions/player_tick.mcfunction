@@ -187,7 +187,8 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flas
 execute as @s[tag=estus_cancel] at @s run function ldmc:items/estus_flask/cancel
 
 #Aquamarine Dagger
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:aquamarine_dagger"}}} run function ldmc:items/aquamarine_dagger/aquamarine_dagger
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:aquamarine_dagger"}}} at @s run function ldmc:items/aquamarine_dagger/aquamarine_dagger
+execute as @e[tag=aj.aquamarine_dagger.root] at @s run function ldmc:items/aquamarine_dagger/animation
 
 #Blocks
 function ldmc:blocks/block
