@@ -80,6 +80,9 @@ scoreboard objectives add bleeding_Timer dummy
 scoreboard objectives add bloodloss dummy
 scoreboard objectives add frostbite_Timer dummy
 scoreboard objectives add frostbite_burst dummy
+scoreboard objectives add scarlet_rot_Timer dummy
+scoreboard objectives add scarlet_rot_delay dummy
+scoreboard objectives add scarlet_rot_damage dummy
 scoreboard objectives add FireTick dummy
 
 #Phanalax
@@ -162,6 +165,9 @@ scoreboard objectives add splitleaf_stiff_time dummy
 #Estus Flask
 scoreboard objectives add estus_cancel_tick dummy
 scoreboard objectives add estusCount dummy
+
+#Antspur Rapier
+scoreboard objectives add bloodhound_step_delay dummy
 
 #Generic
 scoreboard objectives add ldmc_Timer dummy

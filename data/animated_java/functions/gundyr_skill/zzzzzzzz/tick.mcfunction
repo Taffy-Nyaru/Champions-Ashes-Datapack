@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gundyr_skill.root] run function animated_java:gundyr_skill/zzzzzzzz/tick_as_root

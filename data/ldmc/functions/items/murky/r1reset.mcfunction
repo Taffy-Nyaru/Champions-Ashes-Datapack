@@ -1,1 +1,1 @@
-effect give @s strength 1 1
+effect give @s strength 1

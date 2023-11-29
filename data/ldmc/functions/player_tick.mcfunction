@@ -1,7 +1,7 @@
 #CMD 1440012
-#CMD 1390068
+#CMD 1390070
 #RKSS skill, a command to get all items in a time, Aquamarine Animation
-#Warrior round shield, Gundyr halberd, caestus, lazer, dragon head shield
+#Warrior round shield, lazer, dragon head shield
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
 
@@ -190,6 +190,17 @@ execute as @s[tag=estus_cancel] at @s run function ldmc:items/estus_flask/cancel
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:aquamarine_dagger"}}} at @s run function ldmc:items/aquamarine_dagger/aquamarine_dagger
 execute as @e[tag=aj.aquamarine_dagger.root] at @s run function ldmc:items/aquamarine_dagger/animation
 
+#Antspur Rapier
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:antspur_rapier"}}} at @s run function ldmc:items/antspur_rapier/antspur_rapier
+execute as @s[tag=bloodhound_step] at @s run function ldmc:items/antspur_rapier/bloodhound_steps
+execute if score #bloodhound_step_enter_block ldmc_Timer matches 40.. run tag @s[tag=bloodhound_step_enter_block] remove bloodhound_step_enter_block
+execute if score #bloodhound_step_enter_block ldmc_Timer matches 40.. run scoreboard players set #bloodhound_step_enter_block ldmc_Timer 0
+
+#Gundyr Halberd
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gundyr_halberd"}}} if score @s shift matches 1.. at @s run function ldmc:items/gundyr_halberd/gundyr_halberd
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gundyr_halberd"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+execute at @e[type=marker,tag=gundyr_hitbox] as @e[type=!#ldmc:special_entities,distance=..3.5,tag=!gundyr_halberd] run damage @s 2 ldmc:gtx690 by @a[limit=1,sort=nearest]
+
 #Blocks
 function ldmc:blocks/block
 
@@ -246,6 +257,7 @@ execute as @s[tag=using_skill] at @s run function ldmc:items/pkcs/skill
 #Clear effects after death
 execute as @a[scores={player_death=1..}] run scoreboard players set @s bleeding_Timer 0
 execute as @a[scores={player_death=1..}] run scoreboard players set @s frostbite_Timer 0
+execute as @a[scores={player_death=1..}] run scoreboard players set @s scarlet_rot_Timer 0
 execute as @a[scores={player_death=1..}] run scoreboard players set @s player_death 0
 
 #Using Items

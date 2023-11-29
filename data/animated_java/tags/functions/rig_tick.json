@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"animated_java:aquamarine_dagger/zzzzzzzz/tick"
+		"animated_java:aquamarine_dagger/zzzzzzzz/tick",
+		"animated_java:gundyr_skill/zzzzzzzz/tick"
 	]
 }

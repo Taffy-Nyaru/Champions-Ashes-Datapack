@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:gundyr_skill/zzzzzzzz/animations/gundyr_halberd_skill/tree/leaf_25_as_bone
+execute unless entity @s[tag=aj.gundyr_skill.disable_command_keyframes] at @s run function animated_java:gundyr_skill/zzzzzzzz/animations/gundyr_halberd_skill/tree/leaf_25_effects_0

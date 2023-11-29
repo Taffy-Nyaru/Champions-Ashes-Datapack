@@ -2,6 +2,7 @@
 	"values": [
 		"ldmc:load",
 		"math:load",
-		"animated_java:aquamarine_dagger/zzzzzzzz/load"
+		"animated_java:aquamarine_dagger/zzzzzzzz/load",
+		"animated_java:gundyr_skill/zzzzzzzz/load"
 	]
 }
