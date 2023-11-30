@@ -22,3 +22,6 @@ execute at @s run tp 9bf0d198-816f-4084-8c37-27d0f958bba1 ~ ~1024 ~
 execute at @s run tp 849fb73c-4a74-4a27-b935-ddfa1976b4e0 ~ ~1024 ~
 execute at @s run tp 3367665c-ead2-4cc7-847e-b5cb6dc5fe8d ~ ~1024 ~
 execute at @s run tp @e[tag=clicker] ~ ~1024 ~
+teleport 5f1775a7-0c39-4e17-b666-e0d795300563 @s
+teleport 5f1775a7-0c39-4e17-b666-e0d795300563 0 0 0
+forceload add 0 0 0 0

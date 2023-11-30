@@ -1,6 +1,6 @@
 #CMD 1440012
-#CMD 1390070
-#RKSS skill, a command to get all items in a time, Aquamarine Animation
+#CMD 1390071
+#RKSS skill, a command to get all items in a time
 #Warrior round shield, lazer, dragon head shield
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
@@ -200,6 +200,11 @@ execute if score #bloodhound_step_enter_block ldmc_Timer matches 40.. run scoreb
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gundyr_halberd"}}} if score @s shift matches 1.. at @s run function ldmc:items/gundyr_halberd/gundyr_halberd
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gundyr_halberd"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 execute at @e[type=marker,tag=gundyr_hitbox] as @e[type=!#ldmc:special_entities,distance=..3.5,tag=!gundyr_halberd] run damage @s 2 ldmc:gtx690 by @a[limit=1,sort=nearest]
+
+#Caestus
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:caestus"}}} if score @s usedmedal matches 1.. run tag @s add endure
+execute as @s[tag=endure] at @s run function ldmc:items/caestus/caestus
+
 
 #Blocks
 function ldmc:blocks/block

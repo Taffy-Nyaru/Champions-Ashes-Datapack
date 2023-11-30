@@ -169,6 +169,9 @@ scoreboard objectives add estusCount dummy
 #Antspur Rapier
 scoreboard objectives add bloodhound_step_delay dummy
 
+#Caestus
+scoreboard objectives add endure_Timer dummy
+
 #Generic
 scoreboard objectives add ldmc_Timer dummy
 scoreboard objectives add ldmcValue dummy
@@ -212,5 +215,6 @@ data modify storage generic:main rkss_igniteCMD set value 1390055
 data modify storage generic:main branchCMD set value 1390063
 data modify storage generic:main arrow_Motion set value [0.0,-0.5,0.0]
 advancement revoke @a only ldmc:hurt_entities
+summon marker 0 0 0 {UUID:[I;1595372967,205082135,-1234771753,-1792015005]}
 summon zombified_piglin 0 0 0 {ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:0b}],NoAI:1b,Invulnerable:1b,UUID:[I;1230931223,-1814085318,-1621598234,1851460226]}
 forceload add 0 0 0 0
