@@ -1,6 +1,6 @@
-teleport 5f1775a7-0c39-4e17-b666-e0d795300563 @s
-execute store result entity 5f1775a7-0c39-4e17-b666-e0d795300563 Pos[0] double 1 run scoreboard players get @s lode.pos.x
-execute store result entity 5f1775a7-0c39-4e17-b666-e0d795300563 Pos[1] double 1 run scoreboard players get @s lode.pos.y
-execute store result entity 5f1775a7-0c39-4e17-b666-e0d795300563 Pos[2] double 1 run scoreboard players get @s lode.pos.z
-teleport @s[tag=teleport] 5f1775a7-0c39-4e17-b666-e0d795300563
-teleport 5f1775a7-0c39-4e17-b666-e0d795300563 @s
+teleport @s @a[tag=teleport,limit=1]
+execute store result entity @s Pos[0] double 1 run scoreboard players get @a[tag=teleport,limit=1] lode.pos.x
+execute store result entity @s Pos[1] double 1 run scoreboard players get @a[tag=teleport,limit=1] lode.pos.y
+execute store result entity @s Pos[2] double 1 run scoreboard players get @a[tag=teleport,limit=1] lode.pos.z
+teleport @a[tag=teleport,limit=1] @s
+teleport @s @a[tag=teleport,limit=1]
