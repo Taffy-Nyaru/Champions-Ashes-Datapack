@@ -11,7 +11,7 @@
           },
           {
             "type": "minecraft:loot_table",
-            "name": "ldmc:items/holy_bible"
+            "name": "ldmc:items/cheat_engine"
           }
         ]
       }
