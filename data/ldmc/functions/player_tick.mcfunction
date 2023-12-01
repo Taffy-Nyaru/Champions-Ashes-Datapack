@@ -1,6 +1,6 @@
 #CMD 1440012
 #CMD 1390071
-#RKSS skill, a command to get all items in a time, display direction of the upgrading table. Shadow Pearl need to damage in inventory, Firelink shrine map
+#RKSS skill, a command to get all items in a time, Shadow Pearl need to damage in inventory, Firelink shrine map
 #Warrior round shield, lazer, dragon head shield
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health

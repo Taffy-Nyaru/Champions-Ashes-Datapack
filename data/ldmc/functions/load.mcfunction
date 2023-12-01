@@ -11,6 +11,7 @@ scoreboard objectives add raycastvalue dummy
 scoreboard objectives add shadow_pearl_playerHotbar dummy
 scoreboard objectives add ender_ring_playerHotbar dummy
 scoreboard objectives add branch_playerHotbar dummy
+scoreboard objectives add player_rotation dummy
 
 #Using Items
 scoreboard objectives add usedAnvil minecraft.custom:minecraft.interact_with_anvil
