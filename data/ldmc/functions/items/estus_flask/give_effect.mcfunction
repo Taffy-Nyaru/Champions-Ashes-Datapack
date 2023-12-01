@@ -1,3 +1,4 @@
+advancement grant @s[advancements={ldmc:func/estus_cancel=false}] only ldmc:func/estus_cancel
 scoreboard players remove @s estusCount 1
 effect give @s instant_health 4 3 true
 item modify entity @s weapon.mainhand ldmc:remove_one_item

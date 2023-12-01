@@ -7,10 +7,6 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "ldmc:items/soul_of_nep"
-          },
-          {
-            "type": "minecraft:loot_table",
             "name": "ldmc:items/cheat_engine"
           }
         ]

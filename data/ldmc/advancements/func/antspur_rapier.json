@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:crossbow",
+        "nbt": "{CustomModelData:1390069}"
+      },
+      "title": { "translate": "advancements.ldmc.func.antspur_rapier.title" },
+      "description": { "translate": "advancements.ldmc.func.antspur_rapier.disc" },
+      "frame": "challenge"
+    },
+    "parent": "ldmc:func/eternal_crystal",
+    "criteria": {
+      "ldmc": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

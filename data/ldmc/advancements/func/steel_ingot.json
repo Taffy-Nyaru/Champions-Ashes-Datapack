@@ -8,7 +8,7 @@
       "description": { "translate": "advancements.ldmc.func.steel_ingot.disc" },
       "frame": "task"
     },
-    "parent": "ldmc:func/ldmc",
+    "parent": "ldmc:func/make_energy_crafter",
     "criteria": {
       "ldmc": {
         "trigger": "minecraft:impossible"
