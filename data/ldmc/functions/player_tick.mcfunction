@@ -1,6 +1,6 @@
 #CMD 1440012
 #CMD 1390071
-#RKSS skill, a command to get all items in a time
+#RKSS skill, a command to get all items in a time, display direction of the upgrading table. Shadow Pearl need to damage in inventory, Firelink shrine map
 #Warrior round shield, lazer, dragon head shield
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
@@ -156,7 +156,7 @@ execute as @s[tag=spectator,gamemode=!spectator] run tag @s remove spectator
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. run tag @s add used_charm
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. store result score @s branch_playerHotbar run data get entity @s SelectedItemSlot
 execute as @s[tag=used_charm] run function ldmc:items/bewitching_branch/used
-execute if data storage ldmc:player_data {SelectedItem:{tag:{CustomModelData:1390062,id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. at @s as @e[tag=raycast.target,team=!friendly,limit=1,distance=..6] run tag @s add charmed
+execute if data storage ldmc:player_data {SelectedItem:{tag:{CustomModelData:1390062,id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. at @s as @e[tag=raycast.target,team=!friendly,tag=!drakeblood_knight,limit=1,distance=..6] run tag @s add charmed
 execute if entity @e[tag=charmed] as @e[tag=charmed] at @s run function ldmc:items/bewitching_branch/charm
 
 #Splitleaf
