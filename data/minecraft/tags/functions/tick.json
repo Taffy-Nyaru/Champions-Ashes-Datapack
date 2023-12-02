@@ -3,9 +3,8 @@
 		"ldmc:tick",
 		"math:tick",
 		"animated_java:aquamarine_dagger/zzzzzzzz/tick",
-		"animated_java:aquamarine_dagger/zzzzzzzz/animations/tick",
-		"animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_skill/tick",
-		"animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_heavy_skill/tick",
+		"animated_java:gundyr_skill/zzzzzzzz/tick",
+		"animated_java:rkss_skill/zzzzzzzz/tick",
 		"animated_java:tick"
 	]
 }

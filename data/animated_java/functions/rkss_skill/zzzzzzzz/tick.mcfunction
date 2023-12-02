@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.rkss_skill.root] run function animated_java:rkss_skill/zzzzzzzz/tick_as_root

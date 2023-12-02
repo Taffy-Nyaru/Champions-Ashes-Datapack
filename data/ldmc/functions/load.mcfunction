@@ -12,6 +12,8 @@ scoreboard objectives add shadow_pearl_playerHotbar dummy
 scoreboard objectives add ender_ring_playerHotbar dummy
 scoreboard objectives add branch_playerHotbar dummy
 scoreboard objectives add player_rotation dummy
+scoreboard objectives add stiff_time dummy
+scoreboard objectives add custom_stiff_time dummy
 
 #Using Items
 scoreboard objectives add usedAnvil minecraft.custom:minecraft.interact_with_anvil
@@ -144,7 +146,6 @@ scoreboard objectives add noAI_time dummy
 scoreboard objectives add cancel dummy
 
 #Murky
-scoreboard objectives add stiff_time dummy
 scoreboard objectives add damage dummy
 scoreboard objectives add quickstep_delay dummy
 
@@ -187,6 +188,7 @@ scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
 execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1
 
 team add friendly
+team modify friendly friendlyFire false
 
 data modify storage generic:main repaircost set value 114514
 data modify storage generic:main medalTag set value "not_overwritable"

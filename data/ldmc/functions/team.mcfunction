@@ -1,4 +1,5 @@
 team join friendly @a[team=!friendly]
+team join friendly @e[tag=bomb]
 team join friendly @a[team=!friendly,tag=owner]
 team join friendly @e[team=!friendly,tag=WARDEN]
 team join friendly @e[team=!friendly,tag=pet]

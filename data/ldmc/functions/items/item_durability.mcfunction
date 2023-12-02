@@ -7,7 +7,9 @@ execute if score @s[tag=bloodhound_step,gamemode=survival] usedCrossbow matches 
 execute if entity @s[tag=gundyr_halberd,gamemode=survival] run scoreboard players add @s damage 24
 #Black Blade
 execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s damage 24
+#Ringed Knight Straight Sword
+execute if entity @s[tag=rkss_skill,gamemode=survival] run scoreboard players add @s damage 29
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand ldmc:crossbow_items_damage
-execute if score @s damage matches 465.. run scoreboard players set @s damage -1
+execute if score @s damage matches 2031.. run scoreboard players set @s damage -1

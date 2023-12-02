@@ -1,6 +1,8 @@
 #Warden
 function ldmc:entities/warden/powers
 
+execute at @a as @e[tag=stiff,distance=..128] run function ldmc:items/stiff
+
 #Explosions
 execute if entity @e[tag=head_projectile] as @e[tag=head_projectile] run function ldmc:projectiles/dragon_bomb/bomb_rotate
 execute if entity @e[tag=bomb] as @e[tag=bomb,predicate=ldmc:misc/bomb_creeper] run data modify entity @s ignited set value 1b
@@ -45,7 +47,6 @@ execute if entity @e[scores={FireTick=1..}] as @e[scores={FireTick=1..}] run sco
 execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function ldmc:parry/parry_success
 
 #Stiff
-execute if entity @e[tag=stiff] as @e[tag=stiff] run function ldmc:items/murky/stiff
 execute if entity @e[tag=frost_stiff] as @e[tag=frost_stiff] run function ldmc:items/pkcs/stiff
 
 tag @a[tag=!ally] add ally

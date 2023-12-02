@@ -1,0 +1,2 @@
+scoreboard players set @s aj.rkss_skill.rig_loaded 1
+execute unless score @s aj.rkss_skill.export_version = aj.rkss_skill.export_version aj.i at @s run function animated_java:rkss_skill/zzzzzzzz/mark_outdated_rig

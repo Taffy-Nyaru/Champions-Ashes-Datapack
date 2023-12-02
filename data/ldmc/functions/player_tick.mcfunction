@@ -1,6 +1,6 @@
 #CMD 1440012
 #CMD 1390071
-#RKSS skill, Shadow Pearl need to damage in inventory, Firelink shrine map
+#RKSS skill, Firelink shrine map, README file
 #Warrior round shield, lazer, dragon head shield
 #Boss add new skills and attack types using epic fight
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
@@ -52,8 +52,8 @@ execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:vampire_hat"
 #Ringed Knight Straight Sword
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:ringed_knight_straight_sword"}}]} run advancement grant @s[advancements={ldmc:func/rkss=false}] only ldmc:func/rkss
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ringed_knight_straight_sword"}}} run function ldmc:items/ringed_knight_straight_sword/rkss
-#execute unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ringed_knight_straight_sword"}}} run tag @s remove needclicker
 execute as @s[tag=cancel] run function ldmc:items/ringed_knight_straight_sword/cancel
+execute as @e[tag=aj.rkss_skill.root] at @s run function ldmc:items/ringed_knight_straight_sword/animation
 
 #Enchanted Berries
 execute at @s if score @s ateberries matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:enchanted_berries"}}} as @s run function ldmc:medal/enchanted_berries
@@ -175,7 +175,7 @@ execute unless score @s[tag=helicopter] shift matches 1 at @s run kill @e[tag=sp
 execute unless score @s[tag=helicopter] shift matches 1 run effect clear @s levitation
 execute unless score @s[tag=helicopter] shift matches 1 run tag @s remove helicopter
 execute unless score @s[tag=infinite_true_combo] shift matches 1 run tag @s remove infinite_true_combo
-execute at @s as @e[tag=splitleaf_stiff,distance=..6] run function ldmc:items/splitleaf/damage
+execute at @s as @e[tag=splitleaf_stiff,distance=..20] run function ldmc:items/splitleaf/damage
 
 #Stalk Dung Pie
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
@@ -206,7 +206,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:gundyr_hal
 execute at @e[type=marker,tag=gundyr_hitbox] as @e[type=!#ldmc:special_entities,distance=..3.5,tag=!gundyr_halberd] run damage @s 2 ldmc:gtx690 by @a[limit=1,sort=nearest]
 
 #Caestus
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:caestus"}}} if score @s usedmedal matches 1.. run tag @s add endure
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:caestus"}}]} if score @s usedmedal matches 1.. run tag @s add endure
 execute as @s[tag=endure] at @s run function ldmc:items/caestus/caestus
 
 
