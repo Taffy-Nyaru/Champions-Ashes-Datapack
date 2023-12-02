@@ -158,7 +158,7 @@ execute as @s[tag=spectator,gamemode=!spectator] run tag @s remove spectator
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. run tag @s add used_charm
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. store result score @s branch_playerHotbar run data get entity @s SelectedItemSlot
 execute as @s[tag=used_charm] run function ldmc:items/bewitching_branch/used
-execute if data storage ldmc:player_data {SelectedItem:{tag:{CustomModelData:1390062,id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. at @s as @e[tag=raycast.target,team=!friendly,tag=!drakeblood_knight,limit=1,distance=..6] run tag @s add charmed
+execute if data storage ldmc:player_data {SelectedItem:{tag:{CustomModelData:1390062,id:"ldmc:bewitching_branch"}}} if score @s usedmedal matches 1.. at @s as @e[tag=raycast.target,team=!friendly,type=!wither,type=!ender_dragon,tag=!drakeblood_knight,limit=1,distance=..6] run tag @s add charmed
 execute if entity @e[tag=charmed] as @e[tag=charmed] at @s run function ldmc:items/bewitching_branch/charm
 
 #Splitleaf
