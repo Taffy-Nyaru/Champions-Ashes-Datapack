@@ -1,8 +1,8 @@
 #CMD 1440012
 #CMD 1390071
-#RKSS skill, a command to get all items in a time, Shadow Pearl need to damage in inventory, Firelink shrine map
+#RKSS skill, Shadow Pearl need to damage in inventory, Firelink shrine map
 #Warrior round shield, lazer, dragon head shield
-#Boss add new skills and attack types
+#Boss add new skills and attack types using epic fight
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
 
@@ -272,7 +272,6 @@ execute as @a[scores={player_death=1..}] run scoreboard players set @s player_de
 #Using Items
 execute if score @s usedAnvil matches 1.. run scoreboard players set @s usedAnvil 0
 execute if score @s usedmedal matches 1.. run scoreboard players set @s usedmedal 0
-execute if score @s usedTotem matches 1.. run scoreboard players set @s usedTotem 0
 execute if score @s usedBow matches 1.. run scoreboard players set @s usedBow 0
 execute if score @s usedFirework matches 1.. run scoreboard players set @s usedFirework 0
 

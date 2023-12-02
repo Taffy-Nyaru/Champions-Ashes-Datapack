@@ -3,7 +3,7 @@ execute facing entity @a[tag=shot,limit=1,sort=nearest] feet positioned as @s ru
 execute if entity @e[type=!#ldmc:special_entities,type=!lightning_bolt,team=!friendly,tag=!shot,distance=..10] facing entity @a[tag=shot,limit=1,sort=nearest] eyes positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[type=!#ldmc:special_entities,type=!lightning_bolt,team=!friendly,tag=!shot,limit=1,sort=nearest] eyes positioned as @s run tp @s ^ ^ ^1 ~ ~
 
 #Explosion
-execute as @e[type=!#ldmc:special_entities,type=!lightning_bolt] at @e[tag=head_projectile] if entity @s[distance=..3] run summon creeper ~ ~ ~ {UUID:[I;8,9,6,44],Tags:["bomb"],Fuse:0,powered:1b}
+execute as @e[type=!#ldmc:special_entities,type=!lightning_bolt,tag=!shot] at @e[tag=head_projectile] if entity @s[distance=..3.5] run summon creeper ~ ~ ~ {UUID:[I;8,9,6,44],Tags:["bomb"],Fuse:0,powered:1b}
 
 #When enter block explosion
 execute unless block ~ ~ ~ #ldmc:transparent_blocks run summon creeper ~ ~ ~ {Tags:["bomb"],Fuse:0,powered:1b}
