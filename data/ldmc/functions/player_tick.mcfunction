@@ -145,6 +145,7 @@ execute if score @s glaive_damage matches ..-1 run scoreboard players set @s gla
 execute unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:night_cavalry_halberd"}}} run tag @s remove needclicker
 
 #Drakeblood Greatsword
+execute if entity @s[predicate=ldmc:using_item/drakeblood_armor_advancement] run advancement grant @s[advancements={ldmc:func/drakeblood_armor=false}] only ldmc:func/drakeblood_armor
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:drakeblood_greatsword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] bleeding_Timer 120
 
 #Soul of Elder

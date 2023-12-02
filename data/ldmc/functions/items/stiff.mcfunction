@@ -13,4 +13,3 @@ execute if entity @s[type=!player] run data modify entity @s NoAI set value 1b
 execute if score @s[type=!player] stiff_time >= @s custom_stiff_time run data modify entity @s[type=!player] NoAI set value 0b
 execute if score @s[type=!player] stiff_time >= @s custom_stiff_time run tag @s remove stiff
 execute if score @s[type=!player] stiff_time >= @s custom_stiff_time run scoreboard players set @s stiff_time 0
-scoreboard players set @s custom_stiff_time 0

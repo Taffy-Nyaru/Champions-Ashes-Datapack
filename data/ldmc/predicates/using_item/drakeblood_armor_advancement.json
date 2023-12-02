@@ -1,0 +1,62 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:diamond_helmet"
+              ],
+              "nbt": "{id:\"ldmc:drakeblood_helmet\"}"
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "chest": {
+              "items": [
+                "minecraft:diamond_chestplate"
+              ],
+              "nbt": "{id:\"ldmc:drakeblood_chestplate\"}"
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "legs": {
+              "items": [
+                "minecraft:diamond_leggings"
+              ],
+              "nbt": "{id:\"ldmc:drakeblood_leggings\"}"
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "feet": {
+              "items": [
+                "minecraft:diamond_boots"
+              ],
+              "nbt": "{id:\"ldmc:drakeblood_boots\"}"
+            }
+          }
+        }
+      }
+    ]
+  }
+  
