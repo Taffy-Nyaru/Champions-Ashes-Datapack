@@ -1,5 +1,6 @@
 #CMD 1440012
-#CMD 1390072
+#CMD 1390076
+#If the armor is invisible try reopen the save
 #RKSS skill, Firelink shrine map, README file
 #Warrior round shield, lazer, dragon head shield
 #Boss add new skills and attack types using epic fight
