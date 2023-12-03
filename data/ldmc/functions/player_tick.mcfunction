@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390071
+#CMD 1390072
 #RKSS skill, Firelink shrine map, README file
 #Warrior round shield, lazer, dragon head shield
 #Boss add new skills and attack types using epic fight
@@ -234,6 +234,10 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:red_white_
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:red_white_shield"}}]} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:red_white_shield"}}} unless data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:red_white_shield"}}]} run teleport @e[tag=shield_breaker,limit=1] 0 -70 0
 
+#Warrior Round Shield
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:warrior_round_shield"}}]} if entity @s[advancements={ldmc:magic_damage=true}] run effect give @s instant_health 4 1 true
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:warrior_round_shield"}}]} if entity @s[advancements={ldmc:magic_damage=true}] run effect give @s resistance 1 3 true
+
 #Parry
 execute if entity @e[tag=parry_target] as @e[tag=parry_target] at @s unless entity @a[tag=parry,distance=..5] run tag @s remove parry_target
 execute as @s[tag=parry] at @s run function ldmc:parry/parry_tick
@@ -307,4 +311,5 @@ execute as @s[advancements={ldmc:estus_flask/estus_cancel=true}] run advancement
 execute as @s[advancements={ldmc:estus_flask/used_estus_flask=true}] run advancement revoke @s only ldmc:estus_flask/used_estus_flask
 execute as @s[advancements={ldmc:item_durability=true}] run advancement revoke @s only ldmc:item_durability
 execute as @s[advancements={ldmc:enter_block=true}] run advancement revoke @s only ldmc:enter_block
+execute as @s[advancements={ldmc:magic_damage=true}] run advancement revoke @s only ldmc:magic_damage
 #execute as @s[advancements={ldmc:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only ldmc:func/killed_nep

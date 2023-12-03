@@ -1,6 +1,6 @@
 scoreboard players add @s damage 1
 #Aquamarine Dagger
-execute if score @s[tag=aquamarine_dagger,gamemode=survival] usedCrossbow matches 1.. run scoreboard players add @s damage 49
+execute if score @s[tag=aquamarine_dagger,gamemode=survival] usedCrossbow matches 1.. run scoreboard players add @s damage 9
 #Antspur Rapier
 execute if score @s[tag=bloodhound_step,gamemode=survival] usedCrossbow matches 1.. run scoreboard players add @s damage 14
 #Gundyr Halberd

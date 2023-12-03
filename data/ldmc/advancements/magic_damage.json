@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "type": {
+              "tags": [
+                {
+                  "id": "minecraft:magic_damage",
+                  "expected": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+}  
