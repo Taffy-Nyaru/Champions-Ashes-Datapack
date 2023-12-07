@@ -1,9 +1,11 @@
 #CMD 1440012
-#CMD 1390076
+#CMD 1390078
 #If the armor is invisible try reopen the save
 #RKSS skill, Firelink shrine map, README file
 #Warrior round shield, lazer, dragon head shield
 #Boss add new skills and attack types using epic fight
+function ldmc:raycast/ray
+
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
 

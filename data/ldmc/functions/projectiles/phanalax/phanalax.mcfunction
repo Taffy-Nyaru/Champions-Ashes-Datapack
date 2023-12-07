@@ -17,9 +17,9 @@ execute store result storage math:io 2phanalax_uuid[2] int 1 run scoreboard play
 execute store result storage math:io 2phanalax_uuid[3] int 1 run scoreboard players get @s 2phanalax_uuid3
 data modify entity 9bf0d198-816f-4084-8c37-27d0f958bba1 Thrower set from storage math:io 2phanalax_uuid
 
-execute as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s if entity @e[team=!friendly,distance=..2] run function ldmc:projectiles/phanalax/kill
-execute as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s if entity @e[team=!friendly,distance=..2] run function ldmc:projectiles/phanalax/kill
-execute as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s if entity @e[team=!friendly,distance=..2] run function ldmc:projectiles/phanalax/kill
+execute as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s if entity @e[team=!friendly,distance=..3.5] run function ldmc:projectiles/phanalax/kill
+execute as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s if entity @e[team=!friendly,distance=..3.5] run function ldmc:projectiles/phanalax/kill
+execute as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s if entity @e[team=!friendly,distance=..3.5] run function ldmc:projectiles/phanalax/kill
 
 execute as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin run scoreboard players set @s kill.temp0 0
 execute as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin run scoreboard players set @s kill.temp1 0

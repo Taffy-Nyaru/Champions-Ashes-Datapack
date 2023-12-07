@@ -14,3 +14,7 @@ execute store result storage math:io #item_display_rotation_angle.angle float 0.
 data modify entity @s transformation.left_rotation set from storage math:io #item_display_rotation_angle
 data modify entity @s interpolation_duration set value 3
 data modify entity @s teleport_duration set value 1
+
+
+data modify storage generic:main displayed_item.id set from entity @s[tag=raycast.target] item.id
+data modify storage generic:main displayed_item.tag set from entity @s[tag=raycast.target] item.tag

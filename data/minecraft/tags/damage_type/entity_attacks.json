@@ -1,0 +1,12 @@
+{
+    "values": [
+      "minecraft:arrow",
+      "minecraft:explosion",
+      "minecraft:fireball",
+      "minecraft:generic",
+      "minecraft:lightning_bolts",
+      "minecraft:sonic_boom",
+      "minecraft:mob_attack",
+      "minecraft:mob_projectile"
+    ]
+}

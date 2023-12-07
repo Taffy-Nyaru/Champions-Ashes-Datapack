@@ -17,18 +17,20 @@ execute store result storage math:io 2drakeblood_phanalax_uuid[2] int 1 run scor
 execute store result storage math:io 2drakeblood_phanalax_uuid[3] int 1 run scoreboard players get @s 2drakeblood_phanalax_uuid3
 data modify entity 9bf0d198-816f-4084-8c37-27d0f958bba1 Thrower set from storage math:io 2drakeblood_phanalax_uuid
 
-execute as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s if entity @e[tag=ally,distance=..2] run function ldmc:entities/drakeblood_knight/phanalax_kill
-execute as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s if entity @e[tag=ally,distance=..2] run function ldmc:entities/drakeblood_knight/phanalax_kill
-execute as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s if entity @e[tag=ally,distance=..2] run function ldmc:entities/drakeblood_knight/phanalax_kill
+execute on target run tag @s add foe
 
-execute at @s if entity @e[tag=ally,distance=..5] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s facing entity @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] eyes positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[tag=ally,limit=1,sort=nearest] eyes positioned as @s run tp @s ^ ^ ^1 ~-90 ~-90
-execute at @s unless entity @e[tag=ally,distance=..5] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s rotated as @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] positioned ^ ^ ^ run tp @s ~ ~ ~ ~-90 ~-90
-execute at @s unless entity @e[tag=ally,distance=..5] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin run tp @s ^-1 ^1.5 ^
+execute as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s if entity @e[tag=foe,distance=..3.5] run function ldmc:entities/drakeblood_knight/phanalax_kill
+execute as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s if entity @e[tag=foe,distance=..3.5] run function ldmc:entities/drakeblood_knight/phanalax_kill
+execute as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s if entity @e[tag=foe,distance=..3.5] run function ldmc:entities/drakeblood_knight/phanalax_kill
 
-execute at @s if entity @e[tag=ally,distance=..5] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s facing entity @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] eyes positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[tag=ally,limit=1,sort=nearest] eyes positioned as @s run tp @s ^ ^ ^1 ~-90 ~-90
-execute at @s unless entity @e[tag=ally,distance=..5] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s rotated as @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] positioned ^ ^ ^ run tp @s ~ ~ ~ ~-90 ~-90
-execute at @s unless entity @e[tag=ally,distance=..5] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin run tp @s ^ ^2.5 ^
+execute at @s if entity @e[tag=foe,distance=..5] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s facing entity @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] eyes positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[tag=foe,limit=1,sort=nearest] eyes positioned as @s run tp @s ^ ^ ^1 ~-90 ~-90
+execute at @s unless entity @e[tag=foe,distance=..5] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin at @s rotated as @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] positioned ^ ^ ^ run tp @s ~ ~ ~ ~-90 ~-90
+execute at @s unless entity @e[tag=foe,distance=..5] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin run tp @s ^-1 ^1.5 ^
 
-execute at @s if entity @e[tag=ally,distance=..5] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s facing entity @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] eyes positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[tag=ally,limit=1,sort=nearest] eyes positioned as @s run tp @s ^ ^ ^1 ~-90 ~-90
-execute at @s unless entity @e[tag=ally,distance=..5] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s rotated as @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] positioned ^ ^ ^ run tp @s ~ ~ ~ ~-90 ~-90
-execute at @s unless entity @e[tag=ally,distance=..5] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin run tp @s ^1 ^1.5 ^
+execute at @s if entity @e[tag=foe,distance=..5] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s facing entity @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] eyes positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[tag=foe,limit=1,sort=nearest] eyes positioned as @s run tp @s ^ ^ ^1 ~-90 ~-90
+execute at @s unless entity @e[tag=foe,distance=..5] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin at @s rotated as @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] positioned ^ ^ ^ run tp @s ~ ~ ~ ~-90 ~-90
+execute at @s unless entity @e[tag=foe,distance=..5] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin run tp @s ^ ^2.5 ^
+
+execute at @s if entity @e[tag=foe,distance=..5] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s facing entity @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] eyes positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[tag=foe,limit=1,sort=nearest] eyes positioned as @s run tp @s ^ ^ ^1 ~-90 ~-90
+execute at @s unless entity @e[tag=foe,distance=..5] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin at @s rotated as @e[limit=1,sort=nearest,tag=entity_with_drakeblood_phanalax] positioned ^ ^ ^ run tp @s ~ ~ ~ ~-90 ~-90
+execute at @s unless entity @e[tag=foe,distance=..5] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin run tp @s ^1 ^1.5 ^

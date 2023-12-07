@@ -4,7 +4,15 @@
         "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
-            "blocked": false
+            "blocked": false,
+            "type": {
+              "tags": [
+                {
+                  "id": "minecraft:entity_attacks",
+                  "expected": true
+                }
+              ]
+            }
           }
         }
       }
