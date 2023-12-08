@@ -7,10 +7,10 @@ execute if score #elder_parrying_time ldmc_Timer matches 1 unless entity @e[tag=
 data modify storage math:io rotate_shield set value {angle:0.78539,axis:[1,0,0]}
 
 #Get Attacker
-execute if score #elder_parrying_time ldmc_Timer matches 1..99 run function ldmc:entities/drakeblood_knight/nep_elder/parry_get_attacker
+execute if score #elder_parrying_time ldmc_Timer matches 1..80 run function ldmc:entities/drakeblood_knight/nep_elder/parry_get_attacker
 
 #Parry Time ends
-execute if score #elder_parrying_time ldmc_Timer matches 100.. run function ldmc:entities/drakeblood_knight/nep_elder/parry_time_end
+execute if score #elder_parrying_time ldmc_Timer matches 80.. run function ldmc:entities/drakeblood_knight/nep_elder/parry_time_end
 
 #Floating Shields
 execute as @e[type=item_display,tag=parry_shield] at @s facing entity @e[tag=nep_elder,limit=1,sort=nearest] eyes positioned ^ ^ ^ run tp @s ^0.15 ^-0.01 ^0.01 ~ ~
@@ -20,7 +20,7 @@ effect give @s slowness 1 9 true
 
 #Break the shield when parry success
 execute if entity @a[tag=parry_success,distance=..10] run scoreboard players set #elder_parrying_time ldmc_Timer 0
-execute if entity @a[tag=parry_success,distance=..10] run scoreboard players set parry_random math_output 0
+execute if entity @a[tag=parry_success,distance=..10] run scoreboard players reset parry_random math_output
 execute if entity @a[tag=parry_success,distance=..10] run loot replace entity @s weapon.mainhand loot ldmc:items/black_knight_greataxe
 execute if entity @a[tag=parry_success,distance=..10] run data modify entity @s Invulnerable set value 0b
 execute if entity @a[tag=parry_success,distance=..10] run effect clear @s slowness

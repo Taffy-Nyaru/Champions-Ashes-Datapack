@@ -6,6 +6,6 @@
           "type": "context",
           "target": "this"
       },
-      "score": "estusCount"
+      "score": "itemCount"
     }
 }

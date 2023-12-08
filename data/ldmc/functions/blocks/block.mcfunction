@@ -15,7 +15,7 @@ execute if score #drink_buffer_time ldmc_Timer matches 5.. run scoreboard player
 execute as @e[tag=steel_furnace] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ furnace run function ldmc:blocks/steel_furnace/destroy
 execute if entity @s[scores={usedFurnace=1..}] if data storage ldmc:player_data {SelectedItem:{id:"minecraft:iron_ingot"}} unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:steel_ingot"}}} as @e[tag=steel_furnace,tag=!steel_furnace_lit,tag=raycast.target] at @s if block ~ ~-1 ~ campfire run function ldmc:blocks/steel_furnace/steel_furnace
 execute if entity @s[scores={usedFurnace=1..}] if data storage ldmc:player_data {SelectedItem:{id:"minecraft:iron_ingot"}} unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:steel_ingot"}}} as @e[tag=steel_furnace,tag=!steel_furnace_lit,tag=raycast.target] at @s if block ~ ~-1 ~ soul_campfire run function ldmc:blocks/steel_furnace/steel_furnace
-execute if score @s usedFurnace matches 1.. at @s if entity @e[tag=steel_furnace,tag=!steel_furnace_lit,tag=raycast.target,distance=..5] run title @s actionbar "You need to hold iron ingots and close enough to the furnace to use it."
+execute if score @s usedFurnace matches 1.. at @s if entity @e[tag=steel_furnace,tag=!steel_furnace_lit,tag=raycast.target,distance=..5] run title @s actionbar "You need to lit campfire under steel furnace and holding iron ingots, then try get close enough to the furnace to use it."
 
 execute as @e[tag=steel_furnace_lit] run function ldmc:blocks/steel_furnace/steel_furnace_lit
 execute as @s[scores={usedFurnace=1..}] if entity @e[tag=raycast.target,tag=steel_furnace,tag=end_smelting] run function ldmc:blocks/steel_furnace/take_loot
@@ -23,7 +23,7 @@ scoreboard players set @s usedFurnace 0
 
 #Upgrade Table
 #Displaying the item display
-execute as @e[type=item] at @s if block ~ ~-1 ~ glass as @e[tag=upgrade_table,tag=!item_displayed,distance=..1.5] at @s summon item_display run function ldmc:blocks/upgrade_table/display
+execute at @e[type=item] if block ~ ~-1 ~ glass as @e[limit=1,sort=nearest,tag=upgrade_table,tag=!item_displayed,distance=..1.5] at @s summon item_display run function ldmc:blocks/upgrade_table/display
 execute as @e[type=item] at @s if block ~ ~-1 ~ glass if entity @e[tag=upgrade_table,tag=!item_displayed,distance=..1.5] run kill @s
 execute as @e[tag=upgrade_table,tag=!item_displayed] at @s if entity @e[tag=!upgrade_table,distance=..0.5] run tag @s add item_displayed
 execute at @e[tag=item_displayed] if entity @a[distance=..5,scores={xpLevel=30..},gamemode=!creative] positioned ~ ~1 ~ as @e[type=item,limit=1,predicate=ldmc:enchanted_books,distance=..0.7] run function ldmc:blocks/upgrade_table/upgrade_table

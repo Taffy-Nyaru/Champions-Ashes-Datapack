@@ -149,7 +149,7 @@ execute unless score @s shift matches 1.. if data storage ldmc:player_data {Sele
 
 #Drakeblood Greatsword
 execute if entity @s[predicate=ldmc:using_item/drakeblood_armor_advancement] run advancement grant @s[advancements={ldmc:func/drakeblood_armor=false}] only ldmc:func/drakeblood_armor
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:drakeblood_greatsword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] bleeding_Timer 120
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:drakeblood_greatsword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] bleeding_Timer 400
 
 #Soul of Elder
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:soul_of_nep"}}]} run advancement grant @s[advancements={ldmc:func/elder=false}] only ldmc:func/elder
@@ -186,9 +186,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung
 execute if entity @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] as @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] at @s run function ldmc:items/stalk_dung_pie
 
 #Estus Flask
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} store result score @s estusCount run data get entity @s SelectedItem.Count
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} if entity @s[advancements={ldmc:estus_flask/used_estus_flask=true}] run effect give @s instant_health 4 2 true
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} at @s if entity @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..6.5] run tag @s add estus_cancel
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} run function ldmc:items/estus_flask/estus_flask
 execute as @s[tag=estus_cancel] at @s run function ldmc:items/estus_flask/cancel
 
 #Aquamarine Dagger

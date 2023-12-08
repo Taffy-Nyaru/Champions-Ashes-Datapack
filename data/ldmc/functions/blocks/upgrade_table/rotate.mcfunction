@@ -16,5 +16,5 @@ data modify entity @s interpolation_duration set value 3
 data modify entity @s teleport_duration set value 1
 
 
-data modify storage generic:main displayed_item.id set from entity @s[tag=raycast.target] item.id
-data modify storage generic:main displayed_item.tag set from entity @s[tag=raycast.target] item.tag
+execute at @e[tag=item_displayed,tag=raycast.target,limit=1,sort=nearest] run data modify storage generic:main displayed_item.id set from entity @s[distance=..0.5] item.id
+execute at @e[tag=item_displayed,tag=raycast.target,limit=1,sort=nearest] run data modify storage generic:main displayed_item.tag set from entity @s[distance=..0.5] item.tag

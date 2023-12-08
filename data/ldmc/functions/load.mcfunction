@@ -14,6 +14,7 @@ scoreboard objectives add branch_playerHotbar dummy
 scoreboard objectives add player_rotation dummy
 scoreboard objectives add stiff_time dummy
 scoreboard objectives add custom_stiff_time dummy
+scoreboard objectives add itemCount dummy
 
 #Using Items
 scoreboard objectives add usedAnvil minecraft.custom:minecraft.interact_with_anvil
@@ -166,7 +167,6 @@ scoreboard objectives add splitleaf_stiff_time dummy
 
 #Estus Flask
 scoreboard objectives add estus_cancel_tick dummy
-scoreboard objectives add estusCount dummy
 
 #Antspur Rapier
 scoreboard objectives add bloodhound_step_delay dummy

@@ -4,7 +4,7 @@ execute at @s unless entity @e[tag=raycast.target,type=item_frame,distance=..2] 
 tag @s add crown
 
 #function ldmc:bijection/player/player
-
+execute store result score @s itemCount run data get entity @s SelectedItem.Count
 execute at @s if entity @e[type=warden,distance=..10] run tag @e[type=warden,distance=..10] add guards
 tag @e[tag=guards] add WARDEN
 effect clear @s darkness

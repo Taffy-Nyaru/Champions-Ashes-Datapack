@@ -39,9 +39,8 @@ execute unless entity @e[tag=elder_parrying] run kill @e[tag=parry_shield]
 execute as @e[tag=elder_parrying,tag=!parry_stop] run function ldmc:entities/drakeblood_knight/nep_elder/parry
 
 execute if entity @s[tag=parry_stop] run scoreboard players add parry_stop_timer ldmc_Timer 1
-execute if score parry_stop_timer ldmc_Timer matches 100.. run tag @s remove parry_stop
-execute if score parry_stop_timer ldmc_Timer matches 100.. run scoreboard players set parry_stop_timer ldmc_Timer 0
-
+execute if score parry_stop_timer ldmc_Timer matches 512.. run tag @s remove parry_stop
+execute if score parry_stop_timer ldmc_Timer matches 512.. run scoreboard players set parry_stop_timer ldmc_Timer 0
 
 #Weapon Abilities
 #Zweihander
