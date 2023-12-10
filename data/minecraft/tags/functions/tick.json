@@ -1,6 +1,7 @@
 {
 	"values": [
 		"ldmc:tick",
+		"taffy_math:tick",
 		"math:tick",
 		"animated_java:aquamarine_dagger/zzzzzzzz/tick",
 		"animated_java:gundyr_skill/zzzzzzzz/tick",

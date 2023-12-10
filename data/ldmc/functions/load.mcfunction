@@ -15,6 +15,9 @@ scoreboard objectives add player_rotation dummy
 scoreboard objectives add stiff_time dummy
 scoreboard objectives add custom_stiff_time dummy
 scoreboard objectives add itemCount dummy
+scoreboard objectives add euclidean_positionX dummy
+scoreboard objectives add euclidean_positionY dummy
+scoreboard objectives add euclidean_positionZ dummy
 
 #Using Items
 scoreboard objectives add usedAnvil minecraft.custom:minecraft.interact_with_anvil
@@ -173,6 +176,9 @@ scoreboard objectives add bloodhound_step_delay dummy
 
 #Caestus
 scoreboard objectives add endure_Timer dummy
+
+#Lothric Holy Sword
+scoreboard objectives add lazer_beam_length dummy
 
 #Generic
 scoreboard objectives add ldmc_Timer dummy
