@@ -1,8 +1,8 @@
 #CMD 1440012
-#CMD 1390078
+#CMD 1390083
 #If the armor is invisible try reopen the save
-#RKSS skill, Firelink shrine map, README file
-#Warrior round shield, lazer, dragon head shield
+#Firelink shrine map
+#Lothric holy sword, irthyll straight sword, lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
 #Boss add new skills and attack types using epic fight
 function ldmc:raycast/ray
 
@@ -85,7 +85,6 @@ execute if data storage ldmc:player_data {Inventory:[{Slot:103b,tag:{id:"ldmc:wi
 execute if data storage ldmc:player_data {Inventory:[{Slot:102b,tag:{id:"ldmc:witherite_chestplate"}}]} run function ldmc:items/armor/witherite_chestplate
 execute if data storage ldmc:player_data {Inventory:[{Slot:101b,tag:{id:"ldmc:witherite_leggings"}}]} run function ldmc:items/armor/witherite_leggings
 execute if data storage ldmc:player_data {Inventory:[{Slot:100b,tag:{id:"ldmc:witherite_boots"}}]} run function ldmc:items/armor/witherite_boots
-execute if entity @s[predicate=ldmc:using_item/witherite_armor_advancement] run advancement grant @s[advancements={ldmc:func/wither_armor=false}] only ldmc:func/wither_armor
 
 #Eternal Crystal
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:eternal_crystal"}}]} run advancement grant @s[advancements={ldmc:func/eternal_crystal=false}] only ldmc:func/eternal_crystal
@@ -136,7 +135,7 @@ execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:d
 execute at @s run function ldmc:items/dragonslayer_greatbow/arbalest/blast_arrow
 
 #Steel Tools
-function ldmc:items/steel_tools
+function ldmc:items/armors
 
 #Nightrider Glaive
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:night_cavalry_halberd"}}]} run advancement grant @s[advancements={ldmc:func/nightrider_glaive=false}] only ldmc:func/nightrider_glaive
@@ -148,7 +147,6 @@ execute if score @s glaive_damage matches ..-1 run scoreboard players set @s gla
 execute unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:night_cavalry_halberd"}}} run tag @s remove needclicker
 
 #Drakeblood Greatsword
-execute if entity @s[predicate=ldmc:using_item/drakeblood_armor_advancement] run advancement grant @s[advancements={ldmc:func/drakeblood_armor=false}] only ldmc:func/drakeblood_armor
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:drakeblood_greatsword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] bleeding_Timer 400
 
 #Soul of Elder
@@ -210,6 +208,9 @@ execute at @e[type=marker,tag=gundyr_hitbox] as @e[type=!#ldmc:special_entities,
 #Caestus
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:caestus"}}]} if score @s usedmedal matches 1.. run tag @s add endure
 execute as @s[tag=endure] at @s run function ldmc:items/caestus/caestus
+
+#Irthyll Straight Sword
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:irthyll_straight_sword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] frostbite_Timer 600
 
 
 #Blocks

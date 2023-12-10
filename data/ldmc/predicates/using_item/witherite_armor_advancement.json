@@ -1,62 +1,7 @@
 {
-    "condition": "minecraft:all_of",
-    "terms": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "head": {
-              "items": [
-                "minecraft:netherite_helmet"
-              ],
-              "nbt": "{id:\"ldmc:witherite_helmet\"}"
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "chest": {
-              "items": [
-                "minecraft:netherite_chestplate"
-              ],
-              "nbt": "{id:\"ldmc:witherite_chestplate\"}"
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "legs": {
-              "items": [
-                "minecraft:netherite_leggings"
-              ],
-              "nbt": "{id:\"ldmc:witherite_leggings\"}"
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "feet": {
-              "items": [
-                "minecraft:netherite_boots"
-              ],
-              "nbt": "{id:\"ldmc:witherite_boots\"}"
-            }
-          }
-        }
-      }
-    ]
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Inventory:[{tag:{id:\"ldmc:witherite_helmet\"}},{tag:{id:\"ldmc:witherite_chestplate\"}},{tag:{id:\"ldmc:witherite_leggings\"}},{tag:{id:\"ldmc:witherite_boots\"}}]}"
   }
-  
+}

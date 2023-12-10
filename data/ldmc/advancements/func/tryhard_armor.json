@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_chestplate",
+      "nbt": "{CustomModelData:1390075}"
+    },
+    "title": { "translate": "advancements.ldmc.func.tryhard_armor.title" },
+    "description": { "translate": "advancements.ldmc.func.tryhard_armor.disc" },
+    "frame": "challenge"
+  },
+  "parent": "ldmc:func/drakeblood_armor",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

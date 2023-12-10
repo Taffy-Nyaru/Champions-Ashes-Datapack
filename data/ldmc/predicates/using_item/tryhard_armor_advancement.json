@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Inventory:[{tag:{id:\"ldmc:tryhard_helmet\"}},{tag:{id:\"ldmc:tryhard_chestplate\"}},{tag:{id:\"ldmc:tryhard_leggings\"}},{tag:{id:\"ldmc:tryhard_boots\"}}]}"
+  }
+}
