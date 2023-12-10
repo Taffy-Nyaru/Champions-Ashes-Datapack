@@ -210,8 +210,19 @@ execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:c
 execute as @s[tag=endure] at @s run function ldmc:items/caestus/caestus
 
 #Irthyll Straight Sword
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:irthyll_straight_sword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] frostbite_Timer 600
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:irithyll_straight_sword"}}]} run advancement grant @s[advancements={ldmc:func/irithyll_straight_sword=false}] only ldmc:func/irithyll_straight_sword
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:irithyll_straight_sword"}}} at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] frostbite_Timer 600
 
+#Ringed Knight Paired Greatsword
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:ringed_knight_paired_greatsword_right"}},{tag:{id:"ldmc:ringed_knight_paired_greatsword_left"}}]} run advancement grant @s[advancements={ldmc:func/ringed_knight_paired_greatsword=false}] only ldmc:func/ringed_knight_paired_greatsword
+
+#Lorian Greatsword
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:lorian_greatsword"}}]} run advancement grant @s[advancements={ldmc:func/lorian_greatsword=false}] only ldmc:func/lorian_greatsword
+
+#Gael Greatsword
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:gael_greatsword"}}]} run advancement grant @s[advancements={ldmc:func/gael_greatsword=false}] only ldmc:func/gael_greatsword
+
+#Lothric Holy Sword
 
 #Blocks
 function ldmc:blocks/block

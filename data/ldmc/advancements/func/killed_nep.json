@@ -1,8 +1,8 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:iron_sword",
-      "nbt": "{CustomModelData:1390044}"
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:1390079}"
     },
     "title": {"translate": "advancements.ldmc.func.killed_elder.title"},
     "description": {"translate": "advancements.ldmc.func.killed_elder.disc"},
@@ -29,12 +29,7 @@
   "rewards": {
     "function": "ldmc:entities/drakeblood_knight/nep_elder/killed_nep",
     "loot": [
-      "ldmc:items/soul_of_nep",
-      "ldmc:armor/tools/drakeblood_greatsword",
-      "ldmc:armor/drakeblood_helmet",
-      "ldmc:armor/drakeblood_chestplate",
-      "ldmc:armor/drakeblood_leggings",
-      "ldmc:armor/drakeblood_boots"
+      "ldmc:items/soul_of_nep"
     ]
   }
 }
