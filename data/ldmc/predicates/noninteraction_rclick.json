@@ -154,6 +154,20 @@
           }
         }
       }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:iron_sword"
+            ],
+            "nbt": "{id:\"ldmc:lothric_holy_sword\"}"
+          }
+        }
+      }
     }
   ]
 }

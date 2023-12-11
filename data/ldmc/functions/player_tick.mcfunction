@@ -170,7 +170,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"
 execute if entity @e[tag=splitleaf_skill] at @s as @e[tag=splitleaf_skill,distance=..6] run function ldmc:items/splitleaf/rotation
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} as @a[tag=helicopter] at @s run function ldmc:items/splitleaf/skill
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} at @s run kill @e[tag=splitleaf_skill,distance=..5]
-execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run effect clear @s levitation
+execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run effect clear @s[tag=helicopter] levitation
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run tag @s[tag=helicopter] remove helicopter
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:splitleaf"}}} run tag @s[tag=infinite_true_combo] remove infinite_true_combo
 execute unless score @s[tag=helicopter] shift matches 1 at @s run kill @e[tag=splitleaf_skill,distance=..5]
@@ -223,6 +223,12 @@ execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:lorian_great
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:gael_greatsword"}}]} run advancement grant @s[advancements={ldmc:func/gael_greatsword=false}] only ldmc:func/gael_greatsword
 
 #Lothric Holy Sword
+execute at @s as @e[limit=1,sort=nearest,type=!player,type=!#ldmc:special_entities,distance=..20] store result score @s Y_value run data get entity @s Pos[1]
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:lothric_holy_sword"}}} if score @s shift matches 1.. at @s run function ldmc:items/lothric_holy_sword/lothric_holy_sword
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:lothric_holy_sword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+execute as @e[tag=lazer_animate] at @s run function ldmc:projectiles/lazer_beam/lazer_beam_animate
+execute as @e[tag=lazer_fading] at @s run function ldmc:projectiles/lazer_beam/lazer_faded
+execute unless entity @e[tag=lazer_beam] run function ldmc:projectiles/lazer_beam/remove_tags
 
 #Blocks
 function ldmc:blocks/block

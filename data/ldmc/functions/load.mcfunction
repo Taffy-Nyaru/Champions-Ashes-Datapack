@@ -179,6 +179,8 @@ scoreboard objectives add endure_Timer dummy
 
 #Lothric Holy Sword
 scoreboard objectives add lazer_beam_length dummy
+scoreboard objectives add lazer_euclidean_distance dummy
+scoreboard objectives add lazer_fading dummy
 
 #Generic
 scoreboard objectives add ldmc_Timer dummy
@@ -223,6 +225,8 @@ data modify storage generic:main rkssCMD set value 1390054
 data modify storage generic:main rkss_igniteCMD set value 1390055
 data modify storage generic:main branchCMD set value 1390063
 data modify storage generic:main arrow_Motion set value [0.0,-0.5,0.0]
+data modify storage generic:main lazer_beam_length set value [0.5f, 1.0f, 0.5f]
+data modify storage generic:main lazer_beam_translation set value [0.0f, 1.0f, 0.0f]
 advancement revoke @a only ldmc:hurt_entities
 summon marker 0 0 0 {UUID:[I;-479181779,-1024310123,-1662299978,336694543]}
 summon zombified_piglin 0 0 0 {ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:0b}],NoAI:1b,Invulnerable:1b,UUID:[I;1230931223,-1814085318,-1621598234,1851460226]}
