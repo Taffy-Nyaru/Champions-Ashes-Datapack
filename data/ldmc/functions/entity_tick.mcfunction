@@ -10,7 +10,7 @@ execute if entity @e[tag=bomb] as @e[tag=bomb] at @s if entity @e[team=!friendly
 execute if entity @e[tag=690bomber] as @e[tag=690bomber] at @s if entity @e[team=!friendly,type=!#ldmc:special_entities,type=!creeper,type=!player,distance=..10] run damage @s[distance=..10] 1 ldmc:gtx690 by @a[limit=1,sort=nearest]
 
 #Entity effects(Extreme Optimized)
-execute at @e[type=!player,predicate=!ldmc:entity_using_item/no_item] as @e[predicate=ldmc:hurttime,distance=..7] on attacker run function ldmc:entities/using_item
+execute at @a at @e[type=!player,distance=..50,predicate=!ldmc:entity_using_item/no_item] as @e[predicate=ldmc:hurttime,distance=..7] on attacker run function ldmc:entities/using_item
 
 #Digestive Juice
 execute if entity @e[predicate=ldmc:misc/digestive_juice] as @e[predicate=ldmc:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice

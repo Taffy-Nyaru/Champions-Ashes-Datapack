@@ -1,1 +1,0 @@
-execute as @e[tag=laser_target,distance=..1] positioned ^ ^ ^1 run function ldmc:projectiles/lazer_beam/damage/0

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"ldmc:upgrade_table\",display: {Name: '[{\"translate\":\"item.ldmc.upgrade_table\",\"italic\":false}]'},CustomModelData:1440004}"
+              "tag": "{id:\"ldmc:upgrade_table\",display: {Name: '[{\"translate\":\"item.ldmc.upgrade_table\",\"italic\":false}]'},CustomModelData:1390085}"
             }
           ]
         }

@@ -22,5 +22,5 @@ execute store result storage math:io #euclid_distance_input_int float 1000000 ru
 execute store result score inp int run data get storage math:io #euclid_distance_input_int
 function math:_sqrt
 execute store result storage math:io euclidean_distance float 0.001 run scoreboard players get res int
-execute store result storage math:io lazer_euclidean_distance float 0.00075 run scoreboard players get res int
+execute store result storage math:io lazer_euclidean_distance float 0.0006 run scoreboard players get res int
 execute store result score @e[tag=lazer_beam,limit=1,sort=nearest] lazer_euclidean_distance run data get storage math:io lazer_euclidean_distance

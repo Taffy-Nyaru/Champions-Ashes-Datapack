@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390083
+#CMD 1390085
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lothric holy sword, irthyll straight sword, lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -223,11 +223,11 @@ execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:lorian_great
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:gael_greatsword"}}]} run advancement grant @s[advancements={ldmc:func/gael_greatsword=false}] only ldmc:func/gael_greatsword
 
 #Lothric Holy Sword
-execute at @s as @e[limit=1,sort=nearest,type=!player,type=!#ldmc:special_entities,distance=..20] store result score @s Y_value run data get entity @s Pos[1]
+execute at @s as @e[type=!player,type=!#ldmc:special_entities,distance=..50] store result score @s Y_value run data get entity @s Pos[1]
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:lothric_holy_sword"}}} if score @s shift matches 1.. at @s run function ldmc:items/lothric_holy_sword/lothric_holy_sword
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:lothric_holy_sword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 execute as @e[tag=lazer_animate] at @s run function ldmc:projectiles/lazer_beam/lazer_beam_animate
-execute as @e[tag=lazer_fading] at @s run function ldmc:projectiles/lazer_beam/lazer_faded
+execute as @e[tag=lazer_fading] run function ldmc:projectiles/lazer_beam/lazer_faded
 execute unless entity @e[tag=lazer_beam] run function ldmc:projectiles/lazer_beam/remove_tags
 
 #Blocks

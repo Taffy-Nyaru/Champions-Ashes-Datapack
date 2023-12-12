@@ -54,12 +54,12 @@ execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard pl
 
 #Phase 2 Just started:
 execute store result score @s Elder_Health run data get entity @s Health
-execute positioned ^ ^ ^2 if score @s[tag=!phase2_started] Elder_Health matches ..256 run function ldmc:entities/drakeblood_knight/nep_elder/phase2_start
+execute unless entity @s[tag=phase2_started] positioned ^ ^ ^2 if score @s Elder_Health matches ..128 run function ldmc:entities/drakeblood_knight/nep_elder/phase2_start
 
 #Phase 2: If there is none drakeblood knight around, Summon a drakeblood knight and dragon head bomb every 30sec, breaking most natural spawn vanilla blocks
-execute if score @s Elder_Health matches ..256 run tag @s add phase2
-execute if score @s Elder_Health matches 256.. run tag @s[tag=phase2] remove phase2
-execute if score @s Elder_Health matches 256.. run tag @s[tag=phase2_started] remove phase2_started
+execute if score @s Elder_Health matches ..128 run tag @s add phase2
+execute if score @s Elder_Health matches 138.. run tag @s[tag=phase2] remove phase2
+execute if score @s Elder_Health matches 138.. run tag @s[tag=phase2_started] remove phase2_started
 execute as @s[tag=phase2] run function ldmc:entities/drakeblood_knight/nep_elder/phase2
 
 execute at @a at @s[distance=..50] run bossbar set nep_elder players @a[distance=..50]
