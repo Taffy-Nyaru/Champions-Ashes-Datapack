@@ -1,0 +1,1 @@
+function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_skill/tick_animation

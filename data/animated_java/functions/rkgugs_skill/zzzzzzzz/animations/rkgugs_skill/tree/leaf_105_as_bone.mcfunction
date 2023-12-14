@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.rkgugs_skill.locator_origin.rkgugs_right_locator] at @s on origin run tp @s ^-7.47824 ^0.64709 ^-0.12797 ~90.73525 ~-6.24787
+execute if entity @s[tag=aj.rkgugs_skill.locator_origin.rkgugs_left_locator] at @s on origin run tp @s ^-7.66532 ^0.22049 ^0.86509 ~97.23714 ~-12.40342

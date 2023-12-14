@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:rkgugs_skill/zzzzzzzz/apply_variant/ember/as_bone

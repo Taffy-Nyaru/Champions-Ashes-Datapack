@@ -5,6 +5,7 @@
 		"math:_init",
 		"animated_java:gundyr_skill/zzzzzzzz/load",
 		"animated_java:aquamarine_dagger/zzzzzzzz/load",
-		"animated_java:rkss_skill/zzzzzzzz/load"
+		"animated_java:rkss_skill/zzzzzzzz/load",
+		"animated_java:rkgugs_skill/zzzzzzzz/load"
 	]
 }

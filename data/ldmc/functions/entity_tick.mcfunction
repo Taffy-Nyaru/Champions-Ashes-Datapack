@@ -49,6 +49,9 @@ execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function ld
 #Stiff
 execute if entity @e[tag=frost_stiff] as @e[tag=frost_stiff] run function ldmc:items/pkcs/stiff
 
+#Animate Effects
+execute as @e[tag=aj.rkgugs_skill.locator] at @s run function ldmc:animated_effects/rkgugs_skill
+
 tag @a[tag=!ally] add ally
 tag @e[tag=pearl,tag=!ally] add ally
 tag @e[tag=WARDEN,tag=!ally] add ally

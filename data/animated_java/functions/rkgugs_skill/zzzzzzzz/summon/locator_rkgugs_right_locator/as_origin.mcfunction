@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.rkgugs_skill.locator","aj.rkgugs_skill.locator.rkgugs_right_locator","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"rkgugs_skill\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"rkgugs_right_locator\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.rkgugs_skill.locator.rkgugs_right_locator,tag=aj.new,limit=1,distance=..1] run function animated_java:rkgugs_skill/zzzzzzzz/summon/locator_rkgugs_right_locator/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

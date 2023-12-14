@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.rkgugs_skill.animation.rkgugs_skill] run function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_skill/tick
