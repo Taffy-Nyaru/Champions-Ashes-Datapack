@@ -14,6 +14,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.rkgugs_skill.export_version aj.i -748463376
+scoreboard players set aj.rkgugs_skill.export_version aj.i 906349778
 scoreboard players reset * aj.rkgugs_skill.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.rkgugs_skill.root] run function animated_java:rkgugs_skill/zzzzzzzz/on_load

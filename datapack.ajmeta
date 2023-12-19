@@ -1089,6 +1089,8 @@
 				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\locator_rkgugs_right_locator\\as_entity.mcfunction",
 				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\locator_rkgugs_left_locator\\as_origin.mcfunction",
 				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\locator_rkgugs_left_locator\\as_entity.mcfunction",
+				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\locator_player_camera\\as_origin.mcfunction",
+				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\locator_player_camera\\as_entity.mcfunction",
 				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\as_root.mcfunction",
 				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\as_rig_entities.mcfunction",
 				"data\\animated_java\\functions\\rkgugs_skill\\zzzzzzzz\\summon\\as_locator_origins.mcfunction",

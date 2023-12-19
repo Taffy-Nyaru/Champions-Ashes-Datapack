@@ -2,7 +2,7 @@
 #CMD 1390085
 #If the armor is invisible try reopen the save
 #Firelink shrine map
-#Lothric holy sword, irthyll straight sword, lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
+#Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
 #Boss add new skills and attack types using epic fight
 function ldmc:raycast/ray
 
@@ -32,11 +32,7 @@ execute as @s[tag=buffer.temp,scores={buffer.temp=20..}] at @s run function ldmc
 execute as @s[tag=buffer.temp,scores={buffer.temp=20..}] run tag @s remove buffer.temp
 execute as @s[scores={buffer.temp=20..}] run scoreboard players set @s buffer.temp 0
 
-#execute unless entity @s[nbt={SelectedItem:[{}]}] run scoreboard players set #custom_model_data ldmcValue 0
-#execute unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run scoreboard players set #left_custom_model_data ldmcValue 0
-#execute unless data entity @s SelectedItem run data modify storage ldmc:player_data SelectedItem set value []
-#execute unless data entity @s Inventory run data modify storage ldmc:player_data Inventory set value []
-#execute unless data entity @s Inventory[{Slot:103b}] run data modify storage ldmc:player_data Head set value []
+execute as @s[tag=riding_display] at @s run function ldmc:animated_effects/ride
 
 execute if entity @s[predicate=!ldmc:noninteraction_rclick] run function ldmc:items/not_using
 execute store result score @s Y_value run data get entity @s Pos[1]
@@ -215,6 +211,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:irithyll_s
 
 #Ringed Knight Paired Greatsword
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:ringed_knight_paired_greatsword_right"}},{tag:{id:"ldmc:ringed_knight_paired_greatsword_left"}}]} run advancement grant @s[advancements={ldmc:func/ringed_knight_paired_greatsword=false}] only ldmc:func/ringed_knight_paired_greatsword
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ringed_knight_paired_greatsword_right"}}} if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:ringed_knight_paired_greatsword_left"}}]} if score @s shift matches 1.. at @s run function ldmc:items/ringed_knight_paired_greatsword/ringed_knight_paired_greatsword
 
 #Lorian Greatsword
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:lorian_greatsword"}}]} run advancement grant @s[advancements={ldmc:func/lorian_greatsword=false}] only ldmc:func/lorian_greatsword

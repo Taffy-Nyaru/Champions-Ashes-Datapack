@@ -7,6 +7,7 @@ execute if entity @s[tag=aj.rkgugs_skill.bone.weapon2] run data modify entity @s
 execute if entity @s[tag=aj.rkgugs_skill.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 24
 execute if entity @s[tag=aj.rkgugs_skill.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 25
 execute if entity @s[tag=aj.rkgugs_skill.bone.head] run data modify entity @s item.tag.CustomModelData set value 26
+
 execute if entity @s[tag=aj.rkgugs_skill.bone.body_top] run data modify entity @s item.tag.CustomModelData set value 27
 execute if entity @s[tag=aj.rkgugs_skill.bone.body] run data modify entity @s item.tag.CustomModelData set value 28
 execute if entity @s[tag=aj.rkgugs_skill.bone.right_leg2] run data modify entity @s item.tag.CustomModelData set value 29

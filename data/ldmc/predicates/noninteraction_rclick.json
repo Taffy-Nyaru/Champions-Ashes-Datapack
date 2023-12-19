@@ -178,7 +178,13 @@
             "items": [
               "minecraft:netherite_sword"
             ],
-            "nbt": "{id:\"ldmc:ringed_knight_paired_greatsword\"}"
+            "nbt": "{id:\"ldmc:ringed_knight_paired_greatsword_right\"}"
+          },
+          "offhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"ldmc:ringed_knight_paired_greatsword_left\"}"
           }
         }
       }

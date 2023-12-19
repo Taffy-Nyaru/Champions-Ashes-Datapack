@@ -1,2 +1,3 @@
-execute if entity @s[tag=aj.rkgugs_skill.locator_origin.rkgugs_right_locator] at @s on origin run tp @s ^-7.47824 ^0.64709 ^-0.12797 ~90.73525 ~-6.24787
-execute if entity @s[tag=aj.rkgugs_skill.locator_origin.rkgugs_left_locator] at @s on origin run tp @s ^-7.66532 ^0.22049 ^0.86509 ~97.23714 ~-12.40342
+execute if entity @s[tag=aj.rkgugs_skill.locator_origin.rkgugs_right_locator] at @s on origin run tp @s ^-7.41612 ^0.64029 ^-0.12717 ~90.73525 ~-6.24787
+execute if entity @s[tag=aj.rkgugs_skill.locator_origin.rkgugs_left_locator] at @s on origin run tp @s ^-7.60476 ^0.20707 ^0.87278 ~97.23714 ~-12.40342
+execute if entity @s[tag=aj.rkgugs_skill.locator_origin.player_camera] at @s on origin run tp @s ^-7.08824 ^-0.64207 ^0.02428 ~84.52389 ~-1.56081
