@@ -1,0 +1,1 @@
+function animated_java:alumopper/zzzzzzzz/animations/animation.alumopper.wavehand/tick_animation

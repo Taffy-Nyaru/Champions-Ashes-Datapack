@@ -1,0 +1,1 @@
+tag @s remove aj.alumopper.animation.animation.alumopper.wavehand

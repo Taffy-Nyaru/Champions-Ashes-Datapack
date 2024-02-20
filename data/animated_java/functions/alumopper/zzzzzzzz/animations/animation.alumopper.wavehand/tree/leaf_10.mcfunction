@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:alumopper/zzzzzzzz/animations/animation.alumopper.wavehand/tree/leaf_10_as_bone

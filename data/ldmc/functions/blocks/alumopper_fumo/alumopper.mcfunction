@@ -1,0 +1,1 @@
+function animated_java:alumopper/animations/animation.alumopper.wavehand/play

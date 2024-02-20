@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.alumopper.animation.animation.alumopper.wavehand] run function animated_java:alumopper/zzzzzzzz/animations/animation.alumopper.wavehand/tick

@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "generic:main"
+    },
+    "ops": [
+      {
+        "source": "warpedstick_action",
+        "target": "Damage",
+        "op": "replace"
+      }
+    ]
+  }
+]

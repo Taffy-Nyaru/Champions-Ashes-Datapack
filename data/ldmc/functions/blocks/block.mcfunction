@@ -38,6 +38,13 @@ execute as @e[tag=steel_block] at @s if entity @a[limit=1,distance=..5] unless b
 execute as @e[tag=lava_sponge] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ sea_lantern run function ldmc:blocks/lava_sponge/destroy
 execute at @e[tag=lava_sponge] run function ldmc:blocks/lava_sponge/lava_sponge
 
+#alumopper fumo
+execute if entity @s[scores={usedmedal=1..}] run function ldmc:blocks/alumopper_fumo/locate
+execute as @e[tag=aj.alumopper.root] at @s unless block ~ ~ ~ end_rod run function ldmc:blocks/alumopper_fumo/destroy
+execute at @s at @e[tag=fumo_clicker,limit=1,sort=nearest,distance=..6,scores={block_lClick=1..}] as @e[tag=aj.alumopper.root,distance=..0.2,limit=1] at @s run function ldmc:blocks/alumopper_fumo/destroy
+#animation
+execute at @s at @e[tag=fumo_clicker,limit=1,sort=nearest,distance=..6,scores={block_rClick=1..}] as @e[tag=aj.alumopper.root,distance=..0.2,limit=1] at @s run function ldmc:blocks/alumopper_fumo/alumopper
+
 #crafting table
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:crafting_table"}}]} run advancement grant @s[advancements={ldmc:func/make_energy_crafter=false}] only ldmc:func/make_energy_crafter
 execute as @e[tag=crafter] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ dropper run function ldmc:blocks/crafting_table/destroy

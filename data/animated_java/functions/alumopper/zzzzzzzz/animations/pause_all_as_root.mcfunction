@@ -1,0 +1,1 @@
+function animated_java:alumopper/zzzzzzzz/animations/animation.alumopper.wavehand/pause_as_root

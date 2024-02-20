@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.alumopper.bone.head] run data modify entity @s {} merge value {transformation:[-1f,-1.9157696688784716e-17f,1.2095693648649962e-16f,0f,0f,0.9876883405951378f,0.15643446504023079f,0.8125f,-1.2246467991473532e-16f,0.15643446504023079f,-0.9876883405951378f,0f,0f,0f,0f,1f],start_interpolation:0}

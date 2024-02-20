@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390085
+#CMD 1390086
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.

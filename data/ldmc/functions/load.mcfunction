@@ -224,6 +224,7 @@ data modify storage generic:main soul_of_elderCMD set value 1390043
 data modify storage generic:main rkssCMD set value 1390054
 data modify storage generic:main rkss_igniteCMD set value 1390055
 data modify storage generic:main branchCMD set value 1390063
+data modify storage generic:main warpedstick_action set value 0
 data modify storage generic:main arrow_Motion set value [0.0,-0.5,0.0]
 data modify storage generic:main lazer_beam_length set value [0.25f, 1.0f, 0.25f]
 data modify storage generic:main lazer_beam_translation set value [0.0f, 1.0f, 0.0f]

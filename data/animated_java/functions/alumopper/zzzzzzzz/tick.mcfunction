@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.alumopper.root] run function animated_java:alumopper/zzzzzzzz/tick_as_root
