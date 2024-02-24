@@ -1,4 +1,3 @@
-data modify entity @s start_interpolation set value 0
 execute store result storage math:io 0phanalax_uuid[0] int 1 run scoreboard players get @s 0phanalax_uuid0
 execute store result storage math:io 0phanalax_uuid[1] int 1 run scoreboard players get @s 0phanalax_uuid1
 execute store result storage math:io 0phanalax_uuid[2] int 1 run scoreboard players get @s 0phanalax_uuid2
@@ -53,6 +52,5 @@ execute as @e[tag=phanalax2] run scoreboard players reset @s 2phanalax_related
 kill @e[tag=phanalax0,tag=!phanalax_related]
 kill @e[tag=phanalax1,tag=!phanalax_related]
 kill @e[tag=phanalax2,tag=!phanalax_related]
-data modify entity @s interpolation_duration set value 1
 
 execute unless entity @e[tag=phanalax0,scores={kill.temp0=-2147483648..2147483647}] unless entity @e[tag=phanalax1,scores={kill.temp1=-2147483648..2147483647}] unless entity @e[tag=phanalax2,scores={kill.temp2=-2147483648..2147483647}] run tag @a[limit=1,sort=nearest,tag=with_phanalax] remove with_phanalax

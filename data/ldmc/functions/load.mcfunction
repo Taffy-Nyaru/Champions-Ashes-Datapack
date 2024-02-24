@@ -29,6 +29,7 @@ scoreboard objectives add usedBow minecraft.used:bow
 scoreboard objectives add usedCrossbow minecraft.used:crossbow
 scoreboard objectives add usedBone minecraft.used:minecraft.compass
 scoreboard objectives add usedFirework minecraft.used:minecraft.firework_rocket
+scoreboard objectives add usedSnowball minecraft.used:minecraft.snowball
 scoreboard objectives add player_death minecraft.custom:minecraft.deaths
 
 #scoreboard objectives add uuidplayer dummy
@@ -185,6 +186,12 @@ scoreboard objectives add lazer_fading dummy
 #Shadow Vortex
 scoreboard objectives add vortex_timer dummy
 scoreboard objectives add vortex_scale dummy
+
+#Snowball UUID detect
+scoreboard objectives add snowball_uuid0 dummy
+scoreboard objectives add snowball_uuid1 dummy
+scoreboard objectives add snowball_uuid2 dummy
+scoreboard objectives add snowball_uuid3 dummy
 
 #Generic
 scoreboard objectives add ldmc_Timer dummy

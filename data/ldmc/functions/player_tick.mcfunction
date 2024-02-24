@@ -48,6 +48,15 @@ execute if score @s usedmedal matches 1.. if data storage ldmc:player_data {Sele
 execute if data storage ldmc:player_data {Inventory:[{Slot:103b,tag:{id:"ldmc:vampire_hat"}}]} as @s run function ldmc:items/vampire_hat/effects
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:vampire_hat"}}]} run advancement grant @s[advancements={ldmc:func/vampire_hat=false}] only ldmc:func/vampire_hat
 
+#Snowball Detect
+execute if score @s usedSnowball matches 1.. if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:shadow_vortex"}}]} run function ldmc:projectiles/snowball_detect/snowball_detect
+execute if score @s usedSnowball matches 1.. if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:thunder_knife"}}]} run function ldmc:projectiles/snowball_detect/snowball_detect
+execute if score @s usedSnowball matches 1.. if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:stalk_dung_pie"}}]} run function ldmc:projectiles/snowball_detect/snowball_detect
+#Get owner
+execute as @e[type=snowball,predicate=ldmc:misc/shadow_vortex] run function ldmc:projectiles/snowball_detect/snowball_thrower
+execute as @e[type=snowball,predicate=ldmc:misc/thunder_knife] run function ldmc:projectiles/snowball_detect/snowball_thrower
+execute as @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] run function ldmc:projectiles/snowball_detect/snowball_thrower
+
 #Ringed Knight Straight Sword
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:ringed_knight_straight_sword"}}]} run advancement grant @s[advancements={ldmc:func/rkss=false}] only ldmc:func/rkss
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ringed_knight_straight_sword"}}} run function ldmc:items/ringed_knight_straight_sword/rkss
@@ -73,7 +82,7 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:black_blad
 #CE
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:cheat_engine"}}} run function ldmc:items/cheat_engine/cheat_engine
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:cheat_engine"}}} as @s[tag=!got_gamemode] run function ldmc:items/cheat_engine/get_gamemode
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:thunder_knife"}}} run tag @s[tag=!killer] add killer
+#execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:thunder_knife"}}} run tag @s[tag=!killer] add killer
 execute if entity @e[predicate=ldmc:misc/thunder_knife] as @e[predicate=ldmc:misc/thunder_knife] at @s run function ldmc:items/cheat_engine/thunder_knife
 
 #Witherite Armor
@@ -176,11 +185,11 @@ execute unless score @s[tag=infinite_true_combo] shift matches 1 run tag @s remo
 execute at @s as @e[tag=splitleaf_stiff,distance=..20] run function ldmc:items/splitleaf/damage
 
 #Stalk Dung Pie
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
+#execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
 execute as @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] at @s run function ldmc:items/stalk_dung_pie
 
 #Shadow Vortex
-execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:shadow_vortex"}}} run tag @s[tag=!used_vortex] add used_vortex
+#execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:shadow_vortex"}}} run tag @s[tag=!used_vortex] add used_vortex
 execute as @e[type=snowball,predicate=ldmc:misc/shadow_vortex] at @s run function ldmc:projectiles/shadow_vortex/shadow_vortex
 execute as @e[tag=shadow_vortex] run function ldmc:projectiles/shadow_vortex/vortex_timer
 execute unless entity @e[tag=shadow_vortex] run tag @a[tag=used_vortex] remove used_vortex
@@ -301,6 +310,7 @@ execute if score @s usedAnvil matches 1.. run scoreboard players set @s usedAnvi
 execute if score @s usedmedal matches 1.. run scoreboard players set @s usedmedal 0
 execute if score @s usedBow matches 1.. run scoreboard players set @s usedBow 0
 execute if score @s usedFirework matches 1.. run scoreboard players set @s usedFirework 0
+execute if score @s usedSnowball matches 1.. run scoreboard players set @s usedSnowball 0
 
 #NEP
 execute at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run bossbar set nep_elder players
