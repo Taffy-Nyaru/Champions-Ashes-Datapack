@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390086
+#CMD 1390088
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -177,7 +177,13 @@ execute at @s as @e[tag=splitleaf_stiff,distance=..20] run function ldmc:items/s
 
 #Stalk Dung Pie
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
-execute if entity @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] as @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] at @s run function ldmc:items/stalk_dung_pie
+execute as @e[type=snowball,predicate=ldmc:misc/stalk_dung_pie] at @s run function ldmc:items/stalk_dung_pie
+
+#Shadow Vortex
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:shadow_vortex"}}} run tag @s[tag=!used_vortex] add used_vortex
+execute as @e[type=snowball,predicate=ldmc:misc/shadow_vortex] at @s run function ldmc:projectiles/shadow_vortex/shadow_vortex
+execute as @e[tag=shadow_vortex] run function ldmc:projectiles/shadow_vortex/vortex_timer
+execute unless entity @e[tag=shadow_vortex] run tag @a[tag=used_vortex] remove used_vortex
 
 #Estus Flask
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:estus_flask"}}} run function ldmc:items/estus_flask/estus_flask

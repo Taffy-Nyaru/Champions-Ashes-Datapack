@@ -1,0 +1,27 @@
+execute unless entity @e[tag=shadow_vortex,distance=..1] if entity @e[type=!snowball,type=!#ldmc:special_entities,tag=!used_vortex,distance=..3] run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~ ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~1 ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~ ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~ ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~-1 ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~ ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~1 ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~1 ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~-1 ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~-1 ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~ ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~-1 ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~1 ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~-1 ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~1 ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~-1 ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~1 ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~1 ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~ ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~1 ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~ ~-1 ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~-1 ~1 ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~ ~-1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~-1 ~ #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~-1 ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
+execute unless entity @e[tag=shadow_vortex,distance=..1] unless block ~1 ~ ~1 #ldmc:fluid_and_air run function ldmc:projectiles/shadow_vortex/excess
