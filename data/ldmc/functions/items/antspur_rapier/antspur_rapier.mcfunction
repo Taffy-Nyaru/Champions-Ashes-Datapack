@@ -8,7 +8,7 @@ execute at @s[advancements={ldmc:hurt_entities=true}] run scoreboard players add
 execute at @s[advancements={ldmc:hurt_entities=true}] run effect give @e[tag=raycast.target,type=!#ldmc:special_entities,distance=..5] poison 10 0 true
 
 #Durability
-execute as @s[advancements={ldmc:hurt_entities=true},gamemode=survival] run function ldmc:items/item_durability
+execute as @s[advancements={ldmc:hurt_entities=true},gamemode=survival] at @s if entity @e[distance=..6,limit=1,predicate=ldmc:hurttime,tag=raycast.target] run function ldmc:items/item_durability
 execute if score @s damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if score @s damage matches 465.. run scoreboard players set @s damage -1
 execute if score @s damage matches ..-1 run scoreboard players set @s damage 1

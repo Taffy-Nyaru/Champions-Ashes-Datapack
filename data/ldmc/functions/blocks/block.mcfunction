@@ -54,6 +54,6 @@ execute at @e[tag=crafter,tag=raycast.target] if entity @a[sort=nearest,distance
 #crying waystone
 execute as @e[tag=crying_waystone] at @s if entity @a[limit=1,distance=..5] unless block ~ ~ ~ lodestone run function ldmc:blocks/crying_waystone/destroy
 execute if data storage ldmc:player_data {SelectedItem:{tag:{LodestoneTracked:1b,id:"ldmc:homeward_bone"}}} as @s run function ldmc:blocks/crying_waystone/crying_waystone
-execute unless entity @s[nbt={SelectedItem:{tag:{LodestoneTracked:1b}}}] if score @s[predicate=ldmc:using_item/homeward_bone] usedBone matches 1.. as @e[tag=crying_waystone,tag=raycast.target] run tag @s add activated
+execute unless entity @s[predicate=ldmc:misc/lodestonetracked] if score @s[predicate=ldmc:using_item/homeward_bone] usedBone matches 1.. as @e[tag=crying_waystone,tag=raycast.target] run tag @s add activated
 execute as @e[tag=crying_waystone,tag=activated] run function ldmc:blocks/crying_waystone/activated
 execute if score @s usedBone matches 1.. run scoreboard players set @s usedBone 0

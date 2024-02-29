@@ -10,5 +10,5 @@ execute as @s[tag=quickstep_enter_block] at @s run function ldmc:entities/search
 
 execute if score @s usedCrossbow matches 1.. unless score @s shift matches 1.. run function ldmc:items/murky/r1reset
 execute if entity @s[advancements={ldmc:hurt_entities=true}] as @e[tag=raycast.target,type=!#ldmc:special_entities,limit=1,sort=nearest] run function ldmc:items/murky/stiff
-execute if entity @s[advancements={ldmc:hurt_entities=true},gamemode=survival] run function ldmc:items/item_durability
+execute if entity @s[advancements={ldmc:hurt_entities=true},gamemode=survival] at @s if entity @e[distance=..6,limit=1,predicate=ldmc:hurttime,tag=raycast.target] run function ldmc:items/item_durability
 scoreboard players set @s usedCrossbow 0

@@ -4,28 +4,28 @@ function ldmc:entities/warden/powers
 execute at @a as @e[tag=stiff,distance=..128] run function ldmc:items/stiff
 
 #Explosions
-execute if entity @e[tag=head_projectile] as @e[tag=head_projectile] run function ldmc:projectiles/dragon_bomb/bomb_rotate
-execute if entity @e[tag=bomb] as @e[tag=bomb,predicate=ldmc:misc/bomb_creeper] run data modify entity @s ignited set value 1b
-execute if entity @e[tag=bomb] as @e[tag=bomb] at @s if entity @e[team=!friendly,type=!#ldmc:special_entities,type=!creeper,distance=..10] run damage @s[distance=..10] 1 ldmc:gtx690 by @a[limit=1,sort=nearest]
-execute if entity @e[tag=690bomber] as @e[tag=690bomber] at @s if entity @e[team=!friendly,type=!#ldmc:special_entities,type=!creeper,type=!player,distance=..10] run damage @s[distance=..10] 1 ldmc:gtx690 by @a[limit=1,sort=nearest]
+execute as @e[tag=head_projectile] run function ldmc:projectiles/dragon_bomb/bomb_rotate
+execute as @e[tag=bomb,predicate=ldmc:misc/bomb_creeper] run data modify entity @s ignited set value 1b
+execute as @e[tag=bomb] at @s if entity @e[team=!friendly,type=!#ldmc:special_entities,type=!creeper,distance=..10] run damage @s[distance=..10] 1 ldmc:gtx690 by @a[limit=1,sort=nearest]
+execute as @e[tag=690bomber] at @s if entity @e[team=!friendly,type=!#ldmc:special_entities,type=!creeper,type=!player,distance=..10] run damage @s[distance=..10] 1 ldmc:gtx690 by @a[limit=1,sort=nearest]
 
 #Entity effects(Extreme Optimized)
-execute at @a at @e[type=!player,distance=..50,predicate=!ldmc:entity_using_item/no_item] as @e[predicate=ldmc:hurttime,distance=..7] on attacker run function ldmc:entities/using_item
+execute at @a at @e[type=!#ldmc:special_entities,distance=..50,predicate=!ldmc:entity_using_item/no_item] as @e[type=!#ldmc:special_entities,predicate=ldmc:hurttime,distance=..7] on attacker run function ldmc:entities/using_item
 
 #Digestive Juice
-execute if entity @e[predicate=ldmc:misc/digestive_juice] as @e[predicate=ldmc:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice
-execute if entity @e[predicate=ldmc:misc/digestive_juice] as @e[predicate=ldmc:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice
+execute as @e[predicate=ldmc:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice
+execute as @e[predicate=ldmc:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function ldmc:items/digestive_juice
 
 #Pet
 execute if entity fffe1e4a-0000-c020-0000-63b1ffffb28a as fffe1e4a-0000-c020-0000-63b1ffffb28a at @s run data modify entity @s Owner set from entity @a[limit=1,sort=nearest,distance=..2,predicate=ldmc:using_item/cat_medal] UUID
 
 #Drakeblood Knight
-execute if entity @e[tag=drakeblood_knight] as @e[tag=drakeblood_knight] at @s run function ldmc:entities/drakeblood_knight/powers
-execute if entity @e[tag=nep_elder] as @e[tag=nep_elder] at @s run function ldmc:entities/drakeblood_knight/nep_elder/powers
-execute if entity @e[tag=entity_with_drakeblood_phanalax] as @e[tag=entity_with_drakeblood_phanalax] at @s run function ldmc:entities/drakeblood_knight/entity_phanalax
-execute if entity @e[tag=drakeblood_phanalax0] as @e[tag=drakeblood_phanalax0] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
-execute if entity @e[tag=drakeblood_phanalax1] as @e[tag=drakeblood_phanalax1] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
-execute if entity @e[tag=drakeblood_phanalax2] as @e[tag=drakeblood_phanalax2] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
+execute as @e[tag=drakeblood_knight] at @s run function ldmc:entities/drakeblood_knight/powers
+execute as @e[tag=nep_elder] at @s run function ldmc:entities/drakeblood_knight/nep_elder/powers
+execute as @e[tag=entity_with_drakeblood_phanalax] at @s run function ldmc:entities/drakeblood_knight/entity_phanalax
+execute as @e[tag=drakeblood_phanalax0] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
+execute as @e[tag=drakeblood_phanalax1] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
+execute as @e[tag=drakeblood_phanalax2] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
 execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax0,distance=..10] run function ldmc:projectiles/phanalax/rotation
 execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax1,distance=..10] run function ldmc:projectiles/phanalax/rotation
 execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax2,distance=..10] run function ldmc:projectiles/phanalax/rotation

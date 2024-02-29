@@ -1,2 +1,0 @@
-execute as @a[nbt={Inventory:[{id:"minecraft:feather",Count:1b},{id:"minecraft:shulker_shell",Count:2b},{id:"minecraft:end_crystal",Count:1b},{id:"minecraft:phantom_membrane",Count:4b}]}] run recipe give @s ldmc:elytra_recipe
-#execute as @a[nbt={Inventory:[{id:"ldmc:gold_medal",Count:1b},{id:"minecraft:sweet_berries",Count:1b},{id:"minecraft:gold_block",Count:7b}]}] run recipe give @s ldmc:berries_recipe

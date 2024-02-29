@@ -2,6 +2,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{HurtTime:10s}"
+      "type": "minecraft:player",
+      "nbt": "{SelectedItem:{tag:{LodestoneTracked:1b}}}"
     }
-}  
+}

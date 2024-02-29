@@ -7,7 +7,7 @@
 function ldmc:raycast/ray
 
 execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
-execute at @s as @e[type=!#ldmc:special_entities,distance=..127] run tag @s add got_max_health
+execute at @s as @e[type=!#ldmc:special_entities,distance=..127,tag=!got_max_health] run tag @s add got_max_health
 
 advancement grant @s[advancements={ldmc:func/ldmc=false}] only ldmc:func/ldmc
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
@@ -318,17 +318,19 @@ execute if entity @e[type=item,predicate=ldmc:misc/cheat_engine] run function ld
 execute if entity @e[type=item,predicate=ldmc:misc/cheat_engine] run kill @e[type=item,predicate=ldmc:misc/cheat_engine]
 #execute at @s[tag=start_fight] unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run tags add boss_killed
 #execute at @s[tag=boss_killed] if entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run tag @s remove boss_killed
-execute if data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot ldmc:armor/old_sorcerer_hat_nep
-execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot ldmc:armor/old_sorcerer_hat_nep
+execute if data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot ldmc:armor/drakeblood_helmet
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot ldmc:armor/drakeblood_helmet
 execute if data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run tag @e[type=wither_skeleton,tag=nep_elder] add hat
 #execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run tag @e[type=wither_skeleton,tag=nep_elder] add hat
 tag @e[tag=hat,type=wither_skeleton] remove helmet
-execute unless data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot ldmc:armor/drakeblood_helmet
-execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot ldmc:armor/drakeblood_helmet
+execute unless data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot ldmc:armor/old_sorcerer_hat_nep
+execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot ldmc:armor/old_sorcerer_hat_nep
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run tag @e[type=wither_skeleton,tag=nep_elder] add helmet
 #xecute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run tag @e[type=wither_skeleton,tag=nep_elder] add helmet
 tag @e[tag=helmet,type=wither_skeleton] remove hat
 execute at @s unless entity @e[tag=nep_elder,distance=..50] run tag @s remove start_fight
+
+execute as @s[predicate=ldmc:elytra_recipe] run recipe give @s ldmc:elytra_recipe
 
 #Reload Advancements
 data modify storage ldmc:player_data SelectedItem set value {}

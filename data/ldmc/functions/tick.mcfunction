@@ -1,5 +1,4 @@
 function ldmc:team
-function ldmc:get_recipe
 function ldmc:rclick
 execute store result score time.temp time run time query daytime
 

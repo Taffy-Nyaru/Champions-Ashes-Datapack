@@ -5,8 +5,8 @@ tag @s[type=player,predicate=ldmc:using_item/lothric_holy_sword] add lazer_owner
 tag @s add start_entity
 tag @s add lazer_node
 
-tag @e[limit=1,sort=nearest,type=!#ldmc:special_entities,tag=!ally,tag=!lazer_owner,tag=!lazer_node,tag=!lazer_target,distance=..20] add lazer_target
-tag @e[limit=1,sort=nearest,type=!#ldmc:special_entities,tag=!ally,tag=!lazer_owner,tag=!lazer_node,tag=!end_entity,distance=..20] add end_entity
+tag @e[limit=1,sort=nearest,type=!#ldmc:special_entities,tag=!ally,type=!villager,type=!iron_golem,tag=!lazer_owner,tag=!lazer_node,tag=!lazer_target,distance=..20] add lazer_target
+tag @e[limit=1,sort=nearest,type=!#ldmc:special_entities,tag=!ally,type=!villager,type=!iron_golem,tag=!lazer_owner,tag=!lazer_node,tag=!end_entity,distance=..20] add end_entity
 
 function ldmc:projectiles/lazer_beam/euclidean_distance
-execute if entity @s[gamemode=survival,type=player,predicate=ldmc:using_item/lothric_holy_sword] run function ldmc:items/item_durability
+execute if entity @e[tag=lazer_beam] if entity @s[gamemode=survival,type=player,predicate=ldmc:using_item/lothric_holy_sword] run function ldmc:items/item_durability
