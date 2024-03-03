@@ -49,9 +49,9 @@ execute if data storage ldmc:player_data {Inventory:[{Slot:103b,tag:{id:"ldmc:va
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:vampire_hat"}}]} run advancement grant @s[advancements={ldmc:func/vampire_hat=false}] only ldmc:func/vampire_hat
 
 #Snowball Detect
-execute if score @s usedSnowball matches 1.. if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:shadow_vortex"}}]} run function ldmc:projectiles/snowball_detect/snowball_detect
-execute if score @s usedSnowball matches 1.. if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:thunder_knife"}}]} run function ldmc:projectiles/snowball_detect/snowball_detect
-execute if score @s usedSnowball matches 1.. if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:stalk_dung_pie"}}]} run function ldmc:projectiles/snowball_detect/snowball_detect
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:shadow_vortex"}}]} if score @s usedSnowball matches 1.. run function ldmc:projectiles/snowball_detect/snowball_detect
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:thunder_knife"}}]} if score @s usedSnowball matches 1.. run function ldmc:projectiles/snowball_detect/snowball_detect
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:stalk_dung_pie"}}]} if score @s usedSnowball matches 1.. run function ldmc:projectiles/snowball_detect/snowball_detect
 #Get owner
 execute as @e[type=snowball,predicate=ldmc:misc/shadow_vortex] run function ldmc:projectiles/snowball_detect/snowball_thrower
 execute as @e[type=snowball,predicate=ldmc:misc/thunder_knife] run function ldmc:projectiles/snowball_detect/snowball_thrower
