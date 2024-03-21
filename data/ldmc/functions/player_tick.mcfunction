@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390088
+#CMD 1390092
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -123,6 +123,14 @@ execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ender_ring
 execute as @a[tag=remote_gateway] if score rand_output math_output matches 99999.. run function ldmc:items/ender_ring/teleport
 execute unless data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ender_ring"}}} unless data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:ender_ring"}}]} run tag @s remove omen_king
 function ldmc:entities/night_cavalry/powers
+
+#Serpent Hunter
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:serpent_hunter"}}} run function ldmc:items/serpent_hunter/serpent_hunter
+
+#Moonlight Greatsword
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:moonlight_greatsword"}}} if score @s shift matches 1.. run function ldmc:items/moonlight_greatsword/moonlight_greatsword
+execute unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:moonlight_greatsword"}}} run tag @s remove needclicker
+function ldmc:projectiles/moonlight_slash/moonlight_slash
 
 #DragonSlayer Great bow
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:dragonslayer_greatbow"}}]} run advancement grant @s[advancements={ldmc:func/dragonslayer_greatbow=false}] only ldmc:func/dragonslayer_greatbow

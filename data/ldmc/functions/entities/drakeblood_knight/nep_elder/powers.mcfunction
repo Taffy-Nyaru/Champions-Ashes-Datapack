@@ -14,20 +14,20 @@ execute as @s on target if entity @s if score weapon_inventory math_output match
 execute if entity @s[tag=had_target] run scoreboard players add weapon_class ldmc_Timer 1
 
 #Change weapons by random possibility
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 1..100 run loot replace entity @s weapon.mainhand loot ldmc:items/zweihander
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 101..200 run loot replace entity @s weapon.mainhand loot ldmc:items/night_cavalry_halberd
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 201..300 run loot replace entity @s weapon.mainhand loot ldmc:items/dragonslayer_greatbow
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 301..400 run loot replace entity @s weapon.mainhand loot ldmc:armor/tools/drakeblood_greatsword
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 401..500 run loot replace entity @s weapon.mainhand loot ldmc:items/black_knight_greataxe
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 501..600 run loot replace entity @s weapon.mainhand loot ldmc:items/ringed_knight_straight_sword
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 601..700 run loot replace entity @s weapon.mainhand loot ldmc:items/murky_hand_scythe
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 701..800 run loot replace entity @s weapon.mainhand loot ldmc:items/pontiff_knight_curved_sword
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 801..900 run loot replace entity @s weapon.offhand loot ldmc:items/black_knight_shield
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 901..1024 run loot replace entity @s weapon.mainhand loot ldmc:items/splitleaf
-execute if score weapon_class ldmc_Timer matches 600.. if score change_weapon_inventory math_output matches 0 run loot replace entity @s weapon.mainhand loot ldmc:items/cheat_engine
-execute if score weapon_class ldmc_Timer matches 600.. run scoreboard players set weapon_inventory math_output 0
-execute if score weapon_class ldmc_Timer matches 600.. run tag @s remove had_target
-execute if score weapon_class ldmc_Timer matches 600.. run scoreboard players set weapon_class ldmc_Timer 0
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 1..100 run loot replace entity @s weapon.mainhand loot ldmc:items/zweihander
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 101..200 run loot replace entity @s weapon.mainhand loot ldmc:items/night_cavalry_halberd
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 201..300 run loot replace entity @s weapon.mainhand loot ldmc:items/dragonslayer_greatbow
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 301..400 run loot replace entity @s weapon.mainhand loot ldmc:armor/tools/drakeblood_greatsword
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 401..500 run loot replace entity @s weapon.mainhand loot ldmc:items/black_knight_greataxe
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 501..600 run loot replace entity @s weapon.mainhand loot ldmc:items/ringed_knight_straight_sword
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 601..700 run loot replace entity @s weapon.mainhand loot ldmc:items/murky_hand_scythe
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 701..800 run loot replace entity @s weapon.mainhand loot ldmc:items/pontiff_knight_curved_sword
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 801..900 run loot replace entity @s weapon.offhand loot ldmc:items/black_knight_shield
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 901..1024 run loot replace entity @s weapon.mainhand loot ldmc:items/splitleaf
+execute if score weapon_class ldmc_Timer matches 300.. if score change_weapon_inventory math_output matches 0 run loot replace entity @s weapon.mainhand loot ldmc:items/cheat_engine
+execute if score weapon_class ldmc_Timer matches 300.. run scoreboard players set weapon_inventory math_output 0
+execute if score weapon_class ldmc_Timer matches 300.. run tag @s remove had_target
+execute if score weapon_class ldmc_Timer matches 300.. run scoreboard players set weapon_class ldmc_Timer 0
 
 #Parry
 #execute if score parry_random math_output matches -100..-1 run tag @s add elder_parrying

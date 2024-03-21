@@ -11,8 +11,12 @@ execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s d
 execute if entity @s[tag=rkss_skill,gamemode=survival] run scoreboard players add @s damage 29
 #Lothric Holy Sword
 execute if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 19
-#Ringed Knight Straight Sword
+#Ringed Knight Paired Greatswords
 execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 39
+#Serpent Hunter
+execute if entity @s[tag=chainsaw,gamemode=survival] run scoreboard players add @s damage 1
+#Moonlight Greatsword
+execute if entity @s[tag=moonlight,gamemode=survival] run scoreboard players add @s damage 25
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand ldmc:crossbow_items_damage
