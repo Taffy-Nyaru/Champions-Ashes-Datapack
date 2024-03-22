@@ -1,4 +1,4 @@
-execute unless score @s shift matches 1.. if entity @s[nbt={SelectedItem:{tag:{id:"ldmc:alumopper"}}}] at @s anchored eyes positioned ^ ^ ^ run function ldmc:blocks/alumopper_fumo/ray
-execute unless score @s shift matches 1.. if entity @s[nbt={Inventory:[{Slot:-106b,tag:{id:"ldmc:alumopper"}}]}] at @s anchored eyes positioned ^ ^ ^ run function ldmc:blocks/alumopper_fumo/ray
-execute if score @s shift matches 1.. unless data storage ldmc:player_data {Inventory:[{Slot:103b}]} run loot replace entity @s armor.head loot ldmc:items/alumopper
-execute if score @s shift matches 1.. unless data storage ldmc:player_data {Inventory:[{Slot:103b}]} run item replace entity @s weapon.mainhand with air
+execute unless score @s shift matches 1.. if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:alumopper"}}} at @s anchored eyes positioned ^ ^ ^ run function ldmc:blocks/alumopper_fumo/ray
+execute unless score @s shift matches 1.. if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:alumopper"}}]} at @s anchored eyes positioned ^ ^ ^ run function ldmc:blocks/alumopper_fumo/ray
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:alumopper"}}} if score @s shift matches 1.. unless data storage ldmc:player_data {Inventory:[{Slot:103b}]} run loot replace entity @s armor.head loot ldmc:items/alumopper
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:alumopper"}}} if score @s shift matches 1.. unless data storage ldmc:player_data {Inventory:[{Slot:103b}]} run item replace entity @s weapon.mainhand with air

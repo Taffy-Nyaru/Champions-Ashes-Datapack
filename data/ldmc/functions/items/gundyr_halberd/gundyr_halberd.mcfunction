@@ -6,8 +6,7 @@ execute unless entity @e[tag=aj.gundyr_skill.root,distance=..1] as 2094fd65-93de
 
 execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=ldmc:using_item/gundyr_halberd] as @s[gamemode=survival] run function ldmc:items/item_durability
 execute if score @s damage matches ..-1 run item replace entity @s weapon.mainhand with air
-execute if score @s damage matches 465.. run scoreboard players set @s damage -1
-execute if score @s damage matches ..-1 run scoreboard players set @s damage 1
+execute if score @s damage matches 465.. run item replace entity @s weapon.mainhand with air
 
 execute at @s if entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s remove needclicker
 execute at @s if entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s remove needclicker
