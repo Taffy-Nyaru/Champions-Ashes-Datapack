@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390092
+#CMD 1390094
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -117,6 +117,10 @@ execute unless data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ld
 execute as @s run function ldmc:items/shadow_pearl/recursion
 execute if data storage ldmc:player_data {Inventory:[{Slot:-106b,tag:{id:"ldmc:void_totem"}}]} run function ldmc:items/shadow_pearl/void_totem
 
+#Void Eye
+execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:void_eye"}}]} at @s run function ldmc:items/void_eye/void_eye
+execute unless data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:void_eye"}}]} run function ldmc:items/void_eye/cancel
+
 #Ender Ring
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:ender_ring"}}]} run advancement grant @s[advancements={ldmc:func/ender_ring=false}] only ldmc:func/ender_ring
 execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:ender_ring"}}} run function ldmc:items/ender_ring/ender_ring
@@ -139,6 +143,10 @@ execute as @s[tag=loop_start] at @s positioned ^ ^2 ^2 if score @s arrow_rain.te
 execute if score @s arrow_rain.temp matches 0 run tag @s remove loop_start
 execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard players set @s[tag=!loop_start] arrow_rain.temp 12
 execute at @s run function ldmc:items/dragonslayer_greatbow/golem_arrow
+
+#Thunder Slayer
+execute if data storage ldmc:player_data {SelectedItem:{tag:{id:"ldmc:thunder_slayer"}}} at @s if score @s usedBow matches 1.. run function ldmc:items/thunder_slayer/get_owner
+execute at @s run function ldmc:items/thunder_slayer/thunder_arrow
 
 #Arbalest
 execute if data storage ldmc:player_data {Inventory:[{tag:{id:"ldmc:arbalest"}}]} run advancement grant @s[advancements={ldmc:func/arbalest=false}] only ldmc:func/arbalest

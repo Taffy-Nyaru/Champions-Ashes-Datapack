@@ -1,0 +1,1 @@
+function animated_java:thunder_bullet/zzzzzzzz/animations/animation.thunder_bullet.rotation/pause_as_root

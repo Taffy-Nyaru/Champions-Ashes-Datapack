@@ -51,6 +51,8 @@ execute if entity @e[tag=frost_stiff] as @e[tag=frost_stiff] run function ldmc:i
 
 #Animate Effects
 execute as @e[tag=aj.rkgugs_skill.locator] at @s run function ldmc:animated_effects/rkgugs_skill
+execute as @e[tag=aj.thunder_bullet.root] at @s unless entity @e[type=arrow,distance=..2] run function animated_java:thunder_bullet/remove/this
+execute at @e[tag=aj.thunder_bullet.root] run particle minecraft:soul_fire_flame ~ ~ ~ 0.2 0.2 0.2 0.05 2
 
 tag @a[tag=!ally] add ally
 tag @e[tag=pearl,tag=!ally] add ally

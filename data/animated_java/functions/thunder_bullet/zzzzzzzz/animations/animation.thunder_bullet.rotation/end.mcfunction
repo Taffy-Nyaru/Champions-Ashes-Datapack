@@ -1,0 +1,3 @@
+execute if score @s aj.thunder_bullet.animation.animation.thunder_bullet.rotation.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:thunder_bullet/zzzzzzzz/animations/animation.thunder_bullet.rotation/end_loop
+execute if score @s aj.thunder_bullet.animation.animation.thunder_bullet.rotation.loop_mode = $aj.loop_mode.once aj.i run function animated_java:thunder_bullet/animations/animation.thunder_bullet.rotation/stop
+execute if score @s aj.thunder_bullet.animation.animation.thunder_bullet.rotation.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:thunder_bullet/animations/animation.thunder_bullet.rotation/pause

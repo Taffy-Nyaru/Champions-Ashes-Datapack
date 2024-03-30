@@ -12,7 +12,23 @@
       "minecraft:block_display",
       "#minecraft:arrows",
       "minecraft:area_effect_cloud",
-      "minecraft:armor_stand"
+      "minecraft:armor_stand",
+      "minecraft:minecart",
+      "minecraft:tnt_minecart",
+      "minecraft:chest_minecart",
+      "minecraft:boat",
+      "minecraft:lightning_bolt",
+      "minecraft:hopper_minecart",
+      "minecraft:furnace_minecart",
+      "minecraft:command_block_minecart",
+      "minecraft:end_crystal",
+      "minecraft:ender_pearl",
+      "minecraft:evoker_fangs",
+      "minecraft:experience_orb",
+      "minecraft:experience_bottle",
+      "minecraft:fireball",
+      "minecraft:falling_block",
+      "minecraft:snowball"
     ]
   }
   

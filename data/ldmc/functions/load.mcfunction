@@ -187,6 +187,18 @@ scoreboard objectives add lazer_fading dummy
 scoreboard objectives add vortex_timer dummy
 scoreboard objectives add vortex_scale dummy
 
+#Thunder Slayer
+scoreboard objectives add thunderslayer_arrow_owner_uuid0 dummy
+scoreboard objectives add thunderslayer_arrow_owner_uuid1 dummy
+scoreboard objectives add thunderslayer_arrow_owner_uuid2 dummy
+scoreboard objectives add thunderslayer_arrow_owner_uuid3 dummy
+scoreboard objectives add recursive_arrow dummy
+scoreboard objectives add thunderarrow_damage dummy
+scoreboard objectives add power_level dummy
+
+#Void Eye
+scoreboard objectives add void_eye_timer dummy
+
 #Snowball UUID detect
 scoreboard objectives add snowball_uuid0 dummy
 scoreboard objectives add snowball_uuid1 dummy
@@ -202,7 +214,9 @@ scoreboard players set #raycast.max raycastvalue 100
 scoreboard players set #20 ldmcValue 20
 scoreboard players set #60 ldmcValue 60
 scoreboard players set #12 ldmcValue 12
+scoreboard players set #2 ldmcValue 2
 scoreboard players set @a arrow_rain.temp 0
+scoreboard players set @a thunderarrow_damage 2
 scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
 execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1
 
