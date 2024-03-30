@@ -49,6 +49,10 @@ execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function ld
 #Stiff
 execute if entity @e[tag=frost_stiff] as @e[tag=frost_stiff] run function ldmc:items/pkcs/stiff
 
+#Void Eye
+execute as @e[type=marker,tag=void_marker] run scoreboard players add @s void_eye_timer 1
+execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run function ldmc:items/void_eye/effect
+
 #Animate Effects
 execute as @e[tag=aj.rkgugs_skill.locator] at @s run function ldmc:animated_effects/rkgugs_skill
 execute as @e[tag=aj.thunder_bullet.root] at @s unless entity @e[type=arrow,distance=..2] run function animated_java:thunder_bullet/remove/this
