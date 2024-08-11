@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_fungus_on_a_stick",
+      "nbt": "{CustomModelData:1380001}"
+    },
+    "title": { "translate": "advancements.championsashes.func.medal.title" },
+    "description": { "translate": "advancements.championsashes.func.medal.disc" },
+    "frame": "challenge"
+  },
+  "parent": "championsashes:func/championsashes",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

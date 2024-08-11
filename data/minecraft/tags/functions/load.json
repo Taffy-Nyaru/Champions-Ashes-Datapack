@@ -1,12 +1,13 @@
 {
 	"values": [
-		"ldmc:load",
+		"championsashes:load",
 		"taffy_math:load",
 		"math:_init",
 		"animated_java:gundyr_skill/zzzzzzzz/load",
 		"animated_java:aquamarine_dagger/zzzzzzzz/load",
 		"animated_java:rkss_skill/zzzzzzzz/load",
 		"animated_java:rkgugs_skill/zzzzzzzz/load",
-		"animated_java:alumopper/zzzzzzzz/load"
+		"animated_java:alumopper/zzzzzzzz/load",
+		"animated_java:thunder_bullet/zzzzzzzz/load"
 	]
 }

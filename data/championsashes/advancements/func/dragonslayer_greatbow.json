@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bow",
+        "nbt": "{CustomModelData:1390036}"
+      },
+      "title": { "translate": "advancements.championsashes.func.dragonslayer_greatbow.title" },
+      "description": { "translate": "advancements.championsashes.func.dragonslayer_greatbow.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/eternal_crystal",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

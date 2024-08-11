@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:1390007}"
+      },
+      "title": { "translate": "advancements.championsashes.func.vampire_hat.title" },
+      "description": { "translate": "advancements.championsashes.func.vampire_hat.disc" },
+      "frame": "goal"
+    },
+    "parent": "championsashes:func/make_energy_crafter",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{id:\"championsashes:homeward_bone\",display: {Name: '[{\"translate\":\"item.championsashes.homeward_bone\",\"italic\":false}]'},CustomModelData:1390038}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

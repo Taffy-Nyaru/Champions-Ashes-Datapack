@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:netherite_leggings",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"championsashes:tryhard_leggings\",CustomModelData:1390073,Trim:{material:\"minecraft:impossible\",pattern:\"minecraft:tryhard_set\"},display: {Name: '[{\"translate\":\"item.championsashes.tryhard_leggings\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"legs\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 0.5d, Operation: 0, UUID: [I;318625326,1676231679,-1453164030,-768230495]},{Slot: \"legs\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 16d, Operation: 0, UUID: [I;76139937,808141190,-1896316549,-1864286078]},{Slot: \"legs\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 8d, Operation: 0, UUID: [I;1492014533,1229997131,-2128299093,108841322]}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

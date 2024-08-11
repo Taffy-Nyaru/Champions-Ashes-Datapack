@@ -1,0 +1,2 @@
+function championsashes:items/dragonslayer_greatbow/dragonslayer_greatbow
+function championsashes:items/dragonslayer_greatbow/arbalest/arbalest

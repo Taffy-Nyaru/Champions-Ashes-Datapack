@@ -1,0 +1,2 @@
+execute at @e[tag=void_marker,type=marker] unless block ~ ~ ~ end_gateway run setblock ~ ~ ~ end_gateway destroy
+execute if entity @e[type=#minecraft:impact_projectiles,predicate=!championsashes:misc/arrow_inground,distance=..10] unless entity @e[type=marker,tag=void_marker,distance=..10] run summon marker ^ ^ ^2 {Tags:["void_marker"]}

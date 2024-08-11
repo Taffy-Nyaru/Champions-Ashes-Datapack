@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:iron_sword",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:steel_sword\",CustomModelData:1390026,display: {Name: '[{\"translate\":\"item.championsashes.steel_sword\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"attack_damage\", Amount: 7d, Operation: 0, UUID: [I;537378653,-582203391,-1257878815,-1798859130]},{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"attack_speed\", Amount: 0.4d, Operation: 0, UUID: [I;2099108666,418465442,-1314789251,-712045699]}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

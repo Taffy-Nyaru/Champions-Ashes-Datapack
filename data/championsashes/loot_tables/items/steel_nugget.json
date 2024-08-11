@@ -1,0 +1,31 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:iron_nugget",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:score",
+                  "target": {
+                      "type": "context",
+                      "target": "this"
+                  },
+                  "score": "steelCount"
+                }
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:steel_nugget\",display: {Name: '[{\"translate\":\"item.championsashes.steel_nugget\",\"italic\":false}]'},CustomModelData:1390027}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

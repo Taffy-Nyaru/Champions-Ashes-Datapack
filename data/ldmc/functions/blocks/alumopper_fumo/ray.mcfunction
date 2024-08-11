@@ -1,2 +1,0 @@
-execute if entity @s[distance=..10] unless block ~ ~ ~ air align xyz positioned ~0.5 ~1.5 ~0.5 run function ldmc:blocks/alumopper_fumo/put
-execute if entity @s[distance=..10] unless block ~ ~1 ~ end_rod positioned ^ ^ ^0.005 run function ldmc:blocks/alumopper_fumo/ray

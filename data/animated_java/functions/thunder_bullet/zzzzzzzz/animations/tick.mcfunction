@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.thunder_bullet.animation.animation.thunder_bullet.rotation] run function animated_java:thunder_bullet/zzzzzzzz/animations/animation.thunder_bullet.rotation/tick

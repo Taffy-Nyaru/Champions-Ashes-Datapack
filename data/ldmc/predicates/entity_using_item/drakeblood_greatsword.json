@@ -1,7 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{HandItems:[{id:\"minecraft:iron_sword\",tag:{id:\"ldmc:drakeblood_greatsword\",Damage:0},Count:1b}]}"
-    }
-}  

@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:shield",
+        "nbt": "{CustomModelData:1390050}"
+      },
+      "title": { "translate": "advancements.championsashes.func.parry.title" },
+      "description": { "translate": "advancements.championsashes.func.parry.disc" },
+      "frame": "goal"
+    },
+    "parent": "championsashes:func/make_energy_crafter",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

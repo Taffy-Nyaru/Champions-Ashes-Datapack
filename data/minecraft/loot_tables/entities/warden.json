@@ -26,7 +26,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "ldmc:items/sonic_boom_shard"
+          "name": "championsashes:items/sonic_boom_shard"
         }
       ]
     }

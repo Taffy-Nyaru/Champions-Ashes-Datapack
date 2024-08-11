@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:echo_shard",
+      "nbt": "{CustomModelData:1390003}"
+    },
+    "title": { "translate": "advancements.championsashes.func.get_echo_heart.title" },
+    "description": { "translate": "advancements.championsashes.func.get_echo_heart.disc" },
+    "frame": "challenge"
+  },
+  "parent": "championsashes:func/kill_warden",
+  "criteria": {
+    "echo_heart": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

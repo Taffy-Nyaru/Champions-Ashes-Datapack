@@ -1,0 +1,207 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:crossbow"
+            ],
+            "nbt": "{id:\"championsashes:zweihander\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:echo_shard"
+            ],
+            "nbt": "{id:\"championsashes:sonic_boom_shard\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:amethyst_shard"
+            ],
+            "nbt": "{id:\"championsashes:eternal_crystal\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "offhand": {
+            "items": [
+              "minecraft:amethyst_shard"
+            ],
+            "nbt": "{id:\"championsashes:eternal_crystal\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ],
+            "nbt": "{id:\"championsashes:gtx690\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:compass"
+            ],
+            "nbt": "{id:\"championsashes:homeward_bone\",LodestoneTracked:1b}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:night_cavalry_halberd\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:ringed_knight_straight_sword\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:black_blade\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:splitleaf\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:gundyr_halberd\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:iron_sword"
+            ],
+            "nbt": "{id:\"championsashes:lothric_holy_sword\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:ringed_knight_paired_greatsword_right\"}"
+          },
+          "offhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:ringed_knight_paired_greatsword_left\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:diamond_sword"
+            ],
+            "nbt": "{id:\"championsashes:moonlight_greatsword\"}"
+          }
+        }
+      }
+    }
+  ]
+}

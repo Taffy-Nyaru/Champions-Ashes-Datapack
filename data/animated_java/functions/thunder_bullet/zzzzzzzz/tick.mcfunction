@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.thunder_bullet.root] run function animated_java:thunder_bullet/zzzzzzzz/tick_as_root

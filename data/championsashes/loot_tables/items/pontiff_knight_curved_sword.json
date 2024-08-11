@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:crossbow",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:pontiff_knight_curved_sword\",display: {Name: '[{\"translate\":\"item.championsashes.pontiff_knight_curved_sword\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: 1.3d, Operation: 0, UUID: [I;2073619950,1254182825,-1885242875,-1896682705]},{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 8d, Operation: 0, UUID:[I;536892551,2093632430,-2137901413,-346757819]}],CustomModelData:1390058,HideFlags:32}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}

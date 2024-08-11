@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_chestplate",
+        "nbt": "{CustomModelData:1390029}"
+      },
+      "title": { "translate": "advancements.championsashes.func.steel_set.title" },
+      "description": { "translate": "advancements.championsashes.func.steel_set.disc" },
+      "frame": "goal"
+    },
+    "parent": "championsashes:func/steel_ingot",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

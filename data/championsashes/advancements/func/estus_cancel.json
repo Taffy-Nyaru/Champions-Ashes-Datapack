@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:honey_bottle",
+        "nbt": "{CustomModelData:1390066}"
+      },
+      "title": { "translate": "advancements.championsashes.func.estus_cancel.title" },
+      "description": { "translate": "advancements.championsashes.func.estus_cancel.disc" },
+      "frame": "task"
+    },
+    "parent": "championsashes:func/make_energy_crafter",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

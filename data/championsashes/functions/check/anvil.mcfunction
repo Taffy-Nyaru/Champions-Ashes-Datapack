@@ -1,0 +1,4 @@
+execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:gold_medal"}}]} as @s run function championsashes:medal/playerinv
+execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:silver_medal"}}]} as @s run function championsashes:medal/playerinv
+execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:bronze_medal"}}]} as @s run function championsashes:medal/playerinv
+execute if data storage championsashes:player_data {Inventory:[{tag:{id:"not_overwritable"}}]} as @s run function championsashes:medal/playerinv

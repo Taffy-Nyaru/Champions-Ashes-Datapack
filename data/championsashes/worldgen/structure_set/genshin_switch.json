@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "championsashes:genshin_switch",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 20030923,
+      "separation": 60,
+      "spacing": 120
+    }
+  }

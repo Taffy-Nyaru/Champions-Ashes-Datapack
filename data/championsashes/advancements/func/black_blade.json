@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_sword",
+        "nbt": "{CustomModelData:1390060}"
+      },
+      "title": { "translate": "advancements.championsashes.func.black_blade.title" },
+      "description": { "translate": "advancements.championsashes.func.black_blade.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/eternal_crystal",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

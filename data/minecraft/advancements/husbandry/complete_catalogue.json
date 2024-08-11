@@ -242,7 +242,7 @@
   "rewards": {
     "experience": 50,
     "loot" :[
-      "ldmc:items/cat_medal"
+      "championsashes:items/cat_medal"
     ]
   },
   "sends_telemetry_event": true

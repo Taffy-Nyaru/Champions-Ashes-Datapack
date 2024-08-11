@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_sword",
+        "nbt": "{CustomModelData:1390041}"
+      },
+      "title": { "translate": "advancements.championsashes.func.nightrider_glaive.title" },
+      "description": { "translate": "advancements.championsashes.func.nightrider_glaive.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/eternal_crystal",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

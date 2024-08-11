@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.thunder_bullet.root] run function animated_java:thunder_bullet/zzzzzzzz/remove/as_root
+kill @e[tag=aj.thunder_bullet.rig_entity]

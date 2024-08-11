@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "championsashes:firelink_shrine",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 20101003,
+      "separation": 30,
+      "spacing": 90
+    }
+  }

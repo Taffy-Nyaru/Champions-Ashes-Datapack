@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_chestplate",
+        "nbt": "{CustomModelData:1390047}"
+      },
+      "title": { "translate": "advancements.championsashes.func.drakeblood_armor.title" },
+      "description": { "translate": "advancements.championsashes.func.drakeblood_armor.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/steel_set",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+}

@@ -1,7 +1,7 @@
 {
   "asset_id": "minecraft:drakeblood_set",
   "description": {
-    "translate": "item.ldmc.drakeblood_set"
+    "translate": "item.championsashes.drakeblood_set"
   },
   "template_item": "minecraft:dragon_head"
 }

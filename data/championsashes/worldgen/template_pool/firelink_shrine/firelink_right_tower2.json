@@ -1,0 +1,15 @@
+{
+    "name": "championsashes:firelink_shrine_right",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "championsashes:firelink_shrine/firelink_right_tower2",
+          "projection": "rigid",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

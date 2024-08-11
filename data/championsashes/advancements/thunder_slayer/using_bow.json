@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "nbt": "{id:'championsashes:thunder_slayer'}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "championsashes:items/thunder_slayer/thunder_slayer"
+  }
+}

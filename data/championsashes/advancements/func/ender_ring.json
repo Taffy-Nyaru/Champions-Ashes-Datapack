@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:1390039}"
+      },
+      "title": { "translate": "advancements.championsashes.func.ender_ring.title" },
+      "description": { "translate": "advancements.championsashes.func.ender_ring.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/get_echo_heart",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

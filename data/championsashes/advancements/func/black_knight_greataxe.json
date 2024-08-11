@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_axe",
+        "nbt": "{CustomModelData:1390054}"
+      },
+      "title": { "translate": "advancements.championsashes.func.black_knight_greataxe.title" },
+      "description": { "translate": "advancements.championsashes.func.black_knight_greataxe.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/eternal_crystal",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

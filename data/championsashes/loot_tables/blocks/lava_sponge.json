@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:sea_lantern",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"championsashes:lava_sponge\",display: {Name: '[{\"translate\":\"item.championsashes.lava_sponge\",\"italic\":false}]'},CustomModelData:1440008}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

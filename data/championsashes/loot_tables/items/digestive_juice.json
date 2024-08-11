@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{id:\"championsashes:potion_of_digestion\",display:{Name:'{\"translate\":\"item.championsashes.potion_of_digestion\",\"italic\":false}'},CustomPotionColor:39939,CustomPotionEffects:[{Id:17b,Amplifier:100,Duration:1200}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

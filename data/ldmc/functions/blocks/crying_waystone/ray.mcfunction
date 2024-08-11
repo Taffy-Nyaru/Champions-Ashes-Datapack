@@ -1,2 +1,0 @@
-execute if entity @s[distance=..10] if block ~ ~ ~ lodestone align xyz positioned ~0.5 ~0.5 ~0.5 run function ldmc:blocks/crying_waystone/put
-execute if entity @s[distance=..10] unless block ~ ~ ~ lodestone positioned ^ ^ ^0.005 run function ldmc:blocks/crying_waystone/ray

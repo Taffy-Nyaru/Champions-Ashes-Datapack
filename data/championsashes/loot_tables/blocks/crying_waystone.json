@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:lodestone",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:crying_waystone\",display: {Name: '[{\"translate\":\"item.championsashes.crying_waystone\",\"italic\":false}]'},CustomModelData:1440011}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_ingot",
+        "nbt": "{CustomModelData:1390006}"
+      },
+      "title": { "translate": "advancements.championsashes.func.steel_ingot.title" },
+      "description": { "translate": "advancements.championsashes.func.steel_ingot.disc" },
+      "frame": "task"
+    },
+    "parent": "championsashes:func/make_energy_crafter",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

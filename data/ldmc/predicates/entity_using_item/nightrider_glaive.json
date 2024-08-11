@@ -1,7 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{HandItems:[{id:\"minecraft:netherite_sword\",tag:{id:\"ldmc:night_cavalry_halberd\",Damage:0},Count:1b}]}"
-    }
-}  

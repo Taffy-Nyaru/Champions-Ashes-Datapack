@@ -1,0 +1,3 @@
+execute if entity @s[nbt={SelectedItem:{tag:{id:"championsashes:steel_furnace"}}}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/steel_furnace/ray
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{id:"championsashes:steel_furnace"}}]}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/steel_furnace/ray
+advancement revoke @s only championsashes:blocks/setfurnace

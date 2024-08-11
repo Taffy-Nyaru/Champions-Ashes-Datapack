@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"championsashes:drakeblood_chestplate\",CustomModelData:1390047,Trim:{material:\"minecraft:impossible\",pattern:\"minecraft:drakeblood_set\"},display: {Name: '[{\"translate\":\"item.championsashes.drakeblood_chestplate\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"chest\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 0.2d, Operation: 0, UUID: [I; 129464, -492014, 2795133, 32650]},{Slot: \"chest\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 11d, Operation: 0, UUID: [I;-907572684,1771062337,-1184947814,324861679]},{Slot: \"chest\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 3d, Operation: 0, UUID: [I;-1456850697,1763131480,-1738748357,-448151379]}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

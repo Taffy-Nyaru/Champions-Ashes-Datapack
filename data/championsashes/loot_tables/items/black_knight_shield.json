@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:shield",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:black_knight_shield\",display: {Name: '[{\"translate\":\"item.championsashes.black_knight_shield\",\"italic\":false}]'},CustomModelData:1390057,AttributeModifiers: [{Slot: \"offhand\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 10d, Operation: 0, UUID: [I;-736755768,7882198,-1804195323,396188651]},{Slot: \"offhand\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 10d, Operation: 0, UUID: [I;203311066,-2075180850,-1269094894,1477907051]},{Slot: \"offhand\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 1d, Operation: 0, UUID: [I;203311066,-2075180850,-1269094894,1477907051]}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

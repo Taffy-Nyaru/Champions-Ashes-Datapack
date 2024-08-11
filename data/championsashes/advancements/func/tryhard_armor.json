@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_chestplate",
+      "nbt": "{CustomModelData:1390075}"
+    },
+    "title": { "translate": "advancements.championsashes.func.tryhard_armor.title" },
+    "description": { "translate": "advancements.championsashes.func.tryhard_armor.disc" },
+    "frame": "challenge"
+  },
+  "parent": "championsashes:func/drakeblood_armor",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

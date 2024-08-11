@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:shield",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:red_white_shield\",display: {Name: '[{\"translate\":\"item.championsashes.red_white_shield\",\"italic\":false}]'},CustomModelData:1390067}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

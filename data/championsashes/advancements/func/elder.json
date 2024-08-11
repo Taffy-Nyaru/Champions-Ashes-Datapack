@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:1390043,HideFlags:1b,Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
+      },
+      "title": { "translate": "advancements.championsashes.func.elder.title" },
+      "description": { "translate": "advancements.championsashes.func.elder.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/find_firelink_shrine",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

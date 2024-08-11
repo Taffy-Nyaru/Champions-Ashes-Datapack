@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:old_sorcerer_hat_nep\",CustomModelData:1390053,display: {Name: '[{\"translate\":\"item.championsashes.old_sorcerer_hat_nep\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"head\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 1d, Operation: 0, UUID: [I;-625197007,-1589229260,-2111668890,826460726]},{Slot: \"head\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 3d, Operation: 0, UUID: [I;17395173,1878345439,-1152502633,-1113683162]},{Slot: \"head\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 2d, Operation: 0, UUID: [I;2135254786,-802537186,-1796473963,570118640]}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

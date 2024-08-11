@@ -1,0 +1,29 @@
+execute positioned ~ ~ ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~ ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~ ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~1 ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~ ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~ ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~ ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~1 ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~1 ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~2 ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~2 ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~2 ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~2 ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~2 ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~1 ~2 ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~2 ~1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~-1 ~2 ~-1 if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute positioned ~ ~2 ~ if block ~ ~ ~ #championsashes:chain_mining_blocks as @s run function championsashes:items/bomber/chain_mined
+execute as @e[type=item,distance=..15] run tp @s ~ ~ ~
+tag @s remove chain_mining

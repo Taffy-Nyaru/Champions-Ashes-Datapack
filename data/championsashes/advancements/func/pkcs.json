@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:crossbow",
+        "nbt": "{CustomModelData:1390058}"
+      },
+      "title": { "translate": "advancements.championsashes.func.pontiff_knight_curved_sword.title" },
+      "description": { "translate": "advancements.championsashes.func.pontiff_knight_curved_sword.disc" },
+      "frame": "challenge"
+    },
+    "parent": "championsashes:func/eternal_crystal",
+    "criteria": {
+      "championsashes": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

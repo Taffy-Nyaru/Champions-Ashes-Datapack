@@ -1,2 +1,0 @@
-execute if entity @s[distance=..10] if block ~ ~ ~ glass align xyz positioned ~0.5 ~0.5 ~0.5 run function ldmc:blocks/upgrade_table/put
-execute if entity @s[distance=..10] unless block ~ ~ ~ glass positioned ^ ^ ^0.005 run function ldmc:blocks/upgrade_table/ray

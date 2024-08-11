@@ -1,0 +1,3 @@
+execute if entity @s[nbt={SelectedItem:{tag:{id:"championsashes:crying_waystone"}}}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/crying_waystone/ray
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{id:"championsashes:crying_waystone"}}]}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/crying_waystone/ray
+advancement revoke @s only championsashes:blocks/set_crying_waystone

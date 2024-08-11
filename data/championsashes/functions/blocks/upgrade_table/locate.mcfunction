@@ -1,0 +1,3 @@
+execute if entity @s[nbt={SelectedItem:{tag:{id:"championsashes:upgrade_table"}}}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/upgrade_table/ray
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{id:"championsashes:upgrade_table"}}]}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/upgrade_table/ray
+advancement revoke @s only championsashes:blocks/set_upgrade_table

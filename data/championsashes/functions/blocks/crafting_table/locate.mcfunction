@@ -1,0 +1,3 @@
+execute if entity @s[nbt={SelectedItem:{tag:{id:"championsashes:crafting_table"}}}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/crafting_table/ray
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{id:"championsashes:crafting_table"}}]}] at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/crafting_table/ray
+advancement revoke @s only championsashes:blocks/set_table

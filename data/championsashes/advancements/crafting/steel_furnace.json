@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "craftdisrupter": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "championsashes:steel_furnace"
+            }
+        }
+    },
+    "rewards": {
+        "function": "championsashes:blocks/steel_furnace/craft"
+    }
+}
