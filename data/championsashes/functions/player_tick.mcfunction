@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390098
+#CMD 1390099
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -175,7 +175,7 @@ function championsashes:items/armors
 
 #Nightrider Glaive
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:night_cavalry_halberd"}}]} run advancement grant @s[advancements={championsashes:func/nightrider_glaive=false}] only championsashes:func/nightrider_glaive
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities,distance=..5] frostbite_Timer 520
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities] frostbite_Timer 520
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} if score @s shift matches 1.. run function championsashes:items/nightrider_glaive/magicblade_phanalax
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} if score @s glaive_damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if score @s glaive_damage matches 2031.. run scoreboard players set @s glaive_damage -1
@@ -183,8 +183,8 @@ execute if score @s glaive_damage matches ..-1 run scoreboard players set @s gla
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} run tag @s remove needclicker
 
 #Drakeblood Greatsword
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities,distance=..5] bleeding_Timer 400
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/drakeblood_greatsword/drakeblood_greatsword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} at @s[tag=!used_drakeblood_skill,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities] bleeding_Timer 400
 execute as @s[tag=loop_lightning_bolt] at @s positioned ~-3 ~ ~-3 if score @s lightning_bolt_rain matches 1.. run function championsashes:items/drakeblood_greatsword/throne_judgement
 execute as @e[tag=!aj.ancient_lightning_strike.locator,tag=bolt_marker_unused] at @s run function championsashes:items/drakeblood_greatsword/summon_lightning_bolt
 execute as @s[tag=animate_lightning_bolt] run function championsashes:items/drakeblood_greatsword/animate_lightning_bolt
