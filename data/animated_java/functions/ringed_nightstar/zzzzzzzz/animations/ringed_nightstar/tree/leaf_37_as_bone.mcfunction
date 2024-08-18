@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ringed_nightstar.locator_origin.player_camera] at @s on origin run tp @s ^-0.02784 ^-0.15418 ^15.53971 ~9.9344 ~-31.51139

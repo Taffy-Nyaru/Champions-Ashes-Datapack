@@ -29,6 +29,10 @@ execute if entity @s[tag=gravity_soul_stream_user,gamemode=survival] run scorebo
 execute if entity @s[tag=chainsaw,gamemode=survival] run scoreboard players add @s damage 1
 #Moonlight Greatsword
 execute if entity @s[tag=moonlight,gamemode=survival] run scoreboard players add @s damage 25
+#Dark Sword+22
+execute if entity @s[tag=ringed_nightstar_user,gamemode=survival] run scoreboard players add @s damage 15
+#Drakeblood Greatsword
+execute if entity @s[tag=loop_lightning_bolt,gamemode=survival] run scoreboard players add @s damage 10
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

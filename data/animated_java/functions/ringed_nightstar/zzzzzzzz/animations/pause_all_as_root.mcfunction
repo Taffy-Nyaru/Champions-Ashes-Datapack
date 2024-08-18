@@ -1,0 +1,1 @@
+function animated_java:ringed_nightstar/zzzzzzzz/animations/ringed_nightstar/pause_as_root

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ringed_nightstar.animation.ringed_nightstar] run function animated_java:ringed_nightstar/zzzzzzzz/animations/ringed_nightstar/tick

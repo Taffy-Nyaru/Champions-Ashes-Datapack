@@ -241,6 +241,9 @@ execute if data storage championsashes:player_data {Inventory:[{tag:{id:"champio
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:aquamarine_dagger"}}} at @s run function championsashes:items/aquamarine_dagger/aquamarine_dagger
 execute as @e[tag=aj.aquamarine_dagger.root] at @s run function championsashes:items/aquamarine_dagger/animation
 
+#Dark Sword+22
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:darksword22"}}} at @s run function championsashes:items/dark_sword22/feather
+
 #Antspur Rapier
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:antspur_rapier"}}]} run advancement grant @s[advancements={championsashes:func/antspur_rapier=false}] only championsashes:func/antspur_rapier
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:antspur_rapier"}}} at @s run function championsashes:items/antspur_rapier/antspur_rapier
