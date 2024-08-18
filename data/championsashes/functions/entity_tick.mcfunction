@@ -49,10 +49,6 @@ execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function ch
 execute as @e[type=marker,tag=void_marker] run scoreboard players add @s void_eye_timer 1
 execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run function championsashes:items/void_eye/effect
 
-#Void Eye
-execute as @e[type=marker,tag=void_marker] run scoreboard players add @s void_eye_timer 1
-execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run function ldmc:items/void_eye/effect
-
 #Animate Effects
 function championsashes:animated_effects/animated_effects
 
