@@ -215,12 +215,20 @@ scoreboard objectives add championsashesValue dummy
 scoreboard objectives add championsashes_return dummy
 scoreboard players set count entityCount 0
 scoreboard players set #raycast.max raycastvalue 100
+<<<<<<< HEAD:data/championsashes/functions/load.mcfunction
 scoreboard players set #20 championsashesValue 20
 scoreboard players set #60 championsashesValue 60
 scoreboard players set #12 championsashesValue 12
 scoreboard players set #2 championsashesValue 2
 scoreboard players set @a arrow_rain.temp 0
 scoreboard players set @a lightning_bolt_rain 0
+=======
+scoreboard players set #20 ldmcValue 20
+scoreboard players set #60 ldmcValue 60
+scoreboard players set #12 ldmcValue 12
+scoreboard players set #2 ldmcValue 2
+scoreboard players set @a arrow_rain.temp 0
+>>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/functions/load.mcfunction
 scoreboard players set @a thunderarrow_damage 2
 scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
 execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1

@@ -13,9 +13,14 @@
 		"animated_java:starscaller/zzzzzzzz/tick",
 		"animated_java:dimension_slash/zzzzzzzz/tick",
 		"animated_java:rkgugs_skill/zzzzzzzz/tick",
+<<<<<<< HEAD
 		"animated_java:gravity_thrust/zzzzzzzz/tick",
 		"animated_java:gravity_soul_stream/zzzzzzzz/tick",
 		"animated_java:ancient_lightning_strike/zzzzzzzz/tick",
 		"animated_java:ringed_nightstar/zzzzzzzz/tick"
+=======
+		"animated_java:alumopper/zzzzzzzz/tick",
+		"animated_java:thunder_bullet/zzzzzzzz/tick"
+>>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8
 	]
 }

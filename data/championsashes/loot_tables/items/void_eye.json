@@ -9,7 +9,11 @@
             "functions": [
               {
                 "function": "set_nbt",
+<<<<<<< HEAD:data/championsashes/loot_tables/items/void_eye.json
                 "tag": "{id:\"championsashes:void_eye\",display: {Name: '[{\"translate\":\"item.championsashes.void_eye\",\"italic\":false}]'},CustomModelData:1390094}"
+=======
+                "tag": "{id:\"ldmc:void_eye\",display: {Name: '[{\"translate\":\"item.ldmc.void_eye\",\"italic\":false}]'},CustomModelData:1390094}"
+>>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/loot_tables/items/void_eye.json
               }
             ]
           }

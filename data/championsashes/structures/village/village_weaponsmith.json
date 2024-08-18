@@ -165,7 +165,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "championsashes:items/irithyll_straight_sword",
+          "name": "ldmc:items/irithyll_straight_sword",
           "weight": 5
         }
       ],

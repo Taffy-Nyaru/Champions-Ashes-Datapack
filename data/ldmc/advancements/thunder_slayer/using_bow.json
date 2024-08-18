@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "nbt": "{id:'ldmc:thunder_slayer'}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ldmc:items/thunder_slayer/thunder_slayer"
+  }
+}
