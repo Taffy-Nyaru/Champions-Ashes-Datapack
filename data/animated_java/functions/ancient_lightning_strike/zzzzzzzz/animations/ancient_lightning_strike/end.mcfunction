@@ -1,0 +1,3 @@
+execute if score @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/end_loop
+execute if score @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ancient_lightning_strike/animations/ancient_lightning_strike/stop
+execute if score @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ancient_lightning_strike/animations/ancient_lightning_strike/pause

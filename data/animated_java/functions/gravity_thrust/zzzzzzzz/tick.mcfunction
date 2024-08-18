@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_thrust.root] run function animated_java:gravity_thrust/zzzzzzzz/tick_as_root

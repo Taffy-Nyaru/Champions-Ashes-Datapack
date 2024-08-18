@@ -1,0 +1,1 @@
+tag @s remove aj.meteorite_shockwave.animation.meteorite_particles

@@ -1,0 +1,1 @@
+function animated_java:meteorite_shockwave/zzzzzzzz/animations/meteorite_particles/pause_as_root

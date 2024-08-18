@@ -1,1 +1,2 @@
 function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_skill/pause_as_root
+function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_l1/pause_as_root

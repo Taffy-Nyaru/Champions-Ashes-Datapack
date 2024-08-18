@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tick_animation

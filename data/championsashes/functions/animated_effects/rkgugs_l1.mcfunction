@@ -1,0 +1,1 @@
+execute as @e[distance=..2,type=!#championsashes:special_entities,tag=!rkgugs_l1_user] run damage @s 5 player_attack by @a[limit=1,sort=nearest]

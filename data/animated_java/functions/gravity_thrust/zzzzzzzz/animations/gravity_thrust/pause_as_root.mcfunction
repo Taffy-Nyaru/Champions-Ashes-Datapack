@@ -1,0 +1,1 @@
+tag @s remove aj.gravity_thrust.animation.gravity_thrust

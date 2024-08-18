@@ -1,0 +1,3 @@
+execute if score @s aj.gravity_thrust.animation.gravity_thrust.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:gravity_thrust/zzzzzzzz/animations/gravity_thrust/end_loop
+execute if score @s aj.gravity_thrust.animation.gravity_thrust.loop_mode = $aj.loop_mode.once aj.i run function animated_java:gravity_thrust/animations/gravity_thrust/stop
+execute if score @s aj.gravity_thrust.animation.gravity_thrust.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:gravity_thrust/animations/gravity_thrust/pause

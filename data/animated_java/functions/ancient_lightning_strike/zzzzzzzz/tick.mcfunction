@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ancient_lightning_strike.root] run function animated_java:ancient_lightning_strike/zzzzzzzz/tick_as_root

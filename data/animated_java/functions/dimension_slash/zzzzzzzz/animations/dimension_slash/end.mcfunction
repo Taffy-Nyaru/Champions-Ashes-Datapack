@@ -1,0 +1,3 @@
+execute if score @s aj.dimension_slash.animation.dimension_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:dimension_slash/zzzzzzzz/animations/dimension_slash/end_loop
+execute if score @s aj.dimension_slash.animation.dimension_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:dimension_slash/animations/dimension_slash/stop
+execute if score @s aj.dimension_slash.animation.dimension_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:dimension_slash/animations/dimension_slash/pause

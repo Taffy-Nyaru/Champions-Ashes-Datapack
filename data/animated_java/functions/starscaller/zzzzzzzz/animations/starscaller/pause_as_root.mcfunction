@@ -1,0 +1,1 @@
+tag @s remove aj.starscaller.animation.starscaller

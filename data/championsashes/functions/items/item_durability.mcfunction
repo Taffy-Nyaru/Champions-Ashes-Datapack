@@ -13,6 +13,18 @@ execute if entity @s[tag=rkss_skill,gamemode=survival] run scoreboard players ad
 execute if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 19
 #Ringed Knight Paired Greatswords
 execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 39
+#Ringed Knight Paired Greatswords_L1
+execute if entity @s[tag=rkgugs_l1_user,gamemode=survival] run scoreboard players add @s damage 20
+#Spinning Gravity Thrust
+execute if entity @s[tag=gravity_thrust_user,gamemode=survival] run scoreboard players add @s damage 45
+#Moonveil
+execute if entity @s[tag=dimension_slash_user,gamemode=survival] run scoreboard players add @s damage 20
+#Gravity Orb
+execute if entity @s[tag=shot_gravity_orb,gamemode=survival] run scoreboard players add @s damage 50
+#Starscaller
+execute if entity @s[tag=starscaller_user,gamemode=survival] run scoreboard players add @s damage 10
+#Gravity Soul Stream
+execute if entity @s[tag=gravity_soul_stream_user,gamemode=survival] run scoreboard players add @s damage 15
 #Serpent Hunter
 execute if entity @s[tag=chainsaw,gamemode=survival] run scoreboard players add @s damage 1
 #Moonlight Greatsword

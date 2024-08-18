@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_soul_stream.animation.gravity_soul_stream] run function animated_java:gravity_soul_stream/zzzzzzzz/animations/gravity_soul_stream/tick

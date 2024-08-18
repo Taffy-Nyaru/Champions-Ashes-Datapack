@@ -1,0 +1,1 @@
+function animated_java:gravity_sniper/zzzzzzzz/animations/gravity_sniper/pause_as_root

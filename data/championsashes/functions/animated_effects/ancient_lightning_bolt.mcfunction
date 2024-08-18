@@ -1,0 +1,2 @@
+execute as @e[distance=..2,type=!#championsashes:special_entities,predicate=!championsashes:using_item/drakeblood_greatsword] run damage @s 4 championsashes:frostbite by @a[limit=1,sort=nearest]
+execute as @e[distance=..2,type=!#championsashes:special_entities,predicate=!championsashes:using_item/drakeblood_greatsword] run scoreboard players add @s frostbite_Timer 100

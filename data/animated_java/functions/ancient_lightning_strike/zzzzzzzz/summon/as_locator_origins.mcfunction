@@ -1,0 +1,6 @@
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement1] run function animated_java:ancient_lightning_strike/zzzzzzzz/summon/locator_bolt_segement1/as_origin
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement2] run function animated_java:ancient_lightning_strike/zzzzzzzz/summon/locator_bolt_segement2/as_origin
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement3] run function animated_java:ancient_lightning_strike/zzzzzzzz/summon/locator_bolt_segement3/as_origin
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement4] run function animated_java:ancient_lightning_strike/zzzzzzzz/summon/locator_bolt_segement4/as_origin
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement5] run function animated_java:ancient_lightning_strike/zzzzzzzz/summon/locator_bolt_segement5/as_origin
+function #animated_java:ancient_lightning_strike/on_summon/as_locator_origins

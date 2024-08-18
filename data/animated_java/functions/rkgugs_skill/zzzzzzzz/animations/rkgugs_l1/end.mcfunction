@@ -1,0 +1,3 @@
+execute if score @s aj.rkgugs_skill.animation.rkgugs_l1.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_l1/end_loop
+execute if score @s aj.rkgugs_skill.animation.rkgugs_l1.loop_mode = $aj.loop_mode.once aj.i run function animated_java:rkgugs_skill/animations/rkgugs_l1/stop
+execute if score @s aj.rkgugs_skill.animation.rkgugs_l1.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:rkgugs_skill/animations/rkgugs_l1/pause

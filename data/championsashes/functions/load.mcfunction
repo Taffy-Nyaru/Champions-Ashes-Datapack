@@ -1,12 +1,12 @@
 function championsashes:tick20
 
 #Player related
+scoreboard objectives add space minecraft.custom:minecraft.jump
 scoreboard objectives add shift minecraft.custom:minecraft.sneak_time
 scoreboard objectives add anger dummy
 scoreboard objectives add temp.0 dummy
 scoreboard objectives add rClick dummy
 scoreboard objectives add lClick dummy
-scoreboard objectives add timer dummy
 scoreboard objectives add raycastvalue dummy
 scoreboard objectives add shadow_pearl_playerHotbar dummy
 scoreboard objectives add ender_ring_playerHotbar dummy
@@ -64,6 +64,9 @@ scoreboard objectives add steelCount dummy
 #Void Totem
 scoreboard objectives add recursion_times dummy
 scoreboard objectives add Y_value dummy
+
+#Drakeblood Greatsword
+scoreboard objectives add lightning_bolt_rain dummy
 
 #DragonSlayer Great Bow
 scoreboard objectives add owner_uuid0 dummy
@@ -167,6 +170,7 @@ scoreboard objectives add charm_time dummy
 
 #Splitleaf
 scoreboard objectives add splitleaf_damage dummy
+scoreboard objectives add splitleaf_infiniteTimer dummy
 scoreboard objectives add splitleaf_stiff_time dummy
 
 #Estus Flask
@@ -216,6 +220,7 @@ scoreboard players set #60 championsashesValue 60
 scoreboard players set #12 championsashesValue 12
 scoreboard players set #2 championsashesValue 2
 scoreboard players set @a arrow_rain.temp 0
+scoreboard players set @a lightning_bolt_rain 0
 scoreboard players set @a thunderarrow_damage 2
 scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
 execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1
@@ -249,6 +254,8 @@ data modify storage generic:main soul_of_elderCMD set value 1390043
 data modify storage generic:main rkssCMD set value 1390054
 data modify storage generic:main rkss_igniteCMD set value 1390055
 data modify storage generic:main branchCMD set value 1390063
+data modify storage generic:main meteorite_staffCMD set value 1390097
+data modify storage generic:main meteorite_staff_igniteCMD set value 1390098
 data modify storage generic:main warpedstick_action set value 0
 data modify storage generic:main moonlight_temp set value {angle:200,axis:[1.0,0.0,0.0]}
 #data modify storage generic:main arrow_Motion set value [0.0,-0.5,0.0]

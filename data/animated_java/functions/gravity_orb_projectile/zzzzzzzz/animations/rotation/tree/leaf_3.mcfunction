@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:gravity_orb_projectile/zzzzzzzz/animations/rotation/tree/leaf_3_as_bone

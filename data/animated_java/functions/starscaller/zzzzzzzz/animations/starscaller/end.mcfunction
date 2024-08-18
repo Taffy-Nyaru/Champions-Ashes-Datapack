@@ -1,0 +1,3 @@
+execute if score @s aj.starscaller.animation.starscaller.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:starscaller/zzzzzzzz/animations/starscaller/end_loop
+execute if score @s aj.starscaller.animation.starscaller.loop_mode = $aj.loop_mode.once aj.i run function animated_java:starscaller/animations/starscaller/stop
+execute if score @s aj.starscaller.animation.starscaller.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:starscaller/animations/starscaller/pause

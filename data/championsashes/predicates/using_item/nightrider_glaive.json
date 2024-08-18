@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{SelectedItem:{tag:{id:\"ldmc:night_cavalry_halberd\"}}}"
+      "nbt": "{SelectedItem:{tag:{id:\"championsashes:night_cavalry_halberd\"}}}"
     }
   }
   

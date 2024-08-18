@@ -1,0 +1,1 @@
+tag @s remove aj.gravity_soul_stream.animation.gravity_soul_stream

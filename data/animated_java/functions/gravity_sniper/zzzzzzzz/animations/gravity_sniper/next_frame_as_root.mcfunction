@@ -1,0 +1,1 @@
+function animated_java:gravity_sniper/zzzzzzzz/animations/gravity_sniper/tick_animation

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.meteorite_shockwave.root] run function animated_java:meteorite_shockwave/zzzzzzzz/tick_as_root

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:meteorite_shockwave/zzzzzzzz/animations/meteorite_particles/tree/leaf_15_as_bone
+execute unless entity @s[tag=aj.meteorite_shockwave.disable_command_keyframes] at @s run function animated_java:meteorite_shockwave/zzzzzzzz/animations/meteorite_particles/tree/leaf_15_effects_0

@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.gravity_orb.locator","aj.gravity_orb.locator.gravity_orb","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"gravity_orb\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"gravity_orb\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.gravity_orb.locator.gravity_orb,tag=aj.new,limit=1,distance=..1] run function animated_java:gravity_orb/zzzzzzzz/summon/locator_gravity_orb/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

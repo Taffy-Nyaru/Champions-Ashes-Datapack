@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390094
+#CMD 1390098
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -122,6 +122,12 @@ execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:void_eye"}}]} at @s run function championsashes:items/void_eye/void_eye
 execute unless data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:void_eye"}}]} run function championsashes:items/void_eye/cancel
 
+#Meteorite Staff
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:meteorite_staff"}}} if score @s usedmedal matches 1.. at @s run function championsashes:items/meteorite_staff/meteorite_staff
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:meteorite_staff"}}} run function championsashes:items/meteorite_staff/durability
+execute as @e[tag=aj.gravity_orb_projectile.root] at @s run function championsashes:projectiles/gravity_orb_projectile/gravity_orb_projectile
+execute as @s[tag=shot_gravity_orb] unless entity @e[tag=aj.gravity_orb_projectile.root] run tag @s remove shot_gravity_orb
+
 #Ender Ring
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ender_ring"}}]} run advancement grant @s[advancements={championsashes:func/ender_ring=false}] only championsashes:func/ender_ring
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ender_ring"}}} run function championsashes:items/ender_ring/ender_ring
@@ -137,13 +143,21 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonlight_greatsword"}}} run tag @s remove needclicker
 function championsashes:projectiles/moonlight_slash/moonlight_slash
 
+#Greatsword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:greatsword"}}} if score @s shift matches 1.. run function championsashes:items/greatsword/spinning_gravity_thrust
+execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:greatsword"}}} run tag @s remove needclicker
+
+#Moonveil
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonveil"}}} if score @s shift matches 1.. run function championsashes:items/moonveil/dimension_slash
+execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonveil"}}} run tag @s remove needclicker
+
 #DragonSlayer Great bow
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:dragonslayer_greatbow"}}]} run advancement grant @s[advancements={championsashes:func/dragonslayer_greatbow=false}] only championsashes:func/dragonslayer_greatbow
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:dragonslayer_greatbow"}}} at @s if score @s usedBow matches 1.. run function championsashes:items/dragonslayer_greatbow/dragonslayer_greatbow
 execute as @s[tag=loop_start] at @s positioned ^ ^2 ^2 if score @s arrow_rain.temp matches 1.. run function championsashes:items/dragonslayer_greatbow/loop_summon_arrow
+execute at @s run function championsashes:items/dragonslayer_greatbow/golem_arrow
 execute if score @s arrow_rain.temp matches 0 run tag @s remove loop_start
 execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard players set @s[tag=!loop_start] arrow_rain.temp 12
-execute at @s run function championsashes:items/dragonslayer_greatbow/golem_arrow
 
 #Thunder Slayer
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:thunder_slayer"}}} at @s if score @s usedBow matches 1.. run function championsashes:items/thunder_slayer/get_owner
@@ -170,6 +184,13 @@ execute unless score @s shift matches 1.. if data storage championsashes:player_
 
 #Drakeblood Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities,distance=..5] bleeding_Timer 400
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/drakeblood_greatsword/drakeblood_greatsword
+execute as @s[tag=loop_lightning_bolt] at @s positioned ~-3 ~ ~-3 if score @s lightning_bolt_rain matches 1.. run function championsashes:items/drakeblood_greatsword/throne_judgement
+execute as @e[tag=!aj.ancient_lightning_strike.locator,tag=bolt_marker_unused] at @s run function championsashes:items/drakeblood_greatsword/summon_lightning_bolt
+execute as @s[tag=animate_lightning_bolt] run function championsashes:items/drakeblood_greatsword/animate_lightning_bolt
+execute if score @s lightning_bolt_rain matches 0 run tag @s remove loop_lightning_bolt
+execute if score @s[tag=!loop_lightning_bolt] lightning_bolt_rain matches 0 run scoreboard players set @s[tag=!loop_lightning_bolt] lightning_bolt_rain 20
+execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} run tag @s remove needclicker
 
 #Soul of Elder
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:soul_of_nep"}}]} run advancement grant @s[advancements={championsashes:func/elder=false}] only championsashes:func/elder
@@ -243,7 +264,7 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 
 #Ringed Knight Paired Greatsword
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ringed_knight_paired_greatsword_right"}},{tag:{id:"championsashes:ringed_knight_paired_greatsword_left"}}]} run advancement grant @s[advancements={championsashes:func/ringed_knight_paired_greatsword=false}] only championsashes:func/ringed_knight_paired_greatsword
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_paired_greatsword_right"}}} if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:ringed_knight_paired_greatsword_left"}}]} if score @s shift matches 1.. at @s run function championsashes:items/ringed_knight_paired_greatsword/ringed_knight_paired_greatsword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_paired_greatsword_right"}}} if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:ringed_knight_paired_greatsword_left"}}]} at @s run function championsashes:items/ringed_knight_paired_greatsword/ringed_knight_paired_greatsword
 
 #Lorian Greatsword
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:lorian_greatsword"}}]} run advancement grant @s[advancements={championsashes:func/lorian_greatsword=false}] only championsashes:func/lorian_greatsword
@@ -363,4 +384,8 @@ execute as @s[advancements={championsashes:estus_flask/used_estus_flask=true}] r
 execute as @s[advancements={championsashes:item_durability=true}] run advancement revoke @s only championsashes:item_durability
 execute as @s[advancements={championsashes:enter_block=true}] run advancement revoke @s only championsashes:enter_block
 execute as @s[advancements={championsashes:magic_damage=true}] run advancement revoke @s only championsashes:magic_damage
+
+#Spacebar qwuery
+function championsashes:items/spacebar_query
+
 #execute as @s[advancements={championsashes:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only championsashes:func/killed_nep

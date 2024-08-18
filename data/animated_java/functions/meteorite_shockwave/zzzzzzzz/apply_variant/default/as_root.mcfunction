@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:meteorite_shockwave/zzzzzzzz/apply_variant/default/as_bone

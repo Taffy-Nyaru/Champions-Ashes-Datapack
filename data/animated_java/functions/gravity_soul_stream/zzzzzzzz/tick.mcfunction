@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_soul_stream.root] run function animated_java:gravity_soul_stream/zzzzzzzz/tick_as_root

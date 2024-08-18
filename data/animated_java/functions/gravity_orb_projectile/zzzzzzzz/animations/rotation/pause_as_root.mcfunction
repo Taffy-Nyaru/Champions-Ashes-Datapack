@@ -1,0 +1,1 @@
+tag @s remove aj.gravity_orb_projectile.animation.rotation

@@ -1,6 +1,7 @@
 scoreboard objectives add math_const dummy
 scoreboard objectives add math_temp dummy
 scoreboard objectives add math_output dummy
+scoreboard objectives add taffy_timer dummy
 #Constants
 scoreboard players set m math_const 114514
 scoreboard players set c math_const 1919810
@@ -15,6 +16,16 @@ scoreboard players set m_2 math_const 926
 scoreboard players set 2m_2 math_const 463
 scoreboard players set z_1 math_const 3850
 scoreboard players set z_2 math_const 9123
+
+scoreboard players set lightning_m_1 math_const 2093
+scoreboard players set 2lightning_m_1 math_const 350
+scoreboard players set lightning_x_1 math_const 60592
+scoreboard players set lightning_x_2 math_const 60004
+
+scoreboard players set lightning_m_2 math_const 2028
+scoreboard players set 2lightning_m_2 math_const 383
+scoreboard players set lightning_z_1 math_const 63850
+scoreboard players set lightning_z_2 math_const 64123
 
 scoreboard players set weapon_m math_const 1024
 scoreboard players set weapon_2m2 math_const 512

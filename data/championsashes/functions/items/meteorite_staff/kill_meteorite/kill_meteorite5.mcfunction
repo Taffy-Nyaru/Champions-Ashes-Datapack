@@ -1,0 +1,10 @@
+function championsashes:items/meteorite_staff/kill_meteorite/hitbox
+kill @e[tag=aj.starscaller.bone.core5,limit=1,sort=nearest]
+kill @e[tag=aj.starscaller.bone.up5,limit=1,sort=nearest]
+kill @e[tag=aj.starscaller.bone.down5,limit=1,sort=nearest]
+kill @e[tag=aj.starscaller.bone.face17,limit=1,sort=nearest]
+kill @e[tag=aj.starscaller.bone.face18,limit=1,sort=nearest]
+kill @e[tag=aj.starscaller.bone.face19,limit=1,sort=nearest]
+kill @e[tag=aj.starscaller.bone.face20,limit=1,sort=nearest]
+kill @e[tag=aj.starscaller.bone.effects5,limit=1,sort=nearest]
+kill @s

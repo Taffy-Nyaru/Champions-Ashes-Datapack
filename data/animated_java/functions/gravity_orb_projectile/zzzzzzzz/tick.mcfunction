@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_orb_projectile.root] run function animated_java:gravity_orb_projectile/zzzzzzzz/tick_as_root

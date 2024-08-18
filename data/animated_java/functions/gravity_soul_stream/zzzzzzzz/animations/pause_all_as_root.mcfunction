@@ -1,0 +1,1 @@
+function animated_java:gravity_soul_stream/zzzzzzzz/animations/gravity_soul_stream/pause_as_root

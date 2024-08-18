@@ -9,7 +9,7 @@ execute as 5ff8eb59-2069-4c4f-bfbb-b49b8c613a04 on origin run tag @s add golem_a
 execute as 5ff8eb59-2069-4c4f-bfbb-b49b8c613a04 on origin run data modify storage generic:main arrow_Motion set from entity @s Motion
 
 execute as @e[tag=golem_arrow] run data modify entity @s Motion set from storage generic:main arrow_Motion
-execute at @e[tag=golem_arrow,nbt={inGround:1b}] run summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:1,Invulnerable:1b,Tags:["690bomber"]}
-execute at @e[tag=golem_arrow] if entity @e[tag=!golem_arrow,tag=!loop_start,type=!#championsashes:special_entities,distance=..1] run summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:1,Invulnerable:1b,Tags:["690bomber"]}
+execute at @e[tag=golem_arrow,nbt={inGround:1b}] run summon creeper ~ ~ ~ {Invulnerable:1b,Fuse:0,ExplosionRadius:1,Invulnerable:1b,Tags:["690bomber"]}
+execute at @e[tag=golem_arrow] if entity @e[tag=!golem_arrow,tag=!loop_start,type=!#championsashes:special_entities,distance=..3] run summon creeper ~ ~ ~ {Invulnerable:1b,Fuse:0,ExplosionRadius:1,Invulnerable:1b,Tags:["690bomber"]}
 kill @e[tag=golem_arrow,nbt={inGround:1b}]
 kill @e[tag=golem_arrow,distance=120..]

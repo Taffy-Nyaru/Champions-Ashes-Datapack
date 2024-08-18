@@ -1,0 +1,3 @@
+execute if score @s aj.meteorite_shockwave.animation.meteorite_particles.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:meteorite_shockwave/zzzzzzzz/animations/meteorite_particles/end_loop
+execute if score @s aj.meteorite_shockwave.animation.meteorite_particles.loop_mode = $aj.loop_mode.once aj.i run function animated_java:meteorite_shockwave/animations/meteorite_particles/stop
+execute if score @s aj.meteorite_shockwave.animation.meteorite_particles.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:meteorite_shockwave/animations/meteorite_particles/pause

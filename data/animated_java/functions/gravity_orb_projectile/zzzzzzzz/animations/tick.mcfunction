@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_orb_projectile.animation.rotation] run function animated_java:gravity_orb_projectile/zzzzzzzz/animations/rotation/tick

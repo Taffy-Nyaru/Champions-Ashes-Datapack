@@ -1,0 +1,2 @@
+scoreboard players set @s aj.dimension_slash.rig_loaded 1
+execute unless score @s aj.dimension_slash.export_version = aj.dimension_slash.export_version aj.i at @s run function animated_java:dimension_slash/zzzzzzzz/mark_outdated_rig

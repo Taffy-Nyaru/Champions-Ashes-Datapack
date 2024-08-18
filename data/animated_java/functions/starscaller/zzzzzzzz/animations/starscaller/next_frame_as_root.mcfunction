@@ -1,0 +1,1 @@
+function animated_java:starscaller/zzzzzzzz/animations/starscaller/tick_animation

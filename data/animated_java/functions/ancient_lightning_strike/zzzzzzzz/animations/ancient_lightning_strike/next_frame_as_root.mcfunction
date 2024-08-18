@@ -1,0 +1,1 @@
+function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tick_animation

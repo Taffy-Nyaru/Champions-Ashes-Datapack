@@ -11,7 +11,8 @@ execute as @s on attacker run scoreboard players operation @s frostbite_burst +=
 scoreboard players operation @s Health -= @s frostbite_burst
 execute store result storage generic:main frostbite_burst double 1 run scoreboard players get @s Health
 
-data modify entity @s Health set from storage generic:main frostbite_burst
+execute unless score @s Health <= @s frostbite_burst run data modify entity @s Health set from storage generic:main frostbite_burst
+execute if score @s Health <= @s frostbite_burst run damage @s 114514 championsashes:gtx690 by @a[limit=1,sort=nearest]
 
 #For players, make 12 damage
 execute if entity @s[type=player] run damage @s 8 championsashes:frostbite

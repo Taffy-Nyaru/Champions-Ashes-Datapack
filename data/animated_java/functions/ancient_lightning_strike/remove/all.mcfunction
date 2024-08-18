@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.ancient_lightning_strike.root] run function animated_java:ancient_lightning_strike/zzzzzzzz/remove/as_root
+kill @e[tag=aj.ancient_lightning_strike.rig_entity]

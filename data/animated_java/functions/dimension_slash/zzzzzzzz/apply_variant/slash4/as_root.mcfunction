@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:dimension_slash/zzzzzzzz/apply_variant/slash4/as_bone

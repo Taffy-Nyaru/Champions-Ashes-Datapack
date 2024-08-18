@@ -1,0 +1,3 @@
+execute if score @s aj.gravity_orb_projectile.animation.rotation.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:gravity_orb_projectile/zzzzzzzz/animations/rotation/end_loop
+execute if score @s aj.gravity_orb_projectile.animation.rotation.loop_mode = $aj.loop_mode.once aj.i run function animated_java:gravity_orb_projectile/animations/rotation/stop
+execute if score @s aj.gravity_orb_projectile.animation.rotation.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:gravity_orb_projectile/animations/rotation/pause

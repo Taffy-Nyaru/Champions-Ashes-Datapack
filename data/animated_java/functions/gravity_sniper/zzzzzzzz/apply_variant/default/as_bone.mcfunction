@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.gravity_sniper.bone.vortex] run data modify entity @s item.tag.CustomModelData set value 206
+execute if entity @s[tag=aj.gravity_sniper.bone.laser] run data modify entity @s item.tag.CustomModelData set value 207

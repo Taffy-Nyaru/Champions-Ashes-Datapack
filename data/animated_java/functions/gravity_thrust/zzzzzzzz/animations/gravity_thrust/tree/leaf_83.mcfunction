@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:gravity_thrust/zzzzzzzz/animations/gravity_thrust/tree/leaf_83_as_bone
+execute unless entity @s[tag=aj.gravity_thrust.disable_command_keyframes] at @s run function animated_java:gravity_thrust/zzzzzzzz/animations/gravity_thrust/tree/leaf_83_effects_0

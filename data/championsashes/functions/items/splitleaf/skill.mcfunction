@@ -3,7 +3,7 @@ scoreboard players add @s splitleaf_damage 1
 execute store result storage generic:main splitleaf_damage int 1 run scoreboard players get @s splitleaf_damage
 item modify entity @s[gamemode=survival] weapon.mainhand championsashes:splitleaf_damage
 execute if score @s splitleaf_damage matches 2031.. run scoreboard players set @s splitleaf_damage -1
+execute as @e[type=!#championsashes:special_entities,distance=..5,tag=!splitleaf_skill,tag=!helicopter,tag=!ally] run damage @s 12 player_attack by @a[limit=1,sort=nearest,tag=helicopter]
 
 tp @e[tag=splitleaf_skill,distance=..5] ~ ~1.5 ~ ~ ~
-execute as @e[type=!#championsashes:special_entities,distance=..2.5,tag=!splitleaf_skill,tag=!helicopter,tag=!ally] run tag @s add splitleaf_stiff
 effect give @s[tag=!infinite_true_combo] levitation 1 3 true

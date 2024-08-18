@@ -12,6 +12,8 @@ execute if score #variant aj.i = $aj.rkgugs_skill.variant.ember aj.id run functi
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.rkgugs_skill.animation.rkgugs_skill aj.id run function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_skill/apply_frame_as_root
 execute if score #animation aj.i = $aj.rkgugs_skill.animation.rkgugs_skill aj.id run scoreboard players operation @s aj.rkgugs_skill.animation.rkgugs_skill.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.rkgugs_skill.animation.rkgugs_l1 aj.id run function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_l1/apply_frame_as_root
+execute if score #animation aj.i = $aj.rkgugs_skill.animation.rkgugs_l1 aj.id run scoreboard players operation @s aj.rkgugs_skill.animation.rkgugs_l1.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:rkgugs_skill/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

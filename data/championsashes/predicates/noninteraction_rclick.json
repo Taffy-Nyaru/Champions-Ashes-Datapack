@@ -202,6 +202,48 @@
           }
         }
       }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:greatsword\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:diamond_sword"
+            ],
+            "nbt": "{id:\"championsashes:moonveil\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:iron_sword"
+            ],
+            "nbt": "{id:\"championsashes:drakeblood_greatsword\"}"
+          }
+        }
+      }
     }
   ]
 }

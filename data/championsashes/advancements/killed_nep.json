@@ -20,7 +20,6 @@
     "rewards": {
       "function": "championsashes:entities/drakeblood_knight/nep_elder/killed_nep",
       "loot": [
-        "championsashes:items/soul_of_nep",
         "championsashes:armor/tools/drakeblood_greatsword",
         "championsashes:armor/drakeblood_helmet",
         "championsashes:armor/drakeblood_chestplate",

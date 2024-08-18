@@ -1,0 +1,2 @@
+scoreboard players set @s aj.ancient_lightning_strike.rig_loaded 1
+execute unless score @s aj.ancient_lightning_strike.export_version = aj.ancient_lightning_strike.export_version aj.i at @s run function animated_java:ancient_lightning_strike/zzzzzzzz/mark_outdated_rig

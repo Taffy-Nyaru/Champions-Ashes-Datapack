@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_sniper.root] run function animated_java:gravity_sniper/zzzzzzzz/tick_as_root

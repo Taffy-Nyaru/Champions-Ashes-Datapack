@@ -4,13 +4,12 @@ function championsashes:entities/warden/powers
 execute at @a as @e[tag=stiff,distance=..128] run function championsashes:items/stiff
 
 #Explosions
-execute as @e[tag=head_projectile] run function championsashes:projectiles/dragon_bomb/bomb_rotate
 execute as @e[tag=bomb,predicate=championsashes:misc/bomb_creeper] run data modify entity @s ignited set value 1b
 execute as @e[tag=bomb] at @s if entity @e[team=!friendly,type=!#championsashes:special_entities,type=!creeper,distance=..10] run damage @s[distance=..10] 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
 execute as @e[tag=690bomber] at @s if entity @e[team=!friendly,type=!#championsashes:special_entities,type=!creeper,type=!player,distance=..10] run damage @s[distance=..10] 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
 
 #Entity effects(Extreme Optimized)
-execute at @a at @e[type=!#championsashes:special_entities,distance=..50,predicate=!championsashes:entity_using_item/no_item] as @e[type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] on attacker run function championsashes:entities/using_item
+execute at @a at @e[type=!#championsashes:special_entities,distance=..50,predicate=!championsashes:entity_using_item/no_item] as @e[type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] on attacker run function championsashes:entities/using_items/using_item
 
 #Digestive Juice
 execute as @e[predicate=championsashes:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function championsashes:items/digestive_juice
@@ -54,9 +53,7 @@ execute as @e[type=marker,tag=void_marker] run scoreboard players add @s void_ey
 execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run function championsashes:items/void_eye/effect
 
 #Animate Effects
-execute as @e[tag=aj.rkgugs_skill.locator] at @s run function championsashes:animated_effects/rkgugs_skill
-execute as @e[tag=aj.thunder_bullet.root] at @s unless entity @e[type=arrow,distance=..2] run function animated_java:thunder_bullet/remove/this
-execute at @e[tag=aj.thunder_bullet.root] run particle minecraft:soul_fire_flame ~ ~ ~ 0.2 0.2 0.2 0.05 2
+function championsashes:animated_effects/animated_effects
 
 tag @a[tag=!ally] add ally
 tag @e[tag=pearl,tag=!ally] add ally

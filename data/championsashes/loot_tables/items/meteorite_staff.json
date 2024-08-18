@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{id:\"championsashes:meteorite_staff\",display: {Name: '[{\"translate\":\"item.championsashes.meteorite_staff\",\"italic\":false}]'},CustomModelData:1390097}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

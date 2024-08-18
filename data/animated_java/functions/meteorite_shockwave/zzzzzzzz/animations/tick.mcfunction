@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.meteorite_shockwave.animation.meteorite_particles] run function animated_java:meteorite_shockwave/zzzzzzzz/animations/meteorite_particles/tick

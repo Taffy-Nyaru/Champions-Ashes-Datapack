@@ -10,7 +10,7 @@
             "items": [
               "minecraft:amethyst_shard"
             ],
-            "nbt": "{id:\"ldmc:eternal_crystal\"}"
+            "nbt": "{id:\"championsashes:eternal_crystal\"}"
           }
         }
       }
@@ -24,7 +24,7 @@
             "items": [
               "minecraft:amethyst_shard"
             ],
-            "nbt": "{id:\"ldmc:eternal_crystal\"}"
+            "nbt": "{id:\"championsashes:eternal_crystal\"}"
           }
         }
       }

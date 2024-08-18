@@ -1,0 +1,1 @@
+tag @s remove aj.ancient_lightning_strike.animation.ancient_lightning_strike

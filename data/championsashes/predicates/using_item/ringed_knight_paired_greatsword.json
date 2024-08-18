@@ -3,6 +3,6 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{SelectedItem:{tag:{id:\"ldmc:ringed_knight_paired_greatsword_right\"}},Inventory:[{Slot:-106b,tag:{id:\"ldmc:ringed_knight_paired_greatsword_left\"}}]}"
+      "nbt": "{SelectedItem:{tag:{id:\"championsashes:ringed_knight_paired_greatsword_right\"}},Inventory:[{Slot:-106b,tag:{id:\"championsashes:ringed_knight_paired_greatsword_left\"}}]}"
     }
 }  

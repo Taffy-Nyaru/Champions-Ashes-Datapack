@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_sniper.animation.gravity_sniper] run function animated_java:gravity_sniper/zzzzzzzz/animations/gravity_sniper/tick

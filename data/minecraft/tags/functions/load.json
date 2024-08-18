@@ -6,8 +6,17 @@
 		"animated_java:gundyr_skill/zzzzzzzz/load",
 		"animated_java:aquamarine_dagger/zzzzzzzz/load",
 		"animated_java:rkss_skill/zzzzzzzz/load",
-		"animated_java:rkgugs_skill/zzzzzzzz/load",
 		"animated_java:alumopper/zzzzzzzz/load",
-		"animated_java:thunder_bullet/zzzzzzzz/load"
+		"animated_java:thunder_bullet/zzzzzzzz/load",
+		"animated_java:gravity_sniper/zzzzzzzz/load",
+		"animated_java:gravity_orb_projectile/zzzzzzzz/load",
+		"animated_java:gravity_orb/zzzzzzzz/load",
+		"animated_java:meteorite_shockwave/zzzzzzzz/load",
+		"animated_java:starscaller/zzzzzzzz/load",
+		"animated_java:dimension_slash/zzzzzzzz/load",
+		"animated_java:rkgugs_skill/zzzzzzzz/load",
+		"animated_java:gravity_thrust/zzzzzzzz/load",
+		"animated_java:gravity_soul_stream/zzzzzzzz/load",
+		"animated_java:ancient_lightning_strike/zzzzzzzz/load"
 	]
 }

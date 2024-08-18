@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.dimension_slash.root] run function animated_java:dimension_slash/zzzzzzzz/tick_as_root

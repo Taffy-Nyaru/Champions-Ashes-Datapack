@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..110 run function animated_java:rkgugs_skill/zzzzzzzz/animations/rkgugs_l1/tree/branch_0_110

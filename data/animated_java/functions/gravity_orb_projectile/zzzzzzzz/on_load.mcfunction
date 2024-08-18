@@ -1,0 +1,2 @@
+scoreboard players set @s aj.gravity_orb_projectile.rig_loaded 1
+execute unless score @s aj.gravity_orb_projectile.export_version = aj.gravity_orb_projectile.export_version aj.i at @s run function animated_java:gravity_orb_projectile/zzzzzzzz/mark_outdated_rig

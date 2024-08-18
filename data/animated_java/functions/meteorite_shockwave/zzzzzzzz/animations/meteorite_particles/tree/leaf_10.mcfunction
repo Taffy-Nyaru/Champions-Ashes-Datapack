@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:meteorite_shockwave/zzzzzzzz/animations/meteorite_particles/tree/leaf_10_as_bone

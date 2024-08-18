@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:gravity_soul_stream/zzzzzzzz/animations/gravity_soul_stream/tree/leaf_120_as_bone
+execute unless entity @s[tag=aj.gravity_soul_stream.disable_command_keyframes] at @s run function animated_java:gravity_soul_stream/zzzzzzzz/animations/gravity_soul_stream/tree/leaf_120_effects_0

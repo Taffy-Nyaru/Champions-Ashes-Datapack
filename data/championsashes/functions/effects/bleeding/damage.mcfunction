@@ -10,7 +10,8 @@ execute as @s on attacker run scoreboard players operation @s bloodloss += @s Da
 scoreboard players operation @s Health -= @s bloodloss
 execute store result storage generic:main bloodloss double 1 run scoreboard players get @s Health
 
-data modify entity @s Health set from storage generic:main bloodloss
+execute unless score @s Health <= @s bloodloss run data modify entity @s Health set from storage generic:main bloodloss
+execute if score @s Health <= @s bloodloss run damage @s 114514 championsashes:gtx690 by @a[limit=1,sort=nearest]
 
 #For players, make 12 damage
 execute if entity @s[type=player] run damage @s 14 championsashes:bloodloss

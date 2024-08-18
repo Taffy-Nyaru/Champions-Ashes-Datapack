@@ -1,0 +1,2 @@
+scoreboard players set @s aj.gravity_thrust.rig_loaded 1
+execute unless score @s aj.gravity_thrust.export_version = aj.gravity_thrust.export_version aj.i at @s run function animated_java:gravity_thrust/zzzzzzzz/mark_outdated_rig

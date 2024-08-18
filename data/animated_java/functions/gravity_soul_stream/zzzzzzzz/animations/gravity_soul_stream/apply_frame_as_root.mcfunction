@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..120 run function animated_java:gravity_soul_stream/zzzzzzzz/animations/gravity_soul_stream/tree/branch_0_120

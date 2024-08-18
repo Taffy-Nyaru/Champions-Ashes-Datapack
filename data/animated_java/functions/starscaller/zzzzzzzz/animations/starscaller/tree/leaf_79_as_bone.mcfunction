@@ -1,0 +1,10 @@
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite1] at @s on origin run tp @s ^0.83969 ^-3.47001 ^-24.15206 ~-46.78082 ~-13.99545
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite2] at @s on origin run tp @s ^0.74493 ^-4.29104 ^-23.85322 ~-37.94388 ~5.18586
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite3] at @s on origin run tp @s ^0.02849 ^-3.78987 ^-24.56772 ~-28.14236 ~15.49554
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite4] at @s on origin run tp @s ^-0.77751 ^-2.16405 ^-23.56321 ~-37.94388 ~5.18586
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite5] at @s on origin run tp @s ^-0.41734 ^-3.79585 ^-24.2995 ~28.14236 ~15.49554
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite6] at @s on origin run tp @s ^0.62977 ^-5.00545 ^-24.25831 ~22.02661 ~19.48725
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite7] at @s on origin run tp @s ^-0.8019 ^-3.67191 ^-23.28044 ~41.64656 ~-0.83569
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite8] at @s on origin run tp @s ^-1.17493 ^-3.46293 ^-23.88859 ~-28.14236 ~15.49554
+execute if entity @s[tag=aj.starscaller.locator_origin.starscaller_meteorite9] at @s on origin run tp @s ^-0.87008 ^-3.57852 ^-22.73531 ~37.94388 ~5.18586
+execute if entity @s[tag=aj.starscaller.locator_origin.player_camera] at @s on origin run tp @s ^0.03837 ^0.3125 ^-0.50378 ~5 ~0

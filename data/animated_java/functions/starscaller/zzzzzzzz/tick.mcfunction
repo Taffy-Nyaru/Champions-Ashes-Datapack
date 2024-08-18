@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.starscaller.root] run function animated_java:starscaller/zzzzzzzz/tick_as_root

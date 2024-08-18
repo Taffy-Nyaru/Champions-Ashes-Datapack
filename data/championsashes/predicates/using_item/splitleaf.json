@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{SelectedItem:{tag:{id:\"ldmc:splitleaf\"}}}"
+      "nbt": "{SelectedItem:{tag:{id:\"championsashes:splitleaf\"}}}"
     }
   }
   

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..40 run function animated_java:gravity_orb_projectile/zzzzzzzz/animations/rotation/tree/branch_0_40

@@ -1,0 +1,1 @@
+function animated_java:gravity_orb_projectile/zzzzzzzz/animations/rotation/tick_animation

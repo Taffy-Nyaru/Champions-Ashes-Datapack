@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.gravity_thrust.locator","aj.gravity_thrust.locator.gravity_thrust_locator2","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"gravity_thrust\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"gravity_thrust_locator2\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.gravity_thrust.locator.gravity_thrust_locator2,tag=aj.new,limit=1,distance=..1] run function animated_java:gravity_thrust/zzzzzzzz/summon/locator_gravity_thrust_locator2/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner
