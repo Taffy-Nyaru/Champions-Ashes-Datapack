@@ -401,7 +401,11 @@
           },
           {
             "type": "minecraft:loot_table",
+<<<<<<< HEAD:data/championsashes/structures/ancient_city.json
             "name": "championsashes:items/serpent_hunter",
+=======
+            "name": "ldmc:items/serpent_hunter",
+>>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/structures/ancient_city.json
             "weight": 3
           }
         ],

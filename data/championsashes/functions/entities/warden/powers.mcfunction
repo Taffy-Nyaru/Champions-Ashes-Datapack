@@ -10,8 +10,13 @@ execute as @a[tag=crown] at @s if entity @e[team=!friendly,type=!#championsashes
 execute as @a[limit=1] at @s unless entity @e[team=!friendly,type=!#championsashes:special_entities,type=!warden,distance=..8] run tag @e[tag=protected] remove protected
 execute at @e[tag=WARDEN] run particle sculk_soul ~ ~ ~ 2 2 2 0 10
 
+<<<<<<< HEAD:data/championsashes/functions/entities/warden/powers.mcfunction
 #execute as @e[tag=WARDEN] at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:entities/search_air
 execute as @e[tag=WARDEN] at @s unless block ~ ~2 ~ #championsashes:transparent_blocks run function championsashes:entities/search_air
+=======
+#execute as @e[tag=WARDEN] at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function ldmc:entities/search_air
+execute as @e[tag=WARDEN] at @s unless block ~ ~2 ~ #ldmc:transparent_blocks run function ldmc:entities/search_air
+>>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/functions/entities/warden/powers.mcfunction
 
 scoreboard players add #wardenaoetimer timer 1
 execute if score #wardenaoetimer timer matches 40..50 at @e[tag=WARDEN] as @e[type=!warden,type=!player,team=!friendly,type=!#championsashes:special_entities,distance=..3] run damage @s 15 minecraft:sonic_boom by @e[limit=1,tag=WARDEN]

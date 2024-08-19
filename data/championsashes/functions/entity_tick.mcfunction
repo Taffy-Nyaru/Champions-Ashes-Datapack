@@ -45,9 +45,6 @@ execute if entity @e[scores={FireTick=1..}] as @e[scores={FireTick=1..}] run sco
 #Parry
 execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function championsashes:parry/parry_success
 
-#Stiff
-execute if entity @e[tag=frost_stiff] as @e[tag=frost_stiff] run function championsashes:items/pkcs/stiff
-
 #Void Eye
 execute as @e[type=marker,tag=void_marker] run scoreboard players add @s void_eye_timer 1
 execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run function championsashes:items/void_eye/effect
