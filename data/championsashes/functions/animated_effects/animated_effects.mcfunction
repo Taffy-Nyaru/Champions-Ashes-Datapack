@@ -8,4 +8,5 @@ execute as @e[tag=aj.thunder_bullet.root] at @s unless entity @e[type=arrow,dist
 execute at @e[tag=aj.thunder_bullet.root] run particle minecraft:soul_fire_flame ~ ~ ~ 0.2 0.2 0.2 0.05 2
 execute at @e[tag=aj.ancient_lightning_strike.locator] run function championsashes:animated_effects/ancient_lightning_bolt
 execute at @e[tag=aj.ringed_nightstar.locator] run function championsashes:animated_effects/feather
+execute at @e[tag=aj.rkss_cancel.locator] run function championsashes:animated_effects/rkss_cancel
 #execute at @e[tag=aj.ancient_lightning_strike.bone.lightning_bolt] run function championsashes:animated_effects/ancient_lightning_bolt
