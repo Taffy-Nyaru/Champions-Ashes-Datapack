@@ -9,11 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-<<<<<<< HEAD:data/championsashes/loot_tables/items/moonlight_greatsword.json
                 "tag": "{id:\"championsashes:moonlight_greatsword\",display: {Name: '[{\"translate\":\"item.championsashes.moonlight_greatsword\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 15d, Operation: 0, UUID: [I;2073619950,1254182825,-1885242875,-1896682705]},{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: -1.0d, Operation: 0, UUID: [I;2073619950,1254182825,-1885242875,-1896682705]}],CustomModelData:1390090}"
-=======
-                "tag": "{id:\"ldmc:moonlight_greatsword\",display: {Name: '[{\"translate\":\"item.ldmc.moonlight_greatsword\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 15d, Operation: 0, UUID: [I;2073619950,1254182825,-1885242875,-1896682705]},{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: -1.0d, Operation: 0, UUID: [I;2073619950,1254182825,-1885242875,-1896682705]}],CustomModelData:1390090}"
->>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/loot_tables/items/moonlight_greatsword.json
               }
             ]
           }

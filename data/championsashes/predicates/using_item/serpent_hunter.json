@@ -3,10 +3,6 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-<<<<<<< HEAD:data/championsashes/predicates/using_item/serpent_hunter.json
       "nbt": "{SelectedItem:{tag:{id:\"championsashes:serpent_hunter\"}}}"
-=======
-      "nbt": "{SelectedItem:{tag:{id:\"ldmc:serpent_hunter\"}}}"
->>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/predicates/using_item/serpent_hunter.json
     }
 }  

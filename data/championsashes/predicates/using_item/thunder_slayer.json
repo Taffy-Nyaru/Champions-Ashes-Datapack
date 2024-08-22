@@ -3,11 +3,7 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-<<<<<<< HEAD:data/championsashes/predicates/using_item/thunder_slayer.json
       "nbt": "{SelectedItem:{tag:{id:\"championsashes:thunder_slayer\"}}}"
-=======
-      "nbt": "{SelectedItem:{tag:{id:\"ldmc:thunder_slayer\"}}}"
->>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/predicates/using_item/thunder_slayer.json
     }
   }
   

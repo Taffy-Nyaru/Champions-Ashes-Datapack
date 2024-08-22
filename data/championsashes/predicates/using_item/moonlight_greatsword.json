@@ -3,10 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:player",
-<<<<<<< HEAD:data/championsashes/predicates/using_item/moonlight_greatsword.json
     "nbt": "{SelectedItem:{tag:{id:\"championsashes:moonlight_greatsword\"}}}"
-=======
-    "nbt": "{SelectedItem:{tag:{id:\"ldmc:moonlight_greatsword\"}}}"
->>>>>>> c00843d9bb602a9deadaccd81aaafd86a55d17c8:data/ldmc/predicates/using_item/moonlight_greatsword.json
   }
 }
