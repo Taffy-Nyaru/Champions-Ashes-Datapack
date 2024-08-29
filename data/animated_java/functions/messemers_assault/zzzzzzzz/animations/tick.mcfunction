@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.messemers_assault.animation.messemers_assault] run function animated_java:messemers_assault/zzzzzzzz/animations/messemers_assault/tick

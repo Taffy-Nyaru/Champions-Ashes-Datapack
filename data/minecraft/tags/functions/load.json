@@ -12,7 +12,6 @@
 		"animated_java:champions_charge/zzzzzzzz/load",
 		"animated_java:dimension_slash/zzzzzzzz/load",
 		"animated_java:blade_of_peril/zzzzzzzz/load",
-		"animated_java:messemers_assult/zzzzzzzz/load",
 		"animated_java:crystal_blade/zzzzzzzz/load",
 		"animated_java:rkss_cancel/zzzzzzzz/load",
 		"animated_java:steel_caller/zzzzzzzz/load",
@@ -27,6 +26,7 @@
 		"animated_java:shadow_golem/zzzzzzzz/load",
 		"animated_java:rkgugs_skill/zzzzzzzz/load",
 		"animated_java:gravity_thrust/zzzzzzzz/load",
-		"animated_java:gravity_soul_stream/zzzzzzzz/load"
+		"animated_java:gravity_soul_stream/zzzzzzzz/load",
+		"animated_java:messemers_assault/zzzzzzzz/load"
 	]
 }

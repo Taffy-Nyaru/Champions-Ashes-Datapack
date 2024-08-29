@@ -9,4 +9,5 @@ execute at @e[tag=aj.thunder_bullet.root] run particle minecraft:soul_fire_flame
 execute at @e[tag=aj.ancient_lightning_strike.locator] run function championsashes:animated_effects/ancient_lightning_bolt
 execute at @e[tag=aj.ringed_nightstar.locator] run function championsashes:animated_effects/feather
 execute at @e[tag=aj.rkss_cancel.locator] run function championsashes:animated_effects/rkss_cancel
+execute at @e[tag=aj.messemers_assault.locator] run function championsashes:animated_effects/messemers_assault
 #execute at @e[tag=aj.ancient_lightning_strike.bone.lightning_bolt] run function championsashes:animated_effects/ancient_lightning_bolt

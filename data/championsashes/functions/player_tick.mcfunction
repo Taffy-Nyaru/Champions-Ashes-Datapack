@@ -151,6 +151,10 @@ execute unless score @s shift matches 1.. if data storage championsashes:player_
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonveil"}}} if score @s shift matches 1.. run function championsashes:items/moonveil/dimension_slash
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonveil"}}} run tag @s remove needclicker
 
+#Spear of the Impaler
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:spear_of_the_impaler"}}} if score @s shift matches 1.. run function championsashes:items/spear_of_the_impaler/messemers_assault
+execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:spear_of_the_impaler"}}} run tag @s remove needclicker
+
 #DragonSlayer Great bow
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:dragonslayer_greatbow"}}]} run advancement grant @s[advancements={championsashes:func/dragonslayer_greatbow=false}] only championsashes:func/dragonslayer_greatbow
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:dragonslayer_greatbow"}}} at @s if score @s usedBow matches 1.. run function championsashes:items/dragonslayer_greatbow/dragonslayer_greatbow

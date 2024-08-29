@@ -5,7 +5,6 @@
 		"animated_java:champions_charge/zzzzzzzz/tick",
 		"animated_java:dimension_slash/zzzzzzzz/tick",
 		"animated_java:blade_of_peril/zzzzzzzz/tick",
-		"animated_java:messemers_assult/zzzzzzzz/tick",
 		"animated_java:crystal_blade/zzzzzzzz/tick",
 		"animated_java:rkss_cancel/zzzzzzzz/tick",
 		"animated_java:steel_caller/zzzzzzzz/tick",
@@ -20,6 +19,7 @@
 		"animated_java:shadow_golem/zzzzzzzz/tick",
 		"animated_java:rkgugs_skill/zzzzzzzz/tick",
 		"animated_java:gravity_thrust/zzzzzzzz/tick",
-		"animated_java:gravity_soul_stream/zzzzzzzz/tick"
+		"animated_java:gravity_soul_stream/zzzzzzzz/tick",
+		"animated_java:messemers_assault/zzzzzzzz/tick"
 	]
 }

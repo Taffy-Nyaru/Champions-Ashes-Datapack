@@ -1,0 +1,1 @@
+execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!messemers_assault_user] run damage @s 10 minecraft:in_fire by @a[limit=1,sort=nearest]

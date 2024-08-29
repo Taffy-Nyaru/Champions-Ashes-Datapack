@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.messemers_assult.root] run function animated_java:messemers_assult/zzzzzzzz/tick_as_root

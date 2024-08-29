@@ -1,1 +1,0 @@
-function animated_java:messemers_assult/zzzzzzzz/animations/messemers_assault/pause_as_root

@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.messemers_assult.root] run function animated_java:messemers_assult/zzzzzzzz/animations/messemers_assault/play_as_root
-execute if entity @s[tag=!aj.messemers_assult.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:messemers_assult/animations/messemers_assault/play ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]
