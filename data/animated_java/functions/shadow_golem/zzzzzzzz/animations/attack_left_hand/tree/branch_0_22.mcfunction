@@ -1,0 +1,3 @@
+execute if score @s aj.anim_time matches 0..7 run function animated_java:shadow_golem/zzzzzzzz/animations/attack_left_hand/tree/branch_0_7
+execute if score @s aj.anim_time matches 8 run function animated_java:shadow_golem/zzzzzzzz/animations/attack_left_hand/tree/leaf_8
+execute if score @s aj.anim_time matches 16..22 run function animated_java:shadow_golem/zzzzzzzz/animations/attack_left_hand/tree/branch_16_22

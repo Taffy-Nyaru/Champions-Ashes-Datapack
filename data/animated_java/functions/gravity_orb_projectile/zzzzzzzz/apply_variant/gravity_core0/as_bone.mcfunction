@@ -1,1 +1,1 @@
-execute if entity @s[tag=aj.gravity_orb_projectile.bone.gravity_core] run data modify entity @s item.tag.CustomModelData set value 369
+execute if entity @s[tag=aj.gravity_orb_projectile.bone.gravity_core] run data modify entity @s item.tag.CustomModelData set value 579

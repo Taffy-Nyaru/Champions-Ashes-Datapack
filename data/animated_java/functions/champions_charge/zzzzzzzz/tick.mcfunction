@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.champions_charge.root] run function animated_java:champions_charge/zzzzzzzz/tick_as_root

@@ -1,0 +1,7 @@
+scoreboard players operation #min championsashesValue = @s death_blight_Timer
+scoreboard players operation #min championsashesValue /= #20 championsashesValue
+scoreboard players operation #sec championsashesValue = #min championsashesValue
+scoreboard players operation #min championsashesValue /= #60 championsashesValue
+scoreboard players operation #sec championsashesValue %= #60 championsashesValue
+execute as @s[scores={death_blight_Timer=1..}] if score #sec championsashesValue matches 10.. run title @s actionbar [{"text":"1","font":"championsashes:death_blight"},{"translate":"title.effect.death_blight","font":"minecraft:default"},{"score":{"name":"#min","objective":"championsashesValue"},"color":"gray","font":"minecraft:default"},{"text":":","font":"minecraft:default"},{"score":{"name":"#sec","objective":"championsashesValue"},"font":"minecraft:default","color":"gray"}]
+execute as @s[scores={death_blight_Timer=1..}] if score #sec championsashesValue matches ..9 run title @s actionbar [{"text":"1","font":"championsashes:death_blight"},{"translate":"title.effect.death_blight","font":"minecraft:default"},{"score":{"name":"#min","objective":"championsashesValue"},"color":"gray","font":"minecraft:default"},{"text":":","font":"minecraft:default"},{"text":"0","color":"gray","font":"minecraft:default"},{"score":{"name":"#sec","objective":"championsashesValue"},"font":"minecraft:default","color":"gray"}]

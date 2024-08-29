@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.aquamarine_dagger.root] run function animated_java:aquamarine_dagger/zzzzzzzz/tick_as_root

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.champions_charge.animation.champions_charge] run function animated_java:champions_charge/zzzzzzzz/animations/champions_charge/tick

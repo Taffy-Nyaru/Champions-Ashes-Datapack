@@ -1,1 +1,2 @@
 function animated_java:dimension_slash/zzzzzzzz/animations/dimension_slash/pause_as_root
+function animated_java:dimension_slash/zzzzzzzz/animations/spinning_slash/pause_as_root

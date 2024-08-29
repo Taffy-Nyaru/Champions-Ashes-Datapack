@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:gravity_sniper/zzzzzzzz/animations/gravity_sniper/tree/leaf_90_as_bone

@@ -1,0 +1,3 @@
+execute if score @s aj.steel_caller.animation.steel_caller.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:steel_caller/zzzzzzzz/animations/steel_caller/end_loop
+execute if score @s aj.steel_caller.animation.steel_caller.loop_mode = $aj.loop_mode.once aj.i run function animated_java:steel_caller/animations/steel_caller/stop
+execute if score @s aj.steel_caller.animation.steel_caller.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:steel_caller/animations/steel_caller/pause

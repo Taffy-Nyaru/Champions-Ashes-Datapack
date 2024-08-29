@@ -1,0 +1,2 @@
+scoreboard players set @s aj.crystal_blade.rig_loaded 1
+execute unless score @s aj.crystal_blade.export_version = aj.crystal_blade.export_version aj.i at @s run function animated_java:crystal_blade/zzzzzzzz/mark_outdated_rig

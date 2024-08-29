@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.rkss_cancel.root] run function animated_java:rkss_cancel/zzzzzzzz/tick_as_root

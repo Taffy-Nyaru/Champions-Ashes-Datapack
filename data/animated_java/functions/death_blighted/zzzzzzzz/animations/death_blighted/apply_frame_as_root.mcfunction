@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..29 run function animated_java:death_blighted/zzzzzzzz/animations/death_blighted/tree/branch_0_29

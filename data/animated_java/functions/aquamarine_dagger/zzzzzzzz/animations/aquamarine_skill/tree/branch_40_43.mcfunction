@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 40 run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_skill/tree/leaf_40
-execute if score @s aj.anim_time matches 41 run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_skill/tree/leaf_41

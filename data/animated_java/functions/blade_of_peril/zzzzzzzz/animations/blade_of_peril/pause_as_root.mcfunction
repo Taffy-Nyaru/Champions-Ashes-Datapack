@@ -1,0 +1,1 @@
+tag @s remove aj.blade_of_peril.animation.blade_of_peril

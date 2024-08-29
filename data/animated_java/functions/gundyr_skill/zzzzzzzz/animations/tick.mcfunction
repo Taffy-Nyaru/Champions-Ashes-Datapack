@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.gundyr_skill.animation.gundyr_halberd_skill] run function animated_java:gundyr_skill/zzzzzzzz/animations/gundyr_halberd_skill/tick

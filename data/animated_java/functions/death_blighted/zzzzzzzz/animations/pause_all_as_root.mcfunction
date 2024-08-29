@@ -1,0 +1,1 @@
+function animated_java:death_blighted/zzzzzzzz/animations/death_blighted/pause_as_root

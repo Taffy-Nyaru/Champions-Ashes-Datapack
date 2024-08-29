@@ -1,0 +1,3 @@
+execute if score @s aj.crystal_blade.animation.crystal_blade_heavy.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade_heavy/end_loop
+execute if score @s aj.crystal_blade.animation.crystal_blade_heavy.loop_mode = $aj.loop_mode.once aj.i run function animated_java:crystal_blade/animations/crystal_blade_heavy/stop
+execute if score @s aj.crystal_blade.animation.crystal_blade_heavy.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:crystal_blade/animations/crystal_blade_heavy/pause

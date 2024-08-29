@@ -1,4 +1,5 @@
 {
+	"replace": false,
 	"values": [
 		"championsashes:tick",
 		"taffy_math:tick",

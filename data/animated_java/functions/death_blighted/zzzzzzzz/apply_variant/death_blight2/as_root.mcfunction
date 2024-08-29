@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight2/as_bone

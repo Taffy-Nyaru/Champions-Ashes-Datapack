@@ -1,0 +1,1 @@
+function animated_java:dimension_slash/zzzzzzzz/animations/spinning_slash/tick_animation

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:shadow_golem/zzzzzzzz/animations/walk/tree/leaf_35_as_bone

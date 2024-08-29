@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_cancel/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_cancel/tick_animation

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.death_blighted.bone.death_blighted] run data modify entity @s {} merge value {transformation:[-0.784259954921112f,0f,9.604414434935874e-17f,0.18750000000000003f,0f,1.040871525169046f,0f,0f,-9.604414434935874e-17f,0f,-0.784259954921112f,-0.18749999999999997f,0f,0f,0f,1f],start_interpolation:0}

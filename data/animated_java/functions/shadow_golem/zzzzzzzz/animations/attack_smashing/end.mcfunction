@@ -1,0 +1,3 @@
+execute if score @s aj.shadow_golem.animation.attack_smashing.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:shadow_golem/zzzzzzzz/animations/attack_smashing/end_loop
+execute if score @s aj.shadow_golem.animation.attack_smashing.loop_mode = $aj.loop_mode.once aj.i run function animated_java:shadow_golem/animations/attack_smashing/stop
+execute if score @s aj.shadow_golem.animation.attack_smashing.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:shadow_golem/animations/attack_smashing/pause

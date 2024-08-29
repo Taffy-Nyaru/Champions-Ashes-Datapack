@@ -1,0 +1,3 @@
+execute if score @s aj.rkss_cancel.animation.rkss_cancel.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_cancel/end_loop
+execute if score @s aj.rkss_cancel.animation.rkss_cancel.loop_mode = $aj.loop_mode.once aj.i run function animated_java:rkss_cancel/animations/rkss_cancel/stop
+execute if score @s aj.rkss_cancel.animation.rkss_cancel.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:rkss_cancel/animations/rkss_cancel/pause

@@ -1,0 +1,1 @@
+function animated_java:shadow_golem/zzzzzzzz/animations/attack_black_hole/tick_animation

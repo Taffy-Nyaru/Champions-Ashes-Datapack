@@ -1,3 +1,0 @@
-execute if score @s aj.gravity_sniper.animation.gravity_sniper.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:gravity_sniper/zzzzzzzz/animations/gravity_sniper/end_loop
-execute if score @s aj.gravity_sniper.animation.gravity_sniper.loop_mode = $aj.loop_mode.once aj.i run function animated_java:gravity_sniper/animations/gravity_sniper/stop
-execute if score @s aj.gravity_sniper.animation.gravity_sniper.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:gravity_sniper/animations/gravity_sniper/pause

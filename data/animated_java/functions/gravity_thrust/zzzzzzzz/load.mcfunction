@@ -14,6 +14,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.gravity_thrust.export_version aj.i -32660325
+scoreboard players set aj.gravity_thrust.export_version aj.i 1674122028
 scoreboard players reset * aj.gravity_thrust.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.gravity_thrust.root] run function animated_java:gravity_thrust/zzzzzzzz/on_load

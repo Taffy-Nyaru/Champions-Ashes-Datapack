@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.steel_caller.animation.steel_caller] run function animated_java:steel_caller/zzzzzzzz/animations/steel_caller/tick

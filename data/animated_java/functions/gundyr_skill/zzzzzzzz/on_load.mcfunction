@@ -1,2 +1,0 @@
-scoreboard players set @s aj.gundyr_skill.rig_loaded 1
-execute unless score @s aj.gundyr_skill.export_version = aj.gundyr_skill.export_version aj.i at @s run function animated_java:gundyr_skill/zzzzzzzz/mark_outdated_rig

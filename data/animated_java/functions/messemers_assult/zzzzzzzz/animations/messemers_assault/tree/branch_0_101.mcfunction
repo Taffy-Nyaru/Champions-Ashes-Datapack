@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 0..63 run function animated_java:messemers_assult/zzzzzzzz/animations/messemers_assault/tree/branch_0_63
+execute if score @s aj.anim_time matches 64..101 run function animated_java:messemers_assult/zzzzzzzz/animations/messemers_assault/tree/branch_64_101

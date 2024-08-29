@@ -1,0 +1,1 @@
+tag @s remove aj.dimension_slash.animation.spinning_slash

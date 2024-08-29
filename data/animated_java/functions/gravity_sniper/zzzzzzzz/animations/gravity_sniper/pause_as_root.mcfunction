@@ -1,1 +1,0 @@
-tag @s remove aj.gravity_sniper.animation.gravity_sniper

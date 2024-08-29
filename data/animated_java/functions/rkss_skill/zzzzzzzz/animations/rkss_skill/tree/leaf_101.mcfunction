@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:rkss_skill/zzzzzzzz/animations/rkss_skill/tree/leaf_101_as_bone
-execute unless entity @s[tag=aj.rkss_skill.disable_command_keyframes] at @s positioned ^ ^0.5 ^5 run function animated_java:rkss_skill/zzzzzzzz/animations/rkss_skill/tree/leaf_101_effects_0

@@ -1,0 +1,1 @@
+function animated_java:steel_caller/zzzzzzzz/animations/steel_caller/tick_animation

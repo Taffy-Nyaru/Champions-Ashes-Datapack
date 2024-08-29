@@ -266,6 +266,20 @@
         "equipment": {
           "mainhand": {
             "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:spear_of_the_impaler\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
               "minecraft:diamond_sword"
             ],
             "nbt": "{id:\"ldmc:moonlight_greatsword\"}"

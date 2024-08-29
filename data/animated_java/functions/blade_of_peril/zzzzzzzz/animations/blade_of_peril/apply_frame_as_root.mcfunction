@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..78 run function animated_java:blade_of_peril/zzzzzzzz/animations/blade_of_peril/tree/branch_0_78

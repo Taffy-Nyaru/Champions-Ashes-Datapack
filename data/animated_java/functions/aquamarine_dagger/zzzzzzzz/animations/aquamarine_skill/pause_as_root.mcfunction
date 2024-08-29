@@ -1,1 +1,0 @@
-tag @s remove aj.aquamarine_dagger.animation.aquamarine_skill

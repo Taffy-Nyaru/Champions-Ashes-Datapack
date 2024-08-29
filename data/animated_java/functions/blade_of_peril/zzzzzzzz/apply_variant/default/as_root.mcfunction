@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:blade_of_peril/zzzzzzzz/apply_variant/default/as_bone

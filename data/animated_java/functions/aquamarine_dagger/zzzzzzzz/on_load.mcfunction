@@ -1,2 +1,0 @@
-scoreboard players set @s aj.aquamarine_dagger.rig_loaded 1
-execute unless score @s aj.aquamarine_dagger.export_version = aj.aquamarine_dagger.export_version aj.i at @s run function animated_java:aquamarine_dagger/zzzzzzzz/mark_outdated_rig

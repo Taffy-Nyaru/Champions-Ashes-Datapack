@@ -1,0 +1,2 @@
+scoreboard players set @s aj.champions_charge.rig_loaded 1
+execute unless score @s aj.champions_charge.export_version = aj.champions_charge.export_version aj.i at @s run function animated_java:champions_charge/zzzzzzzz/mark_outdated_rig

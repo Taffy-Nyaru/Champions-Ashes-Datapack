@@ -40,6 +40,7 @@ execute as @e[scores={frostbite_Timer=0}] run tag @s remove frostburst
 execute as @e[scores={scarlet_rot_Timer=1..}] at @s run function championsashes:effects/scarlet_rot/scarlet_rot
 execute as @e[scores={scarlet_rot_Timer=0}] run scoreboard players set @s scarlet_rot_delay 0
 execute as @e[scores={scarlet_rot_Timer=0}] run tag @s[tag=complete_rotten] remove complete_rotten
+execute as @e[scores={death_blight_Timer=1..}] at @s run function championsashes:effects/death_blight/death_blight
 execute if entity @e[scores={FireTick=1..}] as @e[scores={FireTick=1..}] run scoreboard players set @s frostbite_Timer 0
 
 #Parry

@@ -94,6 +94,8 @@ scoreboard objectives add frostbite_burst dummy
 scoreboard objectives add scarlet_rot_Timer dummy
 scoreboard objectives add scarlet_rot_delay dummy
 scoreboard objectives add scarlet_rot_damage dummy
+scoreboard objectives add death_blight_Timer dummy
+scoreboard objectives add death_blight_delay dummy
 scoreboard objectives add FireTick dummy
 
 #Phanalax

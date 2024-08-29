@@ -1,0 +1,1 @@
+function animated_java:blade_of_peril/zzzzzzzz/animations/blade_of_peril/pause_as_root

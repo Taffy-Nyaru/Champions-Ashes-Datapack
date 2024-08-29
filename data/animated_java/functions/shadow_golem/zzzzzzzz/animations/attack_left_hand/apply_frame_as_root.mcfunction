@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..22 run function animated_java:shadow_golem/zzzzzzzz/animations/attack_left_hand/tree/branch_0_22

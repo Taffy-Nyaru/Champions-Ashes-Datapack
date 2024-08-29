@@ -1,0 +1,1 @@
+function animated_java:shadow_golem/zzzzzzzz/animations/attack_smashing/tick_animation

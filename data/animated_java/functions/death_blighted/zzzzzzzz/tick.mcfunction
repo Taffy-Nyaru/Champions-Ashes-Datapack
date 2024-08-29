@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.death_blighted.root] run function animated_java:death_blighted/zzzzzzzz/tick_as_root

@@ -1,1 +1,2 @@
 execute if entity @s[tag=aj.dimension_slash.animation.dimension_slash] run function animated_java:dimension_slash/zzzzzzzz/animations/dimension_slash/tick
+execute if entity @s[tag=aj.dimension_slash.animation.spinning_slash] run function animated_java:dimension_slash/zzzzzzzz/animations/spinning_slash/tick

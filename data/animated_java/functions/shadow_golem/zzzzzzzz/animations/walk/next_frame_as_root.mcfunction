@@ -1,0 +1,1 @@
+function animated_java:shadow_golem/zzzzzzzz/animations/walk/tick_animation

@@ -1,1 +1,0 @@
-function animated_java:rkss_skill/zzzzzzzz/animations/rkss_skill/tick_animation

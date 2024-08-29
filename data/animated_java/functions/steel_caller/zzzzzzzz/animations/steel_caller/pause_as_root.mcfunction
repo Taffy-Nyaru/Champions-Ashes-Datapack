@@ -1,0 +1,1 @@
+tag @s remove aj.steel_caller.animation.steel_caller

@@ -1,4 +1,4 @@
-summon minecraft:item_display ~ ~ ~ {Tags:["player_camera","aj.dimension_slash.locator","aj.dimension_slash.locator.player_camera","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"dimension_slash\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"player_camera\",\"color\":\"yellow\"},\"]\"]]"}
-execute as @e[type=minecraft:item_display,tag=aj.dimension_slash.locator.player_camera,tag=aj.new,limit=1,distance=..1] run function animated_java:dimension_slash/zzzzzzzz/summon/locator_player_camera/as_entity
+summon minecraft:pig ~ ~ ~ {Tags:["aj.dimension_slash.locator","aj.dimension_slash.locator.player_camera","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"dimension_slash\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"player_camera\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:pig,tag=aj.dimension_slash.locator.player_camera,tag=aj.new,limit=1,distance=..1] run function animated_java:dimension_slash/zzzzzzzz/summon/locator_player_camera/as_entity
 data modify entity @s Owner set from storage animated_java Owner
 data remove storage animated_java Owner

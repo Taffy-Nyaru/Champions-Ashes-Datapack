@@ -1,0 +1,1 @@
+function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade_heavy/tick_animation

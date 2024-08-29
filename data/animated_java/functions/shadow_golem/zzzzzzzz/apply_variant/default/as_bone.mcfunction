@@ -1,0 +1,9 @@
+execute if entity @s[tag=aj.shadow_golem.bone.black_hole] run data modify entity @s item.tag.CustomModelData set value 732
+execute if entity @s[tag=aj.shadow_golem.bone.body] run data modify entity @s item.tag.CustomModelData set value 733
+execute if entity @s[tag=aj.shadow_golem.bone.left_leg] run data modify entity @s item.tag.CustomModelData set value 734
+execute if entity @s[tag=aj.shadow_golem.bone.right_leg] run data modify entity @s item.tag.CustomModelData set value 735
+execute if entity @s[tag=aj.shadow_golem.bone.left_shoulder] run data modify entity @s item.tag.CustomModelData set value 736
+execute if entity @s[tag=aj.shadow_golem.bone.left_hand] run data modify entity @s item.tag.CustomModelData set value 737
+execute if entity @s[tag=aj.shadow_golem.bone.right_hand] run data modify entity @s item.tag.CustomModelData set value 738
+execute if entity @s[tag=aj.shadow_golem.bone.right_shoulder] run data modify entity @s item.tag.CustomModelData set value 739
+execute if entity @s[tag=aj.shadow_golem.bone.head] run data modify entity @s item.tag.CustomModelData set value 740

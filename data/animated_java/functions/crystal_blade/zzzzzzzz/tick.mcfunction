@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.crystal_blade.root] run function animated_java:crystal_blade/zzzzzzzz/tick_as_root

@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..25 run function animated_java:dimension_slash/zzzzzzzz/animations/dimension_slash/tree/branch_0_25
+execute if score @s aj.anim_time matches 0..32 run function animated_java:dimension_slash/zzzzzzzz/animations/dimension_slash/tree/branch_0_32

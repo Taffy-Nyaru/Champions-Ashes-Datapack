@@ -1,0 +1,1 @@
+tag @s remove aj.champions_charge.animation.champions_charge

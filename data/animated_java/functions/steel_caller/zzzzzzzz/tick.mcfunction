@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.steel_caller.root] run function animated_java:steel_caller/zzzzzzzz/tick_as_root

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.blade_of_peril.animation.blade_of_peril] run function animated_java:blade_of_peril/zzzzzzzz/animations/blade_of_peril/tick

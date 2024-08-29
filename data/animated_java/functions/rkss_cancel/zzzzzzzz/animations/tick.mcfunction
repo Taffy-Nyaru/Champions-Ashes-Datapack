@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.rkss_cancel.animation.rkss_cancel] run function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_cancel/tick
+execute if entity @s[tag=aj.rkss_cancel.animation.rkss_skill] run function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_skill/tick

@@ -1,0 +1,1 @@
+function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_cancel/tick_animation

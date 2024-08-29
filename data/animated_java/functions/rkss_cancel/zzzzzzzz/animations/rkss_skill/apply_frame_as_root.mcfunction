@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..88 run function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_skill/tree/branch_0_88

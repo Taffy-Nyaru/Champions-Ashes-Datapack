@@ -14,9 +14,12 @@ execute if score #variant aj.i = $aj.dimension_slash.variant.slash4 aj.id run fu
 execute if score #variant aj.i = $aj.dimension_slash.variant.slash5 aj.id run function animated_java:dimension_slash/zzzzzzzz/apply_variant/slash5/as_root
 execute if score #variant aj.i = $aj.dimension_slash.variant.slash6 aj.id run function animated_java:dimension_slash/zzzzzzzz/apply_variant/slash6/as_root
 execute if score #variant aj.i = $aj.dimension_slash.variant.slash7 aj.id run function animated_java:dimension_slash/zzzzzzzz/apply_variant/slash7/as_root
+execute if score #variant aj.i = $aj.dimension_slash.variant.spinning_slash1 aj.id run function animated_java:dimension_slash/zzzzzzzz/apply_variant/spinning_slash1/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.dimension_slash.animation.dimension_slash aj.id run function animated_java:dimension_slash/zzzzzzzz/animations/dimension_slash/apply_frame_as_root
 execute if score #animation aj.i = $aj.dimension_slash.animation.dimension_slash aj.id run scoreboard players operation @s aj.dimension_slash.animation.dimension_slash.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.dimension_slash.animation.spinning_slash aj.id run function animated_java:dimension_slash/zzzzzzzz/animations/spinning_slash/apply_frame_as_root
+execute if score #animation aj.i = $aj.dimension_slash.animation.spinning_slash aj.id run scoreboard players operation @s aj.dimension_slash.animation.spinning_slash.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:dimension_slash/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

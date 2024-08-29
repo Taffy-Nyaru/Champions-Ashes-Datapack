@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..25 run function animated_java:gundyr_skill/zzzzzzzz/animations/gundyr_halberd_skill/tree/branch_0_25

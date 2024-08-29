@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..50 run function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade_heavy/tree/branch_0_50

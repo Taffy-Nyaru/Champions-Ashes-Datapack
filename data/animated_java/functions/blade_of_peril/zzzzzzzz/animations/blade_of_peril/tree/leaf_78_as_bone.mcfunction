@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.blade_of_peril.locator_origin.player_camera] at @s on origin run tp @s ^0 ^0.3255 ^7.08709 ~-180 ~-20

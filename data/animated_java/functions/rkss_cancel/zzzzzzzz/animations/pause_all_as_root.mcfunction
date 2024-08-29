@@ -1,0 +1,2 @@
+function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_cancel/pause_as_root
+function animated_java:rkss_cancel/zzzzzzzz/animations/rkss_skill/pause_as_root

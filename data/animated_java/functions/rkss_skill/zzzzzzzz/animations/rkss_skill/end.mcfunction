@@ -1,3 +1,0 @@
-execute if score @s aj.rkss_skill.animation.rkss_skill.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:rkss_skill/zzzzzzzz/animations/rkss_skill/end_loop
-execute if score @s aj.rkss_skill.animation.rkss_skill.loop_mode = $aj.loop_mode.once aj.i run function animated_java:rkss_skill/animations/rkss_skill/stop
-execute if score @s aj.rkss_skill.animation.rkss_skill.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:rkss_skill/animations/rkss_skill/pause

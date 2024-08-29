@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.crystal_blade.animation.crystal_blade] run function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade/tick
+execute if entity @s[tag=aj.crystal_blade.animation.crystal_blade_heavy] run function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade_heavy/tick

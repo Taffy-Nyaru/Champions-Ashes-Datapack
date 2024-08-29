@@ -1,0 +1,3 @@
+execute if score @s aj.death_blighted.animation.death_blighted.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:death_blighted/zzzzzzzz/animations/death_blighted/end_loop
+execute if score @s aj.death_blighted.animation.death_blighted.loop_mode = $aj.loop_mode.once aj.i run function animated_java:death_blighted/animations/death_blighted/stop
+execute if score @s aj.death_blighted.animation.death_blighted.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:death_blighted/animations/death_blighted/pause

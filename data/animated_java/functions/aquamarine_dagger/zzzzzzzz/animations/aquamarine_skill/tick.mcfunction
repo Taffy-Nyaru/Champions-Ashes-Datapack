@@ -1,2 +1,0 @@
-execute if score @s aj.tween_time matches 1.. run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_skill/tick_tween
-execute unless score @s aj.tween_time matches 1.. run function animated_java:aquamarine_dagger/zzzzzzzz/animations/aquamarine_skill/tick_animation

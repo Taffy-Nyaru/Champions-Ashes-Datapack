@@ -1,0 +1,1 @@
+function animated_java:champions_charge/zzzzzzzz/animations/champions_charge/pause_as_root

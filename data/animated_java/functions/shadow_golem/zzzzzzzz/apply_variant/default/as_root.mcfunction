@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:shadow_golem/zzzzzzzz/apply_variant/default/as_bone

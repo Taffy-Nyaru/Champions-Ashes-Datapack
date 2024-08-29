@@ -1,0 +1,1 @@
+tag @s remove aj.crystal_blade.animation.crystal_blade

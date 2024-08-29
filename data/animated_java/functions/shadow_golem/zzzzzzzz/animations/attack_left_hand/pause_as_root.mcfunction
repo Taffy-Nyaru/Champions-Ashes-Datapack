@@ -1,0 +1,1 @@
+tag @s remove aj.shadow_golem.animation.attack_left_hand

@@ -1,0 +1,3 @@
+execute if score @s aj.blade_of_peril.animation.blade_of_peril.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:blade_of_peril/zzzzzzzz/animations/blade_of_peril/end_loop
+execute if score @s aj.blade_of_peril.animation.blade_of_peril.loop_mode = $aj.loop_mode.once aj.i run function animated_java:blade_of_peril/animations/blade_of_peril/stop
+execute if score @s aj.blade_of_peril.animation.blade_of_peril.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:blade_of_peril/animations/blade_of_peril/pause

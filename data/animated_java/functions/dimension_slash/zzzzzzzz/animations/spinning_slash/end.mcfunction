@@ -1,0 +1,3 @@
+execute if score @s aj.dimension_slash.animation.spinning_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:dimension_slash/zzzzzzzz/animations/spinning_slash/end_loop
+execute if score @s aj.dimension_slash.animation.spinning_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:dimension_slash/animations/spinning_slash/stop
+execute if score @s aj.dimension_slash.animation.spinning_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:dimension_slash/animations/spinning_slash/pause

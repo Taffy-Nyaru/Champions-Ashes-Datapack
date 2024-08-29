@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.death_blighted.animation.death_blighted] run function animated_java:death_blighted/zzzzzzzz/animations/death_blighted/tick

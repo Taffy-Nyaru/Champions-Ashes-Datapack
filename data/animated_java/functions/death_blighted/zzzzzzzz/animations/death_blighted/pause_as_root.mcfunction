@@ -1,0 +1,1 @@
+tag @s remove aj.death_blighted.animation.death_blighted

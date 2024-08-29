@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 64..71 run function animated_java:blade_of_peril/zzzzzzzz/animations/blade_of_peril/tree/branch_64_71
+execute if score @s aj.anim_time matches 72..78 run function animated_java:blade_of_peril/zzzzzzzz/animations/blade_of_peril/tree/branch_72_78
