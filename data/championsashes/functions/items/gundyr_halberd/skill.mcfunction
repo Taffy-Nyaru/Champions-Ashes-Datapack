@@ -1,7 +1,8 @@
-#Summoning hitbox and animation rig
-execute positioned ^ ^-0.5 ^ run function animated_java:gundyr_skill/summon
-summon marker ~ ~ ~ {Tags:["gundyr_hitbox"]}
+tag @s[tag=animated_got_gamemode] remove animated_got_gamemode
+execute store result score @s gamemode run data get entity @s playerGameType
 
-execute as @e[tag=aj.gundyr_skill.root] run function animated_java:gundyr_skill/animations/gundyr_halberd_skill/play
-execute at @s run teleport @e[type=marker,tag=gundyr_hitbox] ^ ^ ^1
-tag @s add gundyr_halberd
+function animated_java:champions_charge/summon
+execute as @e[tag=aj.champions_charge.root,limit=1,sort=nearest] run function animated_java:champions_charge/animations/champions_charge/play
+execute as @s[gamemode=survival] run function championsashes:items/item_durability
+tag @s add riding_display
+tag @s add champions_charge_user

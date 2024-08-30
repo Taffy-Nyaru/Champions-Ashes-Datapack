@@ -1,6 +1,7 @@
 scoreboard players add @s damage 1
 #Aquamarine Dagger
-execute if score @s[tag=aquamarine_dagger,gamemode=survival] usedCrossbow matches 1.. run scoreboard players add @s damage 9
+execute if entity @s[tag=crystal_blade_user,gamemode=survival] run scoreboard players add @s damage 5
+execute if entity @s[tag=crystal_blade_heavy_user,gamemode=survival] run scoreboard players add @s damage 7
 #Antspur Rapier
 execute if score @s[tag=bloodhound_step,gamemode=survival] usedCrossbow matches 1.. run scoreboard players add @s damage 14
 #Gundyr Halberd
@@ -11,7 +12,7 @@ execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s d
 execute if entity @s[tag=rkss_cancel_user,gamemode=survival] run scoreboard players add @s damage 10
 execute if entity @s[tag=rkss_skill_user,gamemode=survival] run scoreboard players add @s damage 25
 #Lothric Holy Sword
-execute if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 19
+execute unless entity @e[tag=lazer_beam,distance=..30] if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 19
 #Ringed Knight Paired Greatswords
 execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 39
 #Ringed Knight Paired Greatswords_L1
@@ -37,6 +38,8 @@ execute if entity @s[tag=ringed_nightstar_user,gamemode=survival] run scoreboard
 execute if entity @s[tag=loop_lightning_bolt,gamemode=survival] run scoreboard players add @s damage 10
 #Spear of the Imapler
 execute if entity @s[tag=messemers_assault_user,gamemode=survival] run scoreboard players add @s damage 30
+#Ledo's Great Hammer
+execute if entity @s[tag=steel_caller_user,gamemode=survival] run scoreboard players add @s damage 35
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

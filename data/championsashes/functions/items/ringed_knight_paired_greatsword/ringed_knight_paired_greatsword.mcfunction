@@ -4,10 +4,10 @@ execute at @s unless entity @e[tag=raycast.target,type=item_frame,distance=..2] 
 execute if entity @e[tag=clicker,scores={rClick=1..}] run data modify entity 2094fd65-93de-4a69-9ea2-a74c7f35bc75 Thrower set from storage generic:main rClicker
 
 #Skill
-execute if score @s shift matches 1.. as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/ringed_knight_paired_greatsword] at @s unless entity @e[tag=aj.rkgugs_skill.root,distance=..2] run function championsashes:items/ringed_knight_paired_greatsword/skill
+execute if score @s shift matches 1.. as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[tag=!stiff,predicate=championsashes:using_item/ringed_knight_paired_greatsword] at @s unless entity @e[tag=aj.rkgugs_skill.root,distance=..2] run function championsashes:items/ringed_knight_paired_greatsword/skill
 
 #L1
-execute unless score @s shift matches 1.. as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/ringed_knight_paired_greatsword] at @s unless entity @e[tag=aj.rkgugs_l1.root,distance=..2] run function championsashes:items/ringed_knight_paired_greatsword/l1
+execute unless score @s shift matches 1.. as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[tag=!stiff,predicate=championsashes:using_item/ringed_knight_paired_greatsword] at @s unless entity @e[tag=aj.rkgugs_l1.root,distance=..2] run function championsashes:items/ringed_knight_paired_greatsword/l1
 execute if score @s damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if score @s damage matches 2031.. run item replace entity @s weapon.mainhand with air
 

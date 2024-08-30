@@ -1,0 +1,2 @@
+execute as @e[distance=..2.25,type=!#championsashes:special_entities,tag=!steel_caller_user] run damage @s 50 falling_anvil by @a[limit=1,sort=nearest]
+execute at @e[distance=..2.25,type=!#championsashes:special_entities,tag=!steel_caller_user] run summon falling_block ~ ~5 ~ {DropItem:1b,HurtEntities:1b,BlockState:{Name:"minecraft:iron_block"},Invulnerable:1b,FallHurtAmount:20.0f,FallHurtMax:20,Tags:["summoned_steel"]}

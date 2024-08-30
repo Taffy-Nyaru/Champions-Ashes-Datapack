@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:steel_caller/zzzzzzzz/animations/steel_caller/tree/leaf_84_as_bone
+execute unless entity @s[tag=aj.steel_caller.disable_command_keyframes] at @s run function animated_java:steel_caller/zzzzzzzz/animations/steel_caller/tree/leaf_84_effects_0

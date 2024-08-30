@@ -8,3 +8,6 @@ execute if entity @s[predicate=championsashes:using_item/meteorite_staff,tag=gra
 execute if entity @s[predicate=championsashes:using_item/ringed_knight_straight_sword,tag=rkss_cancel_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/ringed_knight_straight_sword,tag=rkss_skill_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/spear_of_the_impaler,tag=messemers_assault_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/ledo_great_hammer,tag=steel_caller_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/gundyr_halberd,tag=champions_charge_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/aquamarine_dagger,tag=crystal_blade_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

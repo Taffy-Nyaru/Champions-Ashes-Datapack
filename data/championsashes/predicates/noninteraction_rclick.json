@@ -280,6 +280,20 @@
         "equipment": {
           "mainhand": {
             "items": [
+              "minecraft:netherite_axe"
+            ],
+            "nbt": "{id:\"championsashes:ledo_great_hammer\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
               "minecraft:diamond_sword"
             ],
             "nbt": "{id:\"ldmc:moonlight_greatsword\"}"

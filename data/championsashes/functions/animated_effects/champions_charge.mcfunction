@@ -1,0 +1,2 @@
+execute as @e[distance=..2,type=!#championsashes:special_entities,tag=!champions_charge_user] run damage @s 20 thrown by @a[limit=1,sort=nearest]
+execute as @e[distance=..2,type=!#championsashes:special_entities,tag=!champions_charge_user] run summon creeper ~ ~ ~ {Invulnerable:1b,Tags:["bomb"],Fuse:0,ExplosionRadius:1}

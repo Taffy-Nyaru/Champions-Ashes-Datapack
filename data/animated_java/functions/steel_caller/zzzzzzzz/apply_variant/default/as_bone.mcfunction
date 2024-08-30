@@ -3,6 +3,8 @@ execute if entity @s[tag=aj.steel_caller.bone.right_arm] run data modify entity 
 execute if entity @s[tag=aj.steel_caller.bone.ledo_slash] run data modify entity @s item.tag.CustomModelData set value 460
 
 
+
+
 execute if entity @s[tag=aj.steel_caller.bone.ledo_great_hammer] run data modify entity @s item.tag.CustomModelData set value 461
 execute if entity @s[tag=aj.steel_caller.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 462
 execute if entity @s[tag=aj.steel_caller.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 463

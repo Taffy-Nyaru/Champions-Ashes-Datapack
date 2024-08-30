@@ -122,8 +122,8 @@ execute if data storage championsashes:player_data {Inventory:[{tag:{id:"champio
 execute unless data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:void_eye"}}]} run function championsashes:items/void_eye/cancel
 
 #Meteorite Staff
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:meteorite_staff"}}} if score @s usedmedal matches 1.. at @s run function championsashes:items/meteorite_staff/meteorite_staff
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:meteorite_staff"}}} run function championsashes:items/meteorite_staff/durability
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:meteorite_staff"}}} if score @s[tag=!stiff] usedmedal matches 1.. at @s run function championsashes:items/meteorite_staff/meteorite_staff
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:meteorite_staff"}}} if entity @s[tag=!stiff] run function championsashes:items/meteorite_staff/durability
 execute as @e[tag=aj.gravity_orb_projectile.root] at @s run function championsashes:projectiles/gravity_orb_projectile/gravity_orb_projectile
 execute as @s[tag=shot_gravity_orb] unless entity @e[tag=aj.gravity_orb_projectile.root] run tag @s remove shot_gravity_orb
 
@@ -141,6 +141,10 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonlight_greatsword"}}} if score @s shift matches 1.. run function championsashes:items/moonlight_greatsword/moonlight_greatsword
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonlight_greatsword"}}} run tag @s remove needclicker
 function championsashes:projectiles/moonlight_slash/moonlight_slash
+
+#Ledo's Great Hammer
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ledo_great_hammer"}}} if score @s shift matches 1.. run function championsashes:items/ledo_great_hammer/steel_caller
+execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ledo_great_hammer"}}} run tag @s remove needclicker
 
 #Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:greatsword"}}} if score @s shift matches 1.. run function championsashes:items/greatsword/spinning_gravity_thrust
@@ -241,8 +245,7 @@ execute as @s[tag=estus_cancel] at @s run function championsashes:items/estus_fl
 
 #Aquamarine Dagger
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:aquamarine_dagger"}}]} run advancement grant @s[advancements={championsashes:func/aquamarine_dagger=false}] only championsashes:func/aquamarine_dagger
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:aquamarine_dagger"}}} at @s run function championsashes:items/aquamarine_dagger/aquamarine_dagger
-execute as @e[tag=aj.aquamarine_dagger.root] at @s run function championsashes:items/aquamarine_dagger/animation
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:aquamarine_dagger"}}} at @s run function championsashes:items/aquamarine_dagger/crystal_blade
 
 #Dark Sword+22
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:darksword22"}}} at @s run function championsashes:items/dark_sword22/feather
@@ -258,7 +261,6 @@ execute if score #bloodhound_step_enter_block championsashes_Timer matches 40.. 
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:gundyr_halberd"}}]} run advancement grant @s[advancements={championsashes:func/gundyr_halberd=false}] only championsashes:func/gundyr_halberd
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gundyr_halberd"}}} if score @s shift matches 1.. at @s run function championsashes:items/gundyr_halberd/gundyr_halberd
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gundyr_halberd"}}} unless score @s shift matches 1.. run tag @s remove needclicker
-execute at @e[type=marker,tag=gundyr_hitbox] as @e[type=!#championsashes:special_entities,distance=..3.5,tag=!gundyr_halberd] run damage @s 2 championsashes:gtx690 by @a[limit=1,sort=nearest]
 
 #Caestus
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:caestus"}}]} if score @s usedmedal matches 1.. run tag @s add endure

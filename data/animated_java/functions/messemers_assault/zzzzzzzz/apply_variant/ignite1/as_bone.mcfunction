@@ -6,9 +6,6 @@ execute if entity @s[tag=aj.messemers_assault.bone.impaling_thrust] run data mod
 
 
 
-
-
-
 execute if entity @s[tag=aj.messemers_assault.bone.spear_effects0] run data modify entity @s item.tag.CustomModelData set value 858
 
 
@@ -59,6 +56,9 @@ execute if entity @s[tag=aj.messemers_assault.bone.spear_effects11] run data mod
 
 
 execute if entity @s[tag=aj.messemers_assault.bone.flame_blast] run data modify entity @s item.tag.CustomModelData set value 870
+
+
+
 execute if entity @s[tag=aj.messemers_assault.bone.spear_of_the_impaler] run data modify entity @s item.tag.CustomModelData set value 871
 execute if entity @s[tag=aj.messemers_assault.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 872
 execute if entity @s[tag=aj.messemers_assault.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 873

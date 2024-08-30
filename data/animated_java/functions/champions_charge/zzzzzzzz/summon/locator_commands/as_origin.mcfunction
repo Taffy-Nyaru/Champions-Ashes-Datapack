@@ -1,4 +1,0 @@
-summon minecraft:pig ~ ~ ~ {Tags:["aj.champions_charge.locator","aj.champions_charge.locator.commands","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"champions_charge\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"commands\",\"color\":\"yellow\"},\"]\"]]"}
-execute as @e[type=minecraft:pig,tag=aj.champions_charge.locator.commands,tag=aj.new,limit=1,distance=..1] run function animated_java:champions_charge/zzzzzzzz/summon/locator_commands/as_entity
-data modify entity @s Owner set from storage animated_java Owner
-data remove storage animated_java Owner

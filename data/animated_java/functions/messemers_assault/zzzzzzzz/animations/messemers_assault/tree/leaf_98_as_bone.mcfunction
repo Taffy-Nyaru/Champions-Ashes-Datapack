@@ -1,6 +1,3 @@
-execute if entity @s[tag=aj.messemers_assault.locator_origin.spear0] at @s on origin run tp @s ^-1.72528 ^0.89739 ^9.02457 ~-17.15431 ~26.72045
-execute if entity @s[tag=aj.messemers_assault.locator_origin.spear1] at @s on origin run tp @s ^-0.82682 ^1.33389 ^8.9772 ~-17.15431 ~26.72045
-execute if entity @s[tag=aj.messemers_assault.locator_origin.spear2] at @s on origin run tp @s ^0.12779 ^1.79768 ^8.92687 ~-17.15431 ~26.72045
 execute if entity @s[tag=aj.messemers_assault.locator_origin.spear_head2] at @s on origin run tp @s ^-1.03582 ^0.5488 ^9.65332 ~-91.58063 ~22.99368
 execute if entity @s[tag=aj.messemers_assault.locator_origin.spear_body2] at @s on origin run tp @s ^-1.03583 ^0.54879 ^9.65332 ~-91.58063 ~22.99368
 execute if entity @s[tag=aj.messemers_assault.locator_origin.spear_body3] at @s on origin run tp @s ^-1.03583 ^0.54879 ^9.65332 ~-91.58063 ~22.99368
@@ -41,4 +38,7 @@ execute if entity @s[tag=aj.messemers_assault.locator_origin.flame1] at @s on or
 execute if entity @s[tag=aj.messemers_assault.locator_origin.flame2] at @s on origin run tp @s ^-0.12903 ^0.06107 ^9.4715 ~-138.37304 ~14.27486
 execute if entity @s[tag=aj.messemers_assault.locator_origin.flame3] at @s on origin run tp @s ^-2.40641 ^1.02783 ^9.53434 ~-138.37304 ~14.27486
 execute if entity @s[tag=aj.messemers_assault.locator_origin.flame4] at @s on origin run tp @s ^-1.25563 ^0.49257 ^10.73921 ~-138.37304 ~14.27486
-execute if entity @s[tag=aj.messemers_assault.locator_origin.player_camera] at @s on origin run tp @s ^-0.02717 ^0.04888 ^9.32606 ~-163.77454 ~-24.0168
+execute if entity @s[tag=aj.messemers_assault.locator_origin.spear0] at @s on origin run tp @s ^-1.72528 ^0.89739 ^9.02457 ~-17.15431 ~26.72045
+execute if entity @s[tag=aj.messemers_assault.locator_origin.spear1] at @s on origin run tp @s ^-0.65836 ^1.41574 ^8.96832 ~-17.15431 ~26.72045
+execute if entity @s[tag=aj.messemers_assault.locator_origin.spear2] at @s on origin run tp @s ^0.3524 ^1.9068 ^8.91503 ~-17.15431 ~26.72045
+execute if entity @s[tag=aj.messemers_assault.locator_origin.player_camera] at @s on origin run tp @s ^0.10045 ^0.25238 ^8.88753 ~-163.77454 ~-24.0168

@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade/tree/leaf_48_as_bone
+execute unless entity @s[tag=aj.crystal_blade.disable_command_keyframes] at @s run function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade/tree/leaf_48_effects_0
