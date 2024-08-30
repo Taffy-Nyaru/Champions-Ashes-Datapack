@@ -1,0 +1,2 @@
+execute at @e[tag=aj.dimension_slash.locator_origin.dimension_slash_locator] as @e[distance=..3,type=!#championsashes:special_entities,tag=!spinning_slash_user,tag=!dimension_slash_user] run damage @s 6 championsashes:frostbite by @a[limit=1,sort=nearest]
+execute at @e[tag=aj.dimension_slash.locator_origin.dimension_slash_locator] as @e[distance=..3,type=!#championsashes:special_entities,tag=!spinning_slash_user,tag=!dimension_slash_user] run scoreboard players add @s frostbite_Timer 400

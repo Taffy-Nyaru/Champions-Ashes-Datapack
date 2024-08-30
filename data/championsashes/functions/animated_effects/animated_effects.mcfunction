@@ -1,7 +1,8 @@
 execute at @e[tag=aj.rkgugs_skill.locator] run function championsashes:animated_effects/rkgugs_skill
 execute at @e[tag=aj.rkgugs_skill.locator] run function championsashes:animated_effects/rkgugs_l1
 execute at @e[tag=aj.gravity_thrust.locator] run function championsashes:animated_effects/spinning_gravity_thrust
-execute at @e[tag=aj.dimension_slash.locator] run function championsashes:animated_effects/dimension_slash
+execute at @e[tag=aj.dimension_slash.locator,tag=!aj.dimension_slash.locator_origin.dimension_slash_locator] run function championsashes:animated_effects/spinning_slash
+execute at @e[tag=aj.dimension_slash.locator_origin.dimension_slash_locator] run function championsashes:animated_effects/dimension_slash
 function championsashes:animated_effects/starscaller
 execute at @e[tag=aj.gravity_soul_stream.locator] run function championsashes:animated_effects/gravity_soul_stream
 execute as @e[tag=aj.thunder_bullet.root] at @s unless entity @e[type=arrow,distance=..2] run function animated_java:thunder_bullet/remove/this

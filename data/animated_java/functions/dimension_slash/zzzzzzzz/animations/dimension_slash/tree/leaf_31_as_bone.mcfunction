@@ -1,3 +1,11 @@
-execute if entity @s[tag=aj.dimension_slash.locator_origin.commands] at @s on origin run tp @s ^0 ^0 ^0 ~0 ~0
 execute if entity @s[tag=aj.dimension_slash.locator_origin.dimension_slash_locator] at @s on origin run tp @s ^0 ^1.125 ^0.5 ~0 ~0
-execute if entity @s[tag=aj.dimension_slash.locator_origin.player_camera] at @s on origin run tp @s ^0 ^0.625 ^0.375 ~-180 ~0
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil] at @s on origin run tp @s ^-0.76735 ^1.53199 ^-0.60048 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil2] at @s on origin run tp @s ^-1.35893 ^1.65607 ^-0.75942 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil3] at @s on origin run tp @s ^-2.06883 ^1.80496 ^-0.95015 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil4] at @s on origin run tp @s ^-2.76579 ^1.884 ^-0.75202 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil5] at @s on origin run tp @s ^-3.33796 ^1.9033 ^-0.32769 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil6] at @s on origin run tp @s ^-3.48956 ^1.80081 ^0.40232 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil7] at @s on origin run tp @s ^-3.09117 ^1.59416 ^1.21587 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil8] at @s on origin run tp @s ^-2.2038 ^1.40805 ^1.45428 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.moonveil9] at @s on origin run tp @s ^-1.47171 ^1.34402 ^1.13714 ~16.44259 ~6.89816
+execute if entity @s[tag=aj.dimension_slash.locator_origin.player_camera] at @s on origin run tp @s ^0 ^0.25 ^0.375 ~-180 ~0

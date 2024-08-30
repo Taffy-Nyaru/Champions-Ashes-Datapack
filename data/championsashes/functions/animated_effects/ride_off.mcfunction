@@ -1,17 +1,36 @@
 #Killing display entities and riding off in aj files' commands
 function championsashes:animated_effects/gamemode
 tag @s remove riding_display
-tag @s remove gravity_thrust_user
-tag @s remove dimension_slash_user
-tag @s remove rkgugs_skill_user
-tag @s remove rkgugs_l1_user
-tag @s remove starscaller_user
-tag @s remove gravity_soul_stream_user
-tag @s remove ringed_nightstar_user
-tag @s remove rkss_cancel_user
-tag @s remove messemers_assault_user
+tag @s add stiff
+scoreboard players set @s[tag=gravity_thrust_user] custom_stiff_time 150
+tag @s[tag=gravity_thrust_user] remove gravity_thrust_user
+
+scoreboard players set @s[tag=dimension_slash_user] custom_stiff_time 125
+tag @s[tag=dimension_slash_user] remove dimension_slash_user
+
+scoreboard players set @s[tag=spinning_slash_user] custom_stiff_time 75
+tag @s[tag=spinning_slash_user] remove spinning_slash_user
+
+scoreboard players set @s[tag=rkgugs_skill_user] custom_stiff_time 100
+tag @s[tag=rkgugs_skill_user] remove rkgugs_skill_user
+
+scoreboard players set @s[tag=rkgugs_l1_user] custom_stiff_time 60
+tag @s[tag=rkgugs_l1_user] remove rkgugs_l1_user
+
+scoreboard players set @s[tag=starscaller_user] custom_stiff_time 125
+tag @s[tag=starscaller_user] remove starscaller_user
+
+scoreboard players set @s[tag=gravity_soul_stream_user] custom_stiff_time 125
+tag @s[tag=gravity_soul_stream_user] remove gravity_soul_stream_user
+
+scoreboard players set @s[tag=ringed_nightstar_user] custom_stiff_time 80
+tag @s[tag=ringed_nightstar_user] remove ringed_nightstar_user
+
+scoreboard players set @s[tag=rkss_cancel_user] custom_stiff_time 30
+tag @s[tag=rkss_cancel_user] remove rkss_cancel_user
+
+scoreboard players set @s[tag=messemers_assault_user] custom_stiff_time 125
+tag @s[tag=messemers_assault_user] remove messemers_assault_user
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run spreadplayers ~ ~ 1 1 under 150 true @s
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run spreadplayers ~ ~ 1 1 under 150 true @s
-tag @s add stiff
-scoreboard players set @s custom_stiff_time 100

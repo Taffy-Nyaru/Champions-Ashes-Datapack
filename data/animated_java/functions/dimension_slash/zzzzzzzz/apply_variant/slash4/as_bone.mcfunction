@@ -1,4 +1,3 @@
-
 execute if entity @s[tag=aj.dimension_slash.bone.small_group1] run data modify entity @s item.tag.CustomModelData set value 306
 execute if entity @s[tag=aj.dimension_slash.bone.small_group2] run data modify entity @s item.tag.CustomModelData set value 307
 execute if entity @s[tag=aj.dimension_slash.bone.small_group3] run data modify entity @s item.tag.CustomModelData set value 308
@@ -13,6 +12,15 @@ execute if entity @s[tag=aj.dimension_slash.bone.small_group10] run data modify 
 execute if entity @s[tag=aj.dimension_slash.bone.right_arm2] run data modify entity @s item.tag.CustomModelData set value 316
 execute if entity @s[tag=aj.dimension_slash.bone.right_arm] run data modify entity @s item.tag.CustomModelData set value 317
 execute if entity @s[tag=aj.dimension_slash.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 318
+
+
+
+
+
+
+
+
+
 execute if entity @s[tag=aj.dimension_slash.bone.spinning_slash] run data modify entity @s item.tag.CustomModelData set value 319
 execute if entity @s[tag=aj.dimension_slash.bone.moonveil_slash] run data modify entity @s item.tag.CustomModelData set value 320
 execute if entity @s[tag=aj.dimension_slash.bone.moonveil] run data modify entity @s item.tag.CustomModelData set value 321

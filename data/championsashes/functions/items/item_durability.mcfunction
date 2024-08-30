@@ -8,7 +8,8 @@ execute if entity @s[tag=gundyr_halberd,gamemode=survival] run scoreboard player
 #Black Blade
 execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s damage 24
 #Ringed Knight Straight Sword
-execute if entity @s[tag=rkss_skill,gamemode=survival] run scoreboard players add @s damage 29
+execute if entity @s[tag=rkss_cancel_user,gamemode=survival] run scoreboard players add @s damage 10
+execute if entity @s[tag=rkss_skill_user,gamemode=survival] run scoreboard players add @s damage 25
 #Lothric Holy Sword
 execute if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 19
 #Ringed Knight Paired Greatswords
@@ -18,7 +19,8 @@ execute if entity @s[tag=rkgugs_l1_user,gamemode=survival] run scoreboard player
 #Spinning Gravity Thrust
 execute if entity @s[tag=gravity_thrust_user,gamemode=survival] run scoreboard players add @s damage 45
 #Moonveil
-execute if entity @s[tag=dimension_slash_user,gamemode=survival] run scoreboard players add @s damage 20
+execute if entity @s[tag=dimension_slash_user,gamemode=survival] run scoreboard players add @s damage 25
+execute if entity @s[tag=spinning_slash_user,gamemode=survival] run scoreboard players add @s damage 15
 #Gravity Orb
 execute if entity @s[tag=shot_gravity_orb,gamemode=survival] run scoreboard players add @s damage 50
 #Starscaller
@@ -33,6 +35,8 @@ execute if entity @s[tag=moonlight,gamemode=survival] run scoreboard players add
 execute if entity @s[tag=ringed_nightstar_user,gamemode=survival] run scoreboard players add @s damage 15
 #Drakeblood Greatsword
 execute if entity @s[tag=loop_lightning_bolt,gamemode=survival] run scoreboard players add @s damage 10
+#Spear of the Imapler
+execute if entity @s[tag=messemers_assault_user,gamemode=survival] run scoreboard players add @s damage 30
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

@@ -1,4 +1,4 @@
-tp @s ^0.97578 ^-1.375 ^-0.49478 ~-45 ~0
+tp @s ^-0.85078 ^-1.15263 ^0.45872 ~135 ~0
 data modify storage animated_java Owner set from entity @s UUID
 tag @s remove aj.new
 function #animated_java:messemers_assault/on_summon/as_locator_entities

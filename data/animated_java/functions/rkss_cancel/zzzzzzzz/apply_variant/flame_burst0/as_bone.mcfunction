@@ -14,11 +14,11 @@ execute if entity @s[tag=aj.rkss_cancel.bone.left_arm] run data modify entity @s
 execute if entity @s[tag=aj.rkss_cancel.bone.head] run data modify entity @s item.tag.CustomModelData set value 26
 execute if entity @s[tag=aj.rkss_cancel.bone.body_top] run data modify entity @s item.tag.CustomModelData set value 27
 execute if entity @s[tag=aj.rkss_cancel.bone.body] run data modify entity @s item.tag.CustomModelData set value 28
-
 execute if entity @s[tag=aj.rkss_cancel.bone.right_leg2] run data modify entity @s item.tag.CustomModelData set value 29
 execute if entity @s[tag=aj.rkss_cancel.bone.right_leg] run data modify entity @s item.tag.CustomModelData set value 30
 execute if entity @s[tag=aj.rkss_cancel.bone.left_leg2] run data modify entity @s item.tag.CustomModelData set value 31
 execute if entity @s[tag=aj.rkss_cancel.bone.left_leg] run data modify entity @s item.tag.CustomModelData set value 32
+
 
 
 

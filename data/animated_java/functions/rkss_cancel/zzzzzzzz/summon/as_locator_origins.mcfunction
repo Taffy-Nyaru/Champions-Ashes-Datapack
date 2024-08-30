@@ -8,5 +8,4 @@ execute if entity @s[tag=aj.rkss_cancel.locator_origin.flame1] run function anim
 execute if entity @s[tag=aj.rkss_cancel.locator_origin.flame2] run function animated_java:rkss_cancel/zzzzzzzz/summon/locator_flame2/as_origin
 execute if entity @s[tag=aj.rkss_cancel.locator_origin.flame3] run function animated_java:rkss_cancel/zzzzzzzz/summon/locator_flame3/as_origin
 execute if entity @s[tag=aj.rkss_cancel.locator_origin.flame4] run function animated_java:rkss_cancel/zzzzzzzz/summon/locator_flame4/as_origin
-execute if entity @s[tag=aj.rkss_cancel.locator_origin.commands] run function animated_java:rkss_cancel/zzzzzzzz/summon/locator_commands/as_origin
 function #animated_java:rkss_cancel/on_summon/as_locator_origins

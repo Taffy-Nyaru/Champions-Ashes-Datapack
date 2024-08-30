@@ -1,1 +1,2 @@
-execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!rkss_cancel_user] run damage @s 5 player_attack by @a[limit=1,sort=nearest]
+execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!rkss_cancel_user] run damage @s 8 in_fire by @a[limit=1,sort=nearest]
+execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!rkss_cancel_user] run data modify entity @s Fire set value 200s

@@ -1,2 +1,2 @@
-execute as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!dimension_slash_user] run damage @s 6 championsashes:frostbite by @a[limit=1,sort=nearest]
-execute as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!dimension_slash_user] run scoreboard players add @s frostbite_Timer 1200
+execute as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!spinning_slash_user,tag=!dimension_slash_user] run damage @s 6 championsashes:frostbite by @a[limit=1,sort=nearest]
+execute as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!spinning_slash_user,tag=!dimension_slash_user] run scoreboard players add @s frostbite_Timer 1200

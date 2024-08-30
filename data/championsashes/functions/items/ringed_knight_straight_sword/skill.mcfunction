@@ -1,4 +1,7 @@
-execute positioned ^ ^0.5 ^ run function animated_java:rkss_skill/summon
-execute as @e[tag=aj.rkss_skill.root] run function animated_java:rkss_skill/animations/rkss_skill/play
-tag @s add rkss_skill
+tag @s[tag=animated_got_gamemode] remove animated_got_gamemode
+execute store result score @s gamemode run data get entity @s playerGameType
+function animated_java:rkss_cancel/summon
+execute as @e[tag=aj.rkss_cancel.root,limit=1,sort=nearest] run function animated_java:rkss_cancel/animations/rkss_skill/play
 execute as @s[gamemode=survival] run function championsashes:items/item_durability
+tag @s add riding_display
+tag @s add rkss_skill_user
