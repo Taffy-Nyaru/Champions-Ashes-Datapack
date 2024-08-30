@@ -60,6 +60,7 @@ execute as @e[type=snowball,predicate=championsashes:misc/stalk_dung_pie] run fu
 #Ringed Knight Straight Sword
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ringed_knight_straight_sword"}}]} run advancement grant @s[advancements={championsashes:func/rkss=false}] only championsashes:func/rkss
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_straight_sword"}}} if entity @s[predicate=championsashes:using_item/black_knight_shield] run function championsashes:items/ringed_knight_straight_sword/rkss
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_straight_sword"}}} unless entity @s[predicate=championsashes:using_item/black_knight_shield] run tag @s[tag=needclicker] remove needclicker
 
 #Enchanted Berries
 execute at @s if score @s ateberries matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:enchanted_berries"}}} as @s run function championsashes:medal/enchanted_berries
