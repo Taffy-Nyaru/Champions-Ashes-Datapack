@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_blackhole.root] run function animated_java:gravity_blackhole/zzzzzzzz/tick_as_root

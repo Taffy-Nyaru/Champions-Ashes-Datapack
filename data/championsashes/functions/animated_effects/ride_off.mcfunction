@@ -10,6 +10,7 @@ tag @s[tag=dimension_slash_user] remove dimension_slash_user
 
 scoreboard players set @s[tag=spinning_slash_user] custom_stiff_time 75
 tag @s[tag=spinning_slash_user] remove spinning_slash_user
+tag @s[tag=spinning_gravity_thrust] remove spinning_gravity_thrust
 
 scoreboard players set @s[tag=rkgugs_skill_user] custom_stiff_time 100
 tag @s[tag=rkgugs_skill_user] remove rkgugs_skill_user
@@ -23,13 +24,17 @@ tag @s[tag=starscaller_user] remove starscaller_user
 scoreboard players set @s[tag=gravity_soul_stream_user] custom_stiff_time 125
 tag @s[tag=gravity_soul_stream_user] remove gravity_soul_stream_user
 
+scoreboard players set @s[tag=gravity_blackhole_user] custom_stiff_time 125
+tag @s[tag=gravity_blackhole_user] remove gravity_blackhole_user
+tag @s[tag=gravity_blackhole_spawned] remove gravity_blackhole_spawned
+
 scoreboard players set @s[tag=ringed_nightstar_user] custom_stiff_time 80
 tag @s[tag=ringed_nightstar_user] remove ringed_nightstar_user
 
 scoreboard players set @s[tag=rkss_cancel_user] custom_stiff_time 30
 tag @s[tag=rkss_cancel_user] remove rkss_cancel_user
 
-scoreboard players set @s[tag=rkss_cancel_user] custom_stiff_time 110
+scoreboard players set @s[tag=rkss_skill_user] custom_stiff_time 110
 tag @s[tag=rkss_skill_user] remove rkss_skill_user
 
 scoreboard players set @s[tag=messemers_assault_user] custom_stiff_time 125
@@ -42,10 +47,14 @@ scoreboard players set @s[tag=champions_charge_user] custom_stiff_time 80
 tag @s[tag=champions_charge_user] remove champions_charge_user
 
 scoreboard players set @s[tag=crystal_blade_user] custom_stiff_time 20
-tag @s[tag=crystal_blade_user] remove cystal_blade_user
+tag @s[tag=crystal_blade_user] remove crystal_blade_user
+tag @s[tag=aquamarine_blade] remove aquamarine_blade
 
 scoreboard players set @s[tag=crystal_blade_heavy_user] custom_stiff_time 45
-tag @s[tag=crystal_blade_heavy_user] remove cystal_blade_heavy_user
+tag @s[tag=crystal_blade_heavy_user] remove crystal_blade_heavy_user
+
+scoreboard players set @s[tag=blade_of_peril_user] custom_stiff_time 90
+tag @s[tag=blade_of_peril_user] remove blade_of_peril_user
 
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run spreadplayers ~ ~ 1 1 under 150 true @s

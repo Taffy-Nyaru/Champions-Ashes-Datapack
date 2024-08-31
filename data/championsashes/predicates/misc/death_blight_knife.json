@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:snowball",
+      "nbt": "{Item:{tag:{id:\"championsashes:death_blight_knife\"}}}"
+    }
+}  

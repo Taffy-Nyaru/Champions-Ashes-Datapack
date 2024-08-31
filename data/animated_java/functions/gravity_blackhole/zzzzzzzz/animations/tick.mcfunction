@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_blackhole.animation.gravity_blackhole] run function animated_java:gravity_blackhole/zzzzzzzz/animations/gravity_blackhole/tick

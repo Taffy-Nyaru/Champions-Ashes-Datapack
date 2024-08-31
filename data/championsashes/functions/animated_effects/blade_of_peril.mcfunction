@@ -1,0 +1,1 @@
+execute as @e[distance=..2,type=!#championsashes:special_entities,tag=!blade_of_peril_user] run damage @s 12 player_attack by @a[limit=1,sort=nearest]

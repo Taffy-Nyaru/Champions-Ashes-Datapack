@@ -1,1 +1,1 @@
-execute as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!gravity_thrust_user] run damage @s 10 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute as @e[distance=..3,type=!#championsashes:special_entities,tag=!gravity_thrust_user] run damage @s 10 championsashes:gtx690 by @a[limit=1,sort=nearest]

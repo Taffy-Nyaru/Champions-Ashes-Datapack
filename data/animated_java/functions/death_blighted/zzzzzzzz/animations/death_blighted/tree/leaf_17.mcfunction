@@ -1,2 +1,1 @@
 execute on passengers run function animated_java:death_blighted/zzzzzzzz/animations/death_blighted/tree/leaf_17_as_bone
-function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight1/as_root

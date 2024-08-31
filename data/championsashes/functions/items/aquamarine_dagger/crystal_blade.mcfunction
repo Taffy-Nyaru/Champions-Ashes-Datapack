@@ -6,3 +6,4 @@ execute if score @s usedCrossbow matches 1.. if score @s shift matches 1.. run f
 
 execute if score @s damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if score @s damage matches 465.. run item replace entity @s weapon.mainhand with air
+scoreboard players set @s usedCrossbow 0

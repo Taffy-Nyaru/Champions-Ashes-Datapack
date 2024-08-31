@@ -1,3 +1,3 @@
-execute as @e[distance=..1,type=!#championsashes:special_entities,tag=!crystal_blade_user] run damage @s 6 championsashes:gtx690 by @a[limit=1,sort=nearest]
-execute as @e[distance=..1,type=!#championsashes:special_entities,tag=!crystal_blade_user] run scoreboard players set @s custom_stiff_time 10
-execute as @e[distance=..1,type=!#championsashes:special_entities,tag=!crystal_blade_user] run tag @s[tag=!stiff] add stiff
+execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!crystal_blade_user] run damage @s 6 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!crystal_blade_user] run scoreboard players set @s custom_stiff_time 10
+execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!crystal_blade_user] run tag @s[tag=!stiff] add stiff

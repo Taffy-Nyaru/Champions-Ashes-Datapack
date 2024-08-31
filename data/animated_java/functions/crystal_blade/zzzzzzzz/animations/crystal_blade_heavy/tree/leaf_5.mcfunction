@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:crystal_blade/zzzzzzzz/animations/crystal_blade_heavy/tree/leaf_5_as_bone
+execute unless entity @s[tag=aj.crystal_blade.disable_command_keyframes] at @s run tag @a[tag=crystal_blade_heavy_user,limit=1,sort=nearest] add aquamarine_blade

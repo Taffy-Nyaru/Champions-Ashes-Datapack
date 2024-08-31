@@ -6,3 +6,4 @@ execute as @e[tag=death_blighted_ride] run function championsashes:effects/death
 execute if score @s death_blight_Timer matches 7600.. run scoreboard players set @s death_blight_Timer 0
 
 scoreboard players remove @s death_blight_Timer 1
+tag @a[tag=death_blighter] remove death_blighter

@@ -29,4 +29,4 @@ execute if entity @s[tag=aj.gravity_soul_stream.bone.body] run data modify entit
 execute if entity @s[tag=aj.gravity_soul_stream.bone.right_leg2] run data modify entity @s item.tag.CustomModelData set value 483
 execute if entity @s[tag=aj.gravity_soul_stream.bone.right_leg] run data modify entity @s item.tag.CustomModelData set value 484
 execute if entity @s[tag=aj.gravity_soul_stream.bone.left_leg2] run data modify entity @s item.tag.CustomModelData set value 485
-execute if entity @s[tag=aj.gravity_soul_stream.bone.left_leg] run data modify entity @s item.tag.CustomModelData set value 633
+execute if entity @s[tag=aj.gravity_soul_stream.bone.left_leg] run data modify entity @s item.tag.CustomModelData set value 895

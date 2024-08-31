@@ -7,8 +7,8 @@ scoreboard players operation @s aj.death_blighted.export_version = aj.death_blig
 execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id 1
 tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:death_blighted/zzzzzzzz/summon/as_rig_entities
+execute if score #variant aj.i = $aj.death_blighted.variant.death_blight4 aj.id run function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight4/as_root
 execute if score #variant aj.i = $aj.death_blighted.variant.death_blight0 aj.id run function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight0/as_root
-execute if score #variant aj.i = $aj.death_blighted.variant.death_blight aj.id run function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight/as_root
 execute if score #variant aj.i = $aj.death_blighted.variant.death_blight1 aj.id run function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight1/as_root
 execute if score #variant aj.i = $aj.death_blighted.variant.death_blight2 aj.id run function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight2/as_root
 execute if score #variant aj.i = $aj.death_blighted.variant.death_blight3 aj.id run function animated_java:death_blighted/zzzzzzzz/apply_variant/death_blight3/as_root

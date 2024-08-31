@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..157 run function animated_java:gravity_blackhole/zzzzzzzz/animations/gravity_blackhole/tree/branch_0_157

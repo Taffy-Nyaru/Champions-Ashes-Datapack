@@ -25,9 +25,11 @@ execute if entity @s[tag=spinning_slash_user,gamemode=survival] run scoreboard p
 #Gravity Orb
 execute if entity @s[tag=shot_gravity_orb,gamemode=survival] run scoreboard players add @s damage 50
 #Starscaller
-execute if entity @s[tag=starscaller_user,gamemode=survival] run scoreboard players add @s damage 10
+execute if entity @s[tag=starscaller_user,gamemode=survival] run scoreboard players add @s damage 15
 #Gravity Soul Stream
-execute if entity @s[tag=gravity_soul_stream_user,gamemode=survival] run scoreboard players add @s damage 15
+execute if entity @s[tag=gravity_soul_stream_user,gamemode=survival] run scoreboard players add @s damage 25
+#Gravity blackhole
+execute if entity @s[tag=gravity_blackhole_user,gamemode=survival] run scoreboard players add @s damage 20
 #Serpent Hunter
 execute if entity @s[tag=chainsaw,gamemode=survival] run scoreboard players add @s damage 1
 #Moonlight Greatsword

@@ -1,6 +1,9 @@
 execute if entity @s[tag=aj.blade_of_peril.bone.right_arm2] run data modify entity @s item.tag.CustomModelData set value 445
 execute if entity @s[tag=aj.blade_of_peril.bone.right_arm] run data modify entity @s item.tag.CustomModelData set value 446
+
 execute if entity @s[tag=aj.blade_of_peril.bone.gael_slash] run data modify entity @s item.tag.CustomModelData set value 447
+
+
 execute if entity @s[tag=aj.blade_of_peril.bone.gaels_greatsword] run data modify entity @s item.tag.CustomModelData set value 448
 execute if entity @s[tag=aj.blade_of_peril.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 449
 execute if entity @s[tag=aj.blade_of_peril.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 450

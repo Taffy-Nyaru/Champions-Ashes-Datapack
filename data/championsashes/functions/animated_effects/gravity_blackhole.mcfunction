@@ -1,0 +1,3 @@
+execute at @e[tag=aj.gravity_blackhole.locator] as @e[distance=..8,type=!#championsashes:special_entities,tag=!gravity_blackhole_user] run damage @s 12 player_attack by @a[limit=1,sort=nearest]
+execute at @e[tag=aj.gravity_blackhole.locator] as @e[type=!#championsashes:special_entities,predicate=!championsashes:using_item/meteorite_staff,distance=..20] at @s facing entity @e[tag=aj.gravity_blackhole.locator,limit=1,sort=furthest] feet positioned ^ ^ ^ run tp @s ^-0.1 ^-0.01 ^0.5 ~ ~
+execute at @e[tag=aj.gravity_blackhole.locator,tag=!player_camera] run particle portal ~ ~ ~ 0 0 0 1 20

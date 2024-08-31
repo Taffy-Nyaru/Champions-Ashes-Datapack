@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390101
+#CMD 1390102
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -51,10 +51,12 @@ execute if data storage championsashes:player_data {Inventory:[{tag:{id:"champio
 #Snowball Detect
 execute if score @s usedSnowball matches 1.. if entity @e[type=snowball,predicate=championsashes:misc/shadow_vortex] run function championsashes:projectiles/snowball_detect/snowball_detect
 execute if score @s usedSnowball matches 1.. if entity @e[type=snowball,predicate=championsashes:misc/thunder_knife] run function championsashes:projectiles/snowball_detect/snowball_detect
+execute if score @s usedSnowball matches 1.. if entity @e[type=snowball,predicate=championsashes:misc/death_blight_knife] run function championsashes:projectiles/snowball_detect/snowball_detect
 execute if score @s usedSnowball matches 1.. if entity @e[type=snowball,predicate=championsashes:misc/stalk_dung_pie] run function championsashes:projectiles/snowball_detect/snowball_detect
 #Get owner
 execute as @e[type=snowball,predicate=championsashes:misc/shadow_vortex] run function championsashes:projectiles/snowball_detect/snowball_thrower
 execute as @e[type=snowball,predicate=championsashes:misc/thunder_knife] run function championsashes:projectiles/snowball_detect/snowball_thrower
+execute as @e[type=snowball,predicate=championsashes:misc/death_blight_knife] run function championsashes:projectiles/snowball_detect/snowball_thrower
 execute as @e[type=snowball,predicate=championsashes:misc/stalk_dung_pie] run function championsashes:projectiles/snowball_detect/snowball_thrower
 
 #Ringed Knight Straight Sword
@@ -229,6 +231,9 @@ execute unless score @s[tag=helicopter] shift matches 1 run tag @s remove helico
 execute unless score @s[tag=infinite_true_combo] shift matches 1 run tag @s remove infinite_true_combo
 execute at @s as @e[tag=splitleaf_stiff,distance=..20] run function championsashes:items/splitleaf/damage
 
+#Death Blight Knife
+execute as @e[type=snowball,predicate=championsashes:misc/death_blight_knife] at @s run function championsashes:items/cheat_engine/death_blight_knife
+
 #Stalk Dung Pie
 #execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:stalk_dung_pie"}}} run tag @s[tag=!csg] add csg
 execute as @e[type=snowball,predicate=championsashes:misc/stalk_dung_pie] at @s run function championsashes:items/stalk_dung_pie
@@ -279,6 +284,8 @@ execute if data storage championsashes:player_data {Inventory:[{tag:{id:"champio
 
 #Gael Greatsword
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:gael_greatsword"}}]} run advancement grant @s[advancements={championsashes:func/gael_greatsword=false}] only championsashes:func/gael_greatsword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/gaels_greatsword/blade_of_peril
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
 #Lothric Holy Sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lothric_holy_sword"}}} at @s as @e[type=!player,type=!#championsashes:special_entities,distance=..50] store result score @s Y_value run data get entity @s Pos[1]

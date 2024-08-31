@@ -13,6 +13,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.blade_of_peril.export_version aj.i -159844106
+scoreboard players set aj.blade_of_peril.export_version aj.i 545792373
 scoreboard players reset * aj.blade_of_peril.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.blade_of_peril.root] run function animated_java:blade_of_peril/zzzzzzzz/on_load

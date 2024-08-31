@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.blade_of_peril.locator","aj.blade_of_peril.locator.gaels_greatsword2","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"blade_of_peril\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"gaels_greatsword2\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.blade_of_peril.locator.gaels_greatsword2,tag=aj.new,limit=1,distance=..1] run function animated_java:blade_of_peril/zzzzzzzz/summon/locator_gaels_greatsword2/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner
