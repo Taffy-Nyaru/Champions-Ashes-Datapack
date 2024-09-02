@@ -364,11 +364,13 @@ execute as @a[scores={player_death=1..}] run scoreboard players set @s scarlet_r
 execute as @a[scores={player_death=1..}] run scoreboard players set @s player_death 0
 
 #Using Items
+execute if entity @s[predicate=championsashes:using_item/two_years_ago,scores={usedCE=1..}] run playsound championsashes:sounds.championsashes.two_years_ago voice @s ~ ~ ~ 100 1 1
 execute if score @s usedAnvil matches 1.. run scoreboard players set @s usedAnvil 0
 execute if score @s usedmedal matches 1.. run scoreboard players set @s usedmedal 0
 execute if score @s usedBow matches 1.. run scoreboard players set @s usedBow 0
 execute if score @s usedFirework matches 1.. run scoreboard players set @s usedFirework 0
 execute if score @s usedSnowball matches 1.. run scoreboard players set @s usedSnowball 0
+execute if score @s usedCE matches 1.. run scoreboard players set @s usedCE 0
 
 #NEP
 execute at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run bossbar set nep_elder players
@@ -409,4 +411,3 @@ execute as @s[advancements={championsashes:magic_damage=true}] run advancement r
 function championsashes:items/spacebar_query
 
 #execute as @s[advancements={championsashes:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only championsashes:func/killed_nep
-execute if score @s[predicate=championsashes:using_item/two_years_ago] usedCE matches 1.. run playsound championsashes:sounds.championsashes.two_years_ago voice @s ~ ~ ~ 100 1 1

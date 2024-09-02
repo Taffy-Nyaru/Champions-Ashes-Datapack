@@ -352,7 +352,7 @@
             "items": [
               "minecraft:diamond_sword"
             ],
-            "nbt": "{id:\"ldmc:moonlight_greatsword\"}"
+            "nbt": "{id:\"championsashes:moonlight_greatsword\"}"
           }
         }
       }

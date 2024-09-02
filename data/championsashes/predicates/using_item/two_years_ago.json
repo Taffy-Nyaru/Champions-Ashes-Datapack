@@ -3,7 +3,6 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{{SelectedItem:{id:\"minecraft:written_book\",tag:{author:\"并非NEP\",title:\"两年前，被西方社区称为怪物的一名玩家\"}}}}"
+      "nbt": "{SelectedItem:{id:\"minecraft:written_book\",tag:{author:\"并非NEP\",title:\"两年前，被西方社区称为怪物的一名玩家\"}}}"
     }
 }
-  
