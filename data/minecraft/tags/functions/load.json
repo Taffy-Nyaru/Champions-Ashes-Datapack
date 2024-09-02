@@ -3,11 +3,7 @@
 	"values": [
 		"championsashes:load",
 		"taffy_math:load",
-		"math:_init",
-		"animated_java:gundyr_skill/zzzzzzzz/load",
-		"animated_java:aquamarine_dagger/zzzzzzzz/load",
-		"animated_java:rkss_skill/zzzzzzzz/load",
-		"animated_java:gravity_sniper/zzzzzzzz/load",
+		"math:_init",		
 		"animated_java:alumopper/zzzzzzzz/load",
 		"animated_java:gravity_orb_projectile/zzzzzzzz/load",
 		"animated_java:meteorite_shockwave/zzzzzzzz/load",
