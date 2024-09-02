@@ -11,7 +11,6 @@
 		"animated_java:shadow_golem/zzzzzzzz/tick",
 		"animated_java:dimension_slash/zzzzzzzz/tick",
 		"animated_java:rkgugs_skill/zzzzzzzz/tick",
-		"animated_java:champions_charge/zzzzzzzz/tick",
 		"animated_java:steel_caller/zzzzzzzz/tick",
 		"animated_java:messemers_assault/zzzzzzzz/tick",
 		"animated_java:blade_of_peril/zzzzzzzz/tick",
@@ -21,6 +20,9 @@
 		"animated_java:gravity_blackhole/zzzzzzzz/tick",
 		"animated_java:gravity_thrust/zzzzzzzz/tick",
 		"animated_java:crystal_blade/zzzzzzzz/tick",
-		"animated_java:death_blighted/zzzzzzzz/tick"
+		"animated_java:death_blighted/zzzzzzzz/tick",
+		"animated_java:wave_of_destruction/zzzzzzzz/tick",
+		"animated_java:flame_of_lorian/zzzzzzzz/tick",
+		"animated_java:champions_charge/zzzzzzzz/tick"
 	]
 }

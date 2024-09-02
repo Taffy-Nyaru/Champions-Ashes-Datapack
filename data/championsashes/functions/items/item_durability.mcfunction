@@ -15,7 +15,6 @@ execute if entity @s[tag=rkss_skill_user,gamemode=survival] run scoreboard playe
 execute unless entity @e[tag=lazer_beam,distance=..30] if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 19
 #Ringed Knight Paired Greatswords
 execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 39
-#Ringed Knight Paired Greatswords_L1
 execute if entity @s[tag=rkgugs_l1_user,gamemode=survival] run scoreboard players add @s damage 20
 #Spinning Gravity Thrust
 execute if entity @s[tag=gravity_thrust_user,gamemode=survival] run scoreboard players add @s damage 45
@@ -42,6 +41,12 @@ execute if entity @s[tag=loop_lightning_bolt,gamemode=survival] run scoreboard p
 execute if entity @s[tag=messemers_assault_user,gamemode=survival] run scoreboard players add @s damage 30
 #Ledo's Great Hammer
 execute if entity @s[tag=steel_caller_user,gamemode=survival] run scoreboard players add @s damage 35
+#Gael's Greatsword
+execute if entity @s[tag=blade_of_peril_user,gamemode=survival] run scoreboard players add @s damage 25
+#Lorian's Greatsword
+execute if entity @s[tag=flame_of_lorian_user,gamemode=survival] run scoreboard players add @s damage 25
+#Fume Ultra Greatsword
+execute if entity @s[tag=wave_of_destruction_user,gamemode=survival] run scoreboard players add @s damage 40
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

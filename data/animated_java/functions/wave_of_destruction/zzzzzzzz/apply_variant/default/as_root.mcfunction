@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:wave_of_destruction/zzzzzzzz/apply_variant/default/as_bone

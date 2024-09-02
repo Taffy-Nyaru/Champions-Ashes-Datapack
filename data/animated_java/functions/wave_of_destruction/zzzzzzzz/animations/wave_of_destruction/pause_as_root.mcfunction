@@ -1,0 +1,1 @@
+tag @s remove aj.wave_of_destruction.animation.wave_of_destruction

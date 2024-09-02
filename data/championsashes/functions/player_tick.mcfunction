@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390102
+#CMD 1390103
 #If the armor is invisible try reopen the save
 #Firelink shrine map
 #Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
@@ -281,11 +281,17 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 
 #Lorian Greatsword
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:lorian_greatsword"}}]} run advancement grant @s[advancements={championsashes:func/lorian_greatsword=false}] only championsashes:func/lorian_greatsword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lorian_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/lorians_greatsword/lorians_flame
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lorian_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
 #Gael Greatsword
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:gael_greatsword"}}]} run advancement grant @s[advancements={championsashes:func/gael_greatsword=false}] only championsashes:func/gael_greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/gaels_greatsword/blade_of_peril
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+
+#Fume Ultra Greatsword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/fume_ultra_greatsword/wave_of_destruction
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
 #Lothric Holy Sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lothric_holy_sword"}}} at @s as @e[type=!player,type=!#championsashes:special_entities,distance=..50] store result score @s Y_value run data get entity @s Pos[1]

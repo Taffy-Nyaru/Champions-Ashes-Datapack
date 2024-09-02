@@ -1,0 +1,4 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["death_rider","aj.death_blighted.locator","aj.death_blighted.locator.ride","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"death_blighted\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"ride\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:item_display,tag=aj.death_blighted.locator.ride,tag=aj.new,limit=1,distance=..1] run function animated_java:death_blighted/zzzzzzzz/summon/locator_ride/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

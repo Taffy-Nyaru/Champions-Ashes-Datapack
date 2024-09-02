@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.flame_of_lorian.root] run function animated_java:flame_of_lorian/zzzzzzzz/tick_as_root

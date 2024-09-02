@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.wave_of_destruction.animation.wave_of_destruction] run function animated_java:wave_of_destruction/zzzzzzzz/animations/wave_of_destruction/tick

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.flame_of_lorian.animation.flame_of_lorian] run function animated_java:flame_of_lorian/zzzzzzzz/animations/flame_of_lorian/tick

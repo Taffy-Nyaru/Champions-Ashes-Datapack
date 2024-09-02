@@ -1,0 +1,1 @@
+function animated_java:wave_of_destruction/zzzzzzzz/animations/wave_of_destruction/pause_as_root

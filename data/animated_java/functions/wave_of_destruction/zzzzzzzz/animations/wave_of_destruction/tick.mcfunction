@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:wave_of_destruction/zzzzzzzz/animations/wave_of_destruction/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:wave_of_destruction/zzzzzzzz/animations/wave_of_destruction/tick_animation

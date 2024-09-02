@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..53 run function animated_java:wave_of_destruction/zzzzzzzz/animations/wave_of_destruction/tree/branch_0_53

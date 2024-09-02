@@ -56,6 +56,14 @@ tag @s[tag=crystal_blade_heavy_user] remove crystal_blade_heavy_user
 scoreboard players set @s[tag=blade_of_peril_user] custom_stiff_time 90
 tag @s[tag=blade_of_peril_user] remove blade_of_peril_user
 
+scoreboard players set @s[tag=flame_of_lorian_user] custom_stiff_time 100
+tag @s[tag=flame_of_lorian_user] remove flame_of_lorian_user
+tag @s[tag=lorian_flame] remove lorian_flame
+
+scoreboard players set @s[tag=wave_of_destruction_user] custom_stiff_time 130
+tag @s[tag=wave_of_destruction_user] remove wave_of_destruction_user
+tag @s[tag=destruction_wave] remove destruction_wave
+
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run spreadplayers ~ ~ 1 1 under 150 true @s
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run spreadplayers ~ ~ 1 1 under 150 true @s

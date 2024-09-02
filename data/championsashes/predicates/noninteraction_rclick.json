@@ -308,6 +308,34 @@
         "equipment": {
           "mainhand": {
             "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:lorian_greatsword\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:fume_ultra_greatsword\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
               "minecraft:diamond_sword"
             ],
             "nbt": "{id:\"ldmc:moonlight_greatsword\"}"

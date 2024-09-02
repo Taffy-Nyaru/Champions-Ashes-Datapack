@@ -12,9 +12,10 @@ execute at @e[tag=aj.thunder_bullet.root] run particle minecraft:soul_fire_flame
 execute at @e[tag=aj.ancient_lightning_strike.locator,tag=!player_camera] run function championsashes:animated_effects/ancient_lightning_bolt
 execute at @e[tag=aj.ringed_nightstar.locator,tag=!player_camera] run function championsashes:animated_effects/feather
 execute at @e[tag=aj.blade_of_peril.locator,tag=!player_camera] run function championsashes:animated_effects/blade_of_peril
+execute at @e[tag=aj.blade_of_peril.locator,tag=!player_camera] run function championsashes:animated_effects/blade_of_peril
 execute at @e[tag=rkss_skill_locator,tag=!player_camera] run particle minecraft:flame ~ ~ ~ 0.05 0.05 0.05 0.2 1
 execute at @e[tag=aj.rkss_cancel.locator,tag=!player_camera,tag=!rkss_skill_locator,tag=!player_camera] run function championsashes:animated_effects/rkss_cancel
-execute at @e[tag=rkss_skill_locator,tag=!player_camera] run function championsashes:animated_effects/rkss_skill
+execute if entity @a[limit=1,sort=nearest,tag=lorian_flame] at @e[tag=aj.flame_of_lorian.locator,tag=!player_camera] run function championsashes:animated_effects/flame_of_lorian
 #Tag added In AJ files
 execute at @e[tag=rkss_skill_locator,tag=!player_camera] run function championsashes:animated_effects/rkss_skill
 execute at @e[tag=aj.messemers_assault.locator,tag=!player_camera] run particle minecraft:flame ~ ~ ~ 0.05 0.05 0.05 0 1
@@ -25,6 +26,8 @@ execute if entity @a[limit=1,sort=nearest,tag=aquamarine_blade] at @e[tag=aj.cry
 execute if entity @a[limit=1,sort=nearest,tag=aquamarine_blade] at @e[tag=crystal_blade_heavy_locator,tag=!player_camera] run function championsashes:animated_effects/crystal_blade_heavy
 execute at @e[tag=steel_caller_user] run kill @e[type=item,nbt={Item:{id:"minecraft:iron_block"}},distance=..5]
 execute at @e[tag=steel_caller_user] run fill ~-3 ~-4 ~-3 ~3 ~4 ~3 air replace iron_block
+#Tag added In AJ files
+#execute at @e[tag=aj.wave_of_destruction.locator,tag=!player_camera] run function championsashes:animated_effects/wave_of_destruction
 #execute at @e[tag=aj.steel_caller.locator,tag=!player_camera] run function championsashes:animated_effects/steel_caller In AJ file
 #execute at @e[tag=aj.champions_charge.locator,tag=!player_camera] run function championsashes:animated_effects/champions_charge In AJ file
 #execute at @e[tag=aj.ancient_lightning_strike.bone.lightning_bolt] run function championsashes:animated_effects/ancient_lightning_bolt

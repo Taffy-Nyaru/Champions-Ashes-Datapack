@@ -1,0 +1,2 @@
+execute at @e[tag=aj.wave_of_destruction.locator,tag=!player_camera] run function championsashes:animated_effects/wave_of_destruction
+tag @a[tag=wave_of_destruction_user,limit=1,sort=nearest] add destruction_wave

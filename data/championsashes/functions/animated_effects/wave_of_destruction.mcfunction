@@ -1,0 +1,3 @@
+execute at @e[distance=..2.25,type=!#championsashes:special_entities,tag=!wave_of_destruction_user] unless entity @e[type=creeper,tag=bomb,distance=..2] run summon creeper ~ ~-1 ~ {Invulnerable:1b,Tags:["bomb"],Fuse:0,ExplosionRadius:1}
+execute as @e[distance=..2.25,type=!#championsashes:special_entities,tag=!wave_of_destruction_user] run damage @s 75 lightning_bolt by @a[limit=1,sort=nearest]
+#execute at @e[distance=..2.5,type=!#championsashes:special_entities,tag=!wave_of_destruction_user] unless entity @e[type=lightning_bolt,tag=Thunder,distance=..2] run summon lightning_bolt ~ ~-1 ~ {Tags:["Thunder"]}

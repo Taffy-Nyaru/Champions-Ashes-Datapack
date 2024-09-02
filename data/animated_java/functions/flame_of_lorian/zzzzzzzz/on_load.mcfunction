@@ -1,0 +1,2 @@
+scoreboard players set @s aj.flame_of_lorian.rig_loaded 1
+execute unless score @s aj.flame_of_lorian.export_version = aj.flame_of_lorian.export_version aj.i at @s run function animated_java:flame_of_lorian/zzzzzzzz/mark_outdated_rig
