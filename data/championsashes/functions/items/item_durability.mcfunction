@@ -45,6 +45,8 @@ execute if entity @s[tag=steel_caller_user,gamemode=survival] run scoreboard pla
 execute if entity @s[tag=blade_of_peril_user,gamemode=survival] run scoreboard players add @s damage 25
 #Lorian's Greatsword
 execute if entity @s[tag=flame_of_lorian_user,gamemode=survival] run scoreboard players add @s damage 25
+#Black Knight Greataxe
+execute if entity @s[tag=stamp_upward_cut_user,gamemode=survival] run scoreboard players add @s damage 30
 #Fume Ultra Greatsword
 execute if entity @s[tag=wave_of_destruction_user,gamemode=survival] run scoreboard players add @s damage 40
 

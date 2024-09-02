@@ -1,0 +1,1 @@
+function animated_java:flame_of_lorian/zzzzzzzz/animations/stamp_upward_cut/tick_animation

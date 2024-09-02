@@ -215,6 +215,7 @@ scoreboard objectives add snowball_uuid3 dummy
 scoreboard objectives add championsashes_Timer dummy
 scoreboard objectives add championsashesValue dummy
 scoreboard objectives add championsashes_return dummy
+scoreboard objectives add onFire dummy
 scoreboard players set count entityCount 0
 scoreboard players set #raycast.max raycastvalue 100
 scoreboard players set #20 championsashesValue 20

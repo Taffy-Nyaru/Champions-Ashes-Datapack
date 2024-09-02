@@ -15,4 +15,5 @@ execute if entity @s[predicate=championsashes:using_item/aquamarine_dagger,tag=c
 execute if entity @s[predicate=championsashes:using_item/aquamarine_dagger,tag=crystal_blade_heavy_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/gaels_greatsword,tag=blade_of_peril_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/lorians_greatsword,tag=flame_of_lorian_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/black_knight_greataxe,tag=stamp_upward_cut_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/fume_ultra_greatsword,tag=wave_of_destruction_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

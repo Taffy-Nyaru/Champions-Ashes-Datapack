@@ -37,6 +37,7 @@ execute as @e[scores={bleeding_Timer=1..}] at @s run function championsashes:eff
 execute as @e[scores={bleeding_Timer=0}] run tag @s remove blood_loss
 execute as @e[scores={frostbite_Timer=1..}] at @s run function championsashes:effects/frostbite/frostbite
 execute as @e[scores={frostbite_Timer=0}] run tag @s remove frostburst
+execute as @e[scores={onFire=1..}] run scoreboard players set @s frostbite_Timer 0
 execute as @e[scores={scarlet_rot_Timer=1..}] at @s run function championsashes:effects/scarlet_rot/scarlet_rot
 execute as @e[scores={scarlet_rot_Timer=0}] run scoreboard players set @s scarlet_rot_delay 0
 execute as @e[scores={scarlet_rot_Timer=0}] run tag @s[tag=complete_rotten] remove complete_rotten

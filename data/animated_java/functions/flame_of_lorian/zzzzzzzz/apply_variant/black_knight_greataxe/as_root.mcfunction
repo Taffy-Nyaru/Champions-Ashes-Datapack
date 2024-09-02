@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:flame_of_lorian/zzzzzzzz/apply_variant/black_knight_greataxe/as_bone

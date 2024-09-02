@@ -1,1 +1,1 @@
-playsound ld:sounds.championsashes.nep_elder voice @s ~ ~ ~ 1 1 1
+playsound championsashes:sounds.championsashes.nep_elder voice @s ~ ~ ~ 100 1 1

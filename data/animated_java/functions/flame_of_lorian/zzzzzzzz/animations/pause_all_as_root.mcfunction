@@ -1,1 +1,2 @@
 function animated_java:flame_of_lorian/zzzzzzzz/animations/flame_of_lorian/pause_as_root
+function animated_java:flame_of_lorian/zzzzzzzz/animations/stamp_upward_cut/pause_as_root

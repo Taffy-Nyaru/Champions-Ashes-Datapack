@@ -1,0 +1,1 @@
+tag @s remove aj.flame_of_lorian.animation.stamp_upward_cut

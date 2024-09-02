@@ -1,1 +1,1 @@
-execute as @e[distance=..2,type=!#championsashes:special_entities,tag=!messemers_assault_user] run damage @s 15 minecraft:fireworks by @a[limit=1,sort=nearest]
+execute as @e[distance=..3,type=!#championsashes:special_entities,tag=!messemers_assault_user] run damage @s 15 minecraft:fireworks by @a[limit=1,sort=nearest]

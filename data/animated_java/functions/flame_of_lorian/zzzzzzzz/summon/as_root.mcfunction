@@ -8,9 +8,12 @@ execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id
 tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:flame_of_lorian/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.flame_of_lorian.variant.default aj.id run function animated_java:flame_of_lorian/zzzzzzzz/apply_variant/default/as_root
+execute if score #variant aj.i = $aj.flame_of_lorian.variant.black_knight_greataxe aj.id run function animated_java:flame_of_lorian/zzzzzzzz/apply_variant/black_knight_greataxe/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.flame_of_lorian.animation.flame_of_lorian aj.id run function animated_java:flame_of_lorian/zzzzzzzz/animations/flame_of_lorian/apply_frame_as_root
 execute if score #animation aj.i = $aj.flame_of_lorian.animation.flame_of_lorian aj.id run scoreboard players operation @s aj.flame_of_lorian.animation.flame_of_lorian.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.flame_of_lorian.animation.stamp_upward_cut aj.id run function animated_java:flame_of_lorian/zzzzzzzz/animations/stamp_upward_cut/apply_frame_as_root
+execute if score #animation aj.i = $aj.flame_of_lorian.animation.stamp_upward_cut aj.id run scoreboard players operation @s aj.flame_of_lorian.animation.stamp_upward_cut.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:flame_of_lorian/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

@@ -7,6 +7,7 @@ tag @s[tag=gravity_thrust_user] remove gravity_thrust_user
 
 scoreboard players set @s[tag=dimension_slash_user] custom_stiff_time 125
 tag @s[tag=dimension_slash_user] remove dimension_slash_user
+tag @s[tag=dimension_slasher] remove dimension_slasher
 
 scoreboard players set @s[tag=spinning_slash_user] custom_stiff_time 75
 tag @s[tag=spinning_slash_user] remove spinning_slash_user
@@ -59,6 +60,10 @@ tag @s[tag=blade_of_peril_user] remove blade_of_peril_user
 scoreboard players set @s[tag=flame_of_lorian_user] custom_stiff_time 100
 tag @s[tag=flame_of_lorian_user] remove flame_of_lorian_user
 tag @s[tag=lorian_flame] remove lorian_flame
+
+scoreboard players set @s[tag=stamp_upward_cut_user] custom_stiff_time 100
+tag @s[tag=stamp_upward_cut_user] remove stamp_upward_cut_user
+tag @s[tag=upwardcut] remove upwardcut
 
 scoreboard players set @s[tag=wave_of_destruction_user] custom_stiff_time 130
 tag @s[tag=wave_of_destruction_user] remove wave_of_destruction_user

@@ -3,7 +3,7 @@
 	"values": [
 		"championsashes:load",
 		"taffy_math:load",
-		"math:_init",		
+		"math:_init",
 		"animated_java:alumopper/zzzzzzzz/load",
 		"animated_java:gravity_orb_projectile/zzzzzzzz/load",
 		"animated_java:meteorite_shockwave/zzzzzzzz/load",
@@ -12,7 +12,6 @@
 		"animated_java:gravity_orb/zzzzzzzz/load",
 		"animated_java:thunder_bullet/zzzzzzzz/load",
 		"animated_java:shadow_golem/zzzzzzzz/load",
-		"animated_java:dimension_slash/zzzzzzzz/load",
 		"animated_java:rkgugs_skill/zzzzzzzz/load",
 		"animated_java:steel_caller/zzzzzzzz/load",
 		"animated_java:messemers_assault/zzzzzzzz/load",
@@ -25,7 +24,8 @@
 		"animated_java:crystal_blade/zzzzzzzz/load",
 		"animated_java:death_blighted/zzzzzzzz/load",
 		"animated_java:wave_of_destruction/zzzzzzzz/load",
-		"animated_java:flame_of_lorian/zzzzzzzz/load",
-		"animated_java:champions_charge/zzzzzzzz/load"
+		"animated_java:dimension_slash/zzzzzzzz/load",
+		"animated_java:champions_charge/zzzzzzzz/load",
+		"animated_java:flame_of_lorian/zzzzzzzz/load"
 	]
 }

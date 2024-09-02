@@ -1,9 +1,6 @@
 #CMD 1440012
 #CMD 1390103
-#If the armor is invisible try reopen the save
-#Firelink shrine map
-#Lorian's greatsword, ledo hammer, ringed knight paired greatswords, Gael's greatsword.
-#Boss add new skills and attack types using epic fight
+#Reload load.json tick.json if aj is not responding
 function championsashes:raycast/ray
 
 execute at @s as @e[type=!#championsashes:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
@@ -338,6 +335,8 @@ execute as @s[advancements={championsashes:parry/red_white_parry=false}] run tag
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} at @s if entity @e[tag=parry_success,distance=..5] run effect give @s strength 5 4
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:black_knight_greataxe"}}]} run advancement grant @s[advancements={championsashes:func/black_knight_greataxe=false}] only championsashes:func/black_knight_greataxe
 execute as @s[advancements={championsashes:func/parry=false}] at @s if entity @e[tag=parry_success,distance=..5] run advancement grant @s only championsashes:func/parry
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} run function championsashes:items/black_knight_greataxe/stamp_upward_cut
+execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} run tag @s[tag=needclicker] remove needclicker
 
 #Murky Hand Scythe
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:murky_hand_scythe"}}]} run advancement grant @s[advancements={championsashes:func/murky_hand_scythe=false}] only championsashes:func/murky_hand_scythe
@@ -410,3 +409,4 @@ execute as @s[advancements={championsashes:magic_damage=true}] run advancement r
 function championsashes:items/spacebar_query
 
 #execute as @s[advancements={championsashes:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only championsashes:func/killed_nep
+execute if score @s[predicate=championsashes:using_item/two_years_ago] usedCE matches 1.. run playsound championsashes:sounds.championsashes.two_years_ago voice @s ~ ~ ~ 100 1 1
