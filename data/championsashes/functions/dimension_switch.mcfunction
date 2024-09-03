@@ -1,3 +1,4 @@
+kill @e[type=interaction]
 execute as @s run function championsashes:summon_interaction
 kill 00000001-0000-0005-0000-000100000004
 kill 00000008-0000-0005-0000-000900000003
