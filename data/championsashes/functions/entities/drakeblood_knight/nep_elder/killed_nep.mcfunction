@@ -8,3 +8,4 @@ bossbar set nep_elder players
 tag @a[tag=nep_foe] remove nep_foe
 kill @e[tag=parry_shield]
 kill @e[tag=attacker_indicator]
+kill @e[tag=nep_projectile]
