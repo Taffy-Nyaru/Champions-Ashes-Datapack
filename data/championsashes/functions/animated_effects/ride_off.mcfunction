@@ -70,5 +70,5 @@ tag @s[tag=wave_of_destruction_user] remove wave_of_destruction_user
 tag @s[tag=destruction_wave] remove destruction_wave
 
 kill @e[tag=player_camera,limit=1,sort=nearest]
-execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run spreadplayers ~ ~ 1 1 under 150 true @s
-execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run spreadplayers ~ ~ 1 1 under 150 true @s
+execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:animated_effects/air_detect_start
+execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start
