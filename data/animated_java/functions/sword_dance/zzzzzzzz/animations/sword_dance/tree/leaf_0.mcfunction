@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:sword_dance/zzzzzzzz/animations/sword_dance/tree/leaf_0_as_bone
+execute unless entity @s[tag=aj.sword_dance.disable_command_keyframes] at @s run execute as @e[tag=aj.sword_dance.bone] run data modify entity @s brightness set value {block:15,sky:15}

@@ -25,6 +25,7 @@ execute at @e[tag=aj.messemers_assault.locator,tag=!player_camera] run function 
 execute if entity @a[limit=1,sort=nearest,tag=aquamarine_blade] at @e[tag=aj.crystal_blade.locator,tag=!player_camera,tag=!crystal_blade_heavy_locator,tag=!player_camera] run function championsashes:animated_effects/crystal_blade
 #Tag added In AJ files
 execute if entity @a[limit=1,sort=nearest,tag=aquamarine_blade] at @e[tag=crystal_blade_heavy_locator,tag=!player_camera] run function championsashes:animated_effects/crystal_blade_heavy
+execute if entity @a[limit=1,sort=nearest,tag=sword_dancer] at @e[tag=aj.sword_dance.locator,tag=!player_camera,tag=!player_camera] run function championsashes:animated_effects/sword_dance
 execute at @e[tag=steel_caller_user] run kill @e[type=item,nbt={Item:{id:"minecraft:iron_block"}},distance=..5]
 execute at @e[tag=steel_caller_user] run fill ~-3 ~-4 ~-3 ~3 ~4 ~3 air replace iron_block
 #Tag added In AJ files

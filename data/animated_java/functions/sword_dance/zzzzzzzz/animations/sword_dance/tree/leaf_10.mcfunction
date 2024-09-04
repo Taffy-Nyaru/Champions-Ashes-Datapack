@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:sword_dance/zzzzzzzz/animations/sword_dance/tree/leaf_10_as_bone

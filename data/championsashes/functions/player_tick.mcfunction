@@ -141,6 +141,10 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonlight_greatsword"}}} run tag @s remove needclicker
 function championsashes:projectiles/moonlight_slash/moonlight_slash
 
+#Irithyll Straight Sword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} if score @s shift matches 1.. run function championsashes:items/irithyll_straight_sword/sword_dance
+execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} run tag @s remove needclicker
+
 #Ledo's Great Hammer
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ledo_great_hammer"}}} if score @s shift matches 1.. run function championsashes:items/ledo_great_hammer/steel_caller
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ledo_great_hammer"}}} run tag @s remove needclicker

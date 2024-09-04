@@ -352,6 +352,20 @@
             "items": [
               "minecraft:diamond_sword"
             ],
+            "nbt": "{id:\"championsashes:irithyll_straight_sword\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:diamond_sword"
+            ],
             "nbt": "{id:\"championsashes:moonlight_greatsword\"}"
           }
         }

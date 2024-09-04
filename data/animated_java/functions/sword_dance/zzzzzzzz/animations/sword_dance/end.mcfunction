@@ -1,0 +1,3 @@
+execute if score @s aj.sword_dance.animation.sword_dance.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:sword_dance/zzzzzzzz/animations/sword_dance/end_loop
+execute if score @s aj.sword_dance.animation.sword_dance.loop_mode = $aj.loop_mode.once aj.i run function animated_java:sword_dance/animations/sword_dance/stop
+execute if score @s aj.sword_dance.animation.sword_dance.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:sword_dance/animations/sword_dance/pause

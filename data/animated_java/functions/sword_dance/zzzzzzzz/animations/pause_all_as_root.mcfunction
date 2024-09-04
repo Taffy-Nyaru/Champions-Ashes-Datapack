@@ -1,0 +1,1 @@
+function animated_java:sword_dance/zzzzzzzz/animations/sword_dance/pause_as_root

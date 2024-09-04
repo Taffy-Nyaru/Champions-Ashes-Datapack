@@ -69,6 +69,10 @@ scoreboard players set @s[tag=wave_of_destruction_user] custom_stiff_time 130
 tag @s[tag=wave_of_destruction_user] remove wave_of_destruction_user
 tag @s[tag=destruction_wave] remove destruction_wave
 
+scoreboard players set @s[tag=sword_dance_user] custom_stiff_time 50
+tag @s[tag=sword_dance_user] remove sword_dance_user
+tag @s[tag=sword_dancer] remove sword_dancer
+
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:animated_effects/air_detect_start
 execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start

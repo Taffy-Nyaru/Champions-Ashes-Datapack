@@ -49,6 +49,8 @@ execute if entity @s[tag=flame_of_lorian_user,gamemode=survival] run scoreboard 
 execute if entity @s[tag=stamp_upward_cut_user,gamemode=survival] run scoreboard players add @s damage 30
 #Fume Ultra Greatsword
 execute if entity @s[tag=wave_of_destruction_user,gamemode=survival] run scoreboard players add @s damage 40
+#Irithyll Straight Sword
+execute if entity @s[tag=sword_dance_user,gamemode=survival] run scoreboard players add @s damage 25
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage
