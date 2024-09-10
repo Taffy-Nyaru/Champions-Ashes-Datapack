@@ -88,6 +88,7 @@ tag @s[tag=favor_incantations_user] remove favor_incantations_user
 
 scoreboard players set @s[tag=dynastic_sickleplay_user] custom_stiff_time 110
 tag @s[tag=dynastic_sickleplay_user] remove dynastic_sickleplay_user
+tag @s[tag=dynastic_throw_user] remove dynastic_throw_user
 tag @s[tag=obsidian_lamina_user] remove obsidian_lamina_user
 
 kill @e[tag=player_camera,limit=1,sort=nearest]

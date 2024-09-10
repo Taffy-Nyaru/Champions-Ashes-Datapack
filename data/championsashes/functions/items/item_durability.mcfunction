@@ -61,6 +61,7 @@ execute if entity @s[tag=messemers_orb_user,gamemode=survival] run scoreboard pl
 execute if entity @s[tag=blinkbolt_slash_user,gamemode=survival] run scoreboard players add @s damage 35
 #Dyanstic Sickleplay
 execute if entity @s[tag=dynastic_sickleplay_user,gamemode=survival] run scoreboard players add @s damage 40
+execute if entity @s[tag=dynastic_throw_user,gamemode=survival] run scoreboard players add @s damage 50
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage
