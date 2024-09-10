@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.favor_incantations.root] run function animated_java:favor_incantations/zzzzzzzz/tick_as_root

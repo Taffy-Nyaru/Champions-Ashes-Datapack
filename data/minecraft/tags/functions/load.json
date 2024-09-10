@@ -18,7 +18,6 @@
 		"animated_java:blade_of_peril/zzzzzzzz/load",
 		"animated_java:gravity_soul_stream/zzzzzzzz/load",
 		"animated_java:starscaller/zzzzzzzz/load",
-		"animated_java:rkss_cancel/zzzzzzzz/load",
 		"animated_java:gravity_blackhole/zzzzzzzz/load",
 		"animated_java:gravity_thrust/zzzzzzzz/load",
 		"animated_java:crystal_blade/zzzzzzzz/load",
@@ -27,6 +26,9 @@
 		"animated_java:dimension_slash/zzzzzzzz/load",
 		"animated_java:champions_charge/zzzzzzzz/load",
 		"animated_java:flame_of_lorian/zzzzzzzz/load",
-		"animated_java:sword_dance/zzzzzzzz/load"
+		"animated_java:sword_dance/zzzzzzzz/load",
+		"animated_java:rkss_cancel/zzzzzzzz/load",
+		"animated_java:favor_incantations/zzzzzzzz/load",
+		"animated_java:dynastic_sickleplay/zzzzzzzz/load"
 	]
 }

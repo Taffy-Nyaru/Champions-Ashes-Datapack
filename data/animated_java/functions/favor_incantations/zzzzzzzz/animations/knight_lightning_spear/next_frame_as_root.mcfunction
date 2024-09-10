@@ -1,0 +1,1 @@
+function animated_java:favor_incantations/zzzzzzzz/animations/knight_lightning_spear/tick_animation

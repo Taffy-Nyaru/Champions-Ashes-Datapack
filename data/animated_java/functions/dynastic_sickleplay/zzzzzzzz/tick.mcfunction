@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.dynastic_sickleplay.root] run function animated_java:dynastic_sickleplay/zzzzzzzz/tick_as_root

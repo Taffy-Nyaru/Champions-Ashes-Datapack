@@ -18,3 +18,5 @@ execute if entity @s[predicate=championsashes:using_item/lorians_greatsword,tag=
 execute if entity @s[predicate=championsashes:using_item/black_knight_greataxe,tag=stamp_upward_cut_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/fume_ultra_greatsword,tag=wave_of_destruction_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/irithyll_straight_sword,tag=sword_dance_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/ring_of_favor,tag=favor_incantations_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/obsidian_lamina,tag=dynastic_sickleplay_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

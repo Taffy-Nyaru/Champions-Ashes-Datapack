@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390103
+#CMD 1390105
 #Reload load.json tick.json if aj is not responding
 function championsashes:raycast/ray
 
@@ -125,6 +125,10 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:meteorite_staff"}}} if entity @s[tag=!stiff] run function championsashes:items/meteorite_staff/durability
 execute as @e[tag=aj.gravity_orb_projectile.root] at @s run function championsashes:projectiles/gravity_orb_projectile/gravity_orb_projectile
 execute as @s[tag=shot_gravity_orb] unless entity @e[tag=aj.gravity_orb_projectile.root] run tag @s remove shot_gravity_orb
+
+#Ring of Favor
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ring_of_favor"}}} if score @s[tag=!stiff] usedmedal matches 1.. at @s run function championsashes:items/ring_of_favor/ring_of_favor
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ring_of_favor"}}} if entity @s[tag=!stiff] run function championsashes:items/ring_of_favor/durability
 
 #Ender Ring
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ender_ring"}}]} run advancement grant @s[advancements={championsashes:func/ender_ring=false}] only championsashes:func/ender_ring
@@ -293,6 +297,10 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 #Fume Ultra Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/fume_ultra_greatsword/wave_of_destruction
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+
+#Obsidian lamina
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} if score @s shift matches 1.. at @s run function championsashes:items/obsidian_lamina/dynastic_sickleplay
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
 #Lothric Holy Sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lothric_holy_sword"}}} at @s as @e[type=!player,type=!#championsashes:special_entities,distance=..50] store result score @s Y_value run data get entity @s Pos[1]

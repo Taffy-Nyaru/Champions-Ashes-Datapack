@@ -1,0 +1,1 @@
+function animated_java:dynastic_sickleplay/zzzzzzzz/animations/dynastic_sickleplay/tick_animation

@@ -14,7 +14,7 @@ execute on target if score weapon_inventory math_output matches ..-100 run tag @
 scoreboard players add weapon_class championsashes_Timer 1
 
 #Change weapons by random possibility
-execute if score weapon_class championsashes_Timer matches 100.. run function championsashes:entities/drakeblood_knight/nep_elder/weapon_class
+#execute if score weapon_class championsashes_Timer matches 100.. run function championsashes:entities/drakeblood_knight/nep_elder/weapon_class
 
 #Parry
 #execute if score parry_random math_output matches -100..-1 run tag @s add elder_parrying
@@ -33,6 +33,8 @@ execute if score parry_stop_timer championsashes_Timer matches 512.. run scorebo
 #Zweihander
 execute if data storage generic:main {NepSelectedItem:{tag:{id:"championsashes:zweihander"}}} at @a[advancements={championsashes:hurt_players=true}] run summon lightning_bolt ~ ~ ~ {Tags:["Thunder"]}
 
+execute if entity @s[tag=nep_drakeblood_greatsword] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/drakeblood_greatsword_abilities
+execute if entity @s[tag=nep_drakeblood_greatsword_skill] run function animated_java:ancient_lightning_strike/animations/ancient_lightning_strike/play
 #DragonSlayer greatbow
 execute if data storage generic:main {NepSelectedItem:{tag:{id:"championsashes:dragonslayer_greatbow"}}} run tag @s add loop_start
 execute if entity @e[type=!player,tag=loop_start] at @a[advancements={championsashes:hurt_players=true}] positioned ~ ~4 ~ if score @s arrow_rain.temp matches 1.. run function championsashes:items/dragonslayer_greatbow/loop_summon_arrow

@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:favor_incantations/zzzzzzzz/animations/knight_lightning_spear/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:favor_incantations/zzzzzzzz/animations/knight_lightning_spear/tick_animation

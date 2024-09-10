@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:favor_incantations/zzzzzzzz/animations/messemers_orb/tree/leaf_51_as_bone
+execute unless entity @s[tag=aj.favor_incantations.disable_command_keyframes] at @s run function animated_java:favor_incantations/zzzzzzzz/animations/messemers_orb/tree/leaf_51_effects_0

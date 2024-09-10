@@ -1,0 +1,3 @@
+execute on passengers run function animated_java:favor_incantations/zzzzzzzz/animations/knight_lightning_spear/tree/leaf_0_as_bone
+function animated_java:favor_incantations/zzzzzzzz/apply_variant/lightning_spear0/as_root
+execute unless entity @s[tag=aj.favor_incantations.disable_command_keyframes] at @s run execute as @e[tag=aj.favor_incantations.bone] run data modify entity @s brightness set value {block:15,sky:15}

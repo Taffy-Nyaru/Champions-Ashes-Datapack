@@ -1,0 +1,2 @@
+scoreboard players set @s aj.dynastic_sickleplay.rig_loaded 1
+execute unless score @s aj.dynastic_sickleplay.export_version = aj.dynastic_sickleplay.export_version aj.i at @s run function animated_java:dynastic_sickleplay/zzzzzzzz/mark_outdated_rig

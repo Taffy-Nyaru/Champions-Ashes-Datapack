@@ -73,6 +73,23 @@ scoreboard players set @s[tag=sword_dance_user] custom_stiff_time 50
 tag @s[tag=sword_dance_user] remove sword_dance_user
 tag @s[tag=sword_dancer] remove sword_dancer
 
+scoreboard players set @s[tag=knight_lightning_spear_user] custom_stiff_time 100
+tag @s[tag=knight_lightning_spear_user] remove knight_lightning_spear_user
+
+scoreboard players set @s[tag=ancient_lightning_spear_user] custom_stiff_time 80
+tag @s[tag=ancient_lightning_spear_user] remove ancient_lightning_spear_user
+
+scoreboard players set @s[tag=messemers_orb_user] custom_stiff_time 120
+tag @s[tag=messemers_orb_user] remove messemers_orb_user
+
+scoreboard players set @s[tag=blinkbolt_slash_user] custom_stiff_time 90
+tag @s[tag=blinkbolt_slash_user] remove blinkbolt_slash_user
+tag @s[tag=favor_incantations_user] remove favor_incantations_user
+
+scoreboard players set @s[tag=dynastic_sickleplay_user] custom_stiff_time 110
+tag @s[tag=dynastic_sickleplay_user] remove dynastic_sickleplay_user
+tag @s[tag=obsidian_lamina_user] remove obsidian_lamina_user
+
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:animated_effects/air_detect_start
 execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start

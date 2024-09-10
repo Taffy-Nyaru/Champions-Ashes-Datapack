@@ -1,0 +1,1 @@
+tag @s remove aj.favor_incantations.animation.knight_lightning_spear

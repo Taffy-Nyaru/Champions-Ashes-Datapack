@@ -1,0 +1,3 @@
+execute if score @s aj.favor_incantations.animation.blinkbolt_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:favor_incantations/zzzzzzzz/animations/blinkbolt_slash/end_loop
+execute if score @s aj.favor_incantations.animation.blinkbolt_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:favor_incantations/animations/blinkbolt_slash/stop
+execute if score @s aj.favor_incantations.animation.blinkbolt_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:favor_incantations/animations/blinkbolt_slash/pause

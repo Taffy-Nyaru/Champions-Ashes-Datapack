@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:favor_incantations/zzzzzzzz/animations/blinkbolt_slash/tree/leaf_62_as_bone

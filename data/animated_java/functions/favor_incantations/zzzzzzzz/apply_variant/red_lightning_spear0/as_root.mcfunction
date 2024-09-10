@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:favor_incantations/zzzzzzzz/apply_variant/red_lightning_spear0/as_bone

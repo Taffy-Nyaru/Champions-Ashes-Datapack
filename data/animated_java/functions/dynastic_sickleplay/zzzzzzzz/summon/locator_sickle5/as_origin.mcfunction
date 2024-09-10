@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.dynastic_sickleplay.locator","aj.dynastic_sickleplay.locator.sickle5","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"dynastic_sickleplay\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"sickle5\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.dynastic_sickleplay.locator.sickle5,tag=aj.new,limit=1,distance=..1] run function animated_java:dynastic_sickleplay/zzzzzzzz/summon/locator_sickle5/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

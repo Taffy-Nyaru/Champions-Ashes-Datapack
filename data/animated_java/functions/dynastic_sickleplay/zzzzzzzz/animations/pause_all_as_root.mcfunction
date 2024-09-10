@@ -1,0 +1,2 @@
+function animated_java:dynastic_sickleplay/zzzzzzzz/animations/dynastic_sickleplay/pause_as_root
+function animated_java:dynastic_sickleplay/zzzzzzzz/animations/dynastic_throw/pause_as_root

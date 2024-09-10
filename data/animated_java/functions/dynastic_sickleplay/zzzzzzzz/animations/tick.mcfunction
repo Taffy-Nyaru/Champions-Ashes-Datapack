@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.dynastic_sickleplay.animation.dynastic_sickleplay] run function animated_java:dynastic_sickleplay/zzzzzzzz/animations/dynastic_sickleplay/tick
+execute if entity @s[tag=aj.dynastic_sickleplay.animation.dynastic_throw] run function animated_java:dynastic_sickleplay/zzzzzzzz/animations/dynastic_throw/tick

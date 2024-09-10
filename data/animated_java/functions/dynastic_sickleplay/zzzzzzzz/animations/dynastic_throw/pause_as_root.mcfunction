@@ -1,0 +1,1 @@
+tag @s remove aj.dynastic_sickleplay.animation.dynastic_throw

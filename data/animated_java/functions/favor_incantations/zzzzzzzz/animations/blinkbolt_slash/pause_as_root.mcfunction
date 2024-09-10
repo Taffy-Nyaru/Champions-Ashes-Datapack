@@ -1,0 +1,1 @@
+tag @s remove aj.favor_incantations.animation.blinkbolt_slash

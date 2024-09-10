@@ -26,8 +26,16 @@ execute if entity @a[limit=1,sort=nearest,tag=aquamarine_blade] at @e[tag=aj.cry
 #Tag added In AJ files
 execute if entity @a[limit=1,sort=nearest,tag=aquamarine_blade] at @e[tag=crystal_blade_heavy_locator,tag=!player_camera] run function championsashes:animated_effects/crystal_blade_heavy
 execute if entity @a[limit=1,sort=nearest,tag=sword_dancer] at @e[tag=aj.sword_dance.locator,tag=!player_camera,tag=!player_camera] run function championsashes:animated_effects/sword_dance
-execute at @e[tag=steel_caller_user] run kill @e[type=item,nbt={Item:{id:"minecraft:iron_block"}},distance=..5]
-execute at @e[tag=steel_caller_user] run fill ~-3 ~-4 ~-3 ~3 ~4 ~3 air replace iron_block
+execute at @a[tag=steel_caller_user] as @e[tag=summoned_steel,distance=6..] run kill @s
+execute at @a[tag=steel_caller_user] run kill @e[type=item,nbt={Item:{id:"minecraft:iron_block"}},distance=..5]
+execute at @a[tag=steel_caller_user] run fill ~-3 ~-4 ~-3 ~3 ~4 ~3 air replace iron_block
+execute if entity @a[limit=1,sort=nearest,tag=knight_lightning_spear_user] run function championsashes:items/ring_of_favor/kill_lightning_spears
+execute if entity @a[limit=1,sort=nearest,tag=ancient_lightning_spear_user] run function championsashes:items/ring_of_favor/kill_lightning_spears
+execute if entity @a[limit=1,sort=nearest,tag=knight_lightning_spear_user] at @e[tag=aj.favor_incantations.locator,tag=!player_camera] run function championsashes:animated_effects/knight_lightning_spear
+execute if entity @a[limit=1,sort=nearest,tag=ancient_lightning_spear_user] at @e[tag=aj.favor_incantations.locator,tag=!player_camera] run function championsashes:animated_effects/ancient_lightning_spear
+execute if entity @a[limit=1,sort=nearest,tag=messemers_orb_user] at @e[tag=aj.favor_incantations.locator,tag=!player_camera] run function championsashes:animated_effects/messemers_orb
+execute if entity @a[limit=1,sort=nearest,tag=blinkbolt_slash_user] at @e[tag=aj.favor_incantations.locator,tag=!player_camera] run function championsashes:animated_effects/blinkbolt_slash
+execute if entity @a[limit=1,sort=nearest,tag=obsidian_lamina_user] at @e[tag=aj.dynastic_sickleplay.locator_origin,tag=!player_camera] run function championsashes:animated_effects/dynastic_sickleplay
 #Tag added In AJ files
 #execute at @e[tag=aj.wave_of_destruction.locator,tag=!player_camera] run function championsashes:animated_effects/wave_of_destruction
 #execute at @e[tag=aj.steel_caller.locator,tag=!player_camera] run function championsashes:animated_effects/steel_caller In AJ file

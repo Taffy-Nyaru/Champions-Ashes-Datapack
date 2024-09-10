@@ -1,0 +1,4 @@
+execute if entity @s[tag=aj.favor_incantations.animation.messemers_orb] run function animated_java:favor_incantations/zzzzzzzz/animations/messemers_orb/tick
+execute if entity @s[tag=aj.favor_incantations.animation.knight_lightning_spear] run function animated_java:favor_incantations/zzzzzzzz/animations/knight_lightning_spear/tick
+execute if entity @s[tag=aj.favor_incantations.animation.ancient_lightning_spear] run function animated_java:favor_incantations/zzzzzzzz/animations/ancient_lightning_spear/tick
+execute if entity @s[tag=aj.favor_incantations.animation.blinkbolt_slash] run function animated_java:favor_incantations/zzzzzzzz/animations/blinkbolt_slash/tick

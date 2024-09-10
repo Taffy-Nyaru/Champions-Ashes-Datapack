@@ -1,0 +1,3 @@
+execute if score @s aj.favor_incantations.animation.ancient_lightning_spear.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:favor_incantations/zzzzzzzz/animations/ancient_lightning_spear/end_loop
+execute if score @s aj.favor_incantations.animation.ancient_lightning_spear.loop_mode = $aj.loop_mode.once aj.i run function animated_java:favor_incantations/animations/ancient_lightning_spear/stop
+execute if score @s aj.favor_incantations.animation.ancient_lightning_spear.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:favor_incantations/animations/ancient_lightning_spear/pause

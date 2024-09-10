@@ -1,0 +1,3 @@
+execute if score @s aj.favor_incantations.animation.messemers_orb.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:favor_incantations/zzzzzzzz/animations/messemers_orb/end_loop
+execute if score @s aj.favor_incantations.animation.messemers_orb.loop_mode = $aj.loop_mode.once aj.i run function animated_java:favor_incantations/animations/messemers_orb/stop
+execute if score @s aj.favor_incantations.animation.messemers_orb.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:favor_incantations/animations/messemers_orb/pause
