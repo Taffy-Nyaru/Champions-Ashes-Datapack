@@ -7,6 +7,7 @@ execute if entity @s[tag=aj.dynastic_sickleplay.bone.lamina_slash] run data modi
 
 
 
+
 execute if entity @s[tag=aj.dynastic_sickleplay.bone.obsidian_lamina] run data modify entity @s item.tag.CustomModelData set value 1146
 execute if entity @s[tag=aj.dynastic_sickleplay.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 1147
 execute if entity @s[tag=aj.dynastic_sickleplay.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 1148

@@ -301,6 +301,7 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 #Obsidian lamina
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} if score @s shift matches 1.. at @s run function championsashes:items/obsidian_lamina/dynastic_sickleplay
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} at @s[tag=!dynastic_sickleplay_user,tag=!dynastic_throw_user,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities] bleeding_Timer 300
 
 #Lothric Holy Sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lothric_holy_sword"}}} at @s as @e[type=!player,type=!#championsashes:special_entities,distance=..50] store result score @s Y_value run data get entity @s Pos[1]

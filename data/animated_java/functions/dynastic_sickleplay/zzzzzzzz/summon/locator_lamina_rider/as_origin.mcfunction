@@ -1,0 +1,4 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["lamina_rider","aj.dynastic_sickleplay.locator","aj.dynastic_sickleplay.locator.lamina_rider","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"dynastic_sickleplay\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"lamina_rider\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:item_display,tag=aj.dynastic_sickleplay.locator.lamina_rider,tag=aj.new,limit=1,distance=..1] run function animated_java:dynastic_sickleplay/zzzzzzzz/summon/locator_lamina_rider/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

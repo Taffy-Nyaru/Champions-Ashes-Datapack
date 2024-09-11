@@ -1,0 +1,1 @@
+execute at @e[tag=lamina_rider,tag=!player_camera] as @e[distance=..2,type=!#championsashes:special_entities,tag=!dynastic_throw_user] run damage @s 5 minecraft:outside_border by @a[limit=1,sort=nearest]

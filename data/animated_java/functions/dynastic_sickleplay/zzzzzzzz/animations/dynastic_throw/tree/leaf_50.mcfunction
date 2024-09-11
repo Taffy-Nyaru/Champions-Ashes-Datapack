@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:dynastic_sickleplay/zzzzzzzz/animations/dynastic_throw/tree/leaf_50_as_bone
+execute unless entity @s[tag=aj.dynastic_sickleplay.disable_command_keyframes] at @s run execute at @e[tag=aj.dynastic_sickleplay.locator,tag=!lamina_rider,tag=!player_camera] as @e[distance=..3,type=!#championsashes:special_entities,tag=!dynastic_throw_user] run scoreboard players set @s[type=!#championsashes:special_entities] bleeding_Timer 2200

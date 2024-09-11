@@ -1,0 +1,2 @@
+execute at @e[tag=aj.dynastic_sickleplay.locator,tag=!lamina_rider,tag=!player_camera] as @e[distance=..2,limit=1,sort=nearest,type=!#championsashes:special_entities,tag=!dynastic_throw_user] run damage @s 12 minecraft:outside_border by @a[limit=1,sort=nearest]
+execute at @e[tag=aj.dynastic_sickleplay.locator,tag=!lamina_rider,tag=!player_camera] as @e[distance=..2,limit=1,sort=nearest,type=!#championsashes:special_entities,tag=!dynastic_throw_user] run tag @s[tag=!dynastic_throw] add dynastic_throw
