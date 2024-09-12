@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:murky_hand_scythe/zzzzzzzz/animations/soul_five/tree/leaf_0_as_bone
+execute unless entity @s[tag=aj.murky_hand_scythe.disable_command_keyframes] at @s run function animated_java:murky_hand_scythe/zzzzzzzz/animations/soul_five/tree/leaf_0_effects_0

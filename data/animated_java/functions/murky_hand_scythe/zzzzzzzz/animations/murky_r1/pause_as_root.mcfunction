@@ -1,0 +1,1 @@
+tag @s remove aj.murky_hand_scythe.animation.murky_r1

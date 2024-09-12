@@ -1,0 +1,2 @@
+function animated_java:murky_hand_scythe/zzzzzzzz/animations/soul_five/pause_as_root
+function animated_java:murky_hand_scythe/zzzzzzzz/animations/murky_r1/pause_as_root

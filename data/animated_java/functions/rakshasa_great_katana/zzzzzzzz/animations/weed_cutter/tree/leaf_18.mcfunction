@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:rakshasa_great_katana/zzzzzzzz/animations/weed_cutter/tree/leaf_18_as_bone
+execute unless entity @s[tag=aj.rakshasa_great_katana.disable_command_keyframes] at @s run tag @a[tag=rakshasa_great_katana_user,limit=1,sort=nearest] add weed_cutter_user

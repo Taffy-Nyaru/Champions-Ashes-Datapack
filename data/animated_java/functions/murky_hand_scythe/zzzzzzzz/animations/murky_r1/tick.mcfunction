@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:murky_hand_scythe/zzzzzzzz/animations/murky_r1/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:murky_hand_scythe/zzzzzzzz/animations/murky_r1/tick_animation

@@ -1,0 +1,3 @@
+execute if score @s aj.murky_hand_scythe.animation.soul_five.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:murky_hand_scythe/zzzzzzzz/animations/soul_five/end_loop
+execute if score @s aj.murky_hand_scythe.animation.soul_five.loop_mode = $aj.loop_mode.once aj.i run function animated_java:murky_hand_scythe/animations/soul_five/stop
+execute if score @s aj.murky_hand_scythe.animation.soul_five.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:murky_hand_scythe/animations/soul_five/pause

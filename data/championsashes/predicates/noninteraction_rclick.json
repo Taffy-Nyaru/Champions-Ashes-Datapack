@@ -378,6 +378,20 @@
         "equipment": {
           "mainhand": {
             "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{id:\"championsashes:rakshasa_great_katana\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
               "minecraft:diamond_sword"
             ],
             "nbt": "{id:\"championsashes:moonlight_greatsword\"}"

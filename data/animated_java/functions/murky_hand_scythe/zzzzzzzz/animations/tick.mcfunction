@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.murky_hand_scythe.animation.soul_five] run function animated_java:murky_hand_scythe/zzzzzzzz/animations/soul_five/tick
+execute if entity @s[tag=aj.murky_hand_scythe.animation.murky_r1] run function animated_java:murky_hand_scythe/zzzzzzzz/animations/murky_r1/tick

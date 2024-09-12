@@ -1,0 +1,2 @@
+scoreboard players set @s aj.rakshasa_great_katana.rig_loaded 1
+execute unless score @s aj.rakshasa_great_katana.export_version = aj.rakshasa_great_katana.export_version aj.i at @s run function animated_java:rakshasa_great_katana/zzzzzzzz/mark_outdated_rig

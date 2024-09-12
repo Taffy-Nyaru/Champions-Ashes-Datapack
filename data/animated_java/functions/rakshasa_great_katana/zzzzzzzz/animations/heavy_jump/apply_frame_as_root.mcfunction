@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..20 run function animated_java:rakshasa_great_katana/zzzzzzzz/animations/heavy_jump/tree/branch_0_20

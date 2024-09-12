@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..38 run function animated_java:murky_hand_scythe/zzzzzzzz/animations/soul_five/tree/branch_0_38

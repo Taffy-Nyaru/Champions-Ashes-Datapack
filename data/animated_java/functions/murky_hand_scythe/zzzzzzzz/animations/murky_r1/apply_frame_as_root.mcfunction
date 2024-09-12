@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..10 run function animated_java:murky_hand_scythe/zzzzzzzz/animations/murky_r1/tree/branch_0_10

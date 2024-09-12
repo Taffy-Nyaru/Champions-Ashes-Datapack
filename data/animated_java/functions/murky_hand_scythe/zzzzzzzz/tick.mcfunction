@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.murky_hand_scythe.root] run function animated_java:murky_hand_scythe/zzzzzzzz/tick_as_root

@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390105
+#CMD 1390106
 #Reload load.json tick.json if aj is not responding
 function championsashes:raycast/ray
 
@@ -148,6 +148,8 @@ function championsashes:projectiles/moonlight_slash/moonlight_slash
 #Irithyll Straight Sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} if score @s shift matches 1.. run function championsashes:items/irithyll_straight_sword/sword_dance
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} run tag @s remove needclicker
+execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:irithyll_straight_sword"}}]} run advancement grant @s[advancements={championsashes:func/irithyll_straight_sword=false}] only championsashes:func/irithyll_straight_sword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities,distance=..5] frostbite_Timer 600
 
 #Ledo's Great Hammer
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ledo_great_hammer"}}} if score @s shift matches 1.. run function championsashes:items/ledo_great_hammer/steel_caller
@@ -160,6 +162,10 @@ execute unless score @s shift matches 1.. if data storage championsashes:player_
 #Moonveil
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonveil"}}} if score @s shift matches 1.. run function championsashes:items/moonveil/dimension_slash
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonveil"}}} run tag @s remove needclicker
+
+#Rakshasa's Great Katana
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:rakshasa_great_katana"}}} run function championsashes:items/rakshasa_great_katana/attack_types
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:rakshasa_great_katana"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities,distance=..5] bleeding_Timer 500
 
 #Spear of the Impaler
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:spear_of_the_impaler"}}} if score @s shift matches 1.. run function championsashes:items/spear_of_the_impaler/messemers_assault
@@ -276,10 +282,6 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:caestus"}}]} if score @s usedmedal matches 1.. run tag @s add endure
 execute as @s[tag=endure] at @s run function championsashes:items/caestus/caestus
 
-#Irthyll Straight Sword
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:irithyll_straight_sword"}}]} run advancement grant @s[advancements={championsashes:func/irithyll_straight_sword=false}] only championsashes:func/irithyll_straight_sword
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities,distance=..5] frostbite_Timer 600
-
 #Ringed Knight Paired Greatsword
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ringed_knight_paired_greatsword_right"}},{tag:{id:"championsashes:ringed_knight_paired_greatsword_left"}}]} run advancement grant @s[advancements={championsashes:func/ringed_knight_paired_greatsword=false}] only championsashes:func/ringed_knight_paired_greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_paired_greatsword_right"}}} if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:ringed_knight_paired_greatsword_left"}}]} at @s run function championsashes:items/ringed_knight_paired_greatsword/ringed_knight_paired_greatsword
@@ -354,9 +356,7 @@ execute unless score @s shift matches 1.. if data storage championsashes:player_
 #Murky Hand Scythe
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:murky_hand_scythe"}}]} run advancement grant @s[advancements={championsashes:func/murky_hand_scythe=false}] only championsashes:func/murky_hand_scythe
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:murky_hand_scythe"}}} run function championsashes:items/murky/murky
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:murky_hand_scythe"}}} if score @s damage matches ..-1 run item replace entity @s weapon.mainhand with air
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:murky_hand_scythe"}}} if score @s damage matches 465.. run scoreboard players set @s damage -1
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:murky_hand_scythe"}}} if score @s damage matches ..-1 run scoreboard players set @s damage 1
+execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:murky_hand_scythe"}}]} at @s unless entity @e[tag=aj.murky_hand_scythe.root,distance=..2] run function championsashes:items/murky/soul_five
 execute as @s[tag=quickstep] at @s run function championsashes:items/murky/quickstep
 execute if score #quickstep_enter_block championsashes_Timer matches 20.. run tag @s[tag=quickstep_enter_block] remove quickstep_enter_block
 execute if score #quickstep_enter_block championsashes_Timer matches 20.. run scoreboard players set #quickstep_enter_block championsashes_Timer 0

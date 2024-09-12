@@ -1,0 +1,4 @@
+function animated_java:rakshasa_great_katana/zzzzzzzz/animations/weed_cutter/pause_as_root
+function animated_java:rakshasa_great_katana/zzzzzzzz/animations/crouch_poke/pause_as_root
+function animated_java:rakshasa_great_katana/zzzzzzzz/animations/heavy_jump/pause_as_root
+function animated_java:rakshasa_great_katana/zzzzzzzz/animations/rakshasa_r1/pause_as_root

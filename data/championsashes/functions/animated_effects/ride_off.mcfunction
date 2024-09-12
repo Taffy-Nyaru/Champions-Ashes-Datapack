@@ -91,6 +91,21 @@ tag @s[tag=dynastic_sickleplay_user] remove dynastic_sickleplay_user
 tag @s[tag=dynastic_throw_user] remove dynastic_throw_user
 tag @s[tag=obsidian_lamina_user] remove obsidian_lamina_user
 
+tag @s[tag=rakshasa_great_katana_user] remove rakshasa_great_katana_user
+scoreboard players set @s[tag=rakshasa_crouch_poke_user] custom_stiff_time 30
+tag @s[tag=rakshasa_crouch_poke_user] remove rakshasa_crouch_poke_user
+scoreboard players set @s[tag=rakshasa_r1_user] custom_stiff_time 50
+tag @s[tag=rakshasa_r1_user] remove rakshasa_r1_user
+scoreboard players set @s[tag=rakshasa_jump_attack_user] custom_stiff_time 60
+tag @s[tag=rakshasa_jump_attack_user] remove rakshasa_jump_attack_user
+scoreboard players set @s[tag=weed_cutter_user] custom_stiff_time 80
+tag @s[tag=weed_cutter_user] remove weed_cutter_user
+
+scoreboard players set @s[tag=murky_r1_user] custom_stiff_time 5
+tag @s[tag=murky_r1_user] remove murky_r1_user
+scoreboard players set @s[tag=soul_five] custom_stiff_time 0
+tag @s[tag=soul_five] remove soul_five
+
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:animated_effects/air_detect_start
 execute at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start

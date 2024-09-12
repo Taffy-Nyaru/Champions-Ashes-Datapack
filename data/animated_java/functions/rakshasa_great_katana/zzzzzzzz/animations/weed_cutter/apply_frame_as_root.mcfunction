@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..51 run function animated_java:rakshasa_great_katana/zzzzzzzz/animations/weed_cutter/tree/branch_0_51

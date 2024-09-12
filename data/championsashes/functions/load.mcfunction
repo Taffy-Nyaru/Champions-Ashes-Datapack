@@ -159,7 +159,7 @@ scoreboard objectives add cancel dummy
 scoreboard objectives add damage dummy
 scoreboard objectives add quickstep_delay dummy
 
-#PKCS
+#Pontiff Knight Curved Sword
 scoreboard objectives add skill_time dummy
 scoreboard objectives add pkcs_damage dummy
 
@@ -259,6 +259,7 @@ data modify storage generic:main rkss_igniteCMD set value 1390055
 data modify storage generic:main branchCMD set value 1390063
 data modify storage generic:main meteorite_staffCMD set value 1390097
 data modify storage generic:main meteorite_staff_igniteCMD set value 1390098
+data modify storage generic:main murkyEnchantment set value [{id:"sharpness",lvl:5s}]
 data modify storage generic:main warpedstick_action set value 0
 data modify storage generic:main moonlight_temp set value {angle:200,axis:[1.0,0.0,0.0]}
 #data modify storage generic:main arrow_Motion set value [0.0,-0.5,0.0]

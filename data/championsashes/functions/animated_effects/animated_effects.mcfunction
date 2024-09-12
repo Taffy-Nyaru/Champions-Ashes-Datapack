@@ -37,6 +37,10 @@ execute if entity @a[limit=1,sort=nearest,tag=messemers_orb_user] at @e[tag=aj.f
 execute if entity @a[limit=1,sort=nearest,tag=blinkbolt_slash_user] at @e[tag=aj.favor_incantations.locator,tag=!player_camera] run function championsashes:animated_effects/blinkbolt_slash
 execute if entity @a[limit=1,sort=nearest,tag=obsidian_lamina_user] at @e[tag=aj.dynastic_sickleplay.locator,tag=!lamina_rider,tag=!player_camera] run function championsashes:animated_effects/dynastic_sickleplay
 execute as @e[tag=dynastic_throw] run function championsashes:items/obsidian_lamina/throw
+execute if entity @a[limit=1,sort=nearest,tag=weed_cutter_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/weed_cutter
+execute if entity @a[limit=1,sort=nearest,tag=rakshasa_crouch_poke_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/crouch_poke
+execute if entity @a[limit=1,sort=nearest,tag=rakshasa_jump_attack_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/jump_attack
+
 #Tag added In AJ files
 #execute at @e[tag=aj.wave_of_destruction.locator,tag=!player_camera] run function championsashes:animated_effects/wave_of_destruction
 #execute at @e[tag=aj.steel_caller.locator,tag=!player_camera] run function championsashes:animated_effects/steel_caller In AJ file

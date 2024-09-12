@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:murky_hand_scythe/zzzzzzzz/apply_variant/default/as_bone

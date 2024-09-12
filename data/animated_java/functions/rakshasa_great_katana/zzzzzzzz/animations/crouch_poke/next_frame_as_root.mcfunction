@@ -1,0 +1,1 @@
+function animated_java:rakshasa_great_katana/zzzzzzzz/animations/crouch_poke/tick_animation

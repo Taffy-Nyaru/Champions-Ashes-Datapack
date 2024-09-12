@@ -21,3 +21,6 @@ execute if entity @s[predicate=championsashes:using_item/irithyll_straight_sword
 execute if entity @s[predicate=championsashes:using_item/ring_of_favor,tag=favor_incantations_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/obsidian_lamina,tag=dynastic_sickleplay_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/obsidian_lamina,tag=dynastic_throw_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/rakshasa_great_katana,tag=rakshasa_great_katana_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,tag=murky_r1_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,tag=soul_five] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

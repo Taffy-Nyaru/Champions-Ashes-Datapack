@@ -1,0 +1,1 @@
+function animated_java:murky_hand_scythe/zzzzzzzz/animations/murky_r1/tick_animation

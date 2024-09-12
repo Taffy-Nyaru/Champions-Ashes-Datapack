@@ -1,0 +1,8 @@
+execute if entity @s[tag=aj.rakshasa_great_katana.bone.slash] run data modify entity @s {} merge value {transformation:[0.000006766911331410035f,-0.5917045791048443f,-0.13114114512808916f,-2.7927939763769256f,0.00004103383367955121f,0.08537333299778326f,0.04763316163651804f,1.6385540642844267f,0.000002558225107936285f,0.1957674767314764f,-0.41714496817818336f,-1.7986288420034464f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.rakshasa_great_katana.locator_origin.rakshasa0] at @s on origin run tp @s ^-1.52536 ^1.2334 ^1.92114 ~108.25655 ~80.29463
+execute if entity @s[tag=aj.rakshasa_great_katana.locator_origin.rakshasa1] at @s on origin run tp @s ^-1.68834 ^1.29894 ^1.192 ~108.25655 ~80.29463
+execute if entity @s[tag=aj.rakshasa_great_katana.locator_origin.rakshasa2] at @s on origin run tp @s ^-1.85133 ^1.36447 ^0.46287 ~108.25655 ~80.29463
+execute if entity @s[tag=aj.rakshasa_great_katana.locator_origin.rakshasa3] at @s on origin run tp @s ^-2.01431 ^1.43001 ^-0.26627 ~108.25655 ~80.29463
+execute if entity @s[tag=aj.rakshasa_great_katana.locator_origin.rakshasa4] at @s on origin run tp @s ^-2.23748 ^1.50456 ^-0.98115 ~108.25655 ~80.29463
+execute if entity @s[tag=aj.rakshasa_great_katana.locator_origin.rakshasa5] at @s on origin run tp @s ^-2.46065 ^1.57911 ^-1.69602 ~108.25655 ~80.29463
+execute if entity @s[tag=aj.rakshasa_great_katana.locator_origin.player_camera] at @s on origin run tp @s ^-1.11458 ^-0.09421 ^1.93581 ~-120.0939 ~-4.82036

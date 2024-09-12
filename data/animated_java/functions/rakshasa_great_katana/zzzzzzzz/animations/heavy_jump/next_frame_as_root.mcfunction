@@ -1,0 +1,1 @@
+function animated_java:rakshasa_great_katana/zzzzzzzz/animations/heavy_jump/tick_animation

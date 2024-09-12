@@ -1,0 +1,3 @@
+execute if score @s aj.rakshasa_great_katana.animation.heavy_jump.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:rakshasa_great_katana/zzzzzzzz/animations/heavy_jump/end_loop
+execute if score @s aj.rakshasa_great_katana.animation.heavy_jump.loop_mode = $aj.loop_mode.once aj.i run function animated_java:rakshasa_great_katana/animations/heavy_jump/stop
+execute if score @s aj.rakshasa_great_katana.animation.heavy_jump.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:rakshasa_great_katana/animations/heavy_jump/pause

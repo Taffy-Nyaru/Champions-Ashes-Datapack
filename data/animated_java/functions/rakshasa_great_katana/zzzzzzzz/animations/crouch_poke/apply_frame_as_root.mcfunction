@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..13 run function animated_java:rakshasa_great_katana/zzzzzzzz/animations/crouch_poke/tree/branch_0_13

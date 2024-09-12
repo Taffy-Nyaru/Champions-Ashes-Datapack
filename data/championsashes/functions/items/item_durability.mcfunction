@@ -1,20 +1,22 @@
-scoreboard players add @s damage 1
+#Murky Hand Scythe
+execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,gamemode=survival] run scoreboard players add @s damage 5
+execute if entity @s[tag=murky_r1_user,gamemode=survival] run scoreboard players add @s damage 5
 #Aquamarine Dagger
 execute if entity @s[tag=crystal_blade_user,gamemode=survival] run scoreboard players add @s damage 5
-execute if entity @s[tag=crystal_blade_heavy_user,gamemode=survival] run scoreboard players add @s damage 7
+execute if entity @s[tag=crystal_blade_heavy_user,gamemode=survival] run scoreboard players add @s damage 10
 #Antspur Rapier
-execute if score @s[tag=bloodhound_step,gamemode=survival] usedCrossbow matches 1.. run scoreboard players add @s damage 14
+execute if score @s[tag=bloodhound_step,gamemode=survival] usedCrossbow matches 1.. run scoreboard players add @s damage 15
 #Gundyr Halberd
-execute if entity @s[tag=gundyr_halberd,gamemode=survival] run scoreboard players add @s damage 24
+execute if entity @s[tag=gundyr_halberd,gamemode=survival] run scoreboard players add @s damage 25
 #Black Blade
-execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s damage 24
+execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s damage 25
 #Ringed Knight Straight Sword
 execute if entity @s[tag=rkss_cancel_user,gamemode=survival] run scoreboard players add @s damage 10
 execute if entity @s[tag=rkss_skill_user,gamemode=survival] run scoreboard players add @s damage 25
 #Lothric Holy Sword
-execute unless entity @e[tag=lazer_beam,distance=..30] if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 19
+execute unless entity @e[tag=lazer_beam,distance=..30] if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 20
 #Ringed Knight Paired Greatswords
-execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 39
+execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 40
 execute if entity @s[tag=rkgugs_l1_user,gamemode=survival] run scoreboard players add @s damage 20
 #Spinning Gravity Thrust
 execute if entity @s[tag=gravity_thrust_user,gamemode=survival] run scoreboard players add @s damage 45
@@ -30,7 +32,7 @@ execute if entity @s[tag=gravity_soul_stream_user,gamemode=survival] run scorebo
 #Gravity blackhole
 execute if entity @s[tag=gravity_blackhole_user,gamemode=survival] run scoreboard players add @s damage 20
 #Serpent Hunter
-execute if entity @s[tag=chainsaw,gamemode=survival] run scoreboard players add @s damage 1
+execute if entity @s[tag=chainsaw,gamemode=survival] run scoreboard players add @s damage 15
 #Moonlight Greatsword
 execute if entity @s[tag=moonlight,gamemode=survival] run scoreboard players add @s damage 25
 #Dark Sword+22
@@ -62,6 +64,8 @@ execute if entity @s[tag=blinkbolt_slash_user,gamemode=survival] run scoreboard 
 #Dyanstic Sickleplay
 execute if entity @s[tag=dynastic_sickleplay_user,gamemode=survival] run scoreboard players add @s damage 40
 execute if entity @s[tag=dynastic_throw_user,gamemode=survival] run scoreboard players add @s damage 50
+#Weed Cutter
+execute if entity @s[tag=weed_cutter_user,gamemode=survival] run scoreboard players add @s damage 30
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

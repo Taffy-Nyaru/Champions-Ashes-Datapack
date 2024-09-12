@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:rakshasa_great_katana/zzzzzzzz/animations/crouch_poke/tree/leaf_7_as_bone

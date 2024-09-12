@@ -53,7 +53,7 @@ execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run funct
 
 #Animate Effects
 function championsashes:animated_effects/animated_effects
-execute as @e[tag=air_detecter,type=marker] at @s run function championsashes:animated_effects/air_detect
+function championsashes:animated_effects/air_detect
 
 tag @a[tag=!ally] add ally
 tag @e[tag=pearl,tag=!ally] add ally
