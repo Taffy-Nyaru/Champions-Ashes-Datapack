@@ -54,6 +54,7 @@ execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run funct
 #Animate Effects
 function championsashes:animated_effects/animated_effects
 function championsashes:animated_effects/air_detect
+execute as @e[tag=bullet_generated] at @s run function championsashes:items/carian_knights_sword/bullet_generator
 
 tag @a[tag=!ally] add ally
 tag @e[tag=pearl,tag=!ally] add ally

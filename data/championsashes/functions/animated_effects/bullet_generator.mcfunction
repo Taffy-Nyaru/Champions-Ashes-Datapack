@@ -1,0 +1,2 @@
+execute as @e[distance=..2,type=!#championsashes:special_entities,tag=!bullet_generator_user] run damage @s 20 minecraft:fly_into_wall by @a[limit=1,sort=nearest]
+execute as @e[distance=..2,type=!#championsashes:special_entities,tag=!bullet_generator_user] run tag @s[tag=!stiff] add stiff

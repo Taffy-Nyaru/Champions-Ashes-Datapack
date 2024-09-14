@@ -24,7 +24,8 @@
         "championsashes:armor/drakeblood_helmet",
         "championsashes:armor/drakeblood_chestplate",
         "championsashes:armor/drakeblood_leggings",
-        "championsashes:armor/drakeblood_boots"
+        "championsashes:armor/drakeblood_boots",
+        "championsashes:items/void_eye"
       ]
     }
 }

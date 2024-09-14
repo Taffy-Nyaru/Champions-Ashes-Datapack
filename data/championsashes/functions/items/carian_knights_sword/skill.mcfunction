@@ -6,3 +6,5 @@ execute as @e[tag=aj.carian_grandeur.root,limit=1,sort=nearest] run function ani
 execute as @s[gamemode=survival] run function championsashes:items/item_durability
 tag @s add riding_display
 tag @s add carian_grandeur_user
+
+execute as @e[type=!#championsashes:special_entities,type=!#championsashes:friendlycreature,distance=..7,tag=!carian_grandeur_user,sort=nearest,limit=1] run tag @s[tag=!bullet_generated] add bullet_generated

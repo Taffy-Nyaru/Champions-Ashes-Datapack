@@ -41,6 +41,9 @@ execute if entity @a[limit=1,sort=nearest,tag=weed_cutter_user] at @e[tag=aj.rak
 execute if entity @a[limit=1,sort=nearest,tag=rakshasa_crouch_poke_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/crouch_poke
 execute if entity @a[limit=1,sort=nearest,tag=rakshasa_jump_attack_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/jump_attack
 
+execute if entity @a[limit=1,sort=nearest,tag=shunter_mafia] at @e[tag=aj.chainsaw.locator,tag=!player_camera] run function championsashes:animated_effects/chainsaw
+execute if entity @a[limit=1,sort=nearest,tag=shunter_mafia] at @e[tag=aj.chainsaw.locator.shunter4,tag=!player_camera,limit=1] run particle flame ~ ~1 ~ 0.25 0.25 0.25 0.1 1 force
+execute if entity @a[limit=1,sort=nearest,tag=shunter_mafia] at @e[tag=aj.chainsaw.locator.shunter5,tag=!player_camera,limit=1] run particle flame ~ ~1 ~ 0.25 0.25 0.25 0.1 1 force
 #Tag added In AJ files
 #execute at @e[tag=aj.wave_of_destruction.locator,tag=!player_camera] run function championsashes:animated_effects/wave_of_destruction
 #execute at @e[tag=aj.steel_caller.locator,tag=!player_camera] run function championsashes:animated_effects/steel_caller In AJ file

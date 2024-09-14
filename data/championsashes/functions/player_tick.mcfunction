@@ -139,6 +139,7 @@ function championsashes:entities/night_cavalry/powers
 
 #Serpent Hunter
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:serpent_hunter"}}} run function championsashes:items/serpent_hunter/serpent_hunter
+execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:serpent_hunter"}}]} at @s unless entity @e[tag=aj.chainsaw.root,distance=..2] run function championsashes:items/serpent_hunter/chainsaw
 
 #Moonlight Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonlight_greatsword"}}} if score @s shift matches 1.. run function championsashes:items/moonlight_greatsword/moonlight_greatsword

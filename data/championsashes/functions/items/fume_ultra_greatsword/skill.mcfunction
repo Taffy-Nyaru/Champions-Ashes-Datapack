@@ -1,3 +1,4 @@
+gamerule mobGriefing false
 tag @s[tag=animated_got_gamemode] remove animated_got_gamemode
 execute store result score @s gamemode run data get entity @s playerGameType
 execute facing ^ ^ ^-1 run function animated_java:wave_of_destruction/summon

@@ -1,0 +1,1 @@
+function animated_java:chainsaw/zzzzzzzz/animations/chainsaw/tick_animation

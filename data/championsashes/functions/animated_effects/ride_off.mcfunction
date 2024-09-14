@@ -1,4 +1,5 @@
 #Killing display entities and riding off in aj files' commands
+gamerule mobGriefing true
 function championsashes:animated_effects/gamemode
 tag @s remove riding_display
 tag @s[tag=!soul_five,tag=!murky_r1_user] add stiff
@@ -112,6 +113,10 @@ tag @s[tag=giant_hunt_user] remove giant_hunt_user
 
 scoreboard players set @s[tag=blind_spot_user] custom_stiff_time 50
 tag @s[tag=blind_spot_user] remove blind_spot_user
+
+scoreboard players set @s[tag=chainsaw_user] custom_stiff_time 200
+tag @s[tag=chainsaw_user] remove chainsaw_user
+tag @s[tag=shunter_mafia] remove shunter_mafia
 
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:animated_effects/air_detect_start

@@ -1,0 +1,1 @@
+function championsashes:animated_effects/bullet_generator

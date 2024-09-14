@@ -19,7 +19,6 @@
 		"animated_java:gravity_soul_stream/zzzzzzzz/load",
 		"animated_java:starscaller/zzzzzzzz/load",
 		"animated_java:gravity_blackhole/zzzzzzzz/load",
-		"animated_java:gravity_thrust/zzzzzzzz/load",
 		"animated_java:crystal_blade/zzzzzzzz/load",
 		"animated_java:death_blighted/zzzzzzzz/load",
 		"animated_java:wave_of_destruction/zzzzzzzz/load",
@@ -32,9 +31,11 @@
 		"animated_java:rakshasa_great_katana/zzzzzzzz/load",
 		"animated_java:dynastic_sickleplay/zzzzzzzz/load",
 		"animated_java:murky_hand_scythe/zzzzzzzz/load",
-		"animated_java:bullet_generator/zzzzzzzz/load",
 		"animated_java:blind_spot/zzzzzzzz/load",
 		"animated_java:giant_hunt/zzzzzzzz/load",
-		"animated_java:carian_grandeur/zzzzzzzz/load"
+		"animated_java:carian_grandeur/zzzzzzzz/load",
+		"animated_java:chainsaw/zzzzzzzz/load",
+		"animated_java:bullet_generator/zzzzzzzz/load",
+		"animated_java:gravity_thrust/zzzzzzzz/load"
 	]
 }

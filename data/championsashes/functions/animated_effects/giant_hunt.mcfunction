@@ -1,2 +1,2 @@
 execute at @e[tag=aj.giant_hunt.locator,tag=!player_camera] as @e[distance=..3,type=!#championsashes:special_entities,tag=!giant_hunt_user] run damage @s 30 minecraft:player_attack by @a[limit=1,sort=nearest]
-execute at @e[tag=aj.giant_hunt.locator,tag=!player_camera] as @e[distance=..3,type=!#championsashes:special_entities,tag=!giant_hunt_user] run summon creeper ~ ~-0.5 ~ {Invulnerable:1b,Tags:["bomb"],Fuse:0,ExplosionRadius:1}
+execute at @e[tag=aj.giant_hunt.locator,tag=!player_camera] as @e[distance=..3,type=!#championsashes:special_entities,tag=!giant_hunt_user] run summon creeper ~ ~ ~ {Invulnerable:1b,Tags:["bomb"],Fuse:0,ExplosionRadius:1}
