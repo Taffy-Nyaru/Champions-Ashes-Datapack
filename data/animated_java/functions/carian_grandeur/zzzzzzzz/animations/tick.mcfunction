@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.carian_grandeur.animation.carian_grandeur] run function animated_java:carian_grandeur/zzzzzzzz/animations/carian_grandeur/tick

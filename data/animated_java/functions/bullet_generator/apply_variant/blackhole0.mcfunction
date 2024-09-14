@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.bullet_generator.root] run function animated_java:bullet_generator/zzzzzzzz/apply_variant/blackhole0/as_root
+execute if entity @s[tag=!aj.bullet_generator.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:bullet_generator/apply_variant/blackhole0 ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

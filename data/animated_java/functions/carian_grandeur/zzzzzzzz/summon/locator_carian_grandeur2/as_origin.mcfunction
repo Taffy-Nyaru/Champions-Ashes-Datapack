@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.carian_grandeur.locator","aj.carian_grandeur.locator.carian_grandeur2","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"carian_grandeur\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"carian_grandeur2\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.carian_grandeur.locator.carian_grandeur2,tag=aj.new,limit=1,distance=..1] run function animated_java:carian_grandeur/zzzzzzzz/summon/locator_carian_grandeur2/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

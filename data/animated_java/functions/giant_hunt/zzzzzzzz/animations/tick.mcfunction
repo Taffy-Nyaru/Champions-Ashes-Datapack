@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.giant_hunt.animation.giant_hunt] run function animated_java:giant_hunt/zzzzzzzz/animations/giant_hunt/tick

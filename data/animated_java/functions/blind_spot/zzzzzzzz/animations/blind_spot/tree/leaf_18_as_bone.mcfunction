@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.blind_spot.locator_origin.corvian_greatknife] at @s on origin run tp @s ^2.36796 ^1.30799 ^0.72269 ~-116.85885 ~-6.20222
+execute if entity @s[tag=aj.blind_spot.locator_origin.player_camera] at @s on origin run tp @s ^1.52662 ^-0.07279 ^1.69529 ~-28.17799 ~-15.99193

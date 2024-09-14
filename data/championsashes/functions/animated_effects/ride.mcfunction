@@ -24,3 +24,6 @@ execute if entity @s[predicate=championsashes:using_item/obsidian_lamina,tag=dyn
 execute if entity @s[predicate=championsashes:using_item/rakshasa_great_katana,tag=rakshasa_great_katana_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,tag=murky_r1_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,tag=soul_five] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/carian_knights_sword,tag=carian_grandeur_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/zweihander,tag=giant_hunt_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/corvian_greatknife,tag=blind_spot_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

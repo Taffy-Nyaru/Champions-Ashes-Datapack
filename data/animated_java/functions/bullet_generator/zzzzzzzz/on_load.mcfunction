@@ -1,0 +1,2 @@
+scoreboard players set @s aj.bullet_generator.rig_loaded 1
+execute unless score @s aj.bullet_generator.export_version = aj.bullet_generator.export_version aj.i at @s run function animated_java:bullet_generator/zzzzzzzz/mark_outdated_rig

@@ -1,0 +1,1 @@
+execute at @e[tag=aj.blind_spot.locator,tag=!player_camera] as @e[distance=..2,type=!#championsashes:special_entities,tag=!blind_spot_user] run damage @s 30 minecraft:player_attack by @a[limit=1,sort=nearest]

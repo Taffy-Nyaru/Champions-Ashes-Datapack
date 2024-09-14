@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.giant_hunt.root] run function animated_java:giant_hunt/zzzzzzzz/tick_as_root

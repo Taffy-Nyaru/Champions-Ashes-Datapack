@@ -1,0 +1,1 @@
+tag @s remove aj.blind_spot.animation.blind_spot

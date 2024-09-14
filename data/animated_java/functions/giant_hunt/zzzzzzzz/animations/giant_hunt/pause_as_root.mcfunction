@@ -1,0 +1,1 @@
+tag @s remove aj.giant_hunt.animation.giant_hunt

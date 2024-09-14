@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.bullet_generator.root] run function animated_java:bullet_generator/zzzzzzzz/tick_as_root

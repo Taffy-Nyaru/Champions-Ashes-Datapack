@@ -1,0 +1,1 @@
+execute at @e[tag=aj.carian_grandeur.locator,tag=!player_camera] as @e[distance=..1.75,type=!#championsashes:special_entities,tag=!carian_grandeur_user] run damage @s 100 minecraft:magic by @a[limit=1,sort=nearest]

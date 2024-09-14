@@ -1,0 +1,20 @@
+execute if entity @s[tag=aj.bullet_generator.locator_origin.carian_grandeur0] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_carian_grandeur0/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.carian_grandeur1] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_carian_grandeur1/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.moonlight_greatsword0] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_moonlight_greatsword0/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.moonlight_greatsword1] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_moonlight_greatsword1/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.moonlight_greatsword2] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_moonlight_greatsword2/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.fume_ultra_greatsword0] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_fume_ultra_greatsword0/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.fume_ultra_greatsword1] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_fume_ultra_greatsword1/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.fume_ultra_greatsword2] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_fume_ultra_greatsword2/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.aquamarine_dagger0] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_aquamarine_dagger0/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.aquamarine_dagger1] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_aquamarine_dagger1/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.zweihander0] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_zweihander0/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.zweihander1] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_zweihander1/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.zweihander2] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_zweihander2/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.irithyll_straight_sword0] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_irithyll_straight_sword0/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.irithyll_straight_sword1] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_irithyll_straight_sword1/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.irithyll_straight_sword2] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_irithyll_straight_sword2/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.drakeblood_greatsword0] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_drakeblood_greatsword0/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.drakeblood_greatsword1] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_drakeblood_greatsword1/as_origin
+execute if entity @s[tag=aj.bullet_generator.locator_origin.drakeblood_greatsword2] run function animated_java:bullet_generator/zzzzzzzz/summon/locator_drakeblood_greatsword2/as_origin
+function #animated_java:bullet_generator/on_summon/as_locator_origins

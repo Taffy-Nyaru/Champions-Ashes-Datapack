@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..54 run function animated_java:carian_grandeur/zzzzzzzz/animations/carian_grandeur/tree/branch_0_54

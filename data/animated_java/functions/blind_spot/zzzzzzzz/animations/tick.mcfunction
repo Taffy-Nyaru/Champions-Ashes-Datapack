@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.blind_spot.animation.blind_spot] run function animated_java:blind_spot/zzzzzzzz/animations/blind_spot/tick

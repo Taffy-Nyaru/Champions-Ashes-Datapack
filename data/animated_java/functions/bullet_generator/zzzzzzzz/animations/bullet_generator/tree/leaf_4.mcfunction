@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:bullet_generator/zzzzzzzz/animations/bullet_generator/tree/leaf_4_as_bone
+function animated_java:bullet_generator/zzzzzzzz/apply_variant/blackhole0/as_root

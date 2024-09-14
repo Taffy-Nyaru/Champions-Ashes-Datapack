@@ -1,0 +1,3 @@
+execute if score @s aj.carian_grandeur.animation.carian_grandeur.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:carian_grandeur/zzzzzzzz/animations/carian_grandeur/end_loop
+execute if score @s aj.carian_grandeur.animation.carian_grandeur.loop_mode = $aj.loop_mode.once aj.i run function animated_java:carian_grandeur/animations/carian_grandeur/stop
+execute if score @s aj.carian_grandeur.animation.carian_grandeur.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:carian_grandeur/animations/carian_grandeur/pause

@@ -1,0 +1,1 @@
+function animated_java:bullet_generator/zzzzzzzz/animations/bullet_generator/tick_animation

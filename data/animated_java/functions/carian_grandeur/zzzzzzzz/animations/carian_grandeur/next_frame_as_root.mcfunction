@@ -1,0 +1,1 @@
+function animated_java:carian_grandeur/zzzzzzzz/animations/carian_grandeur/tick_animation

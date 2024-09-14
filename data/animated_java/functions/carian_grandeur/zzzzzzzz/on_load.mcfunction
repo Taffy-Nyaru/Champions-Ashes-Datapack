@@ -1,0 +1,2 @@
+scoreboard players set @s aj.carian_grandeur.rig_loaded 1
+execute unless score @s aj.carian_grandeur.export_version = aj.carian_grandeur.export_version aj.i at @s run function animated_java:carian_grandeur/zzzzzzzz/mark_outdated_rig

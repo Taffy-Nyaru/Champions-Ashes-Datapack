@@ -1,0 +1,3 @@
+execute if score @s aj.bullet_generator.animation.bullet_generator.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:bullet_generator/zzzzzzzz/animations/bullet_generator/end_loop
+execute if score @s aj.bullet_generator.animation.bullet_generator.loop_mode = $aj.loop_mode.once aj.i run function animated_java:bullet_generator/animations/bullet_generator/stop
+execute if score @s aj.bullet_generator.animation.bullet_generator.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:bullet_generator/animations/bullet_generator/pause

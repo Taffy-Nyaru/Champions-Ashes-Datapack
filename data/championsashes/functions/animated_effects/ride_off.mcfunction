@@ -1,7 +1,7 @@
 #Killing display entities and riding off in aj files' commands
 function championsashes:animated_effects/gamemode
 tag @s remove riding_display
-tag @s add stiff
+tag @s[tag=!soul_five,tag=!murky_r1_user] add stiff
 scoreboard players set @s[tag=gravity_thrust_user] custom_stiff_time 150
 tag @s[tag=gravity_thrust_user] remove gravity_thrust_user
 
@@ -101,10 +101,17 @@ tag @s[tag=rakshasa_jump_attack_user] remove rakshasa_jump_attack_user
 scoreboard players set @s[tag=weed_cutter_user] custom_stiff_time 80
 tag @s[tag=weed_cutter_user] remove weed_cutter_user
 
-scoreboard players set @s[tag=murky_r1_user] custom_stiff_time 5
 tag @s[tag=murky_r1_user] remove murky_r1_user
-scoreboard players set @s[tag=soul_five] custom_stiff_time 0
 tag @s[tag=soul_five] remove soul_five
+
+scoreboard players set @s[tag=carian_grandeur_user] custom_stiff_time 80
+tag @s[tag=carian_grandeur_user] remove carian_grandeur_user
+
+scoreboard players set @s[tag=giant_hunt_user] custom_stiff_time 100
+tag @s[tag=giant_hunt_user] remove giant_hunt_user
+
+scoreboard players set @s[tag=blind_spot_user] custom_stiff_time 50
+tag @s[tag=blind_spot_user] remove blind_spot_user
 
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:animated_effects/air_detect_start

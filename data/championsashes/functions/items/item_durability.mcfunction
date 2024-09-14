@@ -66,6 +66,10 @@ execute if entity @s[tag=dynastic_sickleplay_user,gamemode=survival] run scorebo
 execute if entity @s[tag=dynastic_throw_user,gamemode=survival] run scoreboard players add @s damage 50
 #Weed Cutter
 execute if entity @s[tag=weed_cutter_user,gamemode=survival] run scoreboard players add @s damage 30
+#Carian Grandeur
+execute if entity @s[tag=carian_grandeur_user,gamemode=survival] run scoreboard players add @s damage 40
+#Corvian Greatknife
+execute if entity @s[tag=blind_spot_user,gamemode=survival] run scoreboard players add @s damage 10
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

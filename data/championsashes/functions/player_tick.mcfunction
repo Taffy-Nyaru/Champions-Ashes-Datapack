@@ -1,5 +1,5 @@
 #CMD 1440012
-#CMD 1390106
+#CMD 1390107
 #Reload load.json tick.json if aj is not responding
 function championsashes:raycast/ray
 
@@ -263,9 +263,6 @@ execute as @s[tag=estus_cancel] at @s run function championsashes:items/estus_fl
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:aquamarine_dagger"}}]} run advancement grant @s[advancements={championsashes:func/aquamarine_dagger=false}] only championsashes:func/aquamarine_dagger
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:aquamarine_dagger"}}} at @s run function championsashes:items/aquamarine_dagger/crystal_blade
 
-#Dark Sword+22
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:darksword22"}}} at @s run function championsashes:items/dark_sword22/feather
-
 #Antspur Rapier
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:antspur_rapier"}}]} run advancement grant @s[advancements={championsashes:func/antspur_rapier=false}] only championsashes:func/antspur_rapier
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:antspur_rapier"}}} at @s run function championsashes:items/antspur_rapier/antspur_rapier
@@ -296,9 +293,20 @@ execute if data storage championsashes:player_data {Inventory:[{tag:{id:"champio
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/gaels_greatsword/blade_of_peril
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
+#Dark Sword+22
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:darksword22"}}} if score @s shift matches 1.. at @s run function championsashes:items/dark_sword22/feather
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:darksword22"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+
 #Fume Ultra Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/fume_ultra_greatsword/wave_of_destruction
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+
+#Corvian Greatknife
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:corvian_greatknife"}}} at @s run function championsashes:items/corvian_greatknife/blind_spot
+
+#Carian Knight's Sword
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:carian_knights_sword"}}} if score @s shift matches 1.. at @s run function championsashes:items/carian_knights_sword/carian_grandeur
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:carian_knights_sword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
 #Obsidian lamina
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} if score @s shift matches 1.. at @s run function championsashes:items/obsidian_lamina/dynastic_sickleplay

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:carian_grandeur/zzzzzzzz/animations/carian_grandeur/tree/leaf_54_as_bone
+execute unless entity @s[tag=aj.carian_grandeur.disable_command_keyframes] at @s run function animated_java:carian_grandeur/zzzzzzzz/animations/carian_grandeur/tree/leaf_54_effects_0

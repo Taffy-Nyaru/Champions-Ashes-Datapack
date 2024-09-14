@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.giant_hunt.locator","aj.giant_hunt.locator.zweihander1","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"giant_hunt\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"zweihander1\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.giant_hunt.locator.zweihander1,tag=aj.new,limit=1,distance=..1] run function animated_java:giant_hunt/zzzzzzzz/summon/locator_zweihander1/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

@@ -1,0 +1,1 @@
+function animated_java:blind_spot/zzzzzzzz/animations/blind_spot/tick_animation

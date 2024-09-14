@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.carian_grandeur.root] run function animated_java:carian_grandeur/zzzzzzzz/tick_as_root

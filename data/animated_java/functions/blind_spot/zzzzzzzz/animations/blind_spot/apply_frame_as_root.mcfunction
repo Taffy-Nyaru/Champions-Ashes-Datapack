@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..18 run function animated_java:blind_spot/zzzzzzzz/animations/blind_spot/tree/branch_0_18

@@ -1,0 +1,3 @@
+execute if score @s aj.blind_spot.animation.blind_spot.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:blind_spot/zzzzzzzz/animations/blind_spot/end_loop
+execute if score @s aj.blind_spot.animation.blind_spot.loop_mode = $aj.loop_mode.once aj.i run function animated_java:blind_spot/animations/blind_spot/stop
+execute if score @s aj.blind_spot.animation.blind_spot.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:blind_spot/animations/blind_spot/pause
