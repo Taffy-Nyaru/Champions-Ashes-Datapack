@@ -3,7 +3,7 @@ execute store result storage generic:main frozen int 1 run scoreboard players ge
 execute on attacker store result score @s Damage run data get entity @s SelectedItem.tag.AttributeModifiers[{AttributeName:"minecraft:generic.attack_damage"}]
 
 #Displays
-execute as @s[scores={frostbite_Timer=4000..}] at @s run function championsashes:effects/frostbite/frostbite_time_up
+execute as @s[scores={frostbite_Timer=4200..}] at @s run function championsashes:effects/frostbite/frostbite_time_up
 
 #Continuous damages
 execute as @s[tag=frostburst] at @s run function championsashes:effects/frostbite/debuff

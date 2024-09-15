@@ -11,7 +11,7 @@ execute store result storage generic:main scarlet_rot_damage double 1 run scoreb
 execute unless score @s Health <= @s scarlet_rot_damage run data modify entity @s Health set from storage generic:main scarlet_rot_damage
 execute if score @s Health <= @s scarlet_rot_damage run damage @s 114514 championsashes:gtx690 by @a[limit=1,sort=nearest]
 
-#For players, make 12 damage
-execute if entity @s[type=player] run damage @s 4 championsashes:gtx690
+#For players, make 6 true damage
+execute if entity @s[type=player] run damage @s 6 championsashes:gtx690
 
 tag @s remove rotten
