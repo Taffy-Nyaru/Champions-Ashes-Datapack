@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.splitleaf_infinite.animation.splitleaf_infinite] run function animated_java:splitleaf_infinite/zzzzzzzz/animations/splitleaf_infinite/tick

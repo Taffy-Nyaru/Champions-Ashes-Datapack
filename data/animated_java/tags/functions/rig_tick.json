@@ -33,6 +33,8 @@
 		"animated_java:carian_grandeur/zzzzzzzz/tick",
 		"animated_java:chainsaw/zzzzzzzz/tick",
 		"animated_java:bullet_generator/zzzzzzzz/tick",
-		"animated_java:gravity_thrust/zzzzzzzz/tick"
+		"animated_java:gravity_thrust/zzzzzzzz/tick",
+		"animated_java:splitleaf_infinite/zzzzzzzz/tick",
+		"animated_java:write/zzzzzzzz/tick"
 	]
 }

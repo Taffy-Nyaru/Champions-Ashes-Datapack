@@ -5,6 +5,7 @@ execute if entity @e[tag=clicker,scores={rClick=1..}] run data modify entity 209
 execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/splitleaf] if score @s shift matches 1.. at @s[tag=!helicopter] run summon item_display ~ ~1.5 ~ {item_display:"head",Tags:["splitleaf_skill"],item:{id:"netherite_sword",Count:1b,tag:{CustomModelData:1390065}}}
 execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/splitleaf] if score @s shift matches 1.. run tag @s[tag=!helicopter] add helicopter
 execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/splitleaf] if score @s shift matches 1.. run tag @s[tag=!splitleaf_infinite] add splitleaf_infinite
+execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/splitleaf] unless score @s shift matches 1.. at @s unless entity @e[tag=aj.splitleaf_infinite.root,distance=..2] run function championsashes:items/splitleaf/true_splitleaf_infinite
 execute as @s[tag=splitleaf_infinite] at @s run function championsashes:items/splitleaf/splitleaf_infinite
 
 execute if entity @e[tag=clicker,scores={lClick=1..}] run data modify entity 2094fd65-93de-4a69-9ea2-a74c7f35bc75 Thrower set from storage generic:main lClicker

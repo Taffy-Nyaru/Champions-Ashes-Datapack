@@ -1,5 +1,5 @@
 #Murky Hand Scythe
-execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,gamemode=survival] run scoreboard players add @s damage 5
+execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,gamemode=survival] run scoreboard players add @s damage 1
 execute if entity @s[tag=murky_r1_user,gamemode=survival] run scoreboard players add @s damage 5
 #Aquamarine Dagger
 execute if entity @s[tag=crystal_blade_user,gamemode=survival] run scoreboard players add @s damage 5
@@ -14,7 +14,7 @@ execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s d
 execute if entity @s[tag=rkss_cancel_user,gamemode=survival] run scoreboard players add @s damage 10
 execute if entity @s[tag=rkss_skill_user,gamemode=survival] run scoreboard players add @s damage 25
 #Lothric Holy Sword
-execute unless entity @e[tag=lazer_beam,distance=..30] if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 20
+execute unless entity @e[tag=lazer_beam,distance=..30] if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 30
 #Ringed Knight Paired Greatswords
 execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 40
 execute if entity @s[tag=rkgugs_l1_user,gamemode=survival] run scoreboard players add @s damage 20
@@ -38,7 +38,7 @@ execute if entity @s[tag=moonlight,gamemode=survival] run scoreboard players add
 #Dark Sword+22
 execute if entity @s[tag=ringed_nightstar_user,gamemode=survival] run scoreboard players add @s damage 15
 #Drakeblood Greatsword
-execute if entity @s[tag=loop_lightning_bolt,gamemode=survival] run scoreboard players add @s damage 10
+execute if entity @s[tag=animate_lightning_bolt,gamemode=survival] run scoreboard players add @s damage 10
 #Spear of the Imapler
 execute if entity @s[tag=messemers_assault_user,gamemode=survival] run scoreboard players add @s damage 30
 #Ledo's Great Hammer
@@ -70,6 +70,8 @@ execute if entity @s[tag=weed_cutter_user,gamemode=survival] run scoreboard play
 execute if entity @s[tag=carian_grandeur_user,gamemode=survival] run scoreboard players add @s damage 40
 #Corvian Greatknife
 execute if entity @s[tag=blind_spot_user,gamemode=survival] run scoreboard players add @s damage 10
+#Splitleaf Greatsword
+execute if entity @s[tag=splitleaf_infinite_user,gamemode=survival] run scoreboard players add @s damage 60
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

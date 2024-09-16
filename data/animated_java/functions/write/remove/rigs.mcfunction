@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=aj.write.root] run function animated_java:write/zzzzzzzz/remove/as_root

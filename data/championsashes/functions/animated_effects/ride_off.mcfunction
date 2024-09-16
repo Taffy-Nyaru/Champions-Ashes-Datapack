@@ -114,6 +114,9 @@ tag @s[tag=giant_hunt_user] remove giant_hunt_user
 scoreboard players set @s[tag=blind_spot_user] custom_stiff_time 50
 tag @s[tag=blind_spot_user] remove blind_spot_user
 
+scoreboard players set @s[tag=splitleaf_infinite_user] custom_stiff_time 120
+tag @s[tag=splitleaf_infinite_user] remove splitleaf_infinite_user
+
 scoreboard players set @s[tag=chainsaw_user] custom_stiff_time 200
 tag @s[tag=chainsaw_user] remove chainsaw_user
 tag @s[tag=shunter_mafia] remove shunter_mafia

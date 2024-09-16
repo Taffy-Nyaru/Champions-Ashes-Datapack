@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.splitleaf_infinite.root] run function animated_java:splitleaf_infinite/zzzzzzzz/tick_as_root

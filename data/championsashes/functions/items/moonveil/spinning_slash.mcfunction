@@ -3,6 +3,6 @@ execute store result score @s gamemode run data get entity @s playerGameType
 
 function animated_java:dimension_slash/summon
 execute as @e[tag=aj.dimension_slash.root,limit=1,sort=nearest] run function animated_java:dimension_slash/animations/spinning_slash/play
-execute as @s[gamemode=survival] run function championsashes:items/item_durability
 tag @s add riding_display
 tag @s add spinning_slash_user
+execute as @s[gamemode=survival] run function championsashes:items/item_durability

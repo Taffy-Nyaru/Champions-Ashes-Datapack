@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.write.root] run function animated_java:write/zzzzzzzz/tick_as_root

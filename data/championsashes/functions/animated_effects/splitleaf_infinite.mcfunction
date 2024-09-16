@@ -1,0 +1,3 @@
+execute as @e[distance=..3,type=!#championsashes:special_entities,tag=!splitleaf_infinite_user] run damage @s 30 minecraft:player_attack by @a[limit=1,sort=nearest]
+execute as @e[distance=..3,type=!#championsashes:special_entities,tag=!splitleaf_infinite_user] run scoreboard players set @s[tag=!stiff] custom_stiff_time 20
+execute as @e[distance=..3,type=!#championsashes:special_entities,tag=!splitleaf_infinite_user] run tag @s[tag=!stiff] add stiff

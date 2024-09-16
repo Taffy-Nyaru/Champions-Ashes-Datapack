@@ -27,7 +27,7 @@ kill @e[tag=aj.favor_incantations.locator.twinaxe_left0,limit=1,sort=nearest]
 kill @e[tag=aj.favor_incantations.locator.twinaxe_left1,limit=1,sort=nearest]
 kill @e[tag=aj.favor_incantations.locator.twinaxe_left0,limit=1,sort=nearest]
 execute as @e[tag=aj.favor_incantations.root,limit=1,sort=nearest] run function animated_java:favor_incantations/animations/messemers_orb/play
-execute as @s[gamemode=survival] run function championsashes:items/item_durability
 tag @s add riding_display
 tag @s add favor_incantations_user
 tag @s remove remove_spacebar
+execute as @s[gamemode=survival] run function championsashes:items/item_durability

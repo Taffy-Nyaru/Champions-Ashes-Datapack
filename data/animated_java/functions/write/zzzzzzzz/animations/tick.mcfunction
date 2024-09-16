@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.write.animation.nep] run function animated_java:write/zzzzzzzz/animations/nep/tick
+execute if entity @s[tag=aj.write.animation.cin] run function animated_java:write/zzzzzzzz/animations/cin/tick

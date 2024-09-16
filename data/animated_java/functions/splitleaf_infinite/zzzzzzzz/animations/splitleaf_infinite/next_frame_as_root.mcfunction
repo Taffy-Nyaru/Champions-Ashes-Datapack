@@ -1,0 +1,1 @@
+function animated_java:splitleaf_infinite/zzzzzzzz/animations/splitleaf_infinite/tick_animation

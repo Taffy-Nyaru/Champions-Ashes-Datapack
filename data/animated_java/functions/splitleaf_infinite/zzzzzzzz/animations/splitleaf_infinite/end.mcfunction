@@ -1,0 +1,3 @@
+execute if score @s aj.splitleaf_infinite.animation.splitleaf_infinite.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:splitleaf_infinite/zzzzzzzz/animations/splitleaf_infinite/end_loop
+execute if score @s aj.splitleaf_infinite.animation.splitleaf_infinite.loop_mode = $aj.loop_mode.once aj.i run function animated_java:splitleaf_infinite/animations/splitleaf_infinite/stop
+execute if score @s aj.splitleaf_infinite.animation.splitleaf_infinite.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:splitleaf_infinite/animations/splitleaf_infinite/pause

@@ -1,0 +1,1 @@
+function animated_java:write/zzzzzzzz/animations/cin/tick_animation

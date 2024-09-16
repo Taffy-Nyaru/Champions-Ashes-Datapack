@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.write.bone.p] run data modify entity @s {} merge value {transformation:[-1.0599816236447522e-16f,0f,0.804296875f,1.3526785714285714f,0f,0.37070312500000013f,0f,1.114583125f,-1.064453125f,0f,-8.00918224985154e-17f,-0.03125000000000014f,0f,0f,0f,1f],start_interpolation:0}
