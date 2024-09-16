@@ -131,11 +131,7 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ring_of_favor"}}} if entity @s[tag=!stiff] run function championsashes:items/ring_of_favor/durability
 
 #Sun Princess Ring
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:sun_princess_ring"}}} run tag @s[tag=!regen] add regen
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:sun_princess_ring"}}} run effect give @s[tag=regen] regeneration 3 1
-execute unless data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:sun_princess_ring"}}} run tag @s[tag=regen] remove regen
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:sun_princess_ring"}}} if score @s[tag=!stiff] usedmedal matches 1.. unless score @s shift matches 1.. at @s unless entity @e[tag=aj.write.root,distance=..5] run function championsashes:items/sun_princess_ring/nep
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:sun_princess_ring"}}} if score @s[tag=!stiff] usedmedal matches 1.. if score @s shift matches 1.. at @s unless entity @e[tag=aj.write.root,distance=..5] run function championsashes:items/sun_princess_ring/cin
+function championsashes:items/sun_princess_ring/sun_princess_ring
 
 #Ender Ring
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ender_ring"}}]} run advancement grant @s[advancements={championsashes:func/ender_ring=false}] only championsashes:func/ender_ring

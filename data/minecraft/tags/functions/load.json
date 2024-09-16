@@ -37,7 +37,7 @@
 		"animated_java:chainsaw/zzzzzzzz/load",
 		"animated_java:bullet_generator/zzzzzzzz/load",
 		"animated_java:gravity_thrust/zzzzzzzz/load",
-		"animated_java:splitleaf_infinite/zzzzzzzz/load",
-		"animated_java:write/zzzzzzzz/load"
+		"animated_java:write/zzzzzzzz/load",
+		"animated_java:splitleaf_infinite/zzzzzzzz/load"
 	]
 }
