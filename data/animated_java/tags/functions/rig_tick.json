@@ -23,7 +23,6 @@
 		"animated_java:champions_charge/zzzzzzzz/tick",
 		"animated_java:flame_of_lorian/zzzzzzzz/tick",
 		"animated_java:sword_dance/zzzzzzzz/tick",
-		"animated_java:rkss_cancel/zzzzzzzz/tick",
 		"animated_java:favor_incantations/zzzzzzzz/tick",
 		"animated_java:rakshasa_great_katana/zzzzzzzz/tick",
 		"animated_java:dynastic_sickleplay/zzzzzzzz/tick",
@@ -35,6 +34,7 @@
 		"animated_java:bullet_generator/zzzzzzzz/tick",
 		"animated_java:gravity_thrust/zzzzzzzz/tick",
 		"animated_java:write/zzzzzzzz/tick",
-		"animated_java:splitleaf_infinite/zzzzzzzz/tick"
+		"animated_java:splitleaf_infinite/zzzzzzzz/tick",
+		"animated_java:rkss_cancel/zzzzzzzz/tick"
 	]
 }
