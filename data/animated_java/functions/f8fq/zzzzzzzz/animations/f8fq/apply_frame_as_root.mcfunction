@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..35 run function animated_java:f8fq/zzzzzzzz/animations/f8fq/tree/branch_0_35

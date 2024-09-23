@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.f8fq.animation.f8fq] run function animated_java:f8fq/zzzzzzzz/animations/f8fq/tick

@@ -1,0 +1,3 @@
+execute if score @s aj.f8fq.animation.f8fq.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:f8fq/zzzzzzzz/animations/f8fq/end_loop
+execute if score @s aj.f8fq.animation.f8fq.loop_mode = $aj.loop_mode.once aj.i run function animated_java:f8fq/animations/f8fq/stop
+execute if score @s aj.f8fq.animation.f8fq.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:f8fq/animations/f8fq/pause

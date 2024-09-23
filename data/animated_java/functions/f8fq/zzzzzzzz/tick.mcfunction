@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.f8fq.root] run function animated_java:f8fq/zzzzzzzz/tick_as_root

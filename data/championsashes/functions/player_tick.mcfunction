@@ -86,6 +86,8 @@ execute if entity @e[predicate=championsashes:misc/thunder_knife] as @e[predicat
 #Witherite Armor
 execute if data storage championsashes:player_data {Inventory:[{Slot:103b,tag:{id:"championsashes:witherite_helmet"}}]} run function championsashes:items/armor/witherite_helmet
 execute if data storage championsashes:player_data {Inventory:[{Slot:102b,tag:{id:"championsashes:witherite_chestplate"}}]} run function championsashes:items/armor/witherite_chestplate
+execute unless data storage championsashes:player_data {Inventory:[{Slot:102b,tag:{id:"championsashes:witherite_chestplate"}}]} run effect clear @s[tag=wither_regen] regeneration
+execute unless data storage championsashes:player_data {Inventory:[{Slot:102b,tag:{id:"championsashes:witherite_chestplate"}}]} run tag @s[tag=wither_regen] remove wither_regen
 execute if data storage championsashes:player_data {Inventory:[{Slot:101b,tag:{id:"championsashes:witherite_leggings"}}]} run function championsashes:items/armor/witherite_leggings
 execute if data storage championsashes:player_data {Inventory:[{Slot:100b,tag:{id:"championsashes:witherite_boots"}}]} run function championsashes:items/armor/witherite_boots
 
@@ -208,7 +210,7 @@ execute unless score @s shift matches 1.. if data storage championsashes:player_
 
 #Drakeblood Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/drakeblood_greatsword/drakeblood_greatsword
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} at @s[tag=!used_drakeblood_skill,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities] bleeding_Timer 400
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} at @s[tag=!used_drakeblood_skill,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,type=!#championsashes:special_entities] bleeding_Timer 700
 execute as @s[tag=loop_lightning_bolt] at @s positioned ~-3 ~ ~-3 if score @s lightning_bolt_rain matches 1.. run function championsashes:items/drakeblood_greatsword/throne_judgement
 execute as @e[tag=!aj.ancient_lightning_strike.locator,tag=bolt_marker_unused] at @s run function championsashes:items/drakeblood_greatsword/summon_lightning_bolt
 execute as @s[tag=animate_lightning_bolt] run function championsashes:items/drakeblood_greatsword/animate_lightning_bolt
@@ -342,7 +344,7 @@ execute unless data storage championsashes:player_data {SelectedItem:{tag:{id:"c
 
 #Red White Shield
 execute as @s[advancements={championsashes:parry/red_white_parry=true},tag=!parry_used] run tag @s add parry
-execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} at @s run effect give @s regeneration 1 0 true
+execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} at @s[nbt=!{ActiveEffects:[{Id:10b}]}] run effect give @s regeneration 114514 0 true
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:splitleaf"}}} run tag @s add infinite_true_combo
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:red_white_shield"}}} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127

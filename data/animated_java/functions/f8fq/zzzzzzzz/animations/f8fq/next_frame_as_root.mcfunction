@@ -1,0 +1,1 @@
+function animated_java:f8fq/zzzzzzzz/animations/f8fq/tick_animation
