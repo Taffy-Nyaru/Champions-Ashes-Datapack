@@ -14,7 +14,7 @@ execute if entity @s[tag=shot,gamemode=survival] run scoreboard players add @s d
 execute if entity @s[tag=rkss_cancel_user,gamemode=survival] run scoreboard players add @s damage 10
 execute if entity @s[tag=rkss_skill_user,gamemode=survival] run scoreboard players add @s damage 25
 #Lothric Holy Sword
-execute unless entity @e[tag=lazer_beam,distance=..30] if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 30
+execute if entity @s[tag=lazer_owner,gamemode=survival] run scoreboard players add @s damage 30
 #Ringed Knight Paired Greatswords
 execute if entity @s[tag=rkgugs_skill_user,gamemode=survival] run scoreboard players add @s damage 40
 execute if entity @s[tag=rkgugs_l1_user,gamemode=survival] run scoreboard players add @s damage 20

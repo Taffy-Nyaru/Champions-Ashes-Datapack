@@ -9,4 +9,4 @@ tag @e[limit=1,sort=nearest,type=!#championsashes:special_entities,tag=!ally,typ
 tag @e[limit=1,sort=nearest,type=!#championsashes:special_entities,tag=!ally,type=!villager,type=!iron_golem,tag=!lazer_owner,tag=!lazer_node,tag=!end_entity,distance=..20] add end_entity
 
 function championsashes:projectiles/lazer_beam/euclidean_distance
-execute if entity @e[tag=lazer_beam] if entity @s[gamemode=survival,type=player,predicate=championsashes:using_item/lothric_holy_sword] run function championsashes:items/item_durability
+execute if entity @e[tag=lazer_beam] run function championsashes:items/item_durability

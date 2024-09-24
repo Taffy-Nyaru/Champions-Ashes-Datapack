@@ -6,4 +6,4 @@ execute if entity @s[tag=aj.f8fq.locator_origin.f8fq3] at @s on origin run tp @s
 execute if entity @s[tag=aj.f8fq.locator_origin.f8fq4] at @s on origin run tp @s ^0.03125 ^0.125 ^9.5 ~90 ~0
 execute if entity @s[tag=aj.f8fq.locator_origin.f8fq5] at @s on origin run tp @s ^0.03125 ^0.125 ^9.5 ~90 ~0
 execute if entity @s[tag=aj.f8fq.locator_origin.f8fq6] at @s on origin run tp @s ^0.125 ^0.14063 ^9.5 ~90 ~0
-execute if entity @s[tag=aj.f8fq.bone.f8fq6] run data modify entity @s {} merge value {transformation:[-3.332000719780126e-8f,-5.808059267205376e-9f,0.9999999999999996f,0.12499999999999883f,0.9999999999999996f,-2.220446049250313e-16f,3.332000719780126e-8f,0.125f,-5.551115531178184e-17f,1f,5.808059489249981e-9f,9.5f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.f8fq.bone.f8fq6] run data modify entity @s {} merge value {transformation:[-2.220446049250313e-16f,9.957992501029599e-17f,1f,0.12499999999999883f,1f,0f,2.220446049250313e-16f,0.125f,-2.719262146893782e-32f,1f,-9.957992501029599e-17f,9.5f,0f,0f,0f,1f],start_interpolation:0}
