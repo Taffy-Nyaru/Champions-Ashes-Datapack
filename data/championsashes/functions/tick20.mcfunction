@@ -12,6 +12,14 @@ execute at @e[type=marker,tag=summon_shrine] if entity @e[type=item,nbt={Item:{i
 execute at @a as @e[distance=..128] store result score @s onFire run data get entity @s Fire 1
 execute as @a run function championsashes:items/armor_advancement/armor_advancement
 
+#Dimension of each player
+execute store success score @s dimension_changed run data modify storage championsashes:player_data now_dimension set from entity @s Dimension
+execute if score @s dimension_changed matches 1 as @s[tag=!buffer.temp] run tag @s add buffer.temp
+execute as @s[tag=buffer.temp] run scoreboard players add @s buffer.temp 1
+execute as @s[tag=buffer.temp,scores={buffer.temp=20..}] at @s run function championsashes:dimension_switch
+execute as @s[tag=buffer.temp,scores={buffer.temp=20..}] run tag @s remove buffer.temp
+execute as @s[scores={buffer.temp=20..}] run scoreboard players set @s buffer.temp 0
+
 #Upgrade Table
 execute at @e[type=item] if block ~ ~-1 ~ glass as @e[limit=1,sort=nearest,tag=upgrade_table,tag=!item_displayed,distance=..1.5] at @s summon item_display run function championsashes:blocks/upgrade_table/display
 execute at @e[type=item_display,tag=upgrade_table,tag=!item_displayed] as @e[type=item,distance=..1.5] at @s if block ~ ~-1 ~ glass run kill @s

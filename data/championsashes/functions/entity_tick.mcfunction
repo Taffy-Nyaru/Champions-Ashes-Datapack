@@ -44,17 +44,17 @@ execute as @e[scores={scarlet_rot_Timer=0}] run tag @s[tag=complete_rotten] remo
 execute as @e[scores={death_blight_Timer=1..}] at @s run function championsashes:effects/death_blight/death_blight
 execute if entity @e[scores={FireTick=1..}] as @e[scores={FireTick=1..}] run scoreboard players set @s frostbite_Timer 0
 
+#Animate Effects
+function championsashes:animated_effects/animated_effects
+execute if entity @a[tag=air_detect,limit=1] run function championsashes:animated_effects/air_detect
+execute as @e[tag=bullet_generated] at @s run function championsashes:items/carian_knights_sword/bullet_generator
+
 #Parry
 execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function championsashes:parry/parry_success
 
 #Void Eye
 execute as @e[type=marker,tag=void_marker] run scoreboard players add @s void_eye_timer 1
 execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run function championsashes:items/void_eye/effect
-
-#Animate Effects
-function championsashes:animated_effects/animated_effects
-function championsashes:animated_effects/air_detect
-execute as @e[tag=bullet_generated] at @s run function championsashes:items/carian_knights_sword/bullet_generator
 
 tag @a[tag=!ally] add ally
 tag @e[tag=pearl,tag=!ally] add ally

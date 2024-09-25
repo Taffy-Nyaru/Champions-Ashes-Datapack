@@ -21,14 +21,6 @@ data modify storage championsashes:player_data Inventory set from entity @s Inve
 data modify storage championsashes:player_data SelectedItem set from entity @s SelectedItem
 execute store result score @s falldistance run data get entity @s FallDistance
 
-#Dimension of each player
-execute store success score @s dimension_changed run data modify storage championsashes:player_data now_dimension set from entity @s Dimension
-execute if score @s dimension_changed matches 1 as @s[tag=!buffer.temp] run tag @s add buffer.temp
-execute as @s[tag=buffer.temp] run scoreboard players add @s buffer.temp 1
-execute as @s[tag=buffer.temp,scores={buffer.temp=20..}] at @s run function championsashes:dimension_switch
-execute as @s[tag=buffer.temp,scores={buffer.temp=20..}] run tag @s remove buffer.temp
-execute as @s[scores={buffer.temp=20..}] run scoreboard players set @s buffer.temp 0
-
 execute as @s[tag=riding_display] at @s run function championsashes:animated_effects/ride
 
 execute if entity @s[predicate=!championsashes:noninteraction_rclick] run function championsashes:items/not_using
@@ -399,6 +391,7 @@ execute if score @s usedBow matches 1.. run scoreboard players set @s usedBow 0
 execute if score @s usedFirework matches 1.. run scoreboard players set @s usedFirework 0
 execute if score @s usedSnowball matches 1.. run scoreboard players set @s usedSnowball 0
 execute if score @s usedCE matches 1.. run scoreboard players set @s usedCE 0
+function championsashes:items/spacebar_query
 
 #NEP
 execute at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run bossbar set nep_elder players
@@ -434,8 +427,5 @@ execute as @s[advancements={championsashes:estus_flask/used_estus_flask=true}] r
 execute as @s[advancements={championsashes:item_durability=true}] run advancement revoke @s only championsashes:item_durability
 execute as @s[advancements={championsashes:enter_block=true}] run advancement revoke @s only championsashes:enter_block
 execute as @s[advancements={championsashes:magic_damage=true}] run advancement revoke @s only championsashes:magic_damage
-
-#Spacebar qwuery
-function championsashes:items/spacebar_query
 
 #execute as @s[advancements={championsashes:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only championsashes:func/killed_nep
