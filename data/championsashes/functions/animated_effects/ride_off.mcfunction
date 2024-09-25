@@ -122,5 +122,4 @@ tag @s[tag=chainsaw_user] remove chainsaw_user
 tag @s[tag=shunter_mafia] remove shunter_mafia
 
 kill @e[tag=player_camera,limit=1,sort=nearest]
-execute at @s[tag=!air_detect] unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:animated_effects/air_detect_start
-execute at @s[tag=!air_detect] unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start
+execute at @s[tag=!air_detect] unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start
