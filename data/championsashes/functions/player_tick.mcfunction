@@ -148,7 +148,7 @@ function championsashes:projectiles/moonlight_slash/moonlight_slash
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} if score @s shift matches 1.. run function championsashes:items/irithyll_straight_sword/sword_dance
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} run tag @s remove needclicker
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:irithyll_straight_sword"}}]} run advancement grant @s[advancements={championsashes:func/irithyll_straight_sword=false}] only championsashes:func/irithyll_straight_sword
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities,distance=..5] frostbite_Timer 600
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities,distance=..5] frostbite_Timer 700
 
 #Ledo's Great Hammer
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ledo_great_hammer"}}} if score @s shift matches 1.. run function championsashes:items/ledo_great_hammer/steel_caller
@@ -164,7 +164,7 @@ execute unless score @s shift matches 1.. if data storage championsashes:player_
 
 #Rakshasa's Great Katana
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:rakshasa_great_katana"}}} run function championsashes:items/rakshasa_great_katana/attack_types
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:rakshasa_great_katana"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities,distance=..5] bleeding_Timer 500
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:rakshasa_great_katana"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities,distance=..5] bleeding_Timer 1200
 
 #Spear of the Impaler
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:spear_of_the_impaler"}}} if score @s shift matches 1.. run function championsashes:items/spear_of_the_impaler/messemers_assault
@@ -194,7 +194,7 @@ function championsashes:items/armors
 
 #Nightrider Glaive
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:night_cavalry_halberd"}}]} run advancement grant @s[advancements={championsashes:func/nightrider_glaive=false}] only championsashes:func/nightrider_glaive
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities] frostbite_Timer 520
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities] frostbite_Timer 600
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} if score @s shift matches 1.. run function championsashes:items/nightrider_glaive/magicblade_phanalax
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} if score @s glaive_damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if score @s glaive_damage matches 2031.. run scoreboard players set @s glaive_damage -1
@@ -203,7 +203,7 @@ execute unless score @s shift matches 1.. if data storage championsashes:player_
 
 #Drakeblood Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/drakeblood_greatsword/drakeblood_greatsword
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} at @s[tag=!used_drakeblood_skill,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities] bleeding_Timer 700
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} at @s[tag=!used_drakeblood_skill,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities] bleeding_Timer 1000
 execute as @s[tag=loop_lightning_bolt] at @s positioned ~-3 ~ ~-3 if score @s lightning_bolt_rain matches 1.. run function championsashes:items/drakeblood_greatsword/throne_judgement
 execute as @e[tag=!aj.ancient_lightning_strike.locator,tag=bolt_marker_unused] at @s run function championsashes:items/drakeblood_greatsword/summon_lightning_bolt
 execute as @s[tag=animate_lightning_bolt] run function championsashes:items/drakeblood_greatsword/animate_lightning_bolt
@@ -310,7 +310,7 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 #Obsidian lamina
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} if score @s shift matches 1.. at @s run function championsashes:items/obsidian_lamina/dynastic_sickleplay
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} unless score @s shift matches 1.. run tag @s remove needclicker
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} at @s[tag=!dynastic_sickleplay_user,tag=!dynastic_throw_user,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities] bleeding_Timer 300
+execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:obsidian_lamina"}}} at @s[tag=!dynastic_sickleplay_user,tag=!dynastic_throw_user,advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities] bleeding_Timer 800
 
 #Lothric Holy Sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lothric_holy_sword"}}} at @s as @e[type=!player,type=!#championsashes:special_entities,distance=..50] store result score @s Y_value run data get entity @s Pos[1]
