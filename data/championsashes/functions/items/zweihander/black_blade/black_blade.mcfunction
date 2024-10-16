@@ -11,6 +11,7 @@ execute if entity @s[advancements={championsashes:hurt_entities=true}] at @s as 
 
 execute if entity @e[tag=clicker,scores={rClick=1..}] run data modify entity 2094fd65-93de-4a69-9ea2-a74c7f35bc75 Thrower set from storage generic:main rClicker
 execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/black_blade] if score @s shift matches 1.. at @s as @s unless entity @e[tag=head_projectile,distance=..25] run function championsashes:items/zweihander/black_blade/projectile_shoot
+execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/black_blade] unless score @s shift matches 1.. at @s as @s unless entity @e[tag=aj.destined_death.root,distance=..2] run function championsashes:items/zweihander/black_blade/true_destined_death
 
 execute if score @s damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if score @s damage matches 2031.. run scoreboard players set @s damage -1

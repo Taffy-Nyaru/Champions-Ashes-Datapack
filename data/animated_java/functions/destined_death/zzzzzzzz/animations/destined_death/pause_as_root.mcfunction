@@ -1,0 +1,1 @@
+tag @s remove aj.destined_death.animation.destined_death

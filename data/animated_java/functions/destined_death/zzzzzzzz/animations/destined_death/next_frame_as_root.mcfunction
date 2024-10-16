@@ -1,0 +1,1 @@
+function animated_java:destined_death/zzzzzzzz/animations/destined_death/tick_animation

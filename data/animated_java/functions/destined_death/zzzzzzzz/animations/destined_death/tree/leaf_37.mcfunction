@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:destined_death/zzzzzzzz/animations/destined_death/tree/leaf_37_as_bone
+execute unless entity @s[tag=aj.destined_death.disable_command_keyframes] at @s run tag @a[tag=destined_death_atk,limit=1,sort=nearest] remove destined_death_atk

@@ -40,6 +40,7 @@ execute as @e[tag=dynastic_throw] run function championsashes:items/obsidian_lam
 execute if entity @a[limit=1,sort=nearest,tag=weed_cutter_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/weed_cutter
 execute if entity @a[limit=1,sort=nearest,tag=rakshasa_crouch_poke_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/crouch_poke
 execute if entity @a[limit=1,sort=nearest,tag=rakshasa_jump_attack_user] at @e[tag=aj.rakshasa_great_katana.locator,tag=!player_camera] run function championsashes:animated_effects/rakshasa_great_katana/jump_attack
+execute if entity @a[limit=1,sort=nearest,tag=destined_death_atk] at @e[tag=aj.destined_death.locator,tag=!player_camera] run function championsashes:animated_effects/destined_death
 
 execute if entity @a[limit=1,sort=nearest,tag=shunter_mafia] at @e[tag=aj.chainsaw.locator,tag=!player_camera] run function championsashes:animated_effects/chainsaw
 execute if entity @a[limit=1,sort=nearest,tag=shunter_mafia] at @e[tag=aj.chainsaw.locator.shunter4,tag=!player_camera,limit=1] run particle flame ~ ~1 ~ 0.25 0.25 0.25 0.1 1 force

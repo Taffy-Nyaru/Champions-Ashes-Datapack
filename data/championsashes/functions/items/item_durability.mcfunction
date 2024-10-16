@@ -72,6 +72,8 @@ execute if entity @s[tag=carian_grandeur_user,gamemode=survival] run scoreboard 
 execute if entity @s[tag=blind_spot_user,gamemode=survival] run scoreboard players add @s damage 10
 #Splitleaf Greatsword
 execute if entity @s[tag=splitleaf_infinite_user,gamemode=survival] run scoreboard players add @s damage 60
+#Black Blade
+execute if entity @s[tag=destined_death_user,gamemode=survival] run scoreboard players add @s damage 120
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s weapon.mainhand championsashes:crossbow_items_damage

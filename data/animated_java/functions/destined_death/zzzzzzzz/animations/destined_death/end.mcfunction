@@ -1,0 +1,3 @@
+execute if score @s aj.destined_death.animation.destined_death.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:destined_death/zzzzzzzz/animations/destined_death/end_loop
+execute if score @s aj.destined_death.animation.destined_death.loop_mode = $aj.loop_mode.once aj.i run function animated_java:destined_death/animations/destined_death/stop
+execute if score @s aj.destined_death.animation.destined_death.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:destined_death/animations/destined_death/pause

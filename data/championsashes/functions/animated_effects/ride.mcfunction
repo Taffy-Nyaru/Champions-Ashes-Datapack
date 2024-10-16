@@ -28,4 +28,5 @@ execute if entity @s[predicate=championsashes:using_item/carian_knights_sword,ta
 execute if entity @s[predicate=championsashes:using_item/zweihander,tag=giant_hunt_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/corvian_greatknife,tag=blind_spot_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/splitleaf,tag=splitleaf_infinite_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/black_blade,tag=destined_death_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[tag=chainsaw_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

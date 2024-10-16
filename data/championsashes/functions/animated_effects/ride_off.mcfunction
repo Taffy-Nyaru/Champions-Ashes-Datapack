@@ -121,5 +121,8 @@ tag @s[tag=splitleaf_infinite_user] remove splitleaf_infinite_user
 tag @s[tag=chainsaw_user] remove chainsaw_user
 tag @s[tag=shunter_mafia] remove shunter_mafia
 
+tag @s[tag=destined_death_user] remove destined_death_user
+tag @s[tag=destined_death_atk] remove destined_death_atk
+
 kill @e[tag=player_camera,limit=1,sort=nearest]
 execute at @s[tag=!air_detect] unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start
