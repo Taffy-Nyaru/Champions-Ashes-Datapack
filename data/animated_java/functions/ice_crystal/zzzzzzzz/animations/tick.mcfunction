@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ice_crystal.animation.ice_crystallization] run function animated_java:ice_crystal/zzzzzzzz/animations/ice_crystallization/tick

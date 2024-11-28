@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:zamor_ice_storm/zzzzzzzz/apply_variant/default/as_bone

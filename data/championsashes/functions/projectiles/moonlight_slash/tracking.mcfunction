@@ -7,5 +7,5 @@ particle electric_spark ~ ~ ~ 0.5 0.2 0.5 0 10
 execute as @e[type=!#championsashes:special_entities,type=!lightning_bolt,tag=!moonlight,limit=1,sort=nearest] at @e[tag=moonlight_slash] if entity @s[distance=..2.5] run function championsashes:projectiles/moonlight_slash/effect
 
 #When enter block
-execute unless block ~ ~ ~ #championsashes:transparent_blocks run function championsashes:projectiles/moonlight_slash/effect
-execute unless block ~ ~ ~ #championsashes:transparent_blocks run kill @s
+execute unless block ~ ~0.3 ~ #championsashes:transparent_blocks run function championsashes:projectiles/moonlight_slash/effect
+execute unless block ~ ~0.3 ~ #championsashes:transparent_blocks run kill @s

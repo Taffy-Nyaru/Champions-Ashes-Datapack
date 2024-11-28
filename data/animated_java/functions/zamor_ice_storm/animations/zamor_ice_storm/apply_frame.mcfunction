@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.zamor_ice_storm.root] run function animated_java:zamor_ice_storm/zzzzzzzz/animations/zamor_ice_storm/apply_frame_as_root
+execute if entity @s[tag=!aj.zamor_ice_storm.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:zamor_ice_storm/animations/zamor_ice_storm/apply_frame ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

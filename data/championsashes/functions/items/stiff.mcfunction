@@ -11,9 +11,12 @@ execute if score @s[type=player] stiff_time >= @s custom_stiff_time run effect c
 execute if score @s[type=player] stiff_time >= @s custom_stiff_time run effect clear @s weakness
 execute if score @s[type=player] stiff_time >= @s custom_stiff_time run effect clear @s mining_fatigue
 execute if score @s[type=player] stiff_time >= @s custom_stiff_time run kill @e[type=interaction,tag=unsetblock,limit=1,sort=nearest]
+execute if score @s[type=player] stiff_time >= @s custom_stiff_time run function championsashes:items/moonlight_greatsword/ice_crystal_kill
+
 
 #Mobs
 execute if entity @s[type=!player] run data modify entity @s NoAI set value 1b
 execute if score @s[type=!player] stiff_time >= @s custom_stiff_time run data modify entity @s[type=!player] NoAI set value 0b
 execute if score @s stiff_time >= @s custom_stiff_time run tag @s remove stiff
+execute if score @s stiff_time >= @s custom_stiff_time run function championsashes:items/moonlight_greatsword/ice_crystal_kill
 execute if score @s stiff_time >= @s custom_stiff_time run scoreboard players set @s stiff_time 0

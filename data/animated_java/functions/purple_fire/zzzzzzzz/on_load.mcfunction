@@ -1,0 +1,2 @@
+scoreboard players set @s aj.purple_fire.rig_loaded 1
+execute unless score @s aj.purple_fire.export_version = aj.purple_fire.export_version aj.i at @s run function animated_java:purple_fire/zzzzzzzz/mark_outdated_rig

@@ -1,0 +1,1 @@
+tag @s remove aj.zamor_ice_storm.animation.zamor_ice_storm

@@ -1,0 +1,3 @@
+execute if score @s aj.zamor_ice_storm.animation.zamor_ice_storm.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:zamor_ice_storm/zzzzzzzz/animations/zamor_ice_storm/end_loop
+execute if score @s aj.zamor_ice_storm.animation.zamor_ice_storm.loop_mode = $aj.loop_mode.once aj.i run function animated_java:zamor_ice_storm/animations/zamor_ice_storm/stop
+execute if score @s aj.zamor_ice_storm.animation.zamor_ice_storm.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:zamor_ice_storm/animations/zamor_ice_storm/pause

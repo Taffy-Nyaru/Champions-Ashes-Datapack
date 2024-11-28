@@ -32,8 +32,8 @@ function championsashes:multinteraction
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:steel_ingot"}}]} run advancement grant @s[advancements={championsashes:func/steel_ingot=false}] only championsashes:func/steel_ingot
 
 #Medals
-execute if score @s usedAnvil matches 1.. if data storage championsashes:player_data {Inventory:[{tag:{}}]} as @s run function championsashes:check/anvil
-execute if score @s usedmedal matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{}}} as @s run function championsashes:check/medal
+#execute if score @s usedAnvil matches 1.. if data storage championsashes:player_data {Inventory:[{tag:{}}]} as @s run function championsashes:check/anvil
+#execute if score @s usedmedal matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{}}} as @s run function championsashes:check/medal
 execute if data storage championsashes:player_data {Inventory:[{Slot:103b,tag:{id:"championsashes:vampire_hat"}}]} as @s run function championsashes:items/vampire_hat/effects
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:vampire_hat"}}]} run advancement grant @s[advancements={championsashes:func/vampire_hat=false}] only championsashes:func/vampire_hat
 
@@ -140,8 +140,9 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:serpent_hunter"}}]} at @s unless entity @e[tag=aj.chainsaw.root,distance=..2] run function championsashes:items/serpent_hunter/chainsaw
 
 #Moonlight Greatsword
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonlight_greatsword"}}} if score @s shift matches 1.. run function championsashes:items/moonlight_greatsword/moonlight_greatsword
-execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:moonlight_greatsword"}}} run tag @s remove needclicker
+execute if predicate championsashes:using_item/moonlight_greatsword if score @s shift matches 1.. run function championsashes:items/moonlight_greatsword/moonlight_greatsword
+execute unless score @s shift matches 1.. if predicate championsashes:using_item/moonlight_greatsword run tag @s remove needclicker
+execute if score @s shift matches 1.. if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:moonlight_greatsword"}}]} at @s unless entity @e[tag=aj.zamor_ice_storm.root,distance=..10] run function championsashes:items/moonlight_greatsword/zamor_ice_storm
 function championsashes:projectiles/moonlight_slash/moonlight_slash
 
 #Irithyll Straight Sword

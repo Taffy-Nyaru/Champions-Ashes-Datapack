@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:zamor_ice_storm/zzzzzzzz/animations/zamor_ice_storm/tree/leaf_130_as_bone
+execute unless entity @s[tag=aj.zamor_ice_storm.disable_command_keyframes] at @s run function championsashes:items/moonlight_greatsword/ice_storm_kill

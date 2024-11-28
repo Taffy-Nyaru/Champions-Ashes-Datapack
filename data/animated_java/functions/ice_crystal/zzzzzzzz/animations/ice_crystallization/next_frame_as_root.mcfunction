@@ -1,0 +1,1 @@
+function animated_java:ice_crystal/zzzzzzzz/animations/ice_crystallization/tick_animation

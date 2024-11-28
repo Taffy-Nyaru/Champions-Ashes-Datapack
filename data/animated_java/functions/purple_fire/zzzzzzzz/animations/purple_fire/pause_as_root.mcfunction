@@ -1,0 +1,1 @@
+tag @s remove aj.purple_fire.animation.purple_fire

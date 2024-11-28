@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ice_crystal.bone.crystal_base] run data modify entity @s {} merge value {transformation:[-1.5244209895833334f,0f,1.8668772854462699e-16f,0.106544375f,0f,0.5963176223958334f,0f,0.033564953703703715f,-1.8668772854462699e-16f,0f,-1.5244209895833334f,-0.019086874999999986f,0f,0f,0f,1f],start_interpolation:0}

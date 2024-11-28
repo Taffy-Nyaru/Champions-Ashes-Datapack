@@ -48,6 +48,9 @@ execute if entity @e[scores={FireTick=1..}] as @e[scores={FireTick=1..}] run sco
 function championsashes:animated_effects/animated_effects
 execute if entity @a[tag=air_detect,limit=1] run function championsashes:animated_effects/air_detect
 execute as @e[tag=bullet_generated] at @s run function championsashes:items/carian_knights_sword/bullet_generator
+execute unless entity @e[tag=ice_crystallized] run function championsashes:items/moonlight_greatsword/ice_crystal_kill
+execute at @e[tag=aj.zamor_ice_storm.root] as @e[type=!#championsashes:special_entities,tag=!zamor_ice_storm_user,distance=..6.5] run function championsashes:items/moonlight_greatsword/ice_storm_damage
+execute as @e[tag=purple_burned] at @s run function championsashes:items/fume_ultra_greatsword/purple_burned
 
 #Parry
 execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function championsashes:parry/parry_success

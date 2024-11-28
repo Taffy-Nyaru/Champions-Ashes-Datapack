@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.zamor_ice_storm.animation.zamor_ice_storm] run function animated_java:zamor_ice_storm/zzzzzzzz/animations/zamor_ice_storm/tick

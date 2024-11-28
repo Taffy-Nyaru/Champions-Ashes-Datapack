@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..64 run function animated_java:purple_fire/zzzzzzzz/animations/purple_fire/tree/branch_0_64

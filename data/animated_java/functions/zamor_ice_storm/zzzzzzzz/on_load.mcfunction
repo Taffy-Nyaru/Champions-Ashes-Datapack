@@ -1,0 +1,2 @@
+scoreboard players set @s aj.zamor_ice_storm.rig_loaded 1
+execute unless score @s aj.zamor_ice_storm.export_version = aj.zamor_ice_storm.export_version aj.i at @s run function animated_java:zamor_ice_storm/zzzzzzzz/mark_outdated_rig

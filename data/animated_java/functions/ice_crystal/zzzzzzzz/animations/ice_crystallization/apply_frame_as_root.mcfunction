@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..21 run function animated_java:ice_crystal/zzzzzzzz/animations/ice_crystallization/tree/branch_0_21

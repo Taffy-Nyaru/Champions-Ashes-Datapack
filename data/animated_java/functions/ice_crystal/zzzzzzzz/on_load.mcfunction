@@ -1,0 +1,2 @@
+scoreboard players set @s aj.ice_crystal.rig_loaded 1
+execute unless score @s aj.ice_crystal.export_version = aj.ice_crystal.export_version aj.i at @s run function animated_java:ice_crystal/zzzzzzzz/mark_outdated_rig

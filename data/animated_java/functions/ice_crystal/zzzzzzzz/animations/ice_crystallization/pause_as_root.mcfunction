@@ -1,0 +1,1 @@
+tag @s remove aj.ice_crystal.animation.ice_crystallization

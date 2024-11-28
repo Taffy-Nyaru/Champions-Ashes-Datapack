@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.purple_fire.animation.purple_fire] run function animated_java:purple_fire/zzzzzzzz/animations/purple_fire/tick

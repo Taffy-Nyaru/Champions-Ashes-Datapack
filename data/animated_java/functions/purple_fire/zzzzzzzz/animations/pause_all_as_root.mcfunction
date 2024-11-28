@@ -1,0 +1,1 @@
+function animated_java:purple_fire/zzzzzzzz/animations/purple_fire/pause_as_root
