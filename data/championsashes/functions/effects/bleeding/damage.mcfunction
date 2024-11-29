@@ -11,8 +11,8 @@ scoreboard players operation @s Health -= @s bloodloss
 execute store result storage generic:main bloodloss double 1 run scoreboard players get @s Health
 
 execute unless score @s Health <= @s bloodloss run data modify entity @s Health set from storage generic:main bloodloss
-execute if score @s Health <= @s bloodloss run damage @s 114514 championsashes:gtx690 by @a[limit=1,sort=nearest]
-execute if score @s Health <= @s bloodloss run data modify entity @s[predicate=!championsashes:healthzero] Health set value 0s
+execute if score @s Health <= @s bloodloss run function championsashes:effects/ko
+execute unless predicate championsashes:healthzero if score @s[tag=KO] Health <= @s[tag=KO] bloodloss at @s run function championsashes:effects/true_kill
 
 #For players, make 12 damage
 execute if entity @s[type=player] run damage @s 14 championsashes:bloodloss
