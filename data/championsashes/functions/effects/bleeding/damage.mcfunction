@@ -12,7 +12,7 @@ execute store result storage generic:main bloodloss double 1 run scoreboard play
 
 execute unless score @s Health <= @s bloodloss run data modify entity @s Health set from storage generic:main bloodloss
 execute if score @s Health <= @s bloodloss run damage @s 114514 championsashes:gtx690 by @a[limit=1,sort=nearest]
-execute if score @s Health <= @s bloodloss run data modify entity @s Health set value 0s
+execute if score @s Health <= @s bloodloss run data modify entity @s[predicate=!championsashes:healthzero] Health set value 0s
 
 #For players, make 12 damage
 execute if entity @s[type=player] run damage @s 14 championsashes:bloodloss
