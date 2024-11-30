@@ -13,7 +13,7 @@ execute store result storage generic:main frostbite_burst double 1 run scoreboar
 
 execute unless score @s Health <= @s frostbite_burst run data modify entity @s Health set from storage generic:main frostbite_burst
 execute if score @s Health <= @s frostbite_burst run function championsashes:effects/ko
-execute unless predicate championsashes:healthzero if score @s[tag=KO] Health <= @s[tag=KO] frostbite_burst at @s run function championsashes:effects/true_kill
+execute unless predicate championsashes:healthzero if score @s[tag=KO] Health <= @s[tag=KO] frostbite_burst run function championsashes:effects/true_kill
 
 
 #For players, make 12 damage
