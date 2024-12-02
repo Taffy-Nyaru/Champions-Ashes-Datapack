@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..105 run function animated_java:gravity_impaler/zzzzzzzz/animations/gravity_impaler/tree/branch_0_105

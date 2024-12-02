@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_impaler.locator_origin.gravity_impaler] at @s on origin run tp @s ^0 ^0.3125 ^0 ~0 ~0

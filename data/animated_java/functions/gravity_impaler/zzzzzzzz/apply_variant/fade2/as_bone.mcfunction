@@ -1,0 +1,20 @@
+execute if entity @s[tag=aj.gravity_impaler.bone.edge1] run data modify entity @s item.tag.CustomModelData set value 1490
+execute if entity @s[tag=aj.gravity_impaler.bone.edge2] run data modify entity @s item.tag.CustomModelData set value 1491
+execute if entity @s[tag=aj.gravity_impaler.bone.edge3] run data modify entity @s item.tag.CustomModelData set value 1492
+execute if entity @s[tag=aj.gravity_impaler.bone.edge4] run data modify entity @s item.tag.CustomModelData set value 1493
+execute if entity @s[tag=aj.gravity_impaler.bone.shockwaves] run data modify entity @s item.tag.CustomModelData set value 1494
+execute if entity @s[tag=aj.gravity_impaler.bone.gravity_imapler] run data modify entity @s item.tag.CustomModelData set value 1495
+
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling0] run data modify entity @s item.tag.CustomModelData set value 1496
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling1] run data modify entity @s item.tag.CustomModelData set value 1497
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling2] run data modify entity @s item.tag.CustomModelData set value 1498
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling3] run data modify entity @s item.tag.CustomModelData set value 1499
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling4] run data modify entity @s item.tag.CustomModelData set value 1500
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling5] run data modify entity @s item.tag.CustomModelData set value 1501
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling6] run data modify entity @s item.tag.CustomModelData set value 1502
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling7] run data modify entity @s item.tag.CustomModelData set value 1503
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling8] run data modify entity @s item.tag.CustomModelData set value 1504
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling9] run data modify entity @s item.tag.CustomModelData set value 1505
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling10] run data modify entity @s item.tag.CustomModelData set value 1506
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling11] run data modify entity @s item.tag.CustomModelData set value 1507
+execute if entity @s[tag=aj.gravity_impaler.bone.impaling12] run data modify entity @s item.tag.CustomModelData set value 1508

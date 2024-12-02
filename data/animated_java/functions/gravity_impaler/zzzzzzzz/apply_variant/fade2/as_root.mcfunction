@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:gravity_impaler/zzzzzzzz/apply_variant/fade2/as_bone

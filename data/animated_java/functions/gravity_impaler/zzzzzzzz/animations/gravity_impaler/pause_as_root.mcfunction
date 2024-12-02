@@ -1,0 +1,1 @@
+tag @s remove aj.gravity_impaler.animation.gravity_impaler

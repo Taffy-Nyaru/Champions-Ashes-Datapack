@@ -1,0 +1,1 @@
+function animated_java:gravity_impaler/zzzzzzzz/animations/gravity_impaler/tick_animation

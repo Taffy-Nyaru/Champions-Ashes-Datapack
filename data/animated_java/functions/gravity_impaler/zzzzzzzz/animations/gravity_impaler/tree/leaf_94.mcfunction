@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:gravity_impaler/zzzzzzzz/animations/gravity_impaler/tree/leaf_94_as_bone
+function animated_java:gravity_impaler/zzzzzzzz/apply_variant/default/as_root

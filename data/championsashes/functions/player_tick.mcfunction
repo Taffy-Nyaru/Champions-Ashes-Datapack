@@ -36,6 +36,8 @@ execute if data storage championsashes:player_data {Inventory:[{tag:{id:"champio
 #execute if score @s usedmedal matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{}}} as @s run function championsashes:check/medal
 execute if data storage championsashes:player_data {Inventory:[{Slot:103b,tag:{id:"championsashes:vampire_hat"}}]} as @s run function championsashes:items/vampire_hat/effects
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:vampire_hat"}}]} run advancement grant @s[advancements={championsashes:func/vampire_hat=false}] only championsashes:func/vampire_hat
+tag @s[gamemode=spectator,tag=nep_foe] remove nep_foe
+tag @s[gamemode=creative,tag=nep_foe] remove nep_foe
 
 #Snowball Detect
 execute if score @s usedSnowball matches 1.. if entity @e[type=snowball,predicate=championsashes:misc/shadow_vortex] run function championsashes:projectiles/snowball_detect/snowball_detect

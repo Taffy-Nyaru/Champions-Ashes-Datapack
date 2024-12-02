@@ -1,0 +1,3 @@
+execute if score @s aj.gravity_impaler.animation.gravity_impaler.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:gravity_impaler/zzzzzzzz/animations/gravity_impaler/end_loop
+execute if score @s aj.gravity_impaler.animation.gravity_impaler.loop_mode = $aj.loop_mode.once aj.i run function animated_java:gravity_impaler/animations/gravity_impaler/stop
+execute if score @s aj.gravity_impaler.animation.gravity_impaler.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:gravity_impaler/animations/gravity_impaler/pause

@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.gravity_impaler.locator","aj.gravity_impaler.locator.gravity_impaler","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"gravity_impaler\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"gravity_impaler\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.gravity_impaler.locator.gravity_impaler,tag=aj.new,limit=1,distance=..1] run function animated_java:gravity_impaler/zzzzzzzz/summon/locator_gravity_impaler/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:gravity_impaler/zzzzzzzz/animations/gravity_impaler/tree/leaf_100_as_bone
+function animated_java:gravity_impaler/zzzzzzzz/apply_variant/fade2/as_root

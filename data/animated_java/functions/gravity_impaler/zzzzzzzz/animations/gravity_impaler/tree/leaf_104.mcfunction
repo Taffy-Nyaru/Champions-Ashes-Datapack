@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:gravity_impaler/zzzzzzzz/animations/gravity_impaler/tree/leaf_104_as_bone
+execute unless entity @s[tag=aj.gravity_impaler.disable_command_keyframes] at @s run function championsashes:items/sun_princess_ring/kill_impaler

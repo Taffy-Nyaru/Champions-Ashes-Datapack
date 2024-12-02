@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.gravity_impaler.locator_origin.gravity_impaler] run function animated_java:gravity_impaler/zzzzzzzz/summon/locator_gravity_impaler/as_origin
+function #animated_java:gravity_impaler/on_summon/as_locator_origins
