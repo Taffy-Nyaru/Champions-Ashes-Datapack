@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.void_slash.locator_origin.void_slash] at @s on origin run tp @s ^0 ^1.125 ^-0.03125 ~0 ~0

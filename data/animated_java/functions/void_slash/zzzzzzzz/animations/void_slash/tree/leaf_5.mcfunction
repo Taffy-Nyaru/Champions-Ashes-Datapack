@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:void_slash/zzzzzzzz/animations/void_slash/tree/leaf_5_as_bone
+function animated_java:void_slash/zzzzzzzz/apply_variant/slashing1/as_root

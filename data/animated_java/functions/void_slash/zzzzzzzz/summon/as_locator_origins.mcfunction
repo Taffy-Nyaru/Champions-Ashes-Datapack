@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.void_slash.locator_origin.void_slash] run function animated_java:void_slash/zzzzzzzz/summon/locator_void_slash/as_origin
+function #animated_java:void_slash/on_summon/as_locator_origins

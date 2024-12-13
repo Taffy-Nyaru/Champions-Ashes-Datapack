@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:void_slash/zzzzzzzz/apply_variant/slashing0/as_bone

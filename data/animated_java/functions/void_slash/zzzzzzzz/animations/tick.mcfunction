@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.void_slash.animation.void_slash] run function animated_java:void_slash/zzzzzzzz/animations/void_slash/tick

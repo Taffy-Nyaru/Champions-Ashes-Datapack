@@ -302,6 +302,7 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 #Fume Ultra Greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/fume_ultra_greatsword/wave_of_destruction
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:fume_ultra_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
+execute if score @s shift matches 1.. if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:fume_ultra_greatsword"}}]} at @s unless entity @e[tag=aj.void_slash.root,distance=..10] run function championsashes:items/fume_ultra_greatsword/void_slash
 
 #Corvian Greatknife
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:corvian_greatknife"}}} at @s run function championsashes:items/corvian_greatknife/blind_spot

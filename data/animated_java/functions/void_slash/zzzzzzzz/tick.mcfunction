@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.void_slash.root] run function animated_java:void_slash/zzzzzzzz/tick_as_root

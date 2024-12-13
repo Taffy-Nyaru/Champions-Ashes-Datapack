@@ -1,0 +1,3 @@
+execute if score @s aj.void_slash.animation.void_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:void_slash/zzzzzzzz/animations/void_slash/end_loop
+execute if score @s aj.void_slash.animation.void_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:void_slash/animations/void_slash/stop
+execute if score @s aj.void_slash.animation.void_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:void_slash/animations/void_slash/pause

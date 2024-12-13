@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.void_slash.locator","aj.void_slash.locator.void_slash","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"void_slash\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"void_slash\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.void_slash.locator.void_slash,tag=aj.new,limit=1,distance=..1] run function animated_java:void_slash/zzzzzzzz/summon/locator_void_slash/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner
