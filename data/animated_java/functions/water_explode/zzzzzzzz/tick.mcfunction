@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.water_explode.root] run function animated_java:water_explode/zzzzzzzz/tick_as_root

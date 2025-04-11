@@ -1,0 +1,1 @@
+function animated_java:water_vfx/zzzzzzzz/animations/water_vfx/tick_animation

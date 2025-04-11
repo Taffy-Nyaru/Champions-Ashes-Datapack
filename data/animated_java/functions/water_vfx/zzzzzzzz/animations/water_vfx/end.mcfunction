@@ -1,0 +1,3 @@
+execute if score @s aj.water_vfx.animation.water_vfx.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:water_vfx/zzzzzzzz/animations/water_vfx/end_loop
+execute if score @s aj.water_vfx.animation.water_vfx.loop_mode = $aj.loop_mode.once aj.i run function animated_java:water_vfx/animations/water_vfx/stop
+execute if score @s aj.water_vfx.animation.water_vfx.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:water_vfx/animations/water_vfx/pause

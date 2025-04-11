@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:water_explode/zzzzzzzz/animations/water_explode/tree/leaf_23_as_bone
+function animated_java:water_explode/zzzzzzzz/apply_variant/faded/as_root

@@ -1,0 +1,3 @@
+execute if score @s aj.water_explode.animation.water_explode.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:water_explode/zzzzzzzz/animations/water_explode/end_loop
+execute if score @s aj.water_explode.animation.water_explode.loop_mode = $aj.loop_mode.once aj.i run function animated_java:water_explode/animations/water_explode/stop
+execute if score @s aj.water_explode.animation.water_explode.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:water_explode/animations/water_explode/pause

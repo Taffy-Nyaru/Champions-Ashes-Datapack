@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/tree/leaf_17_as_bone
+function animated_java:anchor_vfx/zzzzzzzz/apply_variant/fade2/as_root

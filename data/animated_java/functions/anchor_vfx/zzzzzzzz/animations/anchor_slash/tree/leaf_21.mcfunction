@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/tree/leaf_21_as_bone
+execute unless entity @s[tag=aj.anchor_vfx.disable_command_keyframes] at @s run execute as @e[tag=aj.anchor_vfx.root,limit=1,sort=nearest] run function animated_java:anchor_vfx/remove/this

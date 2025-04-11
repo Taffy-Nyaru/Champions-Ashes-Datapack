@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.anchor_vfx.bone.anchor_vfx] run data modify entity @s item.tag.CustomModelData set value 1775

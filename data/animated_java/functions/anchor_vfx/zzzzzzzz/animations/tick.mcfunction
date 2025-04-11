@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.anchor_vfx.animation.anchor_slash] run function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/tick

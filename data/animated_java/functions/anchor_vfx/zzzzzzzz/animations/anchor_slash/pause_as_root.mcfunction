@@ -1,0 +1,1 @@
+tag @s remove aj.anchor_vfx.animation.anchor_slash

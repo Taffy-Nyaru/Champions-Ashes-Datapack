@@ -1,0 +1,1 @@
+function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/pause_as_root

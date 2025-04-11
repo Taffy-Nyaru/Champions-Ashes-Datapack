@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.anchor_vfx.bone.anchor_vfx] run data modify entity @s {} merge value {transformation:[0.17431148549531697f,0f,1.992389396183491f,-1.7911990246028975e-18f,0f,2f,0f,0f,-1.992389396183491f,0f,0.17431148549531697f,0.01462625f,0f,0f,0f,1f],start_interpolation:0}

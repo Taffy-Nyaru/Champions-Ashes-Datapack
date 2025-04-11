@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..31 run function animated_java:steel_anchor/zzzzzzzz/animations/throw_anchor/tree/branch_0_31

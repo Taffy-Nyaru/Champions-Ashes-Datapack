@@ -43,8 +43,12 @@
 		"animated_java:ice_crystal/zzzzzzzz/load",
 		"animated_java:destined_death/zzzzzzzz/load",
 		"animated_java:zamor_ice_storm/zzzzzzzz/load",
-		"animated_java:gravity_impaler/zzzzzzzz/load",
 		"animated_java:void_slash/zzzzzzzz/load",
-		"animated_java:purple_fire/zzzzzzzz/load"
+		"animated_java:purple_fire/zzzzzzzz/load",
+		"animated_java:anchor_vfx/zzzzzzzz/load",
+		"animated_java:gravity_impaler/zzzzzzzz/load",
+		"animated_java:water_vfx/zzzzzzzz/load",
+		"animated_java:steel_anchor/zzzzzzzz/load",
+		"animated_java:water_explode/zzzzzzzz/load"
 	]
 }

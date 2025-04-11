@@ -1,0 +1,4 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["steel_anchor.locator","aj.steel_anchor.locator","aj.steel_anchor.locator.anchor","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"steel_anchor\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"anchor\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:item_display,tag=aj.steel_anchor.locator.anchor,tag=aj.new,limit=1,distance=..1] run function animated_java:steel_anchor/zzzzzzzz/summon/locator_anchor/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

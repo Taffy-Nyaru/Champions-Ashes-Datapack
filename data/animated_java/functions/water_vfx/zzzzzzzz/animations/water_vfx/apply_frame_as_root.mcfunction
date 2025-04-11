@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..28 run function animated_java:water_vfx/zzzzzzzz/animations/water_vfx/tree/branch_0_28

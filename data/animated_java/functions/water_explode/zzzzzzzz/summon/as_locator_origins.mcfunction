@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.water_explode.locator_origin.water_explode] run function animated_java:water_explode/zzzzzzzz/summon/locator_water_explode/as_origin
+function #animated_java:water_explode/on_summon/as_locator_origins

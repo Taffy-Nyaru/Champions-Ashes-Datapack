@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:water_vfx/zzzzzzzz/animations/water_vfx/tree/leaf_13_as_bone
+function animated_java:water_vfx/zzzzzzzz/apply_variant/water_wall1/as_root

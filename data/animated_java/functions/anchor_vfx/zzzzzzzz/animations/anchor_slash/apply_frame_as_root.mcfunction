@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..21 run function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/tree/branch_0_21

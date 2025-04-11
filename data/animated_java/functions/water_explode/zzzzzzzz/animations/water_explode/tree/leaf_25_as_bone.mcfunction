@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.water_explode.locator_origin.water_explode] at @s on origin run tp @s ^0 ^0.3125 ^0 ~0 ~0

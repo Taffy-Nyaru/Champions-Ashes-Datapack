@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.water_vfx.locator_origin.water_vfx] at @s on origin run tp @s ^0 ^0.375 ^0 ~0 ~0

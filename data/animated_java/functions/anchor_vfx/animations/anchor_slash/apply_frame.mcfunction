@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.anchor_vfx.root] run function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/apply_frame_as_root
+execute if entity @s[tag=!aj.anchor_vfx.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:anchor_vfx/animations/anchor_slash/apply_frame ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

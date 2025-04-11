@@ -1,0 +1,3 @@
+execute if score @s aj.anchor_vfx.animation.anchor_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/end_loop
+execute if score @s aj.anchor_vfx.animation.anchor_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:anchor_vfx/animations/anchor_slash/stop
+execute if score @s aj.anchor_vfx.animation.anchor_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:anchor_vfx/animations/anchor_slash/pause

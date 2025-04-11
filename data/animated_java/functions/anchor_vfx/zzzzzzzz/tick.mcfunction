@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.anchor_vfx.root] run function animated_java:anchor_vfx/zzzzzzzz/tick_as_root

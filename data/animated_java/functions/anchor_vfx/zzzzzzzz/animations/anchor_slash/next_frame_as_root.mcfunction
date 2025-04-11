@@ -1,0 +1,1 @@
+function animated_java:anchor_vfx/zzzzzzzz/animations/anchor_slash/tick_animation

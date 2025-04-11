@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:anchor_vfx/zzzzzzzz/apply_variant/fade0/as_bone

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.water_vfx.root] run function animated_java:water_vfx/zzzzzzzz/tick_as_root

@@ -381,6 +381,11 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute at @s as @e[tag=pkcs_skill] run function championsashes:items/pkcs/rotation
 execute as @s[tag=using_skill] at @s run function championsashes:items/pkcs/skill
 
+#Steel Anchor
+execute if predicate championsashes:using_item/steel_anchor_right at @s run function championsashes:items/steel_anchor/steel_anchor
+execute if predicate championsashes:using_item/steel_anchor_left at @s run function championsashes:items/steel_anchor/steel_anchor
+execute unless predicate championsashes:using_item/steel_anchor_right unless predicate championsashes:using_item/steel_anchor_left run function championsashes:items/steel_anchor/clear_steel_anchor_efc
+
 #Clear effects after death
 execute as @a[scores={player_death=1..}] run scoreboard players set @s bleeding_Timer 0
 execute as @a[scores={player_death=1..}] run scoreboard players set @s frostbite_Timer 0

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:water_explode/zzzzzzzz/apply_variant/fade1/as_bone

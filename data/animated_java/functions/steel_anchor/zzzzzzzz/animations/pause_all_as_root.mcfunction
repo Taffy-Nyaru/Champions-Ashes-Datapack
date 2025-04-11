@@ -1,0 +1,1 @@
+function animated_java:steel_anchor/zzzzzzzz/animations/throw_anchor/pause_as_root

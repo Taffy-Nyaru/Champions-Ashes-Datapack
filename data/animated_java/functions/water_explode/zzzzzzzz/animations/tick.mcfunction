@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.water_explode.animation.water_explode] run function animated_java:water_explode/zzzzzzzz/animations/water_explode/tick
