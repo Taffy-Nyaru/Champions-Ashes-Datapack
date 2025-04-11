@@ -1,6 +1,6 @@
 execute at @e[tag=aj.steel_anchor.locator,limit=1,tag=!player_camera] run tp @a[limit=1,sort=nearest,tag=anchor_skill3] ^ ^ ^
 
-execute at @e[tag=aj.steel_anchor.locator,limit=1,tag=!player_camera] positioned ^ ^-2 ^3 unless entity @e[tag=aj.water_explode.root,distance=..1] run function animated_java:water_explode/summon
+execute at @e[tag=aj.steel_anchor.locator,limit=1,tag=!player_camera] positioned ^2 ^ ^2.5 unless entity @e[tag=aj.water_explode.root,distance=..1] facing ~ ~ ~ run function animated_java:water_explode/summon
 execute as @e[distance=..10,type=!#championsashes:special_entities,predicate=!championsashes:using_item/steel_anchor_right] at @s facing ~ ~ ~ run function championsashes:items/steel_anchor/skill3_anchor_hit_entity
 
 execute as @e[tag=aj.water_explode.root] run function animated_java:water_explode/animations/water_explode/play

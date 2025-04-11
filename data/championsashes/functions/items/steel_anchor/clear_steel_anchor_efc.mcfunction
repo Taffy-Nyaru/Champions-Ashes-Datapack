@@ -12,4 +12,3 @@ function animated_java:water_vfx/remove/all
 tag @s[tag=anchor_skill2] remove anchor_skill2
 tag @s[tag=anchor_skill3] remove anchor_skill3
 tag @s[tag=anchorProtect] remove anchorProtect
-function championsashes:animated_effects/ride_off
