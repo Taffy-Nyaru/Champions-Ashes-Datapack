@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:steel_anchor/zzzzzzzz/animations/throw_anchor/tree/leaf_25_as_bone
+execute unless entity @s[tag=aj.steel_anchor.disable_command_keyframes] at @s run function animated_java:steel_anchor/zzzzzzzz/animations/throw_anchor/tree/leaf_25_effects_0
