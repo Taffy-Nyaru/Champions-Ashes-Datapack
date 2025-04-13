@@ -125,4 +125,4 @@ tag @s[tag=destined_death_user] remove destined_death_user
 tag @s[tag=destined_death_atk] remove destined_death_atk
 
 kill @e[tag=player_camera,limit=1,sort=nearest]
-execute at @s[tag=!air_detect] unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava unless block ~ ~1 ~ air unless block ~ ~1 ~ water unless block ~ ~1 ~ lava run function championsashes:animated_effects/air_detect_start
+execute at @s[tag=!air_detect,tag=!anchor_skill3] unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~1 ~ air unless block ~ ~1 ~ water run function championsashes:animated_effects/air_detect_start

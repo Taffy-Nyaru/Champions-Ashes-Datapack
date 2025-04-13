@@ -1,3 +1,4 @@
+scoreboard players set #anchorSkill3 championsashes_Timer 0
 effect clear @s[tag=anchorProtect] regeneration
 effect clear @s[tag=anchorProtect] resistance
 effect clear @s[tag=!anchor_skill2] dolphins_grace
@@ -12,3 +13,4 @@ function animated_java:water_vfx/remove/all
 tag @s[tag=anchor_skill2] remove anchor_skill2
 tag @s[tag=anchor_skill3] remove anchor_skill3
 tag @s[tag=anchorProtect] remove anchorProtect
+tag @s[tag=skill3_anchor_hit] remove skill3_anchor_hit

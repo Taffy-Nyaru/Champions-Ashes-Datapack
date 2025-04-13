@@ -1,4 +1,8 @@
 tag @s add anchor_skill3
+tag @s add riding_display
+
+summon marker ~ ~ ~ {UUID:[I;119,810,114,514]}
+
 effect give @s resistance 150 4
 effect give @s regeneration 150 8
 effect give @s dolphins_grace 150 9
@@ -13,6 +17,5 @@ execute store result score @s gamemode run data get entity @s playerGameType
 execute at @s facing ~ ~ ~ run function animated_java:water_vfx/summon
 execute at @s positioned ^ ^ ^ run function animated_java:steel_anchor/summon
 execute as @e[tag=aj.steel_anchor.root,limit=1,sort=nearest] run function animated_java:steel_anchor/animations/throw_anchor/play
-tag @s add riding_display
 
 execute as @s[gamemode=survival] run function championsashes:items/item_durability
