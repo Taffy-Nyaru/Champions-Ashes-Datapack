@@ -1,5 +1,5 @@
 #Killing display entities and riding off in aj files' commands
-gamerule mobGriefing true
+execute unless entity @p[tag=anchor_skill3] run gamerule mobGriefing true
 function championsashes:animated_effects/gamemode
 tag @s remove riding_display
 #tag @s[tag=!soul_five,tag=!murky_r1_user] add stiff

@@ -1,0 +1,3 @@
+execute if score @s aj.steel_anchor.animation.skill1.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:steel_anchor/zzzzzzzz/animations/skill1/end_loop
+execute if score @s aj.steel_anchor.animation.skill1.loop_mode = $aj.loop_mode.once aj.i run function animated_java:steel_anchor/animations/skill1/stop
+execute if score @s aj.steel_anchor.animation.skill1.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:steel_anchor/animations/skill1/pause

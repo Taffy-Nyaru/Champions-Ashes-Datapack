@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:steel_anchor/zzzzzzzz/animations/skill1/tree/leaf_22_as_bone
+execute unless entity @s[tag=aj.steel_anchor.disable_command_keyframes] at @s run execute at @e[tag=aj.steel_anchor.locator,limit=1,tag=!player_camera,sort=nearest] as @e[type=!#championsashes:special_entities,tag=!skill1_anchor_mount,distance=..3] run function championsashes:items/steel_anchor/steel_anchor_ride

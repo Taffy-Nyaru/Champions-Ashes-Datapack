@@ -11,6 +11,8 @@ execute if score #variant aj.i = $aj.steel_anchor.variant.default aj.id run func
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.steel_anchor.animation.throw_anchor aj.id run function animated_java:steel_anchor/zzzzzzzz/animations/throw_anchor/apply_frame_as_root
 execute if score #animation aj.i = $aj.steel_anchor.animation.throw_anchor aj.id run scoreboard players operation @s aj.steel_anchor.animation.throw_anchor.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.steel_anchor.animation.skill1 aj.id run function animated_java:steel_anchor/zzzzzzzz/animations/skill1/apply_frame_as_root
+execute if score #animation aj.i = $aj.steel_anchor.animation.skill1 aj.id run scoreboard players operation @s aj.steel_anchor.animation.skill1.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:steel_anchor/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

@@ -30,4 +30,5 @@ execute if entity @s[predicate=championsashes:using_item/corvian_greatknife,tag=
 execute if entity @s[predicate=championsashes:using_item/splitleaf,tag=splitleaf_infinite_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/black_blade,tag=destined_death_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/steel_anchor_right,tag=anchor_skill3] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/steel_anchor_right,tag=anchor_skill1] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[tag=chainsaw_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

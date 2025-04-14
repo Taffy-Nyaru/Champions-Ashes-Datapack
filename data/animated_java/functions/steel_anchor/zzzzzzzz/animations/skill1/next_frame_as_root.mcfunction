@@ -1,0 +1,1 @@
+function animated_java:steel_anchor/zzzzzzzz/animations/skill1/tick_animation

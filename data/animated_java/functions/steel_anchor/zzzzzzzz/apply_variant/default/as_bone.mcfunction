@@ -12,3 +12,4 @@ execute if entity @s[tag=aj.steel_anchor.bone.right_leg2] run data modify entity
 execute if entity @s[tag=aj.steel_anchor.bone.right_leg] run data modify entity @s item.tag.CustomModelData set value 1761
 execute if entity @s[tag=aj.steel_anchor.bone.left_leg2] run data modify entity @s item.tag.CustomModelData set value 1762
 execute if entity @s[tag=aj.steel_anchor.bone.left_leg] run data modify entity @s item.tag.CustomModelData set value 1763
+execute if entity @s[tag=aj.steel_anchor.bone.chains] run data modify entity @s item.tag.CustomModelData set value 1777

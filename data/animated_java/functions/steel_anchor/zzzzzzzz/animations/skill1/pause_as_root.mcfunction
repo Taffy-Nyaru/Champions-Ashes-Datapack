@@ -1,0 +1,1 @@
+tag @s remove aj.steel_anchor.animation.skill1
