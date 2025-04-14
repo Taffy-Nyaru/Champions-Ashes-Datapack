@@ -1,2 +1,2 @@
 execute if entity @s[tag=aj.steel_anchor.locator_origin.anchor] at @s on origin run tp @s ^-0.64191 ^1.25319 ^0.56424 ~-90 ~0
-execute if entity @s[tag=aj.steel_anchor.locator_origin.player_camera] at @s on origin run tp @s ^0 ^-0.1875 ^-0.8125 ~-180 ~0
+execute if entity @s[tag=aj.steel_anchor.locator_origin.player_camera] at @s on origin run tp @s ^0 ^0.25 ^-0.125 ~-180 ~0
