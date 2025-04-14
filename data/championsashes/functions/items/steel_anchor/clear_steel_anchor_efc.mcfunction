@@ -3,6 +3,7 @@ effect clear @s[tag=anchorProtect] regeneration
 effect clear @s[tag=anchorProtect] resistance
 effect clear @s[tag=!anchor_skill2] dolphins_grace
 effect clear @s[tag=!anchor_skill2] water_breathing
+effect clear @s[tag=!anchor_skill2] fire_resistance
 attribute @s minecraft:generic.attack_damage modifier remove c9a21ec2-2dc0-447c-955a-15fa6fe0bd60
 attribute @s minecraft:generic.max_health modifier remove c4a21ec2-2dc0-447c-955a-15fa6fe0bd6e
 attribute @s minecraft:generic.max_health modifier remove c4a21ec2-2dc0-447c-955a-15fa6fe0bd8e
