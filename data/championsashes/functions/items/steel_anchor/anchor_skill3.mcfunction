@@ -4,7 +4,7 @@ tag @s add riding_display
 summon marker ~ ~ ~ {UUID:[I;119,810,114,514]}
 
 effect give @s resistance 150 4
-effect give @s regeneration 150 8
+effect give @s regeneration 150 6
 effect give @s dolphins_grace 150 9
 effect give @s water_breathing 150 1
 
