@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.eletric_shield.animation.electric_shield] run function animated_java:eletric_shield/zzzzzzzz/animations/electric_shield/tick

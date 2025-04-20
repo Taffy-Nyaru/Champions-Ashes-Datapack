@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.gravity_lightning_bolt.root] run function animated_java:gravity_lightning_bolt/zzzzzzzz/remove/as_root
+kill @e[tag=aj.gravity_lightning_bolt.rig_entity]

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.field_extension.animation.standby] run function animated_java:field_extension/zzzzzzzz/animations/standby/tick

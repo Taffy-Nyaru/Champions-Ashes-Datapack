@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:eletric_shield/zzzzzzzz/animations/electric_shield/tree/leaf_18_as_bone
+function animated_java:eletric_shield/zzzzzzzz/apply_variant/10/as_root

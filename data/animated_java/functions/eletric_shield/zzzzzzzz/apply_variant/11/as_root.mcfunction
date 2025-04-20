@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:eletric_shield/zzzzzzzz/apply_variant/11/as_bone

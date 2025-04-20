@@ -1,0 +1,16 @@
+execute if entity @s[tag=aj.field_extension.bone.glowfield] run data modify entity @s {} merge value {transformation:[2.6675000000000004f,0f,0f,0f,0f,0.8002500000000002f,0f,0.1015625f,0f,0f,2.6675000000000004f,2.5f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator0] at @s on origin run tp @s ^0 ^0 ^0 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator9] at @s on origin run tp @s ^1 ^0 ^1 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator10] at @s on origin run tp @s ^1 ^0 ^2 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator8] at @s on origin run tp @s ^-1 ^0 ^1 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator11] at @s on origin run tp @s ^-1 ^0 ^2 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator6] at @s on origin run tp @s ^0 ^0 ^1 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator7] at @s on origin run tp @s ^0 ^0 ^2 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator5] at @s on origin run tp @s ^0 ^0 ^-1 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator3] at @s on origin run tp @s ^1 ^0 ^0 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator4] at @s on origin run tp @s ^1 ^0 ^-1 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator1] at @s on origin run tp @s ^-1 ^0 ^0 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.field_lightning_locator2] at @s on origin run tp @s ^-1 ^0 ^-1 ~-180 ~0
+execute if entity @s[tag=aj.field_extension.locator_origin.player_camera] at @s on origin run tp @s ^-0.01172 ^0.1411 ^-1.06367 ~-180 ~2.5
+execute if entity @s[tag=aj.field_extension.locator_origin.electric_shield] at @s on origin run tp @s ^-0.01172 ^1.33156 ^-1.02181 ~-180 ~2.5
+execute if entity @s[tag=aj.field_extension.bone.glyphs] run data modify entity @s {} merge value {transformation:[1.0833333333333333f,0f,2.6534013981525983e-16f,-0.037491875f,9.075167264966815e-17f,1.018000339184734f,-0.3705218219361411f,1.2015069482523653f,-2.4933817138270086e-16f,0.3705218219361411f,1.018000339184734f,-1.0319029181130837f,0f,0f,0f,1f],start_interpolation:0}

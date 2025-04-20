@@ -1,0 +1,3 @@
+execute if score @s aj.field_extension.animation.standby.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:field_extension/zzzzzzzz/animations/standby/end_loop
+execute if score @s aj.field_extension.animation.standby.loop_mode = $aj.loop_mode.once aj.i run function animated_java:field_extension/animations/standby/stop
+execute if score @s aj.field_extension.animation.standby.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:field_extension/animations/standby/pause

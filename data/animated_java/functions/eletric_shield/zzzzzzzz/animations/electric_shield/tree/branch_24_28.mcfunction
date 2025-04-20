@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 24 run function animated_java:eletric_shield/zzzzzzzz/animations/electric_shield/tree/leaf_24
+execute if score @s aj.anim_time matches 26 run function animated_java:eletric_shield/zzzzzzzz/animations/electric_shield/tree/leaf_26

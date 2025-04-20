@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.gravity_lightning_bolt.locator_origin.locator] run function animated_java:gravity_lightning_bolt/zzzzzzzz/summon/locator_locator/as_origin
+function #animated_java:gravity_lightning_bolt/on_summon/as_locator_origins

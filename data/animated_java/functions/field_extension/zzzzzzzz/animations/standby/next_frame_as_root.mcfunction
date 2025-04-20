@@ -1,0 +1,1 @@
+function animated_java:field_extension/zzzzzzzz/animations/standby/tick_animation

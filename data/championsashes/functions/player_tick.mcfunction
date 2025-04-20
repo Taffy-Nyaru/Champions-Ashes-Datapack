@@ -129,6 +129,7 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 #Sun Princess Ring
 function championsashes:items/sun_princess_ring/sun_princess_ring
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:sun_princess_ring"}}]} at @s unless entity @e[tag=aj.f8fq.root,distance=..5] if score @s shift matches 1.. if score @s xpLevel matches 8.. run function championsashes:items/sun_princess_ring/f8fq
+execute at @s as @e[tag=gravity_lightning_shocked,type=!#championsashes:special_entities,distance=..127] run function championsashes:items/sun_princess_ring/gravity_lightning_bolt_timer
 
 #Ender Ring
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ender_ring"}}]} run advancement grant @s[advancements={championsashes:func/ender_ring=false}] only championsashes:func/ender_ring

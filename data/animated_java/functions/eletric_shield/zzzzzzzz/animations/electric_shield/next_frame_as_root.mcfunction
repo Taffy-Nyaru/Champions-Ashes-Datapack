@@ -1,0 +1,1 @@
+function animated_java:eletric_shield/zzzzzzzz/animations/electric_shield/tick_animation

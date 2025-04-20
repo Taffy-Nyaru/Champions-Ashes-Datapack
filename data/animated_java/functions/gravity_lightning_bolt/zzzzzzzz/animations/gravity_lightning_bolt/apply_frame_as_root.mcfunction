@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..10 run function animated_java:gravity_lightning_bolt/zzzzzzzz/animations/gravity_lightning_bolt/tree/branch_0_10

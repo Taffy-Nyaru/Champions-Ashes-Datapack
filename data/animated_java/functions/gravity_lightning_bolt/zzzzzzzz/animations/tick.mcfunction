@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gravity_lightning_bolt.animation.gravity_lightning_bolt] run function animated_java:gravity_lightning_bolt/zzzzzzzz/animations/gravity_lightning_bolt/tick

@@ -1,0 +1,1 @@
+tag @s remove aj.eletric_shield.animation.electric_shield

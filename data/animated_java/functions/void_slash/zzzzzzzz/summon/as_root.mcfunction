@@ -7,20 +7,24 @@ scoreboard players operation @s aj.void_slash.export_version = aj.void_slash.exp
 execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id 1
 tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:void_slash/zzzzzzzz/summon/as_rig_entities
-execute if score #variant aj.i = $aj.void_slash.variant.void_slash aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/void_slash/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash0 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash0/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash1 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash1/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash2 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash2/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash3 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash3/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash4 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash4/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash5 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash5/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash6 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash6/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash7 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash7/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slash8 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slash8/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slashing0 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slashing0/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slashing1 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slashing1/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slashing2 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slashing2/as_root
-execute if score #variant aj.i = $aj.void_slash.variant.slashing3 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/slashing3/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.faded aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/faded/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.0 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/0/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.1 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/1/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.10 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/10/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.11 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/11/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.12 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/12/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.2 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/2/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.3 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/3/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.4 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/4/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.5 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/5/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.6 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/6/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.7 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/7/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.8 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/8/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.9 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/9/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.faded0 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/faded0/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.faded1 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/faded1/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.faded2 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/faded2/as_root
+execute if score #variant aj.i = $aj.void_slash.variant.faded3 aj.id run function animated_java:void_slash/zzzzzzzz/apply_variant/faded3/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.void_slash.animation.void_slash aj.id run function animated_java:void_slash/zzzzzzzz/animations/void_slash/apply_frame_as_root
 execute if score #animation aj.i = $aj.void_slash.animation.void_slash aj.id run scoreboard players operation @s aj.void_slash.animation.void_slash.local_anim_time = #frame aj.i

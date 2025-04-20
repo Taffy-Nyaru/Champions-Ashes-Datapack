@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.eletric_shield.bone.bone] run data modify entity @s {} merge value {transformation:[-3f,0f,1.2246467991473532e-16f,0f,0f,3f,0f,-0.25f,-3.6739403974420594e-16f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation:0}

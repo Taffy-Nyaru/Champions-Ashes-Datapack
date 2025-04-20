@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.eletric_shield.root] run function animated_java:eletric_shield/zzzzzzzz/animations/electric_shield/stop_as_root
+execute if entity @s[tag=!aj.eletric_shield.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:eletric_shield/animations/electric_shield/stop ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.eletric_shield.root] run function animated_java:eletric_shield/zzzzzzzz/tick_as_root

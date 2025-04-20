@@ -31,4 +31,7 @@ execute if entity @s[predicate=championsashes:using_item/splitleaf,tag=splitleaf
 execute if entity @s[predicate=championsashes:using_item/black_blade,tag=destined_death_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/steel_anchor_right,tag=anchor_skill3] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
 execute if entity @s[predicate=championsashes:using_item/steel_anchor_right,tag=anchor_skill1] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/sun_princess_ring_right,tag=field_extensioner] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]
+execute if entity @s[predicate=championsashes:using_item/sun_princess_ring_right,tag=field_extensioner] run tag @s remove riding_display
+
 execute if entity @s[tag=chainsaw_user] run ride @s mount @e[tag=player_camera,limit=1,sort=nearest]

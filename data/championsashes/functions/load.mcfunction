@@ -205,6 +205,9 @@ scoreboard objectives add power_level dummy
 #Void Eye
 scoreboard objectives add void_eye_timer dummy
 
+#Gravity Lightning Bolt
+scoreboard objectives add gravity_lightning dummy
+
 #Snowball UUID detect
 scoreboard objectives add snowball_uuid0 dummy
 scoreboard objectives add snowball_uuid1 dummy

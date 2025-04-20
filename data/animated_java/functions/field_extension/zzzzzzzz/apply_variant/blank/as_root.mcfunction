@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:field_extension/zzzzzzzz/apply_variant/blank/as_bone

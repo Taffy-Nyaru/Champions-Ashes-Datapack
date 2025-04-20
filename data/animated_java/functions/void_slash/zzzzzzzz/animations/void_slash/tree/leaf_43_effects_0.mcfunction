@@ -1,0 +1,1 @@
+function championsashes:items/fume_ultra_greatsword/void_slash_kill

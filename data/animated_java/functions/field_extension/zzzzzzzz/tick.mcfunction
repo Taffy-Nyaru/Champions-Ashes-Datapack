@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.field_extension.root] run function animated_java:field_extension/zzzzzzzz/tick_as_root

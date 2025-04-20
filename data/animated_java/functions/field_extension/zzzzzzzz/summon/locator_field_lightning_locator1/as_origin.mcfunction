@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.field_extension.locator","aj.field_extension.locator.field_lightning_locator1","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"field_extension\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"field_lightning_locator1\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.field_extension.locator.field_lightning_locator1,tag=aj.new,limit=1,distance=..1] run function animated_java:field_extension/zzzzzzzz/summon/locator_field_lightning_locator1/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.void_slash.root] run function animated_java:void_slash/zzzzzzzz/apply_variant/faded0/as_root
+execute if entity @s[tag=!aj.void_slash.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:void_slash/apply_variant/faded0 ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

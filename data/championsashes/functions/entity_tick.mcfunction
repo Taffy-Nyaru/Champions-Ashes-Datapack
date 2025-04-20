@@ -53,6 +53,7 @@ execute at @e[tag=aj.zamor_ice_storm.root] as @e[type=!#championsashes:special_e
 execute as @e[tag=purple_burned] at @s run function championsashes:items/fume_ultra_greatsword/purple_burned
 execute as @e[type=!#championsashes:special_entities,tag=gravity_impaled] at @s run function championsashes:items/sun_princess_ring/ride
 execute if entity @a[limit=1,sort=nearest,tag=anchor_skill3] as @e[tag=aj.steel_anchor.locator,limit=1,tag=!player_camera] at @s run function championsashes:items/steel_anchor/skill3_anchor_hitbox
+execute at @e[tag=aj.gravity_lightning_bolt.locator,limit=1,sort=nearest] unless entity @e[tag=gravity_lightning_shocked,distance=..2.5] as @e[tag=aj.gravity_lightning_bolt.root,limit=1,sort=nearest] run function animated_java:gravity_lightning_bolt/remove/this
 
 #Parry
 execute if entity @e[tag=parry_success] as @e[tag=parry_success] run function championsashes:parry/parry_success
@@ -68,6 +69,6 @@ tag @e[tag=guards,tag=!ally] add ally
 tag @e[tag=night_cavalry,tag=!ally] add ally
 tag @e[tag=charmed,tag=!ally] add ally
 
-execute unless entity @e[tag=shield_breaker] at @a[limit=1] run summon piglin_brute ~ ~-10 ~ {ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:1b,ShowIcon:0b}],IsImmuneToZombification:1,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Tags:["shield_breaker"],HandItems:[{id:"minecraft:netherite_axe",tag:{Damage:0},Count:1}],HandDropChances:[0f]}
+execute unless entity @e[tag=shield_breaker] at @a[limit=1] run summon piglin_brute ~ ~-10 ~ {ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:1b,ShowIcon:0b}],IsImmuneToZombification:1b,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Tags:["shield_breaker"],HandItems:[{id:"minecraft:netherite_axe",tag:{Damage:0},Count:1}],HandDropChances:[0f]}
 execute as @e[type=marker,tag=gundyr_hitbox] at @s facing entity @a[limit=1,sort=nearest,tag=gundyr_halberd] feet positioned as @s run tp @s ^ ^ ^-0.4 ~ ~
 execute as @a[advancements={championsashes:hurt_players=true}] run advancement revoke @s only championsashes:hurt_players

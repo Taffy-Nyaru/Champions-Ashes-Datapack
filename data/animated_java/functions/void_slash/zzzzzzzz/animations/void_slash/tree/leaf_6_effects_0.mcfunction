@@ -1,1 +1,1 @@
-execute at @e[tag=aj.void_slash.locator] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!void_slash_user] run damage @s 10 minecraft:out_of_world by @a[limit=1,sort=nearest,tag=void_slash_user]
+execute at @e[tag=aj.void_slash.locator] as @e[distance=..4,type=!#championsashes:special_entities,tag=!void_slash_user] run function championsashes:items/fume_ultra_greatsword/void_damage

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:gravity_lightning_bolt/zzzzzzzz/animations/gravity_lightning_bolt/tree/leaf_2_as_bone
+function animated_java:gravity_lightning_bolt/zzzzzzzz/apply_variant/2/as_root

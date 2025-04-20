@@ -1,0 +1,1 @@
+function animated_java:gravity_lightning_bolt/zzzzzzzz/animations/gravity_lightning_bolt/pause_as_root

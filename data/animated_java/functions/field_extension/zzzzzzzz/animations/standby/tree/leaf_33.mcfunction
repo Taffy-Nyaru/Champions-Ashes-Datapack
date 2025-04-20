@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:field_extension/zzzzzzzz/animations/standby/tree/leaf_33_as_bone
+function animated_java:field_extension/zzzzzzzz/apply_variant/field_extension_vfx4/as_root

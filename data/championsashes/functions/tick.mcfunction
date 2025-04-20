@@ -30,4 +30,4 @@ execute if entity @e[tag=clicker,tag=!related] as @e[tag=clicker,tag=!related] i
 
 #Misc
 execute as @a if score @s shield_block_damage matches 1.. run scoreboard players set @s shield_block_damage 0
-execute as @a if score @s shift matches 1.. run scoreboard players set @s shift 0
+execute as @a if score @s[tag=!field_extensioner] shift matches 1.. run scoreboard players set @s shift 0

@@ -1,0 +1,1 @@
+tag @s remove aj.gravity_lightning_bolt.animation.gravity_lightning_bolt

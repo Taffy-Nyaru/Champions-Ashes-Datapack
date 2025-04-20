@@ -1,0 +1,2 @@
+execute at @e[type=marker,tag=aj.field_extension.locator] as @e[distance=..0.6,type=!#championsashes:special_entities,tag=!field_extensioner,tag=!gravity_lightning_shocked] at @s run function championsashes:items/sun_princess_ring/gravity_lightning_damage
+execute if score @s shift matches 1.. run function championsashes:items/sun_princess_ring/field_extensioned

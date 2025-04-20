@@ -1,0 +1,4 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["electric_shield","aj.field_extension.locator","aj.field_extension.locator.electric_shield","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"field_extension\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"electric_shield\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:item_display,tag=aj.field_extension.locator.electric_shield,tag=aj.new,limit=1,distance=..1] run function animated_java:field_extension/zzzzzzzz/summon/locator_electric_shield/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner
