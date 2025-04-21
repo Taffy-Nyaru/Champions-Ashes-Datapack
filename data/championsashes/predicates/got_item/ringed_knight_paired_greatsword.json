@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "nbt": "{Inventory:[{tag:{id:\"championsashes:ringed_knight_paired_greatsword_right\"}},{tag:{id:\"championsashes:ringed_knight_paired_greatsword_left\"}}]}"
+    }
+}

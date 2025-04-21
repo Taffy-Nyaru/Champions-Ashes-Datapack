@@ -1,5 +1,9 @@
 function championsashes:tick20
 
+#Tick schedule
+scoreboard objectives add ca.tick5_schedule dummy
+scoreboard objectives add ca.tick10_schedule dummy
+
 #Player related
 scoreboard objectives add space minecraft.custom:minecraft.jump
 scoreboard objectives add shift minecraft.custom:minecraft.sneak_time

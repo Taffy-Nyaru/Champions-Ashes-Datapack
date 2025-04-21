@@ -1,9 +1,6 @@
 team join friendly @a[team=!friendly]
-team join friendly @e[tag=bomb]
-team join friendly @a[team=!friendly,tag=owner]
-team join friendly @e[team=!friendly,tag=WARDEN]
-team join friendly @e[team=!friendly,tag=pet]
-team join friendly @e[team=!friendly,tag=guards]
-team join friendly @a[team=!friendly,tag=crown]
-team join friendly @e[team=!friendly,tag=night_cavalry]
-team join friendly @e[type=#championsashes:friendlycreature,team=!friendly]
+
+team join friendly 0001bf52-001d-4b42-0000-001d0000005c
+team join friendly @e[team=!friendly,tag=guards,type=warden,distance=..40]
+team join friendly @e[team=!friendly,tag=night_cavalry,type=wither_skeleton,distance=..40]
+team join friendly @e[type=#championsashes:friendlycreature,team=!friendly,distance=..50]

@@ -1,43 +1,33 @@
 #CMD 1440012
 #CMD 1390108
-#Reload load.json tick.json if aj is not responding
-function championsashes:raycast/ray
 
-execute at @s as @e[type=!#championsashes:special_entities,distance=..127,tag=!got_max_health] run data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @s Health
-execute at @s as @e[type=!#championsashes:special_entities,distance=..127,tag=!got_max_health] run tag @s add got_max_health
-
-advancement grant @s[advancements={championsashes:func/championsashes=false}] only championsashes:func/championsashes
+#Initialize Params
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
 execute store result score @s xpLevel run data get entity @s XpLevel
-
-#Save the items and xp orbs in special lightning bolts
-execute at @e[type=lightning_bolt,tag=Thunder] as @e[type=item,distance=..5] run data modify entity @s Invulnerable set value 1b
-execute at @e[type=lightning_bolt,tag=Thunder] as @e[type=experience_orb,distance=..5] run data modify entity @s Invulnerable set value 1b
-
-#define storage championsashes:player_data
-#define storage generic:main
-#define storage math:io
-data modify storage championsashes:player_data Inventory set from entity @s Inventory
-data modify storage championsashes:player_data SelectedItem set from entity @s SelectedItem
 execute store result score @s falldistance run data get entity @s FallDistance
-
-execute as @s[tag=riding_display] at @s run function championsashes:animated_effects/ride
-
-execute if entity @s[predicate=!championsashes:noninteraction_rclick] run function championsashes:items/not_using
 execute store result score @s Y_value run data get entity @s Pos[1]
 
+#Reset interaction clicker
+execute if entity @s[predicate=!championsashes:noninteraction_rclick] run function championsashes:items/not_using
+
 #Multiplayer rclick
-function championsashes:item_thrower
+function championsashes:clicker/clicker_timestamp
 function championsashes:multinteraction
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:steel_ingot"}}]} run advancement grant @s[advancements={championsashes:func/steel_ingot=false}] only championsashes:func/steel_ingot
+
+#TODO Fuck this with predicate
+data modify storage championsashes:player_data Inventory set from entity @s Inventory
+data modify storage championsashes:player_data SelectedItem set from entity @s SelectedItem
+
+#TODO Buffer to scoreboards only when using
+execute as @s[tag=riding_display] run function championsashes:animated_effects/ride
+
+#TODO Fucking Blocks
+function championsashes:blocks/block
 
 #Medals
 #execute if score @s usedAnvil matches 1.. if data storage championsashes:player_data {Inventory:[{tag:{}}]} as @s run function championsashes:check/anvil
 #execute if score @s usedmedal matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{}}} as @s run function championsashes:check/medal
 execute if data storage championsashes:player_data {Inventory:[{Slot:103b,tag:{id:"championsashes:vampire_hat"}}]} as @s run function championsashes:items/vampire_hat/effects
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:vampire_hat"}}]} run advancement grant @s[advancements={championsashes:func/vampire_hat=false}] only championsashes:func/vampire_hat
-tag @s[gamemode=spectator,tag=nep_foe] remove nep_foe
-tag @s[gamemode=creative,tag=nep_foe] remove nep_foe
 
 #Snowball Detect
 execute if score @s usedSnowball matches 1.. if entity @e[type=snowball,predicate=championsashes:misc/shadow_vortex] run function championsashes:projectiles/snowball_detect/snowball_detect
@@ -51,7 +41,6 @@ execute as @e[type=snowball,predicate=championsashes:misc/death_blight_knife] ru
 execute as @e[type=snowball,predicate=championsashes:misc/stalk_dung_pie] run function championsashes:projectiles/snowball_detect/snowball_thrower
 
 #Ringed Knight Straight Sword
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ringed_knight_straight_sword"}}]} run advancement grant @s[advancements={championsashes:func/rkss=false}] only championsashes:func/rkss
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_straight_sword"}}} if entity @s[predicate=championsashes:using_item/black_knight_shield] run function championsashes:items/ringed_knight_straight_sword/rkss
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_straight_sword"}}} unless entity @s[predicate=championsashes:using_item/black_knight_shield] run tag @s[tag=needclicker] remove needclicker
 
@@ -59,16 +48,13 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute at @s if score @s ateberries matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:enchanted_berries"}}} as @s run function championsashes:medal/enchanted_berries
 
 #Heart of Echo
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:sonic_boom_shard"}}]} run advancement grant @s[advancements={championsashes:func/get_echo_heart=false}] only championsashes:func/get_echo_heart
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:sonic_boom_shard"}}} as @s run function championsashes:items/sonic_boom_shard/shard
 
 #Zweihander
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:zweihander"}}]} run advancement grant @s[advancements={championsashes:func/zwei=false}] only championsashes:func/zwei
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:zweihander"}}} as @s run function championsashes:items/zweihander/zweihander
 execute if entity @e[tag=head_projectile] as @s[tag=shot] run function championsashes:projectiles/dragon_bomb/dragon_head
 
 #Black Blade
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:black_blade"}}]} run advancement grant @s[advancements={championsashes:func/black_blade=false}] only championsashes:func/black_blade
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:black_blade"}}} as @s run function championsashes:items/zweihander/black_blade/black_blade
 
 #CE
@@ -86,12 +72,10 @@ execute if data storage championsashes:player_data {Inventory:[{Slot:101b,tag:{i
 execute if data storage championsashes:player_data {Inventory:[{Slot:100b,tag:{id:"championsashes:witherite_boots"}}]} run function championsashes:items/armor/witherite_boots
 
 #Eternal Crystal
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:eternal_crystal"}}]} run advancement grant @s[advancements={championsashes:func/eternal_crystal=false}] only championsashes:func/eternal_crystal
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:eternal_crystal"}}} run function championsashes:items/eternal_crystal/eternal_crystal
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:eternal_crystal"}}]} run function championsashes:items/eternal_crystal/eternal_crystal
 
 #Bomber
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:gtx690"}}]} run advancement grant @s[advancements={championsashes:func/gtx690=false}] only championsashes:func/gtx690
 execute if data storage championsashes:player_data {Inventory:[{Slot:102b,tag:{id:"championsashes:bomber"}}]} run function championsashes:items/bomber/bomber
 execute if entity @s[tag=disableFallDamage] run function championsashes:items/bomber/disablefalldamage
 
@@ -103,7 +87,6 @@ execute if entity @e[predicate=championsashes:misc/bomb_creeper] as @e[predicate
 execute at @s[tag=chain_mining] positioned ^ ^ ^1 run function championsashes:items/bomber/chain_mining
 
 #Shadow Pearl
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:shadow_pearl"}}]} run advancement grant @s[advancements={championsashes:func/shadow_pearl=false}] only championsashes:func/shadow_pearl
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:shadow_pearl"}}} as @s if score @s usedmedal matches 1.. if score @s shift matches 1.. run function championsashes:items/shadow_pearl/close_undead
 execute unless data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:void_totem"}}]} if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:shadow_pearl",CustomModelData:1390015,Damage:0}}} as @s if score @s usedmedal matches 1.. unless score @s shift matches 1.. run function championsashes:items/shadow_pearl/shadow_pearl1
 execute unless data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:void_totem"}}]} if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:shadow_pearl",CustomModelData:1390016,Damage:25}}} as @s if score @s usedmedal matches 1.. unless score @s shift matches 1.. run function championsashes:items/shadow_pearl/shadow_pearl2
@@ -132,7 +115,6 @@ execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{
 execute at @s as @e[tag=gravity_lightning_shocked,type=!#championsashes:special_entities,distance=..127] run function championsashes:items/sun_princess_ring/gravity_lightning_bolt_timer
 
 #Ender Ring
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ender_ring"}}]} run advancement grant @s[advancements={championsashes:func/ender_ring=false}] only championsashes:func/ender_ring
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ender_ring"}}} run function championsashes:items/ender_ring/ender_ring
 execute as @a[tag=remote_gateway] if score rand_output math_output matches 99999.. run function championsashes:items/ender_ring/teleport
 execute unless data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ender_ring"}}} unless data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:ender_ring"}}]} run tag @s remove omen_king
@@ -151,7 +133,6 @@ function championsashes:projectiles/moonlight_slash/moonlight_slash
 #Irithyll Straight Sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} if score @s shift matches 1.. run function championsashes:items/irithyll_straight_sword/sword_dance
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} run tag @s remove needclicker
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:irithyll_straight_sword"}}]} run advancement grant @s[advancements={championsashes:func/irithyll_straight_sword=false}] only championsashes:func/irithyll_straight_sword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:irithyll_straight_sword"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities,distance=..5] frostbite_Timer 700
 
 #Ledo's Great Hammer
@@ -175,7 +156,6 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:spear_of_the_impaler"}}} run tag @s remove needclicker
 
 #DragonSlayer Great bow
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:dragonslayer_greatbow"}}]} run advancement grant @s[advancements={championsashes:func/dragonslayer_greatbow=false}] only championsashes:func/dragonslayer_greatbow
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:dragonslayer_greatbow"}}} at @s if score @s usedBow matches 1.. run function championsashes:items/dragonslayer_greatbow/dragonslayer_greatbow
 execute as @s[tag=loop_start] at @s positioned ^ ^2 ^2 if score @s arrow_rain.temp matches 1.. run function championsashes:items/dragonslayer_greatbow/loop_summon_arrow
 execute at @s run function championsashes:items/dragonslayer_greatbow/golem_arrow
@@ -187,7 +167,6 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute at @s run function championsashes:items/thunder_slayer/thunder_arrow
 
 #Arbalest
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:arbalest"}}]} run advancement grant @s[advancements={championsashes:func/arbalest=false}] only championsashes:func/arbalest
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:arbalest"}}} at @s if score @s usedCrossbow matches 1.. run function championsashes:items/dragonslayer_greatbow/arbalest/arbalest
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:arbalest"}}]} at @s if score @s usedCrossbow matches 1.. run function championsashes:items/dragonslayer_greatbow/arbalest/arbalest
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:dragonslayer_greatbow"}}]} if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:arbalest"}}} at @s run function championsashes:items/dragonslayer_greatbow/glitch
@@ -197,7 +176,6 @@ execute at @s run function championsashes:items/dragonslayer_greatbow/arbalest/b
 function championsashes:items/armors
 
 #Nightrider Glaive
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:night_cavalry_halberd"}}]} run advancement grant @s[advancements={championsashes:func/nightrider_glaive=false}] only championsashes:func/nightrider_glaive
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} at @s[advancements={championsashes:hurt_entities=true}] run scoreboard players add @e[tag=raycast.target,predicate=championsashes:hurttime,type=!#championsashes:special_entities] frostbite_Timer 600
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} if score @s shift matches 1.. run function championsashes:items/nightrider_glaive/magicblade_phanalax
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:night_cavalry_halberd"}}} if score @s glaive_damage matches ..-1 run item replace entity @s weapon.mainhand with air
@@ -216,7 +194,6 @@ execute if score @s[tag=!loop_lightning_bolt] lightning_bolt_rain matches 0 run 
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:drakeblood_greatsword"}}} run tag @s remove needclicker
 
 #Soul of Elder
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:soul_of_nep"}}]} run advancement grant @s[advancements={championsashes:func/elder=false}] only championsashes:func/elder
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:soul_of_nep"}}} if score @s usedmedal matches 1.. run function championsashes:items/soul_of_elder/spectator
 execute as @s[tag=spectator] run function championsashes:items/soul_of_elder/noumenon
 execute as @s[tag=spectator,gamemode=!spectator] run tag @s remove spectator
@@ -263,18 +240,15 @@ execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"champ
 execute as @s[tag=estus_cancel] at @s run function championsashes:items/estus_flask/cancel
 
 #Aquamarine Dagger
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:aquamarine_dagger"}}]} run advancement grant @s[advancements={championsashes:func/aquamarine_dagger=false}] only championsashes:func/aquamarine_dagger
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:aquamarine_dagger"}}} at @s run function championsashes:items/aquamarine_dagger/crystal_blade
 
 #Antspur Rapier
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:antspur_rapier"}}]} run advancement grant @s[advancements={championsashes:func/antspur_rapier=false}] only championsashes:func/antspur_rapier
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:antspur_rapier"}}} at @s run function championsashes:items/antspur_rapier/antspur_rapier
 execute as @s[tag=bloodhound_step] at @s run function championsashes:items/antspur_rapier/bloodhound_steps
 execute if score #bloodhound_step_enter_block championsashes_Timer matches 40.. run tag @s[tag=bloodhound_step_enter_block] remove bloodhound_step_enter_block
 execute if score #bloodhound_step_enter_block championsashes_Timer matches 40.. run scoreboard players set #bloodhound_step_enter_block championsashes_Timer 0
 
 #Gundyr Halberd
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:gundyr_halberd"}}]} run advancement grant @s[advancements={championsashes:func/gundyr_halberd=false}] only championsashes:func/gundyr_halberd
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gundyr_halberd"}}} if score @s shift matches 1.. at @s run function championsashes:items/gundyr_halberd/gundyr_halberd
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gundyr_halberd"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
@@ -283,16 +257,13 @@ execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{
 execute as @s[tag=endure] at @s run function championsashes:items/caestus/caestus
 
 #Ringed Knight Paired Greatsword
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:ringed_knight_paired_greatsword_right"}},{tag:{id:"championsashes:ringed_knight_paired_greatsword_left"}}]} run advancement grant @s[advancements={championsashes:func/ringed_knight_paired_greatsword=false}] only championsashes:func/ringed_knight_paired_greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:ringed_knight_paired_greatsword_right"}}} if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:ringed_knight_paired_greatsword_left"}}]} at @s run function championsashes:items/ringed_knight_paired_greatsword/ringed_knight_paired_greatsword
 
 #Lorian Greatsword
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:lorian_greatsword"}}]} run advancement grant @s[advancements={championsashes:func/lorian_greatsword=false}] only championsashes:func/lorian_greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lorian_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/lorians_greatsword/lorians_flame
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:lorian_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
 #Gael Greatsword
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:gael_greatsword"}}]} run advancement grant @s[advancements={championsashes:func/gael_greatsword=false}] only championsashes:func/gael_greatsword
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} if score @s shift matches 1.. at @s run function championsashes:items/gaels_greatsword/blade_of_peril
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:gael_greatsword"}}} unless score @s shift matches 1.. run tag @s remove needclicker
 
@@ -325,9 +296,6 @@ execute as @e[tag=lazer_animate] at @s run function championsashes:projectiles/l
 execute as @e[tag=lazer_fading] run function championsashes:projectiles/lazer_beam/lazer_faded
 execute unless entity @e[tag=lazer_beam] run function championsashes:projectiles/lazer_beam/remove_tags
 
-#Blocks
-function championsashes:blocks/block
-
 #Phanalax
 execute as @s[tag=with_phanalax] run function championsashes:projectiles/phanalax/phanalax
 execute if entity @e[tag=phanalax0] as @e[tag=phanalax0] run function championsashes:projectiles/phanalax/rotation
@@ -342,7 +310,7 @@ execute unless data storage championsashes:player_data {SelectedItem:{tag:{id:"c
 
 #Red White Shield
 execute as @s[advancements={championsashes:parry/red_white_parry=true},tag=!parry_used] run tag @s add parry
-execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} at @s[nbt=!{ActiveEffects:[{Id:10b}]}] run effect give @s regeneration 114514 0 true
+execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} at @s[nbt=!{ActiveEffects:[{Id:10}]}] run effect give @s regeneration 114514 0 true
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:splitleaf"}}} run tag @s add infinite_true_combo
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:red_white_shield"}}} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:red_white_shield"}}]} at @s run teleport @e[tag=shield_breaker,limit=1] ^ ^ ^127
@@ -360,13 +328,10 @@ execute as @s[advancements={championsashes:parry/red_white_parry=false}] run tag
 
 #Black Knight Great Axe
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} at @s if entity @e[tag=parry_success,distance=..5] run effect give @s strength 5 4
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:black_knight_greataxe"}}]} run advancement grant @s[advancements={championsashes:func/black_knight_greataxe=false}] only championsashes:func/black_knight_greataxe
-execute as @s[advancements={championsashes:func/parry=false}] at @s if entity @e[tag=parry_success,distance=..5] run advancement grant @s only championsashes:func/parry
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} run function championsashes:items/black_knight_greataxe/stamp_upward_cut
 execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} run tag @s[tag=needclicker] remove needclicker
 
 #Murky Hand Scythe
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:murky_hand_scythe"}}]} run advancement grant @s[advancements={championsashes:func/murky_hand_scythe=false}] only championsashes:func/murky_hand_scythe
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:murky_hand_scythe"}}} run function championsashes:items/murky/murky
 execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:murky_hand_scythe"}}]} at @s unless entity @e[tag=aj.murky_hand_scythe.root,distance=..2] run function championsashes:items/murky/soul_five
 execute as @s[tag=quickstep] at @s run function championsashes:items/murky/quickstep
@@ -374,7 +339,6 @@ execute if score #quickstep_enter_block championsashes_Timer matches 20.. run ta
 execute if score #quickstep_enter_block championsashes_Timer matches 20.. run scoreboard players set #quickstep_enter_block championsashes_Timer 0
 
 #Pontiff Knight Curved Sword
-execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:pontiff_knight_curved_sword"}}]} run advancement grant @s[advancements={championsashes:func/pkcs=false}] only championsashes:func/pkcs
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:pontiff_knight_curved_sword"}}} run function championsashes:items/pkcs/pkcs
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:pontiff_knight_curved_sword"}}} if score @s pkcs_damage matches ..-1 run item replace entity @s weapon.mainhand with air
 execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:pontiff_knight_curved_sword"}}} if score @s pkcs_damage matches 465.. run scoreboard players set @s pkcs_damage -1
@@ -404,23 +368,8 @@ execute if score @s usedCE matches 1.. run scoreboard players set @s usedCE 0
 function championsashes:items/spacebar_query
 
 #NEP
-execute at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run bossbar set nep_elder players
-execute if entity @e[type=item,predicate=championsashes:misc/cheat_engine] run function championsashes:entities/drakeblood_knight/nep_elder/killed_nep
-execute if entity @e[type=item,predicate=championsashes:misc/cheat_engine] run kill @e[type=item,predicate=championsashes:misc/cheat_engine]
-#execute at @s[tag=start_fight] unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run tags add boss_killed
-#execute at @s[tag=boss_killed] if entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run tag @s remove boss_killed
-execute if data storage championsashes:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot championsashes:armor/drakeblood_helmet
-execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!hat] armor.head loot championsashes:armor/drakeblood_helmet
-execute if data storage championsashes:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run tag @e[type=wither_skeleton,tag=nep_elder] add hat
-#execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run tag @e[type=wither_skeleton,tag=nep_elder] add hat
-tag @e[tag=hat,type=wither_skeleton] remove helmet
-execute unless data storage championsashes:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot championsashes:armor/old_sorcerer_hat_nep
-execute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run loot replace entity @e[type=wither_skeleton,tag=nep_elder,tag=!helmet] armor.head loot championsashes:armor/old_sorcerer_hat_nep
-execute unless data storage championsashes:player_data {SelectedItem:{tag:{resolved:1b,author:"并非NEP"}}} run tag @e[type=wither_skeleton,tag=nep_elder] add helmet
-#xecute if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{resolved:1b,author:"并非NEP"}}]} run tag @e[type=wither_skeleton,tag=nep_elder] add helmet
-tag @e[tag=helmet,type=wither_skeleton] remove hat
-execute at @s unless entity @e[tag=nep_elder,distance=..50] run tag @s remove start_fight
-
+execute unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run bossbar set nep_elder players
+execute unless entity @e[tag=nep_elder,distance=..50] run tag @s remove start_fight
 execute as @s[predicate=championsashes:elytra_recipe] run recipe give @s championsashes:elytra_recipe
 
 #Reload Advancements
@@ -437,5 +386,3 @@ execute as @s[advancements={championsashes:estus_flask/used_estus_flask=true}] r
 execute as @s[advancements={championsashes:item_durability=true}] run advancement revoke @s only championsashes:item_durability
 execute as @s[advancements={championsashes:enter_block=true}] run advancement revoke @s only championsashes:enter_block
 execute as @s[advancements={championsashes:magic_damage=true}] run advancement revoke @s only championsashes:magic_damage
-
-#execute as @s[advancements={championsashes:func/killed_nep=false},tag=start_fight] at @s unless entity @e[type=wither_skeleton,tag=nep_elder,distance=..50] run advancement grant @s only championsashes:func/killed_nep

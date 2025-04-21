@@ -2,6 +2,9 @@ data modify storage generic:main NepSelectedItem set from entity @s HandItems[0]
 execute store result bossbar nep_elder max run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base
 execute store result bossbar nep_elder value run data get entity @s Health
 
+tag @a[gamemode=spectator,tag=nep_foe] remove nep_foe
+tag @a[gamemode=creative,tag=nep_foe] remove nep_foe
+
 #Teleporting
 execute on target at @s if entity @s[distance=10..] run scoreboard players add teleport_skill.temp championsashes_Timer 1
 execute if score teleport_skill.temp championsashes_Timer matches 300.. on target at @s run teleport @s ~ ~ ~

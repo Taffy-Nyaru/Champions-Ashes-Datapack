@@ -1,8 +1,7 @@
-execute as @e[tag=clicker] store result score @s rClick run data get entity @s interaction.timestamp
-execute as @e[tag=clicker] store result score @s lClick run data get entity @s attack.timestamp
-execute as @e[tag=clicker,scores={rClick=1..}] run data modify entity @s interaction.timestamp set value 0
-#execute as @e[tag=clicker] run data modify entity @s attack.timestamp set value 0
-execute as @e[tag=clicker,scores={lClick=1..}] run data modify entity @s attack.timestamp set value 0
+execute as @e[type=interaction,distance=..10,tag=clicker] store result score @s rClick run data get entity @s interaction.timestamp
+execute as @e[type=interaction,distance=..10,tag=clicker] store result score @s lClick run data get entity @s attack.timestamp
+execute as @e[type=interaction,distance=..10,tag=clicker,scores={rClick=1..}] run data modify entity @s interaction.timestamp set value 0
+execute as @e[type=interaction,distance=..10,tag=clicker,scores={lClick=1..}] run data modify entity @s attack.timestamp set value 0
 
 execute as @e[type=interaction] store result score @s block_rClick run data get entity @s interaction.timestamp
 execute as @e[type=interaction] store result score @s block_lClick run data get entity @s attack.timestamp

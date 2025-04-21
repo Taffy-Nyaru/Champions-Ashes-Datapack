@@ -1,22 +1,12 @@
-#Warden
-function championsashes:entities/warden/powers
+#Entity Stiff
+execute at @a as @e[tag=stiff,type=!#championsashes:special_entities,distance=..30] run function championsashes:items/stiff
 
-execute at @a as @e[tag=stiff,distance=..128] run function championsashes:items/stiff
-
-#Explosions
-execute as @e[tag=bomb,predicate=championsashes:misc/bomb_creeper] run data modify entity @s ignited set value 1b
-execute as @e[tag=bomb] at @s if entity @e[team=!friendly,type=!#championsashes:special_entities,type=!creeper,distance=..10] run damage @s[distance=..10] 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
-execute as @e[tag=690bomber] at @s if entity @e[team=!friendly,type=!#championsashes:special_entities,type=!creeper,type=!player,distance=..10] run damage @s[distance=..10] 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
+#Save the items and xp orbs in special lightning bolts
+execute at @e[type=lightning_bolt,tag=Thunder,distance=..5,limit=10] as @e[type=item,distance=..5] run data modify entity @s Invulnerable set value 1b
+execute at @e[type=lightning_bolt,tag=Thunder,distance=..5,limit=10] as @e[type=experience_orb,distance=..5] run data modify entity @s Invulnerable set value 1b
 
 #Entity effects(Extreme Optimized)
 execute at @a at @e[type=!#championsashes:special_entities,distance=..50,predicate=!championsashes:entity_using_item/no_item] as @e[type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] on attacker run function championsashes:entities/using_items/using_item
-
-#Digestive Juice
-execute as @e[predicate=championsashes:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function championsashes:items/digestive_juice
-execute as @e[predicate=championsashes:misc/digestive_juice] at @s if block ~ ~-1 ~ minecraft:mycelium run function championsashes:items/digestive_juice
-
-#Pet
-execute if entity fffe1e4a-0000-c020-0000-63b1ffffb28a as fffe1e4a-0000-c020-0000-63b1ffffb28a at @s run data modify entity @s Owner set from entity @a[limit=1,sort=nearest,distance=..2,predicate=championsashes:using_item/cat_medal] UUID
 
 #Drakeblood Knight
 execute as @e[tag=drakeblood_knight] at @s run function championsashes:entities/drakeblood_knight/powers
@@ -64,11 +54,11 @@ execute as @e[type=marker,tag=void_marker,scores={void_eye_timer=1..}] run funct
 
 tag @a[tag=!ally] add ally
 tag @e[tag=pearl,tag=!ally] add ally
-tag @e[tag=WARDEN,tag=!ally] add ally
+tag 0001bf52-001d-4b42-0000-001d0000005c add ally
 tag @e[tag=guards,tag=!ally] add ally
 tag @e[tag=night_cavalry,tag=!ally] add ally
 tag @e[tag=charmed,tag=!ally] add ally
 
-execute unless entity @e[tag=shield_breaker] at @a[limit=1] run summon piglin_brute ~ ~-10 ~ {ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:1b,ShowIcon:0b}],IsImmuneToZombification:1b,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Tags:["shield_breaker"],HandItems:[{id:"minecraft:netherite_axe",tag:{Damage:0},Count:1}],HandDropChances:[0f]}
+execute unless entity @e[tag=shield_breaker] at @a[limit=1] run summon piglin_brute ~ ~-10 ~ {ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:1b,ShowIcon:0b}],IsImmuneToZombification:1b,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Tags:["shield_breaker"],HandItems:[{id:"minecraft:netherite_axe",tag:{Damage:0},Count:1},{}],HandDropChances:[0f,0f]}
 execute as @e[type=marker,tag=gundyr_hitbox] at @s facing entity @a[limit=1,sort=nearest,tag=gundyr_halberd] feet positioned as @s run tp @s ^ ^ ^-0.4 ~ ~
 execute as @a[advancements={championsashes:hurt_players=true}] run advancement revoke @s only championsashes:hurt_players
