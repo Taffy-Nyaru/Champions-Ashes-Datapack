@@ -386,3 +386,4 @@ execute as @s[advancements={championsashes:estus_flask/used_estus_flask=true}] r
 execute as @s[advancements={championsashes:item_durability=true}] run advancement revoke @s only championsashes:item_durability
 execute as @s[advancements={championsashes:enter_block=true}] run advancement revoke @s only championsashes:enter_block
 execute as @s[advancements={championsashes:magic_damage=true}] run advancement revoke @s only championsashes:magic_damage
+execute as @s[advancements={championsashes:hurt_players=true}] run advancement revoke @s only championsashes:hurt_players

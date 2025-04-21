@@ -4,7 +4,6 @@
 		"animated_java:alumopper/zzzzzzzz/tick",
 		"animated_java:gravity_orb_projectile/zzzzzzzz/tick",
 		"animated_java:meteorite_shockwave/zzzzzzzz/tick",
-		"animated_java:ancient_lightning_strike/zzzzzzzz/tick",
 		"animated_java:ringed_nightstar/zzzzzzzz/tick",
 		"animated_java:gravity_orb/zzzzzzzz/tick",
 		"animated_java:thunder_bullet/zzzzzzzz/tick",
@@ -49,6 +48,7 @@
 		"animated_java:void_slash/zzzzzzzz/tick",
 		"animated_java:eletric_shield/zzzzzzzz/tick",
 		"animated_java:gravity_lightning_bolt/zzzzzzzz/tick",
-		"animated_java:field_extension/zzzzzzzz/tick"
+		"animated_java:field_extension/zzzzzzzz/tick",
+		"animated_java:ancient_lightning_strike/zzzzzzzz/tick"
 	]
 }

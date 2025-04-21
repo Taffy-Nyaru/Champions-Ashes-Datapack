@@ -1,8 +1,11 @@
 function championsashes:tick20
 
 #Tick schedule
+scoreboard objectives add ca.tick2_schedule dummy
 scoreboard objectives add ca.tick5_schedule dummy
 scoreboard objectives add ca.tick10_schedule dummy
+scoreboard objectives add ca.tick15_schedule dummy
+scoreboard objectives add ca.tick12_schedule dummy
 
 #Player related
 scoreboard objectives add space minecraft.custom:minecraft.jump
@@ -100,7 +103,6 @@ scoreboard objectives add scarlet_rot_delay dummy
 scoreboard objectives add scarlet_rot_damage dummy
 scoreboard objectives add death_blight_Timer dummy
 scoreboard objectives add death_blight_delay dummy
-scoreboard objectives add FireTick dummy
 
 #Phanalax
 scoreboard objectives add rotation dummy
@@ -269,10 +271,9 @@ data modify storage generic:main meteorite_staff_igniteCMD set value 1390098
 data modify storage generic:main murkyEnchantment set value [{id:"sharpness",lvl:5s}]
 data modify storage generic:main warpedstick_action set value 0
 data modify storage generic:main moonlight_temp set value {angle:200,axis:[1.0,0.0,0.0]}
-#data modify storage generic:main arrow_Motion set value [0.0,-0.5,0.0]
 data modify storage generic:main lazer_beam_length set value [0.25f, 1.0f, 0.25f]
 data modify storage generic:main lazer_beam_translation set value [0.0f, 1.0f, 0.0f]
 advancement revoke @a only championsashes:hurt_entities
 summon marker 0 0 0 {UUID:[I;-479181779,-1024310123,-1662299978,336694543]}
-#summon zombified_piglin 0 0 0 {ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:0b}],NoAI:1b,Invulnerable:1b,UUID:[I;1230931223,-1814085318,-1621598234,1851460226]}
+summon piglin_brute ~ ~-10 ~ {ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:1b,ShowIcon:0b}],IsImmuneToZombification:1b,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Tags:["shield_breaker"],HandItems:[{id:"minecraft:netherite_axe",tag:{Damage:0},Count:1},{}],HandDropChances:[0f,0f]}
 forceload add 0 0 0 0

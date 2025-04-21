@@ -1,11 +1,3 @@
-#Advancements
-execute as @a run function championsashes:acquire_advancements
-
-#Initialize Entity Params
-execute at @a[predicate=championsashes:using_item/antspur_rapier] as @e[type=!#championsashes:special_entities,distance=..20,tag=!got_max_health] run function championsashes:items/zweihander/black_blade/got_max_health
-execute at @a[predicate=championsashes:using_item/black_blade] as @e[type=!#championsashes:special_entities,distance=..20,tag=!got_max_health] run function championsashes:items/zweihander/black_blade/got_max_health
-execute at @a as @e[scores={onFire=1..},distance=..15] store result score @s onFire run data get entity @s Fire 1
-
 #Effects Timer For players
 execute as @a[scores={bleeding_Timer=1..}] run function championsashes:effects/bleeding/bleeding_time
 execute as @a[scores={frostbite_Timer=1..}] run function championsashes:effects/frostbite/frostbite_time

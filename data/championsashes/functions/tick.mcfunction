@@ -1,8 +1,11 @@
 execute at @a run function championsashes:team
 #execute store result score time.temp time run time query daytime
 
+scoreboard players add #2ticks ca.tick2_schedule 1
 scoreboard players add #5ticks ca.tick5_schedule 1
 scoreboard players add #10ticks ca.tick10_schedule 1
+scoreboard players add #12ticks ca.tick12_schedule 1
+scoreboard players add #15ticks ca.tick15_schedule 1
 
 #TODO Optimize interaction clicker
 #If #interaction < #player then summon #player of interactions, if #players > #interaction then kill interaction
@@ -26,8 +29,11 @@ execute as @a at @s run function championsashes:player_tick
 execute at @a run function championsashes:entity_tick
 
 #Alloc Ticks
+execute as @a at @s if score #5ticks ca.tick2_schedule matches 2.. run function championsashes:tick2
 execute as @a at @s if score #5ticks ca.tick5_schedule matches 5.. run function championsashes:tick5
 execute as @a at @s if score #10ticks ca.tick10_schedule matches 10.. run function championsashes:tick10
+execute as @a at @s if score #12ticks ca.tick12_schedule matches 12.. run function championsashes:tick12
+execute as @a at @s if score #15ticks ca.tick15_schedule matches 15.. run function championsashes:tick15
 
 #Kill interaction when player leaves
 execute at @a as @e[distance=..10,tag=clicker,tag=!related] if score @s killtime matches 0 run kill @s

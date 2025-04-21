@@ -14,5 +14,7 @@ execute if predicate championsashes:got_item/nep_book run loot replace entity @e
 execute unless predicate championsashes:using_item/nep_book run tag @e[limit=1,distance=..25,type=wither_skeleton,tag=nep_elder] add helmet
 tag @e[tag=helmet,limit=1,distance=..25,type=wither_skeleton] remove hat
 
+#Animation air detect
+execute if entity @s[tag=air_detect] run function championsashes:animated_effects/air_detect
 
 scoreboard players set #10ticks ca.tick10_schedule 0
