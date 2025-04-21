@@ -1,20 +1,16 @@
 #Entity Stiff
-execute at @a as @e[tag=stiff,type=!#championsashes:special_entities,distance=..30] run function championsashes:items/stiff
+execute as @e[tag=stiff,type=!#championsashes:special_entities,distance=..30] run function championsashes:items/stiff
 
 #Save the items and xp orbs in special lightning bolts
 execute at @e[type=lightning_bolt,tag=Thunder,distance=..5,limit=10] as @e[type=item,distance=..5] run data modify entity @s Invulnerable set value 1b
 execute at @e[type=lightning_bolt,tag=Thunder,distance=..5,limit=10] as @e[type=experience_orb,distance=..5] run data modify entity @s Invulnerable set value 1b
 
 #Entity effects(Extreme Optimized)
-execute at @a at @e[type=!#championsashes:special_entities,distance=..50,predicate=!championsashes:entity_using_item/no_item] as @e[type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] on attacker run function championsashes:entities/using_items/using_item
+execute at @e[type=!#championsashes:special_entities,distance=..50,predicate=!championsashes:entity_using_item/no_item] as @e[type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] on attacker run function championsashes:entities/using_items/using_item
 
 #Drakeblood Knight
-execute as @e[tag=drakeblood_knight] at @s run function championsashes:entities/drakeblood_knight/powers
-execute as @e[tag=nep_elder] at @s run function championsashes:entities/drakeblood_knight/nep_elder/powers
-execute as @e[tag=entity_with_drakeblood_phanalax] at @s run function championsashes:entities/drakeblood_knight/entity_phanalax
-execute as @e[tag=drakeblood_phanalax0] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
-execute as @e[tag=drakeblood_phanalax1] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
-execute as @e[tag=drakeblood_phanalax2] at @s unless entity @e[tag=entity_with_drakeblood_phanalax,distance=..10] run kill @s
+execute as @e[distance=..25,type=wither_skeleton,tag=drakeblood_knight] at @s run function championsashes:entities/drakeblood_knight/powers
+execute as @e[distance=..25,type=wither_skeleton,tag=nep_elder] at @s run function championsashes:entities/drakeblood_knight/nep_elder/powers
 execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax0,distance=..10] run function championsashes:projectiles/phanalax/rotation
 execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax1,distance=..10] run function championsashes:projectiles/phanalax/rotation
 execute at @e[tag=entity_with_drakeblood_phanalax] as @e[tag=drakeblood_phanalax2,distance=..10] run function championsashes:projectiles/phanalax/rotation

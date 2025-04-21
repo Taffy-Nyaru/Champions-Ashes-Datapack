@@ -23,7 +23,7 @@ scoreboard players operation last_player_count player_count = now_player_count p
 execute as @a at @s run function championsashes:player_tick
 
 #Entity Tick
-function championsashes:entity_tick
+execute at @a run function championsashes:entity_tick
 
 #Alloc Ticks
 execute as @a at @s if score #5ticks ca.tick5_schedule matches 5.. run function championsashes:tick5
