@@ -3,6 +3,6 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{Inventory:[{tag:{id:1001}}]}"
+      "nbt": "{Inventory:[{tag:{itemId:1001}}]}"
     }
 }

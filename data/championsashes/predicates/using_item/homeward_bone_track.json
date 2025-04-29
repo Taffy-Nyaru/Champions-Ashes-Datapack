@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{SelectedItem:{tag:{LodestoneTracked:1b,id:1026}}}"
+      "nbt": "{SelectedItem:{tag:{LodestoneTracked:1b,itemId:1026}}}"
     }
   }
   

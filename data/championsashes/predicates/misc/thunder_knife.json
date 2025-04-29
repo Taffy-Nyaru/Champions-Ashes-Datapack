@@ -3,6 +3,6 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:snowball",
-      "nbt": "{Item:{tag:{id:1011}}}"
+      "nbt": "{Item:{tag:{itemId:1011}}}"
     }
 }  
