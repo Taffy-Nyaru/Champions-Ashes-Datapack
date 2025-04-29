@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:estus_flask\",display: {Name: '[{\"translate\":\"item.championsashes.estus_flask\",\"color\":\"#fee423\",\"italic\":false}]'},CustomModelData:1390066}"
+                "tag": "{itemdId:1019,id:\"championsashes:estus_flask\",display: {Name: '[{\"translate\":\"item.championsashes.estus_flask\",\"color\":\"#fee423\",\"italic\":false}]'},CustomModelData:1390066}"
               }
             ]
           }

@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:ender_ring\",display: {Name: '[{\"translate\":\"item.championsashes.ender_ring\",\"italic\":false}]'},CustomModelData:1390039}"
+                "tag": "{itemId:1018,id:\"championsashes:ender_ring\",display: {Name: '[{\"translate\":\"item.championsashes.ender_ring\",\"italic\":false}]'},CustomModelData:1390039}"
               }
             ]
           }

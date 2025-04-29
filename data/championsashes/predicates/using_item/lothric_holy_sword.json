@@ -1,9 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:player",
-      "nbt": "{SelectedItem:{tag:{id:\"championsashes:lothric_holy_sword\"}}}"
-    }
-  }
-  

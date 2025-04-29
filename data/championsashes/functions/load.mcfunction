@@ -1,30 +1,37 @@
-function championsashes:tick20
-
 #Tick schedule
 scoreboard objectives add ca.tick2_schedule dummy
+scoreboard objectives add ca.tick3_schedule dummy
 scoreboard objectives add ca.tick5_schedule dummy
+scoreboard objectives add ca.tick6_schedule dummy
+scoreboard objectives add ca.tick4_schedule dummy
 scoreboard objectives add ca.tick10_schedule dummy
 scoreboard objectives add ca.tick15_schedule dummy
 scoreboard objectives add ca.tick12_schedule dummy
+scoreboard objectives add ca.tick20_schedule dummy
 
 #Player related
+scoreboard objectives add ca.item.id_selecter_mainhand dummy
+scoreboard objectives add ca.item.id_selecter_offhand dummy
+scoreboard objectives add ca.item.id_selecter_helmet dummy
+scoreboard objectives add ca.item.id_selecter_chestplate dummy
+scoreboard objectives add ca.item.id_selecter_leggings dummy
+scoreboard objectives add ca.item.id_selecter_boots dummy
 scoreboard objectives add space minecraft.custom:minecraft.jump
 scoreboard objectives add shift minecraft.custom:minecraft.sneak_time
-scoreboard objectives add anger dummy
-scoreboard objectives add temp.0 dummy
-scoreboard objectives add rClick dummy
-scoreboard objectives add lClick dummy
-scoreboard objectives add raycastvalue dummy
-scoreboard objectives add shadow_pearl_playerHotbar dummy
-scoreboard objectives add ender_ring_playerHotbar dummy
-scoreboard objectives add branch_playerHotbar dummy
-scoreboard objectives add player_rotation dummy
-scoreboard objectives add stiff_time dummy
-scoreboard objectives add custom_stiff_time dummy
-scoreboard objectives add itemCount dummy
+scoreboard objectives add ca.interaction_rClick dummy
+scoreboard objectives add ca.interaction_lClick dummy
+scoreboard objectives add ca.raycast_value dummy
+scoreboard objectives add ca.shadow_pearl_playerHotbar dummy
+scoreboard objectives add ca.ender_ring_playerHotbar dummy
+scoreboard objectives add ca.branch_playerHotbar dummy
+scoreboard objectives add ca.entity.stiff_time dummy
+scoreboard objectives add custom_ca.entity.stiff_time dummy
+scoreboard objectives add ca.itemCount dummy
 scoreboard objectives add euclidean_positionX dummy
 scoreboard objectives add euclidean_positionY dummy
 scoreboard objectives add euclidean_positionZ dummy
+
+scoreboard objectives add ca.warden.anger dummy
 
 #Using Items
 scoreboard objectives add usedAnvil minecraft.custom:minecraft.interact_with_anvil
@@ -38,6 +45,7 @@ scoreboard objectives add usedBone minecraft.used:minecraft.compass
 scoreboard objectives add usedFirework minecraft.used:minecraft.firework_rocket
 scoreboard objectives add usedSnowball minecraft.used:minecraft.snowball
 scoreboard objectives add player_death minecraft.custom:minecraft.deaths
+scoreboard objectives add ateberries minecraft.used:minecraft.sweet_berries
 
 #scoreboard objectives add uuidplayer dummy
 #scoreboard objectives add uuidinteraction dummy
@@ -49,8 +57,8 @@ scoreboard objectives add interaction_uuid1 dummy
 scoreboard objectives add interaction_uuid2 dummy
 scoreboard objectives add interaction_uuid3 dummy
 scoreboard objectives add entityCount dummy
-scoreboard objectives add block_rClick dummy
-scoreboard objectives add block_lClick dummy
+scoreboard objectives add block_ca.interaction_rClick dummy
+scoreboard objectives add block_ca.interaction_lClick dummy
 
 #Destined death of zweihander
 scoreboard objectives add sworddamage dummy
@@ -61,7 +69,6 @@ scoreboard objectives add sum.temp dummy
 #player count
 scoreboard objectives add player_count dummy
 scoreboard objectives add falldistance dummy
-scoreboard objectives add dimension_changed dummy
 scoreboard objectives add buffer.temp dummy
 scoreboard objectives add related dummy
 
@@ -126,9 +133,6 @@ scoreboard objectives add kill.temp1 dummy
 scoreboard objectives add kill.temp2 dummy
 scoreboard objectives add arrow_rain.temp dummy
 
-#NightCavalry Halberd
-scoreboard objectives add glaive_damage dummy
-
 #Spectator mode
 scoreboard objectives add noumenon_uuid0 dummy
 scoreboard objectives add noumenon_uuid1 dummy
@@ -167,7 +171,6 @@ scoreboard objectives add quickstep_delay dummy
 
 #Pontiff Knight Curved Sword
 scoreboard objectives add skill_time dummy
-scoreboard objectives add pkcs_damage dummy
 
 #Upgrade Table
 scoreboard objectives add rotation_time dummy
@@ -177,9 +180,8 @@ scoreboard objectives add xpLevel dummy
 scoreboard objectives add charm_time dummy
 
 #Splitleaf
-scoreboard objectives add splitleaf_damage dummy
 scoreboard objectives add splitleaf_infiniteTimer dummy
-scoreboard objectives add splitleaf_stiff_time dummy
+scoreboard objectives add ca.items.splitleaf_stiff_time dummy
 
 #Estus Flask
 scoreboard objectives add estus_cancel_tick dummy
@@ -214,6 +216,9 @@ scoreboard objectives add void_eye_timer dummy
 #Gravity Lightning Bolt
 scoreboard objectives add gravity_lightning dummy
 
+#Soul of Elder
+scoreboard objectives add ca.players.spectating_iron_golem dummy
+
 #Snowball UUID detect
 scoreboard objectives add snowball_uuid0 dummy
 scoreboard objectives add snowball_uuid1 dummy
@@ -226,7 +231,7 @@ scoreboard objectives add championsashesValue dummy
 scoreboard objectives add championsashes_return dummy
 scoreboard objectives add onFire dummy
 scoreboard players set count entityCount 0
-scoreboard players set #raycast.max raycastvalue 100
+scoreboard players set #raycast.max ca.raycast_value 100
 scoreboard players set #20 championsashesValue 20
 scoreboard players set #60 championsashesValue 60
 scoreboard players set #12 championsashesValue 12
@@ -239,6 +244,9 @@ execute as @a unless score @s steelCount matches 1.. run scoreboard players set 
 
 team add friendly
 team modify friendly friendlyFire false
+
+data modify storage generic:main usingItem0 set value 0
+data modify storage generic:main usingItem1 set value 1
 
 data modify storage generic:main repaircost set value 114514
 data modify storage generic:main medalTag set value "not_overwritable"
@@ -275,5 +283,5 @@ data modify storage generic:main lazer_beam_length set value [0.25f, 1.0f, 0.25f
 data modify storage generic:main lazer_beam_translation set value [0.0f, 1.0f, 0.0f]
 advancement revoke @a only championsashes:hurt_entities
 summon marker 0 0 0 {UUID:[I;-479181779,-1024310123,-1662299978,336694543]}
-summon piglin_brute ~ ~-10 ~ {ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:1b,ShowIcon:0b}],IsImmuneToZombification:1b,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Tags:["shield_breaker"],HandItems:[{id:"minecraft:netherite_axe",tag:{Damage:0},Count:1},{}],HandDropChances:[0f,0f]}
+summon piglin_brute 0 -1024 0 {ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],ActiveEffects:[{Id:14,Duration:-1,ShowParticles:0b,Amplifier:1b,ShowIcon:0b}],IsImmuneToZombification:1b,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Tags:["shield_breaker"],HandItems:[{id:"minecraft:netherite_axe",tag:{Damage:0},Count:1},{}],HandDropChances:[0f,0f]}
 forceload add 0 0 0 0

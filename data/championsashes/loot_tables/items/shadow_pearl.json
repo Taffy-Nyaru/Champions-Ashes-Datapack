@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:shadow_pearl\",display: {Name: '[{\"translate\":\"item.championsashes.shadow_pearl\",\"italic\":false}]'},CustomModelData:1390015}"
+              "tag": "{itemId:1046,id:\"championsashes:shadow_pearl\",display: {Name: '[{\"translate\":\"item.championsashes.shadow_pearl\",\"italic\":false}]'},CustomModelData:1390015}"
             }
           ]
         }

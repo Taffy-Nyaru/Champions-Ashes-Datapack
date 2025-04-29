@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:obsidian_lamina\",display: {Name: '[{\"translate\":\"item.championsashes.obsidian_lamina\",\"italic\":false}]'},HideFlags:32,AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: -1.25d, Operation: 0, UUID: [I;2073619950,1254182825,-1885242875,-1896682705]},{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 12d, Operation: 0, UUID:[I;536892551,2093632430,-2137901413,-346757819]}],CustomModelData:1390105}"
+                "tag": "{itemId:1036,id:\"championsashes:obsidian_lamina\",display: {Name: '[{\"translate\":\"item.championsashes.obsidian_lamina\",\"italic\":false}]'},HideFlags:32,AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: -1.75d, Operation: 0, UUID: [I;2073619950,1254182825,-1885242875,-1896682705]},{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 12d, Operation: 0, UUID:[I;536892551,2093632430,-2137901413,-346757819]}],CustomModelData:1390105}"
               }
             ]
           }

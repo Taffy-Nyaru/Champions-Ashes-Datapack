@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:eternal_crystal\",display: {Name: '[{\"translate\":\"item.championsashes.eternal_crystal\",\"color\":\"#33ffcc\",\"italic\":false}]'},HideFlags:1b,Enchantments:[{id:\"minecraft:looting\",lvl:10}],CustomModelData:1390012}"
+              "tag": "{itemId:1020,id:\"championsashes:eternal_crystal\",display: {Name: '[{\"translate\":\"item.championsashes.eternal_crystal\",\"color\":\"#33ffcc\",\"italic\":false}]'},HideFlags:1b,Enchantments:[{id:\"minecraft:looting\",lvl:10}],CustomModelData:1390012}"
             }
           ]
         }

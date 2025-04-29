@@ -1,2 +1,2 @@
-execute at @e[distance=..6,type=!#championsashes:special_entities,tag=!ancient_lightning_spear_user] run summon lightning_bolt ~ ~ ~ {Tags:["Thunder"]}
-execute as @e[distance=..6,type=!#championsashes:special_entities,tag=!ancient_lightning_spear_user] run damage @s 60 minecraft:lightning_bolt by @a[limit=1,sort=nearest]
+execute as @e[distance=..8,type=!#championsashes:special_entities,tag=!ancient_lightning_spear_user] run damage @s 60 minecraft:lightning_bolt by @a[limit=1,sort=nearest]
+execute at @e[distance=..8,type=!#championsashes:special_entities,tag=!ancient_lightning_spear_user] run summon lightning_bolt ~ ~ ~ {Tags:["Thunder"]}

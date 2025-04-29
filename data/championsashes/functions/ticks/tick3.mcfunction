@@ -1,0 +1,5 @@
+#Animations
+function championsashes:animated_effects/animation_effects_handle/animated_effects0
+function championsashes:animated_effects/animation_effects_handle/animated_effects1
+
+scoreboard players set #3ticks ca.tick3_schedule 0

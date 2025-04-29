@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:death_blight_knife\",display: {Name: '[{\"translate\":\"item.championsashes.death_blight_knife\",\"italic\":false}]'},CustomModelData:1390102}"
+                "tag": "{itemId:1012,id:\"championsashes:death_blight_knife\",display: {Name: '[{\"translate\":\"item.championsashes.death_blight_knife\",\"italic\":false}]'},CustomModelData:1390102}"
               }
             ]
           }

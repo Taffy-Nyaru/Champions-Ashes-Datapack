@@ -1,0 +1,3 @@
+execute if entity @s[tag=aj.gravity_thrust.locator_origin.gravity_thrust_locator1] at @s on origin run tp @s ^1.39732 ^0.83615 ^4.45818 ~161.32868 ~77.71503
+execute if entity @s[tag=aj.gravity_thrust.locator_origin.gravity_thrust_locator2] at @s on origin run tp @s ^2.91269 ^0.61813 ^5.00291 ~161.32868 ~77.71503
+execute if entity @s[tag=aj.gravity_thrust.locator_origin.player_camera] at @s on origin run tp @s ^-0.28587 ^-0.41565 ^3.21344 ~-176.46035 ~-11.00774

@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:bomber\",display: {Name: '[{\"translate\":\"item.championsashes.bomber\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"chest\", AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 5d, Operation: 0, UUID: [I;92763756, -2850677, -2309511, 741043401]}], Unbreakable: true}"
+              "tag": "{id:30001,display: {Name: '[{\"translate\":\"item.championsashes.bomber\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"chest\", AttributeName: \"generic.armor\", Name: \"generic.armor\", Amount: 5d, Operation: 0, UUID: [I;92763756, -2850677, -2309511, 741043401]}], Unbreakable: true}"
             }
           ]
         }

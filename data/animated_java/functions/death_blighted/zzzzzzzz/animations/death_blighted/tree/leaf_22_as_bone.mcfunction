@@ -1,2 +1,2 @@
-execute if entity @s[tag=aj.death_blighted.locator_origin.ride] at @s on origin run tp @s ^-0.42867 ^1.62294 ^0.42867 ~0 ~0
+execute if entity @s[tag=aj.death_blighted.locator_origin.ride] at @s on origin run tp @s ^-0.12058 ^0.07728 ^0.08977 ~0 ~0
 execute if entity @s[tag=aj.death_blighted.bone.death_blighted] run data modify entity @s {} merge value {transformation:[-2.464660030052592f,0f,3.0183380167903263e-16f,0.18750000000000003f,0f,3.0913129226145757f,0f,0f,-3.0183380167903263e-16f,0f,-2.464660030052592f,-0.18749999999999997f,0f,0f,0f,1f],start_interpolation:0}

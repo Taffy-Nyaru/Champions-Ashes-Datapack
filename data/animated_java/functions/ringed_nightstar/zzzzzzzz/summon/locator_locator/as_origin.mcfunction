@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.ringed_nightstar.locator","aj.ringed_nightstar.locator.locator","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ringed_nightstar\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"locator\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.ringed_nightstar.locator.locator,tag=aj.new,limit=1,distance=..1] run function animated_java:ringed_nightstar/zzzzzzzz/summon/locator_locator/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

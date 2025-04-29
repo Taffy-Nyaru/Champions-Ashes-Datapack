@@ -1,4 +1,3 @@
-
 tag @s[tag=got_gamemode] remove got_gamemode
 #Instant Kill
 execute at @s[advancements={championsashes:hurt_entities=true}] run kill @e[limit=1,distance=..6,tag=raycast.target]

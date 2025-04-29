@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{id:\"championsashes:homeward_bone\",display: {Name: '[{\"translate\":\"item.championsashes.homeward_bone\",\"italic\":false}]'},CustomModelData:1390038}"
+              "tag": "{itemId:1026,id:\"championsashes:homeward_bone\",display: {Name: '[{\"translate\":\"item.championsashes.homeward_bone\",\"italic\":false}]'},CustomModelData:1390038}"
             }
           ]
         }

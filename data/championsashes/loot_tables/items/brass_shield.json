@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:brass_shield\",display: {Name: '[{\"translate\":\"item.championsashes.brass_shield\",\"italic\":false}]'},CustomModelData:1390050}"
+              "tag": "{itemId:1007,id:\"championsashes:brass_shield\",display: {Name: '[{\"translate\":\"item.championsashes.brass_shield\",\"italic\":false}]'},CustomModelData:1390050}"
             }
           ]
         }

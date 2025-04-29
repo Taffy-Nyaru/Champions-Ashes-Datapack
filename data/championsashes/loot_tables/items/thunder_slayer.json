@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:thunder_slayer\",display: {Name: '[{\"translate\":\"item.championsashes.thunder_slayer\",\"italic\":false}]'},CustomModelData:1390093}"
+                "tag": "{itemId:1054,id:\"championsashes:thunder_slayer\",display: {Name: '[{\"translate\":\"item.championsashes.thunder_slayer\",\"italic\":false}]'},CustomModelData:1390093}"
               }
             ]
           }

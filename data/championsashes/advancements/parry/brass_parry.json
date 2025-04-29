@@ -8,8 +8,7 @@
           "items": [
             "minecraft:shield"
           ],
-          "count": 1,
-          "nbt": "{id:\"championsashes:brass_shield\"}"
+          "nbt": "{id:1007}"
         }
       }
     }

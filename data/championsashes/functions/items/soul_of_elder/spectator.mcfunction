@@ -1,5 +1,5 @@
 item modify entity @s weapon.mainhand championsashes:soul_of_elder
-execute at @s run summon iron_golem ~ ~ ~ {NoAI:1b,Tags:["noumenon"]}
+summon iron_golem ~ ~ ~ {NoAI:1b,Tags:["noumenon"]}
 execute store result score @s gamemode run data get entity @s playerGameType
 gamemode spectator @s
 tag @s[gamemode=spectator] add spectator

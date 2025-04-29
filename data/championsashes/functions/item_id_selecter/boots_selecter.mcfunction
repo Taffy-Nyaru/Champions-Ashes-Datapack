@@ -1,0 +1,1 @@
+execute if score @s ca.item.id_selecter_boots matches 50000 run function championsashes:items/armor/witherite_boots

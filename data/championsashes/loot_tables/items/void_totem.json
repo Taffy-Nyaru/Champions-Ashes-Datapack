@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:void_totem\",display: {Name: '[{\"translate\":\"item.championsashes.void_totem\",\"color\":\"#9933ff\",\"italic\":false}]'},CustomModelData:1380016,AttributeModifiers: [{Slot: \"offhand\", AttributeName: \"generic.luck\", Name: \"generic.luck\", Amount: 1d, Operation: 0, UUID: [I; 1848057416, 957342485, 89894005, -8600107]}], HideFlags: 1b, Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
+              "tag": "{itemId:1047,id:\"championsashes:void_totem\",display: {Name: '[{\"translate\":\"item.championsashes.void_totem\",\"color\":\"#9933ff\",\"italic\":false}]'},CustomModelData:1380016,AttributeModifiers: [{Slot: \"offhand\", AttributeName: \"generic.luck\", Name: \"generic.luck\", Amount: 1d, Operation: 0, UUID: [I; 1848057416, 957342485, 89894005, -8600107]}], HideFlags: 1b, Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
             }
           ]
         }

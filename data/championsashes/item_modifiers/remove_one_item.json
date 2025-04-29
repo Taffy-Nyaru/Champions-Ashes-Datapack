@@ -6,6 +6,6 @@
           "type": "context",
           "target": "this"
       },
-      "score": "itemCount"
+      "score": "ca.itemCount"
     }
 }

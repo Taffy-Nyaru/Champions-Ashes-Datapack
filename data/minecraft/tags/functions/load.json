@@ -7,7 +7,6 @@
 		"animated_java:alumopper/zzzzzzzz/load",
 		"animated_java:gravity_orb_projectile/zzzzzzzz/load",
 		"animated_java:meteorite_shockwave/zzzzzzzz/load",
-		"animated_java:ringed_nightstar/zzzzzzzz/load",
 		"animated_java:gravity_orb/zzzzzzzz/load",
 		"animated_java:thunder_bullet/zzzzzzzz/load",
 		"animated_java:shadow_golem/zzzzzzzz/load",
@@ -19,7 +18,6 @@
 		"animated_java:starscaller/zzzzzzzz/load",
 		"animated_java:gravity_blackhole/zzzzzzzz/load",
 		"animated_java:crystal_blade/zzzzzzzz/load",
-		"animated_java:death_blighted/zzzzzzzz/load",
 		"animated_java:wave_of_destruction/zzzzzzzz/load",
 		"animated_java:dimension_slash/zzzzzzzz/load",
 		"animated_java:champions_charge/zzzzzzzz/load",
@@ -34,14 +32,11 @@
 		"animated_java:carian_grandeur/zzzzzzzz/load",
 		"animated_java:chainsaw/zzzzzzzz/load",
 		"animated_java:bullet_generator/zzzzzzzz/load",
-		"animated_java:gravity_thrust/zzzzzzzz/load",
 		"animated_java:write/zzzzzzzz/load",
 		"animated_java:splitleaf_infinite/zzzzzzzz/load",
 		"animated_java:rkss_cancel/zzzzzzzz/load",
 		"animated_java:f8fq/zzzzzzzz/load",
 		"animated_java:ice_crystal/zzzzzzzz/load",
-		"animated_java:destined_death/zzzzzzzz/load",
-		"animated_java:zamor_ice_storm/zzzzzzzz/load",
 		"animated_java:purple_fire/zzzzzzzz/load",
 		"animated_java:anchor_vfx/zzzzzzzz/load",
 		"animated_java:gravity_impaler/zzzzzzzz/load",
@@ -52,6 +47,11 @@
 		"animated_java:eletric_shield/zzzzzzzz/load",
 		"animated_java:gravity_lightning_bolt/zzzzzzzz/load",
 		"animated_java:field_extension/zzzzzzzz/load",
-		"animated_java:ancient_lightning_strike/zzzzzzzz/load"
+		"animated_java:ancient_lightning_strike/zzzzzzzz/load",
+		"animated_java:zamor_ice_storm/zzzzzzzz/load",
+		"animated_java:destined_death/zzzzzzzz/load",
+		"animated_java:death_blighted/zzzzzzzz/load",
+		"animated_java:ringed_nightstar/zzzzzzzz/load",
+		"animated_java:gravity_thrust/zzzzzzzz/load"
 	]
 }

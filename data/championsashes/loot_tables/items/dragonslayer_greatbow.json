@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:dragonslayer_greatbow\",display: {Name: '[{\"translate\":\"item.championsashes.dragonslayer_greatbow\",\"italic\":false}]'},HideFlags:32,Enchantments:[{id:\"minecraft:infinity\",lvl:1s}],CustomModelData:1390036}"
+              "tag": "{itemId:1017,id:\"championsashes:dragonslayer_greatbow\",display: {Name: '[{\"translate\":\"item.championsashes.dragonslayer_greatbow\",\"italic\":false}]'},HideFlags:32,Enchantments:[{id:\"minecraft:infinity\",lvl:1s}],CustomModelData:1390036}"
             }
           ]
         }

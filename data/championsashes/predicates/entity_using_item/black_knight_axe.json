@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{HandItems:[{id:\"minecraft:netherite_axe\",tag:{id:\"championsashes:black_knight_greataxe\",Damage:0},Count:1b}]}"
+      "nbt": "{HandItems:[{id:\"minecraft:netherite_axe\",tag:{itemId:1005,Damage:0},Count:1b}]}"
     }
 } 

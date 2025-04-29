@@ -3,6 +3,6 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:snowball",
-      "nbt": "{Item:{tag:{id:\"championsashes:shadow_vortex\"}}}"
+      "nbt": "{Item:{tag:{id:1013}}}"
     }
 }  

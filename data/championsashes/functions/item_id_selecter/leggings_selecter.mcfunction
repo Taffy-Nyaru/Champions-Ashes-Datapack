@@ -1,0 +1,1 @@
+execute if score @s ca.item.id_selecter_leggings matches 40000 run function championsashes:items/armor/witherite_leggings

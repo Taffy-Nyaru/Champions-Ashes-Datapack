@@ -20,3 +20,5 @@ execute store result score @s 2phanalax_uuid1 run data get storage math:io 2phan
 execute store result score @s 2phanalax_uuid2 run data get storage math:io 2phanalax_uuid[2]
 execute store result score @s 2phanalax_uuid3 run data get storage math:io 2phanalax_uuid[3]
 tag @s add with_phanalax
+
+execute as @s[gamemode=survival] run function championsashes:items/item_durability

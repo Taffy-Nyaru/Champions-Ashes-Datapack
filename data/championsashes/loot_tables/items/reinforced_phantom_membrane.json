@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:reinforced_phantom_membrane\",display: {Name: '[{\"translate\":\"item.championsashes.reinforced_phantom_membrane\",\"italic\":false}]'},CustomModelData:1390002}"
+              "tag": "{itemId:1040,id:\"championsashes:reinforced_phantom_membrane\",display: {Name: '[{\"translate\":\"item.championsashes.reinforced_phantom_membrane\",\"italic\":false}]'},CustomModelData:1390002}"
             }
           ]
         }

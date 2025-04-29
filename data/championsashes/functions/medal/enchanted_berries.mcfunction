@@ -18,9 +18,6 @@ effect give @s slow_falling 60 1
 effect give @s speed 60 1
 effect give @s strength 60 1
 effect give @s water_breathing 60 1
-summon salmon ^ ^ ^1 {Invulnerable:1b,UUID:[I;-12318,4914,2551,-5830],CustomName:'[{"text":"Pet"}]',PersistenceRequired:1b,Tags:["pet"]}
-tag @s add owner
-execute if entity @e[tag=pet] run advancement grant @s only championsashes:func/pet
-scoreboard players set @s usedmedal 0
+scoreboard players set @s ateberries 0
 advancement grant @s[advancements={championsashes:func/get_enchanted_berries=false}] only championsashes:func/get_enchanted_berries
 advancement revoke @s[advancements={championsashes:eat_berries=true}] only championsashes:eat_berries

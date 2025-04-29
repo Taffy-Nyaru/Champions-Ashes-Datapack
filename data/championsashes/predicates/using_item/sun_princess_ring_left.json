@@ -1,9 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:player",
-      "nbt": "{Inventory:[{Slot:-106b,tag:{id:\"championsashes:sun_princess_ring\"}}]}"
-    }
-  }
-  

@@ -1,3 +1,3 @@
 execute unless block ~ ~0.5 ~ #championsashes:transparent_blocks run function championsashes:items/steel_anchor/skill3_anchor_hit
 execute unless block ~ ~1.5 ~ #championsashes:transparent_blocks run function championsashes:items/steel_anchor/skill3_anchor_hit
-execute if entity @e[distance=..4,type=!#championsashes:special_entities,predicate=!championsashes:using_item/steel_anchor_right] run function championsashes:items/steel_anchor/skill3_anchor_hit
+execute if entity @e[distance=..4,type=!#championsashes:special_entities,type=!player] run function championsashes:items/steel_anchor/skill3_anchor_hit

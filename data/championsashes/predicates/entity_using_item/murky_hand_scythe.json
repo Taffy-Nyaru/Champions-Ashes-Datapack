@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{HandItems:[{id:\"minecraft:crossbow\",tag:{id:\"championsashes:murky_hand_scythe\",Damage:0},Count:1b}]}"
+      "nbt": "{HandItems:[{id:\"minecraft:crossbow\",tag:{id:1034,Damage:0},Count:1b}]}"
     }
 }  

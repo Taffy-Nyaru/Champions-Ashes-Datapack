@@ -1,30 +1,15 @@
 
 #Normal raycast
-execute as @e[tag=!parry_target,tag=!clicker,tag=!block_clicker,type=!#championsashes:special_entities,tag=!raycast.execute,distance=..2] run function championsashes:raycast/trace/1
-
-#Rkss skill
-execute if entity @s[tag=rkss_skill] as @e[tag=!parry_target,tag=!clicker,tag=!block_clicker,type=!#championsashes:special_entities,tag=!raycast.execute,distance=..7] run function championsashes:raycast/trace/1
-
+execute as @e[distance=..2,tag=!parry_target,tag=!block_clicker,type=!#championsashes:special_entities,tag=!raycast.execute] run function championsashes:raycast/trace/1
 #Item display raycast
-execute as @e[type=item_display,tag=!item_rotate,tag=!upgrade_table,tag=!milkweed,tag=!steel_furnace,tag=!crafter,tag=!raycast.execute,distance=..2.5] run function championsashes:raycast/trace/1
+execute as @e[distance=..2.5,type=item_display,tag=!item_rotate,tag=!upgrade_table,tag=!milkweed,tag=!steel_furnace,tag=!crafter,tag=!raycast.execute] run function championsashes:raycast/trace/1
 
 #Predicate of parry raycast
-execute as @e[tag=parry_target,tag=!raycast.execute,distance=..3] run function championsashes:raycast/trace/1
+execute as @e[distance=..3,type=!#championsashes:special_entities,tag=parry_target,tag=!raycast.execute] run function championsashes:raycast/trace/1
 
-#Predicate of blocks raycast
 #Milkweed
-execute as @e[tag=block_clicker,tag=!raycast.execute,distance=..1] run function championsashes:raycast/trace/1
-execute as @e[tag=milkweed,tag=!raycast.execute,distance=..0.5] run function championsashes:raycast/trace/1
+execute as @e[distance=..1,type=interaction,tag=block_clicker,tag=!raycast.execute] run function championsashes:raycast/trace/1
+execute as @e[distance=..0.5,type=item_display,tag=milkweed,tag=!raycast.execute] run function championsashes:raycast/trace/1
 
-#Steel Furnace
-execute as @e[tag=steel_furnace,tag=!raycast.execute,limit=1,distance=..1.5] run function championsashes:raycast/trace/1
-
-#Energy Crafter
-execute as @e[tag=crafter,tag=!raycast.execute,limit=1,distance=..1.5] run function championsashes:raycast/trace/1
-
-#Upgrade Table
-execute as @e[tag=upgrade_table,tag=!raycast.execute,limit=1,distance=..0.7] run function championsashes:raycast/trace/1
-execute as @e[tag=item_rotate,tag=!raycast.execute,limit=1,distance=..0.7] run function championsashes:raycast/trace/1
-
-scoreboard players remove temp.0 raycastvalue 1
-execute if score temp.0 raycastvalue matches 1.. positioned ^ ^ ^0.1 run function championsashes:raycast/trace/0
+scoreboard players remove ca.temp.raycast ca.raycast_value 1
+execute if score ca.temp.raycast ca.raycast_value matches 1.. positioned ^ ^ ^0.1 run function championsashes:raycast/trace/0

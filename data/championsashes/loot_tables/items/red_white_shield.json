@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:red_white_shield\",display: {Name: '[{\"translate\":\"item.championsashes.red_white_shield\",\"italic\":false}]'},CustomModelData:1390067}"
+                "tag": "{itemId:1039,id:\"championsashes:red_white_shield\",display: {Name: '[{\"translate\":\"item.championsashes.red_white_shield\",\"italic\":false}]'},CustomModelData:1390067}"
               }
             ]
           }

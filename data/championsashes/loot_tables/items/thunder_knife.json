@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{id:\"championsashes:thunder_knife\",display: {Name: '[{\"translate\":\"item.championsashes.thunder_knife\",\"italic\":false}]'},CustomModelData:1390064}"
+              "tag": "{itemId:1011,id:\"championsashes:thunder_knife\",display: {Name: '[{\"translate\":\"item.championsashes.thunder_knife\",\"italic\":false}]'},CustomModelData:1390064}"
             }
           ]
         }

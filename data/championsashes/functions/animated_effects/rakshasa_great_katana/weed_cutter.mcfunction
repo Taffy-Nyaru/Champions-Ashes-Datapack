@@ -1,2 +1,2 @@
-execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!weed_cutter_user] run damage @s 28 minecraft:player_attack by @a[limit=1,sort=nearest]
-execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!weed_cutter_user] run scoreboard players add @s bleeding_Timer 90
+execute as @e[distance=..2.25,type=!#championsashes:special_entities,tag=!weed_cutter_user] run damage @s 28 minecraft:player_attack by @a[limit=1,sort=nearest]
+execute as @e[distance=..2.25,type=!#championsashes:special_entities,tag=!weed_cutter_user] run scoreboard players add @s bleeding_Timer 160

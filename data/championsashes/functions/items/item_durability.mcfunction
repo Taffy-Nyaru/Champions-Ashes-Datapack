@@ -1,5 +1,5 @@
 #Murky Hand Scythe
-execute if entity @s[predicate=championsashes:using_item/murky_hand_scythe,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 1
+execute if score @s[gamemode=survival,predicate=!championsashes:unbreakable] ca.item.id_selecter_mainhand matches 1034 run scoreboard players add @s damage 1
 execute if entity @s[tag=murky_r1_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 5
 #Aquamarine Dagger
 execute if entity @s[tag=crystal_blade_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 5
@@ -36,6 +36,8 @@ execute if entity @s[tag=chainsaw,gamemode=survival,predicate=!championsashes:un
 #Moonlight Greatsword
 execute if entity @s[tag=moonlight,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 25
 execute if entity @s[tag=ice_crystal_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 50
+#Nightrider's Glaive
+execute if entity @s[tag=with_phanalax,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 50
 #execute if entity @s[tag=zamor_ice_storm_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 50
 #item modify entity @s[tag=zamor_ice_storm_user,gamemode=survival,predicate=!championsashes:unbreakable] weapon.offhand championsashes:crossbow_items_damage
 #Dark Sword+22

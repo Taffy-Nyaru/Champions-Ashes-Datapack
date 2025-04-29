@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{id:\"championsashes:sun_princess_ring\",display: {Name: '[{\"translate\":\"item.championsashes.sun_princess_ring\",\"italic\":false}]'},CustomModelData:1390108}"
+              "tag": "{itemId:1053,id:\"championsashes:sun_princess_ring\",display: {Name: '[{\"translate\":\"item.championsashes.sun_princess_ring\",\"italic\":false}]'},CustomModelData:1390108}"
             }
           ]
         }

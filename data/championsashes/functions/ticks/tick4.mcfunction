@@ -1,0 +1,4 @@
+function championsashes:animated_effects/animation_effects_handle/animated_effects2
+function championsashes:animated_effects/animation_effects_handle/animated_effects_magic
+
+scoreboard players set #4ticks ca.tick4_schedule 0

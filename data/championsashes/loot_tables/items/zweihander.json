@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{HideFlags:32,Charged:1b,id:\"championsashes:zweihander\",display: { Name: '[{\"translate\":\"item.championsashes.zweihander\",\"italic\":false}]'},CustomModelData:1390004,AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: -2d, Operation: 0, UUID: [I; 114, 191, -140, -8100]},{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 14d, Operation: 0, UUID:[I;1848056,25562485,1898994005,860320107]}], Unbreakable: true}"
+              "tag": "{HideFlags:32,Charged:1b,itemId:1056,id:\"championsashes:zweihander\",display: { Name: '[{\"translate\":\"item.championsashes.zweihander\",\"italic\":false}]'},CustomModelData:1390004,AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: -2d, Operation: 0, UUID: [I; 114, 191, -140, -8100]},{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 14d, Operation: 0, UUID:[I;1848056,25562485,1898994005,860320107]}], Unbreakable: true}"
             }
           ]
         }

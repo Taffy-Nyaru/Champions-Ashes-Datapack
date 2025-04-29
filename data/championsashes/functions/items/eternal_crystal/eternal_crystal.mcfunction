@@ -1,10 +1,11 @@
-execute at @s unless entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s add needclicker
-execute at @s unless entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s add needclicker
+execute unless entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s add needclicker
+execute unless entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s add needclicker
+tag @s[tag=ca.refreshed_clicker] remove ca.refreshed_clicker
 
-execute if entity @e[tag=clicker,scores={rClick=1..}] run data modify entity 2094fd65-93de-4a69-9ea2-a74c7f35bc75 Thrower set from storage generic:main rClicker
-execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/eternal_crystal] run effect give @s invisibility 1 0 true
-execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/eternal_crystal] run effect give @s resistance 1 255 true
-execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[predicate=championsashes:using_item/eternal_crystal] run tag @s add crystal_tp_tick
+execute if entity @e[type=interaction,distance=..10,tag=clicker,scores={ca.interaction_rClick=1..}] run data modify entity 2094fd65-93de-4a69-9ea2-a74c7f35bc75 Thrower set from storage generic:main ca.interaction_rClicker
+execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[scores={ca.item.id_selecter_mainhand=1020}] run effect give @s invisibility 1 0 true
+execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[scores={ca.item.id_selecter_mainhand=1020}] run effect give @s resistance 1 255 true
+execute as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[scores={ca.item.id_selecter_mainhand=1020}] run tag @s add crystal_tp_tick
 execute as @s[tag=crystal_tp_tick] run function championsashes:items/eternal_crystal/teleport
 execute if entity @s[tag=crystal_tp_tick] run scoreboard players add #crystal_tp_tick championsashes_Timer 1
 execute if score #crystal_tp_tick championsashes_Timer matches 16.. run tag @s remove crystal_tp_tick

@@ -1,5 +1,5 @@
-execute as @s[tag=undead,scores={recursion_times=1..},nbt=!{Inventory:[{Slot:-106b,tag:{id:"championsashes:void_totem"}}]}] run function championsashes:items/shadow_pearl/find_pearl
-execute as @s[tag=undead,scores={recursion_times=0}] run tag @s remove undead
+execute unless score @s ca.item.id_selecter_offhand matches 1047 if entity @s[tag=undead,scores={recursion_times=1..}] run function championsashes:items/shadow_pearl/find_pearl
+execute if entity @s[tag=undead,scores={recursion_times=0}] run tag @s remove undead
 
 execute if entity @s[tag=shadow_pearl_ignite1] run scoreboard players add #pearl_ignite1 championsashes_Timer 1
 execute if entity @s[tag=shadow_pearl_ignite2] run scoreboard players add #pearl_ignite2 championsashes_Timer 1

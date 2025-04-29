@@ -1,5 +1,5 @@
 tag @s add chainsaw
-execute if entity @s[gamemode=survival,type=player,predicate=championsashes:using_item/serpent_hunter] run function championsashes:items/item_durability
+execute if entity @s[gamemode=survival,type=player] run function championsashes:items/item_durability
 effect give @s hunger 1 255 true
 fill ^4 ^4 ^10 ^-4 ^ ^-2 air destroy
 summon creeper ^ ^1 ^12 {Tags:["bomb"],Fuse:0,powered:1b,Invulnerable:1b}

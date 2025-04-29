@@ -1,4 +1,2 @@
-execute unless score @s shift matches 1.. if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:alumopper"}}} at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/alumopper_fumo/ray
-execute unless score @s shift matches 1.. if data storage championsashes:player_data {Inventory:[{Slot:-106b,tag:{id:"championsashes:alumopper"}}]} at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/alumopper_fumo/ray
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:alumopper"}}} if score @s shift matches 1.. unless data storage championsashes:player_data {Inventory:[{Slot:103b}]} run loot replace entity @s armor.head loot championsashes:items/alumopper
-execute if data storage championsashes:player_data {SelectedItem:{tag:{id:"championsashes:alumopper"}}} if score @s shift matches 1.. unless data storage championsashes:player_data {Inventory:[{Slot:103b}]} run item replace entity @s weapon.mainhand with air
+execute unless score @s shift matches 1.. at @s anchored eyes positioned ^ ^ ^ run function championsashes:blocks/alumopper_fumo/ray
+execute if score @s shift matches 1.. unless predicate championsashes:head_item run function championsashes:blocks/alumopper_fumo/replace_head_item

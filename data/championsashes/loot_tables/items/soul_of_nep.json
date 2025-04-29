@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:soul_of_nep\",display: {Name: '[{\"translate\":\"item.championsashes.soul_of_nep\",\"color\":\"#ffff00\",\"italic\":false}]'},CustomModelData:1390043, HideFlags: 1b, Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
+                "tag": "{itemId:1049,id:\"championsashes:soul_of_nep\",display: {Name: '[{\"translate\":\"item.championsashes.soul_of_nep\",\"color\":\"#ffff00\",\"italic\":false}]'},CustomModelData:1390043, HideFlags: 1b, Enchantments:[{id:\"minecraft:infinity\",lvl:1}]}"
               }
             ]
           }

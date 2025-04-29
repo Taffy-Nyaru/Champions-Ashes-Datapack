@@ -8,6 +8,7 @@ execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id
 tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:zamor_ice_storm/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.zamor_ice_storm.variant.default aj.id run function animated_java:zamor_ice_storm/zzzzzzzz/apply_variant/default/as_root
+execute if score #variant aj.i = $aj.zamor_ice_storm.variant.new_variant aj.id run function animated_java:zamor_ice_storm/zzzzzzzz/apply_variant/new_variant/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.zamor_ice_storm.animation.zamor_ice_storm aj.id run function animated_java:zamor_ice_storm/zzzzzzzz/animations/zamor_ice_storm/apply_frame_as_root
 execute if score #animation aj.i = $aj.zamor_ice_storm.animation.zamor_ice_storm aj.id run scoreboard players operation @s aj.zamor_ice_storm.animation.zamor_ice_storm.local_anim_time = #frame aj.i

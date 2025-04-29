@@ -1,5 +1,6 @@
 execute if entity @s[tag=aj.ringed_nightstar.bone.right_arm2] run data modify entity @s item.tag.CustomModelData set value 539
 execute if entity @s[tag=aj.ringed_nightstar.bone.right_arm] run data modify entity @s item.tag.CustomModelData set value 540
+
 execute if entity @s[tag=aj.ringed_nightstar.bone.darksword22] run data modify entity @s item.tag.CustomModelData set value 541
 execute if entity @s[tag=aj.ringed_nightstar.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 542
 execute if entity @s[tag=aj.ringed_nightstar.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 543

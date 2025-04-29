@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "set_nbt",
-                "tag": "{id:\"championsashes:meteorite_staff\",display: {Name: '[{\"translate\":\"item.championsashes.meteorite_staff\",\"italic\":false}]'},CustomModelData:1390097}"
+                "tag": "{itemId:1031,id:\"championsashes:meteorite_staff\",display: {Name: '[{\"translate\":\"item.championsashes.meteorite_staff\",\"italic\":false}]'},CustomModelData:1390097}"
               }
             ]
           }
