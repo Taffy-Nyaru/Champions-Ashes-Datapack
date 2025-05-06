@@ -1,0 +1,19 @@
+
+execute if entity @s[tag=aj.blackhole_supernova.bone.blackhole_nova] run data modify entity @s item.tag.CustomModelData set value 2347
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone0] run data modify entity @s item.tag.CustomModelData set value 2348
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone1] run data modify entity @s item.tag.CustomModelData set value 2349
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone2] run data modify entity @s item.tag.CustomModelData set value 2350
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone3] run data modify entity @s item.tag.CustomModelData set value 2351
+execute if entity @s[tag=aj.blackhole_supernova.bone.star0] run data modify entity @s item.tag.CustomModelData set value 2352
+execute if entity @s[tag=aj.blackhole_supernova.bone.star1] run data modify entity @s item.tag.CustomModelData set value 2353
+execute if entity @s[tag=aj.blackhole_supernova.bone.star2] run data modify entity @s item.tag.CustomModelData set value 2354
+execute if entity @s[tag=aj.blackhole_supernova.bone.star3] run data modify entity @s item.tag.CustomModelData set value 2355
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone] run data modify entity @s item.tag.CustomModelData set value 2356
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone4] run data modify entity @s item.tag.CustomModelData set value 2357
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone5] run data modify entity @s item.tag.CustomModelData set value 2358
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone6] run data modify entity @s item.tag.CustomModelData set value 2359
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone7] run data modify entity @s item.tag.CustomModelData set value 2360
+execute if entity @s[tag=aj.blackhole_supernova.bone.bone8] run data modify entity @s item.tag.CustomModelData set value 2361
+execute if entity @s[tag=aj.blackhole_supernova.bone.vortex_vfx] run data modify entity @s item.tag.CustomModelData set value 2362
+execute if entity @s[tag=aj.blackhole_supernova.bone.vortex_vfx2] run data modify entity @s item.tag.CustomModelData set value 2363
+execute if entity @s[tag=aj.blackhole_supernova.bone.vortex_vfx3] run data modify entity @s item.tag.CustomModelData set value 2364

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.kamui.root] run function animated_java:kamui/zzzzzzzz/tick_as_root

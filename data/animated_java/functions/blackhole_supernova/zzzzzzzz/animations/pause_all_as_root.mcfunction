@@ -1,0 +1,1 @@
+function animated_java:blackhole_supernova/zzzzzzzz/animations/blackhole_supernova/pause_as_root

@@ -1,0 +1,3 @@
+execute if score @s aj.anim_time matches 0..63 run function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/tree/branch_0_63
+execute if score @s aj.anim_time matches 64 run function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/tree/leaf_64
+execute if score @s aj.anim_time matches 65 run function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/tree/leaf_65

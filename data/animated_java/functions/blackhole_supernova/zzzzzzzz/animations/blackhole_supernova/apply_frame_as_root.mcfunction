@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..70 run function animated_java:blackhole_supernova/zzzzzzzz/animations/blackhole_supernova/tree/branch_0_70

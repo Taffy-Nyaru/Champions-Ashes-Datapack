@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.space_based_missle.animation.lockon_target] run function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/tick

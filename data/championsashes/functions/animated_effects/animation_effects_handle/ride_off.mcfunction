@@ -69,6 +69,8 @@ tag @s[tag=upwardcut] remove upwardcut
 #scoreboard players set @s[tag=wave_of_destruction_user] custom_ca.entity.stiff_time 130
 tag @s[tag=wave_of_destruction_user] remove wave_of_destruction_user
 tag @s[tag=destruction_wave] remove destruction_wave
+tp @s[tag=kamui_user] @e[type=item_display,limit=1,sort=nearest,tag=aj.kamui.root]
+tag @s[tag=kamui_user] remove kamui_user
 
 #scoreboard players set @s[tag=sword_dance_user] custom_ca.entity.stiff_time 50
 tag @s[tag=sword_dance_user] remove sword_dance_user

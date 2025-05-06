@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.kamui.animation.kamui] run function animated_java:kamui/zzzzzzzz/animations/kamui/tick

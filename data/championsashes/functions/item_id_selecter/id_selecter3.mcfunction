@@ -1,6 +1,10 @@
 #Fume Ultra Greatsword
+#Shift+RClick/LClick
 execute if score @s ca.item.id_selecter_mainhand matches 1021 if score @s shift matches 1.. run function championsashes:items/fume_ultra_greatsword/wave_of_destruction
+#Shift+F
 execute if score @s ca.item.id_selecter_offhand matches 1021 if score @s shift matches 1.. unless entity @e[distance=..10,type=item_display,tag=aj.void_slash.root] run function championsashes:items/fume_ultra_greatsword/void_slash
+#Offhand RClick/LClick
+execute if score @s ca.item.id_selecter_offhand matches 1021 unless score @s shift matches 1.. run function championsashes:items/fume_ultra_greatsword/offhand
 
 #Gael's Greatsword
 execute if score @s ca.item.id_selecter_mainhand matches 1022 if score @s shift matches 1.. run function championsashes:items/gaels_greatsword/blade_of_peril

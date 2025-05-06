@@ -1,0 +1,2 @@
+execute as @e[limit=1,sort=nearest,type=item_display,tag=aj.kamui.locator,tag=!player_camera] at @s run ride @e[type=!player,distance=..10,type=!#championsashes:special_entities,limit=1,sort=nearest] mount @s
+execute as @e[limit=1,sort=nearest,type=item_display,tag=aj.kamui.locator,tag=!player_camera] at @s run tag @e[type=!player,distance=..10,type=!#championsashes:special_entities,limit=1,sort=nearest] add kamui_target

@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.kamui.locator_origin.kamui_locator] at @s on origin run tp @s ^-0.63824 ^7.72945 ^3.79977 ~-1.56062 ~30.55225
+execute if entity @s[tag=aj.kamui.locator_origin.player_camera] at @s on origin run tp @s ^-0.08191 ^0.21875 ^-1.33793 ~137.5 ~0

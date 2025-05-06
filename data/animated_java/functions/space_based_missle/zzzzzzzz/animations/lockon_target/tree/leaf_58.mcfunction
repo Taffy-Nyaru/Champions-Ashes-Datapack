@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/tree/leaf_58_as_bone
+function animated_java:space_based_missle/zzzzzzzz/apply_variant/missle7/as_root

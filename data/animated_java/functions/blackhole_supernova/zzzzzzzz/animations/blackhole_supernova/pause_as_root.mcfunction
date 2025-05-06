@@ -1,0 +1,1 @@
+tag @s remove aj.blackhole_supernova.animation.blackhole_supernova

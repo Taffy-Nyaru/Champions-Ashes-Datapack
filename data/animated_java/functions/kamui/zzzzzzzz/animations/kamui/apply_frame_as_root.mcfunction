@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..137 run function animated_java:kamui/zzzzzzzz/animations/kamui/tree/branch_0_137

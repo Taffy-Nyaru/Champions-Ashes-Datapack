@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.blackhole_supernova.animation.blackhole_supernova] run function animated_java:blackhole_supernova/zzzzzzzz/animations/blackhole_supernova/tick

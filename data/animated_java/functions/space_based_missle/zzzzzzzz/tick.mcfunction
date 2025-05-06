@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.space_based_missle.root] run function animated_java:space_based_missle/zzzzzzzz/tick_as_root

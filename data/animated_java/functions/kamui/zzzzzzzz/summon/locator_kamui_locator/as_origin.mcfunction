@@ -1,0 +1,4 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["aj.kamui.locator","aj.kamui.locator.kamui_locator","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"kamui\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"kamui_locator\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:item_display,tag=aj.kamui.locator.kamui_locator,tag=aj.new,limit=1,distance=..1] run function animated_java:kamui/zzzzzzzz/summon/locator_kamui_locator/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

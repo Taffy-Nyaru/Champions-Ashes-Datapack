@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.blackhole_supernova.locator_origin.locator] at @s on origin run tp @s ^0 ^0 ^0 ~-180 ~0
+execute if entity @s[tag=aj.blackhole_supernova.bone.blackhole_nova] run data modify entity @s {} merge value {transformation:[0.4658333333333332f,0f,0f,0f,0f,0.4658333333333332f,0f,0f,0f,0f,0.000010833333333333334f,0f,0f,0f,0f,1f],start_interpolation:0}

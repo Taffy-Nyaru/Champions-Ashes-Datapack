@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:kamui/zzzzzzzz/animations/kamui/tree/leaf_70_as_bone
+execute unless entity @s[tag=aj.kamui.disable_command_keyframes] at @s run execute at @e[type=item_display,tag=aj.kamui.locator,limit=1,sort=nearest] as @e[type=!player,distance=..25,tag=kamui_target,type=!#championsashes:special_entities,limit=1,sort=nearest] at @s run function championsashes:items/fume_ultra_greatsword/blackhole_supernova

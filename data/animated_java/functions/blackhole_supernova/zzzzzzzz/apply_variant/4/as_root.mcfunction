@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:blackhole_supernova/zzzzzzzz/apply_variant/4/as_bone

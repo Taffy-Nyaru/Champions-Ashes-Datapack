@@ -1,0 +1,4 @@
+execute if entity @s[tag=aj.blackhole_supernova.locator_origin.locator] at @s on origin run tp @s ^0 ^0 ^0 ~-180 ~0
+execute if entity @s[tag=aj.blackhole_supernova.bone.vortex_vfx] run data modify entity @s {} merge value {transformation:[-5.443947961003926f,3.811893399916325f,0f,-0.140625f,-3.811893399916325f,-5.443947961003926f,0f,0.046875f,0f,0f,6.645833333333333f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.blackhole_supernova.bone.vortex_vfx2] run data modify entity @s {} merge value {transformation:[2.033850384627118f,-4.361606225113877f,0f,-0.01059f,4.361606225113877f,2.033850384627118f,0f,-0.021444375f,0f,0f,4.8125f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.blackhole_supernova.bone.vortex_vfx3] run data modify entity @s {} merge value {transformation:[-1.452750274733656f,3.115433017938483f,0f,0.03125f,-3.115433017938483f,-1.452750274733656f,0f,0.029873125f,0f,0f,3.4375f,0f,0f,0f,0f,1f],start_interpolation:0}

@@ -1,0 +1,3 @@
+execute if score @s aj.blackhole_supernova.animation.blackhole_supernova.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:blackhole_supernova/zzzzzzzz/animations/blackhole_supernova/end_loop
+execute if score @s aj.blackhole_supernova.animation.blackhole_supernova.loop_mode = $aj.loop_mode.once aj.i run function animated_java:blackhole_supernova/animations/blackhole_supernova/stop
+execute if score @s aj.blackhole_supernova.animation.blackhole_supernova.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:blackhole_supernova/animations/blackhole_supernova/pause

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:blackhole_supernova/zzzzzzzz/animations/blackhole_supernova/tree/leaf_51_as_bone
+execute unless entity @s[tag=aj.blackhole_supernova.disable_command_keyframes] at @s run function animated_java:blackhole_supernova/zzzzzzzz/animations/blackhole_supernova/tree/leaf_51_effects_0

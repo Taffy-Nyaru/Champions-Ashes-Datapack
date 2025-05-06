@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:kamui/zzzzzzzz/animations/kamui/tree/leaf_6_as_bone

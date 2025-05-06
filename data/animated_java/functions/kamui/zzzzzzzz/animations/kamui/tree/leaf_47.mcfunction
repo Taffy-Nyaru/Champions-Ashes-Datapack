@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:kamui/zzzzzzzz/animations/kamui/tree/leaf_47_as_bone
+execute unless entity @s[tag=aj.kamui.disable_command_keyframes] at @s run function animated_java:kamui/zzzzzzzz/animations/kamui/tree/leaf_47_effects_0

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:blackhole_supernova/zzzzzzzz/animations/blackhole_supernova/tree/leaf_58_as_bone
+function animated_java:blackhole_supernova/zzzzzzzz/apply_variant/3/as_root

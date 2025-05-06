@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:kamui/zzzzzzzz/apply_variant/8/as_bone

@@ -57,6 +57,9 @@ execute if entity @s[tag=stamp_upward_cut_user,gamemode=survival,predicate=!cham
 #Fume Ultra Greatsword
 execute if entity @s[tag=wave_of_destruction_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 40
 execute if entity @s[tag=purple_fire_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 40
+execute if entity @s[tag=void_slash_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 30
+execute if entity @s[tag=space_based_missle_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 50
+execute if entity @s[tag=kamui_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 100
 #Irithyll Straight Sword
 execute if entity @s[tag=sword_dance_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 25
 #Ancient Lightning Spear

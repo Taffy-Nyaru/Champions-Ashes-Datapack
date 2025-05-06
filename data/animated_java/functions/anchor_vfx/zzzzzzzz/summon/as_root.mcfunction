@@ -28,4 +28,3 @@ tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i
 scoreboard players reset #animation aj.i
-function animated_java:anchor_vfx/animations/anchor_slash/play

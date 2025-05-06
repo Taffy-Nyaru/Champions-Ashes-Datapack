@@ -1,0 +1,1 @@
+function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/tick_animation

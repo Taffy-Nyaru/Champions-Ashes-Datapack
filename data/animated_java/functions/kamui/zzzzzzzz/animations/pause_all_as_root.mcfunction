@@ -1,0 +1,1 @@
+function animated_java:kamui/zzzzzzzz/animations/kamui/pause_as_root

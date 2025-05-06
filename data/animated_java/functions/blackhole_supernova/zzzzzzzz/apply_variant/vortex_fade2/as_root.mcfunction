@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:blackhole_supernova/zzzzzzzz/apply_variant/vortex_fade2/as_bone

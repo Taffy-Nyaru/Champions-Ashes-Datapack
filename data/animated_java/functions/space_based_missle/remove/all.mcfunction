@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.space_based_missle.root] run function animated_java:space_based_missle/zzzzzzzz/remove/as_root
+kill @e[tag=aj.space_based_missle.rig_entity]

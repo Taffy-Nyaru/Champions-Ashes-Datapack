@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.blackhole_supernova.root] run function animated_java:blackhole_supernova/zzzzzzzz/tick_as_root

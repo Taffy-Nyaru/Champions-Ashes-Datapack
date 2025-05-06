@@ -1,0 +1,2 @@
+execute facing entity @a[limit=1,sort=nearest] eyes run function animated_java:blackhole_supernova/summon
+execute as @e[tag=aj.blackhole_supernova.root,limit=1,sort=nearest] run function animated_java:blackhole_supernova/animations/blackhole_supernova/play

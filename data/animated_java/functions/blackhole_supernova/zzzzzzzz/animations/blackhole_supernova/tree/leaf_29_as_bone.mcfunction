@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.blackhole_supernova.locator_origin.locator] at @s on origin run tp @s ^0 ^0 ^0 ~-180 ~0

@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.blackhole_supernova.root] run function animated_java:blackhole_supernova/zzzzzzzz/apply_variant/vortex_vfx5/as_root
+execute if entity @s[tag=!aj.blackhole_supernova.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:blackhole_supernova/apply_variant/vortex_vfx5 ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.blackhole_supernova.locator_origin.locator] run function animated_java:blackhole_supernova/zzzzzzzz/summon/locator_locator/as_origin
+function #animated_java:blackhole_supernova/on_summon/as_locator_origins

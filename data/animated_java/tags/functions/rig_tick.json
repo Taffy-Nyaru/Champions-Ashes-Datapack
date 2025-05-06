@@ -35,7 +35,6 @@
 		"animated_java:f8fq/zzzzzzzz/tick",
 		"animated_java:ice_crystal/zzzzzzzz/tick",
 		"animated_java:purple_fire/zzzzzzzz/tick",
-		"animated_java:anchor_vfx/zzzzzzzz/tick",
 		"animated_java:gravity_impaler/zzzzzzzz/tick",
 		"animated_java:water_vfx/zzzzzzzz/tick",
 		"animated_java:water_explode/zzzzzzzz/tick",
@@ -49,6 +48,10 @@
 		"animated_java:destined_death/zzzzzzzz/tick",
 		"animated_java:death_blighted/zzzzzzzz/tick",
 		"animated_java:ringed_nightstar/zzzzzzzz/tick",
-		"animated_java:gravity_thrust/zzzzzzzz/tick"
+		"animated_java:gravity_thrust/zzzzzzzz/tick",
+		"animated_java:anchor_vfx/zzzzzzzz/tick",
+		"animated_java:space_based_missle/zzzzzzzz/tick",
+		"animated_java:kamui/zzzzzzzz/tick",
+		"animated_java:blackhole_supernova/zzzzzzzz/tick"
 	]
 }

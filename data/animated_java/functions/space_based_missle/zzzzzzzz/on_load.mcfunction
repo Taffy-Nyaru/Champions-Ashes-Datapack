@@ -1,0 +1,2 @@
+scoreboard players set @s aj.space_based_missle.rig_loaded 1
+execute unless score @s aj.space_based_missle.export_version = aj.space_based_missle.export_version aj.i at @s run function animated_java:space_based_missle/zzzzzzzz/mark_outdated_rig

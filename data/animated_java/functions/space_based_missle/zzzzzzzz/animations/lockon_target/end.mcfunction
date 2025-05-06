@@ -1,0 +1,3 @@
+execute if score @s aj.space_based_missle.animation.lockon_target.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/end_loop
+execute if score @s aj.space_based_missle.animation.lockon_target.loop_mode = $aj.loop_mode.once aj.i run function animated_java:space_based_missle/animations/lockon_target/stop
+execute if score @s aj.space_based_missle.animation.lockon_target.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:space_based_missle/animations/lockon_target/pause
