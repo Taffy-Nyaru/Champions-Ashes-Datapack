@@ -52,9 +52,9 @@
 		"animated_java:death_blighted/zzzzzzzz/load",
 		"animated_java:ringed_nightstar/zzzzzzzz/load",
 		"animated_java:gravity_thrust/zzzzzzzz/load",
-		"animated_java:anchor_vfx/zzzzzzzz/load",
 		"animated_java:space_based_missle/zzzzzzzz/load",
 		"animated_java:kamui/zzzzzzzz/load",
-		"animated_java:blackhole_supernova/zzzzzzzz/load"
+		"animated_java:blackhole_supernova/zzzzzzzz/load",
+		"animated_java:anchor_vfx/zzzzzzzz/load"
 	]
 }

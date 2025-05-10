@@ -49,9 +49,9 @@
 		"animated_java:death_blighted/zzzzzzzz/tick",
 		"animated_java:ringed_nightstar/zzzzzzzz/tick",
 		"animated_java:gravity_thrust/zzzzzzzz/tick",
-		"animated_java:anchor_vfx/zzzzzzzz/tick",
 		"animated_java:space_based_missle/zzzzzzzz/tick",
 		"animated_java:kamui/zzzzzzzz/tick",
-		"animated_java:blackhole_supernova/zzzzzzzz/tick"
+		"animated_java:blackhole_supernova/zzzzzzzz/tick",
+		"animated_java:anchor_vfx/zzzzzzzz/tick"
 	]
 }

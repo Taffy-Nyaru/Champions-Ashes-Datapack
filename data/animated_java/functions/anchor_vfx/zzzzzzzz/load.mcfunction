@@ -25,6 +25,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.anchor_vfx.export_version aj.i -760525787
+scoreboard players set aj.anchor_vfx.export_version aj.i -883542961
 scoreboard players reset * aj.anchor_vfx.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.anchor_vfx.root] run function animated_java:anchor_vfx/zzzzzzzz/on_load

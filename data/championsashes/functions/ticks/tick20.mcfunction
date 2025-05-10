@@ -22,4 +22,7 @@ execute as @s[advancements={championsashes:hurt_players_blocked=true}] run advan
 execute as @s[advancements={championsashes:killed_nep=true}] run advancement revoke @s only championsashes:killed_nep
 execute as @s[advancements={championsashes:clear_effects=true}] run advancement revoke @s only championsashes:clear_effects
 
+execute if score @s ca.interaction_lClick matches 1.. run scoreboard players set @s ca.interaction_lClick 0
+execute if score @s ca.interaction_rClick matches 1.. run scoreboard players set @s ca.interaction_rClick 0
+
 scoreboard players set #20ticks ca.tick20_schedule 0
