@@ -75,6 +75,9 @@ scoreboard objectives add related dummy
 #Steel Furnace
 scoreboard objectives add steelCount dummy
 
+#Steel Anchor
+scoreboard objectives add skill3_anchor_invtimer dummy
+
 #Void Totem
 scoreboard objectives add recursion_times dummy
 scoreboard objectives add Y_value dummy

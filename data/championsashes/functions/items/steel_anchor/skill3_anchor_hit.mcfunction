@@ -12,7 +12,7 @@ execute as @e[tag=aj.water_explode.root] run function animated_java:water_explod
 
 execute at @e[tag=aj.steel_anchor.locator,limit=1,tag=!player_camera] run summon creeper ~ ~ ~ {Invulnerable:1b,Fuse:0,powered:1b,Tags:["bomber"],ExplosionRadius:3}
 
-execute as @a[limit=1,sort=nearest,tag=anchor_skill3] run function championsashes:animated_effects/animation_effects_handle/ride_off
+tag @s add skill3_anchor_invTimer
 
 function animated_java:steel_anchor/remove/all
 kill @e[tag=aj.steel_anchor.locator,limit=1,tag=!player_camera]
