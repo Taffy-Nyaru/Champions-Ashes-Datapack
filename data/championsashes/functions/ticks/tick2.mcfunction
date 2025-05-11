@@ -1,10 +1,6 @@
 #Animations
 function championsashes:animated_effects/animation_effects_handle/animated_effects_bullets
 
-#Void Eye
-execute if predicate championsashes:got_item/void_eye as @e[distance=..20,type=marker,tag=void_marker] run scoreboard players add @s void_eye_timer 1
-execute if predicate championsashes:got_item/void_eye as @e[distance=..20,type=marker,tag=void_marker,scores={void_eye_timer=1..}] run function championsashes:items/void_eye/effect
-
 #Parry
 execute as @e[distance=..7,type=!#championsashes:special_entities,tag=parry_target] at @s unless entity @s[tag=parry,distance=..7] run tag @s remove parry_target
 #Brass Shield

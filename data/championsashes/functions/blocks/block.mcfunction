@@ -14,8 +14,7 @@ execute if score #drink_buffer_time championsashes_Timer matches 5.. run scorebo
 
 #Steel Furnace
 execute as @e[distance=..15,type=item_display,tag=steel_furnace] at @s unless block ~ ~ ~ furnace run function championsashes:blocks/steel_furnace/destroy
-execute if entity @s[scores={usedFurnace=1..}] if predicate championsashes:using_item/iron_ingot unless predicate championsashes:using_item/steel_ingot as @e[distance=..5,limit=1,sort=nearest,type=item_display,tag=steel_furnace,tag=!steel_furnace_lit] at @s if block ~ ~-1 ~ campfire run function championsashes:blocks/steel_furnace/steel_furnace
-execute if entity @s[scores={usedFurnace=1..}] if predicate championsashes:using_item/iron_ingot unless predicate championsashes:using_item/steel_ingot as @e[distance=..5,limit=1,sort=nearest,type=item_display,tag=steel_furnace,tag=!steel_furnace_lit] at @s if block ~ ~-1 ~ soul_campfire run function championsashes:blocks/steel_furnace/steel_furnace
+execute if entity @s[scores={usedFurnace=1..}] run function championsashes:blocks/steel_furnace/used_furance
 execute if score @s usedFurnace matches 1.. at @s if entity @e[distance=..5,limit=1,sort=nearest,type=item_display,tag=steel_furnace,tag=!steel_furnace_lit] run title @s actionbar "You need to lit campfire under steel furnace and holding iron ingots, then try get close enough to the furnace to use it."
 
 execute as @e[distance=..50,type=item_display,tag=steel_furnace_lit] run function championsashes:blocks/steel_furnace/steel_furnace_lit
@@ -25,7 +24,7 @@ scoreboard players set @s usedFurnace 0
 
 #Upgrade Table
 #Displaying the item display optimized and moved to tick20 function
-execute as @e[distance=..25,type=item_display,tag=upgrade_table,tag=!item_displayed] if entity @e[type=item_display,tag=!upgrade_table,distance=..0.5] run tag @s add item_displayed
+execute as @e[distance=..25,type=item_display,tag=upgrade_table,tag=!item_displayed] at @s if entity @e[distance=..0.5,type=item_display,tag=!upgrade_table] run tag @s add item_displayed
 execute at @e[distance=..25,type=item_display,tag=item_displayed] if entity @s[distance=..5,scores={xpLevel=30..}] positioned ~ ~1 ~ as @e[type=item,limit=1,predicate=championsashes:enchanted_books,distance=..0.7] run function championsashes:blocks/upgrade_table/upgrade_table
 execute as @e[distance=..25,type=item_display,tag=item_rotate] run function championsashes:blocks/upgrade_table/rotate
 #Destroy
@@ -49,7 +48,7 @@ execute at @e[distance=..10,type=item_display,tag=crafter,limit=1,sort=nearest] 
 
 #Crying Waystone
 execute as @e[distance=..15,type=item_display,tag=crying_waystone] at @s unless block ~ ~ ~ lodestone run function championsashes:blocks/crying_waystone/destroy
-execute if predicate championsashes:using_item/homeward_bone_track run function championsashes:blocks/crying_waystone/crying_waystone
+execute if score @s ca.item.id_selecter_mainhand matches 1026 run function championsashes:blocks/crying_waystone/temp0
 execute unless entity @s[predicate=championsashes:misc/lodestonetracked] if score @s[scores={ca.item.id_selecter_mainhand=1025}] usedBone matches 1.. as @e[limit=1,sort=nearest,distance=..10,type=item_display,tag=crying_waystone] run tag @s add activated
 execute as @e[distance=..15,type=item_display,tag=crying_waystone,tag=activated] run function championsashes:blocks/crying_waystone/activated
 execute if score @s usedBone matches 1.. run scoreboard players set @s usedBone 0

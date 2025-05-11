@@ -1,7 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Inventory:[{tag:{id:\"championsashes:drakeblood_helmet\"}},{tag:{id:\"championsashes:drakeblood_chestplate\"}},{tag:{id:\"championsashes:drakeblood_leggings\"}},{tag:{id:\"championsashes:drakeblood_boots\"}}]}"
-  }
-}

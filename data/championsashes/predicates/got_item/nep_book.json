@@ -1,8 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:player",
-      "nbt": "{Inventory:[{Slot:-106b,tag:{resolved:1b,author:\"并非NEP\"}}]}"
-    }
-}

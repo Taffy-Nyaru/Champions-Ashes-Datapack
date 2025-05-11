@@ -9,7 +9,7 @@ execute store result score @s ca.itemCount run data get entity @s SelectedItem.C
 execute if entity @e[type=warden,distance=..10] run tag @e[type=warden,distance=..10] add guards
 
 effect clear @s darkness
-effect give @s night_vision 20 1 true
+effect give @s night_vision 60 0 true
 execute at @e[team=!friendly,type=!#championsashes:special_entities,type=!warden] if entity @s[distance=..10] run effect give @e[team=!friendly,type=!#championsashes:special_entities,type=!warden,distance=..10] minecraft:glowing 60 1 true
 
 execute if entity @e[type=interaction,distance=..10,tag=clicker,scores={ca.interaction_lClick=1..}] run data modify entity a346a606-7102-4c7f-b48d-14038f3a5e56 Thrower set from storage generic:main ca.interaction_lClicker

@@ -13,8 +13,6 @@ execute if score @s rotation matches 2147483647 run scoreboard players set @s ro
 execute store result storage math:io #item_display_rotation_angle.angle float 0.09 run scoreboard players get @s rotation
 data modify entity @s transformation.left_rotation set from storage math:io #item_display_rotation_angle
 data modify entity @s interpolation_duration set value 3
-data modify entity @s teleport_duration set value 1
 
-
-execute at @e[tag=item_displayed,tag=raycast.target,limit=1,sort=nearest] run data modify storage generic:main displayed_item.id set from entity @s[distance=..0.5] item.id
-execute at @e[tag=item_displayed,tag=raycast.target,limit=1,sort=nearest] run data modify storage generic:main displayed_item.tag set from entity @s[distance=..0.5] item.tag
+execute at @e[tag=item_displayed,limit=1,sort=nearest] run data modify storage generic:main displayed_item.id set from entity @s[distance=..0.5] item.id
+execute at @e[tag=item_displayed,limit=1,sort=nearest] run data modify storage generic:main displayed_item.tag set from entity @s[distance=..0.5] item.tag

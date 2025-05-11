@@ -24,5 +24,6 @@ execute as @s[advancements={championsashes:clear_effects=true}] run advancement 
 
 execute if score @s ca.interaction_lClick matches 1.. run scoreboard players set @s ca.interaction_lClick 0
 execute if score @s ca.interaction_rClick matches 1.. run scoreboard players set @s ca.interaction_rClick 0
+execute if entity @s[predicate=championsashes:using_item/two_years_ago,scores={usedCE=1..}] run playsound championsashes:sounds.championsashes.two_years_ago voice @s ~ ~ ~ 100 1 1
 
 scoreboard players set #20ticks ca.tick20_schedule 0

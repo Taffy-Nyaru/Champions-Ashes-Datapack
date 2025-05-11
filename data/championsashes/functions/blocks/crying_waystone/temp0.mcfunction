@@ -1,0 +1,1 @@
+execute if predicate championsashes:using_item/homeward_bone_track run function championsashes:blocks/crying_waystone/crying_waystone

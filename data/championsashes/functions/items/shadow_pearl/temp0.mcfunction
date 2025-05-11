@@ -1,0 +1,4 @@
+execute if predicate championsashes:using_item/shadow_pearl0 run function championsashes:items/shadow_pearl/shadow_pearl1
+execute if predicate championsashes:using_item/shadow_pearl1 run function championsashes:items/shadow_pearl/shadow_pearl2
+execute if predicate championsashes:using_item/shadow_pearl2 run function championsashes:items/shadow_pearl/shadow_pearl3
+execute if predicate championsashes:using_item/shadow_pearl3 run function championsashes:items/shadow_pearl/shadow_pearl4

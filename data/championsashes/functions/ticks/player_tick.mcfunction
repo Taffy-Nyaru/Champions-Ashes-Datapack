@@ -64,10 +64,6 @@ execute unless score @s ca.item.id_selecter_offhand matches 1052 unless score @s
 execute if score @s ca.item.id_selecter_mainhand matches 1053..1056 run function championsashes:item_id_selecter/id_selecter10
 execute if score @s ca.item.id_selecter_offhand matches 1053..1056 run function championsashes:item_id_selecter/id_selecter10
 
-#Void Eye
-execute if predicate championsashes:got_item/void_eye run function championsashes:items/void_eye/void_eye
-execute unless predicate championsashes:got_item/void_eye as @e[distance=..15,type=marker,tag=void_marker] at @s run function championsashes:items/void_eye/cancel
-
 #-----------------------Blocks
 function championsashes:blocks/block
 
@@ -100,7 +96,6 @@ scoreboard players set @s[scores={player_death=1..}] scarlet_rot_Timer 0
 scoreboard players set @s[scores={player_death=1..}] player_death 0
 
 #Using Items
-execute if entity @s[predicate=championsashes:using_item/two_years_ago,scores={usedCE=1..}] run playsound championsashes:sounds.championsashes.two_years_ago voice @s ~ ~ ~ 100 1 1
 execute if score @s usedAnvil matches 1.. run scoreboard players set @s usedAnvil 0
 execute if score @s usedmedal matches 1.. run scoreboard players set @s usedmedal 0
 execute if score @s usedBow matches 1.. run scoreboard players set @s usedBow 0

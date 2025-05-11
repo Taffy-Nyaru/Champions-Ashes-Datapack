@@ -4,10 +4,7 @@ execute if score @s ca.item.id_selecter_offhand matches 1045 unless entity @e[ta
 
 #Shadow Pearl
 execute if score @s usedmedal matches 1.. if score @s shift matches 1.. if score @s ca.item.id_selecter_mainhand matches 1046 run function championsashes:items/shadow_pearl/close_undead
-execute if score @s usedmedal matches 1.. unless score @s shift matches 1.. unless score @s ca.item.id_selecter_mainhand matches 1047 if score @s ca.item.id_selecter_mainhand matches 1046 if predicate championsashes:using_item/shadow_pearl0 run function championsashes:items/shadow_pearl/shadow_pearl1
-execute if score @s usedmedal matches 1.. unless score @s shift matches 1.. unless score @s ca.item.id_selecter_mainhand matches 1047 if score @s ca.item.id_selecter_mainhand matches 1046 if predicate championsashes:using_item/shadow_pearl1 run function championsashes:items/shadow_pearl/shadow_pearl2
-execute if score @s usedmedal matches 1.. unless score @s shift matches 1.. unless score @s ca.item.id_selecter_mainhand matches 1047 if score @s ca.item.id_selecter_mainhand matches 1046 if predicate championsashes:using_item/shadow_pearl2 run function championsashes:items/shadow_pearl/shadow_pearl3
-execute if score @s usedmedal matches 1.. unless score @s shift matches 1.. unless score @s ca.item.id_selecter_mainhand matches 1047 if score @s ca.item.id_selecter_mainhand matches 1046 if predicate championsashes:using_item/shadow_pearl3 run function championsashes:items/shadow_pearl/shadow_pearl4
+execute if score @s usedmedal matches 1.. unless score @s shift matches 1.. unless score @s ca.item.id_selecter_mainhand matches 1047 if score @s ca.item.id_selecter_mainhand matches 1046 run function championsashes:items/shadow_pearl/temp0
 function championsashes:items/shadow_pearl/recursion
 execute if score @s ca.item.id_selecter_mainhand matches 1047 run function championsashes:items/shadow_pearl/void_totem
 
