@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.meteoric_ore_snipe_charge.root] run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/tick_as_root

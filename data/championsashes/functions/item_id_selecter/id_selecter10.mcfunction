@@ -14,6 +14,9 @@ execute if score @s ca.item.id_selecter_mainhand matches 1055 if score @s usedme
 execute if score @s ca.item.id_selecter_mainhand matches 1056 run function championsashes:items/zweihander/zweihander
 execute if score @s ca.item.id_selecter_offhand matches 1056 run function championsashes:items/zweihander/zweihander
 
+#Ancient Meteoric Ore Greatsowrd
+execute if score @s ca.item.id_selecter_mainhand matches 1057 if score @s shift matches 1.. run function championsashes:items/ancient_meteoric_ore_sword/ancient_meteoric_ore_sword
+
 
 #-----------------Special Effects
 

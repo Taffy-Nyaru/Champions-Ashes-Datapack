@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:netherite_sword",
+            "functions": [
+              {
+                "function": "set_nbt",
+                "tag": "{itemId:1057,id:\"championsashes:ancient_meteoric_ore_greatsword\",display: {Name: '[{\"translate\":\"item.championsashes.ancient_meteoric_ore_greatsword\",\"italic\":false}]'},CustomModelData:1390110,AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"attack_damage\", Amount: 22d, Operation: 0, UUID: [I;-736755768,7882198,-1804195323,396188651]},{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"attack_speed\", Amount: -3.25d, Operation: 0, UUID: [I;203311066,-2075180850,-1269094894,1477907051]}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..40 run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/animations/meteoric_snipe_charge/tree/branch_0_40

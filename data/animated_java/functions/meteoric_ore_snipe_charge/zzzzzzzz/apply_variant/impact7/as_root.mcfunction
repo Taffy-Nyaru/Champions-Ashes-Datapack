@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/apply_variant/impact7/as_bone

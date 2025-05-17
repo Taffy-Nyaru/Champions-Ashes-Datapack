@@ -80,6 +80,9 @@ execute if score @s[tag=destined_death_user] ca.item.id_selecter_mainhand matche
 execute if score @s[tag=anchor_skill3] ca.item.id_selecter_mainhand matches 1052 run ride @s mount @e[distance=..10,type=item_display,tag=player_camera,limit=1,sort=nearest]
 execute if score @s[tag=anchor_skill1] ca.item.id_selecter_mainhand matches 1052 run ride @s mount @e[distance=..10,type=item_display,tag=player_camera,limit=1,sort=nearest]
 
+#Ancient Meteoric Ore Greatsword
+#execute if score @s[tag=meteoric_ore_snipe_charge_user] ca.item.id_selecter_mainhand matches 1057 run ride @s mount @e[distance=..10,type=item_display,tag=player_camera,limit=1,sort=nearest]
+
 #Sun Princess Ring
 execute if score @s[tag=field_extensioner] ca.item.id_selecter_mainhand matches 1053 run ride @s mount @e[distance=..10,type=item_display,tag=player_camera,limit=1,sort=nearest]
 execute if score @s[tag=field_extensioner] ca.item.id_selecter_mainhand matches 1053 run tag @s remove riding_display

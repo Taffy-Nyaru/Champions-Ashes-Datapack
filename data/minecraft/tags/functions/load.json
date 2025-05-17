@@ -42,7 +42,6 @@
 		"animated_java:water_vfx/zzzzzzzz/load",
 		"animated_java:water_explode/zzzzzzzz/load",
 		"animated_java:steel_anchor/zzzzzzzz/load",
-		"animated_java:void_slash/zzzzzzzz/load",
 		"animated_java:eletric_shield/zzzzzzzz/load",
 		"animated_java:gravity_lightning_bolt/zzzzzzzz/load",
 		"animated_java:field_extension/zzzzzzzz/load",
@@ -55,6 +54,8 @@
 		"animated_java:space_based_missle/zzzzzzzz/load",
 		"animated_java:kamui/zzzzzzzz/load",
 		"animated_java:blackhole_supernova/zzzzzzzz/load",
-		"animated_java:anchor_vfx/zzzzzzzz/load"
+		"animated_java:anchor_vfx/zzzzzzzz/load",
+		"animated_java:void_slash/zzzzzzzz/load",
+		"animated_java:meteoric_ore_snipe_charge/zzzzzzzz/load"
 	]
 }

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/animations/meteoric_snipe_charge/tree/leaf_7_as_bone

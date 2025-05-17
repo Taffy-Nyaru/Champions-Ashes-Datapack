@@ -2,6 +2,10 @@ effect give @s[tag=!noanchorProtect,tag=!anchor_skill2,tag=!anchor_skill3] regen
 effect give @s[tag=!noanchorProtect,tag=!anchor_skill2,tag=!anchor_skill3] resistance 114514 1 true
 tag @s[tag=!noanchorProtect] add noanchorProtect
 
+execute store result score @s Health run data get entity @s Health
+execute if score @s Health < @s HealthChanged run effect give @s instant_health 1 1
+execute store result score @s HealthChanged run data get entity @s Health
+
 execute as @e[type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] unless score @s ca.item.id_selecter_mainhand matches 1052 at @s[tag=!skill3_anchor_hit] positioned ~ ~1.5 ~ facing ^-55 ^-55 ^55 run function championsashes:items/steel_anchor/anchor_hit
 execute as @e[type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] unless score @s ca.item.id_selecter_mainhand matches 1052 at @s[tag=!skill3_anchor_hit] positioned ~ ~1.5 ~ facing ^-25 ^25 ^-25 run function championsashes:items/steel_anchor/anchor_hit
 

@@ -128,3 +128,4 @@ tag @s[tag=destined_death_atk] remove destined_death_atk
 
 kill @e[distance=..10,type=item_display,tag=player_camera,limit=1,sort=nearest]
 execute at @s[tag=!air_detect,tag=!anchor_skill3] unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~1 ~ air unless block ~ ~1 ~ water run function championsashes:animated_effects/air_detect_start
+tp @s ~ ~0.5 ~ ~ ~

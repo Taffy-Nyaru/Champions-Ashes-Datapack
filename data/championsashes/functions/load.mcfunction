@@ -77,6 +77,7 @@ scoreboard objectives add steelCount dummy
 
 #Steel Anchor
 scoreboard objectives add skill3_anchor_invtimer dummy
+scoreboard objectives add HealthChanged dummy
 
 #Void Totem
 scoreboard objectives add recursion_times dummy

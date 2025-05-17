@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=aj.meteoric_ore_snipe_charge.root] run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/remove/as_root

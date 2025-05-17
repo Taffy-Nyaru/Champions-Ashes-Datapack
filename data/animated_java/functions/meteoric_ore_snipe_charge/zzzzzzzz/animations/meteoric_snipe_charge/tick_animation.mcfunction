@@ -1,0 +1,4 @@
+scoreboard players add @s aj.meteoric_ore_snipe_charge.animation.meteoric_snipe_charge.local_anim_time 1
+scoreboard players operation @s aj.anim_time = @s aj.meteoric_ore_snipe_charge.animation.meteoric_snipe_charge.local_anim_time
+function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/animations/meteoric_snipe_charge/apply_frame_as_root
+execute if score @s aj.meteoric_ore_snipe_charge.animation.meteoric_snipe_charge.local_anim_time matches 40.. run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/animations/meteoric_snipe_charge/end

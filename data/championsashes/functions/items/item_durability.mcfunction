@@ -83,6 +83,8 @@ execute if entity @s[tag=blind_spot_user,gamemode=survival,predicate=!championsa
 execute if entity @s[tag=splitleaf_infinite_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 60
 #Black Blade
 execute if entity @s[tag=destined_death_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 120
+#Ancient Meteoric Ore Greatsword
+execute if entity @s[tag=meteoric_ore_snipe_charge_user,gamemode=survival,predicate=!championsashes:unbreakable] run scoreboard players add @s damage 120
 
 execute store result storage generic:main crossbow_items_damage int 1 run scoreboard players get @s damage
 item modify entity @s[gamemode=survival,predicate=!championsashes:unbreakable] weapon.mainhand championsashes:crossbow_items_damage

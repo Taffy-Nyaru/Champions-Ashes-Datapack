@@ -1,0 +1,3 @@
+execute if score @s aj.meteoric_ore_snipe_charge.animation.meteoric_snipe_charge.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/animations/meteoric_snipe_charge/end_loop
+execute if score @s aj.meteoric_ore_snipe_charge.animation.meteoric_snipe_charge.loop_mode = $aj.loop_mode.once aj.i run function animated_java:meteoric_ore_snipe_charge/animations/meteoric_snipe_charge/stop
+execute if score @s aj.meteoric_ore_snipe_charge.animation.meteoric_snipe_charge.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:meteoric_ore_snipe_charge/animations/meteoric_snipe_charge/pause

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/animations/meteoric_snipe_charge/tree/leaf_29_as_bone
+execute unless entity @s[tag=aj.meteoric_ore_snipe_charge.disable_command_keyframes] at @s run function championsashes:animated_effects/meteoric_ore_snipe

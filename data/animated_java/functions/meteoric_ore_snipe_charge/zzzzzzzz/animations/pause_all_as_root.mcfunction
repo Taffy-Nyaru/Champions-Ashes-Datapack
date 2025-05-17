@@ -1,0 +1,1 @@
+function animated_java:meteoric_ore_snipe_charge/zzzzzzzz/animations/meteoric_snipe_charge/pause_as_root

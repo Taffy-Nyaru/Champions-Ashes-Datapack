@@ -1,0 +1,1 @@
+tag @s remove aj.meteoric_ore_snipe_charge.animation.meteoric_snipe_charge
