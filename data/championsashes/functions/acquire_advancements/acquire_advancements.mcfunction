@@ -1,5 +1,8 @@
 advancement grant @s[advancements={championsashes:func/championsashes=false}] only championsashes:func/championsashes
 data modify storage championsashes:player_data Inventory set from entity @s Inventory
+#Special Helmet
+#execute if entity @e[limit=1,sort=nearest,type=!player,distance=..5] run data modify storage entitydata entityhelmet set from entity @s ArmorItems[3]
+#execute as @e[limit=1,sort=nearest,type=!player,distance=..5] if data storage entitydata entityhelmet.tag.CustomModelData {ArmorItems:[{tag:{id:"championsashes:solitude_helmet"}}]} run function championsashes:items/armor/witherite_helmet
 
 function championsashes:items/armor/armor_advancement
 execute if data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:steel_ingot"}}]} run advancement grant @s[advancements={championsashes:func/steel_ingot=false}] only championsashes:func/steel_ingot
@@ -34,3 +37,4 @@ execute if data storage championsashes:player_data {Inventory:[{tag:{id:"champio
 execute unless data storage championsashes:player_data {Inventory:[{tag:{id:"championsashes:void_eye"}}]} as @e[distance=..15,type=marker,tag=void_marker] at @s run function championsashes:items/void_eye/cancel
 
 data modify storage championsashes:player_data Inventory set value {}
+#data modify storage entitydata entityhelmet set value {}

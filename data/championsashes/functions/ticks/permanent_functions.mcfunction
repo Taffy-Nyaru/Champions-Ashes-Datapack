@@ -14,5 +14,17 @@ execute as @e[distance=..50,type=snowball,predicate=championsashes:misc/shadow_v
 execute as @e[distance=..50,type=item_display,tag=shadow_vortex] run function championsashes:projectiles/shadow_vortex/vortex_timer
 execute unless entity @e[distance=..100,type=item_display,tag=shadow_vortex] run tag @a[tag=used_vortex] remove used_vortex
 
+#Daedalus Crucible Wing
+function championsashes:items/daedalus_crucible_wing/falldamage
+
+#Solitude Helmet
+execute unless score @s[tag=used_solitude_helmet] ca.item.id_selecter_helmet matches 20001 run function championsashes:items/armor/solitude_helmet
+
+#Vampire Hat
+execute if score @s ca.item.id_selecter_helmet matches 1055 run function championsashes:items/vampire_hat/effects
+
 #Bomber Elytra
 execute if entity @s[tag=disableFallDamage] run function championsashes:items/bomber/disablefalldamage
+
+#Regeneration
+execute unless score @s ca.item.id_selecter_mainhand matches 1053 if entity @s[tag=regen] run function championsashes:items/sun_princess_ring/clear_regen

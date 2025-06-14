@@ -1,5 +1,6 @@
 #CMD 1440012
-#CMD 1390110
+#CMD 1390113
+#Itemid 1058
 
 #Initialize Params
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
@@ -8,10 +9,10 @@ execute store result score @s falldistance run data get entity @s FallDistance
 execute store result score @s Y_value run data get entity @s Pos[1]
 execute store result score @s ca.item.id_selecter_mainhand run data get entity @s SelectedItem.tag.itemId
 execute store result score @s ca.item.id_selecter_offhand run data get entity @s Inventory.[{Slot:-106b}].tag.itemId
-execute store result score @s ca.item.id_selecter_helmet run data get entity @s Inventory.[{Slot:103b}].tag.id
-execute store result score @s ca.item.id_selecter_chestplate run data get entity @s Inventory.[{Slot:102b}].tag.id
-execute store result score @s ca.item.id_selecter_leggings run data get entity @s Inventory.[{Slot:101b}].tag.id
-execute store result score @s ca.item.id_selecter_boots run data get entity @s Inventory.[{Slot:100b}].tag.id
+execute store result score @s ca.item.id_selecter_helmet run data get entity @s Inventory.[{Slot:103b}].tag.itemId
+execute store result score @s ca.item.id_selecter_chestplate run data get entity @s Inventory.[{Slot:102b}].tag.itemId
+execute store result score @s ca.item.id_selecter_leggings run data get entity @s Inventory.[{Slot:101b}].tag.itemId
+execute store result score @s ca.item.id_selecter_boots run data get entity @s Inventory.[{Slot:100b}].tag.itemId
 
 #Reset interaction clicker
 function championsashes:clicker/reset_interaction_clicker
@@ -69,8 +70,8 @@ function championsashes:blocks/block
 
 #-----------------------Armor
 execute if score @s ca.item.id_selecter_helmet matches 20000..20015 run function championsashes:item_id_selecter/helmet_selecter
-#Vampire Hat
-execute if score @s ca.item.id_selecter_helmet matches 1055 run function championsashes:items/vampire_hat/effects
+
+
 execute if score @s ca.item.id_selecter_chestplate matches 30000..30015 run function championsashes:item_id_selecter/chestplate_selecter
 execute unless score @s[tag=wither_regen] ca.item.id_selecter_chestplate matches 30000 run function championsashes:items/armor/witherite_chestplate_remove_effect
 execute if score @s ca.item.id_selecter_leggings matches 40000..40015 run function championsashes:item_id_selecter/leggings_selecter

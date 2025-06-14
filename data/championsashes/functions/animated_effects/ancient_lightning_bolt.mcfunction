@@ -1,2 +1,2 @@
-execute as @e[distance=..2,type=!#championsashes:special_entities] unless score @s ca.item.id_selecter_mainhand matches 999 run damage @s 4 minecraft:lightning_bolt by @a[limit=1,sort=nearest]
-execute as @e[distance=..2,type=!#championsashes:special_entities] unless score @s ca.item.id_selecter_mainhand matches 999 run scoreboard players add @s frostbite_Timer 100
+execute as @e[distance=..2,type=!#championsashes:special_entities,type=!player] run damage @s 4 minecraft:lightning_bolt by @a[limit=1,sort=nearest]
+execute as @e[distance=..2,type=!#championsashes:special_entities,type=!player] run scoreboard players add @s frostbite_Timer 120

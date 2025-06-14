@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{id:\"championsashes:daedalus_crucible_wing\",itemId:20002,CustomModelData:1390112,display: {Name: '[{\"translate\":\"item.championsashes.daedalus_crucible_wing\",\"italic\":false}]'},AttributeModifiers: [{Slot: \"head\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 0.1d, Operation: 0, UUID: [I; 285769164, 95763, 45233, 650]},{Slot: \"head\", AttributeName: \"generic.armor\", Name: \"armor\", Amount: 2d, Operation: 0, UUID: [I;-1287162768,-1437776196,-1138447402,-468820039]},{Slot: \"head\", AttributeName: \"generic.knockback_resistance\", Name: \"knockback_resistance\", Amount: 100d, Operation: 0, UUID: [I;-1287162768,-1437776196,-1138447402,-4680039]},{Slot: \"head\", AttributeName: \"generic.flying_speed\", Name: \"flying_speed\", Amount: 100d, Operation: 0, UUID: [I;-51095,-882385123,-1547745125,-344134021]},{Slot: \"head\", AttributeName: \"generic.armor_toughness\", Name: \"armor_toughness\", Amount: 1d, Operation: 0, UUID: [I;-2016744197,-1881193435,-1547745125,-344134021]}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

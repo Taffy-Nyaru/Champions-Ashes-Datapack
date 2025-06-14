@@ -240,7 +240,7 @@ scoreboard players set #20 championsashesValue 20
 scoreboard players set #60 championsashesValue 60
 scoreboard players set #12 championsashesValue 12
 scoreboard players set #2 championsashesValue 2
-scoreboard players set @a lightning_bolt_rain 0
+scoreboard players set @a lightning_bolt_rain 20
 scoreboard players set @a arrow_rain.temp 0
 scoreboard players set @a thunderarrow_damage 2
 scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0

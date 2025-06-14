@@ -119,6 +119,7 @@ tag @s[tag=blind_spot_user] remove blind_spot_user
 #scoreboard players set @s[tag=splitleaf_infinite_user] custom_ca.entity.stiff_time 120
 tag @s[tag=splitleaf_infinite_user] remove splitleaf_infinite_user
 
+tag @s[tag=meteoric_ore_snipe_charge_user] remove meteoric_ore_snipe_charge_user
 #scoreboard players set @s[tag=chainsaw_user] custom_ca.entity.stiff_time 200
 tag @s[tag=chainsaw_user] remove chainsaw_user
 tag @s[tag=shunter_mafia] remove shunter_mafia
