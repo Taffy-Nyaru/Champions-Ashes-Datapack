@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.electric_beacon.locator_origin.locator] at @s on origin run tp @s ^0 ^0 ^0.73828 ~-180 ~0
+execute if entity @s[tag=aj.electric_beacon.bone.blackhole_nova] run data modify entity @s {} merge value {transformation:[0.04875000000000001f,0f,0f,-9.041337696830068e-17f,0f,0.04875000000000001f,0f,0f,0f,0f,0.04875000000000001f,0.73828125f,0f,0f,0f,1f],start_interpolation:0}

@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.electric_beacon.locator","aj.electric_beacon.locator.locator","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"electric_beacon\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"locator\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.electric_beacon.locator.locator,tag=aj.new,limit=1,distance=..1] run function animated_java:electric_beacon/zzzzzzzz/summon/locator_locator/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

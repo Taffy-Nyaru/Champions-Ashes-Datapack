@@ -28,3 +28,7 @@ execute if entity @s[tag=disableFallDamage] run function championsashes:items/bo
 
 #Regeneration
 execute unless score @s ca.item.id_selecter_mainhand matches 1053 if entity @s[tag=regen] run function championsashes:items/sun_princess_ring/clear_regen
+
+#Electric Wand
+execute unless score @s ca.item.id_selecter_mainhand matches 1059 run function championsashes:items/electric_wand/start_cooling
+execute unless score @s ca.item.id_selecter_mainhand matches 1059 run function championsashes:items/electric_wand/start_cooling

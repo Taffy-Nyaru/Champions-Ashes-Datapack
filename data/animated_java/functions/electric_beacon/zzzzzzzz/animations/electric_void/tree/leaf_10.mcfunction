@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:electric_beacon/zzzzzzzz/animations/electric_void/tree/leaf_10_as_bone

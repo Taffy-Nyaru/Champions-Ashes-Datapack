@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:command_block_minecart",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:32,itemId:1059,id:\"championsashes:electric_wand\",display: { Name: '[{\"translate\":\"item.championsashes.electric_wand\",\"italic\":false}]'},CustomModelData:1390114,AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Name: \"generic.attack_speed\", Amount: -0.2d, Operation: 0, UUID: [I; 114, 191, -140, -8100]},{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Name: \"generic.attack_damage\", Amount: 5d, Operation: 0, UUID:[I;1848056,25562485,1898994005,860320107]}], Unbreakable: true}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

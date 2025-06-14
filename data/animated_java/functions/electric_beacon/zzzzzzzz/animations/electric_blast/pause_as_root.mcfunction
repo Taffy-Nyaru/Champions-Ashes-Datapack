@@ -1,0 +1,1 @@
+tag @s remove aj.electric_beacon.animation.electric_blast

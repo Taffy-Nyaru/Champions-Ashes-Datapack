@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.electric_beacon.root] run function animated_java:electric_beacon/zzzzzzzz/apply_variant/1/as_root
+execute if entity @s[tag=!aj.electric_beacon.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:electric_beacon/apply_variant/1 ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

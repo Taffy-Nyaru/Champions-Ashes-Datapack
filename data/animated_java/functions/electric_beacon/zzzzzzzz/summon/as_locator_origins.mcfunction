@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.electric_beacon.locator_origin.locator] run function animated_java:electric_beacon/zzzzzzzz/summon/locator_locator/as_origin
+function #animated_java:electric_beacon/on_summon/as_locator_origins

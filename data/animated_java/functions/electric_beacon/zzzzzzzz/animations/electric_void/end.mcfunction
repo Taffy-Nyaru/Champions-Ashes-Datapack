@@ -1,0 +1,3 @@
+execute if score @s aj.electric_beacon.animation.electric_void.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:electric_beacon/zzzzzzzz/animations/electric_void/end_loop
+execute if score @s aj.electric_beacon.animation.electric_void.loop_mode = $aj.loop_mode.once aj.i run function animated_java:electric_beacon/animations/electric_void/stop
+execute if score @s aj.electric_beacon.animation.electric_void.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:electric_beacon/animations/electric_void/pause

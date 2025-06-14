@@ -223,6 +223,10 @@ scoreboard objectives add gravity_lightning dummy
 #Soul of Elder
 scoreboard objectives add ca.players.spectating_iron_golem dummy
 
+#Electric Wand
+scoreboard objectives add ca.players.electric_beacon_timer dummy
+scoreboard objectives add ca.players.electric_beacon_cooling_timer dummy
+
 #Snowball UUID detect
 scoreboard objectives add snowball_uuid0 dummy
 scoreboard objectives add snowball_uuid1 dummy

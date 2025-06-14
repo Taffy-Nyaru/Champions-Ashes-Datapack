@@ -1,6 +1,6 @@
 #CMD 1440012
 #CMD 1390113
-#Itemid 1058
+#Itemid 1059
 
 #Initialize Params
 execute store result score @s damage run data get entity @s SelectedItem.tag.Damage
@@ -47,8 +47,8 @@ execute if score @s ca.item.id_selecter_offhand matches 1027..1030 run function 
 execute if score @s ca.item.id_selecter_mainhand matches 1031..1035 run function championsashes:item_id_selecter/id_selecter5
 execute if score @s ca.item.id_selecter_offhand matches 1031..1035 run function championsashes:item_id_selecter/id_selecter5
 
-execute if score @s ca.item.id_selecter_mainhand matches 1036..1041 run function championsashes:item_id_selecter/id_selecter6
-execute if score @s ca.item.id_selecter_offhand matches 1036..1041 run function championsashes:item_id_selecter/id_selecter6
+execute if score @s ca.item.id_selecter_mainhand matches 1036..1042 run function championsashes:item_id_selecter/id_selecter6
+execute if score @s ca.item.id_selecter_offhand matches 1036..1042 run function championsashes:item_id_selecter/id_selecter6
 
 #Ringed Knight's Weapons
 function championsashes:item_id_selecter/id_selecter7
@@ -62,8 +62,8 @@ execute if score @s ca.item.id_selecter_offhand matches 1049..1052 run function 
 #Steel Anchor
 execute unless score @s ca.item.id_selecter_offhand matches 1052 unless score @s ca.item.id_selecter_mainhand matches 1052 run function championsashes:items/steel_anchor/clear_steel_anchor_efc
 
-execute if score @s ca.item.id_selecter_mainhand matches 1053..1057 run function championsashes:item_id_selecter/id_selecter10
-execute if score @s ca.item.id_selecter_offhand matches 1053..1057 run function championsashes:item_id_selecter/id_selecter10
+execute if score @s ca.item.id_selecter_mainhand matches 1053..1059 run function championsashes:item_id_selecter/id_selecter10
+execute if score @s ca.item.id_selecter_offhand matches 1053..1059 run function championsashes:item_id_selecter/id_selecter10
 
 #-----------------------Blocks
 function championsashes:blocks/block

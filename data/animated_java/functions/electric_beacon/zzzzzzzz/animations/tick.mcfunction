@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.electric_beacon.animation.electric_blast] run function animated_java:electric_beacon/zzzzzzzz/animations/electric_blast/tick
+execute if entity @s[tag=aj.electric_beacon.animation.electric_void] run function animated_java:electric_beacon/zzzzzzzz/animations/electric_void/tick

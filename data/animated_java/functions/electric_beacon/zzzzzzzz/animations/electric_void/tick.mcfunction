@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:electric_beacon/zzzzzzzz/animations/electric_void/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:electric_beacon/zzzzzzzz/animations/electric_void/tick_animation

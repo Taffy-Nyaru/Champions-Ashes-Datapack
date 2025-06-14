@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=aj.electric_beacon.root] run function animated_java:electric_beacon/zzzzzzzz/remove/as_root

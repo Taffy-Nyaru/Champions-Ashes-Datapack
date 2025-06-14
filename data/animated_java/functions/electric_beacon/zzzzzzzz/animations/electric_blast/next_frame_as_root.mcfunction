@@ -1,0 +1,1 @@
+function animated_java:electric_beacon/zzzzzzzz/animations/electric_blast/tick_animation

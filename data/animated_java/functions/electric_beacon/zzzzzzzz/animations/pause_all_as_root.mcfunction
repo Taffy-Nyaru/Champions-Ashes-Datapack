@@ -1,0 +1,2 @@
+function animated_java:electric_beacon/zzzzzzzz/animations/electric_blast/pause_as_root
+function animated_java:electric_beacon/zzzzzzzz/animations/electric_void/pause_as_root
