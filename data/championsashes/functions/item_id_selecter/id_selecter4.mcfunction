@@ -16,6 +16,7 @@ execute if score @s ca.item.id_selecter_mainhand matches 1030 if score @s shift 
 
 
 #Lothric Holy Sword
+execute as @e[distance=..20,type=!player,type=!#championsashes:special_entities] store result score @s Y_value run data get entity @s Pos[1]
 execute as @e[distance=..50,type=item_display,tag=lazer_animate] at @s run function championsashes:projectiles/lazer_beam/lazer_beam_animate
 execute as @e[distance=..50,type=item_display,tag=lazer_fading] run function championsashes:projectiles/lazer_beam/lazer_faded
 execute unless entity @e[distance=..50,type=item_display,tag=lazer_beam] run function championsashes:projectiles/lazer_beam/remove_tags
