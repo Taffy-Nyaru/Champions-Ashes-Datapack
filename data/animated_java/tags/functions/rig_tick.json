@@ -45,7 +45,6 @@
 		"animated_java:ancient_lightning_strike/zzzzzzzz/tick",
 		"animated_java:zamor_ice_storm/zzzzzzzz/tick",
 		"animated_java:destined_death/zzzzzzzz/tick",
-		"animated_java:death_blighted/zzzzzzzz/tick",
 		"animated_java:ringed_nightstar/zzzzzzzz/tick",
 		"animated_java:gravity_thrust/zzzzzzzz/tick",
 		"animated_java:space_based_missle/zzzzzzzz/tick",
@@ -54,6 +53,7 @@
 		"animated_java:anchor_vfx/zzzzzzzz/tick",
 		"animated_java:void_slash/zzzzzzzz/tick",
 		"animated_java:meteoric_ore_snipe_charge/zzzzzzzz/tick",
+		"animated_java:death_blighted/zzzzzzzz/tick",
 		"animated_java:electric_beacon/zzzzzzzz/tick"
 	]
 }
