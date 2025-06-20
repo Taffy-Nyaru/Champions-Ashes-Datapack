@@ -22,6 +22,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.electric_beacon.export_version aj.i 655297981
+scoreboard players set aj.electric_beacon.export_version aj.i 1743173954
 scoreboard players reset * aj.electric_beacon.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.electric_beacon.root] run function animated_java:electric_beacon/zzzzzzzz/on_load
