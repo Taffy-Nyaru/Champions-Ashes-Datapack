@@ -19,7 +19,8 @@ execute if score @s ca.item.id_selecter_mainhand matches 1057 if score @s shift 
 
 #Electric Wand
 execute if score @s ca.item.id_selecter_mainhand matches 1059 run function championsashes:items/electric_wand/electric_wand
-execute if score @s ca.item.id_selecter_offhand matches 1059 run function championsashes:items/electric_wand/electric_wand
+execute if score @s ca.item.id_selecter_offhand matches 1059 unless score @s shift matches 1.. run function championsashes:items/electric_wand/electric_wand
+execute if score @s ca.item.id_selecter_offhand matches 1059 if score @s[tag=!stiff,tag=!electric_beacon_skill_cooling] shift matches 1.. at @e[distance=..50,limit=1,sort=nearest,type=!#championsashes:special_entities,type=!player] unless entity @e[tag=aj.electric_beacon.root,distance=..50] run function championsashes:items/electric_wand/skill
 
 
 #-----------------Special Effects
