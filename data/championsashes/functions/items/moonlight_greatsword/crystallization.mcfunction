@@ -6,4 +6,3 @@ execute as @e[tag=ice_crystallized] at @s facing ~ ~ ~ run function animated_jav
 execute as @e[tag=aj.ice_crystal.root] run function animated_java:ice_crystal/animations/ice_crystallization/play
 
 execute as @s[gamemode=survival] run function championsashes:items/item_durability
-tag @s remove ice_crystal_user

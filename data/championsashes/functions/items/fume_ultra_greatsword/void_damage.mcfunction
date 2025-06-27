@@ -1,1 +1,1 @@
-damage @s 25 minecraft:out_of_world by @a[limit=1,sort=nearest,tag=void_slash_user]
+damage @s 10 minecraft:out_of_world by @a[limit=1,sort=nearest,tag=void_slash_user]
