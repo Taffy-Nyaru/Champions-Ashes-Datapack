@@ -12,6 +12,7 @@ scoreboard objectives add ca.tick20_schedule dummy
 #Player related
 scoreboard objectives add ca.item.id_selecter_mainhand dummy
 scoreboard objectives add ca.item.id_selecter_offhand dummy
+scoreboard objectives add ca.item.mainhand_holding_item dummy
 scoreboard objectives add ca.item.id_selecter_helmet dummy
 scoreboard objectives add ca.item.id_selecter_chestplate dummy
 scoreboard objectives add ca.item.id_selecter_leggings dummy

@@ -1,6 +1,6 @@
 execute unless entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s add needclicker
 execute unless entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s add needclicker
-tag @s[tag=ca.refreshed_clicker] remove ca.refreshed_clicker
+
 
 execute store result score @s sworddamage run data get entity @s SelectedItem.tag.AttributeModifiers[{UUID:[I;1848056,25562485,1898994005,860320107]}].Amount
 execute as @e[type=!player,tag=raycast.target,distance=..10] run function championsashes:items/zweihander/black_blade/percentage

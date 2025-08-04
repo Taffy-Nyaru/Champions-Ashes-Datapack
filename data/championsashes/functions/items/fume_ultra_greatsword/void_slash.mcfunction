@@ -1,5 +1,4 @@
-item replace entity @s weapon.mainhand from entity @s weapon.offhand
-item replace entity @s weapon.offhand with air
+function championsashes:items/offhand_switch
 
 tag @s add void_slash_user
 tag @e[type=!#championsashes:special_entities,tag=!void_slash_user,tag=!charmed,tag=!purple_charm,distance=..10,limit=1,tag=!void_inflict,sort=nearest] add void_inflict

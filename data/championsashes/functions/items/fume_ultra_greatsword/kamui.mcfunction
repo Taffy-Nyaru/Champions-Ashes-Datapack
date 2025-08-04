@@ -1,5 +1,4 @@
-item replace entity @s weapon.mainhand from entity @s weapon.offhand
-item replace entity @s weapon.offhand with air
+function championsashes:items/offhand_switch
 
 tag @s[tag=animated_got_gamemode] remove animated_got_gamemode
 execute store result score @s gamemode run data get entity @s playerGameType

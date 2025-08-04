@@ -1,6 +1,6 @@
 execute unless entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s add needclicker
 execute unless entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s add needclicker
-tag @s[tag=ca.refreshed_clicker] remove ca.refreshed_clicker
+
 
 execute as @e[distance=..20,limit=1,sort=nearest,type=!#championsashes:special_entities,tag=raycast.target] run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_on
 execute at @s unless entity @e[tag=aj.meteoric_ore_snipe_charge.root,distance=..2] as @e[distance=..20,limit=1,sort=nearest,type=!#championsashes:special_entities,tag=lazer_locked_on,tag=!raycast.target] run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_off

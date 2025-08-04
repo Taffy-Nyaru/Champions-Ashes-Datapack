@@ -15,4 +15,4 @@ execute unless score @s shift matches 1.. run tag @s remove needclicker
 execute if entity @s[tag=anchor_skill3] run function championsashes:items/steel_anchor/skill3_timer
 execute if entity @s[tag=skill3_anchor_invTimer] run function championsashes:items/steel_anchor/skill3_anchor_invtimer
 
-execute if score @s[tag=!anchor_skill1,tag=!anchor_skill2,tag=!anchor_skill3] shift matches 1.. if score @s ca.item.id_selecter_offhand matches 1052 unless entity @e[tag=aj.water_vfx.root] at @s facing ~ ~ ~ run function championsashes:items/steel_anchor/anchor_skill2
+execute if score @s[tag=!anchor_skill1,tag=!anchor_skill2,tag=!anchor_skill3] shift matches 1.. if score @s ca.item.id_selecter_offhand matches 1052 unless entity @e[tag=aj.water_vfx.root,distance=..10] at @s facing ~ ~ ~ run function championsashes:items/steel_anchor/anchor_skill2

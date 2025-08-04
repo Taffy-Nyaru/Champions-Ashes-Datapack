@@ -1,6 +1,6 @@
 execute unless entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s add needclicker
 execute unless entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s add needclicker
-tag @s[tag=ca.refreshed_clicker] remove ca.refreshed_clicker
+
 
 item modify entity @s weapon.mainhand championsashes:charged
 item modify entity @s weapon.mainhand championsashes:refill

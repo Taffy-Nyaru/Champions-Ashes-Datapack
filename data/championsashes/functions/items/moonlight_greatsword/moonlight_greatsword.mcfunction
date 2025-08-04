@@ -1,6 +1,6 @@
 execute unless entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s add needclicker
 execute unless entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s add needclicker
-tag @s[tag=ca.refreshed_clicker] remove ca.refreshed_clicker
+
 
 execute if entity @e[type=interaction,distance=..10,tag=clicker,scores={ca.interaction_rClick=1..}] run data modify entity 2094fd65-93de-4a69-9ea2-a74c7f35bc75 Thrower set from storage generic:main ca.interaction_rClicker
 execute if entity @e[type=interaction,distance=..10,tag=clicker,scores={ca.interaction_rClick=1..}] as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if score @s[tag=!stiff] ca.item.id_selecter_mainhand matches 1032 at @s unless entity @e[tag=aj.ice_crystal.root,distance=..20] run function championsashes:items/moonlight_greatsword/crystallization

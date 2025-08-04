@@ -1,5 +1,4 @@
-item replace entity @s weapon.mainhand from entity @s weapon.offhand
-item replace entity @s weapon.offhand with air
+function championsashes:items/offhand_switch
 
 tag @s add space_based_missle_user
 tag @e[distance=..10,limit=1,sort=nearest,type=!#championsashes:special_entities,tag=!space_based_missle_user,tag=!charmed,tag=!purple_charm,tag=!lockontarget] add lockontarget

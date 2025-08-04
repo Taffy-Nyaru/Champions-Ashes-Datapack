@@ -14,9 +14,6 @@ execute store result score @s ca.item.id_selecter_chestplate run data get entity
 execute store result score @s ca.item.id_selecter_leggings run data get entity @s Inventory.[{Slot:101b}].tag.itemId
 execute store result score @s ca.item.id_selecter_boots run data get entity @s Inventory.[{Slot:100b}].tag.itemId
 
-#Reset interaction clicker
-function championsashes:clicker/reset_interaction_clicker
-
 #Snowball Detect
 execute if score @s usedSnowball matches 1.. if entity @e[distance=..7,type=snowball,predicate=championsashes:misc/shadow_vortex] run function championsashes:projectiles/snowball_detect/snowball_detect
 execute if score @s usedSnowball matches 1.. if entity @e[distance=..7,type=snowball,predicate=championsashes:misc/thunder_knife] run function championsashes:projectiles/snowball_detect/snowball_detect
@@ -82,6 +79,9 @@ function championsashes:ticks/permanent_functions
 
 #Multiplayer rClick
 function championsashes:clicker/multinteraction
+
+#Reset interaction clicker
+function championsashes:clicker/reset_interaction_clicker
 
 #Animation Camera
 execute as @s[tag=riding_display] run function championsashes:animated_effects/animation_effects_handle/ride
