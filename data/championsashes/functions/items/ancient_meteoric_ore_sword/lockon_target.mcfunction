@@ -1,0 +1,2 @@
+execute if score #ca.temp.sniper_lockontarget ca.raycast_value matches 1.. anchored eyes positioned ^ ^ ^ run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_on
+execute if score #ca.temp.sniper_lockontarget ca.raycast_value matches 0.. as @e[type=!player,distance=..120,tag=laser_locked_on,type=!#championsashes:special_entities] run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_off

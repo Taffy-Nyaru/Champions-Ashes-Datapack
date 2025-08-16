@@ -241,6 +241,7 @@ scoreboard objectives add championsashes_return dummy
 scoreboard objectives add onFire dummy
 scoreboard players set count entityCount 0
 scoreboard players set #raycast.max ca.raycast_value 100
+scoreboard players set #ca.temp.sniper_lockontarget ca.raycast_value 1200
 scoreboard players set #20 championsashesValue 20
 scoreboard players set #60 championsashesValue 60
 scoreboard players set #12 championsashesValue 12

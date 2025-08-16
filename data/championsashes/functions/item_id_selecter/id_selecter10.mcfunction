@@ -16,6 +16,8 @@ execute if score @s ca.item.id_selecter_offhand matches 1056 run function champi
 
 #Ancient Meteoric Ore Greatsowrd
 execute if score @s ca.item.id_selecter_mainhand matches 1057 if score @s shift matches 1.. run function championsashes:items/ancient_meteoric_ore_sword/ancient_meteoric_ore_sword
+execute if score @s ca.item.id_selecter_mainhand matches 1057 if score @s[tag=!meteoric_ore_snipe_charge_user] shift matches 0 run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_off
+execute if score @s ca.item.id_selecter_offhand matches 1057 if score @s[tag=!meteoric_ore_snipe_charge_user] shift matches 0 run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_off
 
 #Electric Wand
 execute if score @s ca.item.id_selecter_mainhand matches 1059 run function championsashes:items/electric_wand/electric_wand

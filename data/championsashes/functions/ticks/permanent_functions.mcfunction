@@ -31,3 +31,6 @@ execute unless score @s ca.item.id_selecter_mainhand matches 1053 if entity @s[t
 
 #Electric Wand
 execute unless score @s[tag=electric_wand_skill] ca.item.id_selecter_mainhand matches 1059 unless score @s[tag=electric_wand_skill] ca.item.id_selecter_offhand matches 1059 run function animated_java:electric_beacon/remove/all
+
+#Ancient Meteoric Sword
+execute unless score @s[tag=!meteoric_ore_snipe_charge_user] ca.item.id_selecter_mainhand matches 1057 unless score @s[tag=!meteoric_ore_snipe_charge_user] ca.item.id_selecter_offhand matches 1057 run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_off

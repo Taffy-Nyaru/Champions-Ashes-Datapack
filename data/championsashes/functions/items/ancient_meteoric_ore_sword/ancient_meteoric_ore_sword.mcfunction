@@ -1,9 +1,9 @@
 execute unless entity @e[tag=raycast.target,type=glow_item_frame,distance=..2] run tag @s add needclicker
 execute unless entity @e[tag=raycast.target,type=item_frame,distance=..2] run tag @s add needclicker
+effect give @s slowness 1 255 true
 
-
-execute as @e[distance=..20,limit=1,sort=nearest,type=!#championsashes:special_entities,tag=raycast.target] run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_on
-execute at @s unless entity @e[tag=aj.meteoric_ore_snipe_charge.root,distance=..2] as @e[distance=..20,limit=1,sort=nearest,type=!#championsashes:special_entities,tag=lazer_locked_on,tag=!raycast.target] run function championsashes:items/ancient_meteoric_ore_sword/lazer_locked_off
+function championsashes:items/ancient_meteoric_ore_sword/lockon_target
+execute facing entity @e[distance=..120,limit=1,sort=nearest,tag=lazer_locked_on] feet run tp @s ^ ^ ^ ~ ~
 
 execute if entity @e[type=interaction,distance=..10,tag=clicker,scores={ca.interaction_rClick=1..}] run data modify entity 2094fd65-93de-4a69-9ea2-a74c7f35bc75 Thrower set from storage generic:main ca.interaction_rClicker
 execute if entity @e[type=interaction,distance=..10,tag=clicker,scores={ca.interaction_rClick=1..}] as 2094fd65-93de-4a69-9ea2-a74c7f35bc75 on origin if entity @s[tag=!stiff] at @s unless entity @e[tag=aj.meteoric_ore_snipe_charge.root,distance=..2] run function championsashes:items/ancient_meteoric_ore_sword/skill
