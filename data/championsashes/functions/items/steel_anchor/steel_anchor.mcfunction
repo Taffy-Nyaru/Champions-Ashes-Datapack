@@ -6,8 +6,8 @@ execute store result score @s Health run data get entity @s Health
 execute if score @s Health < @s HealthChanged run effect give @s instant_health 1 1
 execute store result score @s HealthChanged run data get entity @s Health
 
-execute as @e[type=!player,type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] unless score @s ca.item.id_selecter_mainhand matches 1052 at @s[tag=!skill3_anchor_hit] positioned ~ ~1.5 ~ facing ^-55 ^-55 ^55 run function championsashes:items/steel_anchor/anchor_hit
-execute as @e[type=!player,type=!#championsashes:special_entities,predicate=championsashes:hurttime,distance=..7] unless score @s ca.item.id_selecter_mainhand matches 1052 at @s[tag=!skill3_anchor_hit] positioned ~ ~1.5 ~ facing ^-25 ^25 ^-25 run function championsashes:items/steel_anchor/anchor_hit
+execute as @e[type=!player,type=!#championsashes:special_entities,predicate=championsashes:hurttime,limit=1,sort=nearest,distance=..7] unless score @s ca.item.id_selecter_mainhand matches 1052 at @s[tag=!skill3_anchor_hit] positioned ~ ~1.5 ~ facing ^-55 ^-55 ^55 run function championsashes:items/steel_anchor/anchor_hit
+execute as @e[type=!player,type=!#championsashes:special_entities,predicate=championsashes:hurttime,limit=1,sort=nearest,distance=..7] unless score @s ca.item.id_selecter_mainhand matches 1052 at @s[tag=!skill3_anchor_hit] positioned ~ ~1.5 ~ facing ^-25 ^25 ^-25 run function championsashes:items/steel_anchor/anchor_hit
 
 execute if score @s[tag=!anchor_skill2] shift matches 1.. run function championsashes:items/steel_anchor/clicker
 execute unless score @s shift matches 1.. run tag @s remove needclicker
