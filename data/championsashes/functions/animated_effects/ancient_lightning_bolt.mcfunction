@@ -1,2 +1,2 @@
-execute as @e[distance=..2,type=!#championsashes:special_entities,type=!player] run damage @s 4 minecraft:lightning_bolt by @a[limit=1,sort=nearest]
-execute as @e[distance=..2,type=!#championsashes:special_entities,type=!player] run scoreboard players add @s frostbite_Timer 120
+damage @s 6 minecraft:lightning_bolt by @a[limit=1,sort=nearest]
+scoreboard players add @s frostbite_Timer 120

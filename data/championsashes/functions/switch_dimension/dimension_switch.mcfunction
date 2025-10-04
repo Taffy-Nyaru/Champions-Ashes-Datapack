@@ -14,7 +14,6 @@ kill 3367665c-ead2-4cc7-847e-b5cb6dc5fe8d
 #Waystone Marker
 kill e370442d-c2f2-4495-9ceb-50b614118d0f
 execute at @s run summon marker 0 0 0 {UUID:[I;-479181779,-1024310123,-1662299978,336694543]}
-execute if entity @s[predicate=championsashes:noninteraction_rclick] run kill @e[tag=clicker]
 execute at @s run forceload add 0 0 0 0
 
 #Initialize the clicker interaction's owner

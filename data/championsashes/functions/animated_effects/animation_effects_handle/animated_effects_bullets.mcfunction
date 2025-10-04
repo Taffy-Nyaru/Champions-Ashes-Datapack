@@ -13,7 +13,7 @@ execute if entity @s[tag=gravity_impaling_user] as @e[distance=..20,type=!#champ
 #Steel Anchor Skill3
 execute if entity @s[tag=anchor_skill3] as @e[distance=..20,type=item_display,tag=aj.steel_anchor.locator,limit=1,tag=!player_camera] at @s run function championsashes:items/steel_anchor/skill3_anchor_hitbox
 #Drakeblood Lightning
-execute if entity @s[tag=used_drakeblood_skill] at @e[distance=..15,type=marker,tag=aj.ancient_lightning_strike.locator,tag=!player_camera] run function championsashes:animated_effects/ancient_lightning_bolt
+execute if entity @s[tag=used_drakeblood_skill] at @e[distance=..15,type=marker,tag=aj.ancient_lightning_strike.locator,tag=!player_camera] as @e[distance=..2,type=!#championsashes:special_entities,type=!player] run function championsashes:animated_effects/ancient_lightning_bolt
 #Thunder Bullet
 execute as @e[type=item_display,tag=aj.thunder_bullet.root] at @s unless entity @e[type=arrow,distance=..2] run function animated_java:thunder_bullet/remove/this
 execute at @e[distance=..50,type=marker,tag=aj.thunder_bullet.root] run particle minecraft:soul_fire_flame ~ ~ ~ 0.2 0.2 0.2 0.05 2

@@ -16,4 +16,3 @@ execute if score @s rotation matches 2147483647 run scoreboard players set @s ro
 execute store result storage math:io #phanalax_rotation_angle.angle float 0.08 run scoreboard players get @s rotation
 data modify entity @s transformation.left_rotation set from storage math:io #phanalax_rotation_angle
 data modify entity @s interpolation_duration set value 1
-data modify entity @s teleport_duration set value 1

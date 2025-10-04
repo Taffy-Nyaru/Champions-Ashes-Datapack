@@ -161,6 +161,7 @@ scoreboard objectives add 2drakeblood_phanalax_uuid2 dummy
 scoreboard objectives add 2drakeblood_phanalax_uuid3 dummy
 scoreboard objectives add Elder_Health dummy
 scoreboard objectives add summon.temp dummy
+scoreboard objectives add nep_injured_count dummy
 bossbar add nep_elder "NEP.Elder"
 
 #Parry
