@@ -256,7 +256,6 @@ scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
 execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1
 
 team add friendly
-team modify friendly friendlyFire false
 
 data modify storage generic:main usingItem0 set value 0
 data modify storage generic:main usingItem1 set value 1
