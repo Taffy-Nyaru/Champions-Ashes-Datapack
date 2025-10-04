@@ -18,3 +18,5 @@ execute at @s run forceload add 0 0 0 0
 
 #Initialize the clicker interaction's owner
 function championsashes:clicker/item_thrower
+
+tag @s[tag=dimension_switch_buffer] remove dimension_switch_buffer

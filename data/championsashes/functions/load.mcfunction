@@ -31,6 +31,8 @@ scoreboard objectives add ca.itemCount dummy
 scoreboard objectives add euclidean_positionX dummy
 scoreboard objectives add euclidean_positionY dummy
 scoreboard objectives add euclidean_positionZ dummy
+scoreboard objectives add ca.dimension_switch dummy
+scoreboard objectives add ca.dimension_switch_buffer dummy
 
 scoreboard objectives add ca.warden.anger dummy
 
