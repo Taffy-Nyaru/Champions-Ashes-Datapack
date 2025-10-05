@@ -6,13 +6,14 @@ execute store result score @s Health run data get entity @s Health
 execute store result storage generic:main frozen_burst.temp double 0.07 run scoreboard players get @s maxHealth
 execute store result score @s frostbite_burst run data get storage generic:main frozen_burst.temp
 
-scoreboard players operation @s frostbite_burst += #12 championsashesValue
 execute as @s on attacker run scoreboard players operation @s frostbite_burst += @s Damage
 scoreboard players operation @s Health -= @s frostbite_burst
 execute store result storage generic:main frostbite_burst double 1 run scoreboard players get @s Health
+scoreboard players operation @s frostbite_burst += #12 championsashesValue
 
 execute unless score @s Health <= @s frostbite_burst run data modify entity @s Health set from storage generic:main frostbite_burst
 
+execute store result score @s Health run data get entity @s Health
 execute if score @s Health <= @s frostbite_burst run function championsashes:effects/ko
 execute unless predicate championsashes:healthzero if score @s[tag=KO] Health <= @s[tag=KO] frostbite_burst run function championsashes:effects/true_kill
 

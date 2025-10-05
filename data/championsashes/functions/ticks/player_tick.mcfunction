@@ -16,9 +16,9 @@ execute store result score @s ca.item.id_selecter_boots run data get entity @s I
 
 #Dimension of each player
 execute store success score @s ca.dimension_switch run data modify storage championsashes:player_data now_dimension set from entity @s Dimension
-execute if score @s ca.dimension_switch matches 1 as @s[tag=!ca.dimension_switch_buffer] run tag @s add ca.dimension_switch_buffer
-execute as @s[tag=ca.dimension_switch_buffer] run scoreboard players add @s ca.dimension_switch_buffer 1
-execute as @s[tag=ca.dimension_switch_buffer,scores={ca.dimension_switch_buffer=20..}] run function championsashes:switch_dimension/dimension_switch
+execute if score @s ca.dimension_switch matches 1 run tag @s[tag=!ca.dimension_switch_buffer] add ca.dimension_switch_buffer
+execute if entity @s[tag=ca.dimension_switch_buffer] as @s run scoreboard players add @s ca.dimension_switch_buffer 1
+execute as @s[scores={ca.dimension_switch_buffer=20..}] run function championsashes:switch_dimension/dimension_switch
 execute as @s[scores={ca.dimension_switch_buffer=20..}] run scoreboard players set @s ca.dimension_switch_buffer 0
 
 #Snowball Detect
