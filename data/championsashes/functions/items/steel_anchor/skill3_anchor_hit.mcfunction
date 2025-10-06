@@ -1,5 +1,4 @@
-#gamerule mobGriefing false
-
+gamerule mobGriefing false
 tag @a[limit=1,sort=nearest,tag=anchor_skill3] add skill3_anchor_hit
 execute as @e[tag=aj.steel_anchor.root] run function animated_java:steel_anchor/animations/pause_all
 
@@ -24,4 +23,3 @@ execute as @a[limit=1,sort=nearest,tag=anchor_skill3] at @s unless block ~ ~6 ~ 
 execute as @a[limit=1,sort=nearest,tag=anchor_skill3] at @s unless block ~ ~5 ~ air unless block ~ ~5 ~ water rotated ~ ~ run function championsashes:items/steel_anchor/back_to_inplace
 
 kill 00000077-0000-032a-0000-007200000202
-#gamerule mobGriefing true
