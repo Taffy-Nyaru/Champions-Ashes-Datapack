@@ -33,7 +33,6 @@ scoreboard objectives add euclidean_positionY dummy
 scoreboard objectives add euclidean_positionZ dummy
 scoreboard objectives add ca.dimension_switch dummy
 scoreboard objectives add ca.dimension_switch_buffer dummy
-
 scoreboard objectives add ca.warden.anger dummy
 
 #Using Items
@@ -164,6 +163,7 @@ scoreboard objectives add 2drakeblood_phanalax_uuid3 dummy
 scoreboard objectives add Elder_Health dummy
 scoreboard objectives add summon.temp dummy
 scoreboard objectives add nep_injured_count dummy
+scoreboard objectives add nep_attacked_by_player_timer dummy
 bossbar add nep_elder "NEP.Elder"
 
 #Parry

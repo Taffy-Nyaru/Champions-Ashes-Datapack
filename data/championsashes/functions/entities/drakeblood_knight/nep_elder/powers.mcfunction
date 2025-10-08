@@ -75,11 +75,16 @@ execute unless entity @s[tag=phase2_started] positioned ^ ^ ^2 if score @s Elder
 execute if score @s Elder_Health matches ..128 run tag @s add phase2
 execute if score @s Elder_Health matches 130.. run kill @e[distance=..10,type=item_display,tag=nep_projectile]
 execute if score @s Elder_Health matches 130.. run tag @s[tag=phase2] remove phase2
-execute if score @s Elder_Health matches 130.. run tag @s[tag=phase2_started] remove phase2_started
+#execute if score @s Elder_Health matches 130.. run tag @s[tag=phase2_started] remove phase2_started
+
 execute as @s[tag=phase2] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase2
 
 function championsashes:entities/drakeblood_knight/nep_elder/clear_negative_effects
-tag @s remove nep_attacked_by_player
+
+execute if entity @s[tag=nep_attacked_by_player] run scoreboard players add @s nep_attacked_by_player_timer 1
+execute if score @s nep_attacked_by_player_timer matches 20.. run tag @s remove nep_attacked_by_player
+execute if score @s nep_attacked_by_player_timer matches 20.. run scoreboard players set @s nep_attacked_by_player_timer 0
+
 
 execute at @a at @s[distance=..50] run bossbar set nep_elder players @a[distance=..50]
 data modify storage generic:main NepSelectedItem set value {}
