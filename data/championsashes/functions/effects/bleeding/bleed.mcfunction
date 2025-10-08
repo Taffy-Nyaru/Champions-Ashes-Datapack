@@ -5,11 +5,8 @@ execute on attacker store result score @s Damage run data get entity @s Selected
 #Displays
 execute as @s[scores={bleeding_Timer=3200..}] at @s run function championsashes:effects/bleeding/bleeding_time_up
 
-#Continuous damages
-execute as @s[tag=bloodloss] at @s run function championsashes:effects/bleeding/debuff
-
 #Dealt percentage damage
-execute as @s[tag=blood_burst] run function championsashes:effects/bleeding/damage
-execute as @s[type=player] run function championsashes:effects/bleeding/players
+execute as @s[tag=blood_burst,type=!player] run function championsashes:effects/bleeding/damage
+execute as @s[tag=blood_burst,type=player] run function championsashes:effects/bleeding/player_damage
 
 scoreboard players remove @s bleeding_Timer 1

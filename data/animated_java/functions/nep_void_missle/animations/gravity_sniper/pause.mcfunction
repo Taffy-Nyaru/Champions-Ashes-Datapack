@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.nep_void_missle.root] run function animated_java:nep_void_missle/zzzzzzzz/animations/gravity_sniper/pause_as_root
+execute if entity @s[tag=!aj.nep_void_missle.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:nep_void_missle/animations/gravity_sniper/pause ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

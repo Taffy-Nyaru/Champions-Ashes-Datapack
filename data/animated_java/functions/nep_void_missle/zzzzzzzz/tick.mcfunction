@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_void_missle.root] run function animated_java:nep_void_missle/zzzzzzzz/tick_as_root

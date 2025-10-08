@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_void_missle/zzzzzzzz/animations/gravity_sniper/tree/leaf_67_as_bone
+execute unless entity @s[tag=aj.nep_void_missle.disable_command_keyframes] at @s run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/phase2_snipe

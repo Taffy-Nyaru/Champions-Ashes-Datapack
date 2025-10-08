@@ -7,7 +7,7 @@ execute at @e[distance=..10,type=lightning_bolt,tag=Thunder] as @e[type=item,dis
 execute at @e[distance=..10,type=lightning_bolt,tag=Thunder] as @e[type=experience_orb,distance=..5] run data modify entity @s Invulnerable set value 1b
 
 #Entity effects
-execute at @e[distance=..15,type=wither_skeleton,tag=drakeblood_knight] as @e[distance=..7,type=!#championsashes:special_entities,predicate=championsashes:hurttime] on attacker run function championsashes:entities/using_items/using_item
+execute at @e[distance=..15,type=wither_skeleton,tag=drakeblood_knight] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!drakeblood_knight,predicate=championsashes:hurttime] on attacker run function championsashes:entities/using_items/using_item
 
 #Drakeblood Knight
 execute as @e[distance=..25,type=wither_skeleton,tag=drakeblood_knight] at @s run function championsashes:entities/drakeblood_knight/powers

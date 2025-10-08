@@ -1,0 +1,2 @@
+function animated_java:nep_void_missle/summon
+execute as @e[type=item_display,tag=aj.nep_void_missle.root,limit=1,sort=nearest,tag=!drakeblood_phanalax1,tag=!drakeblood_phanalax2] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/void_missle0_shoot

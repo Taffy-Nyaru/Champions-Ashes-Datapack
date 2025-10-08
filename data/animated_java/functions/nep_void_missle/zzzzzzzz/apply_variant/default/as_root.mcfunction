@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_void_missle/zzzzzzzz/apply_variant/default/as_bone

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..80 run function animated_java:nep_void_missle/zzzzzzzz/animations/gravity_sniper/tree/branch_0_80

@@ -1,0 +1,3 @@
+execute if score @s aj.nep_void_missle.animation.gravity_sniper.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_void_missle/zzzzzzzz/animations/gravity_sniper/end_loop
+execute if score @s aj.nep_void_missle.animation.gravity_sniper.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_void_missle/animations/gravity_sniper/stop
+execute if score @s aj.nep_void_missle.animation.gravity_sniper.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_void_missle/animations/gravity_sniper/pause

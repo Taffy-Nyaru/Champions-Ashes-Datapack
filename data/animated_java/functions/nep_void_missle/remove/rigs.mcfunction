@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=aj.nep_void_missle.root] run function animated_java:nep_void_missle/zzzzzzzz/remove/as_root

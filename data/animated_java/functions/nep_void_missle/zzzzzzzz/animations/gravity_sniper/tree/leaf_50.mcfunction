@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_void_missle/zzzzzzzz/animations/gravity_sniper/tree/leaf_50_as_bone
+execute unless entity @s[tag=aj.nep_void_missle.disable_command_keyframes] at @s run execute as @e[type=item_display,tag=aj.nep_graivty_snipe.root,tag=!nep_missle_removed_lockon_rotation] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/void_missle_remove_lockon

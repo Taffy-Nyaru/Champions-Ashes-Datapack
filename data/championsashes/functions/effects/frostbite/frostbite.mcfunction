@@ -9,7 +9,8 @@ execute as @s[scores={frostbite_Timer=4200..}] at @s run function championsashes
 execute as @s[tag=frostburst] at @s run function championsashes:effects/frostbite/debuff
 
 #Dealt percentage damage
-execute as @s[tag=blow_up] run function championsashes:effects/frostbite/damage
-scoreboard players remove @s frostbite_Timer 1
+execute as @s[tag=blow_up,type=!player] run function championsashes:effects/frostbite/damage
+execute as @s[tag=blow_up,type=player] run function championsashes:effects/frostbite/blow_up
+execute as @s[tag=frostburst,type=player] run function championsashes:effects/frostbite/player_damage
 
-execute as @s[type=player] run function championsashes:effects/frostbite/players
+scoreboard players remove @s frostbite_Timer 1

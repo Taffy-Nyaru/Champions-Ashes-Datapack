@@ -1,0 +1,1 @@
+function animated_java:nep_void_missle/remove/all

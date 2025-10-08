@@ -9,7 +9,7 @@ execute as 5ff8eb59-2069-4c4f-bfbb-b49b8c613a04 on origin run tag @s add golem_a
 execute as 5ff8eb59-2069-4c4f-bfbb-b49b8c613a04 on origin run data modify storage generic:main arrow_Motion set from entity @s Motion
 
 execute as @e[type=arrow,tag=golem_arrow] run data modify entity @s Motion set from storage generic:main arrow_Motion
-execute at @e[type=arrow,tag=golem_arrow,predicate=championsashes:misc/arrow_inground] run summon creeper ~ ~ ~ {Invulnerable:1b,Fuse:0,ExplosionRadius:1,Invulnerable:1b,Tags:["690bomber"]}
-execute at @e[type=arrow,tag=golem_arrow] if entity @e[distance=..3,tag=!golem_arrow,type=!player,type=!#championsashes:special_entities] run summon creeper ~ ~ ~ {Invulnerable:1b,Fuse:0,ExplosionRadius:1,Invulnerable:1b,Tags:["690bomber"]}
+execute at @e[type=arrow,tag=golem_arrow,predicate=championsashes:misc/arrow_inground] run summon lightning_bolt ~ ~ ~ {Tags:[Thunder]}
+execute at @e[type=arrow,tag=golem_arrow] if entity @e[distance=..3,tag=!golem_arrow,type=!player,type=!#championsashes:special_entities] run summon lightning_bolt ~ ~ ~ {Tags:[Thunder]}
 kill @e[type=arrow,tag=golem_arrow,predicate=championsashes:misc/arrow_inground]
 kill @e[type=arrow,tag=golem_arrow,distance=120..]

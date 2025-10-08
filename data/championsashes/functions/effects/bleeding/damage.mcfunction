@@ -16,7 +16,4 @@ execute store result score @s Health run data get entity @s Health
 execute if score @s Health <= @s bloodloss run function championsashes:effects/ko
 execute unless predicate championsashes:healthzero if score @s[tag=KO] Health <= @s[tag=KO] bloodloss run function championsashes:effects/true_kill
 
-#For players, make 12 damage
-execute if entity @s[type=player] run damage @s 10 championsashes:bloodloss
-
 tag @s remove blood_burst

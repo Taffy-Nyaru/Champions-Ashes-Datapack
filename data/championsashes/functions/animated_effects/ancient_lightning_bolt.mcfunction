@@ -1,2 +1,2 @@
-damage @s 6 minecraft:lightning_bolt by @a[limit=1,sort=nearest]
+damage @s 6 minecraft:lightning_bolt
 scoreboard players add @s frostbite_Timer 120

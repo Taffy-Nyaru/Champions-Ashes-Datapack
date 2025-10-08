@@ -1,0 +1,17 @@
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89258 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam2] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89258 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam3] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89259 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam4] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.8926 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam5] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89261 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam6] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89262 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam15] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89268 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam14] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89269 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam13] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.8927 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam16] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.8927 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam12] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89266 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam11] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89265 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam10] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89265 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam9] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89264 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam8] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89263 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam7] at @s on origin run tp @s ^0.00033 ^0.00391 ^1.89267 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.bone.halo] run data modify entity @s {} merge value {transformation:[-0.39552226798013673f,0.84820024089904f,0f,-0.014294374999999991f,-0.84820024089904f,-0.39552226798013673f,3.3637190437956385e-32f,-0.024130624999999996f,2.544193217888959e-32f,1.1863767813276304e-32f,1.1214192708333335f,1.4065503125f,0f,0f,0f,1f],start_interpolation:0}
