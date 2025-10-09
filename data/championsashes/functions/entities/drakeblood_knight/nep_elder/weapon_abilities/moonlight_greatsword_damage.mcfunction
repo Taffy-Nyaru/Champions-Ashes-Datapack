@@ -1,0 +1,2 @@
+execute at @e[type=marker,tag=nep_moonlight_greatsword_locator,limit=1,sort=nearest] as @e[type=!#championsashes:special_entities,type=!player,tag=!drakeblood_knight,distance=..2] run damage @s 15 minecraft:freeze by @e[type=wither_skeleton,tag=nep_elder,limit=1,sort=nearest]
+execute at @e[type=marker,tag=nep_moonlight_greatsword_locator,limit=1,sort=nearest] as @a[gamemode=!creative,gamemode=!spectator,tag=!drakeblood_knight,distance=..2] run damage @s 15 minecraft:freeze by @e[type=wither_skeleton,tag=nep_elder,limit=1,sort=nearest]

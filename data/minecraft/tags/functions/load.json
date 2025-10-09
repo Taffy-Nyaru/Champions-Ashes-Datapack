@@ -45,7 +45,6 @@
 		"animated_java:eletric_shield/zzzzzzzz/load",
 		"animated_java:gravity_lightning_bolt/zzzzzzzz/load",
 		"animated_java:field_extension/zzzzzzzz/load",
-		"animated_java:ancient_lightning_strike/zzzzzzzz/load",
 		"animated_java:zamor_ice_storm/zzzzzzzz/load",
 		"animated_java:destined_death/zzzzzzzz/load",
 		"animated_java:ringed_nightstar/zzzzzzzz/load",
@@ -58,6 +57,8 @@
 		"animated_java:death_blighted/zzzzzzzz/load",
 		"animated_java:void_slash/zzzzzzzz/load",
 		"animated_java:electric_beacon/zzzzzzzz/load",
-		"animated_java:nep_void_missle/zzzzzzzz/load"
+		"animated_java:nep_void_missle/zzzzzzzz/load",
+		"animated_java:ancient_lightning_strike/zzzzzzzz/load",
+		"animated_java:nep_moonlight_slash/zzzzzzzz/load"
 	]
 }

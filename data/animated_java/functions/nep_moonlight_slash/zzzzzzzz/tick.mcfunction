@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_moonlight_slash.root] run function animated_java:nep_moonlight_slash/zzzzzzzz/tick_as_root

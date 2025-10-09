@@ -9,19 +9,23 @@ tag @a[gamemode=creative,tag=nep_foe] remove nep_foe
 execute if entity @s[tag=nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/player_uses_ban_recover
 execute if entity @s[tag=nep_start_recover_cooling,tag=!nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/recover_cooldown
 
-#Teleporting
+#Destroy Blocks
+execute unless block ~ ~ ~ air unless block ~ ~1 ~ air run fill ~-1 ~ ~-1 ~1 ~1.5 ~1 air replace
+execute unless block ~ ~0.5 ~ air run fill ~-1 ~ ~-1 ~1 ~1.5 ~1 air replace
+execute unless block ~ ~1 ~ air run fill ~-1 ~ ~-1 ~1 ~1.5 ~1 air replace
+
+#Teleporting with blast
 execute unless entity @e[type=item_display,tag=aj.nep_void_missle.root,distance=..5] if entity @e[tag=nep_foe,type=!player,type=!#championsashes:special_entities,distance=5..] run scoreboard players add teleport_skill.temp championsashes_Timer 1
 execute if score teleport_skill.temp championsashes_Timer matches 150.. at @e[tag=nep_foe,limit=1,sort=nearest] run teleport @s ~-1 ~0.5 ~-1
-execute if score teleport_skill.temp championsashes_Timer matches 150.. if entity @e[tag=nep_foe,type=!player,type=!#championsashes:special_entities,distance=..5] run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 air replace
+execute if score teleport_skill.temp championsashes_Timer matches 150.. at @e[tag=nep_foe,type=!player,type=!#championsashes:special_entities,distance=..20] run summon creeper ~ ~ ~ {Tags:["bomber"],Fuse:0,powered:1b}
 execute if score teleport_skill.temp championsashes_Timer matches 150.. run scoreboard players set teleport_skill.temp championsashes_Timer 0
 
 #Weapon Inventory
 execute on target if score weapon_inventory math_output matches 100.. run tag @e[tag=nep_elder] add had_target
 execute on target if score weapon_inventory math_output matches ..-100 run tag @e[tag=nep_elder] add had_target
 
-scoreboard players add weapon_class championsashes_Timer 1
-
 #Change weapons by random possibility
+execute unless entity @s[tag=nep_ice_phase] unless entity @s[tag=nep_fire_phase] run scoreboard players add weapon_class championsashes_Timer 1
 execute if score weapon_class championsashes_Timer matches 100.. run function championsashes:entities/drakeblood_knight/nep_elder/weapon_class
 
 #Favour Ring
@@ -43,7 +47,7 @@ execute if score parry_stop_timer championsashes_Timer matches 512.. run scorebo
 
 #---Weapon Abilities
 #Black Knight Greataxe
-execute if data storage generic:main {NepSelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} at @e[tag=nep_foe,type=!#championsashes:special_entities,predicate=championsashes:hurttime] run summon creeper ~ ~ ~ {Invulnerable:1b,Tags:["bomb"],Fuse:0,ExplosionRadius:1}
+execute if data storage generic:main {NepSelectedItem:{tag:{id:"championsashes:black_knight_greataxe"}}} unless entity @s[tag=nep_attacked_by_player] at @e[tag=nep_foe,type=!#championsashes:special_entities,predicate=championsashes:hurttime] run summon creeper ~ ~ ~ {Invulnerable:1b,Tags:["bomb"],Fuse:0,ExplosionRadius:1}
 
 #Lightning
 scoreboard players add #nep_use_lightning_strike_skill championsashes_Timer 1
@@ -60,6 +64,13 @@ execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard pl
 #Steel Anchor
 execute if data storage generic:main {NepSelectedItem:{tag:{id:"championsashes:steel_anchor"}}} run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/steel_anchor
 
+#Moonlight Greatsword
+execute if entity @s[tag=nep_ice_phase] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_ice_phase_timer
+execute if entity @s[tag=nep_ice_animation] as @e[type=item_display,distance=..20,tag=aj.nep_moonlight_slash.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..50,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~
+
+#Ringed Knight Straight Sword
+execute if entity @s[tag=nep_fire_phase] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_fire_phase_timer
+
 #Hostile Bullets
 function championsashes:animated_effects/animation_effects_handle/animated_effects_bullets_hostile
 
@@ -71,7 +82,7 @@ execute unless entity @e[tag=nep_foe] as @e[tag=attracted_drakeblood_knight] run
 execute store result score @s Elder_Health run data get entity @s Health
 execute unless entity @s[tag=phase2_started] positioned ^ ^ ^2 if score @s Elder_Health matches ..128 run function championsashes:entities/drakeblood_knight/nep_elder/phase2_start
 
-#Phase 2: If there is none drakeblood knight around, Summon a drakeblood knight and dragon head bomb every 30sec, breaking most natural spawn vanilla blocks
+#Phase 2: If there is no drakeblood knight around, Summon a drakeblood knight and dragon head bomb every 30sec, breaking most natural spawn vanilla blocks
 execute if score @s Elder_Health matches ..128 run tag @s add phase2
 execute if score @s Elder_Health matches 130.. run kill @e[distance=..10,type=item_display,tag=nep_projectile]
 execute if score @s Elder_Health matches 130.. run tag @s[tag=phase2] remove phase2
@@ -85,6 +96,5 @@ execute if entity @s[tag=nep_attacked_by_player] run scoreboard players add @s n
 execute if score @s nep_attacked_by_player_timer matches 20.. run tag @s remove nep_attacked_by_player
 execute if score @s nep_attacked_by_player_timer matches 20.. run scoreboard players set @s nep_attacked_by_player_timer 0
 
-
-execute at @a at @s[distance=..50] run bossbar set nep_elder players @a[distance=..50]
+bossbar set nep_elder players @a
 data modify storage generic:main NepSelectedItem set value {}

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_moonlight_slash.animation.nep_moonlight_slash] run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tick

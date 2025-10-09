@@ -1,0 +1,3 @@
+execute if score @s aj.nep_moonlight_slash.animation.nep_moonlight_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/end_loop
+execute if score @s aj.nep_moonlight_slash.animation.nep_moonlight_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_moonlight_slash/animations/nep_moonlight_slash/stop
+execute if score @s aj.nep_moonlight_slash.animation.nep_moonlight_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_moonlight_slash/animations/nep_moonlight_slash/pause

@@ -1,0 +1,4 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["nep_ride","aj.nep_moonlight_slash.locator","aj.nep_moonlight_slash.locator.nep_ride","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_moonlight_slash\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"nep_ride\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:item_display,tag=aj.nep_moonlight_slash.locator.nep_ride,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_moonlight_slash/zzzzzzzz/summon/locator_nep_ride/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

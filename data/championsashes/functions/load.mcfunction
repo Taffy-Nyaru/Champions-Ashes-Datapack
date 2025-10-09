@@ -164,6 +164,8 @@ scoreboard objectives add Elder_Health dummy
 scoreboard objectives add summon.temp dummy
 scoreboard objectives add nep_injured_count dummy
 scoreboard objectives add nep_attacked_by_player_timer dummy
+scoreboard objectives add nep_ice_phase_timer dummy
+scoreboard objectives add nep_fire_phase_timer dummy
 bossbar add nep_elder "NEP.Elder"
 
 #Parry

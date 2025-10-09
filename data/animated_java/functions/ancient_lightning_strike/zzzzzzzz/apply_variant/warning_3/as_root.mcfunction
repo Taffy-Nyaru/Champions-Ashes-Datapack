@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning_3/as_bone

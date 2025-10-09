@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tree/leaf_56_as_bone
+execute unless entity @s[tag=aj.ancient_lightning_strike.disable_command_keyframes] at @s run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tree/leaf_56_effects_0

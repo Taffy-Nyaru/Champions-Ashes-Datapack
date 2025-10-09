@@ -1,1 +1,0 @@
-scoreboard players operation @s aj.ancient_lightning_strike.export_version = aj.ancient_lightning_strike.export_version aj.i

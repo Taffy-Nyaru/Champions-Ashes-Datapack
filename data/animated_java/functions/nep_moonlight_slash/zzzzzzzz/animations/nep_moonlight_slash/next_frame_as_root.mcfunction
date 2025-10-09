@@ -1,0 +1,1 @@
+function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tick_animation

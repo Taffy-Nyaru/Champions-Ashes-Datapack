@@ -1,4 +1,4 @@
 scoreboard players add @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.local_anim_time 1
 scoreboard players operation @s aj.anim_time = @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.local_anim_time
 function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/apply_frame_as_root
-execute if score @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.local_anim_time matches 34.. run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/end
+execute if score @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.local_anim_time matches 56.. run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/end

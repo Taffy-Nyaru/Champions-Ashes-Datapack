@@ -12,6 +12,14 @@ execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.lightning_
 execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.lightning_bolt2 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/lightning_bolt2/as_root
 execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.lightning_bolt3 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/lightning_bolt3/as_root
 execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.lightning_bolt4 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/lightning_bolt4/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning_0 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning_0/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning_1 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning_1/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning_2 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning_2/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning_3 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning_3/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning0 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning0/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning1 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning1/as_root
+execute if score #variant aj.i = $aj.ancient_lightning_strike.variant.warning2 aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/warning2/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ancient_lightning_strike.animation.ancient_lightning_strike aj.id run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/apply_frame_as_root
 execute if score #animation aj.i = $aj.ancient_lightning_strike.animation.ancient_lightning_strike aj.id run scoreboard players operation @s aj.ancient_lightning_strike.animation.ancient_lightning_strike.local_anim_time = #frame aj.i

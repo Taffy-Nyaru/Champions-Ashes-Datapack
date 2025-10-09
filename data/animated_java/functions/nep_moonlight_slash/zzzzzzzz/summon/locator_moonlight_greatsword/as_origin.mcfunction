@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["nep_moonlight_greatsword_locator","aj.nep_moonlight_slash.locator","aj.nep_moonlight_slash.locator.moonlight_greatsword","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_moonlight_slash\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"moonlight_greatsword\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.nep_moonlight_slash.locator.moonlight_greatsword,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_moonlight_slash/zzzzzzzz/summon/locator_moonlight_greatsword/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

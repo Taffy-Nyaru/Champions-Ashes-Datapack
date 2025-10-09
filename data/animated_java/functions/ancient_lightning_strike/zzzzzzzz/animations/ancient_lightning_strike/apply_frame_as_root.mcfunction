@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..34 run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tree/branch_0_34
+execute if score @s aj.anim_time matches 0..56 run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tree/branch_0_56

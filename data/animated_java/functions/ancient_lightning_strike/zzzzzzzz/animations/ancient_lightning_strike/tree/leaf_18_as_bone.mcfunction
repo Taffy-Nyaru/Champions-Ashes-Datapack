@@ -1,9 +1,5 @@
-execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement1] at @s on origin run tp @s ^0 ^9.4375 ^-0.0625 ~0 ~0
-execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement2] at @s on origin run tp @s ^0 ^7.3125 ^-0.0625 ~0 ~0
-execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement3] at @s on origin run tp @s ^0 ^5.1875 ^-0.0625 ~0 ~0
-execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement4] at @s on origin run tp @s ^0 ^3.0625 ^-0.0625 ~0 ~0
-execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement5] at @s on origin run tp @s ^0 ^0.9375 ^-0.0625 ~0 ~0
-execute if entity @s[tag=aj.ancient_lightning_strike.bone.belt1] run data modify entity @s {} merge value {transformation:[-0.2180317445824684f,-0.4114816314793103f,-1.6803115459416136f,0.10942598771342434f,1.73145056001117f,-0.06932956033301785f,-0.20862442604413314f,7.808219497386283f,-0.013083790174063803f,-1.6962760080091983f,0.4158818261160219f,-0.0030568453312182636f,0f,0f,0f,1f],start_interpolation:0}
-execute if entity @s[tag=aj.ancient_lightning_strike.bone.belt2] run data modify entity @s {} merge value {transformation:[0.41492617064225445f,-1.1795445780452631f,-0.5868867169604391f,0.10942598771342434f,1.267524612054808f,0.18635283840401884f,0.519916312310761f,7.808219497386283f,-0.36137518838066324f,-0.6954983755612003f,1.140176789067404f,-0.0030568453312182636f,0f,0f,0f,1f],start_interpolation:0}
-execute if entity @s[tag=aj.ancient_lightning_strike.bone.belt3] run data modify entity @s {} merge value {transformation:[-0.7308591600207687f,0.870741840542656f,0.21136976515371841f,0.10942598771342434f,0.38984889838092496f,0.10025846384413373f,1.0169297031285054f,7.808219497386283f,0.7129363041755806f,0.8424188519020457f,-0.33731397601464136f,-0.0030568453312182636f,0f,0f,0f,1f],start_interpolation:0}
-execute if entity @s[tag=aj.ancient_lightning_strike.bone.lightning_orb] run data modify entity @s {} merge value {transformation:[-0.6869401211491436f,-1.0906485586203567f,0.1961120425809979f,-0.023958541666666656f,0.9359675378067258f,-0.44800159489566294f,0.7914840069783436f,7.989583125f,-0.5930610298935258f,0.5562586085635306f,1.021962456451299f,0.04062479166666666f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement1] at @s on origin run tp @s ^0 ^7.84375 ^0 ~0 ~0
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement2] at @s on origin run tp @s ^0 ^7.84375 ^0 ~0 ~0
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement3] at @s on origin run tp @s ^0 ^7.84375 ^0 ~0 ~0
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement4] at @s on origin run tp @s ^0 ^7.84375 ^0 ~0 ~0
+execute if entity @s[tag=aj.ancient_lightning_strike.locator_origin.bolt_segement5] at @s on origin run tp @s ^0 ^7.84375 ^0 ~0 ~0

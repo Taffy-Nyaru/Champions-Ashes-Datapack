@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_moonlight_slash/zzzzzzzz/apply_variant/default/as_bone

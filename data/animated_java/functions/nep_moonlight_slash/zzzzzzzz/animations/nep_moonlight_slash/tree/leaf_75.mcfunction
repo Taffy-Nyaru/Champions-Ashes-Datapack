@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/leaf_75_as_bone

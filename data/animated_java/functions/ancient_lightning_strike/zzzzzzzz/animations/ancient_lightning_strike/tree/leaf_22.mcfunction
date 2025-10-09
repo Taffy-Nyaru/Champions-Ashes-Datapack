@@ -1,2 +1,2 @@
 execute on passengers run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tree/leaf_22_as_bone
-function animated_java:ancient_lightning_strike/zzzzzzzz/apply_variant/lightning_bolt4/as_root
+execute unless entity @s[tag=aj.ancient_lightning_strike.disable_command_keyframes] at @s run function animated_java:ancient_lightning_strike/zzzzzzzz/animations/ancient_lightning_strike/tree/leaf_22_effects_0

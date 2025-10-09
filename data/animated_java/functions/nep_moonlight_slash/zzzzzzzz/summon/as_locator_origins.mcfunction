@@ -1,0 +1,3 @@
+execute if entity @s[tag=aj.nep_moonlight_slash.locator_origin.moonlight_greatsword] run function animated_java:nep_moonlight_slash/zzzzzzzz/summon/locator_moonlight_greatsword/as_origin
+execute if entity @s[tag=aj.nep_moonlight_slash.locator_origin.nep_ride] run function animated_java:nep_moonlight_slash/zzzzzzzz/summon/locator_nep_ride/as_origin
+function #animated_java:nep_moonlight_slash/on_summon/as_locator_origins
