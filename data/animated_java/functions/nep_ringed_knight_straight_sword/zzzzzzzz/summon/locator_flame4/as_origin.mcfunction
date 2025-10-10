@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.nep_ringed_knight_straight_sword.locator","aj.nep_ringed_knight_straight_sword.locator.flame4","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_ringed_knight_straight_sword\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"flame4\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.nep_ringed_knight_straight_sword.locator.flame4,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_flame4/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["nep_rkss_locator","aj.nep_ringed_knight_straight_sword.locator","aj.nep_ringed_knight_straight_sword.locator.rkss12","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_ringed_knight_straight_sword\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"rkss12\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.nep_ringed_knight_straight_sword.locator.rkss12,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_rkss12/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

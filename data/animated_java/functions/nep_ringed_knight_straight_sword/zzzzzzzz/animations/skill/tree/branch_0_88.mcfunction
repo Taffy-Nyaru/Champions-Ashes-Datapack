@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 0..63 run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/skill/tree/branch_0_63
+execute if score @s aj.anim_time matches 64..88 run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/skill/tree/branch_64_88

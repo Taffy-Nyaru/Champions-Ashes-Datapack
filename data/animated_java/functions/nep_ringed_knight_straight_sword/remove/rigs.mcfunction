@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=aj.nep_ringed_knight_straight_sword.root] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/remove/as_root

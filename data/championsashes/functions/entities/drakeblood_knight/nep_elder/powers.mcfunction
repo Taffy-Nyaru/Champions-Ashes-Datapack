@@ -10,9 +10,17 @@ execute if entity @s[tag=nep_attacked_by_player] run function championsashes:ent
 execute if entity @s[tag=nep_start_recover_cooling,tag=!nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/recover_cooldown
 
 #Destroy Blocks
-execute unless block ~ ~ ~ air unless block ~ ~1 ~ air run fill ~-1 ~ ~-1 ~1 ~1.5 ~1 air replace
-execute unless block ~ ~0.5 ~ air run fill ~-1 ~ ~-1 ~1 ~1.5 ~1 air replace
-execute unless block ~ ~1 ~ air run fill ~-1 ~ ~-1 ~1 ~1.5 ~1 air replace
+execute unless block ~ ~ ~ air unless block ~ ~1 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~0.5 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~1 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~2 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+
+#Anti-Ride
+execute on vehicle if entity @s[type=!item_display] run kill @s
+
+#Destroy blocks and create platform if there are blocks in front, checks for every 8 seconds
+execute if entity @p[tag=nep_foe,distance=..30] run function championsashes:entities/drakeblood_knight/nep_elder/teleport_ai
+execute if score @s nep_block_destroy_timer matches 160.. run teleport @s @p[tag=nep_foe]
 
 #Teleporting with blast
 execute unless entity @e[type=item_display,tag=aj.nep_void_missle.root,distance=..5] if entity @e[tag=nep_foe,type=!player,type=!#championsashes:special_entities,distance=5..] run scoreboard players add teleport_skill.temp championsashes_Timer 1
@@ -25,11 +33,11 @@ execute on target if score weapon_inventory math_output matches 100.. run tag @e
 execute on target if score weapon_inventory math_output matches ..-100 run tag @e[tag=nep_elder] add had_target
 
 #Change weapons by random possibility
-execute unless entity @s[tag=nep_ice_phase] unless entity @s[tag=nep_fire_phase] run scoreboard players add weapon_class championsashes_Timer 1
+execute if entity @s[tag=!nep_fire_phase,tag=!nep_ice_phase] run scoreboard players add weapon_class championsashes_Timer 1
 execute if score weapon_class championsashes_Timer matches 100.. run function championsashes:entities/drakeblood_knight/nep_elder/weapon_class
 
 #Favour Ring
-execute if entity @e[tag=nep_foe,type=!#championsashes:special_entities,distance=1.5..] if score change_weapon_inventory math_output matches 500..700 run function championsashes:entities/drakeblood_knight/nep_elder/favour_ring
+execute if entity @e[tag=nep_foe,type=!#championsashes:special_entities,distance=1.8..] if score change_weapon_inventory math_output matches 551..800 run function championsashes:entities/drakeblood_knight/nep_elder/favour_ring
 scoreboard players add #nep_favour_ring_exist_timer championsashes_Timer 1
 execute if score #nep_favour_ring_exist_timer championsashes_Timer matches 10.. run kill @e[type=item_display,limit=1,sort=nearest,tag=nep_favour_ring]
 execute if score #nep_favour_ring_exist_timer championsashes_Timer matches 10.. run scoreboard players set #nep_favour_ring_exist_timer championsashes_Timer 0
@@ -70,6 +78,7 @@ execute if entity @s[tag=nep_ice_animation] as @e[type=item_display,distance=..2
 
 #Ringed Knight Straight Sword
 execute if entity @s[tag=nep_fire_phase] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_fire_phase_timer
+execute if entity @s[tag=nep_fire_animation] as @e[type=item_display,distance=..20,tag=aj.nep_ringed_knight_straight_sword.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..50,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~
 
 #Hostile Bullets
 function championsashes:animated_effects/animation_effects_handle/animated_effects_bullets_hostile
@@ -86,7 +95,6 @@ execute unless entity @s[tag=phase2_started] positioned ^ ^ ^2 if score @s Elder
 execute if score @s Elder_Health matches ..128 run tag @s add phase2
 execute if score @s Elder_Health matches 130.. run kill @e[distance=..10,type=item_display,tag=nep_projectile]
 execute if score @s Elder_Health matches 130.. run tag @s[tag=phase2] remove phase2
-#execute if score @s Elder_Health matches 130.. run tag @s[tag=phase2_started] remove phase2_started
 
 execute as @s[tag=phase2] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase2
 

@@ -1,2 +1,2 @@
 scoreboard players add @s nep_fire_phase_timer 1
-execute if score @s nep_fire_phase_timer matches 150.. run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_fire_phase
+execute if score @s nep_fire_phase_timer matches 150.. unless entity @e[tag=aj.nep_ringed_knight_straight_sword.root,distance=..20,type=item_display] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_fire_phase

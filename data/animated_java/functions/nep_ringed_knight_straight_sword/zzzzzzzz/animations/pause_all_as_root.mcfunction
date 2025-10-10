@@ -1,0 +1,2 @@
+function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/skill/pause_as_root
+function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/cancel/pause_as_root
