@@ -1,0 +1,1 @@
+tag @s remove aj.void_slash.animation.nep_void_slash_field

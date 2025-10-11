@@ -28,6 +28,8 @@ execute if score #variant aj.i = $aj.void_slash.variant.faded3 aj.id run functio
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.void_slash.animation.void_slash aj.id run function animated_java:void_slash/zzzzzzzz/animations/void_slash/apply_frame_as_root
 execute if score #animation aj.i = $aj.void_slash.animation.void_slash aj.id run scoreboard players operation @s aj.void_slash.animation.void_slash.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.void_slash.animation.nep_void_slash_field aj.id run function animated_java:void_slash/zzzzzzzz/animations/nep_void_slash_field/apply_frame_as_root
+execute if score #animation aj.i = $aj.void_slash.animation.nep_void_slash_field aj.id run scoreboard players operation @s aj.void_slash.animation.nep_void_slash_field.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:void_slash/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

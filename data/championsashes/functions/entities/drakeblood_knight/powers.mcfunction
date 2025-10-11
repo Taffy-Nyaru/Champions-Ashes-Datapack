@@ -13,7 +13,3 @@ execute as @e[tag=entity_with_drakeblood_phanalax,type=wither_skeleton,distance=
 execute at @e[tag=entity_with_drakeblood_phanalax,type=wither_skeleton,distance=..10] as @e[type=item_display,tag=drakeblood_phanalax0,distance=..10] run function championsashes:projectiles/phanalax/rotation
 execute at @e[tag=entity_with_drakeblood_phanalax,type=wither_skeleton,distance=..10] as @e[type=item_display,tag=drakeblood_phanalax1,distance=..10] run function championsashes:projectiles/phanalax/rotation
 execute at @e[tag=entity_with_drakeblood_phanalax,type=wither_skeleton,distance=..10] as @e[type=item_display,tag=drakeblood_phanalax2,distance=..10] run function championsashes:projectiles/phanalax/rotation
-
-execute as @e[distance=..20,type=item_display,tag=drakeblood_phanalax0] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
-execute as @e[distance=..20,type=item_display,tag=drakeblood_phanalax1] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
-execute as @e[distance=..20,type=item_display,tag=drakeblood_phanalax2] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s

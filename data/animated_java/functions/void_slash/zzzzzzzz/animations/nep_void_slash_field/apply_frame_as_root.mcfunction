@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..43 run function animated_java:void_slash/zzzzzzzz/animations/nep_void_slash_field/tree/branch_0_43

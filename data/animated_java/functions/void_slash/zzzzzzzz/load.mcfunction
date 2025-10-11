@@ -6,8 +6,11 @@ scoreboard objectives add aj.life_time dummy
 scoreboard objectives add aj.void_slash.export_version dummy
 scoreboard objectives add aj.void_slash.rig_loaded dummy
 scoreboard objectives add aj.void_slash.animation.void_slash.local_anim_time dummy
+scoreboard objectives add aj.void_slash.animation.nep_void_slash_field.local_anim_time dummy
 scoreboard objectives add aj.void_slash.animation.void_slash.loop_mode dummy
+scoreboard objectives add aj.void_slash.animation.nep_void_slash_field.loop_mode dummy
 scoreboard players set $aj.void_slash.animation.void_slash aj.id 0
+scoreboard players set $aj.void_slash.animation.nep_void_slash_field aj.id 1
 scoreboard players set $aj.void_slash.variant.faded aj.id 0
 scoreboard players set $aj.void_slash.variant.0 aj.id 1
 scoreboard players set $aj.void_slash.variant.1 aj.id 2
@@ -30,6 +33,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.void_slash.export_version aj.i -288282592
+scoreboard players set aj.void_slash.export_version aj.i 86763804
 scoreboard players reset * aj.void_slash.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.void_slash.root] run function animated_java:void_slash/zzzzzzzz/on_load

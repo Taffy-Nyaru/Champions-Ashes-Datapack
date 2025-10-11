@@ -1,1 +1,2 @@
 execute if entity @s[tag=aj.void_slash.animation.void_slash] run function animated_java:void_slash/zzzzzzzz/animations/void_slash/tick
+execute if entity @s[tag=aj.void_slash.animation.nep_void_slash_field] run function animated_java:void_slash/zzzzzzzz/animations/nep_void_slash_field/tick

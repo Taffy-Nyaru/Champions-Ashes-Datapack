@@ -1,3 +1,5 @@
+execute at @e[tag=summon_shrine,limit=1,sort=nearest,type=marker] run tp @s ^ ^ ^1
+
 execute positioned ^ ^1 ^2 run function championsashes:entities/drakeblood_knight/summon
 loot replace entity @s armor.head loot championsashes:armor/old_sorcerer_hat_nep
 summon item_display ~ ~3 ~ {Tags:["nep_projectile"],item:{id:"dragon_head",Count:1b}}
@@ -11,7 +13,6 @@ loot replace entity @s weapon.mainhand loot championsashes:items/murky_hand_scyt
 data modify entity @s SelectedItem.tag.Enchantments set value [{id:"sharpness",lvl:10s}]
 
 effect give @s resistance infinite 2 true
-effect clear @s regeneration
 damage @s 5 championsashes:gtx690
 tag @s add phase2_started
 tag @s add phase2_start_recovering

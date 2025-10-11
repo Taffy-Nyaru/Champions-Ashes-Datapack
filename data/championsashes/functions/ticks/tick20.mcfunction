@@ -9,8 +9,8 @@ execute run function championsashes:projectiles/phanalax/reset_kill.temp
 execute at @e[type=wither_skeleton,tag=drakeblood_knight] run function championsashes:projectiles/phanalax/reset_kill.temp
 
 #Firelink shrine summon
-execute at @e[distance=..8,type=marker,limit=1,tag=summon_shrine] as @s[distance=..50] if entity @e[type=item,nbt={Item:{id:"minecraft:amethyst_shard"}},distance=..4] if entity @e[type=item,nbt={Item:{id:"minecraft:echo_shard"}},distance=..4] if entity @e[type=item,nbt={Item:{id:"minecraft:nether_star"}},distance=..4] if entity @e[type=item,nbt={Item:{id:"minecraft:end_crystal"}},distance=..4] run function championsashes:entities/drakeblood_knight/nep_elder/summon
-execute at @e[distance=..8,type=marker,limit=1,tag=summon_shrine] if entity @e[type=item,nbt={Item:{id:"minecraft:amethyst_shard"}},distance=..4] if entity @e[type=item,nbt={Item:{id:"minecraft:echo_shard"}},distance=..4] if entity @e[type=item,nbt={Item:{id:"minecraft:nether_star"}},distance=..4] if entity @e[type=item,nbt={Item:{id:"minecraft:end_crystal"}},distance=..4] run kill @e[type=item,distance=..5]
+execute at @e[distance=..8,type=marker,limit=1,tag=summon_shrine] as @s[distance=..50] if entity @e[type=item,nbt={Item:{id:"minecraft:amethyst_shard",Count:64b}},distance=..4] run function championsashes:entities/drakeblood_knight/nep_elder/summon
+execute at @e[distance=..8,type=marker,limit=1,tag=summon_shrine] if entity @e[type=item,nbt={Item:{id:"minecraft:amethyst_shard",Count:64b}},distance=..4] run kill @e[type=item,distance=..4]
 
 #Upgrade Table
 execute at @e[type=item,distance=..10] if block ~ ~-1 ~ glass as @e[limit=1,sort=nearest,tag=upgrade_table,tag=!item_displayed,distance=..1.5] at @s summon item_display run function championsashes:blocks/upgrade_table/display

@@ -4,6 +4,7 @@ execute if score change_weapon_inventory math_output matches 351..550 run loot r
 execute if score change_weapon_inventory math_output matches 351..550 run loot replace entity @s weapon.offhand loot championsashes:items/black_knight_shield
 execute if score change_weapon_inventory math_output matches 351..550 run tag @s add nep_fire_phase
 execute if score change_weapon_inventory math_output matches 551..650 run loot replace entity @s weapon.mainhand loot championsashes:items/murky_hand_scythe
+execute if score change_weapon_inventory math_output matches 551..650 run data modify entity @s SelectedItem.tag.Enchantments set value [{id:"sharpness",lvl:10s}]
 execute if score change_weapon_inventory math_output matches 651..750 run loot replace entity @s weapon.mainhand loot championsashes:items/dragonslayer_greatbow
 execute if score change_weapon_inventory math_output matches 751..800 run loot replace entity @s weapon.mainhand loot championsashes:items/steel_anchor
 execute if score change_weapon_inventory math_output matches 801..1024 run loot replace entity @s weapon.mainhand loot championsashes:items/moonlight_greatsword

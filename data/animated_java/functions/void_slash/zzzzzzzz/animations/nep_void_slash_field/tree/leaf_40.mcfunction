@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:void_slash/zzzzzzzz/animations/nep_void_slash_field/tree/leaf_40_as_bone

@@ -52,12 +52,12 @@
 		"animated_java:anchor_vfx/zzzzzzzz/tick",
 		"animated_java:meteoric_ore_snipe_charge/zzzzzzzz/tick",
 		"animated_java:death_blighted/zzzzzzzz/tick",
-		"animated_java:void_slash/zzzzzzzz/tick",
 		"animated_java:electric_beacon/zzzzzzzz/tick",
 		"animated_java:nep_void_missle/zzzzzzzz/tick",
 		"animated_java:ancient_lightning_strike/zzzzzzzz/tick",
 		"animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/tick",
 		"animated_java:nep_moonlight_slash/zzzzzzzz/tick",
+		"animated_java:void_slash/zzzzzzzz/tick",
 		"animated_java:nep_phase2_murky/zzzzzzzz/tick"
 	]
 }
