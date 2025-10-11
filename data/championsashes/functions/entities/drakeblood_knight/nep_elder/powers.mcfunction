@@ -10,10 +10,10 @@ execute if entity @s[tag=nep_attacked_by_player] run function championsashes:ent
 execute if entity @s[tag=nep_start_recover_cooling,tag=!nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/recover_cooldown
 
 #Destroy Blocks
-execute unless block ~ ~ ~ air unless block ~ ~1 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
-execute unless block ~ ~0.5 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
-execute unless block ~ ~1 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
-execute unless block ~ ~2 ~ air run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~ ~ air unless block ~ ~1 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~0.5 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~1 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~1.5 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
 
 #Anti-Ride
 execute on vehicle if entity @s[type=!item_display] run kill @s
@@ -97,7 +97,7 @@ execute if score @s Elder_Health matches ..128 run tag @s add phase2
 execute if score @s Elder_Health matches 130.. run kill @e[distance=..10,type=item_display,tag=nep_projectile]
 execute if score @s Elder_Health matches 130.. run tag @s[tag=phase2] remove phase2
 
-execute as @s[tag=phase2] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase2
+execute if entity @s[tag=phase2] run function championsashes:entities/drakeblood_knight/nep_elder/phase2
 
 function championsashes:entities/drakeblood_knight/nep_elder/clear_negative_effects
 
