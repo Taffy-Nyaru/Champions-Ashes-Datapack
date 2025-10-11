@@ -6,7 +6,7 @@ loot replace entity @e[tag=nep_elder,type=wither_skeleton] armor.chest loot cham
 loot replace entity @e[tag=nep_elder,type=wither_skeleton] armor.legs loot championsashes:armor/drakeblood_leggings
 loot replace entity @e[tag=nep_elder,type=wither_skeleton] armor.feet loot championsashes:armor/drakeblood_boots
 attribute @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] generic.follow_range base set 300
-bossbar set nep_elder players @s
+bossbar set nep_elder players @a
 tellraw @s [{"translate":"translate.championsashes.nep.start_fight","italic":false}]
 execute as @e[tag=nep_elder,type=wither_skeleton] run data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b
 execute as @e[tag=nep_elder,type=wither_skeleton] run scoreboard players set @s[tag=!loop_lightning_bolt] lightning_bolt_rain 20

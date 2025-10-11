@@ -10,7 +10,7 @@ execute as @e[tag=aj.nep_phase2_murky.root] run function animated_java:nep_phase
 ride @s mount @e[tag=nep_ride,type=item_display,limit=1,sort=nearest]
 
 loot replace entity @s weapon.mainhand loot championsashes:items/murky_hand_scythe
-data modify entity @s SelectedItem.tag.Enchantments set value [{id:"sharpness",lvl:10s}]
+data modify entity @s HandItems[0].tag.Enchantments set value [{id:"sharpness",lvl:10s}]
 
 effect give @s resistance infinite 2 true
 damage @s 5 championsashes:gtx690

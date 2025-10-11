@@ -36,7 +36,7 @@ execute if entity @s[tag=!nep_fire_phase,tag=!nep_ice_phase] run scoreboard play
 execute if score weapon_class championsashes_Timer matches 100.. run function championsashes:entities/drakeblood_knight/nep_elder/weapon_class
 
 #Favour Ring
-execute if entity @e[tag=nep_foe,type=!#championsashes:special_entities,distance=1.8..] if score change_weapon_inventory math_output matches 551..800 run function championsashes:entities/drakeblood_knight/nep_elder/favour_ring
+execute unless data storage generic:main {NepSelectedItem:{tag:{id:"championsashes:steel_anchor"}}} if entity @e[tag=nep_foe,type=!#championsashes:special_entities,distance=1.8..] if score change_weapon_inventory math_output matches 551..800 run function championsashes:entities/drakeblood_knight/nep_elder/favour_ring
 scoreboard players add #nep_favour_ring_exist_timer championsashes_Timer 1
 execute if score #nep_favour_ring_exist_timer championsashes_Timer matches 10.. run kill @e[type=item_display,limit=1,sort=nearest,tag=nep_favour_ring]
 execute if score #nep_favour_ring_exist_timer championsashes_Timer matches 10.. run scoreboard players set #nep_favour_ring_exist_timer championsashes_Timer 0
@@ -105,5 +105,6 @@ execute if entity @s[tag=nep_attacked_by_player] run scoreboard players add @s n
 execute if score @s nep_attacked_by_player_timer matches 20.. run tag @s remove nep_attacked_by_player
 execute if score @s nep_attacked_by_player_timer matches 20.. run scoreboard players set @s nep_attacked_by_player_timer 0
 
-bossbar set nep_elder players @a
+bossbar set nep_elder players @a[tag=nep_bossbar_set]
+tag @a[tag=!nep_bossbar_set,distance=..30] add nep_bossbar_set
 data modify storage generic:main NepSelectedItem set value {}
