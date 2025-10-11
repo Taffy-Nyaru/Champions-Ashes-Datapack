@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.nep_phase2_murky.root] run function animated_java:nep_phase2_murky/zzzzzzzz/remove/as_root
+kill @e[tag=aj.nep_phase2_murky.rig_entity]

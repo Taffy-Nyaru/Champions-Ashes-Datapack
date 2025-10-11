@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..150 run function animated_java:nep_phase2_murky/zzzzzzzz/animations/soul_five/tree/branch_0_150

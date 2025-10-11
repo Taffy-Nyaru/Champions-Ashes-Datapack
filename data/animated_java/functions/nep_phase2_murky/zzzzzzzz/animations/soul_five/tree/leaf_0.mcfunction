@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_phase2_murky/zzzzzzzz/animations/soul_five/tree/leaf_0_as_bone
+execute unless entity @s[tag=aj.nep_phase2_murky.disable_command_keyframes] at @s run function animated_java:nep_phase2_murky/zzzzzzzz/animations/soul_five/tree/leaf_0_effects_0

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_phase2_murky.animation.soul_five] run function animated_java:nep_phase2_murky/zzzzzzzz/animations/soul_five/tick

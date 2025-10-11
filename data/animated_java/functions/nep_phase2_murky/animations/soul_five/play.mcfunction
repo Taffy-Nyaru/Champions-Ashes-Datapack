@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.nep_phase2_murky.root] run function animated_java:nep_phase2_murky/zzzzzzzz/animations/soul_five/play_as_root
+execute if entity @s[tag=!aj.nep_phase2_murky.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:nep_phase2_murky/animations/soul_five/play ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

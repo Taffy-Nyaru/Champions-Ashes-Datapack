@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_phase2_murky.locator_origin.nep_ride] at @s on origin run tp @s ^0.01563 ^0.62891 ^-1.3418 ~-180 ~0

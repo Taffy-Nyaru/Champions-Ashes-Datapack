@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_phase2_murky/zzzzzzzz/animations/soul_five/tree/leaf_121_as_bone
+execute unless entity @s[tag=aj.nep_phase2_murky.disable_command_keyframes] at @s run data modify entity @e[tag=aj.nep_phase2_murky.bone.murky,limit=1,sort=nearest] item.tag.Enchantments set value [{id:"sharpness",lvl:10s}]

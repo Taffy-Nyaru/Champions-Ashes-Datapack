@@ -90,6 +90,8 @@ execute unless entity @e[tag=nep_foe] as @e[tag=attracted_drakeblood_knight] run
 #Phase 2 Just started:
 execute store result score @s Elder_Health run data get entity @s Health
 execute unless entity @s[tag=phase2_started] positioned ^ ^ ^2 if score @s Elder_Health matches ..128 run function championsashes:entities/drakeblood_knight/nep_elder/phase2_start
+execute as @s[tag=phase2_start_recovering] unless score @s Elder_Health matches 255.. run function championsashes:entities/drakeblood_knight/nep_elder/phase2_start_recovering
+execute as @s[tag=phase2_start_recovering] if score @s Elder_Health matches 255.. run function championsashes:entities/drakeblood_knight/nep_elder/phase2_start_recovering_end
 
 #Phase 2: If there is no drakeblood knight around, Summon a drakeblood knight and dragon head bomb every 30sec, breaking most natural spawn vanilla blocks
 execute if score @s Elder_Health matches ..128 run tag @s add phase2

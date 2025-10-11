@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.nep_phase2_murky.locator_origin.nep_ride] run function animated_java:nep_phase2_murky/zzzzzzzz/summon/locator_nep_ride/as_origin
+function #animated_java:nep_phase2_murky/on_summon/as_locator_origins

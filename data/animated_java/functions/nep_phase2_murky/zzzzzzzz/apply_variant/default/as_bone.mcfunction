@@ -1,0 +1,12 @@
+execute if entity @s[tag=aj.nep_phase2_murky.bone.right_arm2] run data modify entity @s item.tag.CustomModelData set value 3021
+execute if entity @s[tag=aj.nep_phase2_murky.bone.right_arm] run data modify entity @s item.tag.CustomModelData set value 3022
+execute if entity @s[tag=aj.nep_phase2_murky.bone.murky] run data modify entity @s item.tag.CustomModelData set value 3023
+execute if entity @s[tag=aj.nep_phase2_murky.bone.left_arm2] run data modify entity @s item.tag.CustomModelData set value 3024
+execute if entity @s[tag=aj.nep_phase2_murky.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 3025
+execute if entity @s[tag=aj.nep_phase2_murky.bone.head] run data modify entity @s item.tag.CustomModelData set value 3026
+execute if entity @s[tag=aj.nep_phase2_murky.bone.body_top] run data modify entity @s item.tag.CustomModelData set value 3027
+execute if entity @s[tag=aj.nep_phase2_murky.bone.body] run data modify entity @s item.tag.CustomModelData set value 3028
+execute if entity @s[tag=aj.nep_phase2_murky.bone.right_leg2] run data modify entity @s item.tag.CustomModelData set value 3029
+execute if entity @s[tag=aj.nep_phase2_murky.bone.right_leg] run data modify entity @s item.tag.CustomModelData set value 3030
+execute if entity @s[tag=aj.nep_phase2_murky.bone.left_leg2] run data modify entity @s item.tag.CustomModelData set value 3031
+execute if entity @s[tag=aj.nep_phase2_murky.bone.left_leg] run data modify entity @s item.tag.CustomModelData set value 3032

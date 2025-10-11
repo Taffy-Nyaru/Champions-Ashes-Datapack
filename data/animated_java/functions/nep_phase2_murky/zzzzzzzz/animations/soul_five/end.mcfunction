@@ -1,0 +1,3 @@
+execute if score @s aj.nep_phase2_murky.animation.soul_five.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_phase2_murky/zzzzzzzz/animations/soul_five/end_loop
+execute if score @s aj.nep_phase2_murky.animation.soul_five.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_phase2_murky/animations/soul_five/stop
+execute if score @s aj.nep_phase2_murky.animation.soul_five.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_phase2_murky/animations/soul_five/pause
