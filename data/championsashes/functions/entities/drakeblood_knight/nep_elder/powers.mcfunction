@@ -65,6 +65,9 @@ execute if entity @s[tag=nep_attacked_by_player] run scoreboard players add @s n
 execute if score @s nep_attacked_by_player_timer matches 20.. run tag @s remove nep_attacked_by_player
 execute if score @s nep_attacked_by_player_timer matches 20.. run scoreboard players set @s nep_attacked_by_player_timer 0
 
+#Debug
+execute as @e[tag=aj.nep_void_missle.bone,distance=5..,type=item_display] run function animated_java:nep_void_missle/remove/all
+
 bossbar set nep_elder players @a[tag=nep_bossbar_set]
 tag @a[tag=!nep_bossbar_set,distance=..30] add nep_bossbar_set
 data modify storage generic:main NepSelectedItem set value {}

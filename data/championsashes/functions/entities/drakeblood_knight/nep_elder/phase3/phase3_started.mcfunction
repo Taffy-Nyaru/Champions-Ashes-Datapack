@@ -13,7 +13,8 @@ execute as @e[tag=aj.void_slash.root,limit=1,sort=nearest,type=item_display] run
 
 #Summon flight markers
 tag @e[tag=aj.void_slash.locator,limit=1,sort=nearest,type=marker] add loop_summon_flight_marker
-scoreboard players set @e[tag=aj.void_slash.locator,limit=1,sort=nearest,type=marker] nep_flight_marker_recursion 30
+scoreboard players set @e[tag=loop_summon_flight_marker,limit=1,sort=nearest,type=marker] nep_flight_marker_recursion 30
+execute at @e[tag=loop_summon_flight_marker,limit=1,sort=nearest,type=marker] run summon item_display ~ ~ ~ {Tags:["nep_flight_marker_chasing"]}
 
 tag @s add phase3_started
 tag @s remove phase2

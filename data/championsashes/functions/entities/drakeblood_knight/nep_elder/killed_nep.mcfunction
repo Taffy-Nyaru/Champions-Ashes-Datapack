@@ -18,3 +18,6 @@ kill @e[type=item_display,tag=nep_moonlight_slash]
 kill @e[type=item_display,tag=drakeblood_phanalax0]
 kill @e[type=item_display,tag=drakeblood_phanalax1]
 kill @e[type=item_display,tag=drakeblood_phanalax2]
+kill @e[type=marker,tag=nep_flight_marker_chasing]
+
+tag @e[tag=nep_foe,type=!#championsashes:special_entities] remove nep_foe
