@@ -1,7 +1,7 @@
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^1.41809 ~-180 ~0
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam2] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^7.98791 ~-180 ~0
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam3] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^16.60168 ~-180 ~0
-execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam4] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^24.77747 ~-180 ~0
+execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam4] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^24.77746 ~-180 ~0
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam5] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^32.51526 ~-180 ~0
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam6] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^41.12903 ~-180 ~0
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam15] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^96.02356 ~-180 ~0
@@ -14,4 +14,4 @@ execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam10] at @s on
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam9] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^56.45862 ~-180 ~0
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam8] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^49.30481 ~-180 ~0
 execute if entity @s[tag=aj.nep_void_missle.locator_origin.laserbeam7] at @s on origin run tp @s ^-0.00504 ^-0.00788 ^88.43176 ~-180 ~0
-execute if entity @s[tag=aj.nep_void_missle.bone.laser_beam] run data modify entity @s {} merge value {transformation:[3.352864583333331f,-8.212149759907376e-16f,0f,0.00032562500000000126f,8.212149759907376e-16f,3.352864583333331f,2.3355634115411226e-30f,0.0039062500000000035f,0f,-1.0056982917589272e-31f,77.86458333333336f,1.8925775f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.nep_void_missle.bone.laser_beam] run data modify entity @s {} merge value {transformation:[3.352864583333331f,-8.212149759907376e-16f,0f,0.00032562500000000126f,8.212149759907376e-16f,3.352864583333331f,2.3355634115411226e-30f,0.0039062500000000035f,0f,-1.0056982917589272e-31f,77.86458333333336f,1.892576875f,0f,0f,0f,1f],start_interpolation:0}

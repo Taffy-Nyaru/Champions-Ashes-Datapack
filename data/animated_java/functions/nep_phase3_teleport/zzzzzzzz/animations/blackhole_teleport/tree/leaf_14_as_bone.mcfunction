@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_phase3_teleport.bone.black_hole] run data modify entity @s {} merge value {transformation:[-2.160705133219165f,1.5449975371437823f,3.2529680602351573e-16f,0f,1.5449975371437823f,2.160705133219165f,0f,1.1875f,-2.646100625298106e-16f,1.8920762885536769e-16f,-2.6562500000000004f,0f,0f,0f,0f,1f],start_interpolation:0}

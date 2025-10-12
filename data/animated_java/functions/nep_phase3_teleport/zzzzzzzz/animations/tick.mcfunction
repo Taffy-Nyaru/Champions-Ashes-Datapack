@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_phase3_teleport.animation.blackhole_teleport] run function animated_java:nep_phase3_teleport/zzzzzzzz/animations/blackhole_teleport/tick

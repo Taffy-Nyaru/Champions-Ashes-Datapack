@@ -1,4 +1,4 @@
-execute unless entity @s[tag=nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/phase2_recover
+execute unless entity @s[tag=nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2_recover
 
 execute unless entity @e[tag=drakeblood_knight,tag=!nep_elder,type=wither_skeleton,distance=..50] run scoreboard players add @s summon.temp 1
 execute if score @s summon.temp matches 400.. positioned ^ ^1 ^2 run function championsashes:entities/drakeblood_knight/summon

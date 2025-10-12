@@ -1,0 +1,3 @@
+execute if score @s aj.nep_phase3_teleport.animation.blackhole_teleport.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_phase3_teleport/zzzzzzzz/animations/blackhole_teleport/end_loop
+execute if score @s aj.nep_phase3_teleport.animation.blackhole_teleport.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_phase3_teleport/animations/blackhole_teleport/stop
+execute if score @s aj.nep_phase3_teleport.animation.blackhole_teleport.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_phase3_teleport/animations/blackhole_teleport/pause

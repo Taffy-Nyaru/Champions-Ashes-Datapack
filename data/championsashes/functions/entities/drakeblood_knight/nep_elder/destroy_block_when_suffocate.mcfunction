@@ -1,0 +1,4 @@
+execute unless block ~ ~ ~ air unless block ~ ~1 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~0.5 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~1 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~2 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks

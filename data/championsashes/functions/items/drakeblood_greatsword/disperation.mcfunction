@@ -7,7 +7,6 @@ execute store result score arrow_Posx math_output run data get entity @s[tag=lig
 execute store result score arrow_Posz math_output run data get entity @s[tag=lightning_bolt_disperation] Pos[2]
 
 #(200*original pos+R)*0.005
-scoreboard players set C_200 math_const 200
 
 scoreboard players operation arrow_Posx math_output *= C_200 math_const
 scoreboard players operation arrow_Posz math_output *= C_200 math_const

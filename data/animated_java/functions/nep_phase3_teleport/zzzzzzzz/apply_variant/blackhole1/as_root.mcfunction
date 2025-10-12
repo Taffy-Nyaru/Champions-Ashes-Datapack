@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_phase3_teleport/zzzzzzzz/apply_variant/blackhole1/as_bone

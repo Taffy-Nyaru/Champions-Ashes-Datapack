@@ -33,6 +33,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.void_slash.export_version aj.i 86763804
+scoreboard players set aj.void_slash.export_version aj.i -37090432
 scoreboard players reset * aj.void_slash.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.void_slash.root] run function animated_java:void_slash/zzzzzzzz/on_load

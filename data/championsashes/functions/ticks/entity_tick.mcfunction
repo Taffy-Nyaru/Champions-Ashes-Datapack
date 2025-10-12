@@ -15,7 +15,6 @@ execute as @e[distance=..50,type=wither_skeleton,tag=nep_elder] at @s run functi
 execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax0] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
 execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax1] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
 execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax2] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
-execute as @e[distance=..10,type=item_display,tag=aj.nep_void_missle.root] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run function animated_java:nep_void_missle/remove/all
 
 #Effects
 execute as @e[distance=..15,type=!#championsashes:special_entities,tag=!nep_elder,scores={bleeding_Timer=1..}] at @s run function championsashes:effects/bleeding/bleed

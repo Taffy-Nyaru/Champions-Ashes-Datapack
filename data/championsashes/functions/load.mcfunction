@@ -167,6 +167,11 @@ scoreboard objectives add nep_attacked_by_player_timer dummy
 scoreboard objectives add nep_ice_phase_timer dummy
 scoreboard objectives add nep_fire_phase_timer dummy
 scoreboard objectives add nep_block_destroy_timer dummy
+scoreboard objectives add nep_half_health dummy
+scoreboard objectives add nep_10pencent_health dummy
+scoreboard objectives add nep_10pencent_health.temp dummy
+scoreboard objectives add nep_phase3_tp_buffer dummy
+scoreboard objectives add nep_flight_marker_recursion dummy
 bossbar add nep_elder "NEP.Elder"
 
 #Parry
@@ -252,11 +257,14 @@ scoreboard players set #20 championsashesValue 20
 scoreboard players set #60 championsashesValue 60
 scoreboard players set #12 championsashesValue 12
 scoreboard players set #2 championsashesValue 2
-scoreboard players set @a lightning_bolt_rain 20
+scoreboard players set #10 championsashesValue 10
+scoreboard players set #100 championsashesValue 100
+scoreboard players set @a lightning_bolt_rain 12
 scoreboard players set @a arrow_rain.temp 0
 scoreboard players set @a thunderarrow_damage 2
 scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
 execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1
+scoreboard players set C_200 math_const 200
 
 team add friendly
 

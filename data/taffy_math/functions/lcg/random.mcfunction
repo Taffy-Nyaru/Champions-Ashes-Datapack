@@ -1,5 +1,6 @@
 #LCG random
-execute store result score random math_temp run time query gametime
+scoreboard players add increasing_num math_temp 1
+execute store result score random math_temp run scoreboard players get increasing_num math_temp
 scoreboard players operation random math_temp *= a math_const
 scoreboard players operation random math_temp += c math_const
 scoreboard players add rand_taffy_timer taffy_timer 1

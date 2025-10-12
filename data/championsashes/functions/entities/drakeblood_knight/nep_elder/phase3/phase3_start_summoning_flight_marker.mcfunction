@@ -1,0 +1,3 @@
+execute positioned ~-6 ~-3.5 ~-5 if score @s nep_flight_marker_recursion matches 1.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/flight_marker_recursion
+execute if score @s nep_flight_marker_recursion matches 0 run tag @s remove loop_summon_flight_marker
+execute if score @s[tag=!loop_summon_flight_marker] nep_flight_marker_recursion matches 0 run scoreboard players set @s[tag=!loop_summon_flight_marker] nep_flight_marker_recursion 30

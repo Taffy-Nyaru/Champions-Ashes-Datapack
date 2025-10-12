@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:interaction",
+      "minecraft:marker",
+      "minecraft:item_frame",
+      "minecraft:item_display",
+      "minecraft:item",
+      "minecraft:glow_item_frame",
+      "minecraft:experience_orb",
+      "minecraft:block_display",
+      "minecraft:armor_stand",
+      "minecraft:minecart",
+      "minecraft:chest_minecart",
+      "minecraft:boat",
+      "minecraft:hopper_minecart",
+      "minecraft:furnace_minecart",
+      "minecraft:command_block_minecart",
+      "minecraft:experience_orb",
+      "minecraft:snowball"
+    ]
+  }
+  

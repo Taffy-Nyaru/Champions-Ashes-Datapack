@@ -6,3 +6,5 @@ execute if entity @s[tag=aj.void_slash.bone.slash4] run data modify entity @s it
 execute if entity @s[tag=aj.void_slash.bone.slash5] run data modify entity @s item.tag.CustomModelData set value 1533
 execute if entity @s[tag=aj.void_slash.bone.slash6] run data modify entity @s item.tag.CustomModelData set value 1534
 execute if entity @s[tag=aj.void_slash.bone.slash7] run data modify entity @s item.tag.CustomModelData set value 1535
+
+execute if entity @s[tag=aj.void_slash.bone.cheat_engine] run data modify entity @s item.tag.CustomModelData set value 1536

@@ -1,0 +1,1 @@
+function animated_java:nep_phase3_teleport/zzzzzzzz/animations/blackhole_teleport/tick_animation

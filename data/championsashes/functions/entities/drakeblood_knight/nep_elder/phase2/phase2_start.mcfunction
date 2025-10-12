@@ -1,6 +1,4 @@
-execute at @e[tag=summon_shrine,limit=1,sort=nearest,type=marker] run tp @s ^ ^ ^1
-
-execute positioned ^ ^1 ^2 run function championsashes:entities/drakeblood_knight/summon
+execute positioned ^ ^1 ^-2 run function championsashes:entities/drakeblood_knight/summon
 loot replace entity @s armor.head loot championsashes:armor/old_sorcerer_hat_nep
 summon item_display ~ ~3 ~ {Tags:["nep_projectile"],item:{id:"dragon_head",Count:1b}}
 execute as @a[distance=..50] run tellraw @s [{"translate":"translate.championsashes.nep.phase2","italic":false}]

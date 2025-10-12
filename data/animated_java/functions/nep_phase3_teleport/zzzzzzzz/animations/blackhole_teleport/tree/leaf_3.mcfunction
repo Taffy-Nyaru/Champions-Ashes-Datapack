@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_phase3_teleport/zzzzzzzz/animations/blackhole_teleport/tree/leaf_3_as_bone

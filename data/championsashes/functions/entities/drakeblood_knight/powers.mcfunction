@@ -1,3 +1,4 @@
+effect give @s invisibility infinite 0 true
 
 execute if entity @s[predicate=championsashes:hurttime] on attacker if entity @s[type=player,predicate=championsashes:using_item/smite_weapon] as @e[limit=1,sort=nearest,distance=..25,predicate=championsashes:hurttime,type=wither_skeleton,tag=drakeblood_knight] run function championsashes:entities/drakeblood_knight/nep_elder/damaged_by_player
 execute if entity @s[predicate=championsashes:hurttime] on attacker if entity @s[type=player,predicate=championsashes:using_item/punch_bow] as @e[limit=1,sort=nearest,distance=..25,predicate=championsashes:hurttime,type=wither_skeleton,tag=drakeblood_knight] run function championsashes:entities/drakeblood_knight/nep_elder/damaged_by_player

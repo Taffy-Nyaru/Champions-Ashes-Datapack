@@ -1,0 +1,3 @@
+execute summon marker at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase3/flight_marker_disperation
+execute if score @s nep_flight_marker_recursion matches 1.. run scoreboard players remove @s nep_flight_marker_recursion 1
+execute if score @s nep_flight_marker_recursion matches 1.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/flight_marker_recursion

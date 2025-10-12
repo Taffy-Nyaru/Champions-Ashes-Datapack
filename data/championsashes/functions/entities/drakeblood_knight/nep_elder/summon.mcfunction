@@ -11,4 +11,11 @@ tellraw @s [{"translate":"translate.championsashes.nep.start_fight","italic":fal
 execute as @e[tag=nep_elder,type=wither_skeleton] run data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b
 execute as @e[tag=nep_elder,type=wither_skeleton] run scoreboard players set @s[tag=!loop_lightning_bolt] lightning_bolt_rain 20
 execute at @s run particle enchant ~ ~2 ~ 0 0 0 5 300
+execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s maxHealth run attribute @s generic.max_health base get
+execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s nep_half_health run scoreboard players operation @s maxHealth /= #2 championsashesValue
+
+execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s maxHealth run attribute @s generic.max_health base get
+execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s nep_10pencent_health.temp run scoreboard players operation @s maxHealth *= #10 championsashesValue
+execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s nep_10pencent_health run scoreboard players operation @s nep_10pencent_health.temp /= #100 championsashesValue
+
 scoreboard players set #nep_use_lightning_strike_skill championsashes_Timer 512
