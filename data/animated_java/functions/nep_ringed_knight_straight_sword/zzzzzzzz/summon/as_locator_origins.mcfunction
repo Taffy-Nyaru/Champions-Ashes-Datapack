@@ -11,7 +11,6 @@ execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.rkss
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.rkss11] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_rkss11/as_origin
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.rkss12] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_rkss12/as_origin
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.rkss13] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_rkss13/as_origin
-execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.nep_ride] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_nep_ride/as_origin
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.flame1] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_flame1/as_origin
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.flame2] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_flame2/as_origin
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.flame3] run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/summon/locator_flame3/as_origin

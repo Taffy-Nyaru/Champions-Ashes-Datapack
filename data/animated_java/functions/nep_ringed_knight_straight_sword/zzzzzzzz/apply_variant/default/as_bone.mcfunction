@@ -30,5 +30,4 @@ execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.bone.left_leg] run 
 
 
 
-
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.bone.flame_blast] run data modify entity @s item.tag.CustomModelData set value 3004

@@ -11,4 +11,3 @@ execute if entity @s[tag=aj.nep_moonlight_slash.bone.right_leg2] run data modify
 execute if entity @s[tag=aj.nep_moonlight_slash.bone.right_leg] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0.21484375f,0f,1f,0f,0.78515625f,0f,0f,1f,-0.09375f,0f,0f,0f,1f],start_interpolation:0}
 execute if entity @s[tag=aj.nep_moonlight_slash.bone.left_leg2] run data modify entity @s {} merge value {transformation:[1f,0f,0f,-0.05078125f,0f,1f,0f,0.42578125f,0f,0f,1f,-0.09375f,0f,0f,0f,1f],start_interpolation:0}
 execute if entity @s[tag=aj.nep_moonlight_slash.bone.left_leg] run data modify entity @s {} merge value {transformation:[1f,0f,0f,-0.03515625f,0f,1f,0f,0.78515625f,0f,0f,1f,-0.09375f,0f,0f,0f,1f],start_interpolation:0}
-execute if entity @s[tag=aj.nep_moonlight_slash.locator_origin.nep_ride] at @s on origin run tp @s ^0.07422 ^0.95117 ^-3.29687 ~-180 ~0

@@ -26,7 +26,6 @@ execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.bone.right_leg2] ru
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.bone.right_leg] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0.15625f,0f,1f,0f,0.78515625f,0f,0f,1f,-0.09375f,0f,0f,0f,1f],start_interpolation:0}
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.bone.left_leg2] run data modify entity @s {} merge value {transformation:[1f,0f,0f,-0.109375f,0f,1f,0f,0.42578125f,0f,0f,1f,-0.09375f,0f,0f,0f,1f],start_interpolation:0}
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.bone.left_leg] run data modify entity @s {} merge value {transformation:[1f,0f,0f,-0.09375f,0f,1f,0f,0.78515625f,0f,0f,1f,-0.09375f,0f,0f,0f,1f],start_interpolation:0}
-execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.nep_ride] at @s on origin run tp @s ^0.01563 ^0.97461 ^-3.29687 ~-180 ~0
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.flame1] at @s on origin run tp @s ^0.0625 ^0.01562 ^-0.25001 ~0 ~0
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.flame2] at @s on origin run tp @s ^0.0625 ^0.01562 ^-0.24999 ~0 ~0
 execute if entity @s[tag=aj.nep_ringed_knight_straight_sword.locator_origin.flame3] at @s on origin run tp @s ^0.06251 ^0.01562 ^-0.25 ~0 ~0
