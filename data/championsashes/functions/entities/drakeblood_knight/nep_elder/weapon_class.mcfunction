@@ -13,5 +13,4 @@ execute if score change_weapon_inventory math_output matches 0 run loot replace 
 scoreboard players set weapon_inventory math_output 0
 tag @s remove had_target
 scoreboard players set weapon_class championsashes_Timer 0
-
 execute unless score change_weapon_inventory math_output matches 351..550 run loot replace entity @s weapon.offhand loot championsashes:items/void_totem

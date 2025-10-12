@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/leaf_51_as_bone
+execute unless entity @s[tag=aj.nep_moonlight_slash.disable_command_keyframes] at @s run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/leaf_51_effects_0

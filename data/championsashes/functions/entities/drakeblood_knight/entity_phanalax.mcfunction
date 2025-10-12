@@ -20,16 +20,16 @@ data modify entity 9bf0d198-816f-4084-8c37-27d0f958bba1 Thrower set from storage
 execute on target if entity @s[type=!player] run tag @s add nep_foe
 execute on target if entity @s[type=player,gamemode=!creative,gamemode=!spectator] run tag @s add nep_foe
 
-execute if entity @s[tag=phase2] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin if entity @s[tag=void_missle_rotation] run tp @s ^-1 ^1.5 ^ ~ ~
-execute if entity @s[tag=phase2] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin if entity @s[tag=void_missle_rotation] run tp @s ^ ^2.5 ^ ~ ~
-execute if entity @s[tag=phase2] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin if entity @s[tag=void_missle_rotation] run tp @s ^1 ^1.5 ^ ~ ~
+execute if entity @s[tag=phase2] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin if entity @s[tag=void_missle_rotation,tag=!nep_missle_removed_lockon_rotation] run tp @s ^-1 ^1.5 ^ ~ ~
+execute if entity @s[tag=phase2] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin if entity @s[tag=void_missle_rotation,tag=!nep_missle_removed_lockon_rotation] run tp @s ^ ^2.5 ^ ~ ~
+execute if entity @s[tag=phase2] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin if entity @s[tag=void_missle_rotation,tag=!nep_missle_removed_lockon_rotation] run tp @s ^1 ^1.5 ^ ~ ~
 execute if entity @s[tag=phase2] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin if entity @s[tag=aj.nep_void_missle.root] run tp @s ^-1 ^1.5 ^
 execute if entity @s[tag=phase2] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin if entity @s[tag=aj.nep_void_missle.root] run tp @s ~ ~2.5 ~
 execute if entity @s[tag=phase2] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin if entity @s[tag=aj.nep_void_missle.root] run tp @s ^1 ^1.5 ^
 
-execute if entity @s[tag=phase3] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin if entity @s[tag=void_missle_rotation] run tp @s ^-1 ^1.5 ^ ~ ~
-execute if entity @s[tag=phase3] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin if entity @s[tag=void_missle_rotation] run tp @s ^ ^2.5 ^ ~ ~
-execute if entity @s[tag=phase3] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin if entity @s[tag=void_missle_rotation] run tp @s ^1 ^1.5 ^ ~ ~
+execute if entity @s[tag=phase3] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin if entity @s[tag=void_missle_rotation,tag=!nep_missle_removed_lockon_rotation] run tp @s ^-1 ^1.5 ^ ~ ~
+execute if entity @s[tag=phase3] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin if entity @s[tag=void_missle_rotation,tag=!nep_missle_removed_lockon_rotation] run tp @s ^ ^2.5 ^ ~ ~
+execute if entity @s[tag=phase3] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin if entity @s[tag=void_missle_rotation,tag=!nep_missle_removed_lockon_rotation] run tp @s ^1 ^1.5 ^ ~ ~
 execute if entity @s[tag=phase3] as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin if entity @s[tag=aj.nep_void_missle.root] run tp @s ^-1 ^1.5 ^
 execute if entity @s[tag=phase3] as 5100af9e-e223-424b-bfd7-6ce806d33213 on origin if entity @s[tag=aj.nep_void_missle.root] run tp @s ~ ~2.5 ~
 execute if entity @s[tag=phase3] as 9bf0d198-816f-4084-8c37-27d0f958bba1 on origin if entity @s[tag=aj.nep_void_missle.root] run tp @s ^1 ^1.5 ^

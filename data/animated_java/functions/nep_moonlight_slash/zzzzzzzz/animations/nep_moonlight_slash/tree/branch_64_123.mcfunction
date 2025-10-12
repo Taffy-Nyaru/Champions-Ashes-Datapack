@@ -3,4 +3,6 @@ execute if score @s aj.anim_time matches 72..79 run function animated_java:nep_m
 execute if score @s aj.anim_time matches 80..87 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_80_87
 execute if score @s aj.anim_time matches 88..95 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_88_95
 execute if score @s aj.anim_time matches 96..103 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_96_103
-execute if score @s aj.anim_time matches 104..108 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_104_108
+execute if score @s aj.anim_time matches 104..111 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_104_111
+execute if score @s aj.anim_time matches 112..119 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_112_119
+execute if score @s aj.anim_time matches 120..123 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_120_123

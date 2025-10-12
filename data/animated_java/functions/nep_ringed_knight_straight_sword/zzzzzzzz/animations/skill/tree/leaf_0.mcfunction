@@ -1,3 +1,1 @@
 execute on passengers run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/skill/tree/leaf_0_as_bone
-function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/apply_variant/default/as_root
-execute unless entity @s[tag=aj.nep_ringed_knight_straight_sword.disable_command_keyframes] at @s run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/skill/tree/leaf_0_effects_0

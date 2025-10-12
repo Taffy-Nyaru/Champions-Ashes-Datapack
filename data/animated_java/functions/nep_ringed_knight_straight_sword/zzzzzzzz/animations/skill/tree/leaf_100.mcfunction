@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/skill/tree/leaf_100_as_bone
