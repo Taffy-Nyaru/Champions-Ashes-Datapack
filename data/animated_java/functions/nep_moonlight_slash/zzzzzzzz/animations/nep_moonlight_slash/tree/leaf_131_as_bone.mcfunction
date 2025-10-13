@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_moonlight_slash.locator_origin.moonlight_greatsword] at @s on origin run tp @s ^0.01383 ^0.14856 ^1.1551 ~-5.057 ~-65.79889

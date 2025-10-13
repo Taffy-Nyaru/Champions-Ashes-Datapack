@@ -60,9 +60,9 @@
 		"animated_java:nep_phase2_murky/zzzzzzzz/load",
 		"animated_java:void_slash/zzzzzzzz/load",
 		"animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/load",
-		"animated_java:nep_moonlight_slash/zzzzzzzz/load",
 		"animated_java:nep_rkss_cancel/zzzzzzzz/load",
 		"animated_java:splitleaf_infinite/zzzzzzzz/load",
-		"animated_java:nep_void_missle/zzzzzzzz/load"
+		"animated_java:nep_void_missle/zzzzzzzz/load",
+		"animated_java:nep_moonlight_slash/zzzzzzzz/load"
 	]
 }

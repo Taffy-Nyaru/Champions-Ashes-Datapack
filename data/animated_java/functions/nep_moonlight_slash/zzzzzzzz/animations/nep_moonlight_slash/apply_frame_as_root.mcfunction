@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..123 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_0_123
+execute if score @s aj.anim_time matches 0..132 run function animated_java:nep_moonlight_slash/zzzzzzzz/animations/nep_moonlight_slash/tree/branch_0_132
