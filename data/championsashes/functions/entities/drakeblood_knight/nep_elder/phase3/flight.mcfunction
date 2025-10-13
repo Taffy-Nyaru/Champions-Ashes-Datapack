@@ -5,5 +5,3 @@ execute unless entity @e[tag=nep_destination_flight_marker,type=marker,distance=
 execute as @e[tag=nep_destination_flight_marker,type=marker,distance=..0.5] run tag @s remove nep_destination_flight_marker
 execute as @e[tag=nep_summoned_flight_marker,type=marker,distance=..0.5] run tag @s add nep_arrived_flight_marker
 execute as @e[tag=nep_arrived_flight_marker,type=marker,distance=0.5..50] run tag @s remove nep_arrived_flight_marker
-
-#execute if entity @s[tag=nep_phase3_used_teleport] run tag @e[tag=nep_destination_flight_marker,type=marker] remove nep_destination_flight_marker

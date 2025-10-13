@@ -30,7 +30,6 @@
 		"animated_java:chainsaw/zzzzzzzz/tick",
 		"animated_java:bullet_generator/zzzzzzzz/tick",
 		"animated_java:write/zzzzzzzz/tick",
-		"animated_java:splitleaf_infinite/zzzzzzzz/tick",
 		"animated_java:rkss_cancel/zzzzzzzz/tick",
 		"animated_java:f8fq/zzzzzzzz/tick",
 		"animated_java:ice_crystal/zzzzzzzz/tick",
@@ -60,6 +59,7 @@
 		"animated_java:nep_void_missle/zzzzzzzz/tick",
 		"animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/tick",
 		"animated_java:nep_moonlight_slash/zzzzzzzz/tick",
-		"animated_java:nep_rkss_cancel/zzzzzzzz/tick"
+		"animated_java:nep_rkss_cancel/zzzzzzzz/tick",
+		"animated_java:splitleaf_infinite/zzzzzzzz/tick"
 	]
 }

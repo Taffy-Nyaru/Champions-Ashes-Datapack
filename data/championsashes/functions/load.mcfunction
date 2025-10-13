@@ -172,6 +172,8 @@ scoreboard objectives add nep_20percent_health dummy
 scoreboard objectives add nep_20percent_health.temp dummy
 scoreboard objectives add nep_phase3_tp_buffer dummy
 scoreboard objectives add nep_flight_marker_recursion dummy
+scoreboard objectives add nep_phase3_switch_to_fume_ugs dummy
+scoreboard objectives add nep_phase3_switch_to_dragonslayer dummy
 bossbar add nep_elder "NEP.Elder"
 
 #Parry

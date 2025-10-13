@@ -9,8 +9,25 @@ execute if score @s nep_phase3_tp_buffer matches 6..26 run data modify entity @s
 execute if score @s nep_phase3_tp_buffer matches 26.. run tag @s remove nep_phase3_used_teleport
 execute if score @s nep_phase3_tp_buffer matches 26.. run scoreboard players set @s nep_phase3_tp_buffer 0
 
+#Fume Ultra Greatsword:
+scoreboard players add @s[tag=!nep_switched_to_ugs] nep_phase3_switch_to_fume_ugs 1
+execute if score @s nep_phase3_switch_to_fume_ugs matches 2200.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_fume_ugs
+
+#Dragonslayer Greatbow:
+scoreboard players add @s[tag=!nep_switched_to_dragonslayer] nep_phase3_switch_to_dragonslayer 1
+execute if score @s nep_phase3_switch_to_dragonslayer matches 2200.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_dragonslayer
+
+#Different Forms
+execute if entity @s[tag=nep_switched_to_ugs] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/fume_ugs_form
+execute if entity @s[tag=nep_switched_to_dragonslayer] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/dragonslayer_form
+
+
 #Flight
 execute as @e[type=item_display,tag=nep_flight_marker_chasing,limit=1,sort=nearest,distance=..50] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase3/flight
 execute unless entity @s[tag=nep_phase3_used_teleport] facing entity @e[type=item_display,tag=nep_flight_marker_chasing,limit=1,sort=nearest,distance=..50] feet run tp @s ^ ^ ^0.2
+#Splitleaf helicopter
+tp @e[tag=nep_splitleaf_helicopter,type=item_display,limit=1,sort=nearest,distance=..50] ~ ~2 ~
+execute as @e[tag=nep_splitleaf_helicopter,type=item_display,limit=1,sort=nearest,distance=..5] run function championsashes:items/splitleaf/rotation
+
 #Checking summon of flight markers, generate markers at loop_summon_flight_marker and gave tag in phase3_started function
 execute as @e[tag=loop_summon_flight_marker,limit=1,type=marker,sort=nearest] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_start_summoning_flight_marker

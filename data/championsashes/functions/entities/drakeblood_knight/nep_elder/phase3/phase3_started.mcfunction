@@ -17,5 +17,9 @@ tag @e[tag=aj.void_slash.locator,limit=1,sort=nearest,type=marker] add loop_summ
 scoreboard players set @e[tag=loop_summon_flight_marker,limit=1,sort=nearest,type=marker] nep_flight_marker_recursion 30
 execute at @e[tag=loop_summon_flight_marker,limit=1,sort=nearest,type=marker] run summon item_display ~ ~ ~ {Tags:["nep_flight_marker_chasing"]}
 
+#Summon splitleaf helicopter
+summon item_display ~ ~1.5 ~ {item_display:"head",Tags:["nep_splitleaf_helicopter"],item:{id:"netherite_sword",Count:1b,tag:{CustomModelData:1390065}}}
+
 tag @s add phase3_started
+tag @s add nep_switched_to_dragonslayer
 tag @s remove phase2

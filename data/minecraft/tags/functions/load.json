@@ -33,7 +33,6 @@
 		"animated_java:chainsaw/zzzzzzzz/load",
 		"animated_java:bullet_generator/zzzzzzzz/load",
 		"animated_java:write/zzzzzzzz/load",
-		"animated_java:splitleaf_infinite/zzzzzzzz/load",
 		"animated_java:rkss_cancel/zzzzzzzz/load",
 		"animated_java:f8fq/zzzzzzzz/load",
 		"animated_java:ice_crystal/zzzzzzzz/load",
@@ -63,6 +62,7 @@
 		"animated_java:nep_void_missle/zzzzzzzz/load",
 		"animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/load",
 		"animated_java:nep_moonlight_slash/zzzzzzzz/load",
-		"animated_java:nep_rkss_cancel/zzzzzzzz/load"
+		"animated_java:nep_rkss_cancel/zzzzzzzz/load",
+		"animated_java:splitleaf_infinite/zzzzzzzz/load"
 	]
 }
