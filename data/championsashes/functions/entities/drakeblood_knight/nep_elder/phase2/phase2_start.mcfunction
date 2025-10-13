@@ -13,4 +13,5 @@ data modify entity @s HandItems[0].tag.Enchantments set value [{id:"sharpness",l
 effect give @s resistance infinite 2 true
 damage @s 5 championsashes:gtx690
 tag @s add phase2_started
+tag @s add phase2
 tag @s add phase2_start_recovering

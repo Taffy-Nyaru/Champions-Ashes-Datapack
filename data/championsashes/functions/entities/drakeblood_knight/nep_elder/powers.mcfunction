@@ -50,7 +50,6 @@ execute as @s[tag=phase2_start_recovering] unless score @s Elder_Health >= @s ma
 execute as @s[tag=phase2_start_recovering] if score @s Elder_Health >= @s maxHealth run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2_start_recovering_end
 
 #Phase 2:
-execute unless entity @s[tag=phase3] if score @s Elder_Health <= @s nep_half_health run tag @s add phase2
 execute if entity @s[tag=phase2] run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2
 
 #Phase 3 starts:
