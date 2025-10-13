@@ -1,4 +1,3 @@
-execute unless block ~ ~ ~ air unless block ~ ~1 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
-execute unless block ~ ~0.5 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
-execute unless block ~ ~1 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
-execute unless block ~ ~2 ~ air if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~ ~ air unless block ~ ~1 ~ air unless entity @e[tag=summon_shrine,limit=1,sort=nearest,type=marker,distance=..0.5] if predicate championsashes:hurttime run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~1 ~ air if predicate championsashes:hurttime unless entity @e[tag=summon_shrine,limit=1,sort=nearest,type=marker,distance=..0.5] run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks
+execute unless block ~ ~2 ~ air if predicate championsashes:hurttime unless entity @e[tag=summon_shrine,limit=1,sort=nearest,type=marker,distance=..0.5] run function championsashes:entities/drakeblood_knight/nep_elder/fill_blocks

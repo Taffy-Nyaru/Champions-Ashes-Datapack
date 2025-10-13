@@ -5,9 +5,13 @@ execute as @e[type=arrow,limit=1,sort=nearest,distance=..5] on origin if entity 
 execute if entity @e[type=!#championsashes:nep_unteleports,type=!player,tag=!drakeblood_knight,tag=!nep_owned_arrow,distance=..10] unless score @s nep_phase3_tp_buffer matches 1.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_teleport
 execute if entity @p[distance=..8,gamemode=!creative,gamemode=!spectator] unless score @s nep_phase3_tp_buffer matches 1.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_teleport
 execute as @s[tag=nep_phase3_used_teleport] run scoreboard players add @s nep_phase3_tp_buffer 1
-execute if score @s nep_phase3_tp_buffer matches 6..26 run data modify entity @s Invulnerable set value 0b
-execute if score @s nep_phase3_tp_buffer matches 26.. run tag @s remove nep_phase3_used_teleport
-execute if score @s nep_phase3_tp_buffer matches 26.. run scoreboard players set @s nep_phase3_tp_buffer 0
+execute if entity @p[tag=nep_foe,distance=..50,limit=1,sort=nearest] if score @s nep_phase3_tp_buffer matches 6..86 run data modify entity @s Invulnerable set value 0b
+execute if entity @p[tag=nep_foe,distance=..50,limit=1,sort=nearest] if score @s nep_phase3_tp_buffer matches 86.. run tag @s remove nep_phase3_used_teleport
+execute if entity @p[tag=nep_foe,distance=..50,limit=1,sort=nearest] if score @s nep_phase3_tp_buffer matches 86.. run scoreboard players set @s nep_phase3_tp_buffer 0
+
+execute if entity @e[tag=nep_foe,distance=..50,limit=1,sort=nearest,type=!player,type=!#championsashes:special_entities] if score @s nep_phase3_tp_buffer matches 10..26 run data modify entity @s Invulnerable set value 0b
+execute if entity @e[tag=nep_foe,distance=..50,limit=1,sort=nearest,type=!player,type=!#championsashes:special_entities] if score @s nep_phase3_tp_buffer matches 26.. run tag @s remove nep_phase3_used_teleport
+execute if entity @e[tag=nep_foe,distance=..50,limit=1,sort=nearest,type=!player,type=!#championsashes:special_entities] if score @s nep_phase3_tp_buffer matches 26.. run scoreboard players set @s nep_phase3_tp_buffer 0
 
 #Fume Ultra Greatsword:
 scoreboard players add @s[tag=!nep_switched_to_ugs] nep_phase3_switch_to_fume_ugs 1

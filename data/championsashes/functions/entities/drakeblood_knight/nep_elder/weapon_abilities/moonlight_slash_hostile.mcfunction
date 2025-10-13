@@ -1,4 +1,4 @@
-execute unless entity @e[type=!#championsashes:special_entities,tag=nep_foe,type=!player,distance=..10] facing entity @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] feet run tp @s ^ ^ ^-0.4 ~ ~
+execute unless entity @e[type=!#championsashes:special_entities,tag=nep_foe,type=!player,distance=..10] facing entity @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] feet run tp @s ^ ^ ^-0.6 ~ ~
 
 execute if entity @e[type=!#championsashes:special_entities,tag=nep_foe,type=!player,distance=..10] positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @e[type=!#championsashes:special_entities,tag=nep_foe,type=!player,limit=1,sort=nearest] feet positioned as @s run tp @s ^ ^ ^0.4 ~ ~
 execute if entity @a[tag=nep_foe,gamemode=!creative,gamemode=!spectator,distance=..10] positioned ^-1 ^ ^ rotated as @s positioned ^ ^ ^ facing entity @a[tag=nep_foe,gamemode=!creative,gamemode=!spectator,distance=..10] feet positioned as @s run tp @s ^ ^ ^0.4 ~ ~
