@@ -1,5 +1,6 @@
-execute if entity @p[tag=nep_foe] run effect give @s resistance infinite 3 true
-execute unless entity @p[tag=nep_foe] run effect give @s resistance infinite 4 true
+#execute if entity @p[tag=nep_foe] run effect give @s resistance infinite 3 true
+#execute unless entity @p[tag=nep_foe] run effect give @s resistance infinite 4 true
+effect give @s resistance infinite 3 true
 effect give @s strength infinite 4 true
 effect give @s slow_falling infinite 0 true
 effect clear @s regeneration
