@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.nep_rkss_cancel.root] run function animated_java:nep_rkss_cancel/zzzzzzzz/animations/nep_rkss_cancel/stop_as_root
+execute if entity @s[tag=!aj.nep_rkss_cancel.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:nep_rkss_cancel/animations/nep_rkss_cancel/stop ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

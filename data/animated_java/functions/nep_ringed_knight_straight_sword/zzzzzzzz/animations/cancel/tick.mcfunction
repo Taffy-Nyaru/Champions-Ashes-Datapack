@@ -1,2 +1,0 @@
-execute if score @s aj.tween_time matches 1.. run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/cancel/tick_tween
-execute unless score @s aj.tween_time matches 1.. run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/cancel/tick_animation

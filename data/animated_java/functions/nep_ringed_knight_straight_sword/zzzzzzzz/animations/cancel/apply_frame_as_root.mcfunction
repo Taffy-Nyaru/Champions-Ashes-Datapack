@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..17 run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/cancel/tree/branch_0_17

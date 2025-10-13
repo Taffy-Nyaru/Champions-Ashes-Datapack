@@ -1,1 +1,0 @@
-tag @s remove aj.nep_ringed_knight_straight_sword.animation.cancel

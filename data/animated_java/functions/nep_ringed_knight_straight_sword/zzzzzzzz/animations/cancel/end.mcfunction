@@ -1,3 +1,0 @@
-execute if score @s aj.nep_ringed_knight_straight_sword.animation.cancel.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/cancel/end_loop
-execute if score @s aj.nep_ringed_knight_straight_sword.animation.cancel.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_ringed_knight_straight_sword/animations/cancel/stop
-execute if score @s aj.nep_ringed_knight_straight_sword.animation.cancel.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_ringed_knight_straight_sword/animations/cancel/pause

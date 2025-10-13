@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/cancel/tree/leaf_12_as_bone
-function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/apply_variant/default/as_root

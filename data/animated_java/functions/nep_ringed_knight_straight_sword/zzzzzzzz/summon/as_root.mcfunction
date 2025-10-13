@@ -12,8 +12,6 @@ execute if score #variant aj.i = $aj.nep_ringed_knight_straight_sword.variant.ig
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.nep_ringed_knight_straight_sword.animation.skill aj.id run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/skill/apply_frame_as_root
 execute if score #animation aj.i = $aj.nep_ringed_knight_straight_sword.animation.skill aj.id run scoreboard players operation @s aj.nep_ringed_knight_straight_sword.animation.skill.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.nep_ringed_knight_straight_sword.animation.cancel aj.id run function animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/animations/cancel/apply_frame_as_root
-execute if score #animation aj.i = $aj.nep_ringed_knight_straight_sword.animation.cancel aj.id run scoreboard players operation @s aj.nep_ringed_knight_straight_sword.animation.cancel.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:nep_ringed_knight_straight_sword/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

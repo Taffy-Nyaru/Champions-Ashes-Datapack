@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_rkss_cancel/zzzzzzzz/apply_variant/default/as_bone

@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.nep_rkss_cancel.root] run function animated_java:nep_rkss_cancel/zzzzzzzz/remove/as_root
+kill @e[tag=aj.nep_rkss_cancel.rig_entity]

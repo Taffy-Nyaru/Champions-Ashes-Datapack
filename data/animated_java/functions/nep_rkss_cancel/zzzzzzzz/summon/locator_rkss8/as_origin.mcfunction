@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["nep_rkss_locator","aj.nep_rkss_cancel.locator","aj.nep_rkss_cancel.locator.rkss8","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_rkss_cancel\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"rkss8\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.nep_rkss_cancel.locator.rkss8,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_rkss_cancel/zzzzzzzz/summon/locator_rkss8/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_rkss_cancel/zzzzzzzz/animations/nep_rkss_cancel/tree/leaf_11_as_bone
+function animated_java:nep_rkss_cancel/zzzzzzzz/apply_variant/default/as_root
