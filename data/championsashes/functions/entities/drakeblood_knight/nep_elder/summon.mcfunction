@@ -18,7 +18,7 @@ execute as @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] store res
 execute as @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] store result score @s nep_half_health run scoreboard players operation @s maxHealth /= #2 championsashesValue
 
 execute as @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] store result score @s maxHealth run attribute @s generic.max_health base get
-execute as @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] store result score @s nep_10pencent_health.temp run scoreboard players operation @s maxHealth *= #10 championsashesValue
-execute as @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] store result score @s nep_10pencent_health run scoreboard players operation @s nep_10pencent_health.temp /= #100 championsashesValue
+execute as @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] store result score @s nep_20percent_health.temp run scoreboard players operation @s maxHealth *= #20 championsashesValue
+execute as @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest] store result score @s nep_20percent_health run scoreboard players operation @s nep_20percent_health.temp /= #100 championsashesValue
 
 scoreboard players set #nep_use_lightning_strike_skill championsashes_Timer 512

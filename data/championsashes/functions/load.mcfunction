@@ -168,8 +168,8 @@ scoreboard objectives add nep_ice_phase_timer dummy
 scoreboard objectives add nep_fire_phase_timer dummy
 scoreboard objectives add nep_block_destroy_timer dummy
 scoreboard objectives add nep_half_health dummy
-scoreboard objectives add nep_10pencent_health dummy
-scoreboard objectives add nep_10pencent_health.temp dummy
+scoreboard objectives add nep_20percent_health dummy
+scoreboard objectives add nep_20percent_health.temp dummy
 scoreboard objectives add nep_phase3_tp_buffer dummy
 scoreboard objectives add nep_flight_marker_recursion dummy
 bossbar add nep_elder "NEP.Elder"

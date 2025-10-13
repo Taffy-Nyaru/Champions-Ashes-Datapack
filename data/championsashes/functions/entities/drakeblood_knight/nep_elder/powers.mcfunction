@@ -54,10 +54,10 @@ execute unless entity @s[tag=phase3] if score @s Elder_Health <= @s nep_half_hea
 execute if entity @s[tag=phase2] run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2
 
 #Phase 3 starts:
-execute unless entity @s[tag=phase3_started] if score @s Elder_Health <= @s nep_10pencent_health run function championsashes:entities/drakeblood_knight/nep_elder/teleport_to_summon_shrine_buffer
+execute unless entity @s[tag=phase3_started] if score @s Elder_Health <= @s nep_20percent_health run function championsashes:entities/drakeblood_knight/nep_elder/teleport_to_summon_shrine_buffer
 
 #Phase 3:
-execute if score @s Elder_Health <= @s nep_10pencent_health run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3
+execute if score @s Elder_Health <= @s nep_20percent_health run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3
 
 function championsashes:entities/drakeblood_knight/nep_elder/clear_negative_effects
 
