@@ -1,10 +1,12 @@
-#ER Table All-in-one by Team Hexinton
+#Champion's Ashes Table All-in-one by Ace_Taffy1
 loot give @a[limit=1] loot championsashes:items/cheat_engine
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/bomber
+execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/daedalus_crucible_wing
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/drakeblood_boots
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/drakeblood_chestplate
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/drakeblood_helmet
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/drakeblood_leggings
+execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/electric_wand
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/old_sorcerer_hat
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/old_sorcerer_hat_nep
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:armor/steel_boots
@@ -58,8 +60,8 @@ execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/gtx690
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/gundyr_halberd
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/homeward_bone
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/irithyll_straight_sword
-execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/item_displayer
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/ledo_great_hammer
+execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/levitation_gem
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/lorian_greatsword
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/lothric_holy_sword
 execute at @a[limit=1] run loot spawn ~ ~ ~ loot championsashes:items/meteorite_staff

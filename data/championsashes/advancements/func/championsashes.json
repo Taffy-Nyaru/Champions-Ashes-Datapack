@@ -13,5 +13,10 @@
       "championsashes": {
         "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "loot": [
+        "championsashes:items/levitation_gem"
+      ]
     }
   }
