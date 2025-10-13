@@ -11,11 +11,11 @@ execute if score @s nep_phase3_tp_buffer matches 26.. run scoreboard players set
 
 #Fume Ultra Greatsword:
 scoreboard players add @s[tag=!nep_switched_to_ugs] nep_phase3_switch_to_fume_ugs 1
-execute if score @s nep_phase3_switch_to_fume_ugs matches 2200.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_fume_ugs
+execute if score @s nep_phase3_switch_to_fume_ugs matches 1000.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_fume_ugs
 
 #Dragonslayer Greatbow:
 scoreboard players add @s[tag=!nep_switched_to_dragonslayer] nep_phase3_switch_to_dragonslayer 1
-execute if score @s nep_phase3_switch_to_dragonslayer matches 2200.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_dragonslayer
+execute if score @s nep_phase3_switch_to_dragonslayer matches 1000.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_dragonslayer
 
 #Different Forms
 execute if entity @s[tag=nep_switched_to_ugs] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/fume_ugs_form
@@ -31,3 +31,6 @@ execute as @e[tag=nep_splitleaf_helicopter,type=item_display,limit=1,sort=neares
 
 #Checking summon of flight markers, generate markers at loop_summon_flight_marker and gave tag in phase3_started function
 execute as @e[tag=loop_summon_flight_marker,limit=1,type=marker,sort=nearest] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_start_summoning_flight_marker
+
+#Deathblight in 6 min
+scoreboard players add @e[tag=nep_foe,type=!#championsashes:special_entities,distance=..50] death_blight_Timer 1
