@@ -2,7 +2,7 @@
 execute if entity @e[type=warden,distance=..25] run function championsashes:entities/warden/powers
 execute if entity @e[type=wither_skeleton,distance=..25,tag=night_cavalry] run function championsashes:entities/night_cavalry/powers
 
-execute if entity @e[type=item,limit=1,predicate=championsashes:misc/cheat_engine] run function championsashes:entities/drakeblood_knight/nep_elder/killed_nep
+execute as @s[advancements={championsashes:killed_nep=false}] if entity @e[type=item,limit=1,predicate=championsashes:misc/cheat_engine] run function championsashes:entities/drakeblood_knight/nep_elder/killed_nep
 execute if entity @e[type=item,limit=1,predicate=championsashes:misc/cheat_engine] run kill @e[type=item,predicate=championsashes:misc/cheat_engine]
 
 #Animation air detect

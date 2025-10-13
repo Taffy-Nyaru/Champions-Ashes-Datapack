@@ -8,4 +8,5 @@ execute as @e[tag=nep_foe] at @e[tag=nep_projectile,type=item_display] if entity
 
 execute at @e[tag=nep_projectile,type=item_display] unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run function championsashes:entities/drakeblood_knight/nep_elder/dragon_bomb_explosion
 
-execute as @e[tag=nep_projectile,type=item_display] at @e[type=creeper,tag=dragon_bomb] if entity @e[tag=nep_projectile,type=item_display,distance=..1] run kill @s[distance=..1]
+execute at @e[type=creeper,tag=dragon_bomb] as @e[tag=nep_projectile,type=item_display,distance=..1] run kill @s[distance=..1]
+execute at @e[type=creeper,tag=dragon_bomb] as @e[tag=nep_projectile,type=item_display,distance=..1] run gamerule mobGriefing true

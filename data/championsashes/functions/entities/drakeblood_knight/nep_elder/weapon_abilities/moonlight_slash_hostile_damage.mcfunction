@@ -2,7 +2,7 @@ damage @s 10 championsashes:frostbite by @e[tag=nep_elder,limit=1,sort=nearest,t
 scoreboard players add @s frostbite_Timer 600
 scoreboard players add @s nep_moonlight_slash_hit_count 1
 #Crystalization
-execute if score @s nep_moonlight_slash_hit_count matches 3.. at @s[predicate=championsashes:hurttime] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/moonlight_slash_crystalization
+execute if score @s nep_moonlight_slash_hit_count matches 3.. run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/moonlight_slash_crystalization
 
 #Ice Storm
 execute at @s if score @s frostbite_Timer matches 4200.. facing ~ ~ ~ run function animated_java:zamor_ice_storm/summon
