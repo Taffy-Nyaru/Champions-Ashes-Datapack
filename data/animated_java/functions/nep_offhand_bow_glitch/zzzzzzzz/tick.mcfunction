@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_offhand_bow_glitch.root] run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/tick_as_root

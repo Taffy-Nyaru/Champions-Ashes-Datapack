@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/animations/offhand_bow_glitch/tree/leaf_55_as_bone
+execute unless entity @s[tag=aj.nep_offhand_bow_glitch.disable_command_keyframes] at @s run execute at @e[tag=nep_arrow_shot,type=marker,limit=1,sort=nearest] run summon item_display ^ ^ ^0.1 {brightness:{sky:15,block:15},item:{Count:1b,id:"minecraft:snowball",tag:{Enchantments:[{id:"infinity",lvl:1}],CustomModelData:1390114}},Tags:["bow_glitch_arrow"]}

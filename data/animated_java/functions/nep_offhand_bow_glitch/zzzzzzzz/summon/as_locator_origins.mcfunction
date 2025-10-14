@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.nep_offhand_bow_glitch.locator_origin.arrow_shot] run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/summon/locator_arrow_shot/as_origin
+function #animated_java:nep_offhand_bow_glitch/on_summon/as_locator_origins

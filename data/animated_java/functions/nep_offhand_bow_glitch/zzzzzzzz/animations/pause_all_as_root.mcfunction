@@ -1,0 +1,1 @@
+function animated_java:nep_offhand_bow_glitch/zzzzzzzz/animations/offhand_bow_glitch/pause_as_root

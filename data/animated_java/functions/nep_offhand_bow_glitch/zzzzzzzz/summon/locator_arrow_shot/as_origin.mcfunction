@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["nep_arrow_shot","aj.nep_offhand_bow_glitch.locator","aj.nep_offhand_bow_glitch.locator.arrow_shot","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_offhand_bow_glitch\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"arrow_shot\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.nep_offhand_bow_glitch.locator.arrow_shot,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/summon/locator_arrow_shot/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

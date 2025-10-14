@@ -1,0 +1,3 @@
+execute if score @s aj.nep_offhand_bow_glitch.animation.offhand_bow_glitch.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/animations/offhand_bow_glitch/end_loop
+execute if score @s aj.nep_offhand_bow_glitch.animation.offhand_bow_glitch.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_offhand_bow_glitch/animations/offhand_bow_glitch/stop
+execute if score @s aj.nep_offhand_bow_glitch.animation.offhand_bow_glitch.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_offhand_bow_glitch/animations/offhand_bow_glitch/pause

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..70 run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/animations/offhand_bow_glitch/tree/branch_0_70

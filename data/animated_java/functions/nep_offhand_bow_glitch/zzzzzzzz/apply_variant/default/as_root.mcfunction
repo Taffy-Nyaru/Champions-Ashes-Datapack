@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/apply_variant/default/as_bone

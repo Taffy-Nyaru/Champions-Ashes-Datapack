@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.nep_offhand_bow_glitch.root] run function animated_java:nep_offhand_bow_glitch/zzzzzzzz/remove/as_root
+kill @e[tag=aj.nep_offhand_bow_glitch.rig_entity]

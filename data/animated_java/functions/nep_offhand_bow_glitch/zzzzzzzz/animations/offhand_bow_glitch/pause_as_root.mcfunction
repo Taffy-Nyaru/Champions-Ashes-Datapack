@@ -1,0 +1,1 @@
+tag @s remove aj.nep_offhand_bow_glitch.animation.offhand_bow_glitch
