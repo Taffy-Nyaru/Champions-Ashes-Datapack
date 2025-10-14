@@ -12062,7 +12062,6 @@
 				"data\\minecraft\\tags\\functions\\tick.json",
 				"data\\animated_java\\functions\\void_slash\\zzzzzzzz\\load.mcfunction",
 				"data\\animated_java\\functions\\void_slash\\zzzzzzzz\\on_load.mcfunction",
-				"data\\animated_java\\functions\\void_slash\\zzzzzzzz\\mark_outdated_rig.mcfunction",
 				"data\\animated_java\\functions\\void_slash\\zzzzzzzz\\tick.mcfunction",
 				"data\\animated_java\\functions\\void_slash\\zzzzzzzz\\tick_as_root.mcfunction",
 				"data\\animated_java\\functions\\void_slash\\zzzzzzzz\\summon\\locator_void_slash\\as_origin.mcfunction",

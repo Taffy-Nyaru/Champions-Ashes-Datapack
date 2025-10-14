@@ -15,7 +15,7 @@ execute if entity @e[tag=nep_foe,distance=..50,limit=1,sort=nearest,type=!player
 
 #Fume Ultra Greatsword:
 scoreboard players add @s[tag=!nep_switched_to_ugs] nep_phase3_switch_to_fume_ugs 1
-execute if score @s nep_phase3_switch_to_fume_ugs matches 1000.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_fume_ugs
+execute if score @s nep_phase3_switch_to_fume_ugs matches 400.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_fume_ugs
 
 #Dragonslayer Greatbow:
 scoreboard players add @s[tag=!nep_switched_to_dragonslayer] nep_phase3_switch_to_dragonslayer 1
@@ -28,7 +28,7 @@ execute if entity @s[tag=nep_switched_to_dragonslayer] run function championsash
 
 #Flight
 execute as @e[type=item_display,tag=nep_flight_marker_chasing,limit=1,sort=nearest,distance=..50] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase3/flight
-execute unless entity @s[tag=nep_phase3_used_teleport] facing entity @e[type=item_display,tag=nep_flight_marker_chasing,limit=1,sort=nearest,distance=..50] feet run tp @s ^ ^ ^0.2
+execute unless score @s nep_phase3_tp_buffer matches ..6 facing entity @e[type=item_display,tag=nep_flight_marker_chasing,limit=1,sort=nearest,distance=..50] feet run tp @s ^ ^ ^0.2
 #Splitleaf helicopter
 tp @e[tag=nep_splitleaf_helicopter,type=item_display,limit=1,sort=nearest,distance=..50] ~ ~2 ~
 execute as @e[tag=nep_splitleaf_helicopter,type=item_display,limit=1,sort=nearest,distance=..5] run function championsashes:items/splitleaf/rotation
