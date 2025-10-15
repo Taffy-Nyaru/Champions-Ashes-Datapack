@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_fume_ugs_skills/zzzzzzzz/apply_variant/default/as_bone

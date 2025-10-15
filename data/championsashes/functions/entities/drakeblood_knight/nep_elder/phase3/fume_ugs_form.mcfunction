@@ -1,1 +1,2 @@
 scoreboard players add @s nep_phase3_switch_to_dragonslayer 1
+execute as @e[type=item_display,tag=aj.nep_fume_ugs_skills.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,type=!#championsashes:special_entities] eyes run tp @s ^ ^ ^ ~ ~

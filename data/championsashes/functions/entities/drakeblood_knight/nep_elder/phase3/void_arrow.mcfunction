@@ -28,3 +28,4 @@ execute unless block ~0.5 ~ ~-0.5 #championsashes:transparent_blocks run kill @s
 execute unless block ~0.5 ~-0.5 ~ #championsashes:transparent_blocks run kill @s
 execute unless block ~0.5 ~-0.5 ~0.5 #championsashes:transparent_blocks run kill @s
 execute unless block ~0.5 ~ ~0.5 #championsashes:transparent_blocks run kill @s
+execute unless entity @e[tag=nep_foe,limit=1,sort=nearest,type=!#championsashes:special_entities,distance=10..80] run kill @s

@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 184 run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/tree/leaf_184
+execute if score @s aj.anim_time matches 185 run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/tree/leaf_185

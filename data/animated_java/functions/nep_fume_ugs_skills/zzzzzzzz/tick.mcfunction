@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_fume_ugs_skills.root] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/tick_as_root

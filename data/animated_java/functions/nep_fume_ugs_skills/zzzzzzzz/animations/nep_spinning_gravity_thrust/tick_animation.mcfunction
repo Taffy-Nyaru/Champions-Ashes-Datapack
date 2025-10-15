@@ -1,0 +1,4 @@
+scoreboard players add @s aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust.local_anim_time 1
+scoreboard players operation @s aj.anim_time = @s aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust.local_anim_time
+function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/apply_frame_as_root
+execute if score @s aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust.local_anim_time matches 185.. run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/end

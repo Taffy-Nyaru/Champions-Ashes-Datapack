@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/tree/leaf_14_as_bone

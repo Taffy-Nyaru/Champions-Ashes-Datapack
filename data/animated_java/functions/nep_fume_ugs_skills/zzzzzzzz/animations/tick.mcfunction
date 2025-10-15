@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/tick

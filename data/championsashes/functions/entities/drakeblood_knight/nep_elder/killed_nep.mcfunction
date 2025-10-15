@@ -21,4 +21,5 @@ kill @e[type=item_display,tag=drakeblood_phanalax2]
 kill @e[type=marker,tag=nep_flight_marker_chasing]
 kill @e[type=item_display,tag=nep_flight_marker_chasing]
 kill @e[type=item_display,tag=nep_splitleaf_helicopter]
+kill @e[type=item_display,tag=bow_glitch_arrow]
 tag @e[tag=nep_foe,type=!#championsashes:special_entities] remove nep_foe

@@ -66,6 +66,8 @@ execute if score @s nep_attacked_by_player_timer matches 20.. run scoreboard pla
 
 #Debug
 execute as @e[tag=aj.nep_void_missle.bone,distance=5..,type=item_display] run function animated_java:nep_void_missle/remove/all
+team join drakeblood_knights @e[tag=drakeblood_knight,type=wither_skeleton,distance=..50]
+tag @s remove nep_foe
 
 bossbar set nep_elder players @a[tag=nep_bossbar_set]
 tag @a[tag=!nep_bossbar_set,distance=..30] add nep_bossbar_set

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/tree/leaf_0_as_bone
+execute unless entity @s[tag=aj.nep_fume_ugs_skills.disable_command_keyframes] at @s run execute as @e[tag=aj.nep_gravity_sprint.root] run data modify entity @s brightness set value {block:15,sky:15}

@@ -1,0 +1,3 @@
+execute if score @s aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/end_loop
+execute if score @s aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_fume_ugs_skills/animations/nep_spinning_gravity_thrust/stop
+execute if score @s aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_fume_ugs_skills/animations/nep_spinning_gravity_thrust/pause

@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.nep_fume_ugs_skills.locator","aj.nep_fume_ugs_skills.locator.fume_ugs_locator","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_fume_ugs_skills\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"fume_ugs_locator\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.nep_fume_ugs_skills.locator.fume_ugs_locator,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_fume_ugs_locator/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

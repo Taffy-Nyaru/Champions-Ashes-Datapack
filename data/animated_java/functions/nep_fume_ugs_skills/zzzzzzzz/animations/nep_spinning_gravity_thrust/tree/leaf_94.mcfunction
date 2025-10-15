@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/tree/leaf_94_as_bone
+execute unless entity @s[tag=aj.nep_fume_ugs_skills.disable_command_keyframes] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase3/nep_gravity_thrust

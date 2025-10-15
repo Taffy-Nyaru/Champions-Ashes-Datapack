@@ -12,9 +12,9 @@ execute at @e[distance=..15,type=wither_skeleton,tag=drakeblood_knight] as @e[di
 #Drakeblood Knight
 execute as @e[distance=..50,type=wither_skeleton,tag=drakeblood_knight] at @s run function championsashes:entities/drakeblood_knight/powers
 execute as @e[distance=..50,type=wither_skeleton,tag=nep_elder] at @s run function championsashes:entities/drakeblood_knight/nep_elder/powers
-execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax0] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
-execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax1] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
-execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax2] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..5] run kill @s
+execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax0] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..8.25] run kill @s
+execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax1] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..8.25] run kill @s
+execute as @e[distance=..10,type=item_display,tag=drakeblood_phanalax2] at @s unless entity @e[tag=drakeblood_knight,type=wither_skeleton,distance=..8.25] run kill @s
 
 #Effects
 execute as @e[distance=..15,type=!#championsashes:special_entities,tag=!nep_elder,scores={bleeding_Timer=1..}] at @s run function championsashes:effects/bleeding/bleed
