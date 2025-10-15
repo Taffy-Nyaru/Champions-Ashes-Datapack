@@ -1,2 +1,2 @@
 scoreboard players set @s aj.murky_hand_scythe.rig_loaded 1
-execute unless score @s aj.murky_hand_scythe.export_version = aj.murky_hand_scythe.export_version aj.i at @s run function animated_java:murky_hand_scythe/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.murky_hand_scythe.export_version = aj.murky_hand_scythe.export_version aj.i at @s run function animated_java:murky_hand_scythe/zzzzzzzz/load

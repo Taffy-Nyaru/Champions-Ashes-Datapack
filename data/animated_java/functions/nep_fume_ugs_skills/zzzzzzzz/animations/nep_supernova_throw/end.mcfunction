@@ -1,0 +1,3 @@
+execute if score @s aj.nep_fume_ugs_skills.animation.nep_supernova_throw.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/end_loop
+execute if score @s aj.nep_fume_ugs_skills.animation.nep_supernova_throw.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_fume_ugs_skills/animations/nep_supernova_throw/stop
+execute if score @s aj.nep_fume_ugs_skills.animation.nep_supernova_throw.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_fume_ugs_skills/animations/nep_supernova_throw/pause

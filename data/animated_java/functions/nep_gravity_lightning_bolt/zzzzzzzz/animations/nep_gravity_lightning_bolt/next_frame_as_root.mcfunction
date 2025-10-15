@@ -1,0 +1,1 @@
+function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/tick_animation

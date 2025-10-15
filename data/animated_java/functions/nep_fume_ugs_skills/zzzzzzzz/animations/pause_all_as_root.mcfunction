@@ -1,1 +1,2 @@
 function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/pause_as_root
+function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/pause_as_root

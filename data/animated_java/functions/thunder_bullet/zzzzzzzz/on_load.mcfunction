@@ -1,2 +1,2 @@
 scoreboard players set @s aj.thunder_bullet.rig_loaded 1
-execute unless score @s aj.thunder_bullet.export_version = aj.thunder_bullet.export_version aj.i at @s run function animated_java:thunder_bullet/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.thunder_bullet.export_version = aj.thunder_bullet.export_version aj.i at @s run function animated_java:thunder_bullet/zzzzzzzz/load

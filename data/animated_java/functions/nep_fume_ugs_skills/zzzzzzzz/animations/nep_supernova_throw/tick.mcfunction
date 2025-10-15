@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/tick_animation

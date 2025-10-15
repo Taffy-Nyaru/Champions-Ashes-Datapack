@@ -1,2 +1,2 @@
 scoreboard players set @s aj.shadow_golem.rig_loaded 1
-execute unless score @s aj.shadow_golem.export_version = aj.shadow_golem.export_version aj.i at @s run function animated_java:shadow_golem/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.shadow_golem.export_version = aj.shadow_golem.export_version aj.i at @s run function animated_java:shadow_golem/zzzzzzzz/load

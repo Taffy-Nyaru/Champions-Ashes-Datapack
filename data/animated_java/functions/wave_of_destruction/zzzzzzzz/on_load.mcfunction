@@ -1,2 +1,2 @@
 scoreboard players set @s aj.wave_of_destruction.rig_loaded 1
-execute unless score @s aj.wave_of_destruction.export_version = aj.wave_of_destruction.export_version aj.i at @s run function animated_java:wave_of_destruction/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.wave_of_destruction.export_version = aj.wave_of_destruction.export_version aj.i at @s run function animated_java:wave_of_destruction/zzzzzzzz/load

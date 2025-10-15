@@ -1,2 +1,2 @@
 scoreboard players set @s aj.eletric_shield.rig_loaded 1
-execute unless score @s aj.eletric_shield.export_version = aj.eletric_shield.export_version aj.i at @s run function animated_java:eletric_shield/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.eletric_shield.export_version = aj.eletric_shield.export_version aj.i at @s run function animated_java:eletric_shield/zzzzzzzz/load

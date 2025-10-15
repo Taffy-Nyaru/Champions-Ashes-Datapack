@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/tree/leaf_1_as_bone

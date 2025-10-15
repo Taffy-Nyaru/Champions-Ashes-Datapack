@@ -1,2 +1,2 @@
 scoreboard players set @s aj.messemers_assault.rig_loaded 1
-execute unless score @s aj.messemers_assault.export_version = aj.messemers_assault.export_version aj.i at @s run function animated_java:messemers_assault/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.messemers_assault.export_version = aj.messemers_assault.export_version aj.i at @s run function animated_java:messemers_assault/zzzzzzzz/load

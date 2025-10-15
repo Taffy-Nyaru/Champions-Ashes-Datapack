@@ -1,2 +1,2 @@
 scoreboard players set @s aj.destined_death.rig_loaded 1
-execute unless score @s aj.destined_death.export_version = aj.destined_death.export_version aj.i at @s run function animated_java:destined_death/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.destined_death.export_version = aj.destined_death.export_version aj.i at @s run function animated_java:destined_death/zzzzzzzz/load

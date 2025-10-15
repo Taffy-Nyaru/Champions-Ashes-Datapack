@@ -11,6 +11,8 @@ execute if score #variant aj.i = $aj.nep_fume_ugs_skills.variant.default aj.id r
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust aj.id run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_spinning_gravity_thrust/apply_frame_as_root
 execute if score #animation aj.i = $aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust aj.id run scoreboard players operation @s aj.nep_fume_ugs_skills.animation.nep_spinning_gravity_thrust.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.nep_fume_ugs_skills.animation.nep_supernova_throw aj.id run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/apply_frame_as_root
+execute if score #animation aj.i = $aj.nep_fume_ugs_skills.animation.nep_supernova_throw aj.id run scoreboard players operation @s aj.nep_fume_ugs_skills.animation.nep_supernova_throw.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:nep_fume_ugs_skills/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

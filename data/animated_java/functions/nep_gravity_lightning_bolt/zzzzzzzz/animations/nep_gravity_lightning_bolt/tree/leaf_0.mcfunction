@@ -1,0 +1,3 @@
+execute on passengers run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/tree/leaf_0_as_bone
+function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/apply_variant/0/as_root
+execute unless entity @s[tag=aj.nep_gravity_lightning_bolt.disable_command_keyframes] at @s run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/tree/leaf_0_effects_0

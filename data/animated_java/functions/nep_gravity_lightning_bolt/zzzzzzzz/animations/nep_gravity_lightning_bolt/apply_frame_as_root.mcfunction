@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..19 run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/tree/branch_0_19

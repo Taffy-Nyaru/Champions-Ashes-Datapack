@@ -1,2 +1,2 @@
 scoreboard players set @s aj.splitleaf_infinite.rig_loaded 1
-execute unless score @s aj.splitleaf_infinite.export_version = aj.splitleaf_infinite.export_version aj.i at @s run function animated_java:splitleaf_infinite/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.splitleaf_infinite.export_version = aj.splitleaf_infinite.export_version aj.i at @s run function animated_java:splitleaf_infinite/zzzzzzzz/load

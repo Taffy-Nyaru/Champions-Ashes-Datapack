@@ -1,0 +1,1 @@
+tag @s remove aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt

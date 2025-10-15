@@ -1,2 +1,2 @@
 scoreboard players set @s aj.favor_incantations.rig_loaded 1
-execute unless score @s aj.favor_incantations.export_version = aj.favor_incantations.export_version aj.i at @s run function animated_java:favor_incantations/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.favor_incantations.export_version = aj.favor_incantations.export_version aj.i at @s run function animated_java:favor_incantations/zzzzzzzz/load

@@ -1,2 +1,1 @@
 scoreboard players set @s aj.blackhole_supernova.rig_loaded 1
-execute unless score @s aj.blackhole_supernova.export_version = aj.blackhole_supernova.export_version aj.i at @s run function animated_java:blackhole_supernova/zzzzzzzz/mark_outdated_rig

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_gravity_lightning_bolt.locator_origin.locator] at @s on origin run tp @s ^0 ^0.01563 ^0 ~0 ~0

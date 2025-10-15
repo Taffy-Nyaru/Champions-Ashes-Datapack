@@ -1,2 +1,2 @@
 scoreboard players set @s aj.meteorite_shockwave.rig_loaded 1
-execute unless score @s aj.meteorite_shockwave.export_version = aj.meteorite_shockwave.export_version aj.i at @s run function animated_java:meteorite_shockwave/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.meteorite_shockwave.export_version = aj.meteorite_shockwave.export_version aj.i at @s run function animated_java:meteorite_shockwave/zzzzzzzz/load

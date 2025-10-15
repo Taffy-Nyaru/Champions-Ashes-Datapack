@@ -1,2 +1,2 @@
 scoreboard players set @s aj.field_extension.rig_loaded 1
-execute unless score @s aj.field_extension.export_version = aj.field_extension.export_version aj.i at @s run function animated_java:field_extension/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.field_extension.export_version = aj.field_extension.export_version aj.i at @s run function animated_java:field_extension/zzzzzzzz/load

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/apply_variant/5/as_bone

@@ -45,9 +45,7 @@
 		"animated_java:destined_death/zzzzzzzz/tick",
 		"animated_java:ringed_nightstar/zzzzzzzz/tick",
 		"animated_java:gravity_thrust/zzzzzzzz/tick",
-		"animated_java:space_based_missle/zzzzzzzz/tick",
 		"animated_java:kamui/zzzzzzzz/tick",
-		"animated_java:blackhole_supernova/zzzzzzzz/tick",
 		"animated_java:anchor_vfx/zzzzzzzz/tick",
 		"animated_java:meteoric_ore_snipe_charge/zzzzzzzz/tick",
 		"animated_java:death_blighted/zzzzzzzz/tick",
@@ -62,6 +60,9 @@
 		"animated_java:nep_moonlight_slash/zzzzzzzz/tick",
 		"animated_java:nep_offhand_bow_glitch/zzzzzzzz/tick",
 		"animated_java:void_slash/zzzzzzzz/tick",
-		"animated_java:nep_fume_ugs_skills/zzzzzzzz/tick"
+		"animated_java:nep_gravity_lightning_bolt/zzzzzzzz/tick",
+		"animated_java:space_based_missle/zzzzzzzz/tick",
+		"animated_java:nep_fume_ugs_skills/zzzzzzzz/tick",
+		"animated_java:blackhole_supernova/zzzzzzzz/tick"
 	]
 }

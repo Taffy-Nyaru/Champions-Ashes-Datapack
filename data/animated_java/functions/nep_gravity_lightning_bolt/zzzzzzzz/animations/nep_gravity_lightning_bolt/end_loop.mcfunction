@@ -1,0 +1,3 @@
+scoreboard players set @s aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt.local_anim_time 0
+scoreboard players set @s aj.anim_time 0
+function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/tree/leaf_0

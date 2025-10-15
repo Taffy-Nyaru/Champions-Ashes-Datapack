@@ -1,2 +1,2 @@
 scoreboard players set @s aj.death_blighted.rig_loaded 1
-execute unless score @s aj.death_blighted.export_version = aj.death_blighted.export_version aj.i at @s run function animated_java:death_blighted/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.death_blighted.export_version = aj.death_blighted.export_version aj.i at @s run function animated_java:death_blighted/zzzzzzzz/load

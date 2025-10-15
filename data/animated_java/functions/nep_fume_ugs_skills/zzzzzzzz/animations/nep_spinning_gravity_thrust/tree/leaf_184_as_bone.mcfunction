@@ -1,13 +1,14 @@
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator] at @s on origin run tp @s ^-2.20406 ^0.23304 ^-0.21315 ~13.28765 ~1.66068
-execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator2] at @s on origin run tp @s ^-1.75674 ^0.42669 ^-0.10174 ~13.28765 ~1.66068
+execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator2] at @s on origin run tp @s ^-1.75675 ^0.42669 ^-0.10174 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator3] at @s on origin run tp @s ^-1.30943 ^0.62035 ^0.00967 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator4] at @s on origin run tp @s ^-0.86212 ^0.814 ^0.12108 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator5] at @s on origin run tp @s ^-0.3589 ^1.03186 ^0.24641 ~13.28765 ~1.66068
-execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator10] at @s on origin run tp @s ^-0.27274 ^1.04273 ^-0.1184 ~13.28765 ~1.66068
+execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator10] at @s on origin run tp @s ^-0.27274 ^1.04272 ^-0.1184 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator9] at @s on origin run tp @s ^-0.77597 ^0.82487 ^-0.24373 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator8] at @s on origin run tp @s ^-1.22328 ^0.63121 ^-0.35514 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator7] at @s on origin run tp @s ^-1.67059 ^0.43756 ^-0.46655 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator6] at @s on origin run tp @s ^-2.1179 ^0.24391 ^-0.57795 ~13.28765 ~1.66068
+execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.foe_ride_locator] at @s on origin run tp @s ^-1.37819 ^0.57737 ^-0.20059 ~13.28765 ~1.66068
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.nep_ride] at @s on origin run tp @s ^-0.0625 ^1 ^-1.8125 ~0 ~0
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.wave_of_destruction0] at @s on origin run tp @s ^-0.375 ^0.49999 ^3.43752 ~0 ~90
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.wave_of_destruction1] at @s on origin run tp @s ^-0.375 ^0.5 ^3.43752 ~0 ~90

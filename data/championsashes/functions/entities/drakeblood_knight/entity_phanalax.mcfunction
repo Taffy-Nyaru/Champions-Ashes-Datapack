@@ -17,7 +17,7 @@ execute store result storage math:io 2drakeblood_phanalax_uuid[2] int 1 run scor
 execute store result storage math:io 2drakeblood_phanalax_uuid[3] int 1 run scoreboard players get @s 2drakeblood_phanalax_uuid3
 data modify entity 9bf0d198-816f-4084-8c37-27d0f958bba1 Thrower set from storage math:io 2drakeblood_phanalax_uuid
 
-execute on target if entity @s[type=!player] run tag @s add nep_foe
+execute on target if entity @s[type=!player,tag=!drakeblood_knight] run tag @s add nep_foe
 execute on target if entity @s[type=player,gamemode=!creative,gamemode=!spectator] run tag @s add nep_foe
 
 execute if entity @s[tag=phase2] facing entity @e[type=!#championsashes:special_entities,limit=1,sort=nearest,tag=nep_foe] feet as 942429eb-9233-4105-a36e-8fec8f4ce862 on origin if entity @s[tag=void_missle_rotation,tag=!nep_missle_removed_lockon_rotation] run tp @s ^-1 ^1.5 ^ ~ ~

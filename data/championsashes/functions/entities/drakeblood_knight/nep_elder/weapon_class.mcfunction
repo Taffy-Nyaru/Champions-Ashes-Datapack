@@ -1,3 +1,4 @@
+#[-1024, 1024]
 execute if score change_weapon_inventory math_output matches 1..300 run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/drakeblood_greatsword
 execute if score change_weapon_inventory math_output matches 301..350 run loot replace entity @s weapon.mainhand loot championsashes:items/black_knight_greataxe
 execute if score change_weapon_inventory math_output matches 351..550 run loot replace entity @s weapon.mainhand loot championsashes:items/ringed_knight_straight_sword

@@ -25,6 +25,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.space_based_missle.export_version aj.i -290706301
+scoreboard players set aj.space_based_missle.export_version aj.i -172347726
 scoreboard players reset * aj.space_based_missle.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.space_based_missle.root] run function animated_java:space_based_missle/zzzzzzzz/on_load

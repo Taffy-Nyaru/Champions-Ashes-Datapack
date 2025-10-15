@@ -1,2 +1,2 @@
 scoreboard players set @s aj.rkss_cancel.rig_loaded 1
-execute unless score @s aj.rkss_cancel.export_version = aj.rkss_cancel.export_version aj.i at @s run function animated_java:rkss_cancel/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.rkss_cancel.export_version = aj.rkss_cancel.export_version aj.i at @s run function animated_java:rkss_cancel/zzzzzzzz/load

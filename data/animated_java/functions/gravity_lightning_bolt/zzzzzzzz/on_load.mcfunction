@@ -1,2 +1,2 @@
 scoreboard players set @s aj.gravity_lightning_bolt.rig_loaded 1
-execute unless score @s aj.gravity_lightning_bolt.export_version = aj.gravity_lightning_bolt.export_version aj.i at @s run function animated_java:gravity_lightning_bolt/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.gravity_lightning_bolt.export_version = aj.gravity_lightning_bolt.export_version aj.i at @s run function animated_java:gravity_lightning_bolt/zzzzzzzz/load

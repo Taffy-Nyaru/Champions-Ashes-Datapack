@@ -8,6 +8,7 @@ execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator9
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator8] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_fume_ugs_locator8/as_origin
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator7] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_fume_ugs_locator7/as_origin
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.fume_ugs_locator6] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_fume_ugs_locator6/as_origin
+execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.foe_ride_locator] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_foe_ride_locator/as_origin
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.nep_ride] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_nep_ride/as_origin
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.wave_of_destruction0] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_wave_of_destruction0/as_origin
 execute if entity @s[tag=aj.nep_fume_ugs_skills.locator_origin.wave_of_destruction1] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/summon/locator_wave_of_destruction1/as_origin

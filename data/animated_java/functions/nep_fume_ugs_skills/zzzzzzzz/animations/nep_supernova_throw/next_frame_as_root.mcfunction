@@ -1,0 +1,1 @@
+function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/tick_animation

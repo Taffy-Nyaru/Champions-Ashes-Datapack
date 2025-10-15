@@ -1,2 +1,2 @@
 scoreboard players set @s aj.water_explode.rig_loaded 1
-execute unless score @s aj.water_explode.export_version = aj.water_explode.export_version aj.i at @s run function animated_java:water_explode/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.water_explode.export_version = aj.water_explode.export_version aj.i at @s run function animated_java:water_explode/zzzzzzzz/load

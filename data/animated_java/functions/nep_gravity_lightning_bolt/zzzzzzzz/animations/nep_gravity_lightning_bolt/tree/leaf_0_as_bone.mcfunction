@@ -1,0 +1,3 @@
+execute if entity @s[tag=aj.nep_gravity_lightning_bolt.bone.vfx] run data modify entity @s {} merge value {transformation:[-3f,0f,3.6739403974420594e-16f,0.0625f,0f,3f,0f,0.03125f,-3.6739403974420594e-16f,0f,-3f,7.654042494670958e-18f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.nep_gravity_lightning_bolt.bone.gravity_lightning_bolt] run data modify entity @s {} merge value {transformation:[-7.114583333333333f,0f,8.712851706433773e-16f,0.01171875f,0f,7.114583333333333f,0f,-0.0546875f,-8.712851706433773e-16f,0f,-7.114583333333333f,0.003906250000000002f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.nep_gravity_lightning_bolt.locator_origin.locator] at @s on origin run tp @s ^0 ^0.01563 ^0 ~0 ~0

@@ -1,1 +1,1 @@
-execute at @e[type=marker,tag=aj.space_based_missle.locator] as @e[type=!player,distance=..4.5,type=!#championsashes:special_entities] run damage @s 125 minecraft:out_of_world
+function championsashes:animated_effects/space_based_laser

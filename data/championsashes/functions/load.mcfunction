@@ -176,7 +176,8 @@ scoreboard objectives add nep_phase3_switch_to_fume_ugs dummy
 scoreboard objectives add nep_phase3_switch_to_dragonslayer dummy
 scoreboard objectives add nep_moonlight_slash_hit_count dummy
 scoreboard objectives add nep_offhand_bow_glitch dummy
-
+scoreboard objectives add nep_phase3_fume_ugs_random_lightning_bolt dummy
+scoreboard objectives add nep_phase3_fume_ugs_use_space_based_laser dummy
 team add drakeblood_knights
 bossbar add nep_elder "NEP.Elder"
 

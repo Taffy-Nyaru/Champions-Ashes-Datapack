@@ -1,8 +1,6 @@
 tag @s add nep_summoned_flight_marker
 tag @s add flight_marker_disperation
 
-data modify entity @s Invulnerable set value 1b
-data modify entity @s NoAI set value 1b
 function championsashes:entities/drakeblood_knight/nep_elder/phase3/random
 
 execute store result score flight_marker_Posx math_output run data get entity @s[tag=flight_marker_disperation] Pos[0]

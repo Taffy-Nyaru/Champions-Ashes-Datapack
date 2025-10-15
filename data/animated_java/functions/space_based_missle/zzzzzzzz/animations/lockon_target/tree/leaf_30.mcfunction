@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:space_based_missle/zzzzzzzz/animations/lockon_target/tree/leaf_30_as_bone
+execute unless entity @s[tag=aj.space_based_missle.disable_command_keyframes] at @s run tag @a remove nep_space_based_laser_locked_on

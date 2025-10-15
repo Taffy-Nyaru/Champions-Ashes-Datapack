@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/tree/leaf_87_as_bone
+execute unless entity @s[tag=aj.nep_fume_ugs_skills.disable_command_keyframes] at @s run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/tree/leaf_87_effects_0

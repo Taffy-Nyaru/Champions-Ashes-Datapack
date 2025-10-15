@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:nep_fume_ugs_skills/zzzzzzzz/animations/nep_supernova_throw/tree/leaf_73_as_bone

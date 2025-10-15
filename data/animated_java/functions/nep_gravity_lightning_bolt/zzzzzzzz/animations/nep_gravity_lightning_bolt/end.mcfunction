@@ -1,0 +1,3 @@
+execute if score @s aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/end_loop
+execute if score @s aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt.loop_mode = $aj.loop_mode.once aj.i run function animated_java:nep_gravity_lightning_bolt/animations/nep_gravity_lightning_bolt/stop
+execute if score @s aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:nep_gravity_lightning_bolt/animations/nep_gravity_lightning_bolt/pause

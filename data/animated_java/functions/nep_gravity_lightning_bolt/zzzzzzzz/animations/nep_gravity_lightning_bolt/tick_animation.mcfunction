@@ -1,0 +1,4 @@
+scoreboard players add @s aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt.local_anim_time 1
+scoreboard players operation @s aj.anim_time = @s aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt.local_anim_time
+function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/apply_frame_as_root
+execute if score @s aj.nep_gravity_lightning_bolt.animation.nep_gravity_lightning_bolt.local_anim_time matches 19.. run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/end

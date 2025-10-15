@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/animations/nep_gravity_lightning_bolt/tree/leaf_19_as_bone
+execute unless entity @s[tag=aj.nep_gravity_lightning_bolt.disable_command_keyframes] at @s run execute at @e[type=marker,tag=aj.nep_gravity_lightning_bolt.locator,limit=1,sort=nearest] as @e[tag=aj.nep_gravity_lightning_bolt.root,limit=1,sort=nearest] run function animated_java:nep_gravity_lightning_bolt/remove/this

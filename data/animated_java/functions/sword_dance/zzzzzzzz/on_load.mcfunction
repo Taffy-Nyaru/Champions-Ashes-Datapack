@@ -1,2 +1,2 @@
 scoreboard players set @s aj.sword_dance.rig_loaded 1
-execute unless score @s aj.sword_dance.export_version = aj.sword_dance.export_version aj.i at @s run function animated_java:sword_dance/zzzzzzzz/mark_outdated_rig
+execute unless score @s aj.sword_dance.export_version = aj.sword_dance.export_version aj.i at @s run function animated_java:sword_dance/zzzzzzzz/load

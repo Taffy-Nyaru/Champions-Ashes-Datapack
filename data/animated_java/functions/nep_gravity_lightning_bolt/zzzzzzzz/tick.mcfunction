@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_gravity_lightning_bolt.root] run function animated_java:nep_gravity_lightning_bolt/zzzzzzzz/tick_as_root

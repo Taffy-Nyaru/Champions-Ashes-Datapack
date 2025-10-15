@@ -1,3 +1,7 @@
+#Debug
+execute as @e[tag=aj.nep_void_missle.bone,distance=5..,type=item_display] run function animated_java:nep_void_missle/remove/all
+team join drakeblood_knights @e[tag=drakeblood_knight,type=wither_skeleton,distance=..50]
+
 data modify storage generic:main NepSelectedItem set from entity @s HandItems[0]
 execute store result bossbar nep_elder max run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base
 execute store result bossbar nep_elder value run data get entity @s Health
@@ -18,7 +22,7 @@ function championsashes:entities/drakeblood_knight/nep_elder/destroy_block_when_
 execute on vehicle if entity @s[type=!item_display] run kill @s
 
 #Destroy blocks and create platform if there are blocks in front, checks for every 8 seconds
-execute if entity @p[tag=nep_foe,distance=..30] run function championsashes:entities/drakeblood_knight/nep_elder/teleport_ai
+execute if entity @p[tag=nep_foe,distance=..50] run function championsashes:entities/drakeblood_knight/nep_elder/teleport_ai
 execute if score @s nep_block_destroy_timer matches 160.. run teleport @s @p[tag=nep_foe]
 
 #Teleporting with blast
@@ -63,11 +67,6 @@ function championsashes:entities/drakeblood_knight/nep_elder/clear_negative_effe
 execute if entity @s[tag=nep_attacked_by_player] run scoreboard players add @s nep_attacked_by_player_timer 1
 execute if score @s nep_attacked_by_player_timer matches 20.. run tag @s remove nep_attacked_by_player
 execute if score @s nep_attacked_by_player_timer matches 20.. run scoreboard players set @s nep_attacked_by_player_timer 0
-
-#Debug
-execute as @e[tag=aj.nep_void_missle.bone,distance=5..,type=item_display] run function animated_java:nep_void_missle/remove/all
-team join drakeblood_knights @e[tag=drakeblood_knight,type=wither_skeleton,distance=..50]
-tag @s remove nep_foe
 
 bossbar set nep_elder players @a[tag=nep_bossbar_set]
 tag @a[tag=!nep_bossbar_set,distance=..30] add nep_bossbar_set

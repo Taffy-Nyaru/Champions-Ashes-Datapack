@@ -10,6 +10,7 @@ execute if entity @s[tag=aj.nep_fume_ugs_skills.bone.right_arm] run data modify 
 
 
 
+
 execute if entity @s[tag=aj.nep_fume_ugs_skills.bone.fume_ugs_slash] run data modify entity @s item.tag.CustomModelData set value 3097
 execute if entity @s[tag=aj.nep_fume_ugs_skills.bone.gravity_vortex] run data modify entity @s item.tag.CustomModelData set value 3098
 execute if entity @s[tag=aj.nep_fume_ugs_skills.bone.fume_ultra_greatsword] run data modify entity @s item.tag.CustomModelData set value 3099
