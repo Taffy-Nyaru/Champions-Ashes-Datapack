@@ -1,3 +1,3 @@
-execute at @e[type=marker,tag=aj.space_based_missle.locator] as @e[type=!player,tag=!nep_foe,tag=!drakeblood_knight,distance=..3,type=!#championsashes:special_entities] run damage @s 50 minecraft:out_of_world by @p
-execute at @e[type=marker,tag=aj.space_based_missle.locator] as @e[type=!player,tag=nep_foe,tag=!drakeblood_knight,distance=..3,type=!#championsashes:special_entities] run damage @s 50 minecraft:out_of_world by @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest]
-execute at @e[type=marker,tag=aj.space_based_missle.locator] as @p[tag=nep_foe,distance=..3] run damage @s 15 minecraft:out_of_world by @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest]
+execute at @e[type=marker,tag=aj.space_based_missle.locator] as @e[type=!player,tag=!nep_foe,tag=!drakeblood_knight,distance=..3,type=!#championsashes:special_entities] run damage @s 50 minecraft:outside_border by @p
+execute at @e[type=marker,tag=aj.space_based_missle.locator] as @e[type=!player,tag=nep_foe,tag=!drakeblood_knight,distance=..3,type=!#championsashes:special_entities] run damage @s 50 minecraft:outside_border by @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest]
+execute at @e[type=marker,tag=aj.space_based_missle.locator] as @p[tag=nep_foe,distance=..3] run damage @s 15 minecraft:outside_border by @e[tag=nep_elder,type=wither_skeleton,limit=1,sort=nearest]

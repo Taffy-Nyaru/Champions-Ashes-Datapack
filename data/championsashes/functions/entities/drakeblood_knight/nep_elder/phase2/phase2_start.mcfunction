@@ -11,7 +11,7 @@ loot replace entity @s weapon.mainhand loot championsashes:items/murky_hand_scyt
 data modify entity @s HandItems[0].tag.Enchantments set value [{id:"sharpness",lvl:10s}]
 
 effect give @s resistance infinite 2 true
-damage @s 5 championsashes:gtx690
+damage @s 5 championsashes:cheat_engine
 tag @s add phase2_started
 tag @s add phase2
 tag @s add phase2_start_recovering

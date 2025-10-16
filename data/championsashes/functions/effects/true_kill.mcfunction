@@ -1,4 +1,4 @@
-damage @s 9223372036854775808 championsashes:gtx690
+damage @s 9223372036854775808 championsashes:cheat_engine
 kill @s
 data modify entity @s Health set value 0
 attribute @s minecraft:generic.max_health base set 0

@@ -9,6 +9,6 @@ summon creeper ^ ^1 ^36 {Tags:["bomb"],Fuse:0,powered:1b,Invulnerable:1b}
 summon creeper ^ ^1 ^44 {Tags:["bomb"],Fuse:0,powered:1b,Invulnerable:1b}
 summon creeper ^ ^1 ^52 {Tags:["bomb"],Fuse:0,powered:1b,Invulnerable:1b}
 summon creeper ^ ^1 ^60 {Tags:["bomb"],Fuse:0,powered:1b,Invulnerable:1b}
-execute positioned ^ ^ ^5 as @e[tag=!chainsaw,distance=..5] run damage @s 40 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute positioned ^ ^ ^5 as @e[tag=!chainsaw,distance=..5] run damage @s 40 championsashes:cheat_engine by @a[limit=1,sort=nearest]
 item modify entity @s weapon.mainhand championsashes:remove_one_item
 tag @s[tag=chainsaw] remove chainsaw

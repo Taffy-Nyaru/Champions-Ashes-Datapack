@@ -1,2 +1,2 @@
-execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!flame_of_lorian_user] run damage @s 15 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!flame_of_lorian_user] run damage @s 15 championsashes:cheat_engine by @a[limit=1,sort=nearest]
 execute as @e[distance=..1.5,type=!#championsashes:special_entities,tag=!flame_of_lorian_user] run data modify entity @s Fire set value 600s

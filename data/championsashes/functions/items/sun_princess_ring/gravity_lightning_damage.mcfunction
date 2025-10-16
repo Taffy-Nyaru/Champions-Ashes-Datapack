@@ -4,5 +4,5 @@ execute as @e[tag=aj.gravity_lightning_bolt.root] run function animated_java:gra
 ride @e[tag=aj.gravity_lightning_bolt.root,limit=1,sort=nearest] mount @s
 tag @e[tag=aj.gravity_lightning_bolt.root,limit=1,sort=nearest,tag=!mountage] add mountage
 
-damage @s 25 minecraft:out_of_world by @s
+damage @s 25 minecraft:outside_border by @s
 damage @s 25 minecraft:player_attack by @s

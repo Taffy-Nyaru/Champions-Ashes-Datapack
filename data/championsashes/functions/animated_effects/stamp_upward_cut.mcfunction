@@ -1,2 +1,2 @@
-execute as @e[distance=..1.75,type=!#championsashes:special_entities,tag=!stamp_upward_cut_user] run damage @s 2 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute as @e[distance=..1.75,type=!#championsashes:special_entities,tag=!stamp_upward_cut_user] run damage @s 2 championsashes:cheat_engine by @a[limit=1,sort=nearest]
 execute at @e[distance=..1.75,type=!#championsashes:special_entities,tag=!stamp_upward_cut_user] unless entity @e[type=creeper,tag=bomb,distance=..5] run summon creeper ~ ~ ~ {Invulnerable:1b,Tags:["bomb"],Fuse:0,ExplosionRadius:1}

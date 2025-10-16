@@ -1,2 +1,2 @@
-execute at @e[type=marker,tag=aj.meteoric_ore_snipe_charge.locator,tag=!lazer_locked_on] as @e[distance=..2,type=!#championsashes:special_entities,tag=!meteoric_ore_snipe_charge_user] run damage @s 20 minecraft:out_of_world by @a[limit=1,sort=nearest]
-execute as @e[type=!#championsashes:special_entities,tag=!meteoric_ore_snipe_charge_user,tag=lazer_locked_on] run damage @s 50 minecraft:out_of_world by @a[limit=1,sort=nearest]
+execute at @e[type=marker,tag=aj.meteoric_ore_snipe_charge.locator,tag=!lazer_locked_on] as @e[distance=..2,type=!#championsashes:special_entities,tag=!meteoric_ore_snipe_charge_user] run damage @s 20 minecraft:outside_border by @a[limit=1,sort=nearest]
+execute as @e[type=!#championsashes:special_entities,tag=!meteoric_ore_snipe_charge_user,tag=lazer_locked_on] run damage @s 50 minecraft:outside_border by @a[limit=1,sort=nearest]

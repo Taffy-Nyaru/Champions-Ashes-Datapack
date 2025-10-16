@@ -10,6 +10,6 @@ execute store result storage generic:main scarlet_rot_damage double 0.1 run scor
 
 execute unless score @s Health <= @s scarlet_rot_damage run data modify entity @s Health set from storage generic:main scarlet_rot_damage
 execute unless score @s Health <= @s scarlet_rot_damage run data modify entity @s HurtTime set value 10s
-execute if score @s Health <= @s scarlet_rot_damage run damage @s 114514 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute if score @s Health <= @s scarlet_rot_damage run damage @s 114514 championsashes:cheat_engine by @a[limit=1,sort=nearest]
 
 tag @s remove rotten

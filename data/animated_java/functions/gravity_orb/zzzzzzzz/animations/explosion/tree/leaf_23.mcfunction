@@ -1,2 +1,2 @@
 execute on passengers run function animated_java:gravity_orb/zzzzzzzz/animations/explosion/tree/leaf_23_as_bone
-execute unless entity @s[tag=aj.gravity_orb.disable_command_keyframes] at @s run execute at @e[tag=aj.gravity_orb.locator] as @e[type=!#championsashes:special_entities,tag=!shot_gravity_orb,distance=..6.5] run damage @s 8 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute unless entity @s[tag=aj.gravity_orb.disable_command_keyframes] at @s run execute at @e[tag=aj.gravity_orb.locator] as @e[type=!#championsashes:special_entities,tag=!shot_gravity_orb,distance=..6.5] run damage @s 8 championsashes:cheat_engine by @a[limit=1,sort=nearest]

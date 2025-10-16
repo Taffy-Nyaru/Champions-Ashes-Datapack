@@ -1,3 +1,3 @@
-execute at @e[type=marker,tag=aj.nep_void_missle.locator] as @e[type=!player,distance=..2,type=!#championsashes:special_entities,tag=!drakeblood_knight] run damage @s 20 minecraft:out_of_world by @e[tag=nep_elder,limit=1,sort=nearest,type=wither_skeleton]
-execute at @e[type=marker,tag=aj.nep_void_missle.locator] as @a[distance=..1.75,gamemode=!creative,gamemode=!spectator] run damage @s 5 minecraft:out_of_world by @e[tag=nep_elder,limit=1,sort=nearest,type=wither_skeleton]
+execute at @e[type=marker,tag=aj.nep_void_missle.locator] as @e[type=!player,distance=..2,type=!#championsashes:special_entities,tag=!drakeblood_knight] run damage @s 20 minecraft:outside_border by @e[tag=nep_elder,limit=1,sort=nearest,type=wither_skeleton]
+execute at @e[type=marker,tag=aj.nep_void_missle.locator] as @a[distance=..1.75,gamemode=!creative,gamemode=!spectator] run damage @s 5 minecraft:outside_border by @e[tag=nep_elder,limit=1,sort=nearest,type=wither_skeleton]
 #execute at @e[type=marker,tag=aj.nep_void_missle.locator] run particle reverse_portal ~ ~ ~ 1 1 1 0.5 10

@@ -1,4 +1,4 @@
-execute at @e[tag=aj.favor_incantations.locator.blackhole0] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
-execute at @e[tag=aj.favor_incantations.locator.blackhole1] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
-execute at @e[tag=aj.favor_incantations.locator.blackhole2] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
-execute at @e[tag=aj.favor_incantations.locator.blackhole3] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:gtx690 by @a[limit=1,sort=nearest]
+execute at @e[tag=aj.favor_incantations.locator.blackhole0] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:cheat_engine by @a[limit=1,sort=nearest]
+execute at @e[tag=aj.favor_incantations.locator.blackhole1] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:cheat_engine by @a[limit=1,sort=nearest]
+execute at @e[tag=aj.favor_incantations.locator.blackhole2] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:cheat_engine by @a[limit=1,sort=nearest]
+execute at @e[tag=aj.favor_incantations.locator.blackhole3] as @e[distance=..2.5,type=!#championsashes:special_entities,tag=!blinkbolt_slash_user] run damage @s 1 championsashes:cheat_engine by @a[limit=1,sort=nearest]
