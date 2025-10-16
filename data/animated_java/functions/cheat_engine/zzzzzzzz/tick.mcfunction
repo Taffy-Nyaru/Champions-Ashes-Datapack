@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.cheat_engine.root] run function animated_java:cheat_engine/zzzzzzzz/tick_as_root

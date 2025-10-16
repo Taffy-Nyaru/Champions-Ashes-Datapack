@@ -1,0 +1,5 @@
+function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/resume_as_root
+function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tween_as_root
+function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/apply_frame_as_root
+execute if score #tween_duration aj.i matches ..0 on passengers run data modify entity @s interpolation_duration set value 1
+scoreboard players reset #tween_duration aj.i

@@ -1,4 +1,6 @@
 tellraw @s [{"translate":"translate.championsashes.nep.kill","italic":false}]
+function animated_java:cheat_engine/summon
+execute as @e[tag=aj.cheat_engine.root,limit=1,sort=nearest,type=item_display] run function animated_java:cheat_engine/animations/cheat_engine/play
 execute at @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:1390005}}},limit=1,sort=nearest] run particle end_rod ~ ~2 ~ 0 0 0 0.2 300
 #execute at @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:1390005}}},limit=1,sort=nearest] run loot spawn ~ ~ ~ loot championsashes:items/soul_of_nep
 execute at @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:1390005}}},limit=1,sort=nearest] run summon minecraft:experience_orb ~ ~ ~ {Count:20,Value:36}

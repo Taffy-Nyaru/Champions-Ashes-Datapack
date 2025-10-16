@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.cheat_engine.bone.cheat_engine] run data modify entity @s {} merge value {transformation:[-0.00002f,2.9995195653237154e-37f,-2.4492935982947065e-21f,1.1963268419170707e-19f,0f,-0.00002f,-2.4492935982947065e-21f,1.5f,-2.4492935982947065e-21f,-2.4492935982947065e-21f,0.00002f,-0.000976875f,0f,0f,0f,1f],start_interpolation:0}

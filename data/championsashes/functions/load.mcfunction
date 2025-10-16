@@ -168,8 +168,8 @@ scoreboard objectives add nep_ice_phase_timer dummy
 scoreboard objectives add nep_fire_phase_timer dummy
 scoreboard objectives add nep_block_destroy_timer dummy
 scoreboard objectives add nep_half_health dummy
-scoreboard objectives add nep_20percent_health dummy
-scoreboard objectives add nep_20percent_health.temp dummy
+scoreboard objectives add nep_40percent_health dummy
+scoreboard objectives add nep_40percent_health.temp dummy
 scoreboard objectives add nep_phase3_tp_buffer dummy
 scoreboard objectives add nep_flight_marker_recursion dummy
 scoreboard objectives add nep_phase3_switch_to_fume_ugs dummy
@@ -261,6 +261,7 @@ scoreboard players set count entityCount 0
 scoreboard players set #raycast.max ca.raycast_value 100
 scoreboard players set #ca.temp.sniper_lockontarget ca.raycast_value 1200
 scoreboard players set #20 championsashesValue 20
+scoreboard players set #40 championsashesValue 40
 scoreboard players set #60 championsashesValue 60
 scoreboard players set #12 championsashesValue 12
 scoreboard players set #2 championsashesValue 2

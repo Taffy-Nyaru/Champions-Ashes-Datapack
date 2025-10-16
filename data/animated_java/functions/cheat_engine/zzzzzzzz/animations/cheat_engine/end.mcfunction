@@ -1,0 +1,3 @@
+execute if score @s aj.cheat_engine.animation.cheat_engine.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/end_loop
+execute if score @s aj.cheat_engine.animation.cheat_engine.loop_mode = $aj.loop_mode.once aj.i run function animated_java:cheat_engine/animations/cheat_engine/stop
+execute if score @s aj.cheat_engine.animation.cheat_engine.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:cheat_engine/animations/cheat_engine/pause
