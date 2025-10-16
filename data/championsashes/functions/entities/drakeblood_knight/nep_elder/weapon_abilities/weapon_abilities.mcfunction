@@ -11,10 +11,10 @@ execute if score @s[tag=!loop_start] arrow_rain.temp matches 0 run scoreboard pl
 execute if data storage generic:main {NepSelectedItem:{tag:{id:"championsashes:steel_anchor"}}} run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/steel_anchor
 
 #Moonlight Greatsword
-execute if entity @s[tag=nep_ice_phase] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_ice_phase_timer
-execute if entity @s[tag=nep_ice_animation] as @e[type=item_display,distance=..20,tag=aj.nep_moonlight_slash.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..20,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~
+execute if entity @e[tag=nep_foe,distance=..50,type=!#championsashes:special_entities] if entity @s[tag=nep_ice_phase] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_ice_phase_timer
+execute if entity @e[tag=nep_foe,distance=..50,type=!#championsashes:special_entities] if entity @s[tag=nep_ice_animation] as @e[type=item_display,distance=..20,tag=aj.nep_moonlight_slash.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..20,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~
 
 #Ringed Knight Straight Sword
-execute if entity @s[tag=nep_fire_phase] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_fire_phase_timer
-execute if entity @s[tag=nep_fire_animation] as @e[type=item_display,distance=..20,tag=aj.nep_ringed_knight_straight_sword.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..20,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~
-execute if entity @s[tag=nep_fire_animation] as @e[type=item_display,distance=..20,tag=aj.nep_rkss_cancel.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..20,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~
+execute if entity @e[tag=nep_foe,distance=..50,type=!#championsashes:special_entities] if entity @s[tag=nep_fire_phase] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/nep_fire_phase_timer
+execute if entity @e[tag=nep_foe,distance=..50,type=!#championsashes:special_entities] if entity @s[tag=nep_fire_animation] as @e[type=item_display,distance=..20,tag=aj.nep_ringed_knight_straight_sword.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..20,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~
+execute if entity @e[tag=nep_foe,distance=..50,type=!#championsashes:special_entities] if entity @s[tag=nep_fire_animation] as @e[type=item_display,distance=..20,tag=aj.nep_rkss_cancel.root] at @s facing entity @e[tag=nep_foe,limit=1,sort=nearest,distance=..20,type=!#championsashes:special_entities] feet run tp @s ^ ^ ^ ~ ~

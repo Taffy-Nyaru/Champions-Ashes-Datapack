@@ -16,6 +16,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.nep_fume_ugs_skills.export_version aj.i -512268534
+scoreboard players set aj.nep_fume_ugs_skills.export_version aj.i -546347559
 scoreboard players reset * aj.nep_fume_ugs_skills.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.nep_fume_ugs_skills.root] run function animated_java:nep_fume_ugs_skills/zzzzzzzz/on_load

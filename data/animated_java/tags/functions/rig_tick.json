@@ -62,8 +62,8 @@
 		"animated_java:void_slash/zzzzzzzz/tick",
 		"animated_java:nep_gravity_lightning_bolt/zzzzzzzz/tick",
 		"animated_java:space_based_missle/zzzzzzzz/tick",
-		"animated_java:nep_fume_ugs_skills/zzzzzzzz/tick",
 		"animated_java:blackhole_supernova/zzzzzzzz/tick",
-		"animated_java:cheat_engine/zzzzzzzz/tick"
+		"animated_java:cheat_engine/zzzzzzzz/tick",
+		"animated_java:nep_fume_ugs_skills/zzzzzzzz/tick"
 	]
 }

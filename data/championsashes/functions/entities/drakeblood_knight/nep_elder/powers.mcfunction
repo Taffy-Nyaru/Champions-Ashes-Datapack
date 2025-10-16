@@ -11,7 +11,7 @@ execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s maxHealt
 tag @a[gamemode=spectator,tag=nep_foe] remove nep_foe
 tag @a[gamemode=creative,tag=nep_foe] remove nep_foe
 
-#Ban recovering and deal 6 true damage only when using smite V or punch II
+#Ban recovering and deal 4 true damage only when using smite V or punch II
 execute unless entity @s[tag=phase3] if entity @s[tag=nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/player_uses_ban_recover
 execute unless entity @s[tag=phase3] if entity @s[tag=nep_start_recover_cooling,tag=!nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/recover_cooldown
 

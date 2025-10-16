@@ -24,4 +24,5 @@ kill @e[type=marker,tag=nep_flight_marker_chasing]
 kill @e[type=item_display,tag=nep_flight_marker_chasing]
 kill @e[type=item_display,tag=nep_splitleaf_helicopter]
 kill @e[type=item_display,tag=bow_glitch_arrow]
+kill 00000072-0000-0202-0000-4af7000039da
 tag @e[tag=nep_foe,type=!#championsashes:special_entities] remove nep_foe

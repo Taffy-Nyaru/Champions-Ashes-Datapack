@@ -22,11 +22,13 @@ execute if score @s nep_phase3_switch_to_fume_ugs matches 805.. run function cha
 
 #Dragonslayer Greatbow:
 execute unless entity @e[tag=nep_space_based_laser,type=item_display,limit=1,sort=nearest] unless entity @e[tag=aj.nep_fume_ugs_skills.root,type=item_display,limit=1,sort=nearest] run scoreboard players add @s[tag=!nep_switched_to_ugs] nep_phase3_switch_to_dragonslayer 1
-execute if score @s nep_phase3_switch_to_dragonslayer matches 200.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_dragonslayer
+execute unless entity @e[tag=nep_space_based_laser,type=item_display,limit=1,sort=nearest] unless entity @e[tag=aj.nep_fume_ugs_skills.root,type=item_display,limit=1,sort=nearest] if score @s nep_phase3_switch_to_dragonslayer matches 200.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/switch_to_dragonslayer
 
 #Different Forms
 execute if entity @s[tag=nep_switched_to_ugs] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/fume_ugs_form
 execute if entity @s[tag=nep_switched_to_dragonslayer] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/dragonslayer_form
+execute as @e[tag=bow_glitch_arrow,type=item_display] at @s run function championsashes:entities/drakeblood_knight/nep_elder/phase3/void_arrow
+
 execute as @e[tag=nep_foe_throwed_by_gravity_supernova,type=!#championsashes:special_entities,distance=..80] run ride @s mount @e[type=item_display,limit=1,sort=nearest,tag=nep_foe_gravity_throw_ride_locator]
 
 #Gravity Lightning Bolts
