@@ -1,1 +1,2 @@
+execute if entity @s[tag=aj.cheat_engine.locator_origin.locator] at @s on origin run tp @s ^-0.11513 ^1.33123 ^-0.08884 ~15.02897 ~18.36762
 execute if entity @s[tag=aj.cheat_engine.bone.cheat_engine] run data modify entity @s {} merge value {transformation:[-1.7547688175269127f,0.8237304619841544f,0.4921935828864211f,1.1963268419170707e-19f,0.9485514446308407f,1.6441003430259489f,0.6302255302276338f,1.5f,-0.14503983564505918f,0.7863855212688805f,-1.8331833672643678f,-0.000976875f,0f,0f,0f,1f],start_interpolation:0}

@@ -1,2 +1,1 @@
 execute on passengers run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/leaf_57_as_bone
-function animated_java:cheat_engine/zzzzzzzz/apply_variant/new_variant/as_root

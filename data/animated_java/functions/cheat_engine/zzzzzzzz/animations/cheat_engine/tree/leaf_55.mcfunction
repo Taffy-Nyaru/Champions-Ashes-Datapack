@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/leaf_55_as_bone
+execute unless entity @s[tag=aj.cheat_engine.disable_command_keyframes] at @s run execute at @e[tag=aj.cheat_engine.locator,type=marker,distance=..8] as @e[type=!#championsashes:special_entities,type=!player] run function championsashes:effects/true_kill

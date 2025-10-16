@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..61 run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/branch_0_61
+execute if score @s aj.anim_time matches 0..69 run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/branch_0_69

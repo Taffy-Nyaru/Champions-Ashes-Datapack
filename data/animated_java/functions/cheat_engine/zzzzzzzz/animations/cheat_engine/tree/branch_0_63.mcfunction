@@ -5,4 +5,4 @@ execute if score @s aj.anim_time matches 24..31 run function animated_java:cheat
 execute if score @s aj.anim_time matches 32..39 run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/branch_32_39
 execute if score @s aj.anim_time matches 40..47 run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/branch_40_47
 execute if score @s aj.anim_time matches 48..55 run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/branch_48_55
-execute if score @s aj.anim_time matches 56..61 run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/branch_56_61
+execute if score @s aj.anim_time matches 56..63 run function animated_java:cheat_engine/zzzzzzzz/animations/cheat_engine/tree/branch_56_63

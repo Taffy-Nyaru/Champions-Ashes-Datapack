@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.cheat_engine.locator_origin.locator] run function animated_java:cheat_engine/zzzzzzzz/summon/locator_locator/as_origin
+function #animated_java:cheat_engine/on_summon/as_locator_origins
