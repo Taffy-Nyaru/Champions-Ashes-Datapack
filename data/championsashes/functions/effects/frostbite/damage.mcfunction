@@ -15,6 +15,6 @@ execute unless score @s Health <= @s frostbite_burst run data modify entity @s H
 
 execute store result score @s Health run data get entity @s Health
 execute if score @s Health <= @s frostbite_burst run function championsashes:effects/ko
-execute unless predicate championsashes:healthzero if score @s[tag=KO] Health <= @s[tag=KO] frostbite_burst run function championsashes:effects/true_kill
+execute unless predicate championsashes:healthzero if score @s[tag=KO] Health <= @s[tag=KO] frostbite_burst run damage @s 114514 championsashes:gtx690
 
 tag @s remove blow_up

@@ -4,6 +4,10 @@
     "minecraft:warden",
     "minecraft:ender_dragon",
     "minecraft:wither",
-    "minecraft:elder_guardian"
+    "minecraft:elder_guardian",
+    "minecraft:slime",
+    "minecraft:magma_cube",
+    "goety:apostle",
+    "#minecraft:fall_damage_immune"
   ]
 }

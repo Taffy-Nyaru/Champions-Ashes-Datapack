@@ -35,3 +35,6 @@ execute as @e[distance=..25,type=!#championsashes:special_entities,tag=charmed] 
 
 #Parry
 execute as @e[distance=..10,type=!#championsashes:special_entities,tag=parry_success] run function championsashes:parry/parry_success
+
+#data modify entity 0000002d-0000-000e-0000-2cbb000007c7 Brain.memories."minecraft:has_hunting_cooldown".value set value 0b
+#data modify entity 0000002d-0000-000e-0000-2cbb000007c7 Brain.memories."minecraft:has_hunting_cooldown".ttl set value 2147483647
