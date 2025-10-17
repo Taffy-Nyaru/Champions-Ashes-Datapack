@@ -55,7 +55,6 @@
 		"animated_java:electric_beacon/zzzzzzzz/load",
 		"animated_java:ancient_lightning_strike/zzzzzzzz/load",
 		"animated_java:nep_phase3_teleport/zzzzzzzz/load",
-		"animated_java:nep_phase2_murky/zzzzzzzz/load",
 		"animated_java:nep_ringed_knight_straight_sword/zzzzzzzz/load",
 		"animated_java:nep_rkss_cancel/zzzzzzzz/load",
 		"animated_java:splitleaf_infinite/zzzzzzzz/load",
@@ -68,6 +67,7 @@
 		"animated_java:blackhole_supernova/zzzzzzzz/load",
 		"animated_java:nep_fume_ugs_skills/zzzzzzzz/load",
 		"animated_java:nep_phase3_transition/zzzzzzzz/load",
-		"animated_java:cheat_engine/zzzzzzzz/load"
+		"animated_java:cheat_engine/zzzzzzzz/load",
+		"animated_java:nep_phase2_murky/zzzzzzzz/load"
 	]
 }
