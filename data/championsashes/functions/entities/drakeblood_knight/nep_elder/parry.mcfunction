@@ -1,7 +1,7 @@
 execute unless entity @a[tag=parry_success,distance=..10] run scoreboard players add #elder_parrying_time championsashes_Timer 1
 
 execute if score #elder_parrying_time championsashes_Timer matches 1 run data modify entity @s Invulnerable set value 1b
-execute if score #elder_parrying_time championsashes_Timer matches 1 unless entity @e[tag=parry_shield,distance=..5] run summon item_display ^ ^1.5 ^1 {Tags:["parry_shield"],item:{id:"shield",Count:1b,tag:{CustomModelData:1390050,Enchantments:[{id:"infinity",lvl:1}]}}}
+execute if score #elder_parrying_time championsashes_Timer matches 1 as 2cf0c768-0ad4-4431-a741-91a75a8afe83 unless entity @s[distance=..5] run summon item_display ^ ^1.5 ^1 {UUID:[I;753977192,181683249,-1488875097,1519058563],item:{id:"shield",Count:1b,tag:{CustomModelData:1390050,Enchantments:[{id:"infinity",lvl:1}]}}}
 
 #Correct the rotation of shield
 data modify storage math:io rotate_shield set value {angle:0.78539,axis:[1,0,0]}
@@ -13,8 +13,8 @@ execute if score #elder_parrying_time championsashes_Timer matches 1..80 run fun
 execute if score #elder_parrying_time championsashes_Timer matches 80.. run function championsashes:entities/drakeblood_knight/nep_elder/parry_time_end
 
 #Floating Shields
-execute as @e[type=item_display,tag=parry_shield] at @s facing entity @e[tag=nep_elder,limit=1,sort=nearest] eyes positioned ^ ^ ^ run tp @s ^0.15 ^-0.01 ^0.01 ~ ~
-execute as @e[type=item_display,tag=parry_shield] run data modify entity @s transformation.left_rotation set from storage math:io rotate_shield
+execute as 2cf0c768-0ad4-4431-a741-91a75a8afe83 at @s facing entity @e[tag=nep_elder,limit=1,sort=nearest] eyes positioned ^ ^ ^ run tp @s ^0.15 ^-0.01 ^0.01 ~ ~
+execute as 2cf0c768-0ad4-4431-a741-91a75a8afe83 run data modify entity @s transformation.left_rotation set from storage math:io rotate_shield
 
 effect give @s slowness 1 9 true
 

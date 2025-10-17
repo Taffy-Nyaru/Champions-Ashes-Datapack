@@ -1,2 +1,2 @@
 execute on passengers run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tree/leaf_109_as_bone
-execute unless entity @s[tag=aj.nep_phase3_transition.disable_command_keyframes] at @s run execute at 9a6ff330-02df-491b-b6ec-af95ffe08a65 run particle minecraft:enchant ~ ~ ~ 0 0 0 5 10
+execute unless entity @s[tag=aj.nep_phase3_transition.disable_command_keyframes] at @s run execute at 9a6ff330-02df-491b-b6ec-af95ffe08a65 run particle minecraft:enchant ~ ~ ~ 0 0 0 1 100

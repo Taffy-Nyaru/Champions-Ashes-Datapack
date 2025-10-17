@@ -179,7 +179,7 @@ scoreboard objectives add nep_offhand_bow_glitch dummy
 scoreboard objectives add nep_phase3_fume_ugs_random_lightning_bolt dummy
 scoreboard objectives add nep_phase3_fume_ugs_use_space_based_laser dummy
 team add drakeblood_knights
-bossbar add nep_elder "NEP.Elder"
+bossbar add nep_elder [{"text":"1","font":"championsashes:nep_bossbar"}]
 
 #Parry
 scoreboard objectives add parry_time dummy

@@ -19,3 +19,4 @@ damage @s 5 championsashes:cheat_engine
 tag @s add phase2_started
 tag @s add phase2
 tag @s add phase2_start_recovering
+bossbar set minecraft:nep_elder name [{"text":"1","font":"championsashes:nep_bossbar_phase2"}]
