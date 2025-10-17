@@ -9,6 +9,3 @@ execute as @e[tag=drakeblood_knight,type=wither_skeleton,limit=1,sort=nearest,ta
 execute as @e[tag=drakeblood_knight,type=wither_skeleton,limit=1,sort=nearest,tag=!nep_elder] run data modify entity @s HandDropChances set value [0.0f,0.0f]
 #execute as @e[tag=drakeblood_knight] run data modify entity @s DeathLootTable set value "championsashes:entities/drakeblood_knights"
 execute as @e[tag=drakeblood_knight,type=wither_skeleton,limit=1,sort=nearest,tag=!nep_elder] run data modify entity @s ArmorItems[3].tag.Unbreakable set value 1b
-
-bossbar set minecraft:nep_elder color white
-bossbar set minecraft:nep_elder name [{"text":"1","font":"championsashes:nep_bossbar_phase1"}]

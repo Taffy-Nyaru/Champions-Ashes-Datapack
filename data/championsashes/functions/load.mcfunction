@@ -180,6 +180,8 @@ scoreboard objectives add nep_phase3_fume_ugs_random_lightning_bolt dummy
 scoreboard objectives add nep_phase3_fume_ugs_use_space_based_laser dummy
 team add drakeblood_knights
 bossbar add nep_elder [{"text":"1","font":"championsashes:nep_bossbar"}]
+bossbar set minecraft:nep_elder color white
+bossbar set minecraft:nep_elder name [{"text":"1","font":"championsashes:nep_bossbar_phase1"}]
 
 #Parry
 scoreboard objectives add parry_time dummy
