@@ -1,0 +1,1 @@
+function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_transition_end

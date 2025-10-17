@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..250 run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tree/branch_0_250

@@ -273,6 +273,7 @@ scoreboard players set @a thunderarrow_damage 2
 scoreboard players set @e[tag=nep_elder] arrow_rain.temp 0
 execute as @a unless score @s steelCount matches 1.. run scoreboard players set @a steelCount 1
 scoreboard players set C_200 math_const 200
+scoreboard objectives add true_kill_timer dummy
 
 team add friendly
 

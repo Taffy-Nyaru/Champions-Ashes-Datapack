@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.nep_phase3_transition.locator_origin.cheat_engine] at @s on origin run tp @s ^-0.55554 ^4.68099 ^0.06464 ~70.30746 ~72.10488
+execute if entity @s[tag=aj.nep_phase3_transition.locator_origin.nep_ride] at @s on origin run tp @s ^0 ^6.625 ^-3.06445 ~-180 ~0

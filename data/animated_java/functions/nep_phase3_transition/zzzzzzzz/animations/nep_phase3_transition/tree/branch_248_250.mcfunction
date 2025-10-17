@@ -1,0 +1,3 @@
+execute if score @s aj.anim_time matches 248 run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tree/leaf_248
+execute if score @s aj.anim_time matches 249 run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tree/leaf_249
+execute if score @s aj.anim_time matches 250 run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tree/leaf_250

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_phase3_transition.root] run function animated_java:nep_phase3_transition/zzzzzzzz/tick_as_root

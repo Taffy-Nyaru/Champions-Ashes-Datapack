@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.nep_phase3_transition.animation.nep_phase3_transition] run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tick

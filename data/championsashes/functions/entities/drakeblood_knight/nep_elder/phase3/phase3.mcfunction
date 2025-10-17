@@ -1,5 +1,3 @@
-tag @s add phase3
-
 #Teleport
 execute as @e[type=arrow,limit=1,sort=nearest,distance=..5] on origin if entity @e[tag=nep_elder,type=wither_skeleton] run tag @e[type=arrow,limit=1,sort=nearest,distance=..8] add nep_owned_arrow
 execute if entity @e[type=!#championsashes:nep_unteleports,type=!player,tag=!drakeblood_knight,tag=!nep_owned_arrow,distance=..10] unless score @s nep_phase3_tp_buffer matches 1.. run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_teleport

@@ -1,0 +1,1 @@
+function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tick_animation

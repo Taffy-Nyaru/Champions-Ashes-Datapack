@@ -7,13 +7,14 @@ execute store result bossbar nep_elder max run data get entity @s Attributes[{Na
 execute store result bossbar nep_elder value run data get entity @s Health
 execute store result score @s Elder_Health run data get entity @s Health
 execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s maxHealth run attribute @s generic.max_health base get
+#execute store result storage championsashes:entity_data nep_half_health float 1 run scoreboard players get @s nep_half_health
 
 tag @a[gamemode=spectator,tag=nep_foe] remove nep_foe
 tag @a[gamemode=creative,tag=nep_foe] remove nep_foe
 
 #Ban recovering and deal 4 true damage only when using smite V or punch II
-execute unless entity @s[tag=phase3] if entity @s[tag=nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/player_uses_ban_recover
-execute unless entity @s[tag=phase3] if entity @s[tag=nep_start_recover_cooling,tag=!nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/recover_cooldown
+execute if entity @s[tag=!phase3,tag=!phase3_transition] if entity @s[tag=nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/player_uses_ban_recover
+execute if entity @s[tag=!phase3,tag=!phase3_transition] if entity @s[tag=nep_start_recover_cooling,tag=!nep_attacked_by_player] run function championsashes:entities/drakeblood_knight/nep_elder/recover_cooldown
 
 #Destroy Blocks
 function championsashes:entities/drakeblood_knight/nep_elder/destroy_block_when_suffocate
@@ -26,19 +27,19 @@ execute if entity @p[tag=nep_foe,distance=..50] run function championsashes:enti
 execute if score @s nep_block_destroy_timer matches 160.. run teleport @s @p[tag=nep_foe]
 
 #Teleporting with blast
-execute unless entity @s[tag=phase3] run function championsashes:entities/drakeblood_knight/nep_elder/teleport_blast_ai
+execute if entity @s[tag=!phase3,tag=!phase3_transition] run function championsashes:entities/drakeblood_knight/nep_elder/teleport_blast_ai
 
 #Weapon Inventory
-execute unless entity @s[tag=phase3] run function championsashes:entities/drakeblood_knight/nep_elder/switch_weapon_ai
+execute if entity @s[tag=!phase3,tag=!phase3_transition] run function championsashes:entities/drakeblood_knight/nep_elder/switch_weapon_ai
 
 #Favour Ring
-execute unless entity @s[tag=phase3] run function championsashes:entities/drakeblood_knight/nep_elder/favour_ring_ai
+execute if entity @s[tag=!phase3,tag=!phase3_transition] run function championsashes:entities/drakeblood_knight/nep_elder/favour_ring_ai
 
 #Parry
-execute unless entity @s[tag=phase3] run function championsashes:entities/drakeblood_knight/nep_elder/parry_ai
+execute if entity @s[tag=!phase3,tag=!phase3_transition] run function championsashes:entities/drakeblood_knight/nep_elder/parry_ai
 
 #Weapon Abilities
-execute unless entity @s[tag=phase3] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/weapon_abilities
+execute if entity @s[tag=!phase3,tag=!phase3_transition] run function championsashes:entities/drakeblood_knight/nep_elder/weapon_abilities/weapon_abilities
 
 #Hostile Bullets
 function championsashes:animated_effects/animation_effects_handle/animated_effects_bullets_hostile
@@ -54,13 +55,14 @@ execute as @s[tag=phase2_start_recovering] unless score @s Elder_Health >= @s ma
 execute as @s[tag=phase2_start_recovering] if score @s Elder_Health >= @s maxHealth run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2_start_recovering_end
 
 #Phase 2:
-execute if entity @s[tag=phase2] run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2
+execute if entity @s[tag=phase2,tag=!phase3] run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2
 
 #Phase 3 starts:
-execute unless entity @s[tag=phase3_started] if score @s Elder_Health <= @s nep_40percent_health run function championsashes:entities/drakeblood_knight/nep_elder/teleport_to_summon_shrine_buffer
+execute unless entity @e[tag=aj.nep_phase3_transition.root,distance=..20,type=item_display] if entity @s[tag=!phase3_started] if score @s Elder_Health <= @s nep_40percent_health unless entity @e[tag=summon_shrine,distance=..100,type=marker,limit=1,sort=nearest] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_transition
+execute unless entity @e[tag=aj.nep_phase3_transition.root,distance=..20,type=item_display] if entity @s[tag=!phase3_started] if score @s Elder_Health <= @s nep_40percent_health at @e[tag=summon_shrine,limit=1,sort=nearest,type=marker,distance=..100] facing ~ ~ ~ run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_transition
 
 #Phase 3:
-execute if score @s Elder_Health <= @s nep_40percent_health run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3
+execute if entity @s[tag=phase3,tag=!phase3_transition,tag=!phase2] if score @s Elder_Health <= @s nep_40percent_health run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3
 
 function championsashes:entities/drakeblood_knight/nep_elder/clear_negative_effects
 

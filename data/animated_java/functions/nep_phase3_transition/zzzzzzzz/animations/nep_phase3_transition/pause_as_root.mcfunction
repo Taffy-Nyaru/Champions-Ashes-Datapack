@@ -1,0 +1,1 @@
+tag @s remove aj.nep_phase3_transition.animation.nep_phase3_transition

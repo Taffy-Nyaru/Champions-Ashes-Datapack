@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tree/leaf_207_as_bone
+execute unless entity @s[tag=aj.nep_phase3_transition.disable_command_keyframes] at @s run tellraw @a "并非愿为骑士：@全体成员 没有通知之前不许开挂"

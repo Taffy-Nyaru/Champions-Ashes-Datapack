@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {UUID:[I;-1703939280,48187675,-1226002539,-2061723],Tags:["aj.nep_phase3_transition.locator","aj.nep_phase3_transition.locator.cheat_engine","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"nep_phase3_transition\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"cheat_engine\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.nep_phase3_transition.locator.cheat_engine,tag=aj.new,limit=1,distance=..1] run function animated_java:nep_phase3_transition/zzzzzzzz/summon/locator_cheat_engine/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

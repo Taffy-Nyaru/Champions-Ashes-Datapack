@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.nep_phase3_transition.root] run function animated_java:nep_phase3_transition/zzzzzzzz/animations/pause_all_as_root
+execute if entity @s[tag=!aj.nep_phase3_transition.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:nep_phase3_transition/animations/pause_all ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

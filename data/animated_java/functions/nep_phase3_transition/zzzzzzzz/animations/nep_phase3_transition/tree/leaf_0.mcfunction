@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:nep_phase3_transition/zzzzzzzz/animations/nep_phase3_transition/tree/leaf_0_as_bone
+execute unless entity @s[tag=aj.nep_phase3_transition.disable_command_keyframes] at @s run execute as @e[tag=aj.nep_phase3_transition.root] run data modify entity @s brightness set value {block:15,sky:15}

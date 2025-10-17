@@ -7,6 +7,7 @@ effect clear @s regeneration
 kill @e[tag=nep_projectile,type=item_display]
 
 loot replace entity @s weapon.mainhand loot championsashes:items/dragonslayer_greatbow
+loot replace entity @s weapon.offhand loot championsashes:items/void_totem
 
 #Teleport to summon shrine and summon the void slash
 tp @s @e[tag=summon_shrine,type=marker,limit=1,sort=nearest]
@@ -24,3 +25,4 @@ summon item_display ~ ~1.5 ~ {item_display:"head",Tags:["nep_splitleaf_helicopte
 tag @s add phase3_started
 tag @s add nep_switched_to_dragonslayer
 tag @s remove phase2
+tag @s add phase3

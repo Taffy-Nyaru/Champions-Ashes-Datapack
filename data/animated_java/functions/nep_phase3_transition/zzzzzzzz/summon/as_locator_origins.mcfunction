@@ -1,0 +1,3 @@
+execute if entity @s[tag=aj.nep_phase3_transition.locator_origin.cheat_engine] run function animated_java:nep_phase3_transition/zzzzzzzz/summon/locator_cheat_engine/as_origin
+execute if entity @s[tag=aj.nep_phase3_transition.locator_origin.nep_ride] run function animated_java:nep_phase3_transition/zzzzzzzz/summon/locator_nep_ride/as_origin
+function #animated_java:nep_phase3_transition/on_summon/as_locator_origins
