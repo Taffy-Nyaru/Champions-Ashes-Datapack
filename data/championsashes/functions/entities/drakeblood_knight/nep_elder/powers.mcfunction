@@ -7,7 +7,7 @@ execute store result bossbar nep_elder max run data get entity @s Attributes[{Na
 execute store result bossbar nep_elder value run data get entity @s Health
 execute store result score @s Elder_Health run data get entity @s Health
 execute as @e[tag=nep_elder,type=wither_skeleton] store result score @s maxHealth run attribute @s generic.max_health base get
-#execute store result storage championsashes:entity_data nep_half_health float 1 run scoreboard players get @s nep_half_health
+execute store result storage championsashes:entity_data nep_half_health float 1 run scoreboard players get @s nep_half_health
 
 tag @a[gamemode=spectator,tag=nep_foe] remove nep_foe
 tag @a[gamemode=creative,tag=nep_foe] remove nep_foe
@@ -58,8 +58,8 @@ execute as @s[tag=phase2_start_recovering] if score @s Elder_Health >= @s maxHea
 execute if entity @s[tag=phase2,tag=!phase3] run function championsashes:entities/drakeblood_knight/nep_elder/phase2/phase2
 
 #Phase 3 starts:
-execute unless entity @e[tag=aj.nep_phase3_transition.root,distance=..20,type=item_display] if entity @s[tag=!phase3_started] if score @s Elder_Health <= @s nep_40percent_health unless entity @e[tag=summon_shrine,distance=..100,type=marker,limit=1,sort=nearest] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_transition
-execute unless entity @e[tag=aj.nep_phase3_transition.root,distance=..20,type=item_display] if entity @s[tag=!phase3_started] if score @s Elder_Health <= @s nep_40percent_health at @e[tag=summon_shrine,limit=1,sort=nearest,type=marker,distance=..100] facing ~ ~ ~ run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_transition
+execute unless entity @e[tag=aj.nep_phase3_transition.root,distance=..20,type=item_display] if entity @s[tag=!phase3_started,tag=!no_skip_phase2] if score @s Elder_Health <= @s nep_40percent_health unless entity @e[tag=summon_shrine,distance=..100,type=marker,limit=1,sort=nearest] run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_transition
+execute unless entity @e[tag=aj.nep_phase3_transition.root,distance=..20,type=item_display] if entity @s[tag=!phase3_started,tag=!no_skip_phase2] if score @s Elder_Health <= @s nep_40percent_health at @e[tag=summon_shrine,limit=1,sort=nearest,type=marker,distance=..100] facing ~ ~ ~ run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3_transition
 
 #Phase 3:
 execute if entity @s[tag=phase3,tag=!phase3_transition,tag=!phase2] if score @s Elder_Health <= @s nep_40percent_health run function championsashes:entities/drakeblood_knight/nep_elder/phase3/phase3

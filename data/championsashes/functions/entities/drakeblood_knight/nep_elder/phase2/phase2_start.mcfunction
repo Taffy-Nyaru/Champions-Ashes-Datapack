@@ -1,9 +1,9 @@
 data modify entity @s Invulnerable set value 1b
-#data modify entity @s Health set from storage championsashes:entity_data nep_half_health
+data modify entity @s Health set from storage championsashes:entity_data nep_half_health
 
 execute positioned ^ ^1 ^-2 run function championsashes:entities/drakeblood_knight/summon
 loot replace entity @s armor.head loot championsashes:armor/old_sorcerer_hat_nep
-summon item_display ~ ~3 ~ {Tags:["nep_projectile"],item:{id:"dragon_head",Count:1b}}
+summon item_display ~ ~3 ~ {UUID:[I;843107374,-2049291715,-1365657050,-1480742684],item:{id:"dragon_head",Count:1b}}
 execute as @a[distance=..50] run tellraw @s [{"translate":"translate.championsashes.nep.phase2","italic":false}]
 
 execute facing ~ ~ ~ run function animated_java:nep_phase2_murky/summon

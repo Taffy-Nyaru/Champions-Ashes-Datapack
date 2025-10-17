@@ -15,7 +15,7 @@ tag @a[tag=nep_foe] remove nep_foe
 kill @e[tag=nep_summoned_flight_marker,type=marker]
 kill @e[tag=parry_shield]
 kill @e[tag=attacker_indicator]
-kill @e[tag=nep_projectile]
+kill 3240cc2e-85da-4a3d-ae99-ba26a7bda8e4
 kill @e[type=item_display,tag=nep_moonlight_slash]
 kill @e[type=item_display,tag=drakeblood_phanalax0]
 kill @e[type=item_display,tag=drakeblood_phanalax1]
