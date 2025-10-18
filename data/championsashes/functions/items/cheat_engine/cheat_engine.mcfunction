@@ -5,6 +5,10 @@ execute at @s[scores={usedCE=1..}] as @e[limit=1,distance=..6,tag=raycast.target
 execute as @e[tag=true_kill] run function championsashes:effects/true_kill
 execute if entity @s[scores={usedCE=1..}] run loot give @s loot championsashes:items/death_blight_knife
 
+execute unless score @s cheat_engine_crash matches 2.. if score @s shift matches 1.. if score @s ca.item.id_selecter_offhand matches 1010 run function championsashes:items/cheat_engine/crash_tell0
+execute if score @s cheat_engine_crash matches 2..3 if score @s shift matches 1.. if score @s ca.item.id_selecter_offhand matches 1010 run function championsashes:items/cheat_engine/crash_tell1
+execute if score @s cheat_engine_crash matches 4 if score @s shift matches 1.. if score @s ca.item.id_selecter_offhand matches 1010 run function championsashes:items/cheat_engine/crash22
+
 #Invulnerable
 execute if score @s[gamemode=!creative] usedCE matches 1.. store result score @s gamemode run data get entity @s playerGameType
 execute if score @s usedCE matches 1.. run gamemode creative @s

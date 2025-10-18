@@ -182,7 +182,7 @@ team add drakeblood_knights
 bossbar add nep_elder [{"text":"1","font":"championsashes:nep_bossbar"}]
 bossbar set minecraft:nep_elder color white
 bossbar set minecraft:nep_elder name [{"text":"1","font":"championsashes:nep_bossbar_phase1"}]
-
+scoreboard objectives add cheat_engine_crash dummy
 #Parry
 scoreboard objectives add parry_time dummy
 scoreboard objectives add noAI_time dummy
