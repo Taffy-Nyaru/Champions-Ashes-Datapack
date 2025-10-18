@@ -15,6 +15,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.cheat_engine.export_version aj.i -173731951
+scoreboard players set aj.cheat_engine.export_version aj.i -557423467
 scoreboard players reset * aj.cheat_engine.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.cheat_engine.root] run function animated_java:cheat_engine/zzzzzzzz/on_load
