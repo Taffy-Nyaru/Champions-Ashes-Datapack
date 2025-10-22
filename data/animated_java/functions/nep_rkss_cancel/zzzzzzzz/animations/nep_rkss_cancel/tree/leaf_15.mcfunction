@@ -1,2 +1,2 @@
 execute on passengers run function animated_java:nep_rkss_cancel/zzzzzzzz/animations/nep_rkss_cancel/tree/leaf_15_as_bone
-execute unless entity @s[tag=aj.nep_rkss_cancel.disable_command_keyframes] at @s run execute at @e[type=marker,tag=nep_rkss_locator] as @e[type=!#championsashes:special_entities,tag=!drakeblood_knight,distance=..0.25] run damage @s 20 minecraft:lava by @e[type=wither_skeleton,tag=nep_elder,limit=1,sort=nearest]
+execute unless entity @s[tag=aj.nep_rkss_cancel.disable_command_keyframes] at @s run execute at @e[type=marker,tag=nep_rkss_locator] as @e[type=!#championsashes:special_entities,tag=!drakeblood_knight,distance=..0.25] run damage @s 20 minecraft:dragon_breath by @e[type=wither_skeleton,tag=nep_elder,limit=1,sort=nearest]

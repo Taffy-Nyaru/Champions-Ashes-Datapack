@@ -1,1 +1,1 @@
-execute at @e[type=marker,tag=nep_rkss_locator] as @e[type=!#championsashes:special_entities,tag=!drakeblood_knight,distance=..0.25] run damage @s 20 minecraft:lava by @e[type=wither_skeleton,tag=nep_elder,limit=1,sort=nearest]
+execute at @e[type=marker,tag=nep_rkss_locator] as @e[type=!#championsashes:special_entities,tag=!drakeblood_knight,distance=..0.25] run damage @s 20 minecraft:dragon_breath by @e[type=wither_skeleton,tag=nep_elder,limit=1,sort=nearest]
