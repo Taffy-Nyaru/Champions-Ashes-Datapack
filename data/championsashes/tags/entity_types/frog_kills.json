@@ -7,7 +7,7 @@
     "minecraft:elder_guardian",
     "minecraft:slime",
     "minecraft:magma_cube",
-    "goety:apostle",
-    "#minecraft:fall_damage_immune"
+    "#minecraft:fall_damage_immune",
+    "#forge:bosses"
   ]
 }

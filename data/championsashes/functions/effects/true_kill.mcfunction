@@ -35,8 +35,8 @@ team join friendly 0000002d-0000-000e-0000-2cbb000007c7
 #execute in the_end positioned -9223372036854775808 -9223372036854775808 -9223372036854775808 run spreadplayers -9223372036854775808 9223372036854775808 2147483648 2147483648 under -2147483648 false @s
 scoreboard players add @s true_kill_timer 1
 execute if score @s true_kill_timer matches 5.. run data modify entity @s NoAI set value 1b
-execute if score @s true_kill_timer matches 4.. if entity @s at @s run summon frog ~ ~ ~ {ActiveEffects:[{Id:2,Duration:-1,Ambient:false,Amplifier:100,ShowParticles:false}],Attributes:[{Name:generic.attack_damage,Base:2147483647}],UUID:[I;45,14,11451,1991],Invulnerable:1b}
+execute if score @s true_kill_timer matches 4.. if entity @s at @s run summon frog ~ ~ ~ {ActiveEffects:[{Id:11,Duration:-1,Ambient:false,Amplifier:0,ShowParticles:false},{Id:2,Duration:-1,Ambient:false,Amplifier:100,ShowParticles:false}],Attributes:[{Name:generic.attack_damage,Base:2147483647}],UUID:[I;45,14,11451,1991],Invulnerable:1b}
 execute if score @s true_kill_timer matches 4.. run teleport 0000002d-0000-000e-0000-2cbb000007c7 @s
-execute if score @s true_kill_timer matches 4.. in the_end run spreadplayers -114514 -1919810 114 114 under 64 false @s
+execute if score @s true_kill_timer matches 4.. in the_end positioned 114514 -1919810 1919810 run spreadplayers -114514 -1919810 114 114 under 64 false @s
 #execute if score @s true_kill_timer matches 5.. run ride @s mount 0000002d-0000-000e-0000-2cbb000007c7
 execute if score @s true_kill_timer matches 5.. run scoreboard players set @s true_kill_timer 0
